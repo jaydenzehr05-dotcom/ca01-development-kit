@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-22",
+  "reference_inspector_test": "Passed on actual 15TBDANA-CA01_1127.kwi; ten extracted components verified by size and SHA-256; input hash unchanged.",
+  "tests_passed": 11,
+  "container_tests": 7,
+  "arm_emulation_tests": 4,
+  "arm_execution_environment": "Unicorn 2.1.4 with mocked Linux system calls; not a physical head unit or a complete Linux VM",
+  "probe": {
+    "size": 3580,
+    "sha256": "e6903b2980b0ae71225b576954781a2b5eb624b3f7039e1bedfc2664235e5b5a",
+    "target": "32-bit little-endian ARM Linux EABI, static, soft-float ABI, no dynamic interpreter",
+    "compiler": "Zig 0.13.0"
+  },
+  "not_demonstrated": [
+    "launch on physical head unit",
+    "accepted modified firmware update",
+    "Google Maps execution",
+    "camera activation"
+  ]
+}
