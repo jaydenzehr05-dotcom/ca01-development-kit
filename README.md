@@ -129,3 +129,12 @@ No physical-radio execution, update-signature acceptance, recovery procedure,
 Google Maps installation or camera-control change has been demonstrated by this
 kit. The probe's successful emulation establishes its behavior under the mocked
 Linux interface, not those capabilities.
+
+## Original source archive downloads
+
+Both original uploads are available unchanged as [GitHub release assets](https://github.com/jaydenzehr05-dotcom/ca01-development-kit/releases/tag/original-source-archives):
+
+- [20130619_LE2355.tgz](https://github.com/jaydenzehr05-dotcom/ca01-development-kit/releases/download/original-source-archives/20130619_LE2355.tgz) — 92,427,701 bytes.
+- [OSS_SOFT_PACK.tgz](https://github.com/jaydenzehr05-dotcom/ca01-development-kit/releases/download/original-source-archives/OSS_SOFT_PACK.tgz) — 231,704,880 bytes.
+
+SHA-256 fingerprints are recorded in the release notes and `evidence/source-audit.json`.
