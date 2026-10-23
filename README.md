@@ -226,3 +226,48 @@ The isolated updater investigation recovered59 complete local files, including t
 - `evidence/ca01-tool-installation.json`: verified local DiE3.21 installation and limitations.
 
 The tools do not flash, execute recovered programs, bypass signatures, or claim a complete offline updater decoder. Detailed limitations and reproduction commands are in the reports.
+
+
+## Experimental ARM HMI display compatibility adapter
+
+We have a **synthetic, isolated ARMEL** display and IPC compatibility model,
+not a working original Toyota GUI. It reproduces the observed triple-buffer
+window descriptor, renders through Mesa's off-screen EGL/GLES1 software path,
+and tests queue `0x28` message identifiers without launching vendor firmware.
+
+- [Ghidra-derived factory HMI startup and graphics call graph](docs/CA01_HMI_GHIDRA_FINDINGS.md)
+- [Synthetic window/framebuffer/IPC adapter and verified ARM test](docs/CA01_GUI_ADAPTER_PROTOTYPE.md)
+
+To reproduce the ARM sandbox diagnostic, run
+`tools/build_ca01_gui_adapter.sh` followed by
+`tools/run_ca01_gui_adapter.sh`. Outputs and the temporary ARMEL system
+remain under `../system-audit/`, not in the source repository.
+
+
+## Verified startup, IPC and display-ABI research
+
+The local startup harness and GUI adapter now share a 16-byte ARM32 message
+contract and a native pthread HMI queue with 64 slots. The bounded original-code
+startup tracer stops at the unresolved `fopen("ipasz.conf", "r")` boundary;
+it does not supply dummy services or claim the original HMI starts.
+
+- [Startup configuration, inherited parent eventfds, task activation and readiness](docs/CA01_HMI_STARTUP_IPC.md)
+- [Original window/frame instructions, callback mapping and GUI asset inventory](docs/CA01_DISPLAY_ABI_AND_ASSET_FINDINGS.md)
+- `tools/ca01_startup_trace.py`: hash-gated, bounded original ARM startup slices.
+- `tools/ca01_hmi_startup.py`: static configuration inspector and explicitly synthetic startup replay using the shared C queue.
+- `tools/display_audit/`: consolidated original-instruction probes, synthetic callback bridge, negative control and asset checks.
+
+Run the full repository suite with:
+
+```sh
+.venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+With the documented local recovery files, ARMEL rootfs and cross-compiler
+available, `bash tools/run_ca01_display_audit.sh` copies the audit sources to a
+new directory under `../system-audit/` and verifies both screen sizes, original
+frame-call mapping, negative callback cases and resource hashes. It creates no
+vendor-library replacement. The callback bridge is a trusted test-window model,
+not an authentic Fujitsu Ten driver or a production thread-safe implementation.
+The original Toyota GUI has not rendered; proprietary display libraries,
+configuration, parent services and graphical resources remain unresolved.

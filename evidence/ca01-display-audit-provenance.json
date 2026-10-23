@@ -1,0 +1,62 @@
+{
+  "source_directory": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023",
+  "sources": {
+    "probe_original_window.py": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023/probe_original_window.py",
+      "original_sha256": "d611eee77e3c2b33e9f35a2a5b26a3cfdd8fe0e0f42c821092585de05d37785f",
+      "integrated_sha256": "d611eee77e3c2b33e9f35a2a5b26a3cfdd8fe0e0f42c821092585de05d37785f"
+    },
+    "probe_original_frame_path.py": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023/probe_original_frame_path.py",
+      "original_sha256": "20da3b106eb07fdf7741aa14caa25cd5687ab0b40923e79a92c7e83725316e4e",
+      "integrated_sha256": "20da3b106eb07fdf7741aa14caa25cd5687ab0b40923e79a92c7e83725316e4e"
+    },
+    "egl_window_to_pbuffer_bridge_v2.c": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023/egl_window_to_pbuffer_bridge_v2.c",
+      "original_sha256": "1dc1fbac4b6955c3f04be7c5ba511a2f76689e6c2a7b6f750293b688d8b7735e",
+      "integrated_sha256": "1dc1fbac4b6955c3f04be7c5ba511a2f76689e6c2a7b6f750293b688d8b7735e"
+    },
+    "armel_callback_probe.c": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023/armel_callback_probe.c",
+      "original_sha256": "901aac64ac3f464308d81bfbd5e3821c3b78b987e740e2ef57abb02d17c00523",
+      "integrated_sha256": "901aac64ac3f464308d81bfbd5e3821c3b78b987e740e2ef57abb02d17c00523"
+    },
+    "audit_gui_assets.py": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023/audit_gui_assets.py",
+      "original_sha256": "ad17a318ecafc9464b077cd513cf907b85ca179dec39fdcf9a3ff9fb9c9526cc",
+      "integrated_sha256": "ad17a318ecafc9464b077cd513cf907b85ca179dec39fdcf9a3ff9fb9c9526cc"
+    },
+    "validate_embedded_asset_signatures.py": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023/validate_embedded_asset_signatures.py",
+      "original_sha256": "5213d7e0d665f598409ed53bc0e214b89080a0e9c20d8cc6aeb4e6e9288d6e07",
+      "integrated_sha256": "5213d7e0d665f598409ed53bc0e214b89080a0e9c20d8cc6aeb4e6e9288d6e07"
+    },
+    "run_all_audit.sh": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023/run_all_audit.sh",
+      "original_sha256": "e0f7dd06b7197d721a0f1cbaf7e289f80ba974c1a6d4340f5e4bee3bb4908bcf",
+      "integrated_sha256": "86d3f579d1a40a1763319ad17fff661b2da92b9a681b997be8bd000c0753338c"
+    },
+    "run_callback_checks.sh": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-display-abi-20261023/run_callback_checks.sh",
+      "original_sha256": "8badb5fd69abbedff2416a9398ee0bb1a61ffa9f235147903072d9426a39804f",
+      "integrated_sha256": "90f106e870d3477675bb7b946dbeb511f8157465a347dce376b21c7df6f1faea"
+    },
+    "egl_window_to_pbuffer_bridge.c": {
+      "local_source": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-egl-bridge-20261023/egl_window_to_pbuffer_bridge.c",
+      "original_sha256": "fccb9cfba96c22eaeefc73eddf31927fa9bc901d77f482c45cf9f74b8fb1b0e7",
+      "purpose": "Earlier no-callback bridge retained only as negative control",
+      "integrated_sha256": "fccb9cfba96c22eaeefc73eddf31927fa9bc901d77f482c45cf9f74b8fb1b0e7"
+    }
+  },
+  "integration_changes": [
+    "Reproduction runs copy sources to a new external output directory",
+    "ARM callback runner uses offline Bubblewrap sandbox",
+    "Prior bridge rebuilt from source for negative control",
+    "Pixel parity compares freshly generated direct pbuffer controls rather than old local PPM files"
+  ],
+  "limits": [
+    "Callback is synthetic, not recovered Fujitsu Ten implementation",
+    "Unknown callback handles and absent resources remain blockers",
+    "No complete original Toyota GUI or vendor driver execution"
+  ]
+}

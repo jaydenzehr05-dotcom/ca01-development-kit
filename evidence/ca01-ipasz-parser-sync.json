@@ -1,0 +1,401 @@
+{
+  "binary": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysc.so",
+  "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+  "method": "Static original ARM ELF Ghidra12.1.4; literal-address translation against ELF PT_LOAD; dynamic relocation confirmation; no vendor process executed",
+  "image_base": "0x10000",
+  "strings": {
+    "token_delimiters": {
+      "ghidra_address": "0x3687c",
+      "elf_address": "0x2687c",
+      "file_offset": 157820,
+      "value": " ,\n\r"
+    },
+    "config_filename": {
+      "ghidra_address": "0x368a8",
+      "elf_address": "0x268a8",
+      "file_offset": 157864,
+      "value": "ipasz.conf"
+    },
+    "fopen_mode": {
+      "ghidra_address": "0x368b4",
+      "elf_address": "0x268b4",
+      "file_offset": 157876,
+      "value": "r"
+    },
+    "config_error": {
+      "ghidra_address": "0x36884",
+      "elf_address": "0x26884",
+      "file_offset": 157828,
+      "value": "failed to read ipasz config file"
+    },
+    "ordinary_system_shared_memory": {
+      "ghidra_address": "0x37300",
+      "elf_address": "0x27300",
+      "file_offset": 160512,
+      "value": "/SHM_SYS_COM"
+    }
+  },
+  "parser": {
+    "section_prefixes": {
+      "[PR": 0,
+      "[I": 1,
+      "[PS": 2,
+      "[S": 3
+    },
+    "section_limit": "Only shown character prefixes tested; closing bracket/full section spelling not validated; other lines keep prior mode. Initial mode255. Repeated same-mode header is not a section transition.",
+    "line_read": "fgets(buffer,128,file): max127 bytes; skip only first-byte #,NUL,LF; leading whitespace is not trimmed before section/count detection",
+    "count": "After mode transition, seek line beginning n; atoi(line+4)&255;255 means keep seeking, any other value invokes fixed Ready allocation; value not used as allocation size or validated rowcount",
+    "token_delimiters": "space comma LF CR; not tab or equals",
+    "record_limit": "At most100 strtok tokens per loader call; fixed offsets read without keyword length validation. Unrecognized first character returns1. Each completed record increments uint8 sequential counter; parsed IDs do not choose array index.",
+    "allocations": {
+      "PRC": {
+        "bytes": 2048,
+        "record_bytes": 64,
+        "capacity": 32
+      },
+      "IPC": {
+        "bytes": 1280,
+        "record_bytes": 40,
+        "capacity": 32
+      },
+      "PSM": {
+        "bytes": 2048,
+        "record_bytes": 32,
+        "capacity": 64
+      },
+      "SHM": {
+        "bytes": 768,
+        "record_bytes": 12,
+        "capacity": 64
+      }
+    },
+    "bounds": "No record-count capacity check in these loaders; strcpy names unbounded, intended available24bytes before following field/end; do not feed arbitrary long/malformed input",
+    "fields": {
+      "PRC": [
+        {
+          "token_test": "first=u",
+          "record_offset": "0x0",
+          "operation": "bool(token[4]=='t')"
+        },
+        {
+          "token_test": "first=p and token[2]=c",
+          "record_offset": "0x4",
+          "operation": "atoi(token+6); other p token ignored"
+        },
+        {
+          "token_test": "first=s and token[1]=y",
+          "record_offset": "0x8",
+          "operation": "bool(token[5]=='t')"
+        },
+        {
+          "token_test": "first=n",
+          "record_offset": "0xc",
+          "operation": "strcpy(token+5)"
+        },
+        {
+          "token_test": "first=i",
+          "record_offset": "0x24",
+          "operation": "atoi(token+6)"
+        },
+        {
+          "token_test": "first=a",
+          "record_offset": "0x28",
+          "operation": "atoi(token+4)"
+        },
+        {
+          "token_test": "first=m and token[1]=n",
+          "record_offset": "0x2c",
+          "operation": "bool(token[5]=='t')"
+        },
+        {
+          "token_test": "first=d",
+          "record_offset": "0x30",
+          "operation": "atoi(token+6)"
+        },
+        {
+          "token_test": "first=m and token[1]!=n",
+          "record_offset": "0x34",
+          "operation": "bool(token[7]=='t')"
+        },
+        {
+          "token_test": "first=c",
+          "record_offset": "0x38",
+          "operation": "atoi(token+7)"
+        },
+        {
+          "token_test": "first=s and token[1]!=y",
+          "record_offset": "0x3c",
+          "operation": "atoi(token+4)"
+        }
+      ],
+      "IPC": [
+        {
+          "token_test": "first=u",
+          "record_offset": "0x0",
+          "operation": "bool(token[4]=='t')"
+        },
+        {
+          "token_test": "first=i",
+          "record_offset": "0x4",
+          "operation": "atoi(token+6)"
+        },
+        {
+          "token_test": "first=n",
+          "record_offset": "0x8",
+          "operation": "strcpy(token+5)"
+        },
+        {
+          "token_test": "first=c",
+          "record_offset": "0x20",
+          "operation": "atoi(token+4)"
+        },
+        {
+          "token_test": "first=s",
+          "record_offset": "0x24",
+          "operation": "atoi(token+5)"
+        }
+      ],
+      "PSM": [
+        {
+          "token_test": "first=u",
+          "record_offset": "0x0",
+          "operation": "bool(token[4]=='t')"
+        },
+        {
+          "token_test": "first=p",
+          "record_offset": "0x4",
+          "operation": "atoi(token+6)"
+        },
+        {
+          "token_test": "first=n",
+          "record_offset": "0x8",
+          "operation": "strcpy(token+5)"
+        }
+      ],
+      "SHM": [
+        {
+          "token_test": "first=u",
+          "record_offset": "0x0",
+          "operation": "bool(token[4]=='t')"
+        },
+        {
+          "token_test": "first=s and token[1]=h",
+          "record_offset": "0x4",
+          "operation": "atoi(token+6)"
+        },
+        {
+          "token_test": "first=s and token[1]=i",
+          "record_offset": "0x8",
+          "operation": "atoi(token+5)"
+        },
+        {
+          "token_test": "first=n or first=s with second char other",
+          "operation": "ignored"
+        }
+      ]
+    },
+    "shm_total": "enabled SHM rows add parsed size to bf_sys_ShmSize; fs_cnf_Load rounds total via (total & 0xfffff000)+0x1000, always adds a page at exact alignment",
+    "missing_or_invalid_config": "fc_cnf_ErrEnd emits diagnostic then exit(1); no fabricated fallback config",
+    "unknown": "Full canonical keyword spellings and actual row values not recovered from parser; field dispatch offsets are exact but suggested names are not source evidence"
+  },
+  "parent_sync": {
+    "process_table": "*tb_sys_PrcInf, GOT ELF0x318bc confirmed R_ARM_GLOB_DAT; NOT bf_sys_CnfSetup",
+    "shared_descriptor_block": "fs_prc_Init calls fs_zsy_GetComAdr(0,out,0x280), sets ownPID at block+4*id and processIDglobal",
+    "eventfds": {
+      "P": {
+        "offset": "0x80+4*id",
+        "constructor": "eventfd(0,0)",
+        "getter_elf": "0x24f88"
+      },
+      "C": {
+        "offset": "0x100+4*id",
+        "constructor": "eventfd(0,0)",
+        "getter_elf": "0x24ed0"
+      },
+      "R": {
+        "offset": "0x180+4*id",
+        "constructor": "eventfd(0,0x800)",
+        "getter_elf": "0x24e18",
+        "semantics": "nonblocking restart-check eventfd"
+      }
+    },
+    "constructor_elf": "0x25770",
+    "getters": "copy4byteFD only when >0; reject id>31, no explicit negative guard; error ForceStnby. No GetSynInfW export.",
+    "expected_token": "signed32bit PRC record1 offset4 at table+0x44 signextended to64bits",
+    "restart_check": "fc_sys_AccStart ELF0xad50 reads8 once from R; match selects systemstate+0x24=2, otherwise1; R EFD_NONBLOCK means absent token normally EAGAIN not blocking",
+    "startup_barrier": "fc_sys_SysSynWait ELF0xbb44 and fc_sys_SycSynWait ELF0x216b4: write own processID signextended64 to P; read8 repeatedly from C until expected_token; eventfd returns accumulated counter, not pipe packet",
+    "barrier_gate": "SysSynInit ELF0xbbdc requires current PRC row offset8==1 and systemstate+0x24!=2 to wait; SycSynInit0x2174c same gate",
+    "inheritance": "rq_prc_Start forks then execv configured process name with decimal id argv; eventfds created without CLOEXEC. Shared FD integers alone cannot recreate eventfd kernel objects.",
+    "token_provenance_limit": "Actual PRC record1 field4 and perprocess sync flag depend on missing ipasz.conf; do not hardcode assumed1."
+  },
+  "posix_ipc": {
+    "only_mq_open_caller_in_sysc": "rq_ipc_Create ELF0x24cb0 opens configured name O_RDWR, not O_CREAT",
+    "name_source": "IPC record string at+8, parsed via token first=n strcpy(token+5); IDs+4 capacity+32 size+36",
+    "creator_limit": "No mq_open O_CREAT caller found in this sysc function-call survey; external parent creation not established by this binary alone"
+  },
+  "limits": [
+    "No complete original ipasz.conf found in this focused trace",
+    "No software parent-service startup or full HMI execution",
+    "No frame/display result",
+    "Canonical configuration values, parent creator source and actual hardware remain unverified"
+  ],
+  "function_addresses": {
+    "fc_sys_SycSynWait": {
+      "elf_address": "0x216b4",
+      "ghidra_address": "0x316b4"
+    },
+    "fc_cnf_ChkModeChange": {
+      "elf_address": "0xbf10",
+      "ghidra_address": "0x1bf10"
+    },
+    "rq_prc_GetSynInfR": {
+      "elf_address": "0x24e18",
+      "ghidra_address": "0x34e18"
+    },
+    "fc_cnf_Init": {
+      "elf_address": "0xc89c",
+      "ghidra_address": "0x1c89c"
+    },
+    "fs_cnf_Load": {
+      "elf_address": "0xc950",
+      "ghidra_address": "0x1c950"
+    },
+    "rq_prc_GetSynInfC": {
+      "elf_address": "0x24ed0",
+      "ghidra_address": "0x34ed0"
+    },
+    "rq_prc_NtyPrcHbt": {
+      "elf_address": "0x25170",
+      "ghidra_address": "0x35170"
+    },
+    "rq_prc_GetPrcid": {
+      "elf_address": "0x25040",
+      "ghidra_address": "0x35040"
+    },
+    "fc_cnf_GetInfCnt": {
+      "elf_address": "0xc150",
+      "ghidra_address": "0x1c150"
+    },
+    "fc_cnf_Main": {
+      "elf_address": "0xc758",
+      "ghidra_address": "0x1c758"
+    },
+    "fs_prc_Init": {
+      "elf_address": "0x24d78",
+      "ghidra_address": "0x34d78"
+    },
+    "rq_prc_GetSynInfP": {
+      "elf_address": "0x24f88",
+      "ghidra_address": "0x34f88"
+    },
+    "fc_sys_IndPrcSyn": {
+      "elf_address": "0x179d4",
+      "ghidra_address": "0x279d4"
+    },
+    "fc_sys_InitComAdr": {
+      "elf_address": "0x171b0",
+      "ghidra_address": "0x271b0"
+    },
+    "fc_cnf_ErrEnd": {
+      "elf_address": "0xc730",
+      "ghidra_address": "0x1c730"
+    },
+    "fc_sys_SysSynWait": {
+      "elf_address": "0xbb44",
+      "ghidra_address": "0x1bb44"
+    },
+    "fc_sys_SysSynInit": {
+      "elf_address": "0xbbdc",
+      "ghidra_address": "0x1bbdc"
+    },
+    "fc_sys_AccStart": {
+      "elf_address": "0xad50",
+      "ghidra_address": "0x1ad50"
+    },
+    "fc_cnf_LoadTypShm": {
+      "elf_address": "0xbf84",
+      "ghidra_address": "0x1bf84"
+    },
+    "fc_cnf_LoadTypPsm": {
+      "elf_address": "0xc174",
+      "ghidra_address": "0x1c174"
+    },
+    "fc_cnf_LoadTypIpc": {
+      "elf_address": "0xc2b0",
+      "ghidra_address": "0x1c2b0"
+    },
+    "fc_cnf_LoadTypPrc": {
+      "elf_address": "0xc3e8",
+      "ghidra_address": "0x1c3e8"
+    },
+    "fc_cnf_ReadyTypShm": {
+      "elf_address": "0xc5c0",
+      "ghidra_address": "0x1c5c0"
+    },
+    "fc_cnf_ReadyTypPsm": {
+      "elf_address": "0xc61c",
+      "ghidra_address": "0x1c61c"
+    },
+    "fc_cnf_ReadyTypIpc": {
+      "elf_address": "0xc678",
+      "ghidra_address": "0x1c678"
+    },
+    "fc_cnf_ReadyTypPrc": {
+      "elf_address": "0xc6d4",
+      "ghidra_address": "0x1c6d4"
+    },
+    "fc_cnf_Exit": {
+      "elf_address": "0xc87c",
+      "ghidra_address": "0x1c87c"
+    },
+    "fc_sys_SycSynInit": {
+      "elf_address": "0x2174c",
+      "ghidra_address": "0x3174c"
+    },
+    "rq_prc_Delete": {
+      "elf_address": "0x24d70",
+      "ghidra_address": "0x34d70"
+    },
+    "rq_prc_SnapShot": {
+      "elf_address": "0x24d74",
+      "ghidra_address": "0x34d74"
+    },
+    "rq_prc_NtyPrcCtl": {
+      "elf_address": "0x24dc8",
+      "ghidra_address": "0x34dc8"
+    },
+    "rq_prc_SetHbtTout": {
+      "elf_address": "0x250e4",
+      "ghidra_address": "0x350e4"
+    },
+    "rq_prc_NtyPrcSts": {
+      "elf_address": "0x251c4",
+      "ghidra_address": "0x351c4"
+    },
+    "rq_prc_Check": {
+      "elf_address": "0x25250",
+      "ghidra_address": "0x35250"
+    },
+    "rq_prc_Stop": {
+      "elf_address": "0x252a0",
+      "ghidra_address": "0x352a0"
+    },
+    "rq_prc_Start": {
+      "elf_address": "0x25450",
+      "ghidra_address": "0x35450"
+    },
+    "rq_prc_Create": {
+      "elf_address": "0x25770",
+      "ghidra_address": "0x35770"
+    },
+    "mq_open": {
+      "elf_address": "0x9fac",
+      "ghidra_address": "0x19fac"
+    },
+    "rq_ipc_Create": {
+      "elf_address": "0x24cb0",
+      "ghidra_address": "0x34cb0"
+    }
+  },
+  "raw_evidence": "/home/starlight/projects/rav4-radio/system-audit/ca01-startup-integration-20261023/parser-sync/parser-sync-contracts.json"
+}

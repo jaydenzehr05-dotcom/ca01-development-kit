@@ -1,0 +1,1212 @@
+{
+  "scope": "Verified original ARM startup slices halt at unresolved services; unified ARM32 native pthread queue and explicitly synthetic startup event model. No original application startup completion or Toyota rendering.",
+  "configuration": {
+    "scope": "Read-only verified1127 configuration; no startup execution",
+    "hmi_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+    "system_library_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+    "registry_address": "0x59f948",
+    "registry": {
+      "bf_sys_CnfSetup": "0x59c4e8",
+      "bf_sys_PowInf": "0x59c52c",
+      "bf_sys_PreInf": "0x59c5ac",
+      "bf_sys_AplInf": "0x59c5ec",
+      "bf_sys_ResInf": "0x59c64c",
+      "bf_sys_StbInf": "0x59c66c",
+      "bf_sys_TskInf": "0x59c6ac",
+      "bf_sys_RodInf": "0x59d8ac",
+      "bf_sys_MsgInf": "0x59d8bc",
+      "bf_sys_FlgInf": "0x59debc",
+      "bf_sys_SemInf": "0x59dfbc",
+      "bf_sys_MemInf": "0x59e3bc",
+      "bf_sys_TimInf": "0x59e43c",
+      "bf_sys_AbkInf": "0x59e5a4",
+      "bf_sys_BkmInf": "0x59f044",
+      "bf_sys_DrcInf": "0x59ed84",
+      "bf_sys_LogInf": "0x59ef84",
+      "bf_sys_MmdInf": "0x59f848"
+    },
+    "task_record_bytes": 48,
+    "task_count": 96,
+    "tasks": [
+      {
+        "index": 1,
+        "enabled": true,
+        "raw_words": [
+          1,
+          3,
+          54752,
+          1,
+          0,
+          0,
+          30000,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entry": "0xd5e0",
+        "entry_label": "tsk_sys_System",
+        "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+      },
+      {
+        "index": 3,
+        "enabled": true,
+        "raw_words": [
+          1,
+          8,
+          53156,
+          1,
+          0,
+          0,
+          30000,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entry": "0xcfa4",
+        "entry_label": "tsk_ipc_MsqRcv",
+        "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+      },
+      {
+        "index": 10,
+        "enabled": true,
+        "raw_words": [
+          1,
+          3,
+          52616,
+          0,
+          0,
+          0,
+          30000,
+          10,
+          10,
+          0,
+          0,
+          0
+        ],
+        "entry": "0xcd88",
+        "entry_label": "tsk_grp_DspCtl",
+        "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+      },
+      {
+        "index": 39,
+        "enabled": true,
+        "raw_words": [
+          1,
+          3,
+          177592,
+          8,
+          0,
+          0,
+          30000,
+          39,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entry": "0x2b5b8",
+        "entry_label": "FUN_0002b5b8",
+        "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+      },
+      {
+        "index": 40,
+        "enabled": true,
+        "raw_words": [
+          1,
+          5,
+          176684,
+          0,
+          0,
+          0,
+          30000,
+          40,
+          40,
+          0,
+          0,
+          0
+        ],
+        "entry": "0x2b22c",
+        "entry_label": "FUN_0002b22c",
+        "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+      },
+      {
+        "index": 41,
+        "enabled": true,
+        "raw_words": [
+          1,
+          5,
+          63124,
+          19,
+          0,
+          0,
+          30000,
+          41,
+          41,
+          0,
+          0,
+          0
+        ],
+        "entry": "0xf694",
+        "entry_label": "FUN_0000f694",
+        "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+      },
+      {
+        "index": 95,
+        "enabled": false,
+        "raw_words": [
+          0,
+          8,
+          1196020,
+          0,
+          0,
+          0,
+          300000,
+          95,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entry": "0x123ff4",
+        "entry_label": "FUN_00123ff4",
+        "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+      }
+    ],
+    "queue_record_bytes": 16,
+    "queue_count": 96,
+    "queues": [
+      {
+        "index": 1,
+        "queue_id": 1,
+        "capacity": 64,
+        "slot_bytes": 16
+      },
+      {
+        "index": 10,
+        "queue_id": 10,
+        "capacity": 16,
+        "slot_bytes": 16
+      },
+      {
+        "index": 40,
+        "queue_id": 40,
+        "capacity": 64,
+        "slot_bytes": 16
+      },
+      {
+        "index": 41,
+        "queue_id": 41,
+        "capacity": 16,
+        "slot_bytes": 16
+      }
+    ],
+    "startup_requirements": {
+      "relative_configuration_file": "ipasz.conf",
+      "parent_synchronization_required": true,
+      "display_ready_gate": {
+        "task": 39,
+        "flag_id": 2,
+        "argument": 1
+      },
+      "draw_loop": {
+        "task": 40,
+        "entry": "0x2b22c",
+        "queue": 40,
+        "initial_timeout_ms": 500,
+        "max_batch": 16
+      }
+    },
+    "synthetic_replay": {
+      "before_ready": "Drawing task0x28 waits for display-ready flag2/1",
+      "after_ready": {
+        "dispatched": 1,
+        "timeout_heartbeat": true,
+        "remaining": 0,
+        "synthetic_harness": true,
+        "toyota_application_started": false,
+        "pixels_rendered": false
+      },
+      "events": [
+        {
+          "callback": "heartbeat",
+          "words": [
+            0,
+            0,
+            10,
+            0
+          ]
+        }
+      ],
+      "caveat": "Ready flag supplied by self-authored harness, not original startup. No graphics callback or Toyota screen executed."
+    }
+  },
+  "ipc": {
+    "binary": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysc.so",
+    "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+    "method": "Fresh static Ghidra ELF import and ARM register/branch confirmation; no vendor executable run",
+    "image_base": "0x10000",
+    "address_rule": "Ghidra addresses subtract 0x10000 for ELF relative addresses",
+    "local_queue": {
+      "implementation": "process-local malloc ring protected by pthread mutex and condition variable, distinct from POSIX IPC queues",
+      "descriptor_bytes": 136,
+      "descriptor_offsets": {
+        "0x0": "state 0 free,1 active,2 delete reserved",
+        "0x8": "slot size",
+        "0xc": "capacity",
+        "0x10": "queued count",
+        "0x14": "read index",
+        "0x18": "write index",
+        "0x1c": "malloc buffer pointer",
+        "0x20": "high water warning active",
+        "0x24": "high threshold trunc(capacity*0.8f)",
+        "0x28": "low threshold trunc(capacity*0.2f)",
+        "0x2c": "pthread mutex",
+        "0x48": "pthread condition",
+        "0x78": "ReceiveTO interval",
+        "0x7c": "ReceiveTO accumulated elapsed",
+        "0x80": "ReceiveTO last millisecond tick",
+        "0x84": "ReceiveTO generated event word2"
+      },
+      "create": "rq_msg_Create(id,capacity,slot_size); id=-1 selects free slot; malloc(capacity*slot_size); return chosen ID on ordinary success",
+      "queue40_mapping": "Parent independent CnfEntry probe establishes configured id40 capacity64 slot_size16; task40 entry PROC_HMI0x2b22c. This subtask confirms queue ABI, does not independently rerun registry probe."
+    },
+    "receive_contracts": {
+      "rq_msg_ReceiveP": {
+        "success": -1,
+        "empty_or_error": -2,
+        "empty_buffer_effect": "unchanged",
+        "invalid_queue_effect": "ErrorTrace, ForceStnby, zero message word3 only",
+        "success_effect": "copy full configured slot, pop FIFO, wrap read index, signal condition if previously full"
+      },
+      "rq_msg_ReceiveT": {
+        "success": 0,
+        "timeout_or_error": -1,
+        "timeout_unit": "milliseconds",
+        "clock": "clock_gettime(0=CLOCK_REALTIME)",
+        "timeout_buffer_effect": "unchanged on ETIMEDOUT110",
+        "invalid_queue_effect": "ErrorTrace, ForceStnby, zero message word3 only",
+        "wait": "pthread_cond_timedwait; retry EINTR4 with same deadline; successful wake checks queue and recomputes full timeout if still empty"
+      },
+      "rq_msg_Receive": {
+        "return_contract": "void-like, no explicit success status",
+        "wait": "blocks on condition until queue nonempty",
+        "error": "force standby and clear word3"
+      }
+    },
+    "send_contracts": {
+      "rq_msg_Send": "void-like; copies requested byte count into one slot; 5 second full-queue wait budget; ordinary success leaves payload owned by queued receiver; fatal paths release payload",
+      "rq_msg_SendT": "return0 success; -1 full queue with timeout<=0 or ETIMEDOUT; normal timeout does not release payload; fatal invalid/resource paths release payload; delete-reserved state releases incoming and queued payloads then deletes queue, returns0",
+      "bounds": "No explicit requested-size <= configured-slot validation found in inspected Send paths; harness should only use valid configured16byte envelopes"
+    },
+    "message16": {
+      "word0": "message family/class; HMI dispatcher0x2b170 distinguishes0 and0x41002",
+      "word1": "family-specific selector; HMI0x2b054 switches this for class0x41002",
+      "word2": "family-specific scalar/event; HMI timed fallback sets10 for class0",
+      "word3": "optional pool1 payload pointer; separate allocation, shallow pointer copied by local queue"
+    },
+    "ownership": {
+      "fc_msg_RelMem": "if message[3] nonzero, rq_mem_Free(1,message[3]); ARM explicitly sets r1 from offset12, even though Ghidra omits argument",
+      "fc_msg_Clear": "drain queue and free nonzero word3 pointers; zero those pointers",
+      "fc_msg_ClrMem": "only stores0 at message+12, does not zero full envelope or free memory",
+      "receiver": "PROC_HMI0x2b170 frees nonzero word3 after dispatch; not freed by successful dequeue"
+    },
+    "ipc": {
+      "create": "rq_ipc_Create(id,name,arg2,arg3) calls mq_open(name,2=O_RDWR), not O_CREAT; stores descriptor by ID. IDs tested signed<32; descriptor must be>0 for send/receive (although create accepts0). Do not emulate negative IDs as valid.",
+      "receive": "mq_getattr provides actual mq_msgsize, pool2 temporary buffer, blocking mq_receive retry EINTR4; copies40byte descriptor; for positive length at+16 allocate pool1 and copy payload from wire+36; overwrite descriptor+36 with pointer; free pool2; return0 or-1",
+      "send": "payload length<=0x110; copies first40byte descriptor then replaces offset36 onwards with payload; mq_timedsend wire_bytes=length+40, priority1, realtime deadline+500ms; retries EINTR4; timeout logs without forcing standby, other errors force standby",
+      "wire_note": "payload begins36 but total bytes=40+length; 4-byte tail observed, semantics not inferred; preserve exact sizes rather than assume conventional packed header",
+      "bridge": "fc_ipc_RcvMsg descriptor+4,+8,+12 -> local message words0..2; payloadptr from+36 iff descriptor length+16>0; destination local queue descriptor+20; SendT(queue,16-byte envelope,16,500)"
+    },
+    "limits": [
+      "POSIX queue creator/attributes and external producers outside this focused trace",
+      "No first screen/frame/display result",
+      "No complete startup or vendor application execution",
+      "Routine/error behavior observed statically; fatal paths may not return in real system"
+    ]
+  },
+  "function_addresses": {
+    "fc_ipc_RcvRetCall": {
+      "elf_address": "0xa958",
+      "ghidra_address": "0x0001a958"
+    },
+    "fc_ipc_RcvMsg": {
+      "elf_address": "0xa9a8",
+      "ghidra_address": "0x0001a9a8"
+    },
+    "fc_ipc_RcvCbRet": {
+      "elf_address": "0xaa34",
+      "ghidra_address": "0x0001aa34"
+    },
+    "fc_ipc_RcvCall": {
+      "elf_address": "0xaabc",
+      "ghidra_address": "0x0001aabc"
+    },
+    "fc_ipc_MsqInit": {
+      "elf_address": "0xabb4",
+      "ghidra_address": "0x0001abb4"
+    },
+    "fc_msg_GetFree": {
+      "elf_address": "0x1bc00",
+      "ghidra_address": "0x0002bc00"
+    },
+    "fc_msg_ClrMem": {
+      "elf_address": "0x1bca4",
+      "ghidra_address": "0x0002bca4"
+    },
+    "fc_msg_Clear": {
+      "elf_address": "0x1bcb0",
+      "ghidra_address": "0x0002bcb0"
+    },
+    "fc_msg_RelMem": {
+      "elf_address": "0x1bd34",
+      "ghidra_address": "0x0002bd34"
+    },
+    "fs_msg_Init": {
+      "elf_address": "0x1bd48",
+      "ghidra_address": "0x0002bd48"
+    },
+    "rq_msg_DelRsrv": {
+      "elf_address": "0x1bde8",
+      "ghidra_address": "0x0002bde8"
+    },
+    "rq_msg_ReceiveTS": {
+      "elf_address": "0x1be84",
+      "ghidra_address": "0x0002be84"
+    },
+    "rq_msg_ReceiveP": {
+      "elf_address": "0x1bf48",
+      "ghidra_address": "0x0002bf48"
+    },
+    "rq_msg_ReceiveT": {
+      "elf_address": "0x1c0f0",
+      "ghidra_address": "0x0002c0f0"
+    },
+    "rq_msg_Receive": {
+      "elf_address": "0x1c3e0",
+      "ghidra_address": "0x0002c3e0"
+    },
+    "rq_msg_ReceiveTO": {
+      "elf_address": "0x1c5a8",
+      "ghidra_address": "0x0002c5a8"
+    },
+    "rq_msg_Delete": {
+      "elf_address": "0x1c744",
+      "ghidra_address": "0x0002c744"
+    },
+    "rq_msg_SendT": {
+      "elf_address": "0x1c870",
+      "ghidra_address": "0x0002c870"
+    },
+    "rq_msg_SendE": {
+      "elf_address": "0x1ccbc",
+      "ghidra_address": "0x0002ccbc"
+    },
+    "rq_msg_SendI": {
+      "elf_address": "0x1ccc0",
+      "ghidra_address": "0x0002ccc0"
+    },
+    "rq_msg_Send": {
+      "elf_address": "0x1cd0c",
+      "ghidra_address": "0x0002cd0c"
+    },
+    "rq_msg_Create": {
+      "elf_address": "0x1d11c",
+      "ghidra_address": "0x0002d11c"
+    },
+    "fs_ipc_Init": {
+      "elf_address": "0x243cc",
+      "ghidra_address": "0x000343cc"
+    },
+    "rq_ipc_Receive": {
+      "elf_address": "0x243f0",
+      "ghidra_address": "0x000343f0"
+    },
+    "rq_ipc_Send": {
+      "elf_address": "0x24600",
+      "ghidra_address": "0x00034600"
+    },
+    "rq_ipc_CallbackType3": {
+      "elf_address": "0x247f4",
+      "ghidra_address": "0x000347f4"
+    },
+    "rq_ipc_CallbackType2": {
+      "elf_address": "0x24958",
+      "ghidra_address": "0x00034958"
+    },
+    "rq_ipc_CallbackType1": {
+      "elf_address": "0x24a5c",
+      "ghidra_address": "0x00034a5c"
+    },
+    "rq_ipc_Delete": {
+      "elf_address": "0x24c58",
+      "ghidra_address": "0x00034c58"
+    },
+    "rq_ipc_Create": {
+      "elf_address": "0x24cb0",
+      "ghidra_address": "0x00034cb0"
+    },
+    "rq_prc_Delete": {
+      "elf_address": "0x24d70",
+      "ghidra_address": "0x00034d70"
+    },
+    "rq_prc_SnapShot": {
+      "elf_address": "0x24d74",
+      "ghidra_address": "0x00034d74"
+    },
+    "rq_prc_NtyPrcCtl": {
+      "elf_address": "0x24dc8",
+      "ghidra_address": "0x00034dc8"
+    },
+    "rq_prc_GetSynInfR": {
+      "elf_address": "0x24e18",
+      "ghidra_address": "0x00034e18"
+    },
+    "rq_prc_GetSynInfC": {
+      "elf_address": "0x24ed0",
+      "ghidra_address": "0x00034ed0"
+    },
+    "rq_prc_GetSynInfP": {
+      "elf_address": "0x24f88",
+      "ghidra_address": "0x00034f88"
+    },
+    "rq_prc_GetPrcid": {
+      "elf_address": "0x25040",
+      "ghidra_address": "0x00035040"
+    },
+    "rq_prc_SetHbtTout": {
+      "elf_address": "0x250e4",
+      "ghidra_address": "0x000350e4"
+    },
+    "rq_prc_NtyPrcHbt": {
+      "elf_address": "0x25170",
+      "ghidra_address": "0x00035170"
+    },
+    "rq_prc_NtyPrcSts": {
+      "elf_address": "0x251c4",
+      "ghidra_address": "0x000351c4"
+    },
+    "rq_prc_Check": {
+      "elf_address": "0x25250",
+      "ghidra_address": "0x00035250"
+    },
+    "rq_prc_Stop": {
+      "elf_address": "0x252a0",
+      "ghidra_address": "0x000352a0"
+    },
+    "rq_prc_Start": {
+      "elf_address": "0x25450",
+      "ghidra_address": "0x00035450"
+    },
+    "rq_prc_Create": {
+      "elf_address": "0x25770",
+      "ghidra_address": "0x00035770"
+    },
+    "FUN_00036604": {
+      "elf_address": "0x26604",
+      "ghidra_address": "0x00036604"
+    }
+  },
+  "configuration_registration_probe": {
+    "writes": [
+      {
+        "symbol": "bf_sys_CnfSetup",
+        "address": "0x13a66c",
+        "value": "0x59c4e8"
+      },
+      {
+        "symbol": "bf_sys_PowInf",
+        "address": "0x13a6dc",
+        "value": "0x59c52c"
+      },
+      {
+        "symbol": "bf_sys_PreInf",
+        "address": "0x13a69c",
+        "value": "0x59c5ac"
+      },
+      {
+        "symbol": "bf_sys_AplInf",
+        "address": "0x13a674",
+        "value": "0x59c5ec"
+      },
+      {
+        "symbol": "bf_sys_ResInf",
+        "address": "0x13a6f0",
+        "value": "0x59c64c"
+      },
+      {
+        "symbol": "bf_sys_StbInf",
+        "address": "0x13a664",
+        "value": "0x59c66c"
+      },
+      {
+        "symbol": "bf_sys_TskInf",
+        "address": "0x13a6f4",
+        "value": "0x59c6ac"
+      },
+      {
+        "symbol": "bf_sys_RodInf",
+        "address": "0x13a6ec",
+        "value": "0x59d8ac"
+      },
+      {
+        "symbol": "bf_sys_MsgInf",
+        "address": "0x13a670",
+        "value": "0x59d8bc"
+      },
+      {
+        "symbol": "bf_sys_FlgInf",
+        "address": "0x13a668",
+        "value": "0x59debc"
+      },
+      {
+        "symbol": "bf_sys_MemInf",
+        "address": "0x13a6f8",
+        "value": "0x59e3bc"
+      },
+      {
+        "symbol": "bf_sys_SemInf",
+        "address": "0x13a688",
+        "value": "0x59dfbc"
+      },
+      {
+        "symbol": "bf_sys_TimInf",
+        "address": "0x13a6fc",
+        "value": "0x59e43c"
+      },
+      {
+        "symbol": "bf_sys_AbkInf",
+        "address": "0x13a6cc",
+        "value": "0x59e5a4"
+      },
+      {
+        "symbol": "bf_sys_BkmInf",
+        "address": "0x13a6a0",
+        "value": "0x59f044"
+      },
+      {
+        "symbol": "bf_sys_DrcInf",
+        "address": "0x13a690",
+        "value": "0x59ed84"
+      },
+      {
+        "symbol": "bf_sys_LogInf",
+        "address": "0x13a65c",
+        "value": "0x59ef84"
+      },
+      {
+        "symbol": "bf_sys_MmdInf",
+        "address": "0x13a6e0",
+        "value": "0x59f848"
+      }
+    ],
+    "trace": [
+      "0x1001dde0",
+      "0x1001dde4",
+      "0x1001dde8",
+      "0x1001ddec",
+      "0x1001ddf0",
+      "0x1001ddf4",
+      "0x1001ddf8",
+      "0x1001ddfc",
+      "0x1001de00",
+      "0x1001de04",
+      "0x1001de08",
+      "0x1001de0c",
+      "0x1001de10",
+      "0x1001de14",
+      "0x1001de18",
+      "0x1001de1c",
+      "0x1001de20",
+      "0x1001de24",
+      "0x1001de28",
+      "0x1001de2c",
+      "0x1001de30",
+      "0x1001de34",
+      "0x1001de38",
+      "0x1001de3c",
+      "0x1001de40",
+      "0x1001de44",
+      "0x1001de48",
+      "0x1001de4c",
+      "0x1001de50",
+      "0x1001de54",
+      "0x1001de58",
+      "0x1001de5c",
+      "0x1001de60",
+      "0x1001de64",
+      "0x1001de68",
+      "0x1001de6c",
+      "0x1001de70",
+      "0x1001de74",
+      "0x1001de78",
+      "0x1001de7c",
+      "0x1001de80",
+      "0x1001de84",
+      "0x1001de88",
+      "0x1001de8c",
+      "0x1001de90",
+      "0x1001de94",
+      "0x1001de98",
+      "0x1001de9c",
+      "0x1001dea0",
+      "0x1001dea4",
+      "0x1001dea8",
+      "0x1001deac",
+      "0x1001deb0",
+      "0x1001deb4",
+      "0x1001deb8",
+      "0x1001debc",
+      "0x1001dec0",
+      "0x1001dec4",
+      "0x1001dec8",
+      "0x1001decc",
+      "0x1001ded0",
+      "0x1001ded4",
+      "0x1001ded8",
+      "0x1001dedc",
+      "0x1001dee0",
+      "0x1001dee4",
+      "0x1001dee8",
+      "0x1001deec",
+      "0x1001def0",
+      "0x1001def4",
+      "0x1001def8",
+      "0x1001defc",
+      "0x1001df00",
+      "0x1001df04",
+      "0x1001df08",
+      "0x1001df0c",
+      "0x1001df10",
+      "0x1001df14",
+      "0x1001df18",
+      "0x1001df1c",
+      "0x1001df20",
+      "0x1001df24"
+    ]
+  },
+  "dispatcher_probes": {
+    "scope": "Bounded actual ARM dispatcher only; command/error/free callees mocked; no application startup or rendering.",
+    "hmi_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+    "runs": [
+      {
+        "name": "timeout-heartbeat",
+        "message": [
+          0,
+          0,
+          10,
+          0
+        ],
+        "return_value": 1,
+        "pending_draw_flag": 1,
+        "calls": [],
+        "trace": [
+          "0x2b170",
+          "0x2b174",
+          "0x2b178",
+          "0x2b17c",
+          "0x2b180",
+          "0x2b184",
+          "0x2b188",
+          "0x2a9f8",
+          "0x2a9fc",
+          "0x2aa00",
+          "0x2aa04",
+          "0x2aa08",
+          "0x2aa0c",
+          "0x2aa10",
+          "0x2aa14",
+          "0x2a978",
+          "0x2a97c",
+          "0x2a980",
+          "0x2a984",
+          "0x2a9c0",
+          "0x2a9c4",
+          "0x2a9c8",
+          "0x2a9cc",
+          "0x2a9d0",
+          "0x2b18c",
+          "0x2b190",
+          "0x2b194",
+          "0x2b198",
+          "0x2b19c",
+          "0x2b1a0",
+          "0x2b1a4"
+        ]
+      },
+      {
+        "name": "command",
+        "message": [
+          266242,
+          7,
+          0,
+          0
+        ],
+        "return_value": 0,
+        "pending_draw_flag": 0,
+        "calls": [
+          {
+            "address": "0x2b054",
+            "r0": "0x70000000",
+            "r1": "0x0"
+          }
+        ],
+        "trace": [
+          "0x2b170",
+          "0x2b174",
+          "0x2b178",
+          "0x2b17c",
+          "0x2b180",
+          "0x2b184",
+          "0x2b1a8",
+          "0x2b1ac",
+          "0x2b1b0",
+          "0x2b1b4",
+          "0x2b1e0",
+          "0x2b054",
+          "0x2b1e4",
+          "0x2b1e8",
+          "0x2b190",
+          "0x2b194",
+          "0x2b198",
+          "0x2b19c",
+          "0x2b1a0",
+          "0x2b1a4"
+        ]
+      },
+      {
+        "name": "owned-command",
+        "message": [
+          266242,
+          7,
+          0,
+          305419896
+        ],
+        "return_value": 0,
+        "pending_draw_flag": 0,
+        "calls": [
+          {
+            "address": "0x2b054",
+            "r0": "0x70000000",
+            "r1": "0x0"
+          },
+          {
+            "address": "0xd5a4",
+            "r0": "0x1",
+            "r1": "0x12345678"
+          }
+        ],
+        "trace": [
+          "0x2b170",
+          "0x2b174",
+          "0x2b178",
+          "0x2b17c",
+          "0x2b180",
+          "0x2b184",
+          "0x2b1a8",
+          "0x2b1ac",
+          "0x2b1b0",
+          "0x2b1b4",
+          "0x2b1e0",
+          "0x2b054",
+          "0x2b1e4",
+          "0x2b1e8",
+          "0x2b190",
+          "0x2b194",
+          "0x2b198",
+          "0x2b1ec",
+          "0x2b1f0",
+          "0xd5a4",
+          "0x2b1f4",
+          "0x2b19c",
+          "0x2b1a0",
+          "0x2b1a4"
+        ]
+      },
+      {
+        "name": "unknown-owned",
+        "message": [
+          39321,
+          0,
+          0,
+          1985229328
+        ],
+        "return_value": 0,
+        "pending_draw_flag": 0,
+        "calls": [
+          {
+            "address": "0xd610",
+            "r0": "0x0",
+            "r1": "0x41000"
+          },
+          {
+            "address": "0xd5a4",
+            "r0": "0x1",
+            "r1": "0x76543210"
+          }
+        ],
+        "trace": [
+          "0x2b170",
+          "0x2b174",
+          "0x2b178",
+          "0x2b17c",
+          "0x2b180",
+          "0x2b184",
+          "0x2b1a8",
+          "0x2b1ac",
+          "0x2b1b0",
+          "0x2b1b4",
+          "0x2b1b8",
+          "0x2b1bc",
+          "0x2b1c0",
+          "0x2b1c4",
+          "0x2b1c8",
+          "0x2b1cc",
+          "0x2b1d0",
+          "0x2b1d4",
+          "0x2b1d8",
+          "0xd610",
+          "0x2b1dc",
+          "0x2b190",
+          "0x2b194",
+          "0x2b198",
+          "0x2b1ec",
+          "0x2b1f0",
+          "0xd5a4",
+          "0x2b1f4",
+          "0x2b19c",
+          "0x2b1a0",
+          "0x2b1a4"
+        ]
+      }
+    ]
+  },
+  "startup_sequence": [
+    {
+      "address": "libipas_sysc.so ELF0xaeac",
+      "finding": "SysPowerOn loads config, initializes process/common/tasks/IPC/shared memory/PSM, creates configured objects, then enters fc_sys_AccStart."
+    },
+    {
+      "address": "ELF0xc89c",
+      "finding": "fc_cnf_Init opens relative ipasz.conf in mode r; absent from59 complete recovered files and both top-level source filename manifests."
+    },
+    {
+      "address": "ELF0x24d78",
+      "finding": "fs_prc_Init uses incoming9 as process-table index and stores host getpid value in that slot."
+    },
+    {
+      "address": "ELF0xad50",
+      "finding": "fc_sys_AccStart reads8-byte parent synchronization, sets state, creates/starts system task1 and joins its thread."
+    },
+    {
+      "address": "ELF0xbda8",
+      "finding": "tsk_sys_System initializes resources and processes local system queue1 with cyclic/control/status state transitions; not a direct call to drawing task."
+    },
+    {
+      "address": "HMI0x2b5b8",
+      "finding": "Configured task39 calls initialization then rq_flg_Set(2,1) and exits. Task40 waits rq_flg_Wait(2,1,...)."
+    },
+    {
+      "address": "HMI0x2b22c",
+      "finding": "Configured task40 reads queue40, initial timed wait500ms, up to15 additional P receives, then frame update."
+    },
+    {
+      "address": "HMI0x2a9c0",
+      "finding": "Class0/subcommand0/event10 reaches this target and sets byte0x26c98a2 to1; executed under bounded Unicorn."
+    },
+    {
+      "address": "HMI0x2b1f8",
+      "finding": "Frame update returns early unless byte0x26c98a2==1; resets flag before downstream drawing calls."
+    }
+  ],
+  "artifacts": "/home/starlight/projects/rav4-radio/system-audit/ca01-startup-integration-20261023",
+  "limitations": [
+    "Original ipasz.conf values and launch working directory not recovered",
+    "Bounded actual startup halts before fopen; no successful config load or full HMI execution",
+    "Inherited eventfd parent services and configured IPC/object creators unresolved",
+    "Host startup event model covers initial effective-power ON only; successful callbacks are explicitly synthetic inputs",
+    "Native queue subset is not vendor ABI descriptor, fatal/deletion path, POSIX IPC namespace or original payload allocator",
+    "Command/error/free callees intercepted in prior dispatcher probes; original drawing not executed"
+  ],
+  "prior_stage_tests": {
+    "focused": 18,
+    "combined": 93,
+    "failed": 0,
+    "command": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v"
+  },
+  "tests": {
+    "focused_startup_and_trace": 35,
+    "combined": 110,
+    "failed": 0,
+    "skipped": 0,
+    "command": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v"
+  },
+  "current_startup_trace": {
+    "scope": "Bounded canonical ARM instruction slices in Unicorn; imported services halt.",
+    "hashes": {
+      "hmi": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+      "sysc": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4"
+    },
+    "library_bias": "0x10000000",
+    "registration": {
+      "entry": "0x1001dde0",
+      "argument": 5896520,
+      "halt_reason": "returned",
+      "returned": true,
+      "instructions": 82,
+      "instruction_limit": 20000,
+      "timeout_us": 2000000,
+      "stop_pc": "0x7000fff0",
+      "boundary": {},
+      "function_entries": [
+        {
+          "symbol": "fs_sys_CnfEntry",
+          "address": "0x1001dde0"
+        }
+      ],
+      "last_instruction_addresses": [
+        "0x1001dde0",
+        "0x1001dde4",
+        "0x1001dde8",
+        "0x1001ddec",
+        "0x1001ddf0",
+        "0x1001ddf4",
+        "0x1001ddf8",
+        "0x1001ddfc",
+        "0x1001de00",
+        "0x1001de04",
+        "0x1001de08",
+        "0x1001de0c",
+        "0x1001de10",
+        "0x1001de14",
+        "0x1001de18",
+        "0x1001de1c",
+        "0x1001de20",
+        "0x1001de24",
+        "0x1001de28",
+        "0x1001de2c",
+        "0x1001de30",
+        "0x1001de34",
+        "0x1001de38",
+        "0x1001de3c",
+        "0x1001de40",
+        "0x1001de44",
+        "0x1001de48",
+        "0x1001de4c",
+        "0x1001de50",
+        "0x1001de54",
+        "0x1001de58",
+        "0x1001de5c",
+        "0x1001de60",
+        "0x1001de64",
+        "0x1001de68",
+        "0x1001de6c",
+        "0x1001de70",
+        "0x1001de74",
+        "0x1001de78",
+        "0x1001de7c",
+        "0x1001de80",
+        "0x1001de84",
+        "0x1001de88",
+        "0x1001de8c",
+        "0x1001de90",
+        "0x1001de94",
+        "0x1001de98",
+        "0x1001de9c",
+        "0x1001dea0",
+        "0x1001dea4",
+        "0x1001dea8",
+        "0x1001deac",
+        "0x1001deb0",
+        "0x1001deb4",
+        "0x1001deb8",
+        "0x1001debc",
+        "0x1001dec0",
+        "0x1001dec4",
+        "0x1001dec8",
+        "0x1001decc",
+        "0x1001ded0",
+        "0x1001ded4",
+        "0x1001ded8",
+        "0x1001dedc",
+        "0x1001dee0",
+        "0x1001dee4",
+        "0x1001dee8",
+        "0x1001deec",
+        "0x1001def0",
+        "0x1001def4",
+        "0x1001def8",
+        "0x1001defc",
+        "0x1001df00",
+        "0x1001df04",
+        "0x1001df08",
+        "0x1001df0c",
+        "0x1001df10",
+        "0x1001df14",
+        "0x1001df18",
+        "0x1001df1c",
+        "0x1001df20",
+        "0x1001df24"
+      ],
+      "error": null
+    },
+    "registered_pointers": {
+      "bf_sys_CnfSetup": "0x59c4e8",
+      "bf_sys_PowInf": "0x59c52c",
+      "bf_sys_PreInf": "0x59c5ac",
+      "bf_sys_AplInf": "0x59c5ec",
+      "bf_sys_ResInf": "0x59c64c",
+      "bf_sys_StbInf": "0x59c66c",
+      "bf_sys_TskInf": "0x59c6ac",
+      "bf_sys_RodInf": "0x59d8ac",
+      "bf_sys_MsgInf": "0x59d8bc",
+      "bf_sys_FlgInf": "0x59debc",
+      "bf_sys_SemInf": "0x59dfbc",
+      "bf_sys_MemInf": "0x59e3bc",
+      "bf_sys_TimInf": "0x59e43c",
+      "bf_sys_AbkInf": "0x59e5a4",
+      "bf_sys_BkmInf": "0x59f044",
+      "bf_sys_DrcInf": "0x59ed84",
+      "bf_sys_LogInf": "0x59ef84",
+      "bf_sys_MmdInf": "0x59f848"
+    },
+    "startup": {
+      "entry": "0x1000aeac",
+      "argument": 9,
+      "halt_reason": "unimplemented_import",
+      "returned": false,
+      "instructions": 40,
+      "instruction_limit": 20000,
+      "timeout_us": 2000000,
+      "stop_pc": "0x60026000",
+      "boundary": {
+        "symbol": "fopen",
+        "address": "0x60026000",
+        "arguments": [
+          268593320,
+          268593332,
+          269722224,
+          0
+        ],
+        "caller_return": "0x1000c8f8",
+        "guest_strings": [
+          "ipasz.conf",
+          "r"
+        ]
+      },
+      "function_entries": [
+        {
+          "symbol": "SysPowerOn",
+          "address": "0x1000aeac"
+        },
+        {
+          "symbol": "fs_cnf_Load",
+          "address": "0x1000c950"
+        },
+        {
+          "symbol": "fc_cnf_Init",
+          "address": "0x1000c89c"
+        }
+      ],
+      "last_instruction_addresses": [
+        "0x1000aeac",
+        "0x1000aeb0",
+        "0x1000aeb4",
+        "0x1000aeb8",
+        "0x1000aebc",
+        "0x10009b14",
+        "0x10009b18",
+        "0x10009b1c",
+        "0x1000c950",
+        "0x1000c954",
+        "0x1000c958",
+        "0x10009afc",
+        "0x10009b00",
+        "0x10009b04",
+        "0x1000c89c",
+        "0x1000c8a0",
+        "0x1000c8a4",
+        "0x1000c8a8",
+        "0x1000c8ac",
+        "0x1000c8b0",
+        "0x1000c8b4",
+        "0x1000c8b8",
+        "0x1000c8bc",
+        "0x1000c8c0",
+        "0x1000c8c4",
+        "0x1000c8c8",
+        "0x1000c8cc",
+        "0x1000c8d0",
+        "0x1000c8d4",
+        "0x1000c8d8",
+        "0x1000c8dc",
+        "0x1000c8e0",
+        "0x1000c8e4",
+        "0x1000c8e8",
+        "0x1000c8ec",
+        "0x1000c8f0",
+        "0x1000c8f4",
+        "0x10009928",
+        "0x1000992c",
+        "0x10009930"
+      ],
+      "error": null
+    },
+    "application_startup_completed": false,
+    "toyota_rendering_observed": false,
+    "host_services_called": false,
+    "guest_syscalls_executed": false
+  },
+  "authoritative_message_contract": {
+    "header": "src/ca01_hmi_ipc.h",
+    "implementation": "src/ca01_hmi_ipc.c",
+    "bytes": 16,
+    "fields": [
+      "code",
+      "subcommand",
+      "event",
+      "payload"
+    ],
+    "offsets": [
+      0,
+      4,
+      8,
+      12
+    ],
+    "hmi_capacity": 64,
+    "python_binding": "ctypes; no separate Python ring",
+    "receive_p": {
+      "success": -1,
+      "empty": -2
+    },
+    "receive_t": {
+      "success": 0,
+      "timeout": -1
+    },
+    "payload": "opaque guest uint32, never dereferenced; dequeue never frees; failed send retains caller ownership"
+  },
+  "parser_and_sync_evidence": "evidence/ca01-ipasz-parser-sync.json",
+  "task_activation": {
+    "evidence_method": "Static canonical system library control flow, not observed runtime activation",
+    "sequence": [
+      "SysResInit creates tasks39/40 state1 mask1",
+      "SysInit starts only types4/7/8, not39/40",
+      "SysChk effective-mask change -> SysOnCtl -> state1 AccOnStop -> rq_tsk_Start -> state2",
+      "NtyTskSts sends queue1 [0,3,task,0] -> state3; startup modes1/2 wait flag1",
+      "all enabled tasks2+ state3, applicable parent sync and post-init callbacks -> flag1",
+      "task39 init completes -> flag2/1; task40 waits for flag2"
+    ],
+    "elf_addresses": {
+      "SysResInit": "0x24020",
+      "SysChk": "0xb7b4",
+      "SysOnCtl": "0x23bcc",
+      "AccOnStop": "0x22bdc",
+      "NtyTskSts": "0x1e02c",
+      "SycSynInit": "0x2174c"
+    }
+  },
+  "artifacts_prior_stage": "/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-startup-20261023"
+}

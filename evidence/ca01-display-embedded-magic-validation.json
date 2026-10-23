@@ -1,0 +1,49 @@
+{
+  "hmi_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "report": [
+    {
+      "type": "gif89a",
+      "file_offset": "0x59b8f8",
+      "structurally_valid": false,
+      "reason": "GIF header dimensions width=0, height=256; zero width invalid"
+    },
+    {
+      "type": "jpeg",
+      "file_offset": "0x59ba40",
+      "structurally_valid": false,
+      "reason": "APP0 length=0, marker=ffe0 (must be >=2)"
+    },
+    {
+      "type": "png",
+      "file_offset": "0x59baac",
+      "structurally_valid": false,
+      "reason": "First chunk b' an ', length 1232349043; PNG requires IHDR length 13"
+    },
+    {
+      "type": "png",
+      "file_offset": "0x59bb34",
+      "structurally_valid": false,
+      "reason": "First chunk b'37\\x00\\x00', length 825111086; PNG requires IHDR length 13"
+    },
+    {
+      "type": "png",
+      "file_offset": "0x59bb50",
+      "structurally_valid": false,
+      "reason": "First chunk b'\\x04\\x00\\x00\\x00', length 0; PNG requires IHDR length 13"
+    },
+    {
+      "type": "otf",
+      "file_offset": "0x2366c0",
+      "structurally_valid": false,
+      "reason": "SFNT numTables=25697, expected 1..199 (font data table header)"
+    },
+    {
+      "type": "otf",
+      "file_offset": "0x59f530",
+      "structurally_valid": false,
+      "reason": "SFNT numTables=0, expected 1..199 (font data table header)"
+    }
+  ],
+  "scope": "7 signature-like occurrences checked; no validated embedded resource in these candidates",
+  "caveat": "Only exact matching signature-like offsets, not a comprehensive decompression or asset-corpus audit"
+}

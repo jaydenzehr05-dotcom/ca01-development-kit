@@ -1,0 +1,50 @@
+{
+  "verified_at_utc": "2026-10-23T05:36:39.652132+00:00",
+  "suite": {
+    "command": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v",
+    "passed": 110,
+    "failures": 0,
+    "skipped": 0,
+    "local_log": "/tmp/ca01-prepush-full-tests.log"
+  },
+  "display_audit": {
+    "command": "bash tools/run_ca01_display_audit.sh",
+    "result": "passed",
+    "local_output": "/home/starlight/projects/rav4-radio/system-audit/ca01-display-release-20261023T053511Z",
+    "checks": [
+      "bounded original ARM window construction/allocator failure/plane calls",
+      "bounded original ARM frame submission, three handles and unknown/error branches",
+      "59 recovered file hashes verified",
+      "7 embedded asset candidates rejected by header checks",
+      "800x480 and 480x480 synthetic ARMEL callback frames match direct-pbuffer controls",
+      "prior bridge exits23 without callback; malformed descriptor exits15"
+    ],
+    "sandbox": "self-authored ARMEL executables only, offline Bubblewrap, read-only rootfs"
+  },
+  "startup_boundary": {
+    "registration_instructions": 82,
+    "registered_pointers": 18,
+    "startup_instructions": 40,
+    "first_unresolved_import": "fopen",
+    "guest_arguments": [
+      "ipasz.conf",
+      "r"
+    ],
+    "full_original_startup_completed": false
+  },
+  "review": "no remaining release-blocking findings",
+  "checks": [
+    "staged diff whitespace",
+    "staged Python compile",
+    "staged JSON parse",
+    "shell syntax"
+  ],
+  "exclusions": [
+    "firmware archives",
+    "recovered proprietary ELF binaries",
+    "compiled probes/libraries",
+    "generated frame images",
+    "rootfs/virtual environments"
+  ],
+  "original_toyota_gui_rendered": false
+}
