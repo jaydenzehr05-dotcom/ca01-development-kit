@@ -39,11 +39,31 @@ class TrapTests(unittest.TestCase):
         self.assertEqual(r['instructions'], 1)
         self.assertFalse(r['returned'])
 
+    def test_only_explicit_real_service_can_return_from_import(self):
+        from unicorn.arm_const import UC_ARM_REG_R0
+        t=self.engine(bytes.fromhex('10ff2fe1'),{0x2000:'approved_clock'})
+        t.services['approved_clock']=lambda uc,args:123
+        r=t.run(0x1000,0x2000)
+        self.assertTrue(r['returned']);self.assertEqual(t.uc.reg_read(UC_ARM_REG_R0),123)
+        self.assertEqual(r['service_calls'][0]['symbol'],'approved_clock')
+
+    def test_missing_service_result_cannot_become_success(self):
+        t=self.engine(bytes.fromhex('10ff2fe1'),{0x2000:'no_op'})
+        t.services['no_op']=lambda uc,args:None
+        r=t.run(0x1000,0x2000)
+        self.assertEqual(r['halt_reason'],'service_error');self.assertFalse(r['returned'])
+
     def test_syscall_is_halted_before_svc(self):
         t = self.engine(bytes.fromhex('000000ef'))
         r = t.run(0x1000, 0)
         self.assertEqual(r['halt_reason'], 'unimplemented_syscall')
         self.assertEqual(r['instructions'], 0)
+
+    def test_service_steps_do_not_mislabel_instruction_bound_as_timeout(self):
+        t=self.engine(bytes.fromhex('30ff2fe1fdffffea'),{0x2000:'clock'})
+        t.services['clock']=lambda uc,args:0x2000
+        r=t.run(0x1000,0x2000,instruction_limit=7)
+        self.assertEqual(r['halt_reason'],'instruction_limit')
 
     def test_instruction_bound_never_becomes_a_successful_return(self):
         t = self.engine(bytes.fromhex('feffffea'))  # b .

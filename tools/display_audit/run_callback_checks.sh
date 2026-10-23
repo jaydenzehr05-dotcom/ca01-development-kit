@@ -8,7 +8,7 @@ LIB=(-L"$SYSROOT/usr/lib/arm-linux-gnueabi" "-Wl,-rpath-link,$SYSROOT/usr/lib/ar
 COMMON=(-std=c11 -O2 -Wall -Wextra -Werror)
 mkdir -p results/800x480 results/480x480
 arm-linux-gnueabi-gcc "${COMMON[@]}" "${INC[@]}" "${LIB[@]}" -shared -fPIC \
-  -o libca01_window_callback_v2.so egl_window_to_pbuffer_bridge_v2.c -ldl
+  -Imodel -o libca01_window_callback_v2.so egl_window_to_pbuffer_bridge_v2.c model/ca01_gui_compat.c -ldl
 arm-linux-gnueabi-gcc "${COMMON[@]}" "${INC[@]}" "${LIB[@]}" -shared -fPIC \
   -o libca01_window_control_v1.so egl_window_to_pbuffer_bridge.c -ldl
 run_guest() {

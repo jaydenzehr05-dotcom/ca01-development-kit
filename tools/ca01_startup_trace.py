@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Bounded Unicorn slices of canonical CA01 startup; halt at unknown services.
 
-Guest instructions execute only in Unicorn memory. No imported service, guest
-syscall, host configuration, pthread, device, or network operation is performed.
+Guest instructions execute only in Unicorn memory. The default startup tracer
+supplies no services and halts on every import. Explicit research-engine service
+callbacks are recorded individually; unknown services and guest syscalls halt.
 This is not an application launcher or proof that Toyota startup completes.
 """
 import argparse
@@ -35,6 +36,7 @@ class BoundedArmTrace:
         self.imports = imports
         self.symbols = symbols or {}
         self.blocked_reads = blocked_reads or {}
+        self.services = {}  # Explicit implementations only; empty by default.
         self.sentinel = 0x7000fff0
         uc.mem_map(0x70000000, 0x10000)
         mapped = set()
@@ -67,7 +69,8 @@ class BoundedArmTrace:
         return None
 
     def _code(self, uc, address, size, _):
-        from unicorn.arm_const import UC_ARM_REG_R0, UC_ARM_REG_R1, UC_ARM_REG_R2, UC_ARM_REG_R3, UC_ARM_REG_CPSR, UC_ARM_REG_LR
+        self.emulator_steps += 1
+        from unicorn.arm_const import UC_ARM_REG_R0, UC_ARM_REG_R1, UC_ARM_REG_R2, UC_ARM_REG_R3, UC_ARM_REG_CPSR, UC_ARM_REG_LR, UC_ARM_REG_PC
         if address == self.sentinel:
             self._halt('returned')
             return
@@ -75,7 +78,19 @@ class BoundedArmTrace:
             args = [uc.reg_read(r) for r in (UC_ARM_REG_R0, UC_ARM_REG_R1, UC_ARM_REG_R2, UC_ARM_REG_R3)]
             details = dict(symbol=self.imports[address], address=hex(address), arguments=args,
                            caller_return=hex(uc.reg_read(UC_ARM_REG_LR)))
-            if self.imports[address] == 'fopen':
+            implementation=self.services.get(self.imports[address])
+            if implementation is not None:
+                try:
+                    result=implementation(uc,args)
+                    if type(result) is not int:raise TypeError('Service must return an explicit integer status')
+                except Exception as error:
+                    self._halt('service_error',symbol=self.imports[address],error=str(error))
+                    return
+                self.service_calls.append(dict(symbol=self.imports[address],arguments=args,result=result))
+                uc.reg_write(UC_ARM_REG_R0,result & 0xffffffff)
+                uc.reg_write(UC_ARM_REG_PC,uc.reg_read(UC_ARM_REG_LR))
+                return
+            if self.imports[address] in ('fopen','rq_fls_Open'):
                 details['guest_strings'] = [self._guest_string(args[0]), self._guest_string(args[1])]
             self._halt('unimplemented_import', **details)
             return
@@ -119,7 +134,9 @@ class BoundedArmTrace:
         self.reason = None
         self.boundary = {}
         self.instructions = 0
+        self.emulator_steps = 0
         self.entries = []
+        self.service_calls = []
         self.tail = deque(maxlen=128)
         self.uc.reg_write(UC_ARM_REG_SP, 0x7000f000)
         self.uc.reg_write(UC_ARM_REG_LR, self.sentinel)
@@ -132,12 +149,12 @@ class BoundedArmTrace:
             if self.reason is None:
                 self.reason = 'unicorn_error'
         if self.reason is None:
-            self.reason = 'instruction_limit' if self.instructions >= instruction_limit else 'time_limit'
+            self.reason = 'instruction_limit' if self.emulator_steps >= instruction_limit else 'time_limit'
         return dict(entry=hex(entry), argument=argument, halt_reason=self.reason,
-                    returned=self.reason == 'returned', instructions=self.instructions,
+                    returned=self.reason == 'returned', instructions=self.instructions,emulator_steps=self.emulator_steps,
                     instruction_limit=instruction_limit, timeout_us=timeout_us,
                     stop_pc=hex(self.uc.reg_read(UC_ARM_REG_PC)), boundary=self.boundary,
-                    function_entries=self.entries, last_instruction_addresses=list(self.tail), error=error)
+                    function_entries=self.entries, service_calls=self.service_calls,last_instruction_addresses=list(self.tail), error=error)
 
 
 def prepare(hmi_data, sysc_data):

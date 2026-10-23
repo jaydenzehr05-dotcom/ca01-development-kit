@@ -10,6 +10,8 @@ Linux root filesystems and rendered images remain outside Git.
 
 ## Current verified local capabilities
 
+Latest: [GUI recovery status and reproducible original ARM rendering](docs/CA01_GUI_STATUS.md).
+
 - **59 complete recovered files**, including **41 ARM ELF files**: 21 executables
   and 20 shared libraries. Every original recovered size/hash was rechecked.
   Additional Kernel/Audio/Driver/Voice fragments retain explicit partial status.
@@ -24,9 +26,10 @@ Linux root filesystems and rendered images remain outside Git.
 - Fresh loader traces: **PROC_HMI 17**, **PROC_DISPLAY 47**, **PROC_REPRO 18**
   unresolved library names. These runtime observations differ from the recovery-only
   inventory (89 missing names across all 41 files).
-- A self-authored ARM EGL/GLES software test renders **800 × 480**; all
-  **384,000 pixels** match the expected pattern. The stock Toyota GUI has not run.
-- The combined automated suite passes **71 tests**. No radio access or flashing.
+- Original HMI ARM clear, rectangle geometry, GLES drawing and frame submission
+  now produce independently checked pixels at **800 × 480 and 480 × 480** through
+  three modeled display buffers. Inputs remain fixtures; factory menus have not run.
+- The combined automated suite passes **125 tests**. No radio access or flashing.
 
 Start with [consolidation verification](docs/CA01_LOCAL_CONSOLIDATION.md),
 [recovered dependencies](docs/CA01_DEPENDENCY_INVENTORY.md),

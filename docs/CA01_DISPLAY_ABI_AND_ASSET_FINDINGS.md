@@ -1,5 +1,7 @@
 > Consolidation note: this report records the independent 2026-10-23 investigation below. Its source scripts are now tracked under `tools/display_audit/`, with source hashes and integration edits in `evidence/ca01-display-audit-provenance.json`. Historical statements about the separate directory and no Git operations describe that investigation. To reproduce the consolidated version without overwriting its original evidence, run `bash tools/run_ca01_display_audit.sh` from the repository. This builds its earlier bridge as a negative control, compares fresh direct-pbuffer frames, and runs ARM fixtures in offline Bubblewrap. The existing startup work remains fail-closed at the missing configuration boundary; the next runtime integration milestone is still pending.
 
+Historical audit. Later original primitive rendering and startup progress are recorded in [current GUI status](CA01_GUI_STATUS.md). The full factory interface remains unresolved.
+
 # Toyota CA01 original-HMI display ABI investigation — 2026-10-23
 
 **Status:** New original-ARM slices executed under Unicorn, synthetic ARMEL EGL bridge extended with a window callback, and authentic recovered resource inventory audited. **The complete original Toyota application has not launched, and no factory screen has rendered.**

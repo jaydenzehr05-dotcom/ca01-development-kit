@@ -7,13 +7,8 @@
 Ca01Result ca01_egl_bridge_init(Ca01EglBridge *b, const Ca01NativeWindow32 *window) {
     if (!b || !window || b->ready) return CA01_ERR_ARG;
     const uint32_t width=window->words[0], height=window->words[1];
-    /* Only the layout/values measured from the recovered HMI are accepted.
-       This is NOT the native EGL window ABI; a pbuffer is used instead. */
-    if (window->words[2]!=width || window->words[3]!=2 ||
-        window->words[4]!=CA01_BUFFER_COUNT || window->words[5]==0)
-        return CA01_ERR_ARG;
-    if (!width || !height || width > CA01_MODEL_MAX_DIMENSION ||
-        height > CA01_MODEL_MAX_DIMENSION) return CA01_ERR_RANGE;
+    /* This shape is shared with the original-call-boundary interposer. */
+    if(ca01_native_window_shape(window)!=CA01_OK)return CA01_ERR_ARG;
     memset(b, 0, sizeof(*b));
     b->display = EGL_NO_DISPLAY;
     b->surface = EGL_NO_SURFACE;

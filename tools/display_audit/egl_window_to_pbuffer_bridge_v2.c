@@ -9,6 +9,7 @@
  */
 #define _POSIX_C_SOURCE 200809L
 #include <EGL/egl.h>
+#include "ca01_gui_compat.h"
 #include <dlfcn.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -19,7 +20,7 @@ typedef EGLBoolean (*ChooseFn)(EGLDisplay, const EGLint *, EGLConfig *, EGLint, 
 typedef EGLSurface (*WindowFn)(EGLDisplay, EGLConfig, EGLNativeWindowType, const EGLint *);
 typedef EGLSurface (*PbufferFn)(EGLDisplay, EGLConfig, const EGLint *);
 typedef EGLBoolean (*DestroyFn)(EGLDisplay, EGLSurface);
-enum { CA01_BUFFER_COUNT = 3, CA01_MAX_WINDOWS = 8 };
+enum { CA01_MAX_WINDOWS = 8 };
 typedef struct {
     const void *native_window;
     uint32_t next;
@@ -40,7 +41,7 @@ static uint32_t ca01_test_acquire_next(void *window) {
         if (s->native_window == window && s->surface != EGL_NO_SURFACE &&
             s->handle_array && s->count==CA01_BUFFER_COUNT) {
             const uint32_t handle=s->handle_array[s->next % CA01_BUFFER_COUNT];
-            s->next++;
+            s->next=(s->next+1)%CA01_BUFFER_COUNT;
             return handle;
         }
     }
@@ -84,29 +85,17 @@ EGLSurface eglCreateWindowSurface(EGLDisplay d, EGLConfig cfg,
         fputs("CA01-v2: unsupported window or attributes\n",stderr);
         return EGL_NO_SURFACE;
     }
-    uint32_t w[8];
-    memcpy(w,(void *)(uintptr_t)window,sizeof(w));
+    Ca01NativeWindow32 descriptor;
+    memcpy(&descriptor,(void *)(uintptr_t)window,sizeof(descriptor));
+    const uint32_t *w=descriptor.words;
     const uint32_t width=w[0], height=w[1];
-    if (width<16||height<16||width>2048||height>2048||
-        w[2]!=width||w[3]!=2||w[4]!=CA01_BUFFER_COUNT||w[5]==0) {
-        fputs("CA01-v2: native-window shape rejected\n",stderr);
-        return EGL_NO_SURFACE;
+    if(ca01_native_window_shape(&descriptor)!=CA01_OK) {
+        fputs("CA01-v2: native-window shape rejected\n",stderr);return EGL_NO_SURFACE;
     }
-    /* Pointer address is guest ARM32 and test-controlled. The original native
-       window stores an address to three handles in word5. */
+    /* Trusted ARM32 fixture address; never a host/Unicorn guest pointer. */
     uint32_t *handles=(uint32_t *)(uintptr_t)w[5];
-    uint32_t candidate_handles[CA01_BUFFER_COUNT];
-    memcpy(candidate_handles,handles,sizeof(candidate_handles));
-    for (int i=0;i<CA01_BUFFER_COUNT;++i) {
-        if (!candidate_handles[i]) {
-            fputs("CA01-v2: empty buffer handle\n",stderr);
-            return EGL_NO_SURFACE;
-        }
-        for (int j=0;j<i;++j)
-            if (candidate_handles[i]==candidate_handles[j]) {
-                fputs("CA01-v2: duplicate buffer handle\n",stderr);
-                return EGL_NO_SURFACE;
-            }
+    if(ca01_native_window_validate(&descriptor,handles)!=CA01_OK) {
+        fputs("CA01-v2: invalid buffer handles\n",stderr);return EGL_NO_SURFACE;
     }
     Ca01WindowState *slot=NULL;
     for (unsigned i=0;i<CA01_MAX_WINDOWS;++i)

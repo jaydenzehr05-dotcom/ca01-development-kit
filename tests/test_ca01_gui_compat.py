@@ -21,7 +21,7 @@ class Ca01GuiModelTests(unittest.TestCase):
             exe = Path(folder) / "ca01-model-test"
             compile_cmd = [
                 CC, "-std=c11", "-O2", "-Wall", "-Wextra", "-Werror", "-Wpedantic",
-                "-pthread", "-I", str(REPO / "src"),
+                "-Wl,--wrap=calloc", "-pthread", "-I", str(REPO / "src"),
                 str(REPO / "src/ca01_hmi_ipc.c"),
                 str(REPO / "src/ca01_gui_compat.c"),
                 str(REPO / "tests/ca01_gui_compat_native_test.c"),

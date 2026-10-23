@@ -8,6 +8,8 @@ if [[ -e "$OUT" || -L "$OUT" ]]; then
 fi
 mkdir -p -- "$OUT"
 cp -- "$REPO"/tools/display_audit/*.py "$REPO"/tools/display_audit/*.c "$REPO"/tools/display_audit/*.sh "$OUT/"
+mkdir -- "$OUT/model"
+cp -- "$REPO/src/ca01_gui_compat.c" "$REPO/src/ca01_gui_compat.h" "$REPO/src/ca01_hmi_ipc.h" "$OUT/model/"
 export CA01_AUDIT_PYTHON="$REPO/.venv/bin/python"
 bash "$OUT/run_all_audit.sh"
 printf 'AUDIT_OUTPUT=%s\n' "$OUT"

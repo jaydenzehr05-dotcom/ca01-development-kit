@@ -2,6 +2,15 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+static int allocation_budget=-1;
+void *__real_calloc(size_t,size_t);
+void *__wrap_calloc(size_t n,size_t size) {
+    if(allocation_budget==0)return NULL;
+    if(allocation_budget>0)--allocation_budget;
+    return __real_calloc(n,size);
+}
+
 #define CHECK(x) do { if (!(x)) { fprintf(stderr,"CHECK failed at %s:%d: %s\n",__FILE__,__LINE__,#x); return 1; } } while (0)
 
 static int test_display(void) {
@@ -107,8 +116,48 @@ static int test_queue(void) {
     ca01_queue_destroy(&q);
     return 0;
 }
+static int test_allocation_failures(void) {
+    for(int failure=0;failure<3;failure++) {
+        Ca01Display d={0};allocation_budget=failure;
+        CHECK(ca01_display_init(&d,800,480)==CA01_ERR_ALLOC);
+        CHECK(!d.ready && !d.buffers[0] && !d.buffers[1] && !d.buffers[2]);
+        ca01_display_destroy(&d);
+    }
+    allocation_budget=-1;return 0;
+}
+static int test_descriptor_service(void) {
+    Ca01Display d={0}; Ca01DisplayMemory32 descriptor;
+    Ca01NativeWindow32 window; uint32_t handle=0;
+    CHECK(sizeof(descriptor)==16 && offsetof(Ca01DisplayMemory32,handle)==12);
+    CHECK(ca01_display_init(&d,800,480)==CA01_OK);
+    CHECK(ca01_display_build_window(&d,0x31000000,&window)==CA01_OK);
+    CHECK(ca01_native_window_validate(&window,d.handle)==CA01_OK);
+    for(unsigned i=0;i<3;i++) {
+        CHECK(ca01_display_export_descriptor(&d,i,&descriptor)==CA01_OK);
+        CHECK(descriptor.bytes==1536000 && descriptor.reserved==0);
+        CHECK(descriptor.memory_token!=0 && descriptor.memory_token!=descriptor.handle);
+        CHECK(descriptor.handle==d.handle[i]);
+        CHECK(ca01_display_handle_for_token(&d,descriptor.memory_token,&handle)==CA01_OK);
+        CHECK(handle==descriptor.handle);
+        CHECK(ca01_display_begin_vram(&d,descriptor.memory_token)==CA01_OK);
+        CHECK(ca01_display_begin_vram(&d,descriptor.memory_token)==CA01_ERR_STATE);
+        CHECK(ca01_display_wait_vram(&d,0)==CA01_ERR_STATE);
+        CHECK(ca01_display_wait_vram(&d,descriptor.memory_token)==CA01_OK);
+        CHECK(d.current_front==i);
+    }
+    CHECK(ca01_display_handle_for_token(&d,0xdeadbeef,&handle)==CA01_ERR_NOT_FOUND);
+    CHECK(ca01_display_begin_vram(&d,0xdeadbeef)==CA01_ERR_NOT_FOUND);
+    CHECK(ca01_display_export_descriptor(&d,3,&descriptor)==CA01_ERR_RANGE);
+    uint32_t bad[3]={d.handle[0],d.handle[0],d.handle[2]};
+    CHECK(ca01_native_window_validate(&window,bad)==CA01_ERR_ARG);
+    bad[1]=0;CHECK(ca01_native_window_validate(&window,bad)==CA01_ERR_ARG);
+    window.words[4]=2;CHECK(ca01_native_window_validate(&window,d.handle)==CA01_ERR_ARG);
+    ca01_display_destroy(&d);
+    CHECK(ca01_display_export_descriptor(&d,0,&descriptor)==CA01_ERR_STATE);
+    return 0;
+}
 int main(void) {
-    if (test_display()!=0 || test_queue()!=0) return 1;
+    if (test_display()!=0 || test_queue()!=0 || test_descriptor_service()!=0 || test_allocation_failures()!=0) return 1;
     puts("CA01_GUI_MODEL_TEST_OK");
     return 0;
 }
