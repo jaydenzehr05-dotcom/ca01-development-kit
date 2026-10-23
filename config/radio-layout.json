@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "proposed_not_wired_into_ui",
+  "canvas": {
+    "width": 800,
+    "height": 480,
+    "basis": "Pi framebuffer; Toyota target needs validation"
+  },
+  "regions": {
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 800,
+      "height": 52
+    },
+    "content": {
+      "x": 0,
+      "y": 52,
+      "width": 800,
+      "height": 364
+    },
+    "footer": {
+      "x": 0,
+      "y": 416,
+      "width": 800,
+      "height": 64
+    }
+  },
+  "minimum_touch_target_px": 48,
+  "pages": [
+    "audio_sources",
+    "fm",
+    "phone",
+    "bluetooth",
+    "trip_information",
+    "setup",
+    "general",
+    "display",
+    "sound",
+    "software_information",
+    "radio_lab"
+  ],
+  "physical_button_equivalents": [
+    "AUDIO",
+    "SETUP",
+    "CAR",
+    "PHONE"
+  ],
+  "capabilities": {
+    "toyota_display": "unverified",
+    "toyota_touch": "unverified",
+    "fm_tuner": "unverified",
+    "audio_output": "unverified",
+    "phone_pairing": "unverified",
+    "carplay": "unverified",
+    "reverse_camera": "unverified",
+    "vehicle_signals": "unverified",
+    "usb_firmware_install": "unverified"
+  }
+}
