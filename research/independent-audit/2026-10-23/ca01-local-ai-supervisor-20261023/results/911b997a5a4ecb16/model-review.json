@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libVOIdata_cp.so",
+  "examined_functions": [
+    "00011828",
+    "00010ed8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 257,
+    "prompt_tokens": 1344,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 1601
+  },
+  "next_focus": [
+    "Analyze FUN_000141e4",
+    "Examine file paths and permissions"
+  ],
+  "observations": [
+    {
+      "address": "0x00011828",
+      "claim": "Function validates file contents using strcat and FUN_000141e4",
+      "evidence_snippet": "strcat((char *)&local_184,pcVar6);",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00010ed8",
+      "claim": "Initialization function checks and calls a code pointer",
+      "evidence_snippet": "if (*(code **)(iVar1 + DAT_00010f18) == (code *)0x0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function VOIdata_check_updated appears to validate data files by comparing file contents and checking file operations. _INIT_0 handles initialization routines.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "911b997a5a4ecb16d98bd9a6a73a2e46af1e4abfc6ea77c27a7827c861bfdba8",
+  "unresolved_questions": [
+    "What does FUN_000141e4 function do?",
+    "What is the purpose of the file operations?"
+  ]
+}

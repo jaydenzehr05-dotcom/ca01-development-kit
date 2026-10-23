@@ -1,0 +1,61 @@
+2026-10-23 00:07:25 INFO  (LoggingInitialization) Using log config file: jar:file:/home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-23 00:07:25 INFO  (LoggingInitialization) Using log file: /home/starlight/projects/rav4-radio/system-audit/ca01-hmi-ghidra-20261022/ghidra-focused-log.txt  
+2026-10-23 00:07:25 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-23 00:07:25 INFO  (Preferences) Loading user preferences: /home/starlight/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences  
+2026-10-23 00:07:25 INFO  (ClassSearcher) Searching for classes...  
+2026-10-23 00:07:26 INFO  (ClassSearcher) Class search complete (1157 ms)  
+2026-10-23 00:07:26 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-23 00:07:26 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-23 00:07:26 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-10-23 00:07:26 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-10-23 00:07:27 INFO  (AnalyzeHeadless) Headless startup complete (2449 ms)  
+2026-10-23 00:07:27 INFO  (ClassSearcher) Class searcher loaded 59 extension points (20 false positives)  
+2026-10-23 00:07:27 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/starlight/projects/rav4-radio/system-audit/ca01-hmi-ghidra-20261022/scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts  
+2026-10-23 00:07:27 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-23 00:07:27 INFO  (HeadlessAnalyzer) Opening existing project: /home/starlight/projects/rav4-radio/system-audit/ca01-hmi-ghidra-20261022/projects/CA01_HMI_Analyzed  
+2026-10-23 00:07:27 INFO  (HeadlessProject) Opening project: /home/starlight/projects/rav4-radio/system-audit/ca01-hmi-ghidra-20261022/projects/CA01_HMI_Analyzed  
+2026-10-23 00:07:29 INFO  (HeadlessAnalyzer) REPORT: Processing project file: /06-PROC_HMI  
+2026-10-23 00:07:29 INFO  (HeadlessAnalyzer) REPORT: Execute script: CA01HMIFocused.java '/home/starlight/projects/rav4-radio/system-audit/ca01-hmi-ghidra-20261022/results'   
+2026-10-23 00:07:30 INFO  (HeadlessAnalyzer) SCRIPT: /home/starlight/projects/rav4-radio/system-audit/ca01-hmi-ghidra-20261022/scripts/CA01HMIFocused.java  
+2026-10-23 00:07:30 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 00123eb8  
+2026-10-23 00:07:30 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002b66c  
+2026-10-23 00:07:30 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 00016094  
+2026-10-23 00:07:30 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002bb08  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002b9fc  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002b22c  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002b054  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0004054c  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002a548  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0003d234  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 00065df0  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0000f694  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 00015fb8  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002b70c  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002b7e4  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002bae8  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> FOCUSED_DECOMP 0002b944  
+2026-10-23 00:07:31 INFO  (GhidraScript) CA01HMIFocused.java> HMI_FOCUSED_COMPLETED  
+2026-10-23 00:07:32 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for processed file: /06-PROC_HMI  

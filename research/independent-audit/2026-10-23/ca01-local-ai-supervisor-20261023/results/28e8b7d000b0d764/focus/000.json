@@ -1,0 +1,59 @@
+{
+  "binary": "./opt/ftl/apl/PROC_TMD",
+  "examined_functions": [
+    "00020904",
+    "000219c8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 244,
+    "prompt_tokens": 1907,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2151
+  },
+  "next_focus": [
+    "TMD command processing flow",
+    "Memory allocation behavior"
+  ],
+  "observations": [
+    {
+      "address": "0x000219c8",
+      "claim": "Function allocates memory and sends message based on parameter",
+      "evidence_snippet": "puVar1 = (undefined1 *)rq_mem_Alloc(1,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00020904 handles TMD processing with state transitions and hardware operations. Function 000219c8 manages memory allocation and message sending based on parameter validation.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "20904",
+    "219c8"
+  ],
+  "selection_evidence": [
+    {
+      "address": "20904",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "219c8",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the hardware state variables?",
+    "How are the message parameters constructed?"
+  ]
+}

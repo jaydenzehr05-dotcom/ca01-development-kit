@@ -1,0 +1,66 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DSV",
+  "examined_functions": [
+    "00011e08",
+    "00019e28"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 281,
+    "prompt_tokens": 2379,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2660
+  },
+  "next_focus": [
+    "File pattern matching logic in 00011e08",
+    "Switch case handling in 00019e28"
+  ],
+  "observations": [
+    {
+      "address": "0x00011e08",
+      "claim": "Removes files matching specific patterns and name criteria.",
+      "evidence_snippet": "memcmp(pcVar11 + 5,(void *)((int)pvVar7 + 0x1f),6)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00019e28",
+      "claim": "Manages file operations including removal and logging.",
+      "evidence_snippet": "rq_fls_Remove(local_104,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two functions handle file operations and directory management. Function 00011e08 removes files based on name patterns, while 00019e28 manages file operations and logging.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "11e08",
+    "19e28"
+  ],
+  "selection_evidence": [
+    {
+      "address": "11e08",
+      "score": 374,
+      "tags": [
+        "missing_libs",
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "19e28",
+      "score": 232,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific file patterns trigger removal in function 00011e08?",
+    "What is the purpose of the switch statement in function 00019e28?"
+  ]
+}

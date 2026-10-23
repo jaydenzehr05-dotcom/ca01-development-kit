@@ -1,0 +1,387 @@
+{
+  "scope": "Bounded original HMI frame-submission slice; EGL and sysDisMng imported services plus +0x1c callback intercepted. No original GL or Toyota pixels.",
+  "source_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "cases": [
+    {
+      "original_function": "0x2b9fc",
+      "status": 1,
+      "egl_check_success": true,
+      "callback_return": "0x31000000",
+      "calls": [
+        {
+          "name": "eglSwapBuffers",
+          "args": [
+            "0x1000",
+            "0x2000"
+          ]
+        },
+        {
+          "name": "HMI egl error checker",
+          "result": true
+        },
+        {
+          "name": "window +0x1c callback",
+          "window_arg": "0x70001000",
+          "returned_synthetic_handle": "0x31000000"
+        },
+        {
+          "name": "sysDisMngPlnUpdateVram",
+          "r0": "0x0",
+          "r1": "0x0",
+          "r2_rect": [
+            800,
+            480
+          ],
+          "r3_rect": [
+            0,
+            0
+          ],
+          "stack4_rect": [
+            0,
+            0
+          ],
+          "stack5_rect": [
+            800,
+            480
+          ],
+          "stack6_token": "0x60001000",
+          "addresses": [
+            "0x7001dfe4",
+            "0x7001dfe0",
+            "0x7001dfdc",
+            "0x7001dfd8"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnWaitDispVram",
+          "r0": "0x0",
+          "r1": "0x60001000"
+        },
+        {
+          "name": "sysDisMngPlnDispSw",
+          "args": [
+            "0x0",
+            "0x1",
+            "0x7001dfe4"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnAlpha",
+          "args": [
+            "0x0",
+            "0xff",
+            "0x1"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnTrans",
+          "args": [
+            "0x0",
+            "0x0",
+            "0xff00ff"
+          ]
+        }
+      ],
+      "synthetic_descriptors": [
+        {
+          "address": "0x1a24bb8",
+          "handle": "0x31000000",
+          "synthetic_memory_token": "0x60001000"
+        },
+        {
+          "address": "0x1a24bc8",
+          "handle": "0x31100000",
+          "synthetic_memory_token": "0x60011000"
+        },
+        {
+          "address": "0x1a24bd8",
+          "handle": "0x31200000",
+          "synthetic_memory_token": "0x60021000"
+        }
+      ],
+      "original_instruction_hook_count": 95,
+      "pixels_rendered": false
+    },
+    {
+      "original_function": "0x2b9fc",
+      "status": 1,
+      "egl_check_success": true,
+      "callback_return": "0x31100000",
+      "calls": [
+        {
+          "name": "eglSwapBuffers",
+          "args": [
+            "0x1000",
+            "0x2000"
+          ]
+        },
+        {
+          "name": "HMI egl error checker",
+          "result": true
+        },
+        {
+          "name": "window +0x1c callback",
+          "window_arg": "0x70001000",
+          "returned_synthetic_handle": "0x31100000"
+        },
+        {
+          "name": "sysDisMngPlnUpdateVram",
+          "r0": "0x0",
+          "r1": "0x0",
+          "r2_rect": [
+            800,
+            480
+          ],
+          "r3_rect": [
+            0,
+            0
+          ],
+          "stack4_rect": [
+            0,
+            0
+          ],
+          "stack5_rect": [
+            800,
+            480
+          ],
+          "stack6_token": "0x60011000",
+          "addresses": [
+            "0x7001dfe4",
+            "0x7001dfe0",
+            "0x7001dfdc",
+            "0x7001dfd8"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnWaitDispVram",
+          "r0": "0x0",
+          "r1": "0x60011000"
+        },
+        {
+          "name": "sysDisMngPlnDispSw",
+          "args": [
+            "0x0",
+            "0x1",
+            "0x7001dfe4"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnAlpha",
+          "args": [
+            "0x0",
+            "0xff",
+            "0x1"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnTrans",
+          "args": [
+            "0x0",
+            "0x0",
+            "0xff00ff"
+          ]
+        }
+      ],
+      "synthetic_descriptors": [
+        {
+          "address": "0x1a24bb8",
+          "handle": "0x31000000",
+          "synthetic_memory_token": "0x60001000"
+        },
+        {
+          "address": "0x1a24bc8",
+          "handle": "0x31100000",
+          "synthetic_memory_token": "0x60011000"
+        },
+        {
+          "address": "0x1a24bd8",
+          "handle": "0x31200000",
+          "synthetic_memory_token": "0x60021000"
+        }
+      ],
+      "original_instruction_hook_count": 99,
+      "pixels_rendered": false
+    },
+    {
+      "original_function": "0x2b9fc",
+      "status": 1,
+      "egl_check_success": true,
+      "callback_return": "0x31200000",
+      "calls": [
+        {
+          "name": "eglSwapBuffers",
+          "args": [
+            "0x1000",
+            "0x2000"
+          ]
+        },
+        {
+          "name": "HMI egl error checker",
+          "result": true
+        },
+        {
+          "name": "window +0x1c callback",
+          "window_arg": "0x70001000",
+          "returned_synthetic_handle": "0x31200000"
+        },
+        {
+          "name": "sysDisMngPlnUpdateVram",
+          "r0": "0x0",
+          "r1": "0x0",
+          "r2_rect": [
+            800,
+            480
+          ],
+          "r3_rect": [
+            0,
+            0
+          ],
+          "stack4_rect": [
+            0,
+            0
+          ],
+          "stack5_rect": [
+            800,
+            480
+          ],
+          "stack6_token": "0x60021000",
+          "addresses": [
+            "0x7001dfe4",
+            "0x7001dfe0",
+            "0x7001dfdc",
+            "0x7001dfd8"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnWaitDispVram",
+          "r0": "0x0",
+          "r1": "0x60021000"
+        },
+        {
+          "name": "sysDisMngPlnDispSw",
+          "args": [
+            "0x0",
+            "0x1",
+            "0x7001dfe4"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnAlpha",
+          "args": [
+            "0x0",
+            "0xff",
+            "0x1"
+          ]
+        },
+        {
+          "name": "sysDisMngPlnTrans",
+          "args": [
+            "0x0",
+            "0x0",
+            "0xff00ff"
+          ]
+        }
+      ],
+      "synthetic_descriptors": [
+        {
+          "address": "0x1a24bb8",
+          "handle": "0x31000000",
+          "synthetic_memory_token": "0x60001000"
+        },
+        {
+          "address": "0x1a24bc8",
+          "handle": "0x31100000",
+          "synthetic_memory_token": "0x60011000"
+        },
+        {
+          "address": "0x1a24bd8",
+          "handle": "0x31200000",
+          "synthetic_memory_token": "0x60021000"
+        }
+      ],
+      "original_instruction_hook_count": 104,
+      "pixels_rendered": false
+    },
+    {
+      "original_function": "0x2b9fc",
+      "status": 1,
+      "egl_check_success": true,
+      "callback_return": "0x39000000",
+      "calls": [
+        {
+          "name": "eglSwapBuffers",
+          "args": [
+            "0x1000",
+            "0x2000"
+          ]
+        },
+        {
+          "name": "HMI egl error checker",
+          "result": true
+        },
+        {
+          "name": "window +0x1c callback",
+          "window_arg": "0x70001000",
+          "returned_synthetic_handle": "0x39000000"
+        }
+      ],
+      "synthetic_descriptors": [
+        {
+          "address": "0x1a24bb8",
+          "handle": "0x31000000",
+          "synthetic_memory_token": "0x60001000"
+        },
+        {
+          "address": "0x1a24bc8",
+          "handle": "0x31100000",
+          "synthetic_memory_token": "0x60011000"
+        },
+        {
+          "address": "0x1a24bd8",
+          "handle": "0x31200000",
+          "synthetic_memory_token": "0x60021000"
+        }
+      ],
+      "original_instruction_hook_count": 43,
+      "pixels_rendered": false
+    },
+    {
+      "original_function": "0x2b9fc",
+      "status": 0,
+      "egl_check_success": false,
+      "callback_return": "0x31100000",
+      "calls": [
+        {
+          "name": "eglSwapBuffers",
+          "args": [
+            "0x1000",
+            "0x2000"
+          ]
+        },
+        {
+          "name": "HMI egl error checker",
+          "result": false
+        }
+      ],
+      "synthetic_descriptors": [
+        {
+          "address": "0x1a24bb8",
+          "handle": "0x31000000",
+          "synthetic_memory_token": "0x60001000"
+        },
+        {
+          "address": "0x1a24bc8",
+          "handle": "0x31100000",
+          "synthetic_memory_token": "0x60011000"
+        },
+        {
+          "address": "0x1a24bd8",
+          "handle": "0x31200000",
+          "synthetic_memory_token": "0x60021000"
+        }
+      ],
+      "original_instruction_hook_count": 17,
+      "pixels_rendered": false
+    }
+  ]
+}

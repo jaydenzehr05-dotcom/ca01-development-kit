@@ -1,0 +1,163 @@
+{
+  "model": "15TBDANA-CA01",
+  "package_tag": "UU1134",
+  "version_field_hex": "0x1134",
+  "file_size": 15165012,
+  "sha256": "71c62cdcc357b5f249b216d68c06bd31168ab16939aab010a68777ffead04dbc",
+  "matches_reviewed_CA01_1127": false,
+  "signature_verification": "not implemented; authenticity not established by structural checks",
+  "header_size": 848,
+  "payload_base": 1092,
+  "components": [
+    {
+      "index": 1,
+      "name": "SH Base",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 1092,
+      "offset_hex": "0x444",
+      "size": 892788,
+      "sha256": "91981572726e1e425b938a4aa8b0c4a768071fd02d307a52e15b70a3b2357b0a",
+      "first_12_bytes_hex": "01002d66000000005c9f0d00",
+      "filename": "01-sh-base.bin"
+    },
+    {
+      "index": 2,
+      "name": "Middle ware",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 893880,
+      "offset_hex": "0xda3b8",
+      "size": 719415,
+      "sha256": "8ed2c0b2ec129582e4eb7ca901869eb36626fa11160683b4cf4fa232c7f3be1f",
+      "first_12_bytes_hex": "0200d246010000002bf80a00",
+      "filename": "02-middle-ware.bin"
+    },
+    {
+      "index": 3,
+      "name": "Kernel",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 1613295,
+      "offset_hex": "0x189def",
+      "size": 1808792,
+      "sha256": "cbc36473d2e5f7bd98d990db7489ce9789ce3c0df3fb92d308edfe1c65087c82",
+      "first_12_bytes_hex": "0000416d010000008c991b00",
+      "filename": "03-kernel.bin"
+    },
+    {
+      "index": 4,
+      "name": "Device Driver",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 3422087,
+      "offset_hex": "0x343787",
+      "size": 236712,
+      "sha256": "f15d56c8da18a6cadda5aa6a0b9c17986e78c707b1a4270d9991d2beabcabbed",
+      "first_12_bytes_hex": "00004582010000009c9c0300",
+      "filename": "04-device-driver.bin"
+    },
+    {
+      "index": 5,
+      "name": "Bluetooth",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 3658799,
+      "offset_hex": "0x37d42f",
+      "size": 633681,
+      "sha256": "6fa1f29d8ac60f2c7068a9bd520e6edeb9c5a7e2040d257d7fcfc602bd5e4656",
+      "first_12_bytes_hex": "0000e1db0100000045ab0900",
+      "filename": "05-bluetooth.bin"
+    },
+    {
+      "index": 6,
+      "name": "Audio",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 4292480,
+      "offset_hex": "0x417f80",
+      "size": 9383112,
+      "sha256": "94a8b913e56f4e65a260a756c1efb5ab45a1e06a1e670d31b1284a182526e0a7",
+      "first_12_bytes_hex": "0000653b01000000bc2c8f00",
+      "filename": "06-audio.bin"
+    },
+    {
+      "index": 7,
+      "name": "GUI",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 13675592,
+      "offset_hex": "0xd0ac48",
+      "size": 529973,
+      "sha256": "c10b091dc28f582e605b7f531f822b9cf68b7688bc7f1d32f89e3471f8e9ed6a",
+      "first_12_bytes_hex": "000068440100000029160800",
+      "filename": "07-gui.bin"
+    },
+    {
+      "index": 8,
+      "name": "Voice Recognition",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 14205565,
+      "offset_hex": "0xd8c27d",
+      "size": 577819,
+      "sha256": "cbf6f6d63d842ab14e34ba4fbd3335ce7cbcdec9ab4b76c25da53e3f3a4c5729",
+      "first_12_bytes_hex": "00001473010000000fd10800",
+      "filename": "08-voice-recognition.bin"
+    },
+    {
+      "index": 9,
+      "name": "Boot",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 14783384,
+      "offset_hex": "0xe19398",
+      "size": 381272,
+      "sha256": "5d0aba88701e97db3a0c1d611fac0e9f2edd130c1262e4a4130a060c4da1db63",
+      "first_12_bytes_hex": "0300df8b0000000028d10500",
+      "filename": "09-boot.bin"
+    },
+    {
+      "index": 10,
+      "name": "BootSig",
+      "version": "UU.11.34",
+      "update_value_raw": 0,
+      "offset": 15164656,
+      "offset_hex": "0xe764f0",
+      "size": 356,
+      "sha256": "d6f012b8de2c19eb561015b9e39a0c7bda771c1407838b4235aa7c61058ceb52",
+      "first_12_bytes_hex": "0200ae170000000040010000",
+      "filename": "10-bootsig.bin"
+    }
+  ],
+  "static_string_evidence": [
+    {
+      "offset": 14894316,
+      "text": "U-Boot 2010.09.113PF-SB (Apr 23 2018 - 18:25:58)"
+    },
+    {
+      "offset": 14919828,
+      "text": "uImage_T_DAB_US_1M"
+    },
+    {
+      "offset": 14920955,
+      "text": "uImage_T_DAB_US_1M"
+    },
+    {
+      "offset": 14920057,
+      "text": "ddr=mem=256M"
+    },
+    {
+      "offset": 14920189,
+      "text": "root_emmc=root=${root_dev} rootfstype=ext3 ro rootwait"
+    },
+    {
+      "offset": 14920301,
+      "text": "l_init=init=/sbin/init "
+    },
+    {
+      "offset": 470731,
+      "text": "HI7750/4(R0R40775TxW02x)V.2.02.06"
+    }
+  ]
+}

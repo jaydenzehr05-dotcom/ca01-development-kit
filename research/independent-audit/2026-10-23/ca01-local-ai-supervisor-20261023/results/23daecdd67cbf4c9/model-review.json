@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_CDDB",
+  "examined_functions": [
+    "0000d158",
+    "0000d1a0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 226,
+    "prompt_tokens": 1525,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1751
+  },
+  "next_focus": [
+    "Error handling functions",
+    "Data operation functions"
+  ],
+  "observations": [
+    {
+      "address": "0x0000d158",
+      "claim": "Checks for null pointer and invalid size before mounting",
+      "evidence_snippet": "if (*(int *)(param_1 + 4) != 0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0000d1a0",
+      "claim": "Initializes global variables and performs similar mount and data operations",
+      "evidence_snippet": "DAT_00384f74 = 0;",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions validate parameters, mount filesystem, and handle CDDB data operations with error tracing.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+  "unresolved_questions": [
+    "What do the error codes 0x14 and 0x15 represent?",
+    "What is the purpose of FUN_0000d3ec()?"
+  ]
+}

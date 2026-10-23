@@ -1,0 +1,799 @@
+[
+  {
+    "component": "audio",
+    "verified_headers_all_types": [
+      {
+        "offset": 1092092,
+        "name": "./opt/ftl/lib/libipas_grp.so",
+        "type": "0",
+        "link_target": "",
+        "size": 251584,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1344508,
+        "name": "./opt/ftl/lib/libVOIdata_cp.so",
+        "type": "0",
+        "link_target": "",
+        "size": 20840,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1366012,
+        "name": "./opt/ftl/lib/libipas_sysc.so",
+        "type": "0",
+        "link_target": "",
+        "size": 173652,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1540604,
+        "name": "./opt/ftl/lib/libi2c_cm.so",
+        "type": "0",
+        "link_target": "",
+        "size": 6356,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1547772,
+        "name": "./opt/ftl/lib/libipas_sysp.so",
+        "type": "0",
+        "link_target": "",
+        "size": 173560,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1721852,
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "type": "0",
+        "link_target": "",
+        "size": 9384,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1732092,
+        "name": "./opt/ftl/lib/libcoll.so",
+        "type": "0",
+        "link_target": "",
+        "size": 108344,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1841148,
+        "name": "./opt/ftl/lib/libipas_skt.so",
+        "type": "0",
+        "link_target": "",
+        "size": 10160,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1851900,
+        "name": "./opt/ftl/lib/libAdlRd.so",
+        "type": "0",
+        "link_target": "",
+        "size": 43016,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1895932,
+        "name": "./opt/ftl/lib/libnavi_if.so",
+        "type": "0",
+        "link_target": "",
+        "size": 106416,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2002940,
+        "name": "./opt/ftl/lib/libAdlCd.so",
+        "type": "0",
+        "link_target": "",
+        "size": 22432,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2025980,
+        "name": "./opt/ftl/lib/libDisdb_if.so",
+        "type": "0",
+        "link_target": "",
+        "size": 54204,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2080764,
+        "name": "./opt/ftl/lib/libAdlUb.so",
+        "type": "0",
+        "link_target": "",
+        "size": 47080,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2128380,
+        "name": "./opt/ftl/lib/libsct_ct.so",
+        "type": "0",
+        "link_target": "",
+        "size": 10996,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2140156,
+        "name": "./opt/ftl/lib/libuie_api.so",
+        "type": "0",
+        "link_target": "",
+        "size": 9104,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2149884,
+        "name": "./opt/ftl/lib/libDIS_IF.so",
+        "type": "0",
+        "link_target": "",
+        "size": 54396,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2205180,
+        "name": "./opt/ftl/lib/libipas_ls1.so",
+        "type": "0",
+        "link_target": "",
+        "size": 20516,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2226684,
+        "name": "./opt/ftl/lib/libedbsong.so",
+        "type": "0",
+        "link_target": "",
+        "size": 352368,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2579964,
+        "name": "./opt/ftl/lib/libVOIAudioStream.so",
+        "type": "0",
+        "link_target": "",
+        "size": 74684,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2655228,
+        "name": "./opt/ftl/lib/libIFLB_CDDB.so",
+        "type": "0",
+        "link_target": "",
+        "size": 24040,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2679804,
+        "name": "./opt/ftl/boot/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2680316,
+        "name": "./opt/ftl/boot/bios.bin",
+        "type": "0",
+        "link_target": "",
+        "size": 77544,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2758652,
+        "name": "./opt/ftl/boot/RTFM_SH4A_MA100_2nd.bin_ticket",
+        "type": "0",
+        "link_target": "",
+        "size": 32,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2759676,
+        "name": "./opt/ftl/boot/s-bios.bin",
+        "type": "0",
+        "link_target": "",
+        "size": 7796,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2768380,
+        "name": "./opt/ftl/dev/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2768892,
+        "name": "./opt/ftl/dev/mXT540E_TM8L.bin",
+        "type": "0",
+        "link_target": "",
+        "size": 478,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2769916,
+        "name": "./opt/ftl/dev/mXT540E_TS8L.bin",
+        "type": "0",
+        "link_target": "",
+        "size": 478,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2770940,
+        "name": "./opt/ftl/bin/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2771452,
+        "name": "./opt/ftl/bin/FlashImageCreater",
+        "type": "0",
+        "link_target": "",
+        "size": 15252,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2787324,
+        "name": "./opt/ftl/bin/snap.sh",
+        "type": "0",
+        "link_target": "",
+        "size": 8090,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2796028,
+        "name": "./opt/ftl/bin/FlashImageWriter",
+        "type": "0",
+        "link_target": "",
+        "size": 18524,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2815484,
+        "name": "./opt/ftl/apl/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2815996,
+        "name": "./opt/ftl/apl/PROC_DSV",
+        "type": "0",
+        "link_target": "",
+        "size": 155636,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2972156,
+        "name": "./opt/ftl/apl/PROC_MMP",
+        "type": "0",
+        "link_target": "",
+        "size": 772556,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 3745276,
+        "name": "./opt/ftl/apl/PROC_EXT",
+        "type": "0",
+        "link_target": "",
+        "size": 73208,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 3819004,
+        "name": "./opt/ftl/apl/PROC_REPRO",
+        "type": "0",
+        "link_target": "",
+        "size": 168592,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 3988476,
+        "name": "./opt/ftl/apl/PROC_CDDB",
+        "type": "0",
+        "link_target": "",
+        "size": 1461952,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 5451260,
+        "name": "./opt/ftl/apl/PROC_VRS",
+        "type": "0",
+        "link_target": "",
+        "size": 1008292,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 6460412,
+        "name": "./opt/ftl/apl/PROC_SYSTEM",
+        "type": "0",
+        "link_target": "",
+        "size": 495980,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 6957052,
+        "name": "./opt/ftl/apl/PROC_DTV",
+        "type": "0",
+        "link_target": "",
+        "size": 2617748,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 9575420,
+        "name": "./opt/ftl/apl/PROC_HMI",
+        "type": "0",
+        "link_target": "",
+        "size": 6152368,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 15728636,
+        "name": "./opt/ftl/apl/PROC_AUDIO",
+        "type": "0",
+        "link_target": "",
+        "size": 1150180,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 16879612,
+        "name": "./opt/ftl/apl/PROC_VI",
+        "type": "0",
+        "link_target": "",
+        "size": 187556,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 17068028,
+        "name": "./opt/ftl/apl/PROC_DVDDECK",
+        "type": "0",
+        "link_target": "",
+        "size": 712576,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 17781244,
+        "name": "./opt/ftl/apl/PROC_NAVIIF",
+        "type": "0",
+        "link_target": "",
+        "size": 135556,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 17917436,
+        "name": "./opt/ftl/apl/PROC_DISPLAY",
+        "type": "0",
+        "link_target": "",
+        "size": 4480028,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 22398460,
+        "name": "./opt/ftl/apl/PROC_CDP",
+        "type": "0",
+        "link_target": "",
+        "size": 89016,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 22488060,
+        "name": "./opt/ftl/apl/PROC_UIEIF",
+        "type": "0",
+        "link_target": "",
+        "size": 566552,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 23055356,
+        "name": "./opt/ftl/apl/PROC_SPC",
+        "type": "0",
+        "link_target": "",
+        "size": 65092,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 23121404,
+        "name": "./opt/ftl/apl/PROC_TMD",
+        "type": "0",
+        "link_target": "",
+        "size": 197364,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 23319548,
+        "name": "./opt/ftl/apl/PROC_DVDP",
+        "type": "0",
+        "link_target": "",
+        "size": 109540,
+        "contents_unknown": 0
+      }
+    ],
+    "elf_magic_offsets": [
+      1092604,
+      1345020,
+      1366524,
+      1541116,
+      1548284,
+      1722364,
+      1732604,
+      1841660,
+      1852412,
+      1896444,
+      2003452,
+      2026492,
+      2081276,
+      2128892,
+      2140668,
+      2150396,
+      2205692,
+      2227196,
+      2580476,
+      2655740,
+      2771964,
+      2796540,
+      2816508,
+      2972668,
+      3745788,
+      3819516,
+      3988988,
+      5451772,
+      6460924,
+      6957564,
+      9575932,
+      15729148,
+      16880124,
+      17068540,
+      17781756,
+      17917948,
+      22398972,
+      22488572,
+      23055868,
+      23121916,
+      23320060
+    ],
+    "libsecurity_string_offsets": [
+      3825173,
+      6478692,
+      17790019,
+      17947053
+    ],
+    "leading_output_context": {
+      "first_header": {
+        "offset": 1092092,
+        "name": "./opt/ftl/lib/libipas_grp.so",
+        "type": "0",
+        "link_target": "",
+        "size": 251584,
+        "contents_unknown": 0
+      },
+      "prefix_nonzero_strings": [
+        "!0!0!0!0!0!0!0!0!0!0!0!0!0!0",
+        "121 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1D4D",
+        " !0!0!0!0!0!0!0!0!0",
+        "!0!0!0!0!0!0!0!0!0!0!0!0!0!0",
+        "4111111111111111111",
+        "! ! ! !0101010101010",
+        "1 1 1 1 1 1 1 1 1 ",
+        "1 1 1 1 1 1 1 1 1 ",
+        "1 1 1 1 1 1 1 1 1 1 1 1 1 1 ",
+        " !0!0!0!0!0!0!0!0!B10",
+        " !0!0!0!0!0!0!0!0!0",
+        "!01 A!01 A!01 A!01 A!01 A!01 A!01 A!01 A",
+        "1 1 1 1 1 1 1 !B"
+      ]
+    }
+  },
+  {
+    "component": "voice",
+    "verified_headers_all_types": [
+      {
+        "offset": 487171,
+        "name": "./opt/ftl/var/backup/vrs/VOI/EN/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 487683,
+        "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 488195,
+        "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/tts_pron.bdc_s",
+        "type": "0",
+        "link_target": "",
+        "size": 250614,
+        "contents_unknown": 20
+      },
+      {
+        "offset": 739587,
+        "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBAgent.db",
+        "type": "0",
+        "link_target": "",
+        "size": 94208,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 834307,
+        "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBSystem.db",
+        "type": "0",
+        "link_target": "",
+        "size": 715776,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1550595,
+        "name": "./opt/ftl/var/backup/vrs/VOI/ES/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1551107,
+        "name": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1551619,
+        "name": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBAgent.db",
+        "type": "0",
+        "link_target": "",
+        "size": 96256,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1648387,
+        "name": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBSystem.db",
+        "type": "0",
+        "link_target": "",
+        "size": 712704,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2361603,
+        "name": "./opt/ftl/var/backup/vrs/VOI/VOI_VERSION",
+        "type": "0",
+        "link_target": "",
+        "size": 19,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2362627,
+        "name": "./opt/ftl/var/backup/vrs/VOI/Hints.db",
+        "type": "0",
+        "link_target": "",
+        "size": 77824,
+        "contents_unknown": 0
+      }
+    ],
+    "elf_magic_offsets": [],
+    "libsecurity_string_offsets": [],
+    "leading_output_context": {
+      "first_header": {
+        "offset": 487171,
+        "name": "./opt/ftl/var/backup/vrs/VOI/EN/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      "prefix_nonzero_strings": []
+    }
+  },
+  {
+    "component": "driver",
+    "verified_headers_all_types": [
+      {
+        "offset": 157632,
+        "name": "./lib/modules/2.6.35.7/kernel/opt/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 158144,
+        "name": "./lib/modules/2.6.35.7/kernel/opt/cachedmem.ko",
+        "type": "0",
+        "link_target": "",
+        "size": 85949,
+        "contents_unknown": 9426
+      },
+      {
+        "offset": 244672,
+        "name": "./lib/modules/2.6.35.7/kernel/opt/dmamem.ko",
+        "type": "0",
+        "link_target": "",
+        "size": 88975,
+        "contents_unknown": 1258
+      }
+    ],
+    "elf_magic_offsets": [
+      158656,
+      245184
+    ],
+    "libsecurity_string_offsets": [],
+    "leading_output_context": {
+      "first_header": {
+        "offset": 157632,
+        "name": "./lib/modules/2.6.35.7/kernel/opt/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      "prefix_nonzero_strings": [
+        "/home/ften/svn/develop/rma1/arm/linux/kernel/src/arch/arm/include/asm",
+        "include/asm-generic/bitops",
+        "include/asm-generic",
+        "include/linux/hdlc",
+        "include/net/netns",
+        "spinlock_types_up.h",
+        "spinlock_types.h",
+        "pageblock-flags.h",
+        "rwsem-spinlock.h",
+        "task_io_accounting.h",
+        "mod_devicetable.h",
+        "platform_device.h",
+        "m.0///////11,4F/1R",
+        "include/asm-generic",
+        "/home/ften/svn/develop/rma1/arm/linux/kernel/src/arch/arm/include/asm",
+        "spinlock_types_up.h",
+        "spinlock_types.h",
+        "__LINK_STATE_PRESENT",
+        "NETREG_UNINITIALIZED",
+        "NETDEV_TX_LOCKED"
+      ]
+    }
+  },
+  {
+    "component": "gui",
+    "verified_headers_all_types": [
+      {
+        "offset": 27577,
+        "name": "./opt/ftl/gui/MC/2/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 134073,
+        "name": "./opt/ftl/gui/MC/mui/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 134585,
+        "name": "./opt/ftl/gui/MC/mui/FUC702-00_01.mui",
+        "type": "0",
+        "link_target": "",
+        "size": 56467,
+        "contents_unknown": 4948
+      },
+      {
+        "offset": 191929,
+        "name": "./opt/ftl/gui/MC/mui/FUC703-00.mui",
+        "type": "0",
+        "link_target": "",
+        "size": 132150,
+        "contents_unknown": 10364
+      },
+      {
+        "offset": 401337,
+        "name": "./opt/ftl/gui/MC/mui/FUC704-00.mui",
+        "type": "0",
+        "link_target": "",
+        "size": 54258,
+        "contents_unknown": 4552
+      },
+      {
+        "offset": 456121,
+        "name": "./opt/ftl/gui/MC/mui/FUC704-00_02.mui",
+        "type": "0",
+        "link_target": "",
+        "size": 53321,
+        "contents_unknown": 4550
+      },
+      {
+        "offset": 510393,
+        "name": "./opt/ftl/gui/MC/mui/FUC701-00.mui",
+        "type": "0",
+        "link_target": "",
+        "size": 89537,
+        "contents_unknown": 7135
+      },
+      {
+        "offset": 600505,
+        "name": "./opt/ftl/gui/MC/3/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 601017,
+        "name": "./opt/ftl/gui/MC/3/CmC.mra",
+        "type": "0",
+        "link_target": "",
+        "size": 104692,
+        "contents_unknown": 2089
+      },
+      {
+        "offset": 706489,
+        "name": "./opt/ftl/gui/MC/4/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 707001,
+        "name": "./opt/ftl/gui/MC/4/CmC.mra",
+        "type": "0",
+        "link_target": "",
+        "size": 104487,
+        "contents_unknown": 2089
+      },
+      {
+        "offset": 812473,
+        "name": "./opt/ftl/gui/allwords/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 812985,
+        "name": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+        "type": "0",
+        "link_target": "",
+        "size": 612522,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 1426361,
+        "name": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+        "type": "0",
+        "link_target": "",
+        "size": 610350,
+        "contents_unknown": 0
+      },
+      {
+        "offset": 2037689,
+        "name": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+        "type": "0",
+        "link_target": "",
+        "size": 596144,
+        "contents_unknown": 0
+      }
+    ],
+    "elf_magic_offsets": [],
+    "libsecurity_string_offsets": [],
+    "leading_output_context": {
+      "first_header": {
+        "offset": 27577,
+        "name": "./opt/ftl/gui/MC/2/",
+        "type": "5",
+        "link_target": "",
+        "size": 0,
+        "contents_unknown": 0
+      },
+      "prefix_nonzero_strings": []
+    }
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_VRS",
+  "examined_functions": [
+    "000461e8",
+    "0001cf90"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 282,
+    "prompt_tokens": 2236,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2518
+  },
+  "next_focus": [
+    "Memory management functions",
+    "File I/O error handling"
+  ],
+  "observations": [
+    {
+      "address": "0x000461e8",
+      "claim": "Function performs memory cleanup and error tracing on initialization failure.",
+      "evidence_snippet": "rq_drc_ErrorTraceP(0,&DAT_000b1000,0x2381,2,0,0,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001cf90",
+      "claim": "Function reads data from a file with validation and error reporting.",
+      "evidence_snippet": "rq_fls_Read(local_1c,1,uVar4,auStack_54c,&local_20,0)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 000461e8 handles initialization and cleanup logic with error tracing and memory management. Function 0001cf90 manages file operations and data reading with error handling.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+  "unresolved_questions": [
+    "What is the purpose of the 'AppsAgentApps' string?",
+    "What does the 'LAB_0000ec54' label reference?"
+  ]
+}

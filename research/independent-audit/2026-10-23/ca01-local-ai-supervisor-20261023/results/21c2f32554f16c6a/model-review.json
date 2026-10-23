@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_NAVIIF",
+  "examined_functions": [
+    "000216fc",
+    "000227f4"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 255,
+    "prompt_tokens": 1789,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2044
+  },
+  "next_focus": [
+    "File path construction in 000216fc",
+    "Message queue data content in 000227f4"
+  ],
+  "observations": [
+    {
+      "address": "0x000216fc",
+      "claim": "Function reads from file paths constructed with DWR directory.",
+      "evidence_snippet": "strncpy(acStack_130,\"/tmp/dsv/DWR/\"",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000227f4",
+      "claim": "Function opens message queues for NVI send/receive communication.",
+      "evidence_snippet": "mq_open(\"/IPC_NVI_SND_MSG\"",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 000216fc appears to handle file operations with DSV library data, while 000227f4 manages message queues for NVI communication.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+  "unresolved_questions": [
+    "What is the purpose of the DSV library data access?",
+    "What data is transmitted via the message queues?"
+  ]
+}

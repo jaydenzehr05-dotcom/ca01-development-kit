@@ -1,0 +1,62 @@
+{
+  "binary": "./opt/ftl/apl/PROC_UIEIF",
+  "examined_functions": [
+    "000316a4",
+    "0000eb94"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 310,
+    "prompt_tokens": 2001,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2311
+  },
+  "next_focus": [
+    "Analyze the font file content handling",
+    "Investigate the HOMINF backup file structure"
+  ],
+  "observations": [
+    {
+      "address": "0x000316a4",
+      "claim": "Function opens and reads a font file, handling allocation and error cases.",
+      "evidence_snippet": "rq_fls_Open(\"/opt/ftl/gui/font/Tfont1212c_T1.otf\"",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 000316a4 handles font file operations, opening, reading, and error handling for Tfont1212c_T1.otf. Function 0000eb94 appears to manage UI events and file operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "316a4",
+    "eb94"
+  ],
+  "selection_evidence": [
+    {
+      "address": "316a4",
+      "score": 479,
+      "tags": [
+        "missing_resources",
+        "missing_libs",
+        "paths"
+      ]
+    },
+    {
+      "address": "eb94",
+      "score": 380,
+      "tags": [
+        "missing_libs",
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the font file handling in function 000316a4?",
+    "What specific UI information is written in function 0000eb94 case 0x10?"
+  ]
+}

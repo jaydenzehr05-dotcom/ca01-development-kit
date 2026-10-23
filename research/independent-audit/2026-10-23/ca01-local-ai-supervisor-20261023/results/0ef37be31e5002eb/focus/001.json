@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_VRS",
+  "examined_functions": [
+    "0005f7fc",
+    "00060728"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 234,
+    "prompt_tokens": 1468,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1702
+  },
+  "next_focus": [
+    "Error handling in file operations",
+    "Backup file purpose"
+  ],
+  "observations": [
+    {
+      "address": "0x0005f7fc",
+      "claim": "Function validates parameters before proceeding",
+      "evidence_snippet": "if (param_1 == 0 || param_2 == 0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00060728",
+      "claim": "Checks for existence of mclr_req.dat file",
+      "evidence_snippet": "sprintf(acStack_5c,\"%s%s\",\"/var/backup/vrs/\",\"mclr_req.dat\")",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0005f7fc handles file operations with error checking and memory management. Function 00060728 checks for a backup file existence.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "5f7fc",
+    "60728"
+  ],
+  "selection_evidence": [
+    {
+      "address": "5f7fc",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "60728",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the file operations?",
+    "What do the error codes represent?"
+  ]
+}

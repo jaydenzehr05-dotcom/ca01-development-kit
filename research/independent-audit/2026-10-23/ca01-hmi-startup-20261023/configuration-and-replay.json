@@ -1,0 +1,244 @@
+{
+  "scope": "Read-only verified1127 configuration; no startup execution",
+  "hmi_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "system_library_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+  "registry_address": "0x59f948",
+  "registry": {
+    "bf_sys_CnfSetup": "0x59c4e8",
+    "bf_sys_PowInf": "0x59c52c",
+    "bf_sys_PreInf": "0x59c5ac",
+    "bf_sys_AplInf": "0x59c5ec",
+    "bf_sys_ResInf": "0x59c64c",
+    "bf_sys_StbInf": "0x59c66c",
+    "bf_sys_TskInf": "0x59c6ac",
+    "bf_sys_RodInf": "0x59d8ac",
+    "bf_sys_MsgInf": "0x59d8bc",
+    "bf_sys_FlgInf": "0x59debc",
+    "bf_sys_SemInf": "0x59dfbc",
+    "bf_sys_MemInf": "0x59e3bc",
+    "bf_sys_TimInf": "0x59e43c",
+    "bf_sys_AbkInf": "0x59e5a4",
+    "bf_sys_BkmInf": "0x59f044",
+    "bf_sys_DrcInf": "0x59ed84",
+    "bf_sys_LogInf": "0x59ef84",
+    "bf_sys_MmdInf": "0x59f848"
+  },
+  "task_record_bytes": 48,
+  "task_count": 96,
+  "tasks": [
+    {
+      "index": 1,
+      "enabled": true,
+      "raw_words": [
+        1,
+        3,
+        54752,
+        1,
+        0,
+        0,
+        30000,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entry": "0xd5e0",
+      "entry_label": "tsk_sys_System",
+      "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+    },
+    {
+      "index": 3,
+      "enabled": true,
+      "raw_words": [
+        1,
+        8,
+        53156,
+        1,
+        0,
+        0,
+        30000,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entry": "0xcfa4",
+      "entry_label": "tsk_ipc_MsqRcv",
+      "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+    },
+    {
+      "index": 10,
+      "enabled": true,
+      "raw_words": [
+        1,
+        3,
+        52616,
+        0,
+        0,
+        0,
+        30000,
+        10,
+        10,
+        0,
+        0,
+        0
+      ],
+      "entry": "0xcd88",
+      "entry_label": "tsk_grp_DspCtl",
+      "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+    },
+    {
+      "index": 39,
+      "enabled": true,
+      "raw_words": [
+        1,
+        3,
+        177592,
+        8,
+        0,
+        0,
+        30000,
+        39,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entry": "0x2b5b8",
+      "entry_label": "FUN_0002b5b8",
+      "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+    },
+    {
+      "index": 40,
+      "enabled": true,
+      "raw_words": [
+        1,
+        5,
+        176684,
+        0,
+        0,
+        0,
+        30000,
+        40,
+        40,
+        0,
+        0,
+        0
+      ],
+      "entry": "0x2b22c",
+      "entry_label": "FUN_0002b22c",
+      "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+    },
+    {
+      "index": 41,
+      "enabled": true,
+      "raw_words": [
+        1,
+        5,
+        63124,
+        19,
+        0,
+        0,
+        30000,
+        41,
+        41,
+        0,
+        0,
+        0
+      ],
+      "entry": "0xf694",
+      "entry_label": "FUN_0000f694",
+      "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+    },
+    {
+      "index": 95,
+      "enabled": false,
+      "raw_words": [
+        0,
+        8,
+        1196020,
+        0,
+        0,
+        0,
+        300000,
+        95,
+        0,
+        0,
+        0,
+        0
+      ],
+      "entry": "0x123ff4",
+      "entry_label": "FUN_00123ff4",
+      "labels_are": "ELF dynamic symbol or generated address; remaining field meanings partly unverified"
+    }
+  ],
+  "queue_record_bytes": 16,
+  "queue_count": 96,
+  "queues": [
+    {
+      "index": 1,
+      "queue_id": 1,
+      "capacity": 64,
+      "slot_bytes": 16
+    },
+    {
+      "index": 10,
+      "queue_id": 10,
+      "capacity": 16,
+      "slot_bytes": 16
+    },
+    {
+      "index": 40,
+      "queue_id": 40,
+      "capacity": 64,
+      "slot_bytes": 16
+    },
+    {
+      "index": 41,
+      "queue_id": 41,
+      "capacity": 16,
+      "slot_bytes": 16
+    }
+  ],
+  "startup_requirements": {
+    "relative_configuration_file": "ipasz.conf",
+    "parent_synchronization_required": true,
+    "display_ready_gate": {
+      "task": 39,
+      "flag_id": 2,
+      "argument": 1
+    },
+    "draw_loop": {
+      "task": 40,
+      "entry": "0x2b22c",
+      "queue": 40,
+      "initial_timeout_ms": 500,
+      "max_batch": 16
+    }
+  },
+  "synthetic_replay": {
+    "before_ready": "Drawing task0x28 waits for display-ready flag2/1",
+    "after_ready": {
+      "dispatched": 1,
+      "timeout_heartbeat": true,
+      "remaining": 0,
+      "synthetic_harness": true,
+      "toyota_application_started": false,
+      "pixels_rendered": false
+    },
+    "events": [
+      {
+        "callback": "heartbeat",
+        "words": [
+          0,
+          0,
+          10,
+          0
+        ]
+      }
+    ],
+    "caveat": "Ready flag supplied by self-authored harness, not original startup. No graphics callback or Toyota screen executed."
+  }
+}

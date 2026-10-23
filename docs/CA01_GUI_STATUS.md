@@ -1,5 +1,7 @@
 # CA01 GUI recovery status — 2026-10-23
 
+Latest follow-up: [three-binary decompilation and verified task identity](CA01_CRITICAL_BINARY_DECOMPILATION.md). The original-render milestone below was subsequently committed and pushed as db49463; its uncommitted-state statements describe that earlier cycle. New decompilation work remains local.
+
 Original HMI ARM graphics instructions now produce validated off-screen pixels
 under QEMU and ARMEL Mesa. **The factory home/radio/settings menus have not run.**
 This is a bounded original rendering slice with fixture inputs, not full

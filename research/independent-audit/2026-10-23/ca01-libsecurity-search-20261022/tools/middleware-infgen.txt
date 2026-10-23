@@ -1,0 +1,173 @@
+! infgen 3.6 output
+! stats stored length 32768
+! stats inout 32773:0 (32768) 32768 0
+! stats literals none
+! stats matches none
+! stats inout 1:2 (0) 0 0
+! stats literals none
+! stats matches none
+! stats inout 1:2 (0) 0 0
+! stats literals none
+! stats matches none
+! stats inout 1:2 (0) 0 0
+! stats table 119:3
+! stats literals 7.8 bits each (25866/3322)
+! stats matches 74.0% (774 x 12.2)
+! stats inout 5076:1 (4096) 12800 -26703
+! stats table 122:0
+! stats literals 7.9 bits each (50425/6375)
+! stats matches 77.0% (1817 x 11.8)
+! stats inout 10594:2 (8192) 27738 -20245
+! stats table 121:6
+! stats literals 7.8 bits each (25829/3325)
+! stats matches 71.5% (771 x 10.8)
+! stats inout 5173:6 (4096) 11675 -28655
+! stats table 118:7
+! stats literals 8.0 bits each (182645/22779)
+! stats matches 70.8% (5893 x 9.4)
+! stats inout 36272:4 (28672) 78065 -31066
+! stats table 124:7
+! stats literals 8.0 bits each (97082/12167)
+! stats matches 75.3% (4217 x 8.8)
+! stats inout 21411:7 (16384) 49251 -19812
+! stats table 121:4
+! stats literals 7.8 bits each (26104/3348)
+! stats matches 69.8% (748 x 10.4)
+! stats inout 5072:3 (4096) 11097 -28435
+! stats table 121:1
+! stats literals 8.1 bits each (46752/5745)
+! stats matches 81.7% (2447 x 10.5)
+! stats inout 11011:5 (8192) 31362 -31122
+! stats table 125:1
+! stats literals 7.3 bits each (18485/2538)
+! stats matches 85.3% (1558 x 9.5)
+! stats inout 4910:2 (4096) 17291 -11311
+! stats table 127:5
+! stats literals 7.3 bits each (20179/2754)
+! stats matches 79.7% (1342 x 8.1)
+! stats inout 5424:6 (4096) 13583 -28742
+! stats table 121:1
+! stats literals 7.1 bits each (17387/2441)
+! stats matches 85.5% (1655 x 8.7)
+! stats inout 5332:0 (4096) 16786 -19679
+! stats table 105:0
+! stats literals 7.3 bits each (16410/2248)
+! stats matches 88.3% (1848 x 9.2)
+! stats inout 5656:4 (4096) 19277 -30979
+! stats table 118:4
+! stats literals 7.2 bits each (17474/2429)
+! stats matches 83.5% (1667 x 7.4)
+! stats inout 5510:2 (4096) 14688 -27439
+! stats table 88:0
+! stats literals 6.8 bits each (16969/2498)
+! stats matches 82.0% (1598 x 7.1)
+! stats inout 5454:6 (4096) 13876 -19051
+! stats table 125:4
+! stats literals 7.3 bits each (20973/2875)
+! stats matches 76.7% (1221 x 7.8)
+! stats inout 5345:4 (4096) 12347 -26943
+! stats table 123:7
+! stats literals 7.4 bits each (20099/2727)
+! stats matches 79.2% (1369 x 7.6)
+! stats inout 5398:1 (4096) 13097 -19951
+! stats table 111:0
+! stats literals 7.1 bits each (16146/2274)
+! stats matches 88.5% (1822 x 9.6)
+! stats inout 5473:7 (4096) 19712 -23926
+! stats table 120:5
+! stats literals 7.3 bits each (17293/2356)
+! stats matches 84.7% (1740 x 7.5)
+! stats inout 5601:6 (4096) 15404 -29056
+! stats table 102:1
+! stats literals 6.8 bits each (18486/2728)
+! stats matches 77.5% (1368 x 6.9)
+! stats inout 4937:6 (4096) 12125 -25332
+! stats table 137:0
+! stats literals 7.4 bits each (40227/5414)
+! stats matches 80.0% (2778 x 7.8)
+! stats inout 10529:2 (8192) 27038 -20865
+! stats table 109:4
+! stats literals 7.2 bits each (16813/2344)
+! stats matches 89.3% (1752 x 11.2)
+! stats inout 5445:4 (4096) 21937 -27871
+! stats table 112:3
+! stats literals 7.6 bits each (18489/2429)
+! stats matches 82.8% (1667 x 7.0)
+! stats inout 5650:1 (4096) 14100 -27744
+! stats table 135:1
+! stats literals 7.5 bits each (80585/10800)
+! stats matches 80.2% (5584 x 7.8)
+! stats inout 21335:5 (16384) 54461 -19247
+! stats table 106:2
+! stats literals 7.3 bits each (16907/2327)
+! stats matches 85.1% (1769 x 7.5)
+! stats inout 5627:3 (4096) 15616 -20541
+! stats table 114:1
+! stats literals 7.8 bits each (203937/26064)
+! stats matches 64.3% (6703 x 7.0)
+! stats inout 39694:3 (32767) 72973 -28992
+! stats table 119:3
+! stats literals 7.9 bits each (212951/27056)
+! stats matches 61.7% (5711 x 7.6)
+! stats inout 39794:1 (32767) 70684 -19618
+! stats table 108:0
+! stats literals 7.9 bits each (204756/25919)
+! stats matches 57.0% (6848 x 5.0)
+! stats inout 41237:4 (32767) 60250 -1740
+! stats table 104:5
+! stats literals 7.9 bits each (208756/26272)
+! stats matches 55.2% (6495 x 5.0)
+! stats inout 40536:4 (32767) 58633 -30133
+! stats table 112:2
+! stats literals 8.0 bits each (22091/2771)
+! stats matches 97.3% (1325 x 74.4)
+! stats inout 5103:3 (4096) 101362 -30498
+! stats table 96:6
+! stats literals 7.2 bits each (23465/3279)
+! stats matches 97.1% (817 x 135.5)
+! stats inout 4098:1 (4096) 113998 -2872
+! stats table 81:3
+! stats literals 7.4 bits each (194053/26075)
+! stats matches 56.9% (6692 x 5.1)
+! stats inout 38602:7 (32767) 60534 -4469
+! stats table 113:4
+! stats literals 7.9 bits each (211244/26581)
+! stats matches 53.0% (6186 x 4.9)
+! stats inout 40233:5 (32767) 56591 -2647
+! stats table 116:2
+! stats literals 7.9 bits each (78360/9882)
+! stats matches 92.1% (2406 x 48.1)
+! stats inout 14843:7 (12288) 125608 -30997
+! stats table 100:4
+! stats literals 7.8 bits each (205532/26264)
+! stats matches 53.5% (6503 x 4.6)
+! stats inout 38127:2 (32767) 56460 -813
+! stats table 111:3
+! stats literals 8.0 bits each (154382/19354)
+! stats matches 81.7% (5222 x 16.5)
+! stats inout 30586:6 (24576) 105645 -18247
+! stats table 110:3
+! stats literals 8.6 bits each (38739/4521)
+! stats matches 92.2% (3671 x 14.5)
+! stats inout 11646:1 (8192) 57818 -9735
+! stats table 124:5
+! stats literals 7.8 bits each (50823/6502)
+! stats matches 71.8% (1690 x 9.8)
+! stats inout 10260:1 (8192) 23074 -13787
+! stats table 116:4
+! stats literals 8.0 bits each (212606/26695)
+! stats matches 66.6% (6072 x 8.8)
+! stats inout 39686:0 (32767) 79879 -28433
+! stats table 79:2
+! stats literals 7.9 bits each (226199/28625)
+! stats matches 36.6% (4142 x 4.0)
+! stats inout 37744:7 (32767) 45162 -909
+! stats table 106:1
+! stats literals 8.9 bits each (35404/3973)
+! stats matches 88.8% (5146 x 6.1)
+! stats inout 14872:6 (9119) 35497 -13171
+! stats total inout 682090:7 (553878) 1680262
+! stats total block average 39075.9 uncompressed
+! stats total block average 12880.9 symbols
+! stats total literals 7.2 bits each
+! stats total matches 74.4% (123034 x 10.2)

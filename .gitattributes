@@ -1,0 +1,3 @@
+# Preserve historical independent CA01 audit snapshots byte-for-byte.
+# Their captured logs and vendor-derived excerpts intentionally keep source whitespace.
+research/independent-audit/** -whitespace

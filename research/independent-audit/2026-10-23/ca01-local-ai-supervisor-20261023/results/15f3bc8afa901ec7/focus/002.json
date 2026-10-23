@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_AUDIO",
+  "examined_functions": [
+    "000268dc",
+    "0004dc10"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 233,
+    "prompt_tokens": 1118,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1351
+  },
+  "next_focus": [
+    "Message sending function rq_msg_Send",
+    "Memory allocation function rq_mem_Alloc"
+  ],
+  "observations": [
+    {
+      "address": "0x000268dc",
+      "claim": "Initializes multiple global variables to zero",
+      "evidence_snippet": "DAT_00140f97 = 0;",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0004dc10",
+      "claim": "Conditionally allocates memory and sends message 0xd",
+      "evidence_snippet": "if (DAT_00299d3a == '\\0')",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 000268dc initializes audio-related variables and calls several subfunctions. Function 0004dc10 handles specific message sending based on conditional checks.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "268dc",
+    "4dc10"
+  ],
+  "selection_evidence": [
+    {
+      "address": "268dc",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "4dc10",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the initialized globals represent?",
+    "What is the purpose of message 0xd?"
+  ]
+}

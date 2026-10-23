@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libedbsong.so",
+  "examined_functions": [
+    "00029204",
+    "0002a45c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 230,
+    "prompt_tokens": 2199,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 2429
+  },
+  "next_focus": [
+    "Database connection state variables",
+    "USB device status validation logic"
+  ],
+  "observations": [
+    {
+      "address": "0x00029204",
+      "claim": "Database disconnection calls SQLDisconnect and SQLFreeConnect functions.",
+      "evidence_snippet": "sVar1 = e_rdb_SQLDisconnect",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0002a45c",
+      "claim": "USB image selection validates device status and mutex locking.",
+      "evidence_snippet": "iVar2 = df_edb_LockMutex",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00029204 handles database disconnection with error logging. Function 0002a45c manages USB image file selection with mutex locking and status checks.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "fcbd4cf0c639442e7d80877daf274ef6cd3e552bb917ea9f16bdba180d14337d",
+  "unresolved_questions": [
+    "What specific database connection states are being managed?",
+    "What is the purpose of the USB device manager ID check?"
+  ]
+}

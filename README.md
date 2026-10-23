@@ -5,15 +5,17 @@ and identified as coming directly from the head unit.
 
 This repository consolidates the firmware inspector, verified partial recovery,
 updater/security research, dependency tools, and isolated ARM emulation work.
-The original source archives, original firmware, proprietary recovered bytes,
-Linux root filesystems and rendered images remain outside Git.
+The original source archives, the older UU.11.27 package, proprietary
+recovered binaries, Linux root filesystems and rendered images remain outside
+Git. The UU.11.34 KWI itself was previously checked into `firmware/`.
 
 ## Current verified local capabilities
 
-Latest: [GUI recovery status and reproducible original ARM rendering](docs/CA01_GUI_STATUS.md).
+Latest: [October 23 full consolidation of Codex work, verified independent research, USB diagnostics and hardware findings](docs/CA01_RESEARCH_CONSOLIDATION_20261023.md). See also [three-binary decompilation and verified task identity](docs/CA01_CRITICAL_BINARY_DECOMPILATION.md) and [original ARM rendering status](docs/CA01_GUI_STATUS.md).
 
-- **59 complete recovered files**, including **41 ARM ELF files**: 21 executables
-  and 20 shared libraries. Every original recovered size/hash was rechecked.
+- **59 complete recovered output entries** (56 unique installed paths),
+  including **41 ARM ELF files**: 21 executables and 20 shared libraries.
+  Every original recovered size/hash was rechecked.
   Additional Kernel/Audio/Driver/Voice fragments retain explicit partial status.
 - Recovered original `PROC_REPRO`, BIOS files and updater call graphs establish
   64,000-byte AES-prefix processing and SHA-256/RSA-PSS interfaces. `libsecurity.so`,
@@ -29,7 +31,7 @@ Latest: [GUI recovery status and reproducible original ARM rendering](docs/CA01_
 - Original HMI ARM clear, rectangle geometry, GLES drawing and frame submission
   now produce independently checked pixels at **800 × 480 and 480 × 480** through
   three modeled display buffers. Inputs remain fixtures; factory menus have not run.
-- The combined automated suite passes **125 tests**. No radio access or flashing.
+- The combined automated suite passes **140 tests**, including the five isolated USB-exporter regressions. No radio access or flashing.
 
 Start with [consolidation verification](docs/CA01_LOCAL_CONSOLIDATION.md),
 [recovered dependencies](docs/CA01_DEPENDENCY_INVENTORY.md),

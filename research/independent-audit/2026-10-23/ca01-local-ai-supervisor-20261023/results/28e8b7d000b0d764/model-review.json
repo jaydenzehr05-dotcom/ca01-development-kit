@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_TMD",
+  "examined_functions": [
+    "00009f04",
+    "0000a960"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 244,
+    "prompt_tokens": 943,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1187
+  },
+  "next_focus": [
+    "Complete string-to-code mapping in FUN_0000a960",
+    "Analyze function pointer initialization in _INIT_0"
+  ],
+  "observations": [
+    {
+      "address": "0x00009f04",
+      "claim": "Calls function pointer if conditions met",
+      "evidence_snippet": "(*DAT_00009f30)();",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0000a960",
+      "claim": "Maps string parameters to integer identifiers",
+      "evidence_snippet": "strcmp(param_1,\"providerName\")",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function _INIT_0 performs conditional execution of a function pointer, while FUN_0000a960 maps string parameters to integer codes.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+  "unresolved_questions": [
+    "What is the purpose of the function pointer in _INIT_0?",
+    "Are all string mappings accounted for in FUN_0000a960?"
+  ]
+}

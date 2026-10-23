@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_MMP",
+  "examined_functions": [
+    "000765e8",
+    "0006a7b4"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 265,
+    "prompt_tokens": 1590,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1855
+  },
+  "next_focus": [
+    "SD card test file operations",
+    "Semaphore synchronization mechanism"
+  ],
+  "observations": [
+    {
+      "address": "0x000765e8",
+      "claim": "Writes test data to /sd_test.dat and verifies readback.",
+      "evidence_snippet": "write(iVar2,auStack_12c,0x100)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0006a7b4",
+      "claim": "Uses semaphore to synchronize song file selection with timeout.",
+      "evidence_snippet": "rq_sem_TakeT(0xe)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 000765e8 appears to handle SD card test operations with file I/O and error tracing. Function 0006a7b4 manages semaphore-based timing for song file selection.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+  "unresolved_questions": [
+    "What is the purpose of the 0x100 byte buffer operations?",
+    "How are the error trace values 0x1234, 0x5678, 0x9abc used?"
+  ]
+}

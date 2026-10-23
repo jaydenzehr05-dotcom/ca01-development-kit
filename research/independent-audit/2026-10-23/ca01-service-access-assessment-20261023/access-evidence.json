@@ -1,0 +1,2566 @@
+{
+  "REPRO": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/ghidra/decomp/decompiled.c",
+    "sha": "29384aa6c0fd1f8df0893ec0e3fe090e78b97eeae0094c58a7e3179d021f213f",
+    "matches": [
+      {
+        "address": "0000a1a0",
+        "name": "sysSha256Update",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a1a0 sysSha256Update bytes=12 */ void sysSha256Update(void) { (*(code *)PTR_sysSha256Update_00038308)(); return; } ",
+              "/* FUNCTION 0000a1a0 sysSha256Update bytes=12 */ void sysSha256Update(void) { (*(code *)PTR_sysSha256Update_00038308)(); return; } ",
+              "0 sysSha256Update bytes=12 */ void sysSha256Update(void) { (*(code *)PTR_sysSha256Update_00038308)(); return; } "
+            ]
+          },
+          "shellaccess": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a1a0 sysSha256Update bytes=12 */ void sysSha256Update(void) { (*(code *)PTR_sysSha256Update_00038308)(); return; } ",
+              "/* FUNCTION 0000a1a0 sysSha256Update bytes=12 */ void sysSha256Update(void) { (*(code *)PTR_sysSha256Update_00038308)(); return; } ",
+              "a0 sysSha256Update bytes=12 */ void sysSha256Update(void) { (*(code *)PTR_sysSha256Update_00038308)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a200",
+        "name": "umount",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "WARNING: Unknown calling convention -- yet parameter storage is locked */ int umount(char *__special_file) { int iVar1; iVar1 = (*(code *)PTR_umount_00038328)(__special_file); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a23c",
+        "name": "sysRsaExec",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a23c sysRsaExec bytes=12 */ void sysRsaExec(void) { (*(code *)PTR_sysRsaExec_0003833c)(); return; } ",
+              "/* FUNCTION 0000a23c sysRsaExec bytes=12 */ void sysRsaExec(void) { (*(code *)PTR_sysRsaExec_0003833c)(); return; } ",
+              "ON 0000a23c sysRsaExec bytes=12 */ void sysRsaExec(void) { (*(code *)PTR_sysRsaExec_0003833c)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a284",
+        "name": "sysSha256Init",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a284 sysSha256Init bytes=12 */ void sysSha256Init(void) { (*(code *)PTR_sysSha256Init_00038354)(); return; } ",
+              "/* FUNCTION 0000a284 sysSha256Init bytes=12 */ void sysSha256Init(void) { (*(code *)PTR_sysSha256Init_00038354)(); return; } ",
+              "0a284 sysSha256Init bytes=12 */ void sysSha256Init(void) { (*(code *)PTR_sysSha256Init_00038354)(); return; } "
+            ]
+          },
+          "shellaccess": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a284 sysSha256Init bytes=12 */ void sysSha256Init(void) { (*(code *)PTR_sysSha256Init_00038354)(); return; } ",
+              "/* FUNCTION 0000a284 sysSha256Init bytes=12 */ void sysSha256Init(void) { (*(code *)PTR_sysSha256Init_00038354)(); return; } ",
+              "00a284 sysSha256Init bytes=12 */ void sysSha256Init(void) { (*(code *)PTR_sysSha256Init_00038354)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a38c",
+        "name": "raise",
+        "tags": {
+          "authentication": {
+            "n": 2,
+            "examples": [
+              "known calling convention -- yet parameter storage is locked */ int raise(int __sig) { int iVar1; iVar1 = (*(code *)PTR_raise_000383ac)(__sig); return iVar1; } ",
+              "t raise(int __sig) { int iVar1; iVar1 = (*(code *)PTR_raise_000383ac)(__sig); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a3ec",
+        "name": "sysRsaPbcKeyInit",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a3ec sysRsaPbcKeyInit bytes=12 */ void sysRsaPbcKeyInit(void) { (*(code *)PTR_sysRsaPbcKeyInit_000383cc)(); return; } ",
+              "/* FUNCTION 0000a3ec sysRsaPbcKeyInit bytes=12 */ void sysRsaPbcKeyInit(void) { (*(code *)PTR_sysRsaPbcKeyInit_000383cc)(); return; } ",
+              "sysRsaPbcKeyInit bytes=12 */ void sysRsaPbcKeyInit(void) { (*(code *)PTR_sysRsaPbcKeyInit_000383cc)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a434",
+        "name": "sysSecRsaKeyDisable",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a434 sysSecRsaKeyDisable bytes=12 */ void sysSecRsaKeyDisable(void) { (*(code *)PTR_sysSecRsaKeyDisable_000383e4)(); return; } ",
+              "/* FUNCTION 0000a434 sysSecRsaKeyDisable bytes=12 */ void sysSecRsaKeyDisable(void) { (*(code *)PTR_sysSecRsaKeyDisable_000383e4)(); return; } ",
+              "KeyDisable bytes=12 */ void sysSecRsaKeyDisable(void) { (*(code *)PTR_sysSecRsaKeyDisable_000383e4)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a44c",
+        "name": "mount",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              " WARNING: Unknown calling convention -- yet parameter storage is locked */ int mount(char *__special_file,char *__dir,char *__fstype,ulong __rwflag,void *__data) { int iVar1; iVar1 = (*(code *)PTR_mount_000383ec)(__sp"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a560",
+        "name": "sysSha256Final",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a560 sysSha256Final bytes=12 */ void sysSha256Final(void) { (*(code *)PTR_sysSha256Final_00038448)(); return; } ",
+              "/* FUNCTION 0000a560 sysSha256Final bytes=12 */ void sysSha256Final(void) { (*(code *)PTR_sysSha256Final_00038448)(); return; } ",
+              "560 sysSha256Final bytes=12 */ void sysSha256Final(void) { (*(code *)PTR_sysSha256Final_00038448)(); return; } "
+            ]
+          },
+          "shellaccess": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a560 sysSha256Final bytes=12 */ void sysSha256Final(void) { (*(code *)PTR_sysSha256Final_00038448)(); return; } ",
+              "/* FUNCTION 0000a560 sysSha256Final bytes=12 */ void sysSha256Final(void) { (*(code *)PTR_sysSha256Final_00038448)(); return; } ",
+              "a560 sysSha256Final bytes=12 */ void sysSha256Final(void) { (*(code *)PTR_sysSha256Final_00038448)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a674",
+        "name": "sysRsaPssVerify",
+        "tags": {
+          "authentication": {
+            "n": 6,
+            "examples": [
+              "/* FUNCTION 0000a674 sysRsaPssVerify bytes=12 */ void sysRsaPssVerify(void) { (*(code *)PTR_sysRsaPssVerify_000384a4)(); return; } ",
+              "/* FUNCTION 0000a674 sysRsaPssVerify bytes=12 */ void sysRsaPssVerify(void) { (*(code *)PTR_sysRsaPssVerify_000384a4)(); return; } ",
+              "/* FUNCTION 0000a674 sysRsaPssVerify bytes=12 */ void sysRsaPssVerify(void) { (*(code *)PTR_sysRsaPssVerify_000384a4)(); return; } ",
+              "/* FUNCTION 0000a674 sysRsaPssVerify bytes=12 */ void sysRsaPssVerify(void) { (*(code *)PTR_sysRsaPssVerify_000384a4)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a6b0",
+        "name": "sysRsaDecPbcKeyInit",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000a6b0 sysRsaDecPbcKeyInit bytes=12 */ void sysRsaDecPbcKeyInit(void) { (*(code *)PTR_sysRsaDecPbcKeyInit_000384b8)(); return; } ",
+              "/* FUNCTION 0000a6b0 sysRsaDecPbcKeyInit bytes=12 */ void sysRsaDecPbcKeyInit(void) { (*(code *)PTR_sysRsaDecPbcKeyInit_000384b8)(); return; } ",
+              "DecPbcKeyInit bytes=12 */ void sysRsaDecPbcKeyInit(void) { (*(code *)PTR_sysRsaDecPbcKeyInit_000384b8)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a9bc",
+        "name": "FUN_0000a9bc",
+        "tags": {
+          "authentication": {
+            "n": 2,
+            "examples": [
+              "(auStack_12c); if (iVar4 != 0) { FUN_0001e13c(0x35,4,0x568,0,\"Sign Check Final error\"); if (0 < iVar4) { DAT_0007cd28 = FUN_0001dfec(iVar4); FUN_0001e72c(iVar4); ",
+              "0xff; } } uVar7 = 2; } FUN_0001e13c(0x35,4,0x55b,0,\"Sign Check error\"); uVar6 = 0x415; } else { if (0 < iVar4) { DAT_0007cd28 = FUN_0001dfec(); iVar5 = FUN_0001e72c(iVar4);"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000b720",
+        "name": "FUN_0000b720",
+        "tags": {
+          "storage": {
+            "n": 4,
+            "examples": [
+              "0); break; case 7: if (DAT_0007cd8c._2_1_ == '\\x01') { umount(\"/var/verup/\"); DAT_0007cd8c._2_1_ = '\\0'; } FUN_0000b2d4(0); FUN_0000db48(0); return; case 8: if ",
+              " break; case 7: if (DAT_0007cd8c._2_1_ == '\\x01') { umount(\"/var/verup/\"); DAT_0007cd8c._2_1_ = '\\0'; } FUN_0000b2d4(0); FUN_0000db48(0); return; case 8: if (DAT_0007cd",
+              "); return; case 8: if (DAT_0007cd8c._2_1_ == '\\x01') { umount(\"/var/verup/\"); DAT_0007cd8c._2_1_ = '\\0'; } FUN_0000b2d4(0xff); FUN_0000db48(0); return; default: ",
+              " return; case 8: if (DAT_0007cd8c._2_1_ == '\\x01') { umount(\"/var/verup/\"); DAT_0007cd8c._2_1_ = '\\0'; } FUN_0000b2d4(0xff); FUN_0000db48(0); return; default: return; "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000b8a8",
+        "name": "FUN_0000b8a8",
+        "tags": {
+          "storage": {
+            "n": 27,
+            "examples": [
+              " case 0xf: if ((puVar8[3] & 1) == 0) { __special_file = \"/dev/mmcblk0p2\"; } else { __special_file = \"/dev/mmcblk0p1\"; } iVar3 = mount(__special_file,\"/var/verup/\",",
+              "l_file = \"/dev/mmcblk0p2\"; } else { __special_file = \"/dev/mmcblk0p1\"; } iVar3 = mount(__special_file,\"/var/verup/\",\"ext3\",0,(void *)0x0); if (iVar3 < 0) { piVar4 = __e",
+              " else { __special_file = \"/dev/mmcblk0p1\"; } iVar3 = mount(__special_file,\"/var/verup/\",\"ext3\",0,(void *)0x0); if (iVar3 < 0) { piVar4 = __errno_location(); iVar3 = *piVar",
+              "pecial_file = \"/dev/mmcblk0p1\"; } iVar3 = mount(__special_file,\"/var/verup/\",\"ext3\",0,(void *)0x0); if (iVar3 < 0) { piVar4 = __errno_location(); iVar3 = *piVar4; if (iVar3 == "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000dec0",
+        "name": "FUN_0000dec0",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              " } } FUN_0001e13c(0x35,7,0x65a,0,\"Sign Check error\"); rq_drc_ErrorTraceP(0,&DAT_00060001,0x4006,iVar2,0,3,0); return 0xff; } ",
+              "tack_12c); if (iVar2 != 0) { FUN_0001e13c(0x35,7,0x66a,0,\"Sign Check Final error\"); if (0 < iVar2) { DAT_0007cd28 = FUN_0001dfec(iVar2); uVar4 = FUN_0001e72c(iVar",
+              "c); if (iVar2 == 0) goto LAB_0000dfd0; FUN_0001e13c(0x35,4,0x6b0,0,\"Sign Check Final error\"); if (iVar2 < 1) { uVar4 = 0; } else { DAT_0007cd28 = FUN_0001dfec(iVar2); uVa"
+            ]
+          }
+        }
+      },
+      {
+        "address": "000159f8",
+        "name": "FUN_000159f8",
+        "tags": {
+          "storage": {
+            "n": 3,
+            "examples": [
+              "ytes=140 */ void FUN_000159f8(undefined4 param_1) { int iVar1; iVar1 = mount(\"/dev/mmcblk0p3/\",\"/opt/ftl/cddb/\",\"ext3\",0x21,(void *)0x0); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,&DAT_00060006,0x2906,iVar1,0,0,0); ",
+              "0 */ void FUN_000159f8(undefined4 param_1) { int iVar1; iVar1 = mount(\"/dev/mmcblk0p3/\",\"/opt/ftl/cddb/\",\"ext3\",0x21,(void *)0x0); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,&DAT_00060006,0x2906,iVar1,0,0,0); } FUN",
+              "159f8(undefined4 param_1) { int iVar1; iVar1 = mount(\"/dev/mmcblk0p3/\",\"/opt/ftl/cddb/\",\"ext3\",0x21,(void *)0x0); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,&DAT_00060006,0x2906,iVar1,0,0,0); } FUN_000216a8(&DAT_000"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00015c44",
+        "name": "FUN_00015c44",
+        "tags": {
+          "storage": {
+            "n": 3,
+            "examples": [
+              "_0007cdb4 = DAT_0002410c; _DAT_0007cdb8 = (undefined2)DAT_00024110; iVar1 = mount(\"/dev/mmcblk0p3/\",\"/opt/ftl/cddb/\",\"ext3\",0x20,(void *)0x0); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,&DAT_00060001,0x4300,iVar1,0,0,0); ",
+              "b4 = DAT_0002410c; _DAT_0007cdb8 = (undefined2)DAT_00024110; iVar1 = mount(\"/dev/mmcblk0p3/\",\"/opt/ftl/cddb/\",\"ext3\",0x20,(void *)0x0); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,&DAT_00060001,0x4300,iVar1,0,0,0); FUN_0",
+              " _DAT_0007cdb8 = (undefined2)DAT_00024110; iVar1 = mount(\"/dev/mmcblk0p3/\",\"/opt/ftl/cddb/\",\"ext3\",0x20,(void *)0x0); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,&DAT_00060001,0x4300,iVar1,0,0,0); FUN_0000fbac(); ret"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00016e18",
+        "name": "FUN_00016e18",
+        "tags": {
+          "authentication": {
+            "n": 8,
+            "examples": [
+              "00028a50; memset(auStack_f5,0,0x19); local_dc = 0x19; local_d8[0] = s_BootSig_00028a6c[0]; local_d8[1] = s_BootSig_00028a6c[1]; local_d8[2] = s_BootSig_00028a6c[2]; local_d8[3] = s_BootSig_00028a6c[3]; acStack",
+              " local_dc = 0x19; local_d8[0] = s_BootSig_00028a6c[0]; local_d8[1] = s_BootSig_00028a6c[1]; local_d8[2] = s_BootSig_00028a6c[2]; local_d8[3] = s_BootSig_00028a6c[3]; acStack_d4[0] = s_BootSig_00028a6c[4]; acSta",
+              "otSig_00028a6c[0]; local_d8[1] = s_BootSig_00028a6c[1]; local_d8[2] = s_BootSig_00028a6c[2]; local_d8[3] = s_BootSig_00028a6c[3]; acStack_d4[0] = s_BootSig_00028a6c[4]; acStack_d4[1] = s_BootSig_00028a6c[5]; acS",
+              "otSig_00028a6c[1]; local_d8[2] = s_BootSig_00028a6c[2]; local_d8[3] = s_BootSig_00028a6c[3]; acStack_d4[0] = s_BootSig_00028a6c[4]; acStack_d4[1] = s_BootSig_00028a6c[5]; acStack_d4[2] = s_BootSig_00028a6c[6]; a"
+            ]
+          },
+          "bluetooth": {
+            "n": 8,
+            "examples": [
+              "[2] >> 0x10); memset(auStack_379,0,0x15); local_364 = 7; local_360[0] = s_Bluetooth_0002884c[0]; local_360[1] = s_Bluetooth_0002884c[1]; local_360[2] = s_Bluetooth_0002884c[2]; local_360[3] = s_Bluetooth_0002884c[3]; ",
+              "; local_364 = 7; local_360[0] = s_Bluetooth_0002884c[0]; local_360[1] = s_Bluetooth_0002884c[1]; local_360[2] = s_Bluetooth_0002884c[2]; local_360[3] = s_Bluetooth_0002884c[3]; acStack_35c[0] = s_Bluetooth_0002884c[4]",
+              "tooth_0002884c[0]; local_360[1] = s_Bluetooth_0002884c[1]; local_360[2] = s_Bluetooth_0002884c[2]; local_360[3] = s_Bluetooth_0002884c[3]; acStack_35c[0] = s_Bluetooth_0002884c[4]; acStack_35c[1] = s_Bluetooth_0002884c[",
+              "tooth_0002884c[1]; local_360[2] = s_Bluetooth_0002884c[2]; local_360[3] = s_Bluetooth_0002884c[3]; acStack_35c[0] = s_Bluetooth_0002884c[4]; acStack_35c[1] = s_Bluetooth_0002884c[5]; acStack_35c[2] = s_Bluetooth_0002884"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00017428",
+        "name": "FUN_00017428",
+        "tags": {
+          "storage": {
+            "n": 6,
+            "examples": [
+              " { fs_drv_MemWrite(0x407a0000,0,0x3000,0); } sync(); iVar1 = umount(\"/var/verup/\"); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,0x60000,0x211,iVar1,0,0,0); rq_tsk_Delay(1000); iVar1 = umount(\"",
+              " fs_drv_MemWrite(0x407a0000,0,0x3000,0); } sync(); iVar1 = umount(\"/var/verup/\"); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,0x60000,0x211,iVar1,0,0,0); rq_tsk_Delay(1000); iVar1 = umount(\"/var/verup/",
+              "orTraceP(0,0x60000,0x211,iVar1,0,0,0); rq_tsk_Delay(1000); iVar1 = umount(\"/var/verup/\"); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,0x60000,0x211,iVar1,0,0,0); rq_tsk_Delay(1000); iVar1 = ",
+              "P(0,0x60000,0x211,iVar1,0,0,0); rq_tsk_Delay(1000); iVar1 = umount(\"/var/verup/\"); if (iVar1 < 0) { rq_drc_ErrorTraceP(0,0x60000,0x211,iVar1,0,0,0); rq_tsk_Delay(1000); iVar1 = umount(\"/va"
+            ]
+          }
+        }
+      },
+      {
+        "address": "000176dc",
+        "name": "FUN_000176dc",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "f8_caseD_9: iVar1 = 0xf; break; case 0xb: dVar2 = (double)VectorUnsignedToFloat(param_2,(byte)(in_fpscr >> 0x16) & 3); if (dVar2 < DAT_00017860) { iVar1 = 300; } else if (DAT_00017868 <= dVar2)"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00018d30",
+        "name": "FUN_00018d30",
+        "tags": {
+          "usb": {
+            "n": 1,
+            "examples": [
+              "= '\\x02') { if (DAT_0007d0c9 == '\\x03') { iVar1 = umount(\"/mnt/rpr_rb_root\"); if (iVar1 != 0) { rq_drc_ErrorTraceP(0,&DAT_00060002,0x7000,iVar1,0,0,0); } "
+            ]
+          },
+          "storage": {
+            "n": 3,
+            "examples": [
+              "7d0c9 != '\\x02') { if (DAT_0007d0c9 == '\\x03') { iVar1 = umount(\"/mnt/rpr_rb_root\"); if (iVar1 != 0) { rq_drc_ErrorTraceP(0,&DAT_00060002,0x7000,iVar1,0,0,0); } ",
+              "rTraceP(0,&DAT_00060002,0x7000,iVar1,0,0,0); } iVar1 = umount(\"/var/verup/\"); if (iVar1 != 0) { rq_drc_ErrorTraceP(0,&DAT_00060002,0x7001,iVar1,0,0,0); } ",
+              "(0,&DAT_00060002,0x7000,iVar1,0,0,0); } iVar1 = umount(\"/var/verup/\"); if (iVar1 != 0) { rq_drc_ErrorTraceP(0,&DAT_00060002,0x7001,iVar1,0,0,0); } } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00018fc8",
+        "name": "FUN_00018fc8",
+        "tags": {
+          "usb": {
+            "n": 10,
+            "examples": [
+              "\\a' || (local_1a7 == '\\x01')))))) { memcpy(acStack_68da + uVar6 * 0x1100,\"/mnt/cdrom/\",0xc); uVar6 = uVar6 + 1 & 0xff; } if (uVar6 == 0) goto LAB_000198ec; uVar11 = 0; memset(&uStack_b0,0,0x40); ",
+              "| (local_21f == '\\x01')))))))) { memcpy(acStack_95d4 + uVar11 * 0x1100 + 2,\"/mnt/cdrom/\",0xc); uVar11 = uVar11 + 1 & 0xff; } FUN_0001e13c(0x35,10,0xee,uVar11,\"ucNum\"); FUN_0001df8c(acStack_1588); strcpy((char ",
+              " uStack_60 = uStack_a0; uStack_5c = uStack_9c; iVar4 = strcmp(pcVar10,\"/mnt/cdrom/\"); if (iVar4 == 0) { local_2fd3 = 2; } else { iVar4 = strcmp(pcVar10,\"/mnt/sd0\"); local_2fd3 = iVar4 ==",
+              "r4 == 0) { local_2fd3 = 2; } else { iVar4 = strcmp(pcVar10,\"/mnt/sd0\"); local_2fd3 = iVar4 == 0; } if (DAT_0007d4d4 != '\\x01') { bVar1 = true; goto LAB_0001d76c; } } else "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001b048",
+        "name": "FUN_0001b048",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "Var4[3] >> 0x10); local_24 = (undefined2)puVar4[3]; iVar1 = rq_fls_MakeDir(\"/mnt/rpr_rb_root\",0); if (iVar1 != 0) { rq_drc_ErrorTraceP(0,&DAT_00060002,0x4300,iVar1,0,0,0); } iVar1 = mount(\"/\",\"/mnt/rpr_rb_root\",",
+              "q_drc_ErrorTraceP(0,&DAT_00060002,0x4300,iVar1,0,0,0); } iVar1 = mount(\"/\",\"/mnt/rpr_rb_root\",\"ext3\",0x1000,(void *)0x0); if (iVar1 < 0) { uVar3 = 0x4301; } else { iVar1 = mount((char *)&local_30,\"/var/verup",
+              "ar2 = strlen((char *)&local_70); memcpy((char *)((int)&local_70 + sVar2),\"/mnt/rpr_rb_root\",0x11); sVar2 = strlen((char *)&local_70); memcpy((char *)((int)&local_70 + sVar2),&DAT_000290fc,3); sVar2 = s"
+            ]
+          },
+          "storage": {
+            "n": 4,
+            "examples": [
+              " 0) { rq_drc_ErrorTraceP(0,&DAT_00060002,0x4300,iVar1,0,0,0); } iVar1 = mount(\"/\",\"/mnt/rpr_rb_root\",\"ext3\",0x1000,(void *)0x0); if (iVar1 < 0) { uVar3 = 0x4301; } else { iVar1 = mount((char *)&local_30,\"",
+              "0,(void *)0x0); if (iVar1 < 0) { uVar3 = 0x4301; } else { iVar1 = mount((char *)&local_30,\"/var/verup/\",\"ext3\",0,(void *)0x0); if (iVar1 < 0) { uVar3 = 0x4302; } else { memset(&local_70,0,",
+              "r1 < 0) { uVar3 = 0x4301; } else { iVar1 = mount((char *)&local_30,\"/var/verup/\",\"ext3\",0,(void *)0x0); if (iVar1 < 0) { uVar3 = 0x4302; } else { memset(&local_70,0,0x40); local_6a = (unde",
+              "ar2 = strlen((char *)&local_70); memcpy((char *)((int)&local_70 + sVar2),\"/var/verup/\",0xc); sVar2 = strlen((char *)&local_70); DAT_0007d0c9 = 3; iVar1 = FUN_0001de48(0xb,&DAT_00060002,0x300,0xc,&local_70,s"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001b2b8",
+        "name": "FUN_0001b2b8",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "= (undefined1)((uint)puVar4[3] >> 0x10); local_24 = (undefined2)puVar4[3]; umount((char *)&local_30); memset(&local_70,0,0x40); local_66 = (undefined1)((uint)DAT_0002910c >> 0x10); local_70 = DAT_00029104; uStack_6"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001b418",
+        "name": "FUN_0001b418",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "; uStack_2c = puVar4[1]; uStack_28 = puVar4[2]; uStack_24 = puVar4[3]; umount((char *)&local_30); memset(&local_70,0,0x40); local_70 = DAT_00029130; uStack_6c = DAT_00029134; local_68 = (undefined1)DAT_00029138"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001e384",
+        "name": "FUN_0001e384",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "al_10; int local_c; *param_1 = 0; local_10 = 0; iVar1 = rq_fls_Open(\"/opt/ftl/SDIMG.VER\",&DAT_00024028,&local_c,0); if ((iVar1 == 0) && (local_c != 0)) { iVar1 = rq_fls_Read(local_c,1,7,param_1,&local_10,0); "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001e58c",
+        "name": "FUN_0001e58c",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "ocal_30[2] = '\\0'; local_30[3] = '\\0'; local_20 = 0; iVar1 = rq_fls_Open(\"/opt/ftl/ModelId\",&DAT_00024028,&local_1c,0); if ((iVar1 == 0) && (local_1c != 0)) { iVar1 = rq_fls_Read(local_1c,1,0xd,local_30,&local_20,0);"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001e750",
+        "name": "FUN_0001e750",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "ram_1,int param_2) { int iVar1; if ((param_1 != 0xff) && (iVar1 = sysSecRsaKeyDisable(), iVar1 != 0)) { if (iVar1 == -2) { return 0xfffffffc; } if (iVar1 != -3) { return 0xffffffff; } }"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001e94c",
+        "name": "FUN_0001e94c",
+        "tags": {
+          "authentication": {
+            "n": 2,
+            "examples": [
+              "fined4 param_1,int param_2) { int iVar1; undefined4 uVar2; iVar1 = sysRsaPbcKeyInit(DAT_0001e9bc,param_1); if (iVar1 == 0) { if (param_2 == 1) { uVar2 = 0xe70ecc7d; } else { if (param_2 !",
+              "m_2 != 2) { return -2; } uVar2 = 0x1e; } iVar1 = sysRsaDecPbcKeyInit(&DAT_0007d4dc,DAT_0001e9bc,uVar2,0); if (iVar1 == 0) { return 0; } } if (iVar1 != -1) { if (iVar1 == -2)"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001e9c0",
+        "name": "FUN_0001e9c0",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "k_30 [36]; if (param_1 == 0) { iVar1 = -2; } else { iVar1 = sysSha256Final(auStack_30,&DAT_0007d638); if ((((iVar1 != 0) || (iVar1 = sysRsaPssVerify(&DAT_0007d4dc,auStack_30,param_1), iVar1 != 0)) ",
+              "sysSha256Final(auStack_30,&DAT_0007d638); if ((((iVar1 != 0) || (iVar1 = sysRsaPssVerify(&DAT_0007d4dc,auStack_30,param_1), iVar1 != 0)) && (iVar1 != -1)) && (iVar1 == -2)) { iVar1 = -4; } } return",
+              "256Final(auStack_30,&DAT_0007d638); if ((((iVar1 != 0) || (iVar1 = sysRsaPssVerify(&DAT_0007d4dc,auStack_30,param_1), iVar1 != 0)) && (iVar1 != -1)) && (iVar1 == -2)) { iVar1 = -4; } } return iVar1; "
+            ]
+          },
+          "shellaccess": {
+            "n": 1,
+            "examples": [
+              "ck_30 [36]; if (param_1 == 0) { iVar1 = -2; } else { iVar1 = sysSha256Final(auStack_30,&DAT_0007d638); if ((((iVar1 != 0) || (iVar1 = sysRsaPssVerify(&DAT_0007d4dc,auStack_30,param_1), iVar1 != 0)) "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001ea28",
+        "name": "FUN_0001ea28",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "ram_4) { int iVar1; if (param_1 == 0) { return -2; } iVar1 = sysSha256Update(&DAT_0007d638,param_1,param_2,param_4,param_4); if (iVar1 != 0) { if (iVar1 != -1) { if (iVar1 == -2) { iVar1 = -"
+            ]
+          },
+          "shellaccess": {
+            "n": 1,
+            "examples": [
+              "aram_4) { int iVar1; if (param_1 == 0) { return -2; } iVar1 = sysSha256Update(&DAT_0007d638,param_1,param_2,param_4,param_4); if (iVar1 != 0) { if (iVar1 != -1) { if (iVar1 == -2) { iVar1"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001ea68",
+        "name": "FUN_0001ea68",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "UN_0001ea68 bytes=44 */ int FUN_0001ea68(void) { int iVar1; iVar1 = sysSha256Init(&DAT_0007d638); if (iVar1 == 0) { return 0; } if (iVar1 == -1) { return -1; } if (iVar1 == -2) { iVar1 = -4; } "
+            ]
+          },
+          "shellaccess": {
+            "n": 1,
+            "examples": [
+              "FUN_0001ea68 bytes=44 */ int FUN_0001ea68(void) { int iVar1; iVar1 = sysSha256Init(&DAT_0007d638); if (iVar1 == 0) { return 0; } if (iVar1 == -1) { return -1; } if (iVar1 == -2) { iVar1 = -4; "
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "SYSTEM": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/system1127/decompiled.c",
+    "sha": "f920dfeec0b1a1e75ef179455979e4ec89a4c393a60d254cea90cfa7401918e4",
+    "matches": [
+      {
+        "address": "0000de60",
+        "name": "sigemptyset",
+        "tags": {
+          "authentication": {
+            "n": 4,
+            "examples": [
+              "/* FUNCTION 0000de60 sigemptyset bytes=12 */ /* WARNING: Unknown calling convention -- yet parameter storage is locked */ int sigemptyset(sigset_t *__set) { int",
+              " WARNING: Unknown calling convention -- yet parameter storage is locked */ int sigemptyset(sigset_t *__set) { int iVar1; iVar1 = (*(code *)PTR_sigemptyset_00086cd0)(__set); return iVar1; } ",
+              "known calling convention -- yet parameter storage is locked */ int sigemptyset(sigset_t *__set) { int iVar1; iVar1 = (*(code *)PTR_sigemptyset_00086cd0)(__set); return iVar1; } ",
+              "*/ int sigemptyset(sigset_t *__set) { int iVar1; iVar1 = (*(code *)PTR_sigemptyset_00086cd0)(__set); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e1f0",
+        "name": "usb_find_busses",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000e1f0 usb_find_busses bytes=12 */ void usb_find_busses(void) { (*(code *)PTR_usb_find_busses_00086e00)(); return; } ",
+              "/* FUNCTION 0000e1f0 usb_find_busses bytes=12 */ void usb_find_busses(void) { (*(code *)PTR_usb_find_busses_00086e00)(); return; } ",
+              "e1f0 usb_find_busses bytes=12 */ void usb_find_busses(void) { (*(code *)PTR_usb_find_busses_00086e00)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e214",
+        "name": "usb_get_descriptor",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000e214 usb_get_descriptor bytes=12 */ void usb_get_descriptor(void) { (*(code *)PTR_usb_get_descriptor_00086e0c)(); return; } ",
+              "/* FUNCTION 0000e214 usb_get_descriptor bytes=12 */ void usb_get_descriptor(void) { (*(code *)PTR_usb_get_descriptor_00086e0c)(); return; } ",
+              "sb_get_descriptor bytes=12 */ void usb_get_descriptor(void) { (*(code *)PTR_usb_get_descriptor_00086e0c)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e238",
+        "name": "usb_claim_interface",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000e238 usb_claim_interface bytes=12 */ void usb_claim_interface(void) { (*(code *)PTR_usb_claim_interface_00086e18)(); return; } ",
+              "/* FUNCTION 0000e238 usb_claim_interface bytes=12 */ void usb_claim_interface(void) { (*(code *)PTR_usb_claim_interface_00086e18)(); return; } ",
+              "_claim_interface bytes=12 */ void usb_claim_interface(void) { (*(code *)PTR_usb_claim_interface_00086e18)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e4b4",
+        "name": "umount",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "WARNING: Unknown calling convention -- yet parameter storage is locked */ int umount(char *__special_file) { int iVar1; iVar1 = (*(code *)PTR_umount_00086eec)(__special_file); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e694",
+        "name": "usb_find_devices",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000e694 usb_find_devices bytes=12 */ void usb_find_devices(void) { (*(code *)PTR_usb_find_devices_00086f8c)(); return; } ",
+              "/* FUNCTION 0000e694 usb_find_devices bytes=12 */ void usb_find_devices(void) { (*(code *)PTR_usb_find_devices_00086f8c)(); return; } ",
+              "94 usb_find_devices bytes=12 */ void usb_find_devices(void) { (*(code *)PTR_usb_find_devices_00086f8c)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e934",
+        "name": "sigaddset",
+        "tags": {
+          "authentication": {
+            "n": 5,
+            "examples": [
+              "/* FUNCTION 0000e934 sigaddset bytes=12 */ /* WARNING: Unknown calling convention -- yet parameter storage is locked */ int sigaddset(sigset_t *__set,int __signo) ",
+              " WARNING: Unknown calling convention -- yet parameter storage is locked */ int sigaddset(sigset_t *__set,int __signo) { int iVar1; iVar1 = (*(code *)PTR_sigaddset_0008706c)(__set); return iVar1; } ",
+              "Unknown calling convention -- yet parameter storage is locked */ int sigaddset(sigset_t *__set,int __signo) { int iVar1; iVar1 = (*(code *)PTR_sigaddset_0008706c)(__set); return iVar1; } ",
+              "tion -- yet parameter storage is locked */ int sigaddset(sigset_t *__set,int __signo) { int iVar1; iVar1 = (*(code *)PTR_sigaddset_0008706c)(__set); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e964",
+        "name": "usb_init",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000e964 usb_init bytes=12 */ void usb_init(void) { (*(code *)PTR_usb_init_0008707c)(); return; } ",
+              "/* FUNCTION 0000e964 usb_init bytes=12 */ void usb_init(void) { (*(code *)PTR_usb_init_0008707c)(); return; } ",
+              " FUNCTION 0000e964 usb_init bytes=12 */ void usb_init(void) { (*(code *)PTR_usb_init_0008707c)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e970",
+        "name": "usb_control_msg",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000e970 usb_control_msg bytes=12 */ void usb_control_msg(void) { (*(code *)PTR_usb_control_msg_00087080)(); return; } ",
+              "/* FUNCTION 0000e970 usb_control_msg bytes=12 */ void usb_control_msg(void) { (*(code *)PTR_usb_control_msg_00087080)(); return; } ",
+              "e970 usb_control_msg bytes=12 */ void usb_control_msg(void) { (*(code *)PTR_usb_control_msg_00087080)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e9a0",
+        "name": "pthread_sigmask",
+        "tags": {
+          "authentication": {
+            "n": 5,
+            "examples": [
+              "/* FUNCTION 0000e9a0 pthread_sigmask bytes=12 */ /* WARNING: Unknown calling convention -- yet parameter storage is locked */ int pthread_sigmask(int __how,__sigset_t *__",
+              ": Unknown calling convention -- yet parameter storage is locked */ int pthread_sigmask(int __how,__sigset_t *__newmask,__sigset_t *__oldmask) { int iVar1; iVar1 = (*(code *)PTR_pthread_sigmask_00087090)(__how); r",
+              "nvention -- yet parameter storage is locked */ int pthread_sigmask(int __how,__sigset_t *__newmask,__sigset_t *__oldmask) { int iVar1; iVar1 = (*(code *)PTR_pthread_sigmask_00087090)(__how); return iVar1; } ",
+              "ter storage is locked */ int pthread_sigmask(int __how,__sigset_t *__newmask,__sigset_t *__oldmask) { int iVar1; iVar1 = (*(code *)PTR_pthread_sigmask_00087090)(__how); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000e9f4",
+        "name": "raise",
+        "tags": {
+          "authentication": {
+            "n": 2,
+            "examples": [
+              "known calling convention -- yet parameter storage is locked */ int raise(int __sig) { int iVar1; iVar1 = (*(code *)PTR_raise_000870ac)(__sig); return iVar1; } ",
+              "t raise(int __sig) { int iVar1; iVar1 = (*(code *)PTR_raise_000870ac)(__sig); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000ea18",
+        "name": "usb_interrupt_read",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000ea18 usb_interrupt_read bytes=12 */ void usb_interrupt_read(void) { (*(code *)PTR_usb_interrupt_read_000870b8)(); return; } ",
+              "/* FUNCTION 0000ea18 usb_interrupt_read bytes=12 */ void usb_interrupt_read(void) { (*(code *)PTR_usb_interrupt_read_000870b8)(); return; } ",
+              "sb_interrupt_read bytes=12 */ void usb_interrupt_read(void) { (*(code *)PTR_usb_interrupt_read_000870b8)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000eba4",
+        "name": "mount",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              " WARNING: Unknown calling convention -- yet parameter storage is locked */ int mount(char *__special_file,char *__dir,char *__fstype,ulong __rwflag,void *__data) { int iVar1; iVar1 = (*(code *)PTR_mount_0008713c)(__sp"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000ed0c",
+        "name": "usb_get_string_simple",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000ed0c usb_get_string_simple bytes=12 */ void usb_get_string_simple(void) { (*(code *)PTR_usb_get_string_simple_000871b4)(); return; } ",
+              "/* FUNCTION 0000ed0c usb_get_string_simple bytes=12 */ void usb_get_string_simple(void) { (*(code *)PTR_usb_get_string_simple_000871b4)(); return; } ",
+              "_string_simple bytes=12 */ void usb_get_string_simple(void) { (*(code *)PTR_usb_get_string_simple_000871b4)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000f09c",
+        "name": "usb_open",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000f09c usb_open bytes=12 */ void usb_open(void) { (*(code *)PTR_usb_open_000872e4)(); return; } ",
+              "/* FUNCTION 0000f09c usb_open bytes=12 */ void usb_open(void) { (*(code *)PTR_usb_open_000872e4)(); return; } ",
+              " FUNCTION 0000f09c usb_open bytes=12 */ void usb_open(void) { (*(code *)PTR_usb_open_000872e4)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000f120",
+        "name": "usb_detach_kernel_driver_np",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000f120 usb_detach_kernel_driver_np bytes=12 */ void usb_detach_kernel_driver_np(void) { (*(code *)PTR_usb_detach_kernel_driver_np_00087310)(); r",
+              "/* FUNCTION 0000f120 usb_detach_kernel_driver_np bytes=12 */ void usb_detach_kernel_driver_np(void) { (*(code *)PTR_usb_detach_kernel_driver_np_00087310)(); return; } ",
+              "river_np bytes=12 */ void usb_detach_kernel_driver_np(void) { (*(code *)PTR_usb_detach_kernel_driver_np_00087310)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000f1bc",
+        "name": "usb_close",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 0000f1bc usb_close bytes=12 */ void usb_close(void) { (*(code *)PTR_usb_close_00087344)(); return; } ",
+              "/* FUNCTION 0000f1bc usb_close bytes=12 */ void usb_close(void) { (*(code *)PTR_usb_close_00087344)(); return; } ",
+              "UNCTION 0000f1bc usb_close bytes=12 */ void usb_close(void) { (*(code *)PTR_usb_close_00087344)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000fd9c",
+        "name": "FUN_0000fd9c",
+        "tags": {
+          "storage": {
+            "n": 11,
+            "examples": [
+              "Var8) { if (local_a9 == '\\x02' || local_a9 == '\\x04') { pcVar6 = \"/opt/ftl/apl/opn/opn_tvga.bin\"; pcVar3 = \"/opt/ftl/apl/opn/opn_tvga_pl.bin\"; } else { pcVar6 = \"/opt/ftl/apl/opn/opn_tvg",
+              "= '\\x04') { pcVar6 = \"/opt/ftl/apl/opn/opn_tvga.bin\"; pcVar3 = \"/opt/ftl/apl/opn/opn_tvga_pl.bin\"; } else { pcVar6 = \"/opt/ftl/apl/opn/opn_tvga1_1.bin\"; pcVar3 = \"/opt/ftl/apl/opn/opn_",
+              "r3 = \"/opt/ftl/apl/opn/opn_tvga_pl.bin\"; } else { pcVar6 = \"/opt/ftl/apl/opn/opn_tvga1_1.bin\"; pcVar3 = \"/opt/ftl/apl/opn/opn_tvga1_1_pl.bin\"; } if (local_117 == '\\x02') { pcVar6 =",
+              " else { pcVar6 = \"/opt/ftl/apl/opn/opn_tvga1_1.bin\"; pcVar3 = \"/opt/ftl/apl/opn/opn_tvga1_1_pl.bin\"; } if (local_117 == '\\x02') { pcVar6 = pcVar3; } } else { pcVar6 = \"/op"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00015b7c",
+        "name": "FUN_00015b7c",
+        "tags": {
+          "authentication": {
+            "n": 2,
+            "examples": [
+              "_000c75bc = \"EC/NC ADJ\"; DAT_000c75c8 = &LAB_00014e64; DAT_000c75d4 = \"WiFi Auth\"; DAT_000c75e0 = &LAB_00014dcc; DAT_000c75b6 = 0x514; DAT_000c75f8 = &LAB_00014ccc; DAT_000c75ec = &DAT_00065e84; memset(&DAT_000",
+              "0c7874 = 0x960; DAT_000c7876 = 0x50; DAT_000c7878 = 1; DAT_000c781c = \"BT Certification\"; DAT_000c784c = \"microSD Check\"; DAT_000c787a = 2; DAT_000c7828 = &LAB_00014e0c; DAT_000c7834 = \"eSD Check\"; DAT_000c78"
+            ]
+          },
+          "bluetooth": {
+            "n": 1,
+            "examples": [
+              "DAT_000c7550 = &LAB_00014d60; DAT_000c7568 = &LAB_00014fc4; DAT_000c7574 = \"Bluetooth Devices\"; DAT_000c7580 = &LAB_00014e38; DAT_000c7598 = &LAB_00015af0; DAT_000c75a4 = \"HD Radio DD\"; DAT_000c7548 = 5; DAT_000c756"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00019454",
+        "name": "FUN_00019454",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "0c7db2 = 2; DAT_000c7db8 = 7; DAT_000c7dbe = 7; DAT_000c7d5c = \"WiFi Diag Auth Mode\"; DAT_000c7dac = 0x41a; DAT_000c7d7c = 0x41a; DAT_000c7d60 = 4; DAT_000c7d94 = 0x41a; DAT_000c7d6c = &DAT_000650f0; DAT_00"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0001b0c0",
+        "name": "FUN_0001b0c0",
+        "tags": {
+          "storage": {
+            "n": 2,
+            "examples": [
+              "_50 = 0; local_4c = 0; local_68 = 0; local_64 = 0; iVar1 = rq_fls_Open(\"/opt/ftl/NFIMG.VER\",&DAT_0006f124,local_24,0); if ((iVar1 == 0) && (local_24[0] != 0)) { local_28 = iVar1; rq_fls_Read(local_24[0],1,0x20,",
+              " iVar1; local_6c = iVar1; local_24[0] = iVar1; iVar1 = rq_fls_Open(\"/opt/ftl/SDIMG.VER\",&DAT_0006f124,local_24,0); if ((iVar1 == 0) && (local_24[0] != 0)) { local_28 = iVar1; rq_fls_Read(local_24[0],1"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00027850",
+        "name": "FUN_00027850",
+        "tags": {
+          "storage": {
+            "n": 2,
+            "examples": [
+              "case 2: case 0x10: goto switchD_000278b4_caseD_2; case 3: pcVar2 = \"/opt/ftl/NFIMG.VER\"; goto LAB_00027958; case 4: pcVar2 = \"/opt/ftl/SDIMG.VER\"; LAB_00027958: local_14 = 0; iVar3 = rq_fls_Open(pcV",
+              " pcVar2 = \"/opt/ftl/NFIMG.VER\"; goto LAB_00027958; case 4: pcVar2 = \"/opt/ftl/SDIMG.VER\"; LAB_00027958: local_14 = 0; iVar3 = rq_fls_Open(pcVar2,&DAT_0006f124); if (iVar3 != 0) { return; } if"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00029a38",
+        "name": "FUN_00029a38",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "'; acStack_44[6] = '\\0'; acStack_44[7] = '\\0'; iVar1 = rq_fls_Open(\"/opt/ftl/SDIMG.VER\",&DAT_0006f124,auStack_1c,0); if (iVar1 == 0) { iVar1 = rq_fls_Read(auStack_1c[0],1,0x20,acStack_44,&sStack_20,0); "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00029a4c",
+        "name": "FUN_00029a4c",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "'; acStack_44[6] = '\\0'; acStack_44[7] = '\\0'; iVar1 = rq_fls_Open(\"/opt/ftl/NFIMG.VER\",&DAT_0006f124,auStack_1c,0); if (iVar1 == 0) { iVar1 = rq_fls_Read(auStack_1c[0],1,0x20,acStack_44,&sStack_20,0); "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0002ead0",
+        "name": "FUN_0002ead0",
+        "tags": {
+          "usb": {
+            "n": 8,
+            "examples": [
+              ",char *param_2) { int iVar1; undefined4 uVar2; iVar1 = mount(param_1,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\"); if ((iVar1 != 0) && (iVar1 = mount(param_2,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\")",
+              " *param_2) { int iVar1; undefined4 uVar2; iVar1 = mount(param_1,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\"); if ((iVar1 != 0) && (iVar1 = mount(param_2,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\"), i",
+              "xc0ed0000,\"iocharset=utf8\"); if ((iVar1 != 0) && (iVar1 = mount(param_2,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\"), iVar1 != 0)) { return 0xffffffff; } iVar1 = access(\"/mnt/usb1/13PFBACKUPDB.KWI\",0); uVa",
+              "0000,\"iocharset=utf8\"); if ((iVar1 != 0) && (iVar1 = mount(param_2,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\"), iVar1 != 0)) { return 0xffffffff; } iVar1 = access(\"/mnt/usb1/13PFBACKUPDB.KWI\",0); uVar2 "
+            ]
+          },
+          "storage": {
+            "n": 3,
+            "examples": [
+              "0(char *param_1,char *param_2) { int iVar1; undefined4 uVar2; iVar1 = mount(param_1,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\"); if ((iVar1 != 0) && (iVar1 = mount(param_2,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"io",
+              "/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\"); if ((iVar1 != 0) && (iVar1 = mount(param_2,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\"), iVar1 != 0)) { return 0xffffffff; } iVar1 = access(\"/mnt/usb1/13PFBACKUPDB.",
+              "= access(\"/mnt/usb1/13PFBACKUPDB.KWI\",0); uVar2 = 0; if (iVar1 != 0) { umount(\"/mnt/usb1\"); uVar2 = 0xffffffff; } return uVar2; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0002eb74",
+        "name": "FUN_0002eb74",
+        "tags": {
+          "usb": {
+            "n": 8,
+            "examples": [
+              "ar1 = DAT_0002efcc; local_30[1] = 0xa5b4c3d2; memcpy(acStack_148,\"tar zxvfm /mnt/usb1/13PFBACKUPDB.KWI -C /var/backup --no-same-owner\",0x44); memset(auStack_104,0,0x3c); local_34[0] = '\\0'; local_34[1] = '\\0'; loc",
+              " DAT_0002efcc; local_30[1] = 0xa5b4c3d2; memcpy(acStack_148,\"tar zxvfm /mnt/usb1/13PFBACKUPDB.KWI -C /var/backup --no-same-owner\",0x44); memset(auStack_104,0,0x3c); local_34[0] = '\\0'; local_34[1] = '\\0'; local_",
+              " fs_drv_MemWrite(0xe6a70208,local_30 + 1,4,0); iVar2 = rq_fls_Open(\"/mnt/usb1/13PFBACKUPDL.KWI\",&DAT_0006f124,local_30,0); if ((iVar2 == 0) && (local_30[0] != 0)) { memset(acStack_268,0,0x120); ",
+              "fs_drv_MemWrite(0xe6a70208,local_30 + 1,4,0); iVar2 = rq_fls_Open(\"/mnt/usb1/13PFBACKUPDL.KWI\",&DAT_0006f124,local_30,0); if ((iVar2 == 0) && (local_30[0] != 0)) { memset(acStack_268,0,0x120); "
+            ]
+          },
+          "storage": {
+            "n": 3,
+            "examples": [
+              "]; local_90 = (undefined2)puVar1[0x1e]; local_48 = local_3c; __fd = open(\"/dev/flash\",2); if (-1 < __fd) { iVar2 = ioctl(__fd,0x4004ff10,&local_48); if ((-1 < iVar2) && (local_3c[0] == -0x65748393)) { fs_iop_",
+              "se(__fd); rq_fls_Close(local_30[0],0); umount(\"/mnt/usb1\"); FUN_0002ea94(0xa5b8c7d6); } sync(); memset(acStack_2",
+              "ystem(acStack_148); if (iVar2 != 0) { close(__fd); umount(\"/mnt/usb1\"); FUN_0002ea94(0xa5b8c7d6); } sync(); rename(\"/var/backup/__DBIMG.VER\",\"/var/backup/DBIMG.VER\""
+            ]
+          }
+        }
+      },
+      {
+        "address": "0002f070",
+        "name": "FUN_0002f070",
+        "tags": {
+          "storage": {
+            "n": 3,
+            "examples": [
+              " void FUN_0002f070(void) { int iVar1; int *piVar2; sync(); iVar1 = umount(DAT_000873c4); if (iVar1 != 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0,0x13000600,0,*piVar2,0,0); usleep(500000)",
+              "ceP(0,0,0x13000600,0,*piVar2,0,0); usleep(500000); sync(); iVar1 = umount(DAT_000873c4); if (iVar1 != 0) { rq_drc_ErrorTraceP(0,0,0x13000600,0,*piVar2,0,0); usleep(500000); sync(); iVar1",
+              "0,0x13000600,0,*piVar2,0,0); usleep(500000); sync(); iVar1 = umount(DAT_000873c4); if (iVar1 != 0) { rq_drc_ErrorTraceP(0,0,0x13000600,0,*piVar2,0,0); usleep(500000); return; "
+            ]
+          }
+        }
+      },
+      {
+        "address": "000358e8",
+        "name": "FUN_000358e8",
+        "tags": {
+          "authentication": {
+            "n": 5,
+            "examples": [
+              "000358e8 bytes=244 */ void FUN_000358e8(void) { int iVar1; int *piVar2; sigset_t sStack_90; iVar1 = sigemptyset(&sStack_90); if (iVar1 < 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0xa001,0",
+              "00358e8(void) { int iVar1; int *piVar2; sigset_t sStack_90; iVar1 = sigemptyset(&sStack_90); if (iVar1 < 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0xa001,0x201,iVar1,*piVar2,0,0); } iVa",
+              "tion(); rq_drc_ErrorTraceP(0,0xa001,0x201,iVar1,*piVar2,0,0); } iVar1 = sigaddset(&sStack_90,0x1d); if (iVar1 < 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0xa001,0x202,iVar1,*piVar2,0,0); } ",
+              " rq_drc_ErrorTraceP(0,0xa001,0x202,iVar1,*piVar2,0,0); } iVar1 = pthread_sigmask(1,&sStack_90,(__sigset_t *)0x0); if (iVar1 != 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0xa001,0x203,iVar1,*piVa"
+            ]
+          }
+        }
+      },
+      {
+        "address": "000359dc",
+        "name": "FUN_000359dc",
+        "tags": {
+          "authentication": {
+            "n": 5,
+            "examples": [
+              "000359dc bytes=300 */ void FUN_000359dc(void) { int iVar1; int *piVar2; sigset_t sStack_90; iVar1 = sigemptyset(&sStack_90); if (iVar1 < 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0xa001,0",
+              "00359dc(void) { int iVar1; int *piVar2; sigset_t sStack_90; iVar1 = sigemptyset(&sStack_90); if (iVar1 < 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0xa001,0x101,iVar1,*piVar2,0,0); } iVa",
+              "tion(); rq_drc_ErrorTraceP(0,0xa001,0x101,iVar1,*piVar2,0,0); } iVar1 = sigaddset(&sStack_90,0x1d); if (iVar1 < 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0xa001,0x102,iVar1,*piVar2,0,0); } ",
+              " rq_drc_ErrorTraceP(0,0xa001,0x102,iVar1,*piVar2,0,0); } iVar1 = pthread_sigmask(0,&sStack_90,(__sigset_t *)0x0); if (iVar1 != 0) { piVar2 = __errno_location(); rq_drc_ErrorTraceP(0,0xa001,0x103,iVar1,*piVa"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00036ecc",
+        "name": "FUN_00036ecc",
+        "tags": {
+          "authentication": {
+            "n": 4,
+            "examples": [
+              "647c4(0x2000,local_44 * (local_48 >> 3)); dVar9 = (double)VectorSignedToFloat((&DAT_00106634)[param_1 * 0x13], (byte)(in_fpscr >> 0x16) & 3); ",
+              " (byte)(in_fpscr >> 0x16) & 3); dVar10 = (double)VectorUnsignedToFloat(local_48 << 3,(byte)(in_fpscr >> 0x16) & 3); dVar9 = (dVar10 / dVar9) * dVar8; local_38 = (uint)(0.",
+              " goto LAB_00037204; } dVar9 = (double)VectorSignedToFloat((&DAT_00106634)[param_1 * 0x13], (byte)(in_fpscr >> 0x16) & 3); ",
+              " (byte)(in_fpscr >> 0x16) & 3); dVar10 = (double)VectorUnsignedToFloat(local_48,(byte)(in_fpscr >> 0x16) & 3); dVar8 = (dVar10 / dVar9) * dVar8; local_38 = (uint)(0.0"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00037610",
+        "name": "FUN_00037610",
+        "tags": {
+          "authentication": {
+            "n": 5,
+            "examples": [
+              "13]; iVar13 = *(int *)(&DAT_0010660c + iVar4); dVar17 = (double)VectorUnsignedToFloat(param_3,(byte)(in_fpscr >> 0x16) & 3); puVar16 = (undefined4 *)(&DAT_0010662c + iVar4); uVar12 = (uint)(byte)(&DAT_0010660a",
+              "0106631)[iVar4]; bVar3 = (&DAT_0010660b)[iVar4]; dVar20 = (double)VectorSignedToFloat(iVar15,(byte)(in_fpscr >> 0x16) & 3); dVar19 = (double)VectorSignedToFloat(iVar13,(byte)(in_fpscr >> 0x16) & 3); uVar5 = FU",
+              "rSignedToFloat(iVar15,(byte)(in_fpscr >> 0x16) & 3); dVar19 = (double)VectorSignedToFloat(iVar13,(byte)(in_fpscr >> 0x16) & 3); uVar5 = FUN_000647c4((uint)bVar2,uVar12); dVar18 = (double)VectorSignedToFloat(uVar5 ",
+              " & 3); uVar5 = FUN_000647c4((uint)bVar2,uVar12); dVar18 = (double)VectorSignedToFloat(uVar5 & 0xff,(byte)(in_fpscr >> 0x16) & 3); dVar18 = dVar17 * (dVar20 / dVar19) * dVar18; if ((uint)(*(int *)(&DAT_0010662c"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00037b38",
+        "name": "FUN_00037b38",
+        "tags": {
+          "authentication": {
+            "n": 2,
+            "examples": [
+              "&DAT_0010660c + iVar1)) { uVar2 = 0; } else { dVar6 = (double)VectorSignedToFloat((&DAT_00106634)[param_1 * 0x13],(byte)(in_fpscr >> 0x16) & 3 ); dVar5 = (double)VectorSi",
+              "> 0x16) & 3 ); dVar5 = (double)VectorSignedToFloat(*(int *)(&DAT_0010660c + iVar1),(byte)(in_fpscr >> 0x16) & 3 ); dVar5 = DAT_00037c58 / ("
+            ]
+          }
+        }
+      },
+      {
+        "address": "0003d330",
+        "name": "FUN_0003d330",
+        "tags": {
+          "usb": {
+            "n": 1,
+            "examples": [
+              "d4 param_2,int param_3) { char cVar1; size_t __n; uint uVar2; __n = usb_interrupt_read(*(undefined4 *)(&DAT_002508b0 + param_1 * 4),param_2,param_3,0x300,5000); if ((int)__n < 0) { if (__n == 0xffffff92 ||"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0003d940",
+        "name": "FUN_0003d940",
+        "tags": {
+          "usb": {
+            "n": 5,
+            "examples": [
+              " = 2; } iVar4 = FUN_00060dd4(9,iVar3,auStack_1228); if (iVar4 == 1) { usb_init(); usb_find_busses(); usb_find_devices(); iVar4 = usb_get_descriptor(*(undefined4 *)(&DAT_002508b0 + iVar3 * 4),1,0,auStac",
+              "4 = FUN_00060dd4(9,iVar3,auStack_1228); if (iVar4 == 1) { usb_init(); usb_find_busses(); usb_find_devices(); iVar4 = usb_get_descriptor(*(undefined4 *)(&DAT_002508b0 + iVar3 * 4),1,0,auStack_128,0x12); ",
+              "3,auStack_1228); if (iVar4 == 1) { usb_init(); usb_find_busses(); usb_find_devices(); iVar4 = usb_get_descriptor(*(undefined4 *)(&DAT_002508b0 + iVar3 * 4),1,0,auStack_128,0x12); if (iVar4 < 0) { ",
+              "1) { usb_init(); usb_find_busses(); usb_find_devices(); iVar4 = usb_get_descriptor(*(undefined4 *)(&DAT_002508b0 + iVar3 * 4),1,0,auStack_128,0x12); if (iVar4 < 0) { rq_drc_ErrorTraceP(0,\"CycCtl\",0"
+            ]
+          }
+        }
+      },
+      {
+        "address": "000468e0",
+        "name": "FUN_000468e0",
+        "tags": {
+          "usb": {
+            "n": 7,
+            "examples": [
+              "88]; iVar1 = FUN_00060dd4(9,param_1,auStack_1110); if (iVar1 == 1) { usb_init(); usb_find_busses(); usb_find_devices(); uVar2 = usb_open(auStack_106c); *(undefined4 *)(&DAT_002508b0 + param_1 * 4)",
+              "= FUN_00060dd4(9,param_1,auStack_1110); if (iVar1 == 1) { usb_init(); usb_find_busses(); usb_find_devices(); uVar2 = usb_open(auStack_106c); *(undefined4 *)(&DAT_002508b0 + param_1 * 4) = uVar2; iV",
+              "1,auStack_1110); if (iVar1 == 1) { usb_init(); usb_find_busses(); usb_find_devices(); uVar2 = usb_open(auStack_106c); *(undefined4 *)(&DAT_002508b0 + param_1 * 4) = uVar2; iVar1 = usb_claim_interfa",
+              "1) { usb_init(); usb_find_busses(); usb_find_devices(); uVar2 = usb_open(auStack_106c); *(undefined4 *)(&DAT_002508b0 + param_1 * 4) = uVar2; iVar1 = usb_claim_interface(uVar2,2); if ((-1 < iVar1"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00046d9c",
+        "name": "FUN_00046d9c",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "cal_2037 = 2; } memcpy(auStack_2036,param_3,param_2); iVar1 = usb_control_msg(*(undefined4 *)(&DAT_002508b0 + param_1 * 4),0x21,9,0x200,2, &uStack_2038,uVar3,0); if (iVa",
+              "_2 - 0xfd; param_3 = (void *)((int)param_3 + 0xfd); iVar1 = usb_control_msg(*(undefined4 *)(&DAT_002508b0 + param_1 * 4),0x21,9,0x200,2, &uStack_2038,0xff,0); ",
+              "cal_2037 = 1; memcpy(auStack_2036,param_3,__n); iVar1 = usb_control_msg(*(undefined4 *)(&DAT_002508b0 + param_1 * 4),0x21,9,0x200,2, &uStack_2038,param_2 - 0xfb,0)"
+            ]
+          }
+        }
+      },
+      {
+        "address": "000477dc",
+        "name": "FUN_000477dc",
+        "tags": {
+          "shellaccess": {
+            "n": 1,
+            "examples": [
+              "local_18 = 0; if (*(byte *)(param_1 + 1) == 2) { DAT_00250a04 = open(\"/dev/ttyBT2\",2); rq_msg_Send(0x1e,&local_20,0x10); } else { rq_msg_Send((&DAT_00251d94)[(uint)*(byte *)(param_1 + 1) * 4],&local"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005df68",
+        "name": "FUN_0005df68",
+        "tags": {
+          "usb": {
+            "n": 6,
+            "examples": [
+              " undefined4 FUN_0005df68(undefined4 param_1) { int iVar1; int iVar2; usb_init(); usb_find_busses(); usb_find_devices(); iVar1 = usb_open(param_1); if (iVar1 != 0) { iVar2 = usb_control_msg(iVar1,0x40,",
+              "UN_0005df68(undefined4 param_1) { int iVar1; int iVar2; usb_init(); usb_find_busses(); usb_find_devices(); iVar1 = usb_open(param_1); if (iVar1 != 0) { iVar2 = usb_control_msg(iVar1,0x40,0x40,500,500,0",
+              "4 param_1) { int iVar1; int iVar2; usb_init(); usb_find_busses(); usb_find_devices(); iVar1 = usb_open(param_1); if (iVar1 != 0) { iVar2 = usb_control_msg(iVar1,0x40,0x40,500,500,0,0,1000); usb_clo",
+              "nt iVar2; usb_init(); usb_find_busses(); usb_find_devices(); iVar1 = usb_open(param_1); if (iVar1 != 0) { iVar2 = usb_control_msg(iVar1,0x40,0x40,500,500,0,0,1000); usb_close(iVar1); if (-1 < iVar2)"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005e0a0",
+        "name": "FUN_0005e0a0",
+        "tags": {
+          "usb": {
+            "n": 1,
+            "examples": [
+              " { size_t sVar1; undefined4 local_1c; local_1c = 0; memcpy(param_3,\"/mnt/\",6); if (param_2 == 2) { sVar1 = strlen(param_3); memcpy(param_3 + sVar1,&DAT_0007aa1c,4); } else if (param_2 == 7) { sVa"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005edd4",
+        "name": "FUN_0005edd4",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              " undefined4 local_18; undefined1 *local_14; rq_drc_syslog(\"[MDA_MNG] CB CERTEND from Apple\",0); rq_drc_syslog(\"[MDA_MNG] CB event = %d\",param_1); rq_drc_syslog(\"[MDA_MNG] CB subev = %d\",param_2); if (param_1 =="
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005efa4",
+        "name": "FUN_0005efa4",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "] = 1; local_14._0_2_ = CONCAT11(1,bVar1); rq_drc_syslog(\"[MDA_MNG] CERTEND[%d]\",uVar3); FUN_0005e8d4(1,2,uVar2,&local_14,2); } uVar2 = 0; } return uVar2; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005f5a0",
+        "name": "FUN_0005f5a0",
+        "tags": {
+          "usb": {
+            "n": 4,
+            "examples": [
+              "/* FUNCTION 0005f5a0 FUN_0005f5a0 bytes=36 */ void FUN_0005f5a0(void) { usb_init(); usb_find_busses(); usb_find_devices(); (*(code *)PTR_usb_get_busses_00086fec)(); return; } ",
+              "N 0005f5a0 FUN_0005f5a0 bytes=36 */ void FUN_0005f5a0(void) { usb_init(); usb_find_busses(); usb_find_devices(); (*(code *)PTR_usb_get_busses_00086fec)(); return; } ",
+              "a0 bytes=36 */ void FUN_0005f5a0(void) { usb_init(); usb_find_busses(); usb_find_devices(); (*(code *)PTR_usb_get_busses_00086fec)(); return; } ",
+              "id) { usb_init(); usb_find_busses(); usb_find_devices(); (*(code *)PTR_usb_get_busses_00086fec)(); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005f5b8",
+        "name": "FUN_0005f5b8",
+        "tags": {
+          "usb": {
+            "n": 4,
+            "examples": [
+              "(short *)((int)piVar4 + 0x101a) == *(short *)(param_1 + 4)))) { iVar2 = usb_open(piVar4); if (iVar2 != 0) { iVar3 = usb_control_msg(iVar2,0x40,0xf0,1,0x421,0,0,1000); if (-1 < iVar3) { ",
+              "{ iVar2 = usb_open(piVar4); if (iVar2 != 0) { iVar3 = usb_control_msg(iVar2,0x40,0xf0,1,0x421,0,0,1000); if (-1 < iVar3) { usb_close(iVar2); return 0; } ",
+              "_msg(iVar2,0x40,0xf0,1,0x421,0,0,1000); if (-1 < iVar3) { usb_close(iVar2); return 0; } usb_close(iVar2); return 0xffffffff; } rq_drc_ErrorTrac",
+              "r3) { usb_close(iVar2); return 0; } usb_close(iVar2); return 0xffffffff; } rq_drc_ErrorTraceP(0,\"f\",0x3602,*(undefined1 *)(param_1 + 1),0,0,0); p"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005f784",
+        "name": "FUN_0005f784",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "x30d1,0,0,0,0); uVar3 = 0xfffffffe; } else { rq_drc_syslog(\"-----> [USB Device] UnMount Start <-----\"); iVar1 = umount2(param_1,2); if (iVar1 == 0) { rq_drc_syslog(\"-----> [USB Device] UnMount End ",
+              " iVar1 = umount2(param_1,2); if (iVar1 == 0) { rq_drc_syslog(\"-----> [USB Device] UnMount End <-----\"); uVar3 = 0; } else { piVar2 = __errno_location(); rq_drc_syslog(\"-----> [USB Device]",
+              " } else { piVar2 = __errno_location(); rq_drc_syslog(\"-----> [USB Device] UnMount Err!!(%d) <-----\",*piVar2); uVar3 = 0xffffffff; } } return uVar3; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005f998",
+        "name": "FUN_0005f998",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "0x1a); rq_drc_syslog(\"-----> [uSD Device] Mount Start <-----\"); iVar1 = mount(local_58,local_58 + 0x20,\"vfat\",0xc0ed0401,\"iocharset=utf8\"); if (iVar1 == 0) { rq_drc_syslog(\"-----> [uSD Device] Mount End <----"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005fae8",
+        "name": "FUN_0005fae8",
+        "tags": {
+          "usb": {
+            "n": 3,
+            "examples": [
+              "Stack_58,\"/dev/\",6); strcat(acStack_58,param_1); rq_drc_syslog(\"-----> [USB Device] Mount Start <-----\"); iVar1 = mount(acStack_58,acStack_38,\"vfat\",0xc0ed0001,\"iocharset=utf8\"); if (iVar1 == 0) { moun",
+              "58,acStack_38,\"vfat\",0xc0ed0020,\"iocharset=utf8\"); rq_drc_syslog(\"-----> [USB Device] Mount End <-----\"); uVar3 = 0; } else { piVar2 = __errno_location(); rq_drc_syslog(\"-----> [USB Device] M",
+              " } else { piVar2 = __errno_location(); rq_drc_syslog(\"-----> [USB Device] Mount Err!!(%d) <-----\",*piVar2); rq_drc_ErrorTraceP(0,\"f\",0x30c2,iVar1,*piVar2,0,0); uVar3 = 0xffffffff; } } r"
+            ]
+          },
+          "storage": {
+            "n": 2,
+            "examples": [
+              "am_1); rq_drc_syslog(\"-----> [USB Device] Mount Start <-----\"); iVar1 = mount(acStack_58,acStack_38,\"vfat\",0xc0ed0001,\"iocharset=utf8\"); if (iVar1 == 0) { mount(acStack_58,acStack_38,\"vfat\",0xc0ed0020,\"iochar",
+              "_58,acStack_38,\"vfat\",0xc0ed0001,\"iocharset=utf8\"); if (iVar1 == 0) { mount(acStack_58,acStack_38,\"vfat\",0xc0ed0020,\"iocharset=utf8\"); rq_drc_syslog(\"-----> [USB Device] Mount End <-----\"); uVar3 = 0; "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005fd88",
+        "name": "FUN_0005fd88",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "(*(char *)(param_1 + 1) != '\\x06') { return; } rq_drc_syslog(\"[MDA_MNG] USB POWER-OFF[%x]\"); rq_iop_ExcPort(0x55,0); rq_tsk_Delay(0x834); rq_drc_syslog(\"[MDA_MNG] USB POWER-ON[%x]\",*(undefined1 *)(param_1 + 1)",
+              "\"); rq_iop_ExcPort(0x55,0); rq_tsk_Delay(0x834); rq_drc_syslog(\"[MDA_MNG] USB POWER-ON[%x]\",*(undefined1 *)(param_1 + 1)); rq_iop_ExcPort(0x55,1); rq_tsk_Delay(0x32); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0005fde4",
+        "name": "FUN_0005fde4",
+        "tags": {
+          "usb": {
+            "n": 4,
+            "examples": [
+              "*)((int)__src + 0x101a) != *(short *)(param_1 + 4))) || (iVar2 = usb_open(__src), iVar2 == 0))) { __src = (int *)*__src; if (__src == (int *)0x0) goto LAB_0005fed8; } if ((",
+              " } if ((*(char *)(param_1 + 6) == '\\0') || ((iVar3 = usb_get_string_simple(iVar2,(char)__src[0x408],acStack_88,0x60), 0 < iVar3 && (iVar3 = strncmp(acStack_88,(char *)(param_1 + 6),0x6",
+              " + 6),0x60), iVar3 == 0)))) { memcpy(param_2,__src,0x1034); usb_close(iVar2); return 0; } usb_close(iVar2); memset(acStack_88,0,0x60); } LAB_0005fed8: piVar1",
+              "_src,0x1034); usb_close(iVar2); return 0; } usb_close(iVar2); memset(acStack_88,0,0x60); } LAB_0005fed8: piVar1 = (int *)*piVar1; } while (piVar1 != (int *)0x0); "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00060a8c",
+        "name": "FUN_00060a8c",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "FUN_0005dee4(); if (uVar5 < 3) { rq_drc_syslog(\"[MDA_MNG] CERT[%d]\",uVar3); FUN_00048690(uVar3,0,FUN_0005edd4); cVar9 = pcVar6[1]; } else { cVar9 "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00061b18",
+        "name": "FUN_00061b18",
+        "tags": {
+          "storage": {
+            "n": 2,
+            "examples": [
+              ",0xb); switch(param_2) { case 2: local_1c = 0; iVar2 = rq_fls_Open(\"/opt/ftl/SDIMG.VER\",&DAT_0006f124); if ((iVar2 == 0) && (local_1c != 0)) { local_20 = iVar2; rq_fls_Read(local_1c,1,0x20,&DAT_002529",
+              " uVar1 = 7; break; default: local_1c = 0; iVar2 = rq_fls_Open(\"/opt/ftl/NFIMG.VER\",&DAT_0006f124); if ((iVar2 == 0) && (local_1c != 0)) { local_20 = iVar2; rq_fls_Read(local_1c,1,0x20,&DAT_002529"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263024",
+        "name": "sigemptyset",
+        "tags": {
+          "authentication": {
+            "n": 3,
+            "examples": [
+              "/* FUNCTION 00263024 sigemptyset bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ /* WARNING: Unknown calling convention -- yet parameter sto",
+              " WARNING: Unknown calling convention -- yet parameter storage is locked */ int sigemptyset(sigset_t *__set) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } ",
+              "known calling convention -- yet parameter storage is locked */ int sigemptyset(sigset_t *__set) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "0026315c",
+        "name": "usb_find_busses",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 0026315c usb_find_busses bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_find_busses(void) { /* ",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_find_busses(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263168",
+        "name": "usb_get_descriptor",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 00263168 usb_get_descriptor bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_get_descriptor(void) { ",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_get_descriptor(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263174",
+        "name": "usb_claim_interface",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 00263174 usb_claim_interface bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_claim_interface(void) { ",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_claim_interface(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263188",
+        "name": "pthread_kill",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "yet parameter storage is locked */ int pthread_kill(pthread_t __threadid,int __signo) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263248",
+        "name": "umount",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "WARNING: Unknown calling convention -- yet parameter storage is locked */ int umount(char *__special_file) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "002632e8",
+        "name": "usb_find_devices",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 002632e8 usb_find_devices bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_find_devices(void) { /",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_find_devices(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263348",
+        "name": "usb_get_busses",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 00263348 usb_get_busses bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_get_busses(void) { /* WA",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_get_busses(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "002633c8",
+        "name": "sigaddset",
+        "tags": {
+          "authentication": {
+            "n": 4,
+            "examples": [
+              "/* FUNCTION 002633c8 sigaddset bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ /* WARNING: Unknown calling convention -- yet parameter stora",
+              " WARNING: Unknown calling convention -- yet parameter storage is locked */ int sigaddset(sigset_t *__set,int __signo) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } ",
+              "Unknown calling convention -- yet parameter storage is locked */ int sigaddset(sigset_t *__set,int __signo) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } ",
+              "tion -- yet parameter storage is locked */ int sigaddset(sigset_t *__set,int __signo) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "002633d8",
+        "name": "usb_init",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 002633d8 usb_init bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_init(void) { /* WARNING: Bad i",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_init(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "002633dc",
+        "name": "usb_control_msg",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 002633dc usb_control_msg bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_control_msg(void) { /* ",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_control_msg(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "002633ec",
+        "name": "pthread_sigmask",
+        "tags": {
+          "authentication": {
+            "n": 4,
+            "examples": [
+              "/* FUNCTION 002633ec pthread_sigmask bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ /* WARNING: Unknown calling convention -- yet parameter storag",
+              ": Unknown calling convention -- yet parameter storage is locked */ int pthread_sigmask(int __how,__sigset_t *__newmask,__sigset_t *__oldmask) { /* WARNING: Bad instruction - Truncating control flow her",
+              "nvention -- yet parameter storage is locked */ int pthread_sigmask(int __how,__sigset_t *__newmask,__sigset_t *__oldmask) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(",
+              "ter storage is locked */ int pthread_sigmask(int __how,__sigset_t *__newmask,__sigset_t *__oldmask) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263408",
+        "name": "raise",
+        "tags": {
+          "authentication": {
+            "n": 1,
+            "examples": [
+              "known calling convention -- yet parameter storage is locked */ int raise(int __sig) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263414",
+        "name": "usb_interrupt_read",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 00263414 usb_interrupt_read bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_interrupt_read(void) { ",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_interrupt_read(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263498",
+        "name": "mount",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              " WARNING: Unknown calling convention -- yet parameter storage is locked */ int mount(char *__special_file,char *__dir,char *__fstype,ulong __rwflag,void *__data) { /* WARNING: Bad instruction - Truncating"
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263510",
+        "name": "usb_get_string_simple",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 00263510 usb_get_string_simple bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_get_string_simple(void) { ",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_get_string_simple(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263644",
+        "name": "usb_open",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 00263644 usb_open bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_open(void) { /* WARNING: Bad i",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_open(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00263670",
+        "name": "usb_detach_kernel_driver_np",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 00263670 usb_detach_kernel_driver_np bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_detach_kernel_driver_np(void) {",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_detach_kernel_driver_np(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "002636a4",
+        "name": "usb_close",
+        "tags": {
+          "usb": {
+            "n": 2,
+            "examples": [
+              "/* FUNCTION 002636a4 usb_close bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_close(void) { /* WARNING: Bad",
+              " bytes=1 */ /* WARNING: Control flow encountered bad instruction data */ void usb_close(void) { /* WARNING: Bad instruction - Truncating control flow here */ halt_baddata(); } "
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "EXT": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/ghidra/decomp/decompiled.c",
+    "sha": "ec1f46dc00f0aa8443df97bacfa4eec10b79bd305c4f5ba48ab9d9a39404f639",
+    "matches": [
+      {
+        "address": "00009b28",
+        "name": "umount",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "WARNING: Unknown calling convention -- yet parameter storage is locked */ int umount(char *__special_file) { int iVar1; iVar1 = (*(code *)PTR_umount_0002124c)(__special_file); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00009c0c",
+        "name": "raise",
+        "tags": {
+          "authentication": {
+            "n": 2,
+            "examples": [
+              "known calling convention -- yet parameter storage is locked */ int raise(int __sig) { int iVar1; iVar1 = (*(code *)PTR_raise_00021298)(__sig); return iVar1; } ",
+              "t raise(int __sig) { int iVar1; iVar1 = (*(code *)PTR_raise_00021298)(__sig); return iVar1; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00009c48",
+        "name": "mount",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              " WARNING: Unknown calling convention -- yet parameter storage is locked */ int mount(char *__special_file,char *__dir,char *__fstype,ulong __rwflag,void *__data) { int iVar1; iVar1 = (*(code *)PTR_mount_000212ac)(__sp"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000a580",
+        "name": "FUN_0000a580",
+        "tags": {
+          "usb": {
+            "n": 1,
+            "examples": [
+              "do { if ((&DAT_000170dc)[iVar2 + uVar1] != 0xd0000) { rq_fls_MakeDir(\"/mnt/ext\",0); extRegDatRcvNty(&LAB_0000a504); uVar1 = uVar1 + 1 & 0xff; iVar2 = uVar1 << 2; } rq_tsk_Delay(3000); } w"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000cc7c",
+        "name": "FUN_0000cc7c",
+        "tags": {
+          "authentication": {
+            "n": 2,
+            "examples": [
+              "5 + 1,0), dVar2 = DAT_0000ce00, -1 < iVar1)) { dVar3 = (double)VectorUnsignedToFloat(param_5[1],(byte)(in_fpscr >> 0x16) & 3); local_2c = (int)(longlong)((DAT_0000cdf8 / dVar3) * DAT_0000ce00); iVar1 = snd_pc",
+              "_get_buffer_size(param_2,param_3), -1 < iVar1)) { dVar3 = (double)VectorUnsignedToFloat(param_5[1],(byte)(in_fpscr >> 0x16) & 3); dVar2 = (DAT_0000ce08 / dVar3) * dVar2; local_2c = (uint)(0.0 < dVar2) * (int"
+            ]
+          }
+        }
+      },
+      {
+        "address": "0000de6c",
+        "name": "FUN_0000de6c",
+        "tags": {
+          "storage": {
+            "n": 3,
+            "examples": [
+              "n; } if (DAT_00023958 != '\\x02') { if (DAT_00023958 == '\\x03') { umount(&DAT_00023914); DAT_00023958 = 0; return; } if (DAT_00023958 != '\\x01') { DAT_00023958 = 0; return; } ",
+              " DAT_00023958 = 0; return; } rq_tim_Start(9,0x63c); iVar2 = mount(&DAT_00023934,&DAT_00023914,\"vfat\",1,(void *)0x0); if (iVar2 != 0) { DAT_00023958 = 0; return; } DAT_00023959 = '\\x0",
+              "rorTraceP(0,0xd0003,9,iVar2,DAT_0002390c,0,0); } } DAT_00023958 = 3; umount(DAT_0000ddfc); DAT_00023958 = '\\0'; LAB_0000dc74: rq_mem_Free(2,__s); return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00011f98",
+        "name": "FUN_00011f98",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "{ _DAT_00023890 = _DAT_00023660; FUN_0000fa18(2,0x59,0,0); iVar1 = umount(DAT_000120e0); if (iVar1 == 0) { DAT_00023358 = 0x19; FUN_0000fa18(0,0x5a,0,0); DAT_000238c1 = 0; } else { "
+            ]
+          }
+        }
+      },
+      {
+        "address": "000120e4",
+        "name": "FUN_000120e4",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "{ _DAT_00023890 = _DAT_00023660; FUN_0000fa18(2,0x19,0,0); iVar1 = umount(DAT_00012244); if (iVar1 == 0) { DAT_00023358 = 0xf; FUN_0000fa18(0,0x1a,0,0); DAT_000238c1 = 0; } else { "
+            ]
+          }
+        }
+      },
+      {
+        "address": "00012248",
+        "name": "FUN_00012248",
+        "tags": {
+          "storage": {
+            "n": 2,
+            "examples": [
+              "_1c[0] == '1' || ((char)local_1c[0] == '2'))) ) { umount(PTR_DAT_000124f0); FUN_0000e0a8(PTR_DAT_000124f8,cVar1); mount(PTR_DAT_000124f8,PTR_DAT_000124f0,\"vfat\",0,(void ",
+              "AT_000124f0); FUN_0000e0a8(PTR_DAT_000124f8,cVar1); mount(PTR_DAT_000124f8,PTR_DAT_000124f0,\"vfat\",0,(void *)0x0); return 1; } uVar3 = 0x126; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "000124fc",
+        "name": "FUN_000124fc",
+        "tags": {
+          "storage": {
+            "n": 2,
+            "examples": [
+              "l_14[0], (char)local_14[0] == '1' || ((char)local_14[0] == '2')))) { umount(PTR_DAT_000126ec); FUN_0000e0a8(PTR_DAT_000126f0,cVar1); mount(PTR_DAT_000126f0,PTR_DAT_000126ec,\"vfat\",0,(void *)0x0); ",
+              "nt(PTR_DAT_000126ec); FUN_0000e0a8(PTR_DAT_000126f0,cVar1); mount(PTR_DAT_000126f0,PTR_DAT_000126ec,\"vfat\",0,(void *)0x0); iVar2 = FUN_0000e258(&DAT_00023688,0xd,0x2c,0x10); if (iVar2 !="
+            ]
+          }
+        }
+      },
+      {
+        "address": "00012a84",
+        "name": "FUN_00012a84",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "[264]; int local_3c; int local_18; int local_14 [2]; local_18 = 0; mount(DAT_00012be0,DAT_00012be0 + -0x20,\"vfat\",0,(void *)0x0); iVar1 = rq_fls_GetInfo(&DAT_00023550,auStack_144,0); if (iVar1 == 0) { DAT_"
+            ]
+          }
+        }
+      },
+      {
+        "address": "000130fc",
+        "name": "FUN_000130fc",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              " DAT_00023358 = 0x1a; } rq_tim_Start(0xb,0); return; } iVar2 = umount(DAT_0001320c); if (iVar2 == 0) { FUN_0000fa18(0,0x13,0,0); DAT_00023358 = 7; } else { FUN_0000fa18(DAT_0002389c,DAT_000238"
+            ]
+          }
+        }
+      },
+      {
+        "address": "000133a8",
+        "name": "FUN_000133a8",
+        "tags": {
+          "storage": {
+            "n": 2,
+            "examples": [
+              " else { uVar1 = 0x32; } FUN_0000e0a8(DAT_000134ac,uVar1); mount(DAT_000134ac,DAT_000134ac + -0x20,\"vfat\",0,(void *)0x0); FUN_0000fa18(2,0x1c,0,0); memset(acStack_74,0,100); sprintf(acStack_74,",
+              "cStack_74,\"%s/RevFile.txt\",DAT_000134b0); rq_fls_Remove(acStack_74,0); umount(DAT_000134b0); FUN_0000fa18(0,0x1d,0,0); } return; } "
+            ]
+          }
+        }
+      },
+      {
+        "address": "000135ac",
+        "name": "FUN_000135ac",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "ar3 + 7,__n); FUN_0000e114(DAT_000137a8,&DAT_00023550); iVar2 = mount(DAT_000137ac,DAT_000137ac + -0x20,\"vfat\",0,(void *)0x0); if (iVar2 == 0) { DAT_00023358 = 0x15; FUN_0000fa18(2,0"
+            ]
+          }
+        }
+      },
+      {
+        "address": "000137b0",
+        "name": "FUN_000137b0",
+        "tags": {
+          "storage": {
+            "n": 1,
+            "examples": [
+              "ar3 + 7,__n); FUN_0000e114(DAT_000139b4,&DAT_00023550); iVar2 = mount(DAT_000139b8,DAT_000139b8 + -0x20,\"vfat\",0,(void *)0x0); if (iVar2 == 0) { FUN_0000fa18(2,0x16,0,0); DAT_0002335"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "FLASH_WRITER": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-FlashImageWriter",
+    "sha": "40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa",
+    "matches": [
+      {
+        "offset": "0x2c18",
+        "text": "/dev/flash",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x31c0",
+        "text": "[ERR] **** Verify ERROR ****",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x31ec",
+        "text": "verify",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x35ac",
+        "text": "[ERR] Verify Error: %x != expect:%x ",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x3910",
+        "text": "[ERR] Image file not NOR_Flash-UPDATE-IMAGE <Invalid signature>",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x3954",
+        "text": "signature : %s",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x39a4",
+        "text": "crc32     : %#x",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x435f",
+        "text": ".hash",
+        "tags": [
+          "authentication"
+        ]
+      }
+    ]
+  },
+  "FLASH_CREATER": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-FlashImageCreater",
+    "sha": "48bb5513f542d276568bd6ab77e4790fc1480031ae92a934a34b95f7d0626b70",
+    "matches": [
+      {
+        "offset": "0x24c8",
+        "text": "/dev/flash",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x2dc8",
+        "text": "[ERR] Image file not NOR_Flash-UPDATE-IMAGE <Invalid signature>",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x2e0c",
+        "text": "signature : %s",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x2e5c",
+        "text": "crc32     : %#x",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x3697",
+        "text": ".hash",
+        "tags": [
+          "authentication"
+        ]
+      }
+    ]
+  },
+  "REPRO_BIN": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_REPRO",
+    "sha": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+    "matches": [
+      {
+        "offset": "0x1619",
+        "text": "libsecurity.so",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x164a",
+        "text": "sysSha256Update",
+        "tags": [
+          "authentication",
+          "shellaccess"
+        ]
+      },
+      {
+        "offset": "0x165a",
+        "text": "sysRsaExec",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x1665",
+        "text": "sysSha256Init",
+        "tags": [
+          "authentication",
+          "shellaccess"
+        ]
+      },
+      {
+        "offset": "0x16c6",
+        "text": "sysRsaPbcKeyInit",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x16e6",
+        "text": "sysSecRsaKeyDisable",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x16fa",
+        "text": "sysSha256Final",
+        "tags": [
+          "authentication",
+          "shellaccess"
+        ]
+      },
+      {
+        "offset": "0x1714",
+        "text": "tb_cdt_AuthCode",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x1753",
+        "text": "sysRsaPssVerify",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x1763",
+        "text": "sysRsaDecPbcKeyInit",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x1be54",
+        "text": "Sign Check error",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x1be68",
+        "text": "Sign Check Final error",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x1c02c",
+        "text": "/var/verup/",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x1c0cc",
+        "text": "/dev/mmcblk0p1",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x1c0e4",
+        "text": "/dev/mmcblk0p2",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x1c104",
+        "text": "/opt/ftl/cddb/",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x1c120",
+        "text": "fsck -a /dev/mmcblk0p3;mount /dev/mmcblk0p3 /opt/ftl/cddb",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x1c164",
+        "text": "/dev/mmcblk0p3/",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x1ee54",
+        "text": "Unknown signal",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x203e3",
+        "text": "User-defined signal 1",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x203fa",
+        "text": "User-defined signal 2",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x2084c",
+        "text": "Bluetooth",
+        "tags": [
+          "bluetooth"
+        ]
+      },
+      {
+        "offset": "0x20a6c",
+        "text": "BootSig",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x20d6c",
+        "text": "/mnt/rpr_rb_root",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x20ef4",
+        "text": "/mnt/cdrom/",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x21104",
+        "text": "mkfs.ext3 ",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x21110",
+        "text": "/dev/mmcblk0p1/",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x21120",
+        "text": "/dev/mmcblk0p2/",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x213a4",
+        "text": "/mnt/sd0",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x215b0",
+        "text": "Bluetooth",
+        "tags": [
+          "bluetooth"
+        ]
+      },
+      {
+        "offset": "0x217d0",
+        "text": "BootSig",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x22a88",
+        "text": "/opt/ftl/SDIMG.VER",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x22a9c",
+        "text": "/opt/ftl/ModelId",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x28d94",
+        "text": ".hash",
+        "tags": [
+          "authentication"
+        ]
+      }
+    ]
+  },
+  "SYSTEM_BIN": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SYSTEM",
+    "sha": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+    "matches": [
+      {
+        "offset": "0x3bd0",
+        "text": "pthread_sigmask",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x3d2c",
+        "text": "libusb-0.1.so.4",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3d3c",
+        "text": "usb_find_busses",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3d4c",
+        "text": "usb_get_descriptor",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3d5f",
+        "text": "usb_claim_interface",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3d73",
+        "text": "usb_find_devices",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3d84",
+        "text": "usb_get_busses",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3d93",
+        "text": "usb_init",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3d9c",
+        "text": "usb_control_msg",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3dac",
+        "text": "usb_interrupt_read",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3dbf",
+        "text": "usb_get_string_simple",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3dd5",
+        "text": "usb_open",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3dde",
+        "text": "usb_detach_kernel_driver_np",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x3dfa",
+        "text": "usb_close",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x4568",
+        "text": "libsecurity.so",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x45ef",
+        "text": "tb_cdt_AuthCode",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x4725",
+        "text": "sigemptyset",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x4746",
+        "text": "sigaddset",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x5cd28",
+        "text": "/opt/ftl/apl/opn/opn_tega_pl.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5cd4c",
+        "text": "/opt/ftl/apl/opn/opn_tega.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5cd6c",
+        "text": "/opt/ftl/apl/opn/opn_tvga_pl.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5cd90",
+        "text": "/opt/ftl/apl/opn/opn_tvga.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5cdb0",
+        "text": "/opt/ftl/apl/opn/opn_tvga1_1_pl.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5cdd4",
+        "text": "/opt/ftl/apl/opn/opn_tvga1_1.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5cdf8",
+        "text": "/opt/ftl/apl/opn/opn_fvga.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5ce18",
+        "text": "/opt/ftl/apl/opn/opn_lvga_pl.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5ce3c",
+        "text": "/opt/ftl/apl/opn/opn_lvga.bin",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x5de3c",
+        "text": "Bluetooth Devices",
+        "tags": [
+          "bluetooth"
+        ]
+      },
+      {
+        "offset": "0x5de78",
+        "text": "WiFi Auth",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x5dec4",
+        "text": "BT Certification",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x5e9bf",
+        "text": "entered is not exist in USB Memory.Press",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x5ea3a",
+        "text": "Press OK and Check USB memory connection",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x5ea63",
+        "text": "or USB data File",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x5eac0",
+        "text": "USB VerUP Data",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x5efe0",
+        "text": "Bluetooth Connecting Devices Information",
+        "tags": [
+          "bluetooth"
+        ]
+      },
+      {
+        "offset": "0x60a04",
+        "text": "WiFi Diag Auth Mode",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x61930",
+        "text": "/opt/ftl/NFIMG.VER",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x61944",
+        "text": "/opt/ftl/SDIMG.VER",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x61ef0",
+        "text": "BT Certification Mode",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x628fc",
+        "text": "/opt/ftl/bin/VUC/refresh/systemrefresh",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x68ecc",
+        "text": "Call Sign :",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x696d4",
+        "text": "/opt/ftl/apl/",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x69e24",
+        "text": "Signal Stasus",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x6e75c",
+        "text": "tar zxvfm /mnt/usb1/13PFBACKUPDB.KWI -C /var/backup --no-same-owner",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e7dc",
+        "text": "/dev/sda",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e7ec",
+        "text": "/dev/sdb",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e7fc",
+        "text": "/dev/sdc",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e80c",
+        "text": "/dev/sdd",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e81c",
+        "text": "/dev/sda1",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e82c",
+        "text": "/dev/sdb1",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e83c",
+        "text": "/dev/sdc1",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e84c",
+        "text": "/dev/sdd1",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e87c",
+        "text": "/mnt/usb1",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e8a0",
+        "text": "/mnt/usb1/13PFBACKUPDB.KWI",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x6e8bc",
+        "text": "/dev/flash",
+        "tags": [
+          "storage"
+        ]
+      },
+      {
+        "offset": "0x6e8c8",
+        "text": "/mnt/usb1/13PFBACKUPDL.KWI",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x725c4",
+        "text": "/dev/ttyBT2",
+        "tags": [
+          "shellaccess"
+        ]
+      },
+      {
+        "offset": "0x72a14",
+        "text": "/mnt/",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72a2c",
+        "text": "[MDA_MNG] CB CERTEND from Apple",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x72aa0",
+        "text": "[MDA_MNG] CERTEND[%d]",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x72ab8",
+        "text": "[MDA_MNG] USB CLASS STORAGE[%x]",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72ad8",
+        "text": "[MDA_MNG] USB CLASS NOT STORAGE[%x]",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72b88",
+        "text": "-----> [USB Device] UnMount Start <-----",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72bb4",
+        "text": "-----> [USB Device] UnMount Err!!(%d) <-----",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72be4",
+        "text": "-----> [USB Device] UnMount End <-----",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72c90",
+        "text": "-----> [USB Device] Mount Start <-----",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72cb8",
+        "text": "-----> [USB Device] Mount Err!!(%d) <-----",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72ce4",
+        "text": "-----> [USB Device] Mount End <-----",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72dec",
+        "text": "[MDA_MNG] USB POWER-OFF[%x]",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72e08",
+        "text": "[MDA_MNG] USB POWER-ON[%x]",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x72f0c",
+        "text": "[MDA_MNG] CERT[%d]",
+        "tags": [
+          "authentication"
+        ]
+      },
+      {
+        "offset": "0x78c0f",
+        "text": ".hash",
+        "tags": [
+          "authentication"
+        ]
+      }
+    ]
+  },
+  "EXT_BIN": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_EXT",
+    "sha": "56446dd9bdccaa417d1334cd7aa3543311f25954d8b2fe56e0203e6407195976",
+    "matches": [
+      {
+        "offset": "0xf1c0",
+        "text": "/mnt/ext",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0xf6f4",
+        "text": "tsk_ext_UsbMain",
+        "tags": [
+          "usb"
+        ]
+      },
+      {
+        "offset": "0x118fc",
+        "text": ".hash",
+        "tags": [
+          "authentication"
+        ]
+      }
+    ]
+  },
+  "SOCKET_LIB": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_skt.so",
+    "sha": "f6cb7d7fb510a4d97e81df828fcbb870e1dd678c12e01980adac898519e395a8",
+    "matches": [
+      {
+        "offset": "0x2335",
+        "text": ".hash",
+        "tags": [
+          "authentication"
+        ]
+      }
+    ]
+  }
+}

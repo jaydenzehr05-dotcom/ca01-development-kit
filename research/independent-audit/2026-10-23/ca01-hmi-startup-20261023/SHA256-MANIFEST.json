@@ -1,0 +1,365 @@
+{
+  "scope": "Startup/IPC research, bounded Unicorn probes and test logs; no original application startup or hardware operations",
+  "files": [
+    {
+      "path": "CA01StartupContracts.java",
+      "size": 1498,
+      "sha256": "8b55f701364cb017f525252a355fcbe1fec2d8eb51de2446a5c519cd130c5315"
+    },
+    {
+      "path": "all-tests.log",
+      "size": 12549,
+      "sha256": "997b290e4890df0e187ebfbb0af061f3011e83a4b7a47bfc2d503796b68f7978"
+    },
+    {
+      "path": "configuration-and-replay.json",
+      "size": 5159,
+      "sha256": "0dfe63383c462828534e15cd144644f1a4f0205c422be1dc6229746b046423b6"
+    },
+    {
+      "path": "dispatcher-probe.log",
+      "size": 443,
+      "sha256": "099666275f806b30b3a4cb32bd9837b1e792a2427678bc7ff81baa6d2608229b"
+    },
+    {
+      "path": "dispatcher-probes.json",
+      "size": 3655,
+      "sha256": "036c572ac179bfab288986710c0453e0301d093623c6e95e51345f1333e7e481"
+    },
+    {
+      "path": "ghidra-expanded.log",
+      "size": 4580,
+      "sha256": "5ab447bdcb5180cf2b945131e0523bcd479612ac51453138ae9f9c8723fa30b8"
+    },
+    {
+      "path": "ghidra-state.log",
+      "size": 4567,
+      "sha256": "a69f1635a6c3c48fbf208561ccad7b27a1b118ee1570129fe3458c8e2853a6c7"
+    },
+    {
+      "path": "ghidra.log",
+      "size": 9501,
+      "sha256": "44739abccccf325a16b3ea444d41667460e4e96e6effc50b9b772c366f38b170"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log",
+      "size": 20450,
+      "sha256": "c320d53f95b08d967633bdbc037e39935e20c89ec1575593a6daefabd3f51b43"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/java_home.save",
+      "size": 56,
+      "sha256": "1e34c3ed8b4a8a0b73581dcc1d92cecf14682a53a4aea6b86159a4a8bea626f7"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/9d59aa02/CA01StartupContracts.class",
+      "size": 4765,
+      "sha256": "797d58cc6465bc2b574f46352aad54b105d3d35292cf54c73f510369611a0407"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/9d59aa02/GeneratedActivator.class",
+      "size": 608,
+      "sha256": "a2f624d0f57afb41ff14a431437e0676a406fee3b202fc24bdae1e5a9e308e7a"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/9d59aa02/GeneratedActivator.java",
+      "size": 407,
+      "sha256": "2a604f29202d03de20281e95e9e9cf25d51350a7f0bcebdff63c06b6207b6658"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/9d59aa02/META-INF/MANIFEST.MF",
+      "size": 573,
+      "sha256": "ad547af8fb10cc0c0b4e4066a8ffa3f23abe632c8717e058c424dce4d1bcdf2b"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle0/bundle.id",
+      "size": 1,
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle0/last.java.version",
+      "size": 3,
+      "sha256": "6e2ae11dad0616f66bbb2b6e6556f580bb987fd911d7132aa6bee2bfc7cc7b52"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle1/bundle.info",
+      "size": 143,
+      "sha256": "8079d47a83da25743ac8d217c3fc8b7224c31c84b5ebfae6c7bedc7d7e9129e3"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle1/version0.0/revision.location",
+      "size": 119,
+      "sha256": "a2b9a4ade8b3453df202fbc80e53e22cf2fa7caecccca2a67e94dc9a7477c15d"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/parallel.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences",
+      "size": 48,
+      "sha256": "ce9662e1ca656ed0587e04fd4d056a834e7b0f4adff36f38f4cf5f98fdae40f5"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/script.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/tools/_code_browser.tcd",
+      "size": 38435,
+      "sha256": "7f3b72bbcccef22e476da60f88101885b1ec625fae79a58cbb78a9a81dacbd0d"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/tools/_debugger.tcd",
+      "size": 46088,
+      "sha256": "efa89df0d486fe15de6c1abdbfb3a1fbcde70596c7f6c96fd9fd547cd1477ed4"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/tools/_emulator.tcd",
+      "size": 116623,
+      "sha256": "bdc4262723f9b714ef8e2038f39c09b1aa567fb57acb9edf3d597b4bd892385a"
+    },
+    {
+      "path": "home/.config/ghidra/ghidra_12.1.4_PUBLIC/tools/_version _tracking.tcd",
+      "size": 1656,
+      "sha256": "42a672303407e4d56e3042c396cc9d37a72965c653aa6aec62160cadcd98e1c0"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log",
+      "size": 22255,
+      "sha256": "838dabf9e3d3b0d6af0943dcae699552842c96b78546b8af25520fb85cf15a62"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/java_home.save",
+      "size": 56,
+      "sha256": "1e34c3ed8b4a8a0b73581dcc1d92cecf14682a53a4aea6b86159a4a8bea626f7"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/8b76bf43/GeneratedActivator.class",
+      "size": 608,
+      "sha256": "a2f624d0f57afb41ff14a431437e0676a406fee3b202fc24bdae1e5a9e308e7a"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/8b76bf43/GeneratedActivator.java",
+      "size": 407,
+      "sha256": "2a604f29202d03de20281e95e9e9cf25d51350a7f0bcebdff63c06b6207b6658"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/8b76bf43/IpcTrace.class",
+      "size": 4523,
+      "sha256": "5611ce1684a1271d12cc113257a95bfb1ef408968d009e27b67dff8563e7e1ca"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/8b76bf43/META-INF/MANIFEST.MF",
+      "size": 573,
+      "sha256": "9bb45cb766fcf07f35ebf598be024f7f7d23ebe043a791499015b4d8094deba3"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle0/bundle.id",
+      "size": 1,
+      "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle0/last.java.version",
+      "size": 3,
+      "sha256": "6e2ae11dad0616f66bbb2b6e6556f580bb987fd911d7132aa6bee2bfc7cc7b52"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle1/bundle.info",
+      "size": 134,
+      "sha256": "a43a4a47465fd81eae1496549d392a66897e5844c3869d48675b7e0e381a33f3"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle1/version0.0/revision.location",
+      "size": 110,
+      "sha256": "ad90f4ccad7cb10783276b6ba60a10768ecc86f2df4b0e2ac87db4eb58c587bf"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/osgi/parallel.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences",
+      "size": 48,
+      "sha256": "f2dbb48f5c13382f3576d04be29aafdd57b2d3d9b1a1d73f47b59ece526ad9fb"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/script.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/tools/_code_browser.tcd",
+      "size": 38435,
+      "sha256": "7f3b72bbcccef22e476da60f88101885b1ec625fae79a58cbb78a9a81dacbd0d"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/tools/_debugger.tcd",
+      "size": 46088,
+      "sha256": "efa89df0d486fe15de6c1abdbfb3a1fbcde70596c7f6c96fd9fd547cd1477ed4"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/tools/_emulator.tcd",
+      "size": 116623,
+      "sha256": "bdc4262723f9b714ef8e2038f39c09b1aa567fb57acb9edf3d597b4bd892385a"
+    },
+    {
+      "path": "ipc-analysis/.config/ghidra/ghidra_12.1.4_PUBLIC/tools/_version _tracking.tcd",
+      "size": 1656,
+      "sha256": "42a672303407e4d56e3042c396cc9d37a72965c653aa6aec62160cadcd98e1c0"
+    },
+    {
+      "path": "ipc-analysis/IpcTrace.java",
+      "size": 1370,
+      "sha256": "9b8a8826945f9b09e4ca8cbbb874ea4a5fad8e9a67c66567bb968b8721679158"
+    },
+    {
+      "path": "ipc-analysis/contracts.json",
+      "size": 197761,
+      "sha256": "259b98288a23b71000fdc62c6fe46f0e6bb47ec65d999f4e5741cee7d06a087e"
+    },
+    {
+      "path": "ipc-analysis/ghidra-expanded.log",
+      "size": 9368,
+      "sha256": "6a4e6484e31fe3b1046b4be137bad308486629305ebfe9c1d3f42db9b978e823"
+    },
+    {
+      "path": "ipc-analysis/ghidra.log",
+      "size": 9361,
+      "sha256": "88493c0070f341dfde918c52aa61acd6790e157b942248a04e71085b1aacc42a"
+    },
+    {
+      "path": "ipc-analysis/ipc-expanded.txt",
+      "size": 136522,
+      "sha256": "f669c6285bf6b3cd531afd27aa0651a1c52d2fa66fb338ab59b5b5ceab1f3dfa"
+    },
+    {
+      "path": "ipc-analysis/ipc-trace.txt",
+      "size": 94566,
+      "sha256": "935c3d73bd9fc502f18a83ebb600c44ae74cf78e94e2cc9fda688632d8ac2f32"
+    },
+    {
+      "path": "ipc-analysis/write_contract.py",
+      "size": 5547,
+      "sha256": "004c8d0f43ce9a3b38476454c19d49f2494d523597cf5b6a21e828f09d4f8f9a"
+    },
+    {
+      "path": "probe_dispatch.py",
+      "size": 2332,
+      "sha256": "0fa621a4b57c4e8b3a18b9c097d5bc4d60c5992f47ec7f82472f2753bce7c793"
+    },
+    {
+      "path": "probe_registry.py",
+      "size": 2890,
+      "sha256": "a44e13d6547a1d62257209609d7c92dd60706051a0f38d9444533ef18a6aece7"
+    },
+    {
+      "path": "project/startup.gpr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/startup.rep/idata/00/00000000.prp",
+      "size": 482,
+      "sha256": "cf9f8f77f1b5be6e42023282bf4e72fc706177e22dd13b668dc5208946c83c8a"
+    },
+    {
+      "path": "project/startup.rep/idata/00/~00000000.db/db.1.gbf",
+      "size": 4964352,
+      "sha256": "79be628ddb9a8ecbec7088c036e82e5709ce3425d98ff7203fac8b7fb3f3314d"
+    },
+    {
+      "path": "project/startup.rep/idata/~index.bak",
+      "size": 102,
+      "sha256": "b36fd464d9321381a9c87b69dcba0bf7ed328a8d93f3304853e8fa53a0bbc503"
+    },
+    {
+      "path": "project/startup.rep/idata/~index.dat",
+      "size": 102,
+      "sha256": "b36fd464d9321381a9c87b69dcba0bf7ed328a8d93f3304853e8fa53a0bbc503"
+    },
+    {
+      "path": "project/startup.rep/project.prp",
+      "size": 162,
+      "sha256": "9dc8a2a20e82548f29989682035c4008c93e32cb4f01613ef79f9f4cc6118bc9"
+    },
+    {
+      "path": "project/startup.rep/user/~index.dat",
+      "size": 59,
+      "sha256": "0a5034997e47499d758115fa580ad21d96557d2a32c89f2263bcfd3fa8a9a6e5"
+    },
+    {
+      "path": "project/startup.rep/versioned/~index.bak",
+      "size": 59,
+      "sha256": "0a5034997e47499d758115fa580ad21d96557d2a32c89f2263bcfd3fa8a9a6e5"
+    },
+    {
+      "path": "project/startup.rep/versioned/~index.dat",
+      "size": 59,
+      "sha256": "0a5034997e47499d758115fa580ad21d96557d2a32c89f2263bcfd3fa8a9a6e5"
+    },
+    {
+      "path": "registry-probe.json",
+      "size": 3334,
+      "sha256": "2846e53a4b96488839e8196d60321421b17ca54b860a1c094b264e0726c7dd33"
+    },
+    {
+      "path": "registry-probe.log",
+      "size": 1659,
+      "sha256": "c9a08437377d479a3209355dd9b6823a066bbbc4d9a1d24265249372b0ea424f"
+    },
+    {
+      "path": "source-snapshot/docs/CA01_HMI_STARTUP_IPC.md",
+      "size": 7563,
+      "sha256": "c6c82d52ba5aec62acb8252a91ba563b8ecdc66b43d838a4120bd99ac1be5cbc"
+    },
+    {
+      "path": "source-snapshot/evidence/ca01-hmi-startup-contracts.json",
+      "size": 26342,
+      "sha256": "0927e85071cdd8a9a49ea2e83b706d88bc59ea452e27529b39aadf92093990ba"
+    },
+    {
+      "path": "source-snapshot/tests/test_hmi_startup.py",
+      "size": 5209,
+      "sha256": "9a538fbc18341522a74b56efcf17fc090d619cf4c7f3efcb55061cc178e7211e"
+    },
+    {
+      "path": "source-snapshot/tools/ca01_hmi_startup.py",
+      "size": 10888,
+      "sha256": "dd4909b88a85b5dd00c8a97993a6548b2b6ccee6f02e452ee83e2bc72fbbd5cd"
+    },
+    {
+      "path": "source-snapshot/tools/ghidra/CA01StartupContracts.java",
+      "size": 1498,
+      "sha256": "8b55f701364cb017f525252a355fcbe1fec2d8eb51de2446a5c519cd130c5315"
+    },
+    {
+      "path": "startup-contracts-expanded.txt",
+      "size": 62607,
+      "sha256": "d5b459c9ed8cca05550bd55c4d1658a839d0fd30c2827a18d3e4f0f743f83cb8"
+    },
+    {
+      "path": "startup-contracts.txt",
+      "size": 50141,
+      "sha256": "2adbd92154dc010de7866e30f4a514fc51b79f2a44d63d82c6b7ea104ecad4cc"
+    },
+    {
+      "path": "startup-state.txt",
+      "size": 83526,
+      "sha256": "0cdb3f9a5444b7c2354a41eef356e97e589c295673302c42d5d1f3010602d38f"
+    },
+    {
+      "path": "test_hmi_startup.py",
+      "size": 4328,
+      "sha256": "672f8c35f562ce3dcc89ee2316731e9a9196a396a384b3764929c1053e2e84ce"
+    },
+    {
+      "path": "write_findings.py",
+      "size": 10857,
+      "sha256": "44155cce46f54a34a49bedf629e0667f559c15a0d3af4472bea43908c2349cb7"
+    }
+  ]
+}

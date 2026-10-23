@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_EXT",
+  "examined_functions": [
+    "00012a84",
+    "000133a8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 331,
+    "prompt_tokens": 1199,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1530
+  },
+  "next_focus": [
+    "Data flow analysis of buffer auStack_144 in function 00012a84",
+    "Filesystem path constants in function 000133a8"
+  ],
+  "observations": [
+    {
+      "address": "0x00012a84",
+      "claim": "Mounts a vfat filesystem at a hardcoded path",
+      "evidence_snippet": "mount(DAT_00012be0,DAT_00012be0 + -0x20,\"vfat\"",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000133a8",
+      "claim": "Creates and removes a RevFile.txt using system commands",
+      "evidence_snippet": "sprintf(acStack_74,\"dd if=/dev/zero of=%s/RevFile.txt bs=512 count=1\"",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00012a84 mounts a vfat filesystem, reads data into a buffer, and returns success/failure codes. Function 000133a8 handles filesystem operations including mounting, creating files, and removing them.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+  "unresolved_questions": [
+    "What is the purpose of the data read in function 00012a84?",
+    "What is the significance of the hardcoded paths in function 000133a8?"
+  ]
+}

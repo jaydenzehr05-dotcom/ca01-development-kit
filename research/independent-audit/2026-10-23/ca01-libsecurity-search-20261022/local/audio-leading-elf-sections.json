@@ -1,0 +1,522 @@
+{
+  "partial_file_start_relative_output": -105988,
+  "section_table_output_offset": 1090812,
+  "section_table_fully_known": true,
+  "section_count_inferred": 26,
+  "section_names_output_offset": 1090593,
+  "sections": [
+    {
+      "index": 0,
+      "name": "",
+      "type": 0,
+      "flags": 0,
+      "address": 0,
+      "file_offset": 0,
+      "size": 0,
+      "link": 0,
+      "info": 0,
+      "alignment": 0,
+      "entry_size": 0,
+      "partial_output_offset": -105988,
+      "fully_available": false
+    },
+    {
+      "index": 1,
+      "name": ".hash",
+      "type": 5,
+      "flags": 2,
+      "address": 212,
+      "file_offset": 212,
+      "size": 1288,
+      "link": 2,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 4,
+      "partial_output_offset": -105776,
+      "fully_available": false
+    },
+    {
+      "index": 2,
+      "name": ".dynsym",
+      "type": 11,
+      "flags": 2,
+      "address": 1500,
+      "file_offset": 1500,
+      "size": 3024,
+      "link": 3,
+      "info": 3,
+      "alignment": 4,
+      "entry_size": 16,
+      "partial_output_offset": -104488,
+      "fully_available": false
+    },
+    {
+      "index": 3,
+      "name": ".dynstr",
+      "type": 3,
+      "flags": 2,
+      "address": 4524,
+      "file_offset": 4524,
+      "size": 3108,
+      "link": 0,
+      "info": 0,
+      "alignment": 1,
+      "entry_size": 0,
+      "partial_output_offset": -101464,
+      "fully_available": false
+    },
+    {
+      "index": 4,
+      "name": ".gnu.version",
+      "type": 1879048191,
+      "flags": 2,
+      "address": 7632,
+      "file_offset": 7632,
+      "size": 378,
+      "link": 2,
+      "info": 0,
+      "alignment": 2,
+      "entry_size": 2,
+      "partial_output_offset": -98356,
+      "fully_available": false
+    },
+    {
+      "index": 5,
+      "name": ".gnu.version_r",
+      "type": 1879048190,
+      "flags": 2,
+      "address": 8012,
+      "file_offset": 8012,
+      "size": 64,
+      "link": 3,
+      "info": 2,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": -97976,
+      "fully_available": false
+    },
+    {
+      "index": 6,
+      "name": ".rel.dyn",
+      "type": 9,
+      "flags": 2,
+      "address": 8076,
+      "file_offset": 8076,
+      "size": 392,
+      "link": 2,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 8,
+      "partial_output_offset": -97912,
+      "fully_available": false
+    },
+    {
+      "index": 7,
+      "name": ".rel.plt",
+      "type": 9,
+      "flags": 2,
+      "address": 8468,
+      "file_offset": 8468,
+      "size": 264,
+      "link": 2,
+      "info": 9,
+      "alignment": 4,
+      "entry_size": 8,
+      "partial_output_offset": -97520,
+      "fully_available": false
+    },
+    {
+      "index": 8,
+      "name": ".init",
+      "type": 1,
+      "flags": 6,
+      "address": 8732,
+      "file_offset": 8732,
+      "size": 12,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": -97256,
+      "fully_available": false
+    },
+    {
+      "index": 9,
+      "name": ".plt",
+      "type": 1,
+      "flags": 6,
+      "address": 8744,
+      "file_offset": 8744,
+      "size": 416,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 4,
+      "partial_output_offset": -97244,
+      "fully_available": false
+    },
+    {
+      "index": 10,
+      "name": ".text",
+      "type": 1,
+      "flags": 6,
+      "address": 9160,
+      "file_offset": 9160,
+      "size": 26084,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": -96828,
+      "fully_available": false
+    },
+    {
+      "index": 11,
+      "name": ".fini",
+      "type": 1,
+      "flags": 6,
+      "address": 35244,
+      "file_offset": 35244,
+      "size": 8,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": -70744,
+      "fully_available": false
+    },
+    {
+      "index": 12,
+      "name": ".rodata",
+      "type": 1,
+      "flags": 2,
+      "address": 35252,
+      "file_offset": 35252,
+      "size": 1158504,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": -70736,
+      "fully_available": false
+    },
+    {
+      "index": 13,
+      "name": ".ARM.extab",
+      "type": 1,
+      "flags": 2,
+      "address": 1193756,
+      "file_offset": 1193756,
+      "size": 24,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": 1087768,
+      "fully_available": true
+    },
+    {
+      "index": 14,
+      "name": ".ARM.exidx",
+      "type": 1879048193,
+      "flags": 130,
+      "address": 1193780,
+      "file_offset": 1193780,
+      "size": 536,
+      "link": 10,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": 1087792,
+      "fully_available": true
+    },
+    {
+      "index": 15,
+      "name": ".init_array",
+      "type": 14,
+      "flags": 3,
+      "address": 1227084,
+      "file_offset": 1194316,
+      "size": 4,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": 1088328,
+      "fully_available": true
+    },
+    {
+      "index": 16,
+      "name": ".fini_array",
+      "type": 15,
+      "flags": 3,
+      "address": 1227088,
+      "file_offset": 1194320,
+      "size": 4,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": 1088332,
+      "fully_available": true
+    },
+    {
+      "index": 17,
+      "name": ".jcr",
+      "type": 1,
+      "flags": 3,
+      "address": 1227092,
+      "file_offset": 1194324,
+      "size": 4,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": 1088336,
+      "fully_available": true
+    },
+    {
+      "index": 18,
+      "name": ".data.rel.ro",
+      "type": 1,
+      "flags": 3,
+      "address": 1227096,
+      "file_offset": 1194328,
+      "size": 480,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": 1088340,
+      "fully_available": true
+    },
+    {
+      "index": 19,
+      "name": ".dynamic",
+      "type": 6,
+      "flags": 3,
+      "address": 1227576,
+      "file_offset": 1194808,
+      "size": 232,
+      "link": 3,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 8,
+      "partial_output_offset": 1088820,
+      "fully_available": true
+    },
+    {
+      "index": 20,
+      "name": ".got",
+      "type": 1,
+      "flags": 3,
+      "address": 1227808,
+      "file_offset": 1195040,
+      "size": 280,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 4,
+      "partial_output_offset": 1089052,
+      "fully_available": true
+    },
+    {
+      "index": 21,
+      "name": ".data",
+      "type": 1,
+      "flags": 3,
+      "address": 1228088,
+      "file_offset": 1195320,
+      "size": 4,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": 1089332,
+      "fully_available": true
+    },
+    {
+      "index": 22,
+      "name": ".bss",
+      "type": 8,
+      "flags": 3,
+      "address": 1228092,
+      "file_offset": 1195324,
+      "size": 148,
+      "link": 0,
+      "info": 0,
+      "alignment": 4,
+      "entry_size": 0,
+      "partial_output_offset": 1089336,
+      "fully_available": false,
+      "note": "SHT_NOBITS has no bytes stored in file; availability is not applicable."
+    },
+    {
+      "index": 23,
+      "name": ".ARM.attributes",
+      "type": 1879048195,
+      "flags": 0,
+      "address": 0,
+      "file_offset": 1195324,
+      "size": 53,
+      "link": 0,
+      "info": 0,
+      "alignment": 1,
+      "entry_size": 0,
+      "partial_output_offset": 1089336,
+      "fully_available": true
+    },
+    {
+      "index": 24,
+      "name": ".comment",
+      "type": 1,
+      "flags": 0,
+      "address": 0,
+      "file_offset": 1195377,
+      "size": 1204,
+      "link": 0,
+      "info": 0,
+      "alignment": 1,
+      "entry_size": 0,
+      "partial_output_offset": 1089389,
+      "fully_available": true
+    },
+    {
+      "index": 25,
+      "name": ".shstrtab",
+      "type": 3,
+      "flags": 0,
+      "address": 0,
+      "file_offset": 1196581,
+      "size": 219,
+      "link": 0,
+      "info": 0,
+      "alignment": 1,
+      "entry_size": 0,
+      "partial_output_offset": 1090593,
+      "fully_available": true
+    }
+  ],
+  "dynamic_entries": [
+    [
+      1,
+      2995
+    ],
+    [
+      1,
+      3009
+    ],
+    [
+      12,
+      8732
+    ],
+    [
+      13,
+      35244
+    ],
+    [
+      25,
+      1227084
+    ],
+    [
+      27,
+      4
+    ],
+    [
+      26,
+      1227088
+    ],
+    [
+      28,
+      4
+    ],
+    [
+      4,
+      212
+    ],
+    [
+      5,
+      4524
+    ],
+    [
+      6,
+      1500
+    ],
+    [
+      10,
+      3108
+    ],
+    [
+      11,
+      16
+    ],
+    [
+      3,
+      1227808
+    ],
+    [
+      2,
+      264
+    ],
+    [
+      20,
+      17
+    ],
+    [
+      23,
+      8468
+    ],
+    [
+      17,
+      8076
+    ],
+    [
+      18,
+      392
+    ],
+    [
+      19,
+      8
+    ],
+    [
+      1879048190,
+      8012
+    ],
+    [
+      1879048191,
+      2
+    ],
+    [
+      1879048176,
+      7632
+    ],
+    [
+      1879048186,
+      3
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "identity": "Unidentified incomplete ELF tail; no ELF header, archive header, dynstr or dynsym is present.",
+  "limitation": "Start coordinate is inferred by internally consistent shstrtab offset, not validated by a recovered file header.",
+  "inferred_elf_end_relative_output": 1091852,
+  "inferred_minimum_file_size": 1197840
+}

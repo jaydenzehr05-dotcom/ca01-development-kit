@@ -1,0 +1,15 @@
+{
+  "input_name": "02-middle-ware",
+  "input_sha256": "8ed2c0b2ec129582e4eb7ca901869eb36626fa11160683b4cf4fa232c7f3be1f",
+  "start_bit": 554498,
+  "report_end": 5749011,
+  "output_size": 1647494,
+  "known_bytes": 1623501,
+  "unknown_bytes": 23993,
+  "all_tar_entries_count": 0,
+  "classification_counts": {},
+  "missing_previous_names": [],
+  "files": [],
+  "new_target_names": [],
+  "note": "Only individually checksum-valid and history-independent file bytes counted; not a complete recovered firmware filesystem"
+}

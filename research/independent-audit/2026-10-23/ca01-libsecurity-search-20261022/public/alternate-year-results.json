@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://www.toyota.com/content/sdp/us/en/toyota/softwareupdates/software_update.model.json?division=toyota&vehicle=RAV4&modelYear=2014&navigationType=without%20navigation",
+    "status": 403,
+    "body_file": "/tmp/ca01-libsecurity-public/rav4-updates-2014.response",
+    "body_prefix": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>N09BVE5G6W637H5Y</RequestId><HostId>MctnMVZp8skNcrqU1OHfe+WkQ/Xj4SSMrhtD2KGJn3er3Kq+kdW2hYwhGztcXUZEEF2EyNdi3NVAb+DIs4VfgpeMDnErpymO</Ho"
+  },
+  {
+    "url": "https://www.toyota.com/content/sdp/us/en/toyota/softwareupdates/software_update.model.json?division=toyota&vehicle=RAV4&modelYear=2015&navigationType=without%20navigation",
+    "status": 403,
+    "body_file": "/tmp/ca01-libsecurity-public/rav4-updates-2015.response",
+    "body_prefix": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>JS5G1FVX3STX1XYW</RequestId><HostId>MhLBzOaDl2ZOBkyrLyEeGplPR/1l63YvN7TOjVo2WBrrekTBZ5G46MeWZoyzpdKOiW6QVgko+mI=</HostId></Error>"
+  }
+]

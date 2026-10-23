@@ -1,0 +1,54 @@
+{
+  "input_name": "08-voice-recognition",
+  "input_sha256": "cbf6f6d63d842ab14e34ba4fbd3335ce7cbcdec9ab4b76c25da53e3f3a4c5729",
+  "start_bit": 543669,
+  "report_end": 4620337,
+  "output_size": 2451174,
+  "known_bytes": 2295553,
+  "unknown_bytes": 155621,
+  "all_tar_entries_count": 6,
+  "classification_counts": {
+    "identical_to_1127": 6
+  },
+  "missing_previous_names": [],
+  "files": [
+    {
+      "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBAgent.db",
+      "size": 94208,
+      "sha256": "38c5945b610470623763cd0601b06f390cc9cb8876b23c8cc65a500d030a0001",
+      "status": "identical_to_1127"
+    },
+    {
+      "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBSystem.db",
+      "size": 715776,
+      "sha256": "375601055ffc86b201d770ed17eacd1fb1f5484a43286f9836233d1b3d891a48",
+      "status": "identical_to_1127"
+    },
+    {
+      "name": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBAgent.db",
+      "size": 96256,
+      "sha256": "9c27c8ab84d2d47e61f4877c61e1ec7223d6d1ae01fb6a20a56e1236e387d575",
+      "status": "identical_to_1127"
+    },
+    {
+      "name": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBSystem.db",
+      "size": 712704,
+      "sha256": "c2ef59298f4f23e37b42438ffc13ca13fc73be55d3bc425bf7c7ba1ee2783ab3",
+      "status": "identical_to_1127"
+    },
+    {
+      "name": "./opt/ftl/var/backup/vrs/VOI/VOI_VERSION",
+      "size": 19,
+      "sha256": "d4f4b59e4473967b5ff89e135f47b419e6ed681a32d30756a64bb71ae2a3a36a",
+      "status": "identical_to_1127"
+    },
+    {
+      "name": "./opt/ftl/var/backup/vrs/VOI/Hints.db",
+      "size": 77824,
+      "sha256": "acd42de1c609b92d721059fa45acfc4de464a2b9a7476f173586c0329773ee99",
+      "status": "identical_to_1127"
+    }
+  ],
+  "new_target_names": [],
+  "note": "Only individually checksum-valid and history-independent file bytes counted; not a complete recovered firmware filesystem"
+}

@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_CDP",
+  "examined_functions": [
+    "00018bbc",
+    "00009d60"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 244,
+    "prompt_tokens": 1136,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1380
+  },
+  "next_focus": [
+    "Memory allocation function rq_mem_Alloc",
+    "Message sending function rq_msg_Send"
+  ],
+  "observations": [
+    {
+      "address": "0x00018bbc",
+      "claim": "Processes '-v' command-line option for verbose output",
+      "evidence_snippet": "if (iVar1 == 0x76) goto LAB_00018c90;",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00009d60",
+      "claim": "Allocates memory and sends message with memcpy",
+      "evidence_snippet": "memcpy(__dest,param_5,8);",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00018bbc handles command-line arguments with getopt, processes '-v' flag, and prints build info. Function 00009d60 manages memory allocation and message sending.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "18bbc",
+    "9d60"
+  ],
+  "selection_evidence": [
+    {
+      "address": "18bbc",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "9d60",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the getopt loop logic?",
+    "What does fs_sys_CnfEntry do?"
+  ]
+}

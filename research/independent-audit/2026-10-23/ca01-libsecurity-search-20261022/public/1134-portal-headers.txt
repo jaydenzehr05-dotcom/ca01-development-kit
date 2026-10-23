@@ -1,0 +1,29 @@
+HTTP/1.1 302 Found
+Date: Fri, 23 Oct 2026 03:20:05 GMT
+Server: Apache
+Set-Cookie: am-auth-jwt=; Path=/; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT
+Set-Cookie: iPlanetDirectoryPro=; Path=/; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT
+Set-Cookie: agent-authn-tx-4KF76aTIP1I5u8HSjDTpwVn1PNo=eAENzbsOgjAUANB/uXOllPKI3QrGwcFoYuJoSoGUpPSSck1Uwr/Lepazwjt6UOCI5kVxTr11YxgwIfwimcTipPJccpI3jGQ8t8aPbTQ0YuCieNQnfdWHRqfiJYTMgcFErgMlGLguLqDWjUH/mXepjlmVlVlaMAgYbL+v99C66Vn/zk2p60vbwPYHR1Usxw==; Path=/; HttpOnly; Max-Age=300; Expires=Fri, 23-Oct-2026 03:25:05 GMT
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: Sat, 01 Jan 2000 01:00:00 GMT
+Location: https://techinfo.toyota.com/techInfoPortal/login/techinfo?goto=https%3A%2F%2Ftechinfo.toyota.com%3A443%2Fagent%2Fcustom-login-response%3Fstate%3D4KF76aTIP1I5u8HSjDTpwVn1PNo&original_request_url=https%3A%2F%2Ftechinfo.toyota.com%3A443%2Ft3Portal%2Fcalibration%2F15TBDANA-CA01_1134
+Content-Length: 467
+Content-Type: text/html; charset=iso-8859-1
+
+HTTP/1.1 302 Moved Temporarily
+Date: Fri, 23 Oct 2026 03:20:06 GMT
+Server: Apache
+Location: https://techinfo.toyota.com/techInfoPortal/appmanager/t3/ti?_nfpb=true&_pageLabel=ti_home_page&goto=https%3A%2F%2Ftechinfo.toyota.com%3A443%2Fagent%2Fcustom-login-response%3Fstate%3D4KF76aTIP1I5u8HSjDTpwVn1PNo&original_request_url=https%3A%2F%2Ftechinfo.toyota.com%3A443%2Ft3Portal%2Fcalibration%2F15TBDANA-CA01_1134
+Set-Cookie: TISESSIONID=ThvpqhSG3v26Vskv5LZL7M7vJkKLM1TGwqF2m145Yv0LhxQ0dKDn!2065861018; path=/; HttpOnly
+X-Powered-By: Servlet/2.5 JSP/2.1
+Transfer-Encoding: chunked
+
+HTTP/1.1 200 OK
+Date: Fri, 23 Oct 2026 03:20:06 GMT
+Server: Apache
+Set-Cookie: TISESSIONID=qkf1qhSGyZVJNVjlMk8Rq3vnnkDsRKXmQ3v1H1LHPVqpSF9Gdyv3!-960794442; path=/; HttpOnly
+X-Powered-By: Servlet/2.5 JSP/2.1
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+

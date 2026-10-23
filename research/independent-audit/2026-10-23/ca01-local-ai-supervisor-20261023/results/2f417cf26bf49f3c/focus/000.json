@@ -1,0 +1,61 @@
+{
+  "binary": "./opt/ftl/apl/PROC_SYSTEM",
+  "examined_functions": [
+    "0002ead0",
+    "0000fd9c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 291,
+    "prompt_tokens": 1586,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1877
+  },
+  "next_focus": [
+    "USB mounting error handling",
+    "Display configuration file selection logic"
+  ],
+  "observations": [
+    {
+      "address": "0x0002ead0",
+      "claim": "Attempts to mount USB with vfat and checks for 13PFBACKUPDB.KWI file",
+      "evidence_snippet": "mount(param_1,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\")",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 0002ead0 attempts mounting USB devices with vfat filesystem and checks for a specific file. Function 0000fd9c handles display configuration and file operations based on system parameters.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "2ead0",
+    "fd9c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "2ead0",
+      "score": 289,
+      "tags": [
+        "filesystem",
+        "update_recovery"
+      ]
+    },
+    {
+      "address": "fd9c",
+      "score": 284,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the 13PFBACKUPDB.KWI file check?",
+    "How are the display configuration files utilized after reading?"
+  ]
+}

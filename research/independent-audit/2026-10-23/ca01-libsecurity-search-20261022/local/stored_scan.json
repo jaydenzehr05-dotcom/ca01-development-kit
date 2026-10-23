@@ -1,0 +1,70 @@
+[
+  {
+    "component": "02-middle-ware.bin",
+    "source_sha256": "9277013ad5f3cd139c36371d56a8e259638be665800ea25ab7ae838e602bdebf",
+    "payload_offset": 524,
+    "scan_length_offset_range": [
+      64000,
+      69315
+    ],
+    "complementary_length_pair_offsets": [],
+    "eof_aligned_hits": []
+  },
+  {
+    "component": "06-audio.bin",
+    "source_sha256": "6d78254c394b65dbfed0c7519815f30b0b18d3b8f2d9f99b29a04120cd5c2f8e",
+    "payload_offset": 12,
+    "scan_length_offset_range": [
+      64000,
+      65705
+    ],
+    "complementary_length_pair_offsets": [],
+    "eof_aligned_hits": []
+  },
+  {
+    "component": "04-device-driver.bin",
+    "source_sha256": "d04237fc1b9c844c607559f6a1e4140f294d469ca48f038c3a2271f3f762b48a",
+    "payload_offset": 12,
+    "scan_length_offset_range": [
+      64000,
+      90139
+    ],
+    "complementary_length_pair_offsets": [],
+    "eof_aligned_hits": []
+  },
+  {
+    "component": "05-bluetooth.bin",
+    "source_sha256": "f16441f3272a9c7c414e41ea0005b30dee67e570f2e9e0740413d67539bcaae1",
+    "payload_offset": 12,
+    "scan_length_offset_range": [
+      64000,
+      101517
+    ],
+    "complementary_length_pair_offsets": [
+      97401
+    ],
+    "eof_aligned_hits": []
+  },
+  {
+    "component": "07-gui.bin",
+    "source_sha256": "c982d69e1bef9bb6852e46cc33fc575ac5061739d88c39241ab9bef38bf4c87e",
+    "payload_offset": 12,
+    "scan_length_offset_range": [
+      64000,
+      67617
+    ],
+    "complementary_length_pair_offsets": [],
+    "eof_aligned_hits": []
+  },
+  {
+    "component": "08-voice-recognition.bin",
+    "source_sha256": "4314a40f59679be9bb6e117323a630b83a5b9185e357e6144f07a15a12d8f9c7",
+    "payload_offset": 12,
+    "scan_length_offset_range": [
+      64000,
+      67956
+    ],
+    "complementary_length_pair_offsets": [],
+    "eof_aligned_hits": []
+  }
+]

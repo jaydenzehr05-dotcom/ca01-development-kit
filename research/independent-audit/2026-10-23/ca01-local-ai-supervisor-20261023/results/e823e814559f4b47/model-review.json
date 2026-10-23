@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_VI",
+  "examined_functions": [
+    "0000ea38",
+    "00029c64"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 238,
+    "prompt_tokens": 1674,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1912
+  },
+  "next_focus": [
+    "Directory creation logic",
+    "USB write timing constraints"
+  ],
+  "observations": [
+    {
+      "address": "0x0000ea38",
+      "claim": "Opens directory and handles mount errors",
+      "evidence_snippet": "rq_fls_OpenDir(*param_1 + 0xc,param_1 + 0xf,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00029c64",
+      "claim": "Writes beacon data to USB storage",
+      "evidence_snippet": "rq_fls_Write(local_10,1,1,local_c,&local_14,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0000ea38 handles directory operations and file system mounting. Function 00029c64 manages USB beacon data writing.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+  "unresolved_questions": [
+    "What specific error codes indicate failure?",
+    "What is the purpose of the 0x27a offset?"
+  ]
+}

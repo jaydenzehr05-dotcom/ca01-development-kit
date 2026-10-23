@@ -1,0 +1,154 @@
+! infgen 3.6 output
+! stats stored length 32768
+! stats inout 32773:0 (32768) 32768 0
+! stats literals 9.0 bits each (9/1)
+! stats matches none
+! stats inout 2:3 (1) 1 0
+! stats literals none
+! stats matches none
+! stats inout 1:2 (0) 0 0
+! stats literals none
+! stats matches none
+! stats inout 1:2 (0) 0 0
+! stats literals none
+! stats matches none
+! stats inout 1:2 (0) 0 0
+! stats stored length 32818
+! stats inout 32822:7 (32818) 32818 0
+! stats stored length 32822
+! stats inout 32827:0 (32822) 32822 0
+! stats stored length 32815
+! stats inout 32820:0 (32815) 32815 0
+! stats stored length 32810
+! stats inout 32815:0 (32810) 32810 0
+! stats table 56:2
+! stats literals 8.0 bits each (261527/32746)
+! stats matches 0.2% (21 x 3.0)
+! stats inout 32808:1 (32767) 32809 0
+! stats table 62:2
+! stats literals 8.0 bits each (261516/32752)
+! stats matches 0.1% (15 x 3.1)
+! stats inout 32797:6 (32767) 32799 -20094
+! stats stored length 32805
+! stats inout 32810:1 (32805) 32805 0
+! stats stored length 32812
+! stats inout 32817:0 (32812) 32812 0
+! stats table 64:7
+! stats literals 8.0 bits each (261480/32747)
+! stats matches 0.2% (20 x 3.0)
+! stats inout 32807:6 (32767) 32808 -1174
+! stats stored length 32807
+! stats inout 32812:2 (32807) 32807 0
+! stats stored length 32830
+! stats inout 32835:0 (32830) 32830 0
+! stats stored length 32815
+! stats inout 32820:0 (32815) 32815 0
+! stats stored length 32820
+! stats inout 32825:0 (32820) 32820 0
+! stats stored length 32807
+! stats inout 32812:0 (32807) 32807 0
+! stats table 69:7
+! stats literals 8.0 bits each (261554/32739)
+! stats matches 0.4% (28 x 4.2)
+! stats inout 32841:3 (32767) 32858 -23127
+! stats table 70:7
+! stats literals 8.0 bits each (261034/32738)
+! stats matches 0.3% (29 x 3.2)
+! stats inout 32782:0 (32767) 32832 -525
+! stats stored length 32822
+! stats inout 32826:5 (32822) 32822 0
+! stats stored length 32802
+! stats inout 32807:0 (32802) 32802 0
+! stats table 69:7
+! stats literals 8.0 bits each (261013/32719)
+! stats matches 0.5% (48 x 3.2)
+! stats inout 32819:1 (32767) 32873 0
+! stats stored length 32805
+! stats inout 32809:7 (32805) 32805 0
+! stats stored length 32793
+! stats inout 32798:0 (32793) 32793 0
+! stats stored length 32813
+! stats inout 32818:0 (32813) 32813 0
+! stats stored length 32813
+! stats inout 32818:0 (32813) 32813 0
+! stats stored length 32822
+! stats inout 32827:0 (32822) 32822 0
+! stats table 69:2
+! stats literals 8.0 bits each (261257/32737)
+! stats matches 0.3% (30 x 3.1)
+! stats inout 32808:5 (32767) 32829 -9188
+! stats table 60:2
+! stats literals 8.0 bits each (261586/32753)
+! stats matches 0.1% (14 x 3.3)
+! stats inout 32798:3 (32767) 32799 -20620
+! stats stored length 32832
+! stats inout 32837:0 (32832) 32832 0
+! stats stored length 32827
+! stats inout 32832:0 (32827) 32827 0
+! stats stored length 32810
+! stats inout 32815:0 (32810) 32810 0
+! stats stored length 32818
+! stats inout 32823:0 (32818) 32818 0
+! stats table 63:7
+! stats literals 8.0 bits each (261496/32735)
+! stats matches 0.3% (32 x 3.3)
+! stats inout 32842:2 (32767) 32840 -2863
+! stats stored length 32801
+! stats inout 32805:6 (32801) 32801 0
+! stats table 64:1
+! stats literals 8.0 bits each (261500/32746)
+! stats matches 0.2% (21 x 3.3)
+! stats inout 32814:0 (32767) 32816 -1547
+! stats stored length 32810
+! stats inout 32815:0 (32810) 32810 0
+! stats stored length 32801
+! stats inout 32806:0 (32801) 32801 0
+! stats stored length 32823
+! stats inout 32828:0 (32823) 32823 0
+! stats stored length 32817
+! stats inout 32822:0 (32817) 32817 0
+! stats table 50:7
+! stats literals 8.0 bits each (261813/32720)
+! stats matches 0.6% (47 x 4.1)
+! stats inout 32901:6 (32767) 32913 -590
+! stats table 65:2
+! stats literals 8.0 bits each (261484/32719)
+! stats matches 0.5% (48 x 3.5)
+! stats inout 32877:5 (32767) 32885 -2670
+! stats table 66:6
+! stats literals 8.0 bits each (259257/32381)
+! stats matches 14.2% (386 x 13.9)
+! stats inout 33504:7 (32767) 37728 -3785
+! stats stored length 32831
+! stats inout 32835:6 (32831) 32831 0
+! stats stored length 32833
+! stats inout 32838:0 (32833) 32833 0
+! stats stored length 32807
+! stats inout 32812:0 (32807) 32807 0
+! stats table 52:3
+! stats literals 8.0 bits each (260845/32573)
+! stats matches 2.7% (194 x 4.6)
+! stats inout 33132:4 (32767) 33461 -29877
+! stats stored length 32879
+! stats inout 32883:4 (32879) 32879 0
+! stats stored length 32835
+! stats inout 32840:0 (32835) 32835 0
+! stats table 68:2
+! stats literals 8.0 bits each (260506/32634)
+! stats matches 1.3% (133 x 3.1)
+! stats inout 32973:5 (32767) 33052 -2304
+! stats stored length 32890
+! stats inout 32894:3 (32890) 32890 0
+! stats table 85:3
+! stats literals 8.0 bits each (259862/32610)
+! stats matches 1.7% (157 x 3.5)
+! stats inout 32957:7 (32767) 33163 -10609
+! stats table 76:0
+! stats literals 8.0 bits each (249776/31210)
+! stats matches 9.7% (252 x 13.2)
+! stats inout 31895:5 (31462) 34549 0
+! stats total inout 1674350:4 (1671548) 1681828
+! stats total block average 30578.7 uncompressed
+! stats total block average 30391.8 symbols
+! stats total literals 2.7 bits each
+! stats total matches 0.7% (1475 x 8.0)

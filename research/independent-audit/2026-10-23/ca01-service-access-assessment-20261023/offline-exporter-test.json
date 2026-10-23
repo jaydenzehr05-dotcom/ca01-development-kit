@@ -1,0 +1,21 @@
+{
+  "host_compilation": true,
+  "arm_binary_elf": "/home/starlight/projects/rav4-radio/system-audit/ca01-service-access-assessment-20261023/ca01_readonly_exporter_armel_static: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, BuildID[sha1]=da8d3f26be39a80da45b6dd620e1ec156f89f8b6, for GNU/Linux 3.2.0, not stripped",
+  "arm_sha256": "b979732dff657d561e87bba99909ec135ec7892b55f699582ddcbf0ad1231ae0",
+  "dry_run_no_writes": true,
+  "selected_files_copied": 6,
+  "expected_files_sha256": {
+    "opt/ftl/gui/MC/CmA.mra": "5d6b34458b5298a1d339aff7f3e076991fadaad569b8af5fdbd75e18d78ea108",
+    "opt/ftl/gui/MC/mui/Opening.mui": "ca76e5378f72905058ba1fded965241722be0de3f730e29a369bb39831b76507",
+    "opt/ftl/gui/font/font.fnt": "bbe71bd214c98c3affbf4babff20855cf9be839a88b485529055d4072304e002",
+    "opt/ftl/lib/libipas_fls.so": "59d191a5c197b5b751c1eea8186eba973bc4e8eb94367337d4c8ef4f6dcf7bee",
+    "opt/ftl/apl/PROC_HMI": "6b0629fdd1b3b8089ba122f2281313b0f8b641770b97f541f12e2f1d140a88a2",
+    "etc/ipasz.conf": "fbcca18f375f55daa09da383b9613bc2a4fce7e73632bfe54075417fcfed9117"
+  },
+  "output_matches_input": true,
+  "ignored_symlink": true,
+  "refuses_existing_output": true,
+  "test_only_no_live_radio": true,
+  "host_stdout": "CA01 exporter PoC mode=COPY source=/tmp/ca01-ex-test-6agazshk/fake-root destination=/tmp/ca01-ex-test-6agazshk/test-usb\nSKIP symlink opt/ftl/gui/MC/trap.mra\nSummary entries=6 bytes=230 skipped=1 errors=0\n",
+  "arm_binary_qemu_test_passed": true
+}

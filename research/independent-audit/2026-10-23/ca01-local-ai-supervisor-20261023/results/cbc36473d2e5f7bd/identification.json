@@ -1,0 +1,14 @@
+{
+  "binary": "03-kernel.bin",
+  "bytes": 1808792,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "0000416d010000008c991b0027637342024619a47b2b83685059efe6b5947403",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [
+    {
+      "offset": "0xddc2",
+      "value": "YZWtWmRak"
+    }
+  ],
+  "sha256": "cbc36473d2e5f7bd98d990db7489ce9789ce3c0df3fb92d308edfe1c65087c82"
+}

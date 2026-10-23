@@ -1,0 +1,20 @@
+{
+  "input": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/03-kernel.bin",
+  "sha256": "cbc36473d2e5f7bd98d990db7489ce9789ce3c0df3fb92d308edfe1c65087c82",
+  "observed_component_prefix": 12,
+  "compressed_length": 1808780,
+  "unverified_trailer_crc32_hex": "4b6e83c7",
+  "unverified_gzip_isize": 1822720,
+  "scan_range": [
+    64000,
+    130000
+  ],
+  "stats": {
+    "headers_tested": 262479,
+    "first_chunk_plausible": 2,
+    "eof_near_footer": 0
+  },
+  "candidates": [],
+  "elapsed_seconds": 2.147,
+  "disclaimer": "Candidate complete DEFLATE suffix (unknown encrypted prefix and 32 KiB initial LZ history); not original complete gzip or verified TAR"
+}

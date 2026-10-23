@@ -1,0 +1,1078 @@
+{
+  "read_only": true,
+  "disclaimer": "SONAME presence != ABI compatibility or working graphics/hardware",
+  "rootfs": "../system-audit/gui-emulation/armel-rootfs",
+  "recovered": "../system-audit/ca01-updater-independent-20261022",
+  "programs": [
+    {
+      "program": "FlashImageCreater",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "FlashImageWriter",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "PROC_AUDIO",
+      "needed": 26,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libDisdb_if.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so",
+        "libipas_sysp.so"
+      ],
+      "in_armel_system": [
+        "libasound.so.2",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0"
+      ],
+      "unresolved": [
+        "libIFLB_REPRO.so",
+        "libadi_ct.so",
+        "libasoundex.so",
+        "libaud_dts.so",
+        "libbep_ct.so",
+        "libdsv_api.so",
+        "libdsv_db.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libomx_service.so",
+        "libsyssrcc_if.so"
+      ]
+    },
+    {
+      "program": "PROC_CDDB",
+      "needed": 16,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libadi_ct.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_mda.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libmem_ct.so"
+      ]
+    },
+    {
+      "program": "PROC_CDP",
+      "needed": 23,
+      "in_recovered": [
+        "libAdlCd.so",
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libIFLB_CDDB.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1",
+        "libsqlite3.so.0"
+      ],
+      "unresolved": [
+        "libLMMDB_IF.so",
+        "libadi_ct.so",
+        "libcva_db.so",
+        "libdisplay_if.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libipas_util.so",
+        "libmem_ct.so"
+      ]
+    },
+    {
+      "program": "PROC_DISPLAY",
+      "needed": 69,
+      "in_recovered": [
+        "libAdlCd.so",
+        "libAdlRd.so",
+        "libAdlUb.so",
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libIFLB_CDDB.so",
+        "libcoll.so",
+        "libedbsong.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_skt.so",
+        "libipas_sysc.so",
+        "libsct_ct.so",
+        "libuie_api.so"
+      ],
+      "in_armel_system": [
+        "libasound.so.2",
+        "libc.so.6",
+        "libexpat.so.1",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0",
+        "librt.so.1",
+        "libsqlite3.so.0"
+      ],
+      "unresolved": [
+        "libAdlBt.so",
+        "libIFLB_NAVIIF.so",
+        "libIFLB_REPRO.so",
+        "libLMMDB_IF.so",
+        "libNTWSET_IF.so",
+        "libVRS_IF.so",
+        "libadi_ct.so",
+        "libasoundex.so",
+        "libdismng_if.so",
+        "libdsv_api.so",
+        "libdsv_db.so",
+        "libecli.so",
+        "libgpo_ct.so",
+        "libgps_ct.so",
+        "libgsp.so",
+        "libhmi_if.so",
+        "libiflb_btm.so",
+        "libinit.so",
+        "libipas_apc.so",
+        "libipas_can.so",
+        "libipas_fls.so",
+        "libipas_lcn.so",
+        "libipas_mda.so",
+        "libipas_pcd.so",
+        "libipas_pcmc.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libipas_util.so",
+        "libir_ct.so",
+        "libmem_ct.so",
+        "libmir_if.so",
+        "libmmp_prc.so",
+        "libmod.so",
+        "libomx_service.so",
+        "libopt.so",
+        "libscac_implement.so.1",
+        "libscac_lib_srb.so.1",
+        "libscac_provide.so.1",
+        "libscp_ct.so",
+        "libsecurity.so",
+        "libspc_if.so",
+        "libswi_ct.so",
+        "libsysras_if.so",
+        "libsyssrcc_if.so",
+        "libuie_db.so",
+        "libvcl_in.so"
+      ]
+    },
+    {
+      "program": "PROC_DSV",
+      "needed": 29,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libIFLB_CDDB.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_skt.so",
+        "libipas_sysc.so",
+        "libuie_api.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libexpat.so.1",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1",
+        "libz.so.1"
+      ],
+      "unresolved": [
+        "libIFLB_NAVIIF.so",
+        "libLMMDB_IF.so",
+        "libadi_ct.so",
+        "libaud_dts.so",
+        "libaud_xmd.so",
+        "libcva_db.so",
+        "libdisplay_if.so",
+        "libdsv_db.so",
+        "libext_api.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libuie_db.so"
+      ]
+    },
+    {
+      "program": "PROC_DTV",
+      "needed": 19,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libadi_ct.so",
+        "libdtv.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "librtapi.so",
+        "libswi_ct.so"
+      ]
+    },
+    {
+      "program": "PROC_DVDDECK",
+      "needed": 15,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libadi_ct.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "librtapi.so"
+      ]
+    },
+    {
+      "program": "PROC_DVDP",
+      "needed": 24,
+      "in_recovered": [
+        "libAdlCd.so",
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libIFLB_CDDB.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0",
+        "librt.so.1",
+        "libsqlite3.so.0"
+      ],
+      "unresolved": [
+        "libLMMDB_IF.so",
+        "libadi_ct.so",
+        "libcva_db.so",
+        "libdisplay_if.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libipas_util.so",
+        "libmem_ct.so"
+      ]
+    },
+    {
+      "program": "PROC_EXT",
+      "needed": 22,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libasound.so.2",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libLMMDB_IF.so",
+        "libadi_ct.so",
+        "libdsv_api.so",
+        "libdsv_db.so",
+        "libext_api.so",
+        "libgpo_ct.so",
+        "libipas_apc.so",
+        "libipas_fls.so",
+        "libipas_mda.so",
+        "libipas_pcmc.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libmem_ct.so"
+      ]
+    },
+    {
+      "program": "PROC_HMI",
+      "needed": 31,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libi2c_cm.so",
+        "libipas_grp.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so",
+        "libuie_api.so"
+      ],
+      "in_armel_system": [
+        "libEGL.so",
+        "libc.so.6",
+        "libexpat.so.1",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libGLES_CM.so",
+        "libLMMDB_IF.so",
+        "libOpenVG.so",
+        "libVRS_IF.so",
+        "libadi_ct.so",
+        "libcva_db.so",
+        "libdismng_if.so",
+        "libdisplay_if.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_pcd.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libmir_if.so",
+        "libspc_if.so",
+        "libuie_db.so"
+      ]
+    },
+    {
+      "program": "PROC_MMP",
+      "needed": 34,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libIFLB_CDDB.so",
+        "libcoll.so",
+        "libedbsong.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libasound.so.2",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0",
+        "librt.so.1",
+        "libsqlite3.so.0"
+      ],
+      "unresolved": [
+        "libLMMDB_IF.so",
+        "libVRS_IF.so",
+        "libadi_ct.so",
+        "libasoundex.so",
+        "libecli.so",
+        "libgpo_ct.so",
+        "libgsp.so",
+        "libinit.so",
+        "libipas_apc.so",
+        "libipas_fls.so",
+        "libipas_mda.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libipas_util.so",
+        "libmem_ct.so",
+        "libmod.so",
+        "libomx_service.so",
+        "libopt.so",
+        "librtapi.so",
+        "libsyssrcc_if.so"
+      ]
+    },
+    {
+      "program": "PROC_NAVIIF",
+      "needed": 35,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so",
+        "libnavi_if.so",
+        "libuie_api.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libLMMDB_IF.so",
+        "libVRS_IF.so",
+        "libadi_ct.so",
+        "libcva_db.so",
+        "libdismng_if.so",
+        "libdisplay_if.so",
+        "libdsv_api.so",
+        "libdsv_db.so",
+        "libgpo_ct.so",
+        "libgps_ct.so",
+        "libipas_fls.so",
+        "libipas_mda.so",
+        "libipas_pcmc.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "librtapi.so",
+        "libscac_implement.so.1",
+        "libscac_lib_srb.so.1",
+        "libscac_provide.so.1",
+        "libsecurity.so",
+        "libuie_db.so"
+      ]
+    },
+    {
+      "program": "PROC_REPRO",
+      "needed": 30,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libIFLB_CDDB.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_skt.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libexpat.so.1",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1",
+        "libz.so.1"
+      ],
+      "unresolved": [
+        "libIFLB_NAVIIF.so",
+        "libLMMDBSYS_IF.so",
+        "libadi_ct.so",
+        "libdismng_if.so",
+        "libgpo_ct.so",
+        "libipas_can.so",
+        "libipas_fls.so",
+        "libipas_mda.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libnavi_ex.so",
+        "libscac_implement.so.1",
+        "libscac_lib_srb.so.1",
+        "libscac_provide.so.1",
+        "libsecurity.so",
+        "libswi_ct.so"
+      ]
+    },
+    {
+      "program": "PROC_SPC",
+      "needed": 23,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libexpat.so.1",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libIFLB_NAVIIF.so",
+        "libLMMDB_IF.so",
+        "libadi_ct.so",
+        "libdismng_if.so",
+        "libgpo_ct.so",
+        "libipas_apc.so",
+        "libipas_fls.so",
+        "libipas_mda.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libmmp_prc.so",
+        "libomx_service.so",
+        "libpng12.so.0"
+      ]
+    },
+    {
+      "program": "PROC_SYSTEM",
+      "needed": 36,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libDisdb_if.so",
+        "libi2c_cm.so",
+        "libipas_grp.so",
+        "libipas_sysp.so"
+      ],
+      "in_armel_system": [
+        "libasound.so.2",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libIFLB_REPRO.so",
+        "libLMMDBSYS_IF.so",
+        "libadi_ct.so",
+        "libasoundex.so",
+        "libaud_dsp.so",
+        "libcva_db.so",
+        "libdsv_api.so",
+        "libdsv_db.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_pcmp.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libipd_ct.so",
+        "libmem_ct.so",
+        "librom_dc.so",
+        "librtapi.so",
+        "libscac_implement.so.1",
+        "libscac_lib_srb.so.1",
+        "libscac_provide.so.1",
+        "libsecurity.so",
+        "libsysras_if.so",
+        "libsyssrcp_if.so",
+        "libusb-0.1.so.4"
+      ]
+    },
+    {
+      "program": "PROC_TMD",
+      "needed": 21,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_skt.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libexpat.so.1",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libIFLB_NAVIIF.so",
+        "libLMMDB_IF.so",
+        "libadi_ct.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_pcmc.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libomx_service.so",
+        "libpng12.so.0"
+      ]
+    },
+    {
+      "program": "PROC_UIEIF",
+      "needed": 34,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_skt.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libEGL.so",
+        "libc.so.6",
+        "libexpat.so.1",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libGLES_CM.so",
+        "libIFLB_NAVIIF.so",
+        "libLMMDB_IF.so",
+        "libVRS_IF.so",
+        "libadi_ct.so",
+        "libcva_db.so",
+        "libdismng_if.so",
+        "libgpo_ct.so",
+        "libgps_ct.so",
+        "libipas_apc.so",
+        "libipas_fls.so",
+        "libipas_mda.so",
+        "libipas_pcd.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libipas_util.so",
+        "libjpeg.so",
+        "libmem_ct.so",
+        "libpng12.so.0",
+        "libuie_db.so",
+        "libuieplayer.so"
+      ]
+    },
+    {
+      "program": "PROC_VI",
+      "needed": 19,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so"
+      ],
+      "in_armel_system": [
+        "libasound.so.2",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpthread.so.0",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libadi_ct.so",
+        "libgpo_ct.so",
+        "libgps_ct.so",
+        "libipas_fls.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "librtapi.so"
+      ]
+    },
+    {
+      "program": "PROC_VRS",
+      "needed": 37,
+      "in_recovered": [
+        "libComFlmLb.so",
+        "libDIS_IF.so",
+        "libVOIAudioStream.so",
+        "libVOIdata_cp.so",
+        "libi2c_cm.so",
+        "libipas_ls1.so",
+        "libipas_sysc.so",
+        "libuie_api.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libexpat.so.1",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "librt.so.1"
+      ],
+      "unresolved": [
+        "libIFLB_NAVIIF.so",
+        "libLMMDB_IF.so",
+        "libVBTEngineClient.so",
+        "libVBTLoader.so",
+        "libVECITransport.so",
+        "libVOITTS.so",
+        "libVOIapi.so",
+        "libVOIutil_cfg.so",
+        "libVOIutil_lp.so",
+        "libVOIutil_th.so",
+        "libadi_ct.so",
+        "libasoundex.so",
+        "libcva_db.so",
+        "libgpo_ct.so",
+        "libipas_acd.so",
+        "libipas_fls.so",
+        "libipas_pcd.so",
+        "libipas_pcmc.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libsse.so",
+        "libsyssrcc_if.so",
+        "libuie_db.so"
+      ]
+    },
+    {
+      "program": "libAdlCd.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libAdlRd.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libAdlUb.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libComFlmLb.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libDIS_IF.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libDisdb_if.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libIFLB_CDDB.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libVOIAudioStream.so",
+      "needed": 11,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libasound.so.2",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": [
+        "libVBTEngineClient.so",
+        "libVBTLoader.so",
+        "libVECITransport.so",
+        "libVOIutil_cfg.so",
+        "libVOIutil_lp.so",
+        "libVOIutil_th.so",
+        "libasoundex.so",
+        "libsyssrcc_if.so"
+      ]
+    },
+    {
+      "program": "libVOIdata_cp.so",
+      "needed": 3,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": [
+        "libVOIutil_th.so"
+      ]
+    },
+    {
+      "program": "libcoll.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libedbsong.so",
+      "needed": 9,
+      "in_recovered": [
+        "libcoll.so"
+      ],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libsqlite3.so.0"
+      ],
+      "unresolved": [
+        "libecli.so",
+        "libgsp.so",
+        "libmod.so",
+        "libopt.so"
+      ]
+    },
+    {
+      "program": "libi2c_cm.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libipas_grp.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libipas_ls1.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libipas_skt.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libipas_sysc.so",
+      "needed": 5,
+      "in_recovered": [],
+      "in_armel_system": [
+        "ld-linux.so.3",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0"
+      ],
+      "unresolved": [
+        "libipas_trc.so"
+      ]
+    },
+    {
+      "program": "libipas_sysp.so",
+      "needed": 6,
+      "in_recovered": [],
+      "in_armel_system": [
+        "ld-linux.so.3",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0"
+      ],
+      "unresolved": [
+        "libipas_trc.so",
+        "librtapi.so"
+      ]
+    },
+    {
+      "program": "libnavi_if.so",
+      "needed": 6,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libEGL.so",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": [
+        "libGLES_CM.so",
+        "libjpeg.so",
+        "libpng12.so.0"
+      ]
+    },
+    {
+      "program": "libsct_ct.so",
+      "needed": 2,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": []
+    },
+    {
+      "program": "libuie_api.so",
+      "needed": 3,
+      "in_recovered": [],
+      "in_armel_system": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "unresolved": [
+        "libuie_db.so"
+      ]
+    }
+  ],
+  "unique_unresolved": [
+    "libAdlBt.so",
+    "libGLES_CM.so",
+    "libIFLB_NAVIIF.so",
+    "libIFLB_REPRO.so",
+    "libLMMDBSYS_IF.so",
+    "libLMMDB_IF.so",
+    "libNTWSET_IF.so",
+    "libOpenVG.so",
+    "libVBTEngineClient.so",
+    "libVBTLoader.so",
+    "libVECITransport.so",
+    "libVOITTS.so",
+    "libVOIapi.so",
+    "libVOIutil_cfg.so",
+    "libVOIutil_lp.so",
+    "libVOIutil_th.so",
+    "libVRS_IF.so",
+    "libadi_ct.so",
+    "libasoundex.so",
+    "libaud_dsp.so",
+    "libaud_dts.so",
+    "libaud_xmd.so",
+    "libbep_ct.so",
+    "libcva_db.so",
+    "libdismng_if.so",
+    "libdisplay_if.so",
+    "libdsv_api.so",
+    "libdsv_db.so",
+    "libdtv.so",
+    "libecli.so",
+    "libext_api.so",
+    "libgpo_ct.so",
+    "libgps_ct.so",
+    "libgsp.so",
+    "libhmi_if.so",
+    "libiflb_btm.so",
+    "libinit.so",
+    "libipas_acd.so",
+    "libipas_apc.so",
+    "libipas_can.so",
+    "libipas_fls.so",
+    "libipas_lcn.so",
+    "libipas_mda.so",
+    "libipas_pcd.so",
+    "libipas_pcmc.so",
+    "libipas_pcmp.so",
+    "libipas_std.so",
+    "libipas_tab.so",
+    "libipas_trc.so",
+    "libipas_util.so",
+    "libipd_ct.so",
+    "libir_ct.so",
+    "libjpeg.so",
+    "libmem_ct.so",
+    "libmir_if.so",
+    "libmmp_prc.so",
+    "libmod.so",
+    "libnavi_ex.so",
+    "libomx_service.so",
+    "libopt.so",
+    "libpng12.so.0",
+    "librom_dc.so",
+    "librtapi.so",
+    "libscac_implement.so.1",
+    "libscac_lib_srb.so.1",
+    "libscac_provide.so.1",
+    "libscp_ct.so",
+    "libsecurity.so",
+    "libspc_if.so",
+    "libsse.so",
+    "libswi_ct.so",
+    "libsysras_if.so",
+    "libsyssrcc_if.so",
+    "libsyssrcp_if.so",
+    "libuie_db.so",
+    "libuieplayer.so",
+    "libusb-0.1.so.4",
+    "libvcl_in.so"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libipas_sysp.so",
+  "examined_functions": [
+    "0002fdf8",
+    "00031320"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 213,
+    "prompt_tokens": 1615,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1828
+  },
+  "next_focus": [
+    "System command execution details",
+    "Synchronization loop behavior"
+  ],
+  "observations": [
+    {
+      "address": "0x0002fdf8",
+      "claim": "Initializes mutex with priority inheritance protocol",
+      "evidence_snippet": "pthread_mutexattr_setprotocol(apStack_14,2)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00031320",
+      "claim": "Executes system command for power management",
+      "evidence_snippet": "uVar4 = system((char *)(iVar11 + iVar8))",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two functions initialize RTCS mutex with priority inheritance and synchronize system parameters. First function sets up mutex attributes, second handles system synchronization and power tracing.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+  "unresolved_questions": [
+    "What specific system command is executed?",
+    "What is the purpose of the synchronization loop?"
+  ]
+}

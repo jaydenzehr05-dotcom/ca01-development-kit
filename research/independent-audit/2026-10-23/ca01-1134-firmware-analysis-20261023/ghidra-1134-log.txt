@@ -1,0 +1,165 @@
+2026-10-23 11:08:36 INFO  (LoggingInitialization) Using log config file: jar:file:/home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-23 11:08:36 INFO  (LoggingInitialization) Using log file: /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/ghidra-1134-log.txt  
+2026-10-23 11:08:36 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-23 11:08:36 INFO  (Preferences) Loading user preferences: /home/starlight/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences  
+2026-10-23 11:08:36 INFO  (ClassSearcher) Searching for classes...  
+2026-10-23 11:08:38 INFO  (ClassSearcher) Class search complete (1171 ms)  
+2026-10-23 11:08:38 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-23 11:08:38 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-23 11:08:38 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-10-23 11:08:38 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-10-23 11:08:38 INFO  (AnalyzeHeadless) Headless startup complete (3047 ms)  
+2026-10-23 11:08:38 INFO  (ClassSearcher) Class searcher loaded 59 extension points (20 false positives)  
+2026-10-23 11:08:39 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/starlight/projects/rav4-radio/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts  
+2026-10-23 11:08:39 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-23 11:08:39 INFO  (HeadlessAnalyzer) Creating temporary project: /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/GhidraDisplay1134  
+2026-10-23 11:08:39 INFO  (DefaultProject) Creating project: /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/GhidraDisplay1134  
+2026-10-23 11:08:39 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-10-23 11:08:39 INFO  (HeadlessAnalyzer)      project: /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/GhidraDisplay1134  
+2026-10-23 11:08:39 INFO  (HeadlessAnalyzer) IMPORTING: file:///home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY  
+2026-10-23 11:08:40 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2026-10-23 11:08:40 DEBUG (ElfHeader) Elf relocation table section .rel.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2026-10-23 11:08:40 DEBUG (ElfHeader) Elf relocation table section .rel.plt linked to symbol table section .dynsym affecting .plt  
+2026-10-23 11:08:40 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-23 11:08:40 INFO  (ProgramLoader) Using Language/Compiler: ARM:LE:32:v8:default  
+2026-10-23 11:08:40 INFO  (ProgramLoader) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64]  
+2026-10-23 11:08:41 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2026-10-23 11:08:41 DEBUG (ElfHeader) Elf relocation table section .rel.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2026-10-23 11:08:41 DEBUG (ElfHeader) Elf relocation table section .rel.plt linked to symbol table section .dynsym affecting .plt  
+2026-10-23 11:08:41 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_3.3 at 00008147  
+2026-10-23 11:08:41 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_3.8 at 0000ff85  
+2026-10-23 11:08:41 DEBUG (ElfProgramBuilder) Discarding 2-byte alignment/filler segment_3.10 at 000105da  
+2026-10-23 11:08:41 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_3.16 at 000139b4  
+2026-10-23 11:08:42 INFO  (ProgramLoader) Additional info:
+Loading file:///home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY?MD5=fa25d400ec2dd31cea47293e451c329a...
+ELF Relocation Failure: R_ARM_COPY (20, 0x14) at 0044f4c0 (Symbol = tb_cnv_UTF16ToEU) - Runtime copy not supported (16896-bytes)
+------------------------------------------------
+
+Linking the External Programs of '01116817-PROC_DISPLAY' to imported libraries...
+  [libm.so.6] -> not found in project
+  [librt.so.1] -> not found in project
+  [libexpat.so.1] -> not found in project
+  [libipas_std.so] -> not found in project
+  [libipas_fls.so] -> not found in project
+  [libipas_ls1.so] -> not found in project
+  [libipas_tab.so] -> not found in project
+  [libipas_can.so] -> not found in project
+  [libipas_pcd.so] -> not found in project
+  [libipas_sysc.so] -> not found in project
+  [libipas_pcmc.so] -> not found in project
+  [libipas_trc.so] -> not found in project
+  [libipas_mda.so] -> not found in project
+  [libipas_lcn.so] -> not found in project
+  [libipas_apc.so] -> not found in project
+  [libipas_skt.so] -> not found in project
+  [libipas_util.so] -> not found in project
+  [libiflb_btm.so] -> not found in project
+  [libmmp_prc.so] -> not found in project
+  [libhmi_if.so] -> not found in project
+  [libdismng_if.so] -> not found in project
+  [libsyssrcc_if.so] -> not found in project
+  [libIFLB_NAVIIF.so] -> not found in project
+  [libomx_service.so] -> not found in project
+  [libsqlite3.so.0] -> not found in project
+  [libsysras_if.so] -> not found in project
+  [libgpo_ct.so] -> not found in project
+  [libi2c_cm.so] -> not found in project
+  [libmem_ct.so] -> not found in project
+  [libadi_ct.so] -> not found in project
+  [libgps_ct.so] -> not found in project
+  [libir_ct.so] -> not found in project
+  [libscp_ct.so] -> not found in project
+  [libvcl_in.so] -> not found in project
+  [libComFlmLb.so] -> not found in project
+  [libIFLB_REPRO.so] -> not found in project
+  [libasound.so.2] -> not found in project
+  [libasoundex.so] -> not found in project
+  [libAdlBt.so] -> not found in project
+  [libAdlCd.so] -> not found in project
+  [libAdlRd.so] -> not found in project
+  [libAdlUb.so] -> not found in project
+  [libLMMDB_IF.so] -> not found in project
+  [libVRS_IF.so] -> not found in project
+  [libpthread.so.0] -> not found in project
+  [libmir_if.so] -> not found in project
+  [libspc_if.so] -> not found in project
+  [libuie_api.so] -> not found in project
+  [libuie_db.so] -> not found in project
+  [libcoll.so] -> not found in project
+  [libecli.so] -> not found in project
+  [libedbsong.so] -> not found in project
+  [libgsp.so] -> not found in project
+  [libinit.so] -> not found in project
+  [libopt.so] -> not found in project
+  [libIFLB_CDDB.so] -> not found in project
+  [libNTWSET_IF.so] -> not found in project
+  [libdsv_db.so] -> not found in project
+  [libdsv_api.so] -> not found in project
+  [libsecurity.so] -> not found in project
+  [libDIS_IF.so] -> not found in project
+  [libscac_lib_srb.so.1] -> not found in project
+  [libscac_implement.so.1] -> not found in project
+  [libscac_provide.so.1] -> not found in project
+  [libsct_ct.so] -> not found in project
+  [libswi_ct.so] -> not found in project
+  [libgcc_s.so.1] -> not found in project
+  [libc.so.6] -> not found in project
+  [libmod.so] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/01116817-PROC_DISPLAY] - 656 unresolved symbols, no external libraries configured - skipping
+  
+2026-10-23 11:08:42 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-23 11:08:43 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY  
+2026-10-23 11:12:24 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ARM Symbol                                 0.006 secs
+    Call-Fixup Installer                       0.047 secs
+    Create Function                            2.145 secs
+    Decompiler Switch Analysis               203.040 secs
+    Disassemble                               12.927 secs
+    Disassemble Entry Points                   0.262 secs
+    Embedded Media                             0.100 secs
+    External Entry References                  0.001 secs
+    Function Start Pre Search                  0.067 secs
+    Function Start Search                      0.775 secs
+    Non-Returning Functions - Discovered       0.750 secs
+    Non-Returning Functions - Known            0.008 secs
+    Shared Return Calls                        0.568 secs
+    Subroutine References                      0.610 secs
+-----------------------------------------------------
+     Total Time   221 secs
+-----------------------------------------------------
+  
+2026-10-23 11:12:24 ERROR (HeadlessAnalyzer) REPORT: Analysis timed out at 160 seconds. Processing not completed for file: file:///home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY  
+2026-10-23 11:12:24 INFO  (HeadlessAnalyzer) REPORT: Execute script: CA01DisplaySurvey.java '/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/ghidra-1134'   
+2026-10-23 11:12:25 INFO  (HeadlessAnalyzer) SCRIPT: /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/CA01DisplaySurvey.java  
+2026-10-23 11:12:25 INFO  (GhidraScript) CA01DisplaySurvey.java> CA01 DISPLAY completed decompilation of 0 functions  
+2026-10-23 11:12:25 INFO  (GhidraScript) CA01DisplaySurvey.java> CA01 DISPLAY SURVEY COMPLETE /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/ghidra-1134  
+2026-10-23 11:12:25 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY  
+2026-10-23 11:12:25 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY  
+2026-10-23 11:12:26 INFO  (LocalFileSystem) /01116817-PROC_DISPLAY: file created (starlight)  
+2026-10-23 11:12:26 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /01116817-PROC_DISPLAY (GhidraDisplay1134:/01116817-PROC_DISPLAY)  
+2026-10-23 11:12:26 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  

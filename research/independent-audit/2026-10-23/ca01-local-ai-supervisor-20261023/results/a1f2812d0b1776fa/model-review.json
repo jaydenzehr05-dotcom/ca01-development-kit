@@ -1,0 +1,37 @@
+{
+  "binary": "./opt/ftl/lib/libipas_sysc.so",
+  "examined_functions": [
+    "00031568",
+    "0001abfc"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 240,
+    "prompt_tokens": 906,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1146
+  },
+  "next_focus": [
+    "Message handling functions",
+    "Error reporting mechanism"
+  ],
+  "observations": [
+    {
+      "address": "0x00031568",
+      "claim": "Initializes RTC mutex with protocol and priority ceiling",
+      "evidence_snippet": "pthread_mutexattr_setprotocol(apStack_14,2)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 00031568 initializes RTC mutex attributes with error handling. Function 0001abfc implements a message receiving task loop.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+  "unresolved_questions": [
+    "What are the specific error message formats?",
+    "What do the message types 0, 1, and 2 represent?"
+  ]
+}

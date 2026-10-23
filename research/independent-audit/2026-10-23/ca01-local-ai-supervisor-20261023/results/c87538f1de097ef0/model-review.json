@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libipas_grp.so",
+  "examined_functions": [
+    "0003e5c4",
+    "000447b8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 250,
+    "prompt_tokens": 1493,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1743
+  },
+  "next_focus": [
+    "Analyze jump table handling",
+    "Reverse engineer fc_grp_LibFntC_initcue"
+  ],
+  "observations": [
+    {
+      "address": "0x0003e5c4",
+      "claim": "Calls fc_grp_LibFntC_initcue three times with offsets",
+      "evidence_snippet": "fc_grp_LibFntC_initcue(iVar1 + 0x1dc34)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000447b8",
+      "claim": "Initializes memory structures with memset and sets up data pointers",
+      "evidence_snippet": "memset(pvVar12,0,0xa0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two functions analyzed: font memory initialization and general library initialization. First function calls font initialization routines and a jump table. Second function initializes data structures and sets up memory.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+  "unresolved_questions": [
+    "What is the purpose of the jump table in first function?",
+    "What do the offset values represent in first function?"
+  ]
+}

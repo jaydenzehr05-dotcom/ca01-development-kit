@@ -1,0 +1,52 @@
+{
+  "binary": "./opt/ftl/apl/PROC_AUDIO",
+  "examined_functions": [
+    "00054250",
+    "000578b0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 313,
+    "prompt_tokens": 2712,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 3025
+  },
+  "next_focus": [
+    "Audio state transition logic in 00054250",
+    "ALSA error handling in 000578b0"
+  ],
+  "observations": [],
+  "overview": "Function 00054250 handles audio playback mode control with state transitions. Function 000578b0 manages audio task initialization and ALSA operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "54250",
+    "578b0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "54250",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "578b0",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the 'e' character check in DAT_0013b429?",
+    "How does FUN_00056130() determine ALSA open errors?"
+  ]
+}

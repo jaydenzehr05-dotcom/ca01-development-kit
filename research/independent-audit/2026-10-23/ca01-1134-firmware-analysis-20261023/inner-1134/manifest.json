@@ -1,0 +1,92 @@
+[
+  {
+    "component": "01-sh-base.bin",
+    "component_size": 892788,
+    "input_sha256": "91981572726e1e425b938a4aa8b0c4a768071fd02d307a52e15b70a3b2357b0a",
+    "observed_prefix_bytes": 24,
+    "inner_size": 892764,
+    "inner_sha256": "31635df1ae46ff050f16850e33929fded3dfb10fd2e5385e38e52e933f005829",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "02-middle-ware.bin",
+    "component_size": 719415,
+    "input_sha256": "8ed2c0b2ec129582e4eb7ca901869eb36626fa11160683b4cf4fa232c7f3be1f",
+    "observed_prefix_bytes": 524,
+    "inner_size": 718891,
+    "inner_sha256": "59ea52b0fe27e57047d35ea0a6d0be88aee390dc005f82a98a481f3f46214379",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "03-kernel.bin",
+    "component_size": 1808792,
+    "input_sha256": "cbc36473d2e5f7bd98d990db7489ce9789ce3c0df3fb92d308edfe1c65087c82",
+    "observed_prefix_bytes": 12,
+    "inner_size": 1808780,
+    "inner_sha256": "04517836083c78115b5b910846005f624325bb724fba64a0c76864d3a55cb7b6",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "04-device-driver.bin",
+    "component_size": 236712,
+    "input_sha256": "f15d56c8da18a6cadda5aa6a0b9c17986e78c707b1a4270d9991d2beabcabbed",
+    "observed_prefix_bytes": 12,
+    "inner_size": 236700,
+    "inner_sha256": "6214de58e2d7ca0564e01c6ef69befc3957c184637b2fa048c978f59b1732b69",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "05-bluetooth.bin",
+    "component_size": 633681,
+    "input_sha256": "6fa1f29d8ac60f2c7068a9bd520e6edeb9c5a7e2040d257d7fcfc602bd5e4656",
+    "observed_prefix_bytes": 12,
+    "inner_size": 633669,
+    "inner_sha256": "60928899196f09c4dd280db0d410d35869ea6fe28ddf84ef1e5262793b22c482",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "06-audio.bin",
+    "component_size": 9383112,
+    "input_sha256": "94a8b913e56f4e65a260a756c1efb5ab45a1e06a1e670d31b1284a182526e0a7",
+    "observed_prefix_bytes": 12,
+    "inner_size": 9383100,
+    "inner_sha256": "90cf64cad99f3cdfc0dd7e95c51f871a7bbd46522760f4354c1d1be3b1a7f6cd",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "07-gui.bin",
+    "component_size": 529973,
+    "input_sha256": "c10b091dc28f582e605b7f531f822b9cf68b7688bc7f1d32f89e3471f8e9ed6a",
+    "observed_prefix_bytes": 12,
+    "inner_size": 529961,
+    "inner_sha256": "92fb0df67c32715edab6a4a97018cc40d050f0773130275797446f28872823b0",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "08-voice-recognition.bin",
+    "component_size": 577819,
+    "input_sha256": "cbf6f6d63d842ab14e34ba4fbd3335ce7cbcdec9ab4b76c25da53e3f3a4c5729",
+    "observed_prefix_bytes": 12,
+    "inner_size": 577807,
+    "inner_sha256": "8ed3eb87ed60b5dd520fd2c1b96ae65ff2d4c918b2fe0c665174cc845e032bc4",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "09-boot.bin",
+    "component_size": 381272,
+    "input_sha256": "5d0aba88701e97db3a0c1d611fac0e9f2edd130c1262e4a4130a060c4da1db63",
+    "observed_prefix_bytes": 48,
+    "inner_size": 381224,
+    "inner_sha256": "6bc1265e1042fd044fc097b30c5a018514ad9ee3a328e0d74cc220197ab4c893",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  },
+  {
+    "component": "10-bootsig.bin",
+    "component_size": 356,
+    "input_sha256": "d6f012b8de2c19eb561015b9e39a0c7bda771c1407838b4235aa7c61058ceb52",
+    "observed_prefix_bytes": 36,
+    "inner_size": 320,
+    "inner_sha256": "e9df45f15f55a110baf853aff555356fa8ced8838339515a06f716a4a874e987",
+    "note": "Offset inferred from a length field, not independently decoded or validated."
+  }
+]

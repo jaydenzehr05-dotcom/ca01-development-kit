@@ -1,0 +1,3948 @@
+<?SnCk
+URdQ^B"
+sasf,1sd
+snSjClcm
+RgQRr!!
+smSlCkcn7
+/"OclSnCm
+ePb &P`
+/"OcmSjCk
+/"OcmSjCk
+/"OSnCl
+/"OcmSjCl
+/"OcmSjCl
+\;r/l8
+/"OcmSjCl
+cnSjCl
+ckSiCl
+f\6cR 71
+VbTdUL5 u
+J2m,;3R
+fL6aUbf\6
+6bb\2"&
+ckSjCn
+/"OSmCn
+cnSlCm
+/"OSmCn
+OSnCkW
+L5RgQ\r.
+L=8tVQWR
+d|5|4Rf8wQR
+/"OSnCm$
+/"OSnCm
+/"OSnCk
+d|5|4Rf
+/"OSnCm{
+/"OSlCn
+/"OSnClQ
+,4BmAW
+/"OSlCn
+/"OSnCl#
+,4BmAW
+/"OSlCn
+/"OSnCl
+,4BmAW
+/"OSnCmu
+ckSjCl
+e,5l5R/P8`
+4X6b4/
+|2f4z1W4y4vb#4xV
+h2iUTV\
+2Rr+r)
+z"e4{"V4y!W4uR"4x4vb
+R)a]L1
+WX2x2&
+JB,4|B"A
+4pB&4vB%4uF
+B!4qB'4wB.4~B-
+/"OSnCl"
+/"OcmSnCl
+6r-sd>
+|6Cabb 1
+cerdS`
+/"OSnCmW
+clSmCj
+ckSnCj
+/clSnCj-
+/"OcmSnClv
+/"OcmSnCl\
+/"OcnCl2
+/"OcmSnCl
+/"OcmSnCl
+/clSnCja
+/clSnCk
+clSnCk
+/"OcmSnCl.
+/clSnCk
+clSnCk
+/"OcmSnCl.
+clSnCj
+/"OcmSnClW
+/"OcmSnCl;
+/"OcmSnCl
+/"OcmSnCl
+/"OcmSnCl\
+/"OcmSnCl;
+/"OclSmCj
+/ckSmCjm
+/clSnCk
+/clSnCk
+/clSnCkL
+/cmCkZ
+/cmCk2
+/cmClu
+/"OcnQ
+clSnCj
+/"OsmSlCn
+sjcmSkCn
+5cdX4"4
+/&/V/f/F/
+/"OclSmCjO
+clSjCn
+OMX Video Common Copyright(C) 2010 Renesas Electronics Corporation. All rights reserved.
+[VIDEO CMN IF] OmxrMeVideoInit
+PriorityHIGH.ME.VDEC.MAIN
+[VIDEO CMN] %s line = %d: Init ME common is failed!
+omxr_me_video_if.c
+[VIDEO CMN] %s line = %d: Join thread is failed!
+[VIDEO CMN] %s line = %d: Terminate decode thread is failed!
+[VIDEO CMN] %s line = %d: Creating decode thread is failed!
+[VIDEO CMN] %s line = %d: Video Cmn context allocation is failed!
+[VIDEO CMN IF] OmxrMeVideoInitializeContext
+[VIDEO CMN UTIL] OmxrMeVideoUtilCreateResources
+VPU_EXTENSION_CMN_DEC
+EXTENSION_INFO
+[VDEC ME]Stream info area = %d
+[VDEC ME]Stream size info area = %d
+[VDEC ME]work buffer = %d
+[VDEC ME]middle information buffer = %d
+[VDEC ME]boot vpu information buffer = %d
+[VDEC ME]mv information buffer = %d
+[VDEC ME]Ring buffer = %d
+[VIDEO CMN UTIL] %s line = %d: Allocate line buffer is failed!
+omxr_me_video_util.c
+[VIDEO CMN UTIL] %s line = %d: Free mv information buffer is failed!
+[VIDEO CMN UTIL] %s line = %d: Allocate mv information buffer is failed!
+[VIDEO CMN UTIL] %s line = %d: Free boot vpu information buffer is failed!
+[VIDEO CMN UTIL] %s line = %d: Allocate boot vpu information buffer is failed!
+[VIDEO CMN UTIL] %s line = %d: Free middle information buffer is failed!
+[VIDEO CMN UTIL] %s line = %d: Allocate middle information buffer is failed!
+[VIDEO CMN UTIL] %s line = %d: Free work buffer is failed!
+[VIDEO CMN UTIL] %s line = %d: Allocate work buffer is failed!
+[VIDEO CMN UTIL] %s line = %d: Deinit vpu5 is failed!
+[VIDEO CMN UTIL] %s line = %d: Init vpu5 is failed!
+[VIDEO CMN UTIL] %s line = %d: Malloc stream size info area is failed!
+[VIDEO CMN UTIL] %s line = %d: Malloc stream info area is failed!
+[VIDEO CMN UTIL] %s line = %d: OmxrGetConfigExtSection is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilDestroyResources
+[VIDEO CMN UTIL] %s line = %d: Free line buffer is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilCreateMutext
+[VIDEO CMN UTIL] %s line = %d: Create Mutext (Line buffer) is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilDestroyMutex
+[VIDEO CMN UTIL] %s line = %d: Destroy Mutext (Line buffer) is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilCreateSignal
+[VIDEO CMN UTIL] %s line = %d: Create Signal (VLC) is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilDestroySignal
+[VIDEO CMN UTIL] %s line = %d: Destroy Signal (VLC) is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilSendResponse
+[VIDEO CMN UTIL] %s line = %d: Unknown command ID!
+[VIDEO CMN UTIL] Unknown command ID = 0x%x
+[VIDEO CMN UTIL] %s line = %d: send response is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilSendNotification
+[VIDEO CMN UTIL] %s line = %d: Send notification is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilSetFatalErrorInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckStop
+[VIDEO CMN UTIL] %s line = %d: u16Length is Illegal!
+[VIDEO CMN UTIL] %s line = %d: Send response is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilDoStop
+[VIDEO CMN UTIL] %s line = %d: mcvdec_end_decoder is failed!
+[VIDEO CMN UTIL] s32VpuResult = %d
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckPauseOn
+[VIDEO CMN UTIL] OmxrMeVideoUtilDoPauseOn
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckPortFlush
+[VIDEO CMN UTIL] %s line = %d : Port number is Illegal!
+[VIDEO CMN UTIL] OmxrMeVideoUtilDoPortFlush
+[VIDEO CMN UTIL] %s line = %d: Clear port information is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckPortEnable
+[VIDEO CMN UTIL] OmxrMeVideoUtilDoPortEnable
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckPortDisable
+[VIDEO CMN UTIL] OmxrMeVideoUtilDoPortDisable
+[VIDEO CMN UTIL] OmxrMeVideoUtilSetInputBuffer
+[%2d] Receive EmptyThisBuffer command in Video MEng
+[VIDEO CMN UTIL] %s line = %d : u16Length is Illegal!
+[VIDEO CMN UTIL] %s line = %d : psBuffer is Illegal!
+[VIDEO CMN UTIL] %s line = %d : pvBufferAddressVirt is Illegal!
+[VIDEO CMN UTIL] %s line = %d : Port is disable!
+[VIDEO CMN UTIL] %s line = %d : Post empty this buffer is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilSetOutputBuffer
+[%2d] Receive FillThisBuffer command in Video MEng
+[VIDEO CMN UTIL] %s line = %d : Post fill this buffer is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckInputBuffer
+[VIDEO CMN UTIL] Get EmptyThsiBufferAddr = %p
+[VIDEO CMN UTIL] Get LineBufferInfo = %p
+[VIDEO CMN UTIL] EOSflag = %d, DecodeErrorFlag = %d
+[%2d] Stream data copy start
+[%2d] Stream data copy end. data size = %7d
+[VIDEO CMN UTIL] %s line = %d : Over Stream Count!
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckOutputBuffer
+[VIDEO CMN ENTRY] %s line = %d: Get VLC FW pointer is failed!
+[VIDEO CMN ENTRY] %s line = %d: Get VLC CE pointer is failed!
+[VIDEO CMN UTIL] %s line = %d: mcvdec_init_decoder is failed!
+[VIDEO CMN UTIL] s32VpuResult              = %d
+[VIDEO CMN UTIL] stream_type               = %d
+[VIDEO CMN UTIL] max_slice_cnt             = %d
+[VIDEO CMN UTIL] codec_params              = %p
+[VIDEO CMN UTIL] fmem_alloc_mode           = %d
+[VIDEO CMN UTIL] output_unit               = %d
+[VIDEO CMN UTIL] fmem_notice_mode          = %d
+[VIDEO CMN UTIL] first_hdr_enable          = %d
+[VIDEO CMN UTIL] ec_mode                   = %d
+[VIDEO CMN UTIL] ce_config                 = %d
+[VIDEO CMN UTIL] max_imd_ratio_10          = %d
+[VIDEO CMN UTIL] buffering_pic_cnt         = %d
+[VIDEO CMN UTIL] num_views                 = %d
+[VIDEO CMN UTIL] func_get_intrinsic_header = %p
+[VIDEO CMN UTIL] func_userdata_callback    = %p
+[VIDEO CMN UTIL] func_imd_buffering_ready  = %p
+[VIDEO CMN UTIL] virt_to_phys_func         = %p
+[VIDEO CMN UTIL] %s line = %d: mcvdec_set_vpu5_work_area is failed!
+[VIDEO CMN UTIL] %s line = %d: OmxrMeVideoUtilRestartVpu is failed!
+[VIDEO CMN UTIL] Request Line Buffer Info(%08x:%08d:%08x)
+[VIDEO CMN UTIL] %s line = %d: Send event is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilDecodeComplete
+[%2d] Receive mcvdec_decode_picture call end message
+[VIDEO CMN UTIL] %s line = %d: Decode is failed!
+[VIDEO CMN UTIL] %s line = %d: FillThisBuffer request is none!
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetVpuErrorInfo
+[VIDEO CMN UTIL]sErrorInfo.dec_status       = %d
+[VIDEO CMN UTIL]sErrorInfo.refs_status      = %d
+[VIDEO CMN UTIL]sErrorInfo.hdr_err_erc      = %d
+[VIDEO CMN UTIL]sErrorInfo.hdr_err_elvl     = %d
+[VIDEO CMN UTIL]sErrorInfo.hdr_err_strm_idx = %d
+[VIDEO CMN UTIL]sErrorInfo.hdr_err_strm_ofs = %d
+[VIDEO CMN UTIL]sErrorInfo.vlc_err_esrc     = %d
+[VIDEO CMN UTIL]sErrorInfo.vlc_err_elvl     = %d
+[VIDEO CMN UTIL]sErrorInfo.vlc_err_sn       = %d
+[VIDEO CMN UTIL]sErrorInfo.vlc_err_mbh      = %d
+[VIDEO CMN UTIL]sErrorInfo.vlc_err_mbv      = %d
+[VIDEO CMN UTIL]sErrorInfo.vlc_err_erc      = %d
+[VIDEO CMN UTIL]sErrorInfo.vlc_err_sbcv     = %d
+[VIDEO CMN UTIL]sErrorInfo.ce_err_erc       = %d
+[VIDEO CMN UTIL]sErrorInfo.ce_err_epy       = %d
+[VIDEO CMN UTIL]sErrorInfo.ce_err_epx       = %d
+[VIDEO CMN UTIL] VPU error is nothing
+[VIDEO CMN UTIL] %s line = %d: mcvdec_get_error_info is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilReleaseInBuffer
+[VIDEO CMN UTIL] OmxrMeVideoUtilIsProcDecoder
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckLineBufferInfo
+[VIDEO CMN UTIL] %s line = %d: OmxrUnlockMutex is failed!
+[VIDEO CMN UTIL] %s line = %d: OmxrLockMutex is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilSetCodecErrorInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilPostEmptyThisBufferInfo
+[VIDEO CMN UTIL] %s line = %d: Post empty this buffer info is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetEmptyThisBufferInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckEmptyThisBufferInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilPostFillThisBufferInfo
+[VIDEO CMN UTIL] %s line = %d: Post fill this buffer info is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetFillThisBufferInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilCheckFillThisBufferInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilPostPortFlushInfo
+[VIDEO CMN UTIL] %s line = %d: Post port flush info is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetPortFlushInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilPostPortEnableInfo
+[VIDEO CMN UTIL] %s line = %d: Post port enable info is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetPortEnableInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilPostPortDisableInfo
+[VIDEO CMN UTIL] %s line = %d: Post port disable info is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetPortDisableInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetFillThisBufferReqNum
+[VIDEO CMN UTIL] OmxrMeVideoUtilSearchWritableLineBufferInfo
+[VIDEO CMN UTIL] Ring Buffer Info. BufferSize = %d, WriteOffset = %d, ReadOffset = %d
+[VIDEO CMN UTIL] LineBufferFilledLen = %d, RequestBufferSize = %d
+[VIDEO CMN UTIL] %s line = %d: Ring Buffer is Full!
+[VIDEO CMN UTIL] OmxrMeVideoUtilClearPortInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilSetAndSendPictureInfo
+[VIDEO CMN UTIL] %s line = %d: mcvdec_get_output_picture is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilClearFlagAndBuffer
+[VIDEO CMN UTIL] OmxrMeVideoUtilInitVpu5
+[VIDEO CMN UTIL] %s line = %d: Set clock and interrupt is failed!
+[VDEC ME]vpu5 work buffer = %d
+[VIDEO CMN UTIL] %s line = %d : Initilize udf is failed!
+[VIDEO CMN UTIL] %s line = %d: VPU5 init is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilDeinitVpu5
+[VIDEO CMN UTIL] %s line = %d: Deinitilize UDF is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilRestartVpu
+[VIDEO CMN UTIL] %s line = %d: mcvdec_set_play_mode is failed!
+[VIDEO CMN UTIL] %s line = %d: mcvdec_flush_buff is failed!
+[VIDEO CMN UTIL] OmxrMeVideoUtilPostStreamInfo
+[VIDEO CMN UTIL] %s line = %d: Stream info list is not empty!
+[VIDEO CMN UTIL] %s line = %d: Invalid stream info is not detect!
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetStreamInfo
+[VIDEO CMN UTIL] %s line = %d: Stream info is not found!
+[VIDEO CMN UTIL] OmxrMeVideoUtilPostLineBufferInfo
+[VIDEO CMN UTIL] OmxrMeVideoUtilGetLineBufferInfo
+[VIDEO CMN ENTRY] OmxrMeVideoDecodeGetStrmBuffer
+[VIDEO CMN ENTRY] OmxrMeVideoDecodeReleaseStrm
+[VIDEO CMN ENTRY] %s line = %d: Sending signal is failed!
+omxr_me_video_entry.c
+[VIDEO CMN ENTRY] %s line = %d: Send event is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoDecodeSetFrameInfo
+[VIDEO CMN ENTRY] OmxrMeVideoEntryRegistNotifyErrorInfo
+[VIDEO CMN ENTRY] OmxrMeVideoDecodeDebugInfo
+[VIDEO CMN ENTRY] OmxrMeVideoStateGetFuncTableAddr
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInit
+Measurement is started
+[VIDEO CMN ENTRY] %s line = %d: u16Length is Illegal!
+[VIDEO CMN ENTRY] %s line = %d: Regist resource callback function is failed!
+OMX.RENESAS.VPU5HA1
+[VIDEO CMN ENTRY] %s line = %d: Creating resources is failed!
+[VIDEO CMN ENTRY] %s line = %d: Destroy signal is failed!
+[VIDEO CMN ENTRY] %s line = %d: Creating signal is failed!
+[VIDEO CMN ENTRY] %s line = %d: Destroy mutex is failed!
+[VIDEO CMN ENTRY] %s line = %d: Creating mutex is failed!
+[VIDEO CMN ENTRY] %s line = %d: Unlock resource is failed!
+[VIDEO CMN ENTRY] %s line = %d: Lock resource is failed!
+[VIDEO CMN ENTRY] %s line = %d: Free resource is failed!
+[VIDEO CMN ENTRY] %s line = %d: Acquiring resource is failed!
+[VIDEO CMN ENTRY] %s line = %d: Deinit codec is failed!
+[VIDEO CMN ENTRY] %s line = %d: Init codec is failed!
+[VIDEO CMN ENTRY] %s line = %d: Send response is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryDeinit
+[VIDEO CMN ENTRY] %s line = %d: Destroy resources is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryStart
+[VIDEO CMN ENTRY] %s line = %d: Check output buffer is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcStop
+[VIDEO CMN ENTRY] %s line = %d: Check stop is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInNotProcStop
+[VIDEO CMN ENTRY] %s line = %d: Do stop is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInFatalStop
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcPauseOn
+[VIDEO CMN ENTRY] %s line = %d: Check pause is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInNotProcPauseOn
+[VIDEO CMN ENTRY] %s line = %d: Do pause is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryPauseOff
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInExeEmptyThisBuffer
+[VIDEO CMN ENTRY] %s line = %d : Set input buffer is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcEmptyThisBuffer
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInIdleOrPauseEmptyThisBuffer
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInExeFillThisBuffer
+[VIDEO CMN ENTRY] %s line = %d : Set output buffer is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcFillThisBuffer
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInIdleOrPauseFillThisBuffer
+[VIDEO CMN ENTRY] OmxrMeVideoEntrySetParam
+[VIDEO CMN ENTRY] %s line = %d: Set parameter is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcPortFlush
+[VIDEO CMN ENTRY] %s line = %d: Port flush parameter is illegal!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInIdleOrExeOrPausePortFlush
+[VIDEO CMN ENTRY] %s line = %d: Do flush is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcPortEnable
+[VIDEO CMN ENTRY] %s line = %d: Port enable parameter is illegal!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInNotProcPortEnable
+[VIDEO CMN ENTRY] %s line = %d: Do port enable is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcPortDisable
+[VIDEO CMN ENTRY] %s line = %d: Port disable parameter is illegal!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInIdleOrExeOrPausePortDisable
+[VIDEO CMN ENTRY] %s line = %d: Do port disable is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryMarkBuffer
+[VIDEO CMN ENTRY] %s line = %d : Port number is Illegal!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcProcComplete
+[VIDEO CMN ENTRY] %s line = %d: Decode complete proc is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcToIdleProcComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcToPauseProcComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcToExeProcComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcInBufferTransComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcToIdleInBufferTransComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcToPauseInBufferTransComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInProcToExeInBufferTransComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInExeInBufferTransComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryInPauseInBufferTransComplete
+[VIDEO CMN ENTRY] OmxrMeVideoEntryExtention
+[VIDEO CMN ENTRY] %s line = %d: UDF CURRUPT ERROR!
+[VIDEO CMN ENTRY] %s line = %d:UDF FATAL ERROR!
+[%2d] VLC start
+[%2d] VLC end
+[%2d] CE start
+[%2d] CE end
+[%2d] Extention measurement id
+[VIDEO CMN ENTRY] OmxrMeVideoEntryRegistResourceCallback
+[VIDEO CMN ENTRY] OmxrMeVideoEntryRegistGetHeaderInfo
+[VIDEO CMN ENTRY] %s line = %d: Insufficient buffer size!
+[VIDEO CMN ENTRY] %s line = %d: Getting header information is failed!
+s32Status = %d
+data_type = %d
+data_id   = %d
+[VIDEO CMN ENTRY] OmxrMeVideoEntryRegistNotifyHdrEnd
+[%2d] Header analyze end
+[VIDEO CMN ENTRY] OmxrMeVideoEntryRegistNotifyCePicNo
+[VIDEO CMN ENTRY] %s line = %d: fmem_index is over OMXR_ME_VIDEO_MAX_FRAME_BUFFER_NUM!
+[VIDEO CMN ENTRY] fmem_index = %d
+[VIDEO CMN ENTRY] OmxrMeVideoEntryFreeContext
+[VIDEO CMN ENTRY] %s line = %d: Join thread is failed!
+[VIDEO CMN ENTRY] %s line = %d: Terminate decode thread is failed!
+[VIDEO CMN ENTRY] OmxrMeVideoDecodeGetFrameInfo
+[VIDEO CMN ENTRY] %s line = %d: Insufficient frame memory
+u32BuffAddr      = 0x%x
+AvailableMemSize = %11d bytes ( %11d - %11d )
+RequiredMemSize  = %11d bytes ( %11d x %11d )
+[VIDEO CMN ENTRY] %s line = %d: s32ExtraFrameCnt=%d < u32SuggestedDisplayFmemNum=%u 
+[VIDEO CMN THREAD] OmxrMeVideoDecodeThread
+[VIDEO CMN THREAD] %s line = %d: Get thread ID is failed!
+omxr_me_video_thread.c
+[VIDEO CMN THREAD] %s line = %d: Save thread context is failed!
+[VIDEO CMN THREAD] %s line = %d: Create thread context is failed!
+[VIDEO CMN THREAD] %s line = %d: OmxrResetSignal is failed
+[%2d] mcvdec_decode_picture call
+[VIDEO CMN THREAD] %s line = %d: mcvdec_decode_picture return value %d
+[VIDEO CMN THREAD] %s line = %d: Waiting signal is timeout!
+[VIDEO CMN THREAD] %s line = %d: CE is canseled!
+[VIDEO CMN THREAD] %s line = %d: mcvdec_decode_picture is failed!
+[VIDEO CMN THREAD] s32VpuResult = %d
+[VIDEO CMN THREAD] %s line = %d: Send message is failed!
+[VIDEO CMN THREAD] %s line = %d: Illegal internal command ID!
+cmSkCl
+/cnSkCm
+smclCkSj
+R/sjciCh
+uQfmbp2
+g}gv/M
+<?siclCkSn
+/"OcnSmCl
+/"OcnSmCl
+/"OcnSmCl
+/"OcnSmCl{
+/"OcnSmClp
+/"OcnSmClb
+/"OcnSmClW
+/"OcnSmClK
+/"OcnSmCl@
+/"OcnSmCl4
+/"OcnSmCl)
+/"OcnSmCl
+/"OcnSmCl
+/"OcnSmCl
+/"OcnSmCl
+/"OcnSmCl
+/"OcmSlCk
+/"OcmSlCk
+/"OcmSlCk~
+/"OcmSlCk\
+/"OcmSlCk:
+/"OcmSlCk
+/"OcmSlCk:
+/"OcmSlCk
+/"OcmSlCk
+/"OcmSlCk~
+/"OcmSlCk\
+/"OcmSlCk:
+/"OcmSlCk
+/"OcmSlCk
+/"OcmSlCk
+/"OcmSlCky
+/"OcmSlCkV
+/"OcmSlCk3
+/"OcnSlCm
+/"OcmSlCk
+/"OcnSlCm
+/"OcnSlCm
+/"OcnSlCm
+/"OcmSlCk_
+/"OcmSlCk<
+/"OcmSlCk
+/"OcmSlCk
+/"OcmSlCk
+/"OcmSlCk_
+/"OcmSlCk<
+/"OcmSlCk
+/"OcmSlCk
+/"OcmSlCk
+/"OcmSlCk
+<?cmSnCl;
+/"OcnSlCm
+OMX Common Copyright(C) 2010 Renesas Electronics Corporation. All rights reserved.
+[ME CMN] %s
+OmxrMeCmnInit
+[ME CMN ERR] %s line = %d : psInfo is NULL!
+[ME CMN ERR] %s line = %d : pu8Version is NULL!
+[ME CMN ERR] %s line = %d : psInitParam is NULL!
+[ME CMN ERR] %s line = %d : Copy entry function is failed!
+[ME CMN ERR] %s line = %d : Malloc context area is failed!
+PriorityMID.ME.CMN.MAIN
+[ME CMN ERR] %s line = %d : Create main thread is failed!
+OmxrMeSendMsg
+[ME CMN ERR] %s line = %d : hMsg is faild!
+[ME CMN ERR] %s line = %d : pvMEngPrivate is faild!
+[ME CMN ERR] %s line = %d : pvCommand is NULL!
+[ME CMN ERR] %s line = %d : Malloc message handle area is failed!
+[ME CMN ERR] %s line = %d : Malloc message area is failed!
+[ME CMN ERR] %s line = %d : Malloc command area is failed!
+[ME CMN ERR] %s line = %d : Send message is failed!
+OmxrMeSendResponse
+[ME CMN ERR] %s line = %d : hMEng is NULL!
+[ME CMN ERR] %s line = %d : Send response is failed!
+OmxrMeSendNotify
+[ME CMN ERR] %s line = %d : Send notify is failed!
+[ME CMN] %s
+OmxrMeCmnMainThread
+[ME CMN ERR] %s line = %d : Get thread Id is faild!
+[ME CMN ERR] %s line = %d : Malloc thread context is faild!
+[ME CMN] %s line = %d : There has been already a thread.
+[ME CMN ERR] %s line = %d : pvContext is NULL!
+[ME CMN] %s line = %d : The thread cannot be finished.
+[ME CMN ERR] %s line = %d : pvParam is NULL!
+[ME CMN ERR] %s line = %d : argument is Invaled
+[ME CMN ERR] %s line = %d : Un supported is process!
+OmxrMeCmnDeinit
+[ME CMN ERR] %s line = %d : hMEng is faild!
+[ME CMN ERR] %s line = %d : pvMEngPrivate is NULL!
+[ME CMN ERR] %s line = %d : Free codec context is failed!
+[ME CMN ERR] %s line = %d : Thread exit is failed!
+OmxrMeCmnMsgReceive
+[ME CMN ERR] %s line = %d : pvCommand is faild!
+[ME CMN ERR] %s line = %d : u32Size is faild!
+[ME CMN ERR] %s line = %d : Malloc message handle area is failed!
+[ME CMN ERR] %s line = %d : Malloc message command area is failed!
+[ME CMN ERR] %s line = %d : Malloc message container area is failed!
+[ME CMN ERR] %s line = %d : Send message is failed!
+omxr_me_cmn_state.c
+[ME CMN] %s
+OmxrMeCmnStateMachine
+[ME CMN] MediaEngin CurrentState = %d
+[ME CMN ERR] %s : NG phase command (0x%x) u32State (0x%x)
+[ME CMN ERR] %s :Change State is Fatal! u32Result = 0x%x
+[ME CMN ERR] %s :Now State(0x%x)
+[ME CMN ERR] %s :Receive Command(0x%x)
+[ME CMN ERR] %s : Not supported command (0x%x)
+[ME CMN] %s line = %d : Parameter is failed!
+OmxrMeCmnSendErrorResponse
+[ME CMN] %s line = %d : Function is not entry!
+[ME CMN] %s line = %d : It is not Process!
+[ME CMN ERR] %s line = %d : Return value is failed (0x%x)!
+[ME CMN ERR] %s line = %d : Send response is failed!
+[ME CMN ERR] Fatal Error Info(State = %d , Command = %d)
+[ME CMN ERR] %s line = %d : Notify is fatal!
+OmxrMeCmnStateInit
+OmxrMeCmnStateDeinit
+OmxrMeCmnStateStart
+OmxrMeCmnStateInProcStop
+OmxrMeCmnStateInNotProcStop
+OmxrMeCmnStateInProcPauseOn
+OmxrMeCmnStateInNotProcPauseOn
+OmxrMeCmnStatePauseOff
+OmxrMeCmnStateInExeEmptyThisBuffer
+OmxrMeCmnStateInProcEmptyThisBuffer
+OmxrMeCmnStateInIdleOrPauseEmptyThisBuffer
+OmxrMeCmnStateInStateTransEmptyThisBuffer
+OmxrMeCmnStateInExeFillThisBuffer
+OmxrMeCmnStateInProcFillThisBuffer
+OmxrMeCmnStateInIdleOrPauseFillThisBuffer
+OmxrMeCmnStateInStateTransFillThisBuffer
+OmxrMeCmnStateSetParam
+OmxrMeCmnStateGetParam
+OmxrMeCmnStateSetConfig
+OmxrMeCmnStateGetConfig
+OmxrMeCmnStateInProcPortFlush
+OmxrMeCmnStateInIdlePortFlush
+OmxrMeCmnStateInExeOrPausePortFlush
+OmxrMeCmnStateInProcPortEnable
+OmxrMeCmnStateInNotProcPortEnable
+OmxrMeCmnStateInLoadedOrIdlePortDisable
+OmxrMeCmnStateInIdlePortDisable
+OmxrMeCmnStateInProcPortDisable
+OmxrMeCmnStateInExeOrPausePortDisable
+OmxrMeCmnStateMarkBuffer
+OmxrMeCmnStateAcquireResource
+OmxrMeCmnStateWaitForResource
+OmxrMeCmnStateInIdleFreeResource
+fInNoIdleFreeResource
+OmxrMeCmnStateResouceRequestComplete
+OmxrMeCmnStateInProcProcComplete
+OmxrMeCmnStateInPauseProcComplete
+OmxrMeCmnStateInProcToIdleProcComplete
+OmxrMeCmnStateInProcToPauseProcComplete
+OmxrMeCmnStateInProcToExeProcComplete
+OmxrMeCmnStateInProcInBufferTransComplete
+OmxrMeCmnStateInExeInBufferTransComplete
+OmxrMeCmnStateInPauseInBufferTransComplete
+OmxrMeCmnStateInProcToIdleInBufferTransComplete
+OmxrMeCmnStateInProcToPauseInBufferTransComplete
+OmxrMeCmnStateInProcToExeInBufferTransComplete
+OmxrMeCmnStateInProcOutBufferTransComplete
+OmxrMeCmnStateInProcToIdleOutBufferTransComplete
+OmxrMeCmnStateInProcToPauseOutBufferTransComplete
+OmxrMeCmnStateInProcToExeOutBufferTransComplete
+OmxrMeCmnStateExtention
+OmxrMeCmnStateFatalError
+OmxrMeCmnStateInFatalStop
+OmxrMeCmnStateDoNothing
+/"OSa7
+slciSk
+Cmbb("
+B,7r-C`
+feR("5
+SlCnbb("
+SlCmbb("
+SlCnbb("
+eL2"W#Q!Tr/
+/"OClSn
+/"OClSn
+G@PQH@PQ2
+DQSmER
+DRSmEQ"/
+DQSmER
+abb(""
+Vb%f/y
+sicjSm
+skclCnSm
+sjclCm
+cnSmOl
+Oh&cnSl
+CnC\Sm
+CnC\Smu
+E)$(E[$
+RnQR,>
+RfQR,6b1
+ckbb("
+DQSmER
+DRSmEQ"/
+DRSmEQ"/
+SlCnDQER
+SlCnDQER
+DREQ"/
+SlCnDREQ"/
+SlCnDREQ"/
+w"d"VEQ
+URdT]MQ
+/SR&/RWQV
+EWr!F]
+1EUR!FVa
+R"d"VOQ
+DWSmE^r/
+cmP1Sl
+cmP1Sl
+sk@2clSm
+sfbb("
+R#d(tBgx'
+,CVb+&
+sfbb("6
+"%SjCl9
+i"OF/)
+/"OH$ckSl!
+/"OcmCk
+a'W0qw
+/"OCnb
+/"OCn[
+/"OCnV
+/"OCnP
+/"OCnG
+/"OSmCn@
+/"OSmCn9
+W~Vb-&O
+/"OH5Cn
+/"OCn4
+dT&O+B
+/"OCm*
+eT&O+B
+/"OCm~
+"eR/!Q
+/"OCmI
+smCkcn
+^"&Rb"$QQ
+/"OSlCm
+/"OSnx
+/"OCno
+Bg)'r&h
+R4cgCn
+MGegdB/
+aTY$eU
+gY$dUy%
+ !QgK'q%
+OmxrCreateThreadEx
+[OMX-Mgr] %s: error: OS wrapper is closed.
+[OMX-Mgr] %s: error: Bad parameter.
+PriorityHIGH.MGR.SPXRCV
+PriorityHIGH
+PriorityMID
+PriorityLOW
+[OMX-Mgr] %s: error: No more thread.
+OmxrSaveThreadContext
+OmxrSendEvent
+[OMX-Mgr] %s: error: smapframe_SendEvent failed (rtcd=%d)
+OmxrSendFunction
+OmxrGetThreadId
+[OMX-Mgr] %s: error: Thread ID is not registerd.
+[OMX-Mgr] %s: error: WRAP_get_tid failed.
+OmxrExitThread
+[OMX-Mgr] %s: error: OmxrGetThreadId failed. (error=0x%x)
+OmxrTerminateThread
+[OMX-Mgr] %s: error: OmxrSendEvent failed. (error=0x%x)
+OmxrJoinThread
+OmxrCreateMutex
+[OMX-Mgr] %s: error: WRAP_acre_sem failed. (err=0x%x)
+OmxrDestroyMutex
+[OMX-Mgr] %s: error: WRAP_del_sem failed. (ercd=%d)
+OmxrLockMutex
+[OMX-Mgr] %s: error: WRAP_twai_sem failed. (ercd=%d)
+OmxrUnlockMutex
+[OMX-Mgr] %s: error: WRAP_sig_sem failed. (ercd=%d)
+OmxrCreateSignal
+[OMX-Mgr] %s: error: WRAP_acre_flg failed. (ercd=%d)
+OmxrDestroySignal
+[OMX-Mgr] %s: error: WRAP_del_flg failed. (ercd=%d)
+OmxrWaitSignal
+[OMX-Mgr] %s: error: WRAP_twai_flg failed. (ercd=%d)
+OmxrSignal
+[OMX-Mgr] %s: error: WRAP_set_flg failed. (ercd=%d)
+OmxrResetSignal
+[OMX-Mgr] %s: error: WRAP_clr_flg failed. (ercd=%d)
+OmxrDefineInterruptHandler
+[OMX-Mgr] %s: error: WRAP_def_inh failed. (ercd=%d)
+[OMX-Mgr] %s: error: Hanlder type not found. (type=%d)
+OmxrIndicateStandbyOK
+[OMX] %s %d
+[OMX-Mgr] %s: error: HTC_SH_COM_IndicateStandbyOK failed. (result=%d)
+OmxrIndicateStandbyNG
+OmxrOpenOsWrapper
+[OMX-Mgr] Open OS Wrapper
+[OMX-Mgr] %s: error: OmxrCreateMutex failed. (error=0x%x)
+[OMX-Mgr] Close OS Wrapper
+OmxrInitMalloc
+[OMX-Mgr] %s: error: cre_mpl failed. (ercd=%d)
+[OMX-Mgr] %s: Size of the MPL_OMX is 0x%x bytes.
+[OMX-Mgr] %s: error: ref_mpl failed. (ercd=%d)
+OmxrDeinitMalloc
+[OMX-Mgr] %s: error: del_mpl failed. (ercd=%d)
+[OMX-Mgr] Error: OmxrRealloc is no longer supported.
+OmxrAllocateWorkBuffer
+[OMX-Mgr] %s: error: Invalid handle
+[OMX-Mgr] %s: error: OmxrGetMCtrlInstFromHandle failed
+[OMX-Mgr] %s: error: WRAP_get_tid failed. (error=%d)
+[OMX-Mgr] %s: error: Cannot allocate a work buffer. (size=%d)
+[OMX-Mgr] %s: Allocate a work buffer (ret=0x%x, free=0x%x)
+OmxrAllocateSharedSystemBuffer
+[OMX-Mgr] %s: error: OMXSM_lib_OpenSysMemory failed. (error=0x%x, size=%d)
+[OMX-Mgr] %s: error: HTC_SH_MEM_SysGlobalAllocate failed. (error=0x%x, chunkid=%d)
+[OMX-Mgr] %s: Workbuffer allocated. (wbAddr=0x%x, ncAddr=0x%x)
+OmxrAllocateNonSharedSystemBuffer
+[OMX-Mgr] %s: error: HTC_SH_MEM_OpenSysSharedArea failed. (error=0x%x, size=%d)
+[OMX-Mgr] %s: error: HTC_SH_MEM_SysGlobalAllocate failed. (error=0x%x, size=%d)
+OmxrAllocateSharedRealtimeBuffer
+[OMX-Mgr] %s: error: OMXSM_lib_OpenRtMemory failed. (error=0x%x, size=%d)
+[OMX-Mgr] %s: Workbuffer allocated. (addr=0x%x)
+OmxrAllocateNonSharedRealtimeBuffer
+OmxrAllocateRtWithBoundaryCheck
+[OMX-Mgr] %s: error: HTC_SH_MEM_GlobalAllocate failed. (error=0x%x, size=%d)
+OmxrFreeWorkBuffer
+[OMX-Mgr] %s: error: Bad parameter.
+[OMX-Mgr] %s: error: Memory block is broken. (spec=0x%x, discri=0x%08x)
+[OMX-Mgr] %s: error: u32BlockAddr is zero. (spec=0x%x)
+[OMX-Mgr] %s: Free work buffer. (spec=0x%x, free=0x%x)
+OmxrFreeSharedSystemBuffer
+[OMX-Mgr] %s: error: HTC_SH_MEM_SysGlobalFree failed. (error=0x%x, adrs=0x%x)
+[OMX-Mgr] %s: error: OMXSM_lib_CloseSysMemory failed. (error=0x%x, port=%d)
+OmxrFreeNonSharedSystemBuffer
+[OMX-Mgr] %s: error: HTC_SH_MEM_CloseSysSharedArea failed. (error=0x%x, chunk_id=%d)
+OmxrFreeSharedRealtimeBuffer
+[OMX-Mgr] %s: error: HTC_SH_MEM_GlobalFree failed. (error=0x%x, adrs=0x%x)
+[OMX-Mgr] %s: error: OMXSM_lib_CloseRtMemory failed. (error=0x%x, port=%d)
+OmxrFreeNonSharedRealtimeBuffer
+OmxrTransAddressToWriteBack
+[OMX-Mgr] %s: error: Specified address is NULL.
+OmxrTransAddressToNonCache
+[OMX-Mgr] %s: error: pvWriteBackAddr is invalid. (top=0x%x, pvWriteBackAddr=0x%x)
+OmxrGetChunkId
+omxr_mc_aacd.so
+omxr_me_aacd.so
+omxr_mc_aace.so
+omxr_me_aace_sh.so
+omxr_mc_mp3d.so
+omxr_me_mp3d.so
+omxr_mc_wmad.so
+omxr_me_wmad.so
+omxr_mc_ddd.so
+omxr_me_ddd.so
+omxr_mc_h264d.so
+omxr_me_h264d.so
+omxr_mc_m4vd.so
+omxr_me_m4vd.so
+omxr_mc_h263d.so
+omxr_me_h263d.so
+omxr_mc_vc1d.so
+omxr_me_vc1d.so
+omxr_mc_vp6d.so
+omxr_me_vp6d.so
+omxr_mc_divxd.so
+omxr_me_divxd.so
+omxr_me_ipc.so
+DLL loaded. (Path=%s, Handle=%d)
+omxr_mgr_spx_dep.so
+DLL load failed. (Path=%s)
+DLL unloaded. (hDll=%d)
+OMX_ComponentInit
+OmxrMcComponentRoleEnum
+OmxrMEngInit
+OmxrSpxDepInit
+DLL entry not found. (name=%s)
+OmxrProcInitialize
+[OMX-Mgr] %s: error: Cannot allocate a memory.
+[OMX-Mgr] %s: error: OmxrCreateMutex failed. (error=0x%x)
+[OMX-Mgr] %s: error: Shared memory size error.
+OmxrProcDeInitialize
+[OMX-Mgr] %s: error: Reference counter is invalid.
+[OMX-Mgr] %s: error: OmxrDestroyMutex failed. (error=0x%x)
+[OMX-Mgr] %s: error: Shared memory is not existing.
+OmxrProcGetExclusiveAccess
+[OMX-Mgr] %s: error: OmxrLockMutex failed. (error=0x%x)
+OmxrProcReleaseExclusiveAccess
+[OMX-Mgr] %s: error: OmxrUnlockMutex failed. (error=0x%x)
+OmxrProcCreateGlobalMutex
+[OMX-Mgr] %s: error: WRAP_acre_sem failed. (ercd=%d)
+OmxrProcDestroyGlobalMutex
+[OMX-Mgr] %s: error: WRAP_del_sem failed. (ercd=%d)
+OmxrProcLockGlobalMutex
+[OMX-Mgr] %s: error: WRAP_twai_sem failed. (ercd=%d)
+OmxrProcUnlockGlobalMutex
+[OMX-Mgr] %s: error: WRAP_sig_sem failed. (ercd=%d)
+[OMX] OmxrUserSystemInit
+[OMX] OmxrUserSystemDeinit
+[OMX] OmxrMcAudioInit
+[OMX] OmxrMcAudioDeinit
+[OMX] OmxrMcAudioPause
+[OMX] OmxrMcVideoInit
+[OMX] OmxrMcVideoDeinit
+[OMX] OmxrMcImageInit
+[OMX] OmxrMcImageDeinit
+omxr_default_config.cfg
+p264d_h.bin
+s264d.bin
+pmp4d_h.bin
+smp4d.bin
+pvc1d_h.bin
+svc1d.bin
+svc1apd.bin
+pvp6d_h.bin
+svp6d.bin
+sdx3d.bin
+OMX-Mgr: OmxrLoadFile: OMXSM_lib_OpenFile failed. (%s, error=0x%x)
+OMX-Mgr: OmxrLoadFile: WRAP_get_tid failed. (error=%d)
+OMX-Mgr: OmxrLoadFile: Cannot allocate a Rt buffer. (size=%d)
+File loaded. (path=%s, Adrs=0x%X)
+OMX-Mgr: OmxrLoadFile: OMXSM_lib_CloseFile failed. (error=0x%x)
+File unloaded. (Adrs=0x%X)
+Audio / Video Codec Configuration File for R-Mobile A1
+OMX.RENESAS.AUDIO.DECODER.AAC
+OMX.RENESAS.AUDIO.ENCODER.AAC.SH
+OMX.RENESAS.AUDIO.DECODER.MP3
+OMX.RENESAS.AUDIO.DECODER.WMA
+OMX.RENESAS.AUDIO.DECODER.DD
+OMX.RENESAS.VIDEO.DECODER.H264
+OMX.RENESAS.VIDEO.DECODER.MPEG4
+OMX.RENESAS.VIDEO.DECODER.H263
+OMX.RENESAS.VIDEO.DECODER.VC1
+OMX.RENESAS.VIDEO.DECODER.VP6
+OMX.RENESAS.VIDEO.DECODER.DIVX
+omxr_mc_aacd.so
+omxr_mc_aace.so
+omxr_mc_mp3d.so
+omxr_mc_wmad.so
+omxr_mc_ddd.so
+omxr_mc_h264d.so
+omxr_mc_m4vd.so
+omxr_mc_h263d.so
+omxr_mc_vc1d.so
+omxr_mc_vp6d.so
+omxr_mc_divxd.so
+OMX.RENESAS.AUDIO.DECODER.AAC
+OMX.RENESAS.AUDIO.ENCODER.AAC.SH
+OMX.RENESAS.AUDIO.DECODER.MP3
+OMX.RENESAS.AUDIO.DECODER.WMA
+OMX.RENESAS.AUDIO.DECODER.DD
+OMX.RENESAS.VIDEO.DECODER.H264
+OMX.RENESAS.VIDEO.DECODER.MPEG4
+OMX.RENESAS.VIDEO.DECODER.H263
+OMX.RENESAS.VIDEO.DECODER.VC1
+OMX.RENESAS.VIDEO.DECODER.VP6
+OMX.RENESAS.VIDEO.DECODER.DIVX
+OMX.RENESAS.VIDEO.IPC
+omxr_me_aacd.so
+omxr_me_aace_sh.so
+omxr_me_mp3d.so
+omxr_me_wmad.so
+omxr_me_ddd.so
+omxr_me_h264d.so
+omxr_me_m4vd.so
+omxr_me_h263d.so
+omxr_me_vc1d.so
+omxr_me_vp6d.so
+omxr_me_divxd.so
+omxr_me_ipc.so
+OMX.RENESAS.VPU5HA1
+H264D_CE
+H264D_VLC
+M4VD_CE
+M4VD_VLC
+VC1D_CE
+VC1D_VLC
+VC1D_VLC2
+VP6D_CE
+VP6D_VLC
+DIVXD_VLC
+OMX.RENESAS.SPU2
+OMX.RENESAS.SH4A
+p264d_h.bin
+s264d.bin
+pmp4d_h.bin
+smp4d.bin
+pvc1d_h.bin
+svc1d.bin
+svc1apd.bin
+pvp6d_h.bin
+svp6d.bin
+sdx3d.bin
+OMX.RENESAS.AUDIO.DECODER.AAC
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PORT_INFO1
+PORT_INFO2
+OMX.RENESAS.AUDIO.DECODER.MP3
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PORT_INFO1
+PORT_INFO2
+OMX.RENESAS.AUDIO.ENCODER.AAC.SH
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PORT_INFO1
+PORT_INFO2
+OMX.RENESAS.AUDIO.DECODER.WMA
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PORT_INFO1
+PORT_INFO2
+OMX.RENESAS.AUDIO.DECODER.DD
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PORT_INFO1
+PORT_INFO2
+OMX.RENESAS.VIDEO.DECODER.H264
+PORT_INFO1
+PORT_INFO2
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PICTURE_INFO
+FRAME_BUFF_INFO
+EXTENSION_INFO1
+OMX.RENESAS.VIDEO.DECODER.MPEG4
+PORT_INFO1
+PORT_INFO2
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PICTURE_INFO
+FRAME_BUFF_INFO
+EXTENSION_INFO1
+OMX.RENESAS.VIDEO.DECODER.H263
+PORT_INFO1
+PORT_INFO2
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PICTURE_INFO
+FRAME_BUFF_INFO
+EXTENSION_INFO1
+OMX.RENESAS.VIDEO.DECODER.VC1
+PORT_INFO1
+PORT_INFO2
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PICTURE_INFO
+FRAME_BUFF_INFO
+EXTENSION_INFO1
+OMX.RENESAS.VIDEO.DECODER.VP6
+PORT_INFO1
+PORT_INFO2
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PICTURE_INFO
+FRAME_BUFF_INFO
+EXTENSION_INFO1
+OMX.RENESAS.VIDEO.DECODER.DIVX
+PORT_INFO1
+PORT_INFO2
+START_PORT_NUMBER
+NUMBER_OF_PORTS
+PICTURE_INFO
+FRAME_BUFF_INFO
+EXTENSION_INFO1
+OMXR_EXTENSION_VIDEO_CMN
+QUERY_SUPPORT_PROFILE_LEVEL_MODE
+DEFAULT_TIME_STAMP_MODE
+VPU_EXTENSION_CMN_DEC
+EXTENSION_INFO
+VPU_EXTENSION_H264_DEC
+EXTENSION_INFO
+EXTENSION_HWIP_MODE
+VPU_EXTENSION_MPEG4_DEC
+EXTENSION_INFO
+EXTENSION_HWIP_MODE
+VPU_EXTENSION_H263_DEC
+EXTENSION_INFO
+EXTENSION_HWIP_MODE
+VPU_EXTENSION_VC1_DEC
+EXTENSION_INFO
+EXTENSION_HWIP_MODE
+VPU_EXTENSION_VP6_DEC
+EXTENSION_INFO
+EXTENSION_HWIP_MODE
+VPU_EXTENSION_DIVX_DEC
+EXTENSION_INFO
+EXTENSION_HWIP_MODE
+l6Ol[VIDEO UDF] OmxrMeVideoUdfVpuInitilize
+[VIDEO UDF ERR] %s line = %d: Malloc of vpu udf context area is failed!
+omxr_mc_meng_udf_video.c
+[VIDEO UDF ERR] %s line = %d: Create vpu control handle is failed!
+[VIDEO UDF ERR] %s line = %d: Deinitilize of vpu udf is failed!
+[VIDEO UDF] OmxrMeVideoUdfInitilizeVpu
+[VIDEO UDF ERR] %s line = %d: Deinitilize VPU control handle is failed!
+[VIDEO UDF ERR] %s line = %d: Deinitilize TLC is failed!
+[VIDEO UDF] OmxrMeVideoUdfIpcInitilize
+[VIDEO UDF ERR] %s line = %d
+[VIDEO POST] post buffer u32TmpAddr = %p
+[VIDEO POST] output_buffer_addr_wb_y[%d] = H'%08x
+[VIDEO POST ERR] mpcd_lib_Init = %d
+[VIDEO UDF] OmxrMeVideoUdfIpcDeinitilize
+[VIDEO POST ERR] mpcd_lib_Quit = %d
+[VIDEO POST] OmxrMeVideoUdfRequestIpc start(H'%08x)
+[VIDEO POST] sDstBuf.pvAddr    = %p
+[VIDEO POST] sDstBuf.pvAddrCb  = %p
+[VIDEO POST] sDstBuf.pvAddrCr  = %p
+[VIDEO POST] sDstBuf.wSize     = %d
+[VIDEO POST] sDstBuf.uhStride  = %d
+[VIDEO POST] sDstBuf.pvUserPtr = %p
+[VIDEO POST ERR] mpcd_lib_ReturnPicture = %d
+[VIDEO POST] sReqParam.uhSrcWidth      = %d
+[VIDEO POST] sReqParam.uhSrcHeight     = %d
+[VIDEO POST] sReqParam.uhSrcStride     = %d
+[VIDEO POST] sReqParam.pvNcSrcAddrYTop = %p
+[VIDEO POST] sReqParam.pvNcSrcAddrCTop = %p
+[VIDEO POST] sReqParam.pvNcSrcAddrYBot = %p
+[VIDEO POST] sReqParam.pvNcSrcAddrCBot = %p
+[VIDEO POST ERR] mpcd_lib_SendRequest = %d
+[VIDEO UDF] OmxrMeVideoUdfSetClockAndInterrupt
+[VIDEO UDF] HTC_SH_STCON_StartModule Start
+[VIDEO UDF] HTC_SH_STCON_StartModule End
+[VIDEO UDF ERR] %s line = %d: Define interrupt param is failed!
+[VIDEO UDF] OmxrMeVideoUdfDropClock
+[VIDEO UDF] HTC_SH_STCON_StopModule Start
+[VIDEO UDF] HTC_SH_STCON_StopModule End
+[VIDEO UDF] OmxrMeVideoUdfIsBufferAlignmentOn
+[VIDEO UDF] OmxrMeVideoUdfGetPhysAddr
+[VIDEO UDF] OmxrMeVideoUdfGetVirtAddr
+[VIDEO UDF] OmxrMeVideoUdfGetNonCacheAddr
+[VIDEO UDF] OmxrMeVideoUdfGetFrameBufferAddr
+[VIDEO UDF] OmxrMeVideoUdfGetDefaultDrvExtensionsValue
+[VIDEO UDF] OmxrMeVideoUdfClearCache
+[VIDEO UDF] OmxrMeVideoUdfGetUserInfo
+[VIDEO UDF] OmxrMeVideoUdfAllocateDpWorkBuffer
+[VIDEO UDF] OmxrMeVideoUdfFreeDpWorkBuffer
+[VIDEO UDF] OmxrMeVideoUdfGetPowerCeil
+[VIDEO UDF] OmxrMeVideoUdfInitVpuCtrlHandle
+[VIDEO UDF ERR] %s line = %d: Malloc vpu control area is failed!
+[VIDEO UDF ERR] %s line = %d: Create signal(VLC) is failed
+[VIDEO UDF ERR] %s line = %d: Create signal(CE) is failed
+[VIDEO UDF ERR] %s line = %d: Destroy signal(VLC) is failed!
+[VIDEO UDF] OmxrMeVideoUdfDeinitVpuCtrlHandle
+[VIDEO UDF ERR] %s line = %d: Destroy signal(CE) is failed!
+H'%08X
+[VIDEO UDF] OmxrMeVideoUdfCeStart
+[%2d] CE start
+[VIDEO UDF] OmxrMeVideoUdfCeSleep
+[VIDEO UDF ERR] %s line = %d: Wait signal(CE) is failed!
+[VIDEO UDF ERR] %s line = %d: Error notification is failed.!
+[VIDEO UDF] OmxrMeVideoUdfCeRestart
+[%2d] CE end
+[VIDEO UDF ERR] %s line = %d: Send signal(CE) is failed!
+[VIDEO UDF] OmxrMeVideoUdfVlcStart
+[%2d] VLC start
+[VIDEO UDF] OmxrMeVideoUdfVlcSleep
+[VIDEO UDF ERR] %s line = %d: Wait signal(VLC) is failed!
+[VIDEO UDF] OmxrMeVideoUdfVlcRestart
+[%2d] VLC end
+[VIDEO UDF ERR] %s line = %d: Send signal(VLC) is failed!
+[VIDEO UDF] OmxrMeVideoUdfDecRequestStrm
+[%2d] mcvdec_uf_request_stream callback end(Header analyze start)
+[VIDEO UDF] OmxrMeVideoUdfDecReleaseStrm
+[VIDEO UDF ERR] %s line = %d: Release of Input stream buffer is failed!
+[VIDEO UDF] OmxrMeVideoUdfDecGetFrameMemory
+[VIDEO UDF] OmxrMeVideoUdfDecGetFrameMemory s32RequiredFmemCnt=%d u32FmemCnt=%u.
+[VIDEO UDF ERR] %s line = %d: TLC Deinit is failed!
+[VIDEO UDF ERR] %s line = %d: TLC Init is failed!
+[VIDEO UDF] OmxrMeVideoUdfDecGetFrameMemory ps32FmemCnt=%d
+[VIDEO POST] OmxrMeVideoUdfInitTlHandle start
+[VIDEO POST ERR] HTC_SH_PMBM_OpenPMBMap = %d
+[VIDEO UDF ERR] HTC_SH_PMBM_Get_TranslateAddress = %d
+[VIDEO POST] OmxrMeVideoUdfDeinitTlHandle
+[VIDEO POST ERR] HTC_SH_PMBM_OpenPMBMap is failed(Y instance) = %d
+[VIDEO POST ERR] HTC_SH_PMBM_OpenPMBMap is failed(C instance) = %d
+[VIDEO UDF] OmxrMeVideoUdfTlcOpenCbFunc
+[VIDEO POST] OmxrMeVideoUdfIpcInputComplete
+[VIDEO POST] psSrcBufInfo->pvAddr    = H'%08x
+[VIDEO POST] psSrcBufInfo->wSize     = %d
+[VIDEO POST] psSrcBufInfo->uhWidth   = %d
+[VIDEO POST] psSrcBufInfo->uhHeight  = %d
+[VIDEO POST] psSrcBufInfo->uhStride  = %d
+[VIDEO POST] psSrcBufInfo->dPts      = %lld
+[VIDEO POST] psSrcBufInfo->wCoreErr  = %d
+[VIDEO POST] psSrcBufInfo->wResult   = %d
+[VIDEO POST] psSrcBufInfo->uwFlags   = H'%08x
+[VIDEO POST] psSrcBufInfo->pvUserPtr = H'%08x
+[VIDEO POST] OmxrMeVideoUdfIpcOutputComplete
+[VIDEO POST] psDstBufInfo->pvAddr    = H'%08x
+[VIDEO POST] psDstBufInfo->wSize     = %d
+[VIDEO POST] psDstBufInfo->uhWidth   = %d
+[VIDEO POST] psDstBufInfo->uhHeight  = %d
+[VIDEO POST] psDstBufInfo->uhStride  = %d
+[VIDEO POST] psDstBufInfo->dPts      = %lld
+[VIDEO POST] psDstBufInfo->wCoreErr  = %d
+[VIDEO POST] psDstBufInfo->wResult   = %d
+[VIDEO POST] psDstBufInfo->uwFlags   = H'%08x
+[VIDEO POST] psDstBufInfo->pvUserPtr = H'%08x
+[VIDEO UDF] OmxrMeVideoUdfErrorNotify
+OmxrMeAudioSpuInit
+[AUDIO CMN UDF] %s
+[AUDIO CMN UDF] %s line = %d: SPU Init Error
+[AUDIO CMN UDF] %s line = %d: SPU Init DSP Erro
+OmxrMeAudioSpuDeinit
+[AUDIO CMN UDF] OmxrMeAudioGetAacdLicenseKey
+/"OSmCnr
+/"OSmCng
+/"OSnCmU
+/"Osmcn:
+/"OclSmCn%
+YVXU^2-
+/"OclSmCn/
+/"OckSmCn 
+/"OclSmCnq
+/"OsjckSmCn
+/"OskclSm
+OMX MP3 Decoder MC Copyright(C) 2010 Renesas Electronics Corporation. All rights reserved.
+OMX.RENESAS.INDEX.CONFIG.AUDIO.PCM
+[MC] OmxrMcMp3dInitializeParamAudioMp3
+[MC] OmxrMcGetIndexParamAudioMp3
+[MC ERR] OmxrMcGetIndexParamAudioMp3 : nSize is not sizeof(OMX_AUDIO_PARAM_MP3TYPE)!
+[MC] OmxrMcMp3dUpdateIndexParamAudioMp3
+[MC ERR] OmxrMcMp3dUpdateIndexParamAudioMp3 : nSize is not sizeof(OMX_AUDIO_PARAM_MP3TYPE)!
+[MC ERR] OmxrMcMp3dUpdateIndexParamAudioMp3 : Invalid nPortIndex un-supported setting!
+[MC ERR] OmxrMcMp3dUpdateIndexParamAudioMp3 : Invalid nChannels un-supported setting!
+[MC ERR] OmxrMcMp3dUpdateIndexParamAudioMp3
+ : Invalid nSampleRate un-supported setting!
+[MC ERR] OmxrMcMp3dUpdateIndexParamAudioMp3 : Invalid eChannelMode un-supported setting!
+[MC] OmxrMcMp3dSetCommand
+[MC] OmxrMcMp3dSetCommand Invalid Input samplingRate
+[MC] OmxrMcMp3dStartDSP
+[MC ERR] OmxrMcMp3dFillBufferDone : Illegal sampling rate!
+[MC ERR] OmxrMcMp3dFillBufferDone : Invalid decoder specific infomation(ChannelConfiguration = 0x%04x)!
+[MC ERR] OmxrMcMp3dFillBufferDone : Invalid Output StreamType(%d)!
+[MC ERR] OmxrMcMp3dPortSettingChangeReq : Illegal sampling rate!
+[MC ERR] OmxrMcMp3dPortSettingChangeReq : Invalid decoder specific infomation(ChannelConfiguration = 0x%04x)!
+[MC] OmxrMcMp3dPortSettingChangeReq : OMX_EventPortSettingsChanged SamplingRate = %ld Channels = %d
+[MC] OmxrMcMp3dGetParameter
+[MC] OmxrMcMp3dSetParameter
+[MC] OmxrMcMp3dGetConfig
+[MC] OmxrMcMp3dSetConfig
+[MC] OmxrMcMp3dEmptyThisBuffer
+[MC ERR] OmxrMcMp3dEmptyThisBuffer : Can't allocate memory!
+[MC] OmxrMcMp3dFillThisBuffer
+[MC ERR] OmxrMcMp3dFillThisBuffer : Can't allocate memory!
+[MC] OMX_ComponentInit
+[MC ERR] OMX_ComponentInit : Can't allocate memory!
+[MC ERR] OMX_ComponentInit : Failed OMXR_ME_CMD_INIT command! (0x%08lx)
+<?ShCn
+cmSkCn
+/"OcmSnCl
+/"OcmCk
+/clCk`
+/cmCl2
+/"OclCk
+/"OcmCl
+/"OcmClm
+/ckSlCjM
+/"OckSmCj
+/"OckSmCj
+/clSmCk6
+/"OcmSnCl
+clSnCj
+/"OcmSnCk
+/"OclSnCk
+/clSnCka
+/"OcmSn8
+/"OcmSnCl/
+/"OcmSn
+/"OcmSnCl
+/cmSnCll
+/clSnCkE
+/clSnCk
+/clSnCkS
+/clSnCk
+/clCkG
+/clCkR
+/clSnCkH
+/clSnCk
+/clSnCkR
+/clSnCk
+/"OsmSjClcn
+/"OsmclCkSn
+/"OSlCn
+/"OSiCl
+k\8l:\{
+/"OckSjCm
+/"OckSjCm
+<?SlCn
+s`<w|6F
+/"OSmCnb
+/"OCnG
+<?cmSkCn*
+/"OSlCn
+/"OSlCn
+/"OSlCn
+/"OclSnCm
+ePb &P`
+/"OSnCl
+,4BmAW
+/"OSnCl
+,4BmAW
+/"OSnClq
+,4BmAW
+/"OSmCn]
+/"OSmClD
+"e!TR-A
+/"OSmCn*
+|6bb 1
+/"OcnSmCl
+|5Rb"f`>
+vbb"%ce
+/"OSnCm
+W\="-q
+/"OSnCl
+GQR qb$!
+/"OSnCms
+/"OSnCm
+/"OSnCl3
+/"OSnCm
+OMX Video Common Copyright(C) 2010 Renesas Electronics Corporation. All rights reserved.
+[IPC] OmxrMEngInit_me_ipc
+PriorityMID.ME.IPC.MAIN
+[VIDEO CMN] %s line = %d: Init ME common is failed!
+omxr_me_ipc.c
+[VIDEO CMN] %s line = %d: Join thread is failed!
+[VIDEO CMN] %s line = %d: Terminate IPC thread is failed!
+[VIDEO CMN] %s line = %d: Creating decode thread is failed!
+[VIDEO CMN] %s line = %d: IPC context allocation is failed!
+[IPC] OmxrMeIpcConvertThread
+[IPC] %s line = %d: Get thread ID is failed!
+[IPC] %s line = %d: Save thread context is failed!
+[IPC] %s line = %d: Create thread context is failed!
+[IPC] %s line = %d: Request IP convert is failed!
+[IPC] %s line = %d: Send message is failed!
+[IPC] %s line = %d: Illegal internal command ID!
+[IPC ENTRY] OmxrMeIpcEntryGetFuncTableAddr
+[IPC ENTRY] OmxrMeIpcEntryInit
+[IPC ENTRY] %s line = %d: Send response is failed!
+omxr_me_ipc_entry.c
+[IPC ENTRY] OmxrMeIpcEntryDeinit
+[IPC ENTRY] OmxrMeIpcEntryStart
+[IPC ENTRY] %s line = %d: Check can proc is failed!
+[IPC ENTRY] OmxrMeIpcEntryInProcStop
+[IPC ENTRY] OmxrMeIpcEntryInNotProcStop
+[IPC ENTRY] %s line = %d: Stop is failed!
+[IPC ENTRY] OmxrMeIpcEntryInFatalStop
+[IPC ENTRY] OmxrMeIpcEntryInProcPauseOn
+[IPC ENTRY] OmxrMeIpcEntryInNotProcPauseOn
+[IPC ENTRY] %s line = %d: Pause is failed!
+[IPC ENTRY] OmxrMeIpcEntryPauseOff
+[IPC ENTRY] OmxrMeIpcEntryInExeEmptyThisBuffer
+[IPC ENTRY] %s line = %d: Set input buffer proc is failed!
+[IPC ENTRY] %s line = %d: Deinit and Init IPC library is failed!
+[IPC ENTRY] OmxrMeIpcEntryInProcEmptyThisBuffer
+[IPC ENTRY] OmxrMeIpcEntryInIdleOrPauseEmptyThisBuffer
+[IPC ENTRY] %s line = %d: Post empty proc is failed!
+[IPC ENTRY] OmxrMeIpcEntryInExeFillThisBuffer
+[IPC ENTRY] %s line = %d: Set output buffer proc is failed!
+[IPC ENTRY] OmxrMeIpcEntryInNotExeFillThisBuffer
+[IPC ENTRY] OmxrMeIpcEntrySetConfig
+[IPC ENTRY] %s line = %d: Deinit IPC library is failed!
+[IPC ENTRY] %s line = %d: Init IPC library is failed!
+[IPC ENTRY] OmxrMeIpcEntryInProcPortFlush
+[IPC ENTRY] %s line = %d: Post port flush command is failed!
+[IPC ENTRY] OmxrMeIpcEntryInIdlePortFlush
+[IPC ENTRY] %s line = %d: Port flush is failed!
+[IPC ENTRY] OmxrMeIpcEntryInExeOrPausePortFlush
+[IPC ENTRY] OmxrMeIpcEntryInProcPortEnable
+[IPC ENTRY] OmxrMeIpcEntryInNotProcPortEnable
+[IPC ENTRY] %s line = %d: Do port enable is failed!
+[IPC ENTRY] OmxrMeIpcEntryInProcPortDisable
+[IPC ENTRY] OmxrMeIpcEntryInIdlePortDisable
+[IPC ENTRY] %s line = %d: Do port disable is failed!
+[IPC ENTRY] OmxrMeIpcEntryInExeOrPausePortDisable
+[IPC ENTRY] OmxrMeIpcEntryInProcProcComplete
+[IPC ENTRY] %s line = %d: Decode complete proc is failed!
+[IPC ENTRY] OmxrMeIpcEntryInProcToIdleProcComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcToPauseProcComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcToExeProcComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcInBufferTransComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcToIdleInBufferTransComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcToPauseInBufferTransComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcToExeInBufferTransComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcOutBufferTransComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcToIdleOutBufferTransComplete
+[IPC ENTRY] OmxrMeIpcEntryInProcToPauseOutBufferTransComplete
+[IPC ENTRY] %s line = %d:Pause is failed!
+[IPC ENTRY] OmxrMeIpcEntryInProcToExeOutBufferTransComplete
+[IPC ENTRY] OmxrMeIpcEntryFreeContext
+[IPC ENTRY] %s line = %d: Join thread is failed!
+[IPC ENTRY] %s line = %d: Terminate decode thread is failed!
+[IPC ENTRY] OmxrMeIpcEntryInputCallBack
+[IPC ENTRY] %s line = %d: Send event is failed!
+[IPC ENTRY] OmxrMeIpcEntryImgCallBack
+[IPC UTIL] OmxrMeIpcUtilClearBufferAndFlags
+[IPC UTIL] OmxrMeIpcUtilSendResponse
+[IPC UTIL] OMXR_ME_CMD_INIT response!
+[IPC UTIL] OMXR_ME_CMD_DEINIT response!
+[IPC UTIL] OMXR_ME_CMD_START response!
+[IPC UTIL] OMXR_ME_CMD_STOP response!
+[IPC UTIL] OMXR_ME_CMD_PAUSE response!
+[IPC UTIL] OMXR_ME_CMD_PORT_FLUSH response!
+[IPC UTIL] OMXR_ME_CMD_EMPTY_THIS_BUFFER response!
+[IPC UTIL] OMXR_ME_CMD_FILL_THIS_BUFFER response!
+[IPC UTIL] OMXR_ME_CMD_SET_PARAMETER response!
+[IPC UTIL] OMXR_ME_CMD_SET_CONFIG response!
+[IPC UTIL] %s line = %d: Unknown command ID!
+omxr_me_ipc_util.c
+[IPC UTIL] %s line = %d: send response is failed!
+[IPC UTIL] OmxrMeIpcUtilSendNotification
+[IPC UTIL] OMXR_ME_NTF_EMPTY_BUFFER_DONE notify!
+[IPC UTIL] OMXR_ME_NTF_FILL_BUFFER_DONE notify!
+[IPC UTIL] OMXR_ME_NTF_CODEC_ERROR response!
+[IPC UTIL] OMXR_ME_NTF_FATAL_ERROR response!
+[IPC UTIL] %s line = %d: Send notification is failed!
+[IPC ENTRY] OmxrMeIpcUtilDoStop
+[IPC ENTRY] %s line = %d: Deinit IPC library is failed!
+[IPC ENTRY] %s line = %d: Send response is failed!
+[IPC ENTRY] OmxrMeIpcUtilDoPause
+[IPC ENTRY] OmxrMeIpcUtilDoPortFlush
+[IPC ENTRY] %s line = %d: Post port flush command is failed!
+[IPC ENTRY] %s line = %d: Deinit and Init IPC library is failed!
+[IPC ENTRY] OmxrMeIpcUtilDoPortEnable
+[IPC ENTRY] OmxrMeIpcUtilDoPortDisable
+[IPC ENTRY] %s line = %d: Post port disable command is failed!
+[IPC ENTRY] OmxrMeIpcUtilSetInputBuffer
+[%2d] Receive EmptyThisBuffer command in IPC MEng
+[IPC ENTRY] %s line = %d: Post empty proc is failed!
+[IPC ENTRY] OmxrMeIpcUtilSetOutputBuffer
+[%2d] Receive FillThisBuffer command in IPC MEng
+[IPC ENTRY] %s line = %d: Post fill proc is failed!
+[IPC UTIL] OmxrMeIpcUtilCheckCanProc
+[IPC UTIL] %s line = %d: Send event is failed!
+[IPC UTIL] OmxrMeIpcUtilIsProcDecoder
+[IPC UTIL] OmxrMeIpcUtilConvertComplete
+[IPC UTIL] OmxrMeIpcUtilReleaseInBuffer
+[%2d] Receive IPC input buffer complete
+[IPC UTIL] OmxrMeIpcUtilReleaseImgBuffer
+[%2d] Receive IPC out buffer complete
+[IPC UTIL] OmxrMeIpcUtilPostPortFlushInfo
+[IPC UTIL] %s line = %d: Post port flush info is failed!
+[IPC UTIL] OmxrMeIpcUtilPostPortEnableInfo
+[IPC UTIL] %s line = %d: Post port enable info is failed!
+[IPC UTIL] OmxrMeIpcUtilPostPortDisableInfo
+[IPC UTIL] %s line = %d: Post port disable info is failed!
+[IPC UTIL] OmxrMeIpcUtilDeinitAndInit
+[IPC ENTRY] %s line = %d: Init IPC library is failed!
+[IPC UTIL] OmxrMeIpcUtilSetFatalErrorInfo
+[IPC UTIL] OmxrMeIpcUtilGetPortFlushInfo
+[IPC UTIL] OmxrMeIpcUtilGetPortEnableInfo
+[IPC UTIL] OmxrMeIpcUtilGetPortDisableInfo
+[IPC UTIL] OmxrMeIpcUtilPostStreamInfo
+[IPC UTIL] OmxrMeIpcUtilGetStreamInfo
+[IPC UTIL] OmxrMeIpcUtilPostOutputBufferInfo
+[IPC UTIL] OmxrMeIpcUtilGetOutputBufferInfo
+[IPC UTIL] OmxrMeIpcUtilPostEmptyThisBufferInfo
+[IPC UTIL] %s line = %d: Post empty this buffer info is failed!
+[IPC UTIL] OmxrMeIpcUtilGetEmptyThisBufferInfo
+[IPC UTIL] OmxrMeIpcUtilCheckEmptyThisBufferInfo
+[IPC UTIL] OmxrMeIpcUtilPostFillThisBufferInfo
+[IPC UTIL] %s line = %d: Post fill this buffer info is failed!
+[IPC UTIL] OmxrMeIpcUtilGetFillThisBufferInfo
+[IPC UTIL] OmxrMeIpcUtilCheckFillThisBufferInfo
+C`H@ @Q
+DHH@`hQ
+E H@c0Q
+EHH@cpQ
+H $`BtO
+A2$`Bv
+H8$`Br
+A1$`Bx
+T@ BQ@)
+!8$`Bt
+A3$`Br
+U($`Bx
+F!H@  
+X8r@&!H@ (
+X`r@&!H@ 0
+Y(H@ XQ
+Y`H@ `Q
+ZxH@c0Q
+_xr@ &I
+@38H@'
+@}dQ@)
+1Zr@3 
+0Ir@3:
+r@%ar@
+U0U`  r@%
+WHr@%"I
+@0BQ@ 
+@38H@'
+@0BQ@ 
+ " F 6 X
+A0r@ ]&
+@0CT@ 
+@>xT@ B
+@0BH@) 
+@1CT@ 
+@_@T@@
+@_@T@@
+@_@T@@
+@0CT@ 
+v@4xHA
+U@0wr@#
+@0AT@P
+7Mv@3&
+ " F 6 X
+r@'5J`
+@0CT@ 
+@>lT@ B
+BhT@ CQ
+A3^HA#
+@1CT@ 
+rQe$H@ 
+JxT@ BQ
+@PCT@@B
+K8Q@YXQ@I`
+@0CT@ 
+OXr@'$H
+Q v@$j
+U@0wr@%
+@0AT@P
+r@&%IDy@
+@?(T@ 
+@?(T@ 
+@?(T@ 
+@?(T@ 
+@0 T@ 
+@38H@'
+@0 T@ 
+ Z l }`
+"."A"V
+#:#V#k#
+*`QAQAQOQO
+L}b1b?
++8TzTz
++hTyTy
+Y1Y1Y?Y?
+Y!Y!Y/Y/
+I1I?IAIO
+IQI_IaIo
+b1b?bAbO
+bQb_babo
+1pT|T|T|T|
+R!R!R/R/
+28U}U}
+2@ZaZoU
+YaYaYoYo
+3@YQYQY_Y_
+3PQAQAQAQA
+3XQOQOQOQO
+Q!Q!Q/Q/
+Q/Q/Q1Q?
+6XT}T}
+6`a!a/
+a1a?aAaO
+@0BH@)
+@0BH@)
+@0BH@)
+@0BH@)
+@0BH@)8
+@0BH@)@
+@0BH@)
+@0BH@)
+@0BH@)
+@0BH@)
+@0BH@)0
+@0BH@)8
+@0BH@)@
+H0T@ BQ
+I0T@ BQ
+TB+AR"f
+RaL2QW
+cm 4Sn
+CR*Q+Asf
+caDV 6
+umB,5RTH$
+dbb&O+B
+d"f&O+F
+/"ODVS`
+slckCm4
+ 4cnCa
+AP[b-@
+si 4Sl
+V|6 va
+U|50uQ
+V|6@va
+V|6Pva
+V|6`va
+%DW 7$
+qP[fm@
+skclCm-
+skclCm-
+skclCm
+skclCm(
+ 4cgCa
+AP[b-@
+l2+dMA
+w,7QRB'!
+nD] =&
+slckCmA
+ 4cnCa
+AP[b-@
+!P[fm@
+%DW 7&
+qP[b-@
+Vbb("7
+.Rb(&>
+Sgch#n
+~fY|>.
+Vbb("=
+ |B,Hq
+ |cR("
+W(Fk K 
+Akf(AmE
+UH$wVxQSlh<
+B B+%S
+rek%R'
+8URfh&
+ ~re,f(Fk%R'
+&b$Vf(FVb
+F,b(B+&Vb,b
+B+&Vb,b+&a
+&b$Vf(FVb
+F,b(B+&Vb,b
+B+&Vb,b+&a
+ |B,Hq
+ |SR("
+V(ABeS`
+ych\9n
+DK-[-r.
+2h(BS`
+bMB+&X%
+e,f(Fk%R.
+cajUsjs
+B/DYRkT
+@-b+'v
+D^smclv/
+b)B-b("
+ciDXh&
+~Ck\>!
+Vk""/4
+rfWW"aXRg
+]@mL{ 
+[#lS|S`
+B(G{"+
+cnSbCe
+,5@vQPse
+D^smclv/
+)'jG\4
+T)DY$G
+chDYh&
+D(DH(f
+qh&\1b
+B(B(-*
+B(B(-,
+mX6l>9
+)B,b#d
+Multi Codec Video Driver Common Library for VPU5H Copyright (C) 2007-2010 Renesas Electronics Corporation. All rights reserved.
+Multi Codec Video Driver VP6 Decoder Library for VCP1 Copyright (C) 2009-2011 Renesas Electronics Corporation. All rights reserved.
+81*#$+29
+-4;:.'
+&6=<5?>7/Multi Codec Video Driver VC-1 Decoder Library for VCP1 Copyright (C) 2008-2011 Renesas Electronics Corporation. All rights reserved.
+Multi Codec Video Driver Common Library for VCP1   Copyright (C) 2008-2011 Renesas Electronics Corporation. All rights reserved.
+Multi Codec Video Driver Common Decoder Library for VCP1 Copyright (C) 2008-2011 Renesas Electronics Corporation. All rights reserved.
+lEWFR 7
+ARBeX2(
+5AVx6c5
+AREWx2(
+FRBfh2|2
+AFVER(6
+Cgcal5
+qVrb(6
+B(6g5*
+vVuR`2
+uVrb 6
+CnjTQRcmRiSaLP
+H2l7'7
+6!Fcd\6
+!EG=2fl
+62m!Fl=
+2lfc2U
+`L7uUQVf
+dc`,b,4
+,7QRI',7
+CUVQp1
+psdsel4F
+:R,Vc`
+ClbdskcnH$
+f,6bTH$
+R'4N2!B'
+.!BX2'
+B\2#f%R("
+B\2#f%R("
+CVcQp1
+brfl2&
+pqVl5W
+TJR"/>
+UGV\6f
+WGV|6f
+OE^SfCU
+caBfp6#
+6l5UR(">
+el5RVh&
+C`cgEVJ
+Multi Codec Video Decoder Library for VCP1 Copyright (C) 2007-2011 Renesas Electronics Corporation. All rights reserved.
+OcmSnCl7
+cnSmCk
+ckSnCl#
+/"OclSnCm
+/"OClu
+fMdL2&
+/"OCn1
+-amd@1
+/"OcmSlCn
+n#`(N}E
+v/f/v/
+/"OCnX
+/"OSnD
+/"OCn6
+/"OCn'
+e@uSR#
+WQRdB/R[
+d[[\V]^sel
+<v@u|4
+/"OSmCno
+SmCnV/F/a
+skclSnCm3
+OMX aacPlus Decoder MC Copyright(C) 2010 Renesas Electronics Corporation. All rights reserved.
+[AACD] OmxrMEngInit
+[AACD] OmxrMEngInit : Can't Init MEng Cmn = %ld
+[AACD] OmxrMeAacdCommandInit
+[AACD] OmxrMeAacdDeinit
+[AACD] OmxrMeAacdStart
+[AACD] OmxrMeAacdEmptyThisBuffer
+[AACD] OmxrMeAacdFillThisBuffer
+[AACD] OmxrMeAacdSetDecodeParam
+[AACD] OmxrMeAacdSetPcmBufferParam
+[AACD] OmxrMeAacdCheckPortSetting
+[AACD] OmxrMeAacdCheckPortSetting : sAacdDecodedParam.u16SamplingRate = %ld, sAacdDecodeParam.u16OutputSamplingRate = %d
+[AACD] OmxrMeAacdCheckPortSetting : sAacdDecodedParam.u16Channel = %ld, sAacdDecodeParam.u16OutputChannel = %d
+[AACD] OmxrMeAacdCheckPortSetting : Can't Send Massage Line = %ld
+[AACD] OmxrMeAacdEmptyBufferDone
+[AACD] OmxrMeAacdEmptyBufferDone : Can't Send Massage Line = %ld
+[AACD] OmxrMeAacdFillBufferDone
+[AACD] OmxrMeAacdFillBufferDone : Can't Send Massage Line = %ld
+[AACD] OmxrMeAacdCodecConfig
+[MC ERR] OmxrMeAacdCodecConfig : Illegal sampling rate!
+[AACD] OmxrMeAacdCodecConfig : pu16Channels = %d, pu16SampleRateIndex =%d
+[AACD SWIP] OmxrMeAacdSwipInit
+[AACD SWIP] OmxrMeAacdSwipInit : Can't Init RetVal = 0x%x
+[AACD SWIP] OmxrMeAacdSwipDeinit
+[AACD SWIP] OmxrMeAacdSwipDeinit : Can't Deinit RetVal = 0x%x
+[AACD SWIP] OmxrMeAacdSwipGetVersion
+[AACD SWIP] OmxrMeAacdSwipInterrupt
+[AACD SWIP] OmxrMeAacdSwipSetDecodeOpt
+[AACD SWIP] OmxrMeAacdSwipSetDecodeOpt : Can't Set Deocode Option. Status = %ld
+[AACD SWIP] OmxrMeAacdSwipStreamTransfer
+[AACD SWIP] OmxrMeAacdSwipStreamTransfer : Can't Stream Transfer. Status = %ld
+[AACD SWIP] OmxrMeAacdSwipDecode
+[AACD SWIP] OmxrMeAacdSwipDecode : Can't Get Adif Header Information. Status = %ld
+[AACD SWIP] OmxrMeAacdSwipDecode : Can't Raw Data Format. Status = %ld
+[AACD SWIP] : channel_configuration %d, sampling_frequency_index = %d
+[AACD SWIP] OmxrMeAacdSwipDecode : Can't Get Adts Header Information. Status = %ld
+[AACD SWIP] OmxrMeAacdSwipDecode : Can't Decode. Status = %ld
+[AACD SWIP] OmxrMeAacdSwipPcmTransfer
+[AACD SWIP] OmxrMeAacdSwipPcmTransfer : Can't Pcm Transfer. Status = 0x%x
+[AACD SWIP] OmxrMeAacdSwipDecodeComplete
+[AACD SWIP] OmxrMeAacdSwipDecodeComplete : Can't Decode Complete CallBack
+[AACD SWIP] Decode Error: %ld
+[AACD SWIP] OmxrMeAacdSwipDecodeComplete : Can't Decode Status RetVal = %ld
+[AACD SWIP] OmxrMeAacdSwipFlush
+[AACD SWIP] OmxrMeAacdSwipGetTransferPcmParam
+[AACD SWIP] OmxrMeAacdSwipCallBackTransferPcm u32OutputPcmWordSize = %ld, u32Flush = %ld
+[AACD SWIP] OmxrMeAacdSwipCallBackTransferPcm Not EOS Mode
+[AACD SWIP] OmxrMeAacdSwipCallBackTransferPcm : Can't Send Message Line = %ld
+[AACD SWIP] OmxrMeAacdSwipCallBackTransferPcm : Fatal Error Line = %ld
+[AACD SWIP] OmxrMeAacdSwipCallBackTransferStream
+[AACD SWIP] OmxrMeAacdSwipCallBackTransferStream : Can't Send Message Line = %ld
+[AACD SWIP] OmxrMeAacdSwipCallBackDecodeComplete
+[AACD SWIP] OmxrMeAacdSwipCallBackDecodeComplete : Can't Send Message Line = %ld
+[AACD SWIP] OmxrMeAacdSwipCallBackDecodeComplete : sAacdSwipContext.sCbDecodeComplete.u32CallBack = %ld
+[AACD SWIP] OmxrMeAacdSwipCallBackDecodeComplete : sAacdSwipContext.sCbDecodeComplete.u32FlushMode = %ld
+OcmSnCl6
+Bl2sfMB(6h&
+cnSlCk
+/"OclSnCm>
+/"OclSnCm
+/"OCnb
+/"OSn?
+/"OSnR
+/"OCnF
+e<uRbQQ"/
+/"OCnk
+OSnCkR
+/"OCn~
+/"OcnSlCmw
+skclSnCm3
+OMX MP3 Decoder MC Copyright(C) 2010 Renesas Electronics Corporation. All rights reserved.
+[MP3D] OmxrMEngInit 
+[MP3D] OmxrMEngInit : Can't Init MEng Cmn = %ld
+[MP3D] OmxrMeMp3dCommandInit
+[MP3D] OmxrMeMp3dDeinit
+[MP3D] OmxrMeMp3dStart
+[MP3D] OmxrMeMp3dEmptyThisBuffer
+[MP3D] OmxrMeMp3dFillThisBuffer
+[MP3D] OmxrMeMp3dSetDecodeParam
+[MP3D] OmxrMeMp3dSetPcmBufferParam
+[MP3D] OmxrMeMp3dCheckPortSetting
+[MP3D] OmxrMeMp3dEmptyBufferDone
+[MP3D] OmxrMeMp3dEmptyBufferDone : Can't Send Massage Line = %ld
+[MP3D] OmxrMeMp3dFillBufferDone
+[MP3D] OmxrMeMp3dFillBufferDone : Can't Send Massage Line = %ld
+[MP3D SWIP] OmxrMeMp3dSwipInit
+[MP3D SWIP] OmxrMeMp3dSwipInit : Can't Init RetVal = 0x%x
+[MP3 SWIP] OmxrMeMp3dSwipInit : Can't Init RetVal = 0x%x
+[MP3 SWIP] OmxrMeMp3dSwipInit : Can't Clear RetVal = 0x%x
+[MP3D SWIP] OmxrMeMp3dSwipDeinit
+[MP3D SWIP] OmxrMeMp3dSwipDeinit : Can't Deinit RetVal = 0x%x
+[MP3D SWIP] OmxrMeMp3dSwipGetVersion
+[MP3D SWIP] OmxrMeMp3dSwipInterrupt
+[MP3D SWIP] OmxrMeMp3dSwipStreamTransfer
+[MP3D SWIP] OmxrMeMp3dSwipStreamTransfer : OMXR_ME_MP3D_SPECIAL_SEQUENCE_DATA_SIZE
+[MP3D SWIP] OmxrMeMp3dSwipStreamTransfer : Can't Stream Transfer. Status = %ld
+[MP3D SWIP] OmxrMeMp3dSwipDecode
+[MP3D SWIP] OmxrMeMp3dSwipDecode : Can't Decode  Status = %ld
+[MP3D SWIP] OmxrMeMp3dSwipPcmTransfer
+[MP3D SWIP] OmxrMeMp3dSwipPcmTransfer : Can't Stream Transfer. Status = %ld
+[MP3D SWIP] OmxrMeMp3dSwipDecodeComplete
+[MP3D SWIP] OmxrMeMp3dSwipDecodeComplete : Can't Decode Complete CallBack
+[MP3D SWIP] Decode Error: %ld
+[MP3D SWIP] OmxrMeMp3dSwipDecodeComplete : Can't Support Sampling Rate. Line = %d
+[MP3D SWIP] OmxrMeMp3dSwipFlush
+[MP3D SWIP] OmxrMp3dSwipGetTransferPcmParam
+[MP3D SWIP] OmxrMeMp3dSwipCallBackTransferPcm : Call Back Pcm Transfer Function
+[MP3D SWIP] OmxrMeMp3dSwipCallBackTransferPcm Not EOS Mode
+[MP3D SWIP] OmxrMeMp3dSwipCallBackTransferPcm : Can't Send Message Line = %ld
+[MP3D SWIP] OmxrMeMp3dSwipCallBackTransferPcm : Fatal Error Line = %ld
+[MP3D SWIP] OmxrMeMp3dSwipCallBackTransferStream
+[MP3D SWIP] OmxrMeMp3dSwipCallBackTransferStream : Can't Send Message Line = %ld
+[MP3D SWIP] OmxrMeMp3dSwipCallBackDecodeComplete
+[MP3D SWIP] OmxrMeMp3dSwipCallBackDecodeComplete : Can't Send Message Line = %ld
+[MP3D SWIP] OmxrMeMp3dSwipCallBackDecodeComplete : sMp3dSwipContext.sCbDecodeComplete.u32CallBack = %ld
+[MP3D SWIP] OmxrMeMp3dSwipCallBackDecodeComplete : sMp3dSwipContext.sCbDecodeComplete.u32FlushMode = %ld
+OcmSnCl5
+/"OcnSmCl
+/"OclSnCm
+/"OclSnCmL
+/"OCl0
+b#n&/.
+/"OSn'
+/"OCns
+OSmClY
+/"OSmCn4
+/"OCn(
+SnCmV/F/
+skcmSlCn.
+OMX WMA V9 Decoder MC Copyright(C) 2011 Renesas Electronics Corporation. All Rights Reserved.
+[WMAD] OmxrMEngInit
+[WMAD] OmxrMEngInit : Can't Init MEng Cmn = %ld
+[WMAD] OmxrMeWmadCommandInit
+[WMAD] OmxrMeWmadDeinit
+[WMAD] OmxrMeWmadStart
+[WMAD] OmxrMeWmadEmptyThisBuffer
+[WMAD] OmxrMeWmadFillThisBuffer
+[WMAD] OmxrMeWmadSetDecodeParam
+[WMAD] OmxrMeWmadSetPcmBufferParam
+[WMAD] OmxrMeWmadCheckPortSetting
+[WMAD] OmxrMeWmadEmptyBufferDone
+[WMAD] OmxrMeWmadEmptyBufferDone : Can't Send Massage Line = %ld
+[WMAD] OmxrMeWmadFillBufferDone
+[WMAD] OmxrMeWmadFillBufferDone : Can't Send Massage Line = %ld
+[WMAD SWIP] OmxrMeWmadSwipInit
+[WMAD SWIP] OmxrMeWmadSwipInit : Can't Init RetVal = 0x%x
+[WMAD SWIP] OmxrMeWmadSwipInit : Illegal Codec Version!
+[WMAD SWIP] OmxrMeWmadSwipInit : Illegal Sampling Rate!
+[WMAD SWIP] OmxrMeWmadSwipInit : Can't allocate extention shared memory!
+[WMAD SWIP] OmxrMeWmadSwipDeinit
+[WMAD SWIP] OmxrMeWmadSwipDeinit : Can't Deinit RetVal = 0x%x
+[WMAD SWIP] OmxrMeWmadSwipDeinit : Free Buffer Error RetVal = 0x%x
+[WMAD SWIP] OmxrMeWmadSwipGetVersion
+[WMAD SWIP] OmxrMeWmadSwipInterrupt
+[WMAD SWIP] OmxrMeWmadSwipStreamTransfer
+[WMAD SWIP] OmxrMeWmadSwipDeinit : Can't Stream Transfer. Status = 0x%lx
+[WMAD SWIP] OmxrMeWmadSwipDecode
+[WMAD SWIP] OmxrMeWmadSwipDecode : Can't Decode  Status = 0x%ld
+[WMAD SWIP] OmxrMeWmadSwipPcmTransfer
+[WMAD SWIP] OmxrMeWmadSwipPcmTransfer : Can't Pcm Transfer. Status = 0x%x
+[WMAD SWIP] OmxrMeWmadSwipDecodeComplete
+[WMAD SWIP] OmxrMeWmadSwipDecodeComplete : Can't Decode Complete CallBack = %ld
+[WMAD SWIP] Decode Error: 0x%lx
+[WMAD SWIP] OmxrMeWmadSwipGetTransferPcmParam
+[WMAD SWIP] OmxrMeWmadSwipFlush
+[WMAD SWIP] OmxrMeWmadSwipCallBackTransferPcm u32OutputPcmWordSize = %ld, u32Flush = %ld
+[WMAD SWIP] OmxrMeWmadSwipCallBackTransferPcm : Can't Send Message Line = %ld
+[WMAD SWIP] OmxrMeWmadSwipCallBackTransferPcm : Fatal Error Line = %ld
+[WMAD SWIP] OmxrMeWmadSwipCallBackTransferStream
+[WMAD SWIP] OmxrMeWmadSwipCallBackTransferStream : Can't Send Message Line = %ld
+[WMAD SWIP] OmxrMeWmadSwipCallBackDecodeComplete
+[WMAD SWIP] OmxrMeWmadSwipCallBackDecodeComplete : Can't Send Message Line = %ld
+[WMAD SWIP] OmxrMeWmadSwipCallBackDecodeComplete : Fatal Error Line = %ld
+/"OSnCl
+/"OSmClZ
+/"OSnCk2
+slCkSmcnv/ma
+CkSlcmsn}a
+/mdF/G
+<?cmSnf/V/Y
+cmSnClB
+/"OSmCl2
+/"OCn"
+/"OcnSmCl
+/RQSTTWURQ^
+/"OsmSlCn1
+ciSmCk
+cmSlCi\
+cnSkCj%
+Sbi"`2;
+cmSiCj5
+Sbi"`2&
+cmSlCje
+/"OSmCk"
+clSmCkn
+cmSlCjN
+/"OSmCk
+/"OCm|
+/"OclCjo
+`Sdy$p4j
+/"OcmCj)
+/"OcmCkA
+mgY'P7
+clSkCjL
+-fY&P6
+Gc`{"%
+cmSiCjo
+cmSkCi
+ckSlCi&
+/"OcmCnm
+/"OCn;
+qT+B&O"O
+OmxrMeAudioSwipEmptyThisBuffer
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Audio Codec NULL Necessary Function Line = %ld
+[AUDIO CMN] %s : InValidState Line = %ld
+[AUDIO CMN] %s : Audio Codec InData Transfer Error Line = %ld
+[AUDIO CMN] %s : Can't Send Message Line = %ld
+OmxrMeAudioEmptyBufferDone
+OmxrMeAudioSwipFillThisBuffer
+[AUDIO CMN] OmxrMeAudioFillBufferDone psAudioCmnContext->sAudioWork.u16Phase = 0x%x
+[AUDIO CMN] %s : Audio Out Buffer Transfer Error Line = %ld
+OmxrMeAudioFillBufferDone
+OmxrMeAudioSwipProcessing
+[AUDIO CMN] %s : Audio Codec Proc Error Line = %ld
+OmxrMeAudioSwipReset
+[AUDIO CMN] %s : Audio Codec SW.IP Deinit Error Line = %ld
+[AUDIO CMN] %s : SPU DeinitError Line = %ld
+[AUDIO CMN] %s : SPU Init Error Line = %ld
+[AUDIO CMN] %s : Audio Codec SW.IP Init Error Line = %ld
+[AUDIO CMN] %s : Audio Codec Set Option Error Line = %ld
+[AUDIO CMN] OmxrMeAudioSendNgParamValueResponse : Send NG Param Value Response  u16ParamNum = %d, u32ParamValue = %ld
+[AUDIO CMN] OmxrMeAudioSendNgParamValueResponse : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioSendNgParamSizeResponse : Send NG Param Size Response  CorrectSize = %ld, IllegalSize = %d
+[AUDIO CMN] OmxrMeAudioSendNgParamSizeResponse : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioSendFatalErrorResponse
+[AUDIO CMN] OmxrMeAudioSendFatalErrorResponse : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioSendWriteDataFullResponse
+[AUDIO CMN] OmxrMeAudioSendWriteDataFullResponse : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioSendInsufficientResourcResoponse
+[AUDIO CMN] OmxrMeAudioSendInsufficientResourcResoponse : Can't Send Massage Line = %ld
+[AUDIO CMN] Error FileName = %s Error Line = %d
+[AUDIO CMN] OmxrMeAudioSendFatalErrorNotify : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioSendProcErrorNotify
+[AUDIO CMN] OmxrMeAudioSendProcErrorNotify : Can't Send Massage Line = %ld
+OmxrMeAudioSendEosNotify
+[AUDIO CMN] %s : Error Line = %ld
+[AUDIO CMN] OmxrMeAudioDeinit
+[AUDIO CMN] OmxrMeAudioDeinit : Audio Codec Deinit Error Line = %d
+[AUDIO CMN] OmxrMeAudioDeinit : Audio Codec NULL Necessary Function Line = %ld
+OMX Audio Common Copyright(C) 2010 Renesas Electronics Corporation. All rights reserved.
+OmxrMeAudioInit
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Can't Malloc Memory = %ld
+[AUDIO CMN] %s : Can't Set Regist CallBack Function = 0x%x
+PriorityMID.ME.ACMN.CB
+[AUDIO CMN] %s : Create Thread Error = %ld
+[AUDIO CMN] %s : SWIP Set Param Error = %ld
+[AUDIO CMN] OmxrMeAudioCallBackRegistResource
+[AUDIO CMN] OmxrMeAudioCallBackRegistResource : Can't Get Acquiring Resource Call Back
+OmxrMeAudioCommandInit
+[AUDIO CMN] %s
+OMX.RENESAS.SPU2
+[AUDIO CMN] %s : Can't Lock Resource sRetVal = 0x%x
+[AUDIO CMN] %s : Can't Acquire Resource sRetVal = 0x%x
+[AUDIO CMN] %s : SPU Init Error Line = %ld
+[AUDIO CMN] %s : Audio Codec NULL Necessary Function Line = %ld
+[AUDIO CMN] %s : Audio Codec SW.IP Init Error Line = %ld
+[AUDIO CMN] %s : Audio Codec SW.IP Get Version Error Line = %ld
+[AUDIO CMN] %s : Audio Codec SW.IP Deinit Error Line = %ld
+[AUDIO CMN] %s : Can't Send Massage Line = %ld
+[AUDIO CMN] %s : SPU DeinitError Line = %ld
+[AUDIO CMN] %s : Can't Free Resource Line = %ld
+OmxrMeAudioCommandDeinit
+[AUDIO CMN] %s : Audio Codec Command Deinit Error Line = %ld
+OmxrMeAudioEmptyThisBuffer
+[AUDIO CMN] %s : Write Data Full Line = %ld
+[AUDIO CMN] %s : Audio Codec EmptyThisBuffer Line = %ld
+OmxrMeAudioFillThisBuffer
+[AUDIO CMN] %s : Audio Codec FillThisBuffer Line = %ld
+OmxrMeAudioPortFlush
+[AUDIO CMN] OmxrMeAudioPortFlush
+OmxrMeAudioPortFlushExecute
+[AUDIO CMN] %s : Input Port Flush Error Line = %d
+[AUDIO CMN] %s : Output Port Flush Error Line = %d
+[AUDIO CMN] OmxrMeAudioPortEnable
+[AUDIO CMN] OmxrMeAudioPortEnable : Can't Send Massage Line = %ld
+OmxrMeAudioPortDisable
+OmxrMeAudioPortDisableExecute
+[AUDIO CMN] %s : Input Port Disable Error Line = %d
+[AUDIO CMN] %s : Output Port Disable Error Line = %d
+[AUDIO CMN] OmxrMeAudioFreeResource
+[AUDIO CMN] OmxrMeAudioFreeResource : Can't Unlock Resource Line = %ld
+[AUDIO CMN] OmxrMeAudioInputPortFlush
+[AUDIO CMN] OmxrMeAudioInputPortFlush : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioInputPortFlush : Input Port Flush Error Line = %d
+[AUDIO CMN] OmxrMeAudioOutputPortFlush
+[AUDIO CMN] OmxrMeAudioOutputPortFlush : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioInputPortDisable
+[AUDIO CMN] OmxrMeAudioInputPortDisable : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioInputPortDisable : Input Port Disable Error Line = %d
+[AUDIO CMN] OmxrMeAudioOutputPortDisable
+[AUDIO CMN] OmxrMeAudioOutputPortDisable : Can't Send Massage Line = %ld
+OmxrMeAudioInBufferTransferComplete
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Audio Codec InBuffer Transfer Complete Error Line = %ld
+OmxrMeAudioProcComplete
+[AUDIO CMN] %s : Audio Codec NULL Necessary Function Line = %ld
+[AUDIO CMN] %s : Audio Codec Proc Complete Error Line = %ld
+[AUDIO CMN] %s : Audio Port Disable Execute Error Line = %ld
+[AUDIO CMN] OmxrMeAudioProcCompleteToIdle
+OmxrMeAudioProcCompleteToPause
+OmxrMeAudioOutBufferTransferComplete
+[AUDIO CMN] %s : Audio Port Flush Execute Error Line = %ld
+[AUDIO CMN] OmxrMeAudioOutBufferTransferCompleteToIdle
+[AUDIO CMN] OmxrMeAudioOutBufferTransferCompleteToPause
+[AUDIO CMN] OmxrMeAudioProcToPause 
+[AUDIO CMN] OmxrMeAudioPause : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeAudioPause 
+[AUDIO CMN] OmxrMeAudioPauseToProc 
+[AUDIO CMN] OmxrMeAudioPauseToProc : Can't Send Massage Line = %ld
+OmxrMeAudioStart
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Audio Codec NULL Necessary Function Line = %ld
+[AUDIO CMN] %s : Audio Codec Start Error Line = %ld
+[AUDIO CMN] %s : Audio Codec SW.IP Init Error Line = %ld
+[AUDIO CMN] %s : Audio Codec Set Option Error Line = %ld
+[AUDIO CMN] %s : Can't Send Massage Line = %ld
+OmxrMeAudioStop
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Audio Codec SW.IP Proc Stop Error Line = %ld
+[AUDIO CMN] %s : Audio Codec NULL Necessary Function Line = %ld
+[AUDIO CMN] %s : Audio Codec SW.IP Deinit Error Line = %ld
+[AUDIO CMN] %s : SPU DeinitError Line = %ld
+[AUDIO CMN] %s : SPU Init Error Line = %ld
+[AUDIO CMN] %s : Can't Send Massage Line = %ld
+OmxrMeAudioProcToStop
+[AUDIO CMN] OmxrMeAudioProcToStop
+[AUDIO SWIP] OmxrMeAudioSwipEventCallBack
+[AUDIO SWIP] OmxrMeAudioSwipEventCallBack : Save Thread Error = %ld
+[AUDIO SWIP] OmxrMeAudioSwipEventCallBack : Get Thread Id Error = %ld
+[AUDIO SWIP] OmxrMeAudioSwipEventCallBack : Interrupt Error = %ld
+[AUDIO SWIP] OmxrMeAudioSwipSetParam
+[AUDIO SWIP] OmxrMeAudioSwipSetParam : Error Set Interrupt Handler Line = %d
+[AUDIO SWIP] OmxrMeAudioSwipGetCallBackFunction
+k }R!${
+@SgL0b/
+\4+Ase
+@cmL0sf
+tmBmD@2
+MWNU(GOR
+E#`['|
+@b/(MIV
+BbHQ]BBUf
+b@r"dB/%TE
+S]TR(MR`
+BQ\+-#
+}@(N#g
+`cgSfCe/
+|6gR("
+SnX%cm"l
+/"OH$clSmE
+/"OH$clSm$
+H$snclSm
+#d#`y$
+lD(G(Ay"
+RbRV#`
++]ND]9
+gB/)Gs
+gB/)G\
+H$cmSl[
+"S`)B $
+H$cmSlf
+SW(DI')Gp,SP
+TPI )@
+UPI )@
+VPI )@
+SPU2 AAC Decode Middleware Ver.2.1 R0M0000SAADS3SRC SPU2 aacPlus Decode Middleware Ver.2.1 R0M0000SAPDS3SRC Copyright(c) 2010-2011 Renesas Electronics Corporation. All rights reserved.
+}} e;{
+<MHd`[Y
+}~i}R?j
+@0@BFa
+sBfeq7
+C;=t_if
+0IvDb,
+D;HvDb
+:A@G|A@
+>T a?X
+C;P@$a
+c;PB$`
+t|jyT=l{PeqC
+}~i}T?l
+B;HJ(d_
+H|{T~j}X
+D;{R=j=X
+B;}T"q
+j|V<i}X
+}jxR>l}V
+d@{HB(a
+D{A`U~i`|T
+a]{@`U~
+I{LvH`
+C;}X>j=X
+B;~R@a
+:8R!a9R!a:R!a
+0Iv$b<
+C;@J$d
+0Yv `|
+c;CxDb
+B;}RDb
+b;9T@a
+:8R_i?R
+B;cEBq6R(a B_i
+(}^zHb(
+<{} a#}^zHb(
+ @~WzQ~
+`aABDa
+E4`PFxbHB
+c;qrjy
+/1U~H`
+@|Ix|jyU=l
+ 0WYj89
+hYm8@I
+B;}\>mBxDaI~
+BJaeHb
+C;}T"q?X
+ a{U>k(@
+B;"t^j
+81t9zq
+ :8UHa
+7 C;{R 
+U C;HB=j
+v@a?T a;P
+:\!F;A~b`Lz 
+Z!e;O!
+M!f;PA=
+{!D;7T
+*"b;:S
+i="B;@C
+G"d;|R
+y"d;Da
+n"c;>T@b:
+"D;~T^j
+:E~=j{V
+:7T\iI#
+B#D;7UZi
+A$c;EY
+`:N$ ;
+a$D;2U
+ 00r(b?Y
+>%e;=%
+;U\jKi
+]%c;<X
+j%d;;T
+:9U]j8T
+/1U~Ha~X
+%B;}T~j
+;T a<T
+%c;=T@a
+3& ;={
+-&C;<R>j>
+wXa)G)
+0Ix=l2'
+mjYn8|
+0jYm8Ix
+A]pWYn8x[
+<-' ;JxDaI~
+<-' ;A
+]mYYh8
+YYi8@H
+o'E;HA
+>l:(E;
+:(b;Kx
+:MB>j"(B;;
+ :<T`{?P
+r(C; A
+(C;~Req
+A``|V=j
+v%q8AD`
+Ds<|"~&)
+<Hb's&
+W)c; z
+=T}j|R
+:=T@a;X
+*b;{U>j'
+1EB>j}V
+<T a=V
+1EB>j}V
+J*C;{P
+:T aM*
+V*c;8X
+`:Y* ;
+}jxR>l
+<j + ;
+'+b;)+ ;
+++b;0+
+P00+ ;<
+P00+ ;a
+3+d;9T
+b+f;HblsZ+
+G+d;<X
+r"{}V?h
+(:7T\i
+<Kfeq6
+~dwh`Of
+ ,B;[@
+l,e;m,
+]h<T=i
+-b;;T@a7R
+c(DDb0
+k>WXb3T
+,-c;<RXj1
+6-B;>W
+jA-B;A
+>-b;A- ;
+j{T{jwR>l
+~h|-C;
+-C;yW|j
+PYk3VWj
+#/F;Bd
+`::/ ;
+i}T?lQ/C;
+`0j/ ;R
+0D;yR|j
+'0c;=X
+0G0b;N0
+L$qKE$
+?l|T;huS
+j@vh{Ff
+?l|T;huS
+j@vh{Ff
+1:&1B;
+(1 ;<8
+"BPW?X
+{EBPauv4
+12b;22
+y2c;(B
+[2f;Kc
+T2b;Y2
+:`20 K
+!:94B;z
+B!a=R a
+EqC{Ea
+{jSxDa
+:yV}j{T>i
+>5b;<T@`
+i5c;:R
+Y5b;9X
+'6b;36
+96b;E6
+@0C6B;hB
+N*@0E6
+N&@0HB
+g6c;d6
+{6d;8X
+7E;9T a-X
+P0+R[i
+7D;|R`r%z
+b7F;Sd
+8c;;T@a
+38b;</
+`::8 ;
+`::8 ;
+%9g;=T
+Y9c;Z9
+b9c;c9
+j9c;k9
+r9c;s9
+z9c;{9
+:wU<iyT
+0h@$cpA
+~:B;Az
+f#$ f 
+; ;?{Ey
+O1e~Pa|T
+;C;Q~(
+9T a:T
+;c;?T@a
+=ly<B;yR
+::T@a<T
+J<B;Bx}j
+j<b;@~
+:s< ;M
+`:z< ;
+`:z< ;
+$JvDci~
+g9hsRXj=
+T=c;+X
+:yW}i{P~j}T?l
+9W]i;P^j=T
+z1BFqO
+gq;F]`8A
+B>B;9G
+#>e;!>
+8>e;6>
+: LH{{
+p>e;m>
+~>e;{>
+V>d;?R
+>F; F8h
+/:kU6j
+^=m{\>o}[
+l?C;iW&lL
+=j}@C;t
+@E;AAC
+&AE;?S
+>AE;CCb
+zAE;HB<j9X
+AE;;T a9X
+AE;8U a9X
+WzjuT;l
+>jWBB;
+SBc;3T
+wjnT5k
+1`2PWh
+AD;:V<h6X
+AJ dKC
+^Cf;]C
+^h>R]j
+8Df;5D
+FDf;ED
+TDf;QD
+I@i`UD
+`Df;_D
+/1A~D`
+1:}V?h
+iEb;jE
+xEb;yE
+sEf;2S
+wknU8l
+5Ff;4R
+2FG;?R
+:7F ;qR
+FC;}T>k
+Ba~FC;
+(Gd;|T
+DGe;;X
+^Ge;;X
+xGe;;X
+HHc;xB
+DHb;Ix
+<MB$aH~
+HHc;HB
+xHc;1R
+xHc;.U
+(a{H ;
+`:{H ;
+<dIF;hS
+(PUjlR
+QIc;RI
+^Ib;8A
+aIc;@B
+S:hyR=jo
+ID;6TTi
+IE;2U^i
+JB;Xc,`
+P0@JB;5
+XJD;4U
+hJ@ 4U
+qJ ;Lc
+{TVz5JD;
+:nT8lbK
+JE;4T a0X
+JE;4T a0X
+JE;8U(a0X
+KE;8U(a0X
+,KE;9U(a0X
+>T@a:T
+5KE;@B
+j8V^k;T
+6T@a~R
+6T@a8T
+!Le;9X
+LB;=T\j
+tMf;rM
+1NC;rR
+VNc;9T
+SOc;MA
+SOe;>X
+[Oe;>X
+dOe;>X
+mOE;Ix$a>X
+OE;8T a>X
+jtSwjuX
+Pb;"Vp0
+0Pb;5X
+P09P ;+
+P09P ;.
+P09P ;@
+^PD;XA
+qPe;&z
+8@QB;<V
+rQ ;>Q
+rQ ;qQ
+QC;:T^j9X
+$RC;5T\j9X
+-RF;5T^j,R
+7RC;5T\j9X
+BRc;9X
+`:4S ;
+`:4S ;5
+OSe;7X
+XSe;7X
+WxH{pS
+|SE;;U(a7X
+8T@a>T
+SE;9T a7X
+8T@a;U
+;T@a8T
+10TD;/
+TC;0U%qY
+lTc;iT" :TN
+@1rT" 
+zTc;xT" 9TN
+UD;tTXi
+:8T@a|R
+EDbHvLa
+?iTUC;
+ :bUB;
+1UD;vSXi
+O1e~PawX
+UD;yT=i$x
+!Vc;<T
+0Ve;7X
+IVB;|T
+EVE;QB
+SVe;7X
+]Ve;7X
+Vb;?T@b7
+[BPa8R
+7WC;xR
+}EBPbKx$b
+0:Bx0bHL
+1|3V$c
+<Wc;4X
+yiEW ;@
+P0MWC;3T
+}EB,bB
+~"cbx%f
+<FXf;3
+4aGX ;?
+hXb;<V
+3TZhm{
+:2UXj3T
+EYF;it;j
+<Yf;Xf
+*Yd;FY
+|hTYB;
+gYc;{R~k}U?j
+}Yb;)B
+j}T?hp
+@yjsR:l
+3Zb;0T
+aZb;0T
+P0EZB;yR}i
+<ZD;uTxj
+pZc;1R
+Zg;2T@a1R
+)[b;B`
+)[c;8@
+z,`)[ ;([
+1[b;3Vpa
+:x\2i{V
+Y[C;yZ=j-
+j6X`a8
+3\e;;X
+]\c;7T
+U\e;;X
+M\d;<R\i;X
+v\d;q\ ;
+p\e;;X
+h\d;;X
+G]c;5UHa
+J`d>T@`
+s]c;8T
+s]c;8T
+]E;AAC
+^F;CA@
+W^F;`)o
+^C;yRbq8
+_C;6T a7X
+Z_f;7X
+1b_b;7X
+`@0r_b;7X
+]Y#8|_
+":^Y#8
+1E~@a5T
+,`D;({
+2`b;;X
+B`b;O`
+O`d;PB
+@Bda_` ;
+w`g;HB
+`b;6T}jN
+&aH~]j
+P0@~da
+Lbb;6T
+P0bab;
+P0`ab;
+@0_ab;8R
+@0_ab;
+@0_ab;8R
+@0_ab;
+^ab;8R
+^ab;;X
+@0ea ;
+{aF;Jx
+:7T\i>S
+=bb;;X
+:6R_i9T
+UxkqVyjxbC;0B7i
+xbc;+R
+xbe;0T
+9hwP<jy
+bD;5R>h%
+ cc;2T
+cb;LY 8
+bd;&PWh3P$
+mcd;vc
+tcd;LY
+=l4dC;'
+4dg;#y
+jsW&qLc~j}
+}u@x`=P
+idb;6V}
+0C\j;X
+9eb;9R
+7ec;Ve ;
+Vec;;R@
+ReC;Gx
+mec;oe ;
+xeb;>S
+":+fc;
+Zfb;;S
+;fc;_f ;
+`UGqMbth
+1jbXiz
+:kwThSaSj
+kwR<iyS
+gB;.T4
+8)ge;g
+8UgF;w
+Ege;;P
+Egf;@C
+Ugf;;R
+Uge;@C
+}j}S?i
+ge;ng ;0C
+kge;0C
+fD;zR\i
+S,jWXcz
+x"rqWpkThF;
+hB;p~4
+SUj+iE;
+(iF;~V
+akU6jmX
+7iviB;rT
+kiB;+U
+gic; z
+Ojb;/R
+iF;~P9j;P
+jD;yRyi+R
+!jf;-X
+&jb;=RYi
+)jD;yR;j+R
+JjB;@B
+gjf;-X
+rjb;*R
+vjF;tR8j*R
+jE;rR8j*R
+:`L/j_X
+=kD;YB%
+kB;{T}i
+{kU*z(@
+T<iyU=j{W~k
+T<iyU=j{W~k}[
+?1]~LarT
+1+mB;EB9j7T 
+8:T aX
+Ame;3X
+@0Cxzj{R
+Vme;3X
+mme;3X
+wme;3X
+:ne;3X
+@nb;/T
+:T@a{R
+Zne;8X
+bne;8X
+ynE;{T$a8X
+nE;HB>j8X
+nE;HB>j8X
+oE;HB>j8X
+:#oE;H
+:=oE;@B
+Moe;8X
+;T@a9T
+Dod;7T
+:Ha{iw
+loe;8X
+;T@a6T
+cod;7T
+:Ha{iw
+;T@a6T
+;T@a6T
+;T@a6T
+:Ha{iw
+;T@a6T
+9T@a7T
+0pe;:T
+:pb;:T
+:T a=p
+1:iWujkX
+dpe;+X
+:/T@atR
+{pe;+X
+pB;qxL`
+kX~x`nP
+:2V'q`~7hH
+aXB``pB
+%T@aoR
+%T@apR
+i'q ;'
+8j.SGs4r
+aqe;+X
+qE;9S_i+X
+pqd;;P
+eB{0DDb
+a2r ;2r
+1:PqD;
+j[T.hCsC;
+U2keU-j
+l|>RViY
+<>tG;(C
+tC;$TSj
+}auB;J
+o1]uF;l
+o1_u ;Kb
+:UvB;K
+ajWvkkV
+1:mT8i
+V;kwU|j
+Gwb; T
+0:rwc;
+0:rw ;
+1wc;0S
+'wg;rw
+o0(T arw
+o0(T a
+B~j}S?i
+wD;;T a?T
+Hxg;1R
+:BxD;@B
+18xb;+T
+Gx ;(T
+(T aLx ;Fa
+o0(T aSx
+o0(T a
+:yd;<R_i
+zG;pT$a1R
+o0(T a
+1:@zD;
+:zb;(T
+(T aAz
+k }R!${
+Y"(Gp2
+@SgL0b/
+\4+Ase
+/"OC`r
+@cmL0sf
+tmBmD@2
+GWHUFQ(G
+EC^['DR
+B+.VRa
+cgSfCez
+|6fR("
+H$snclSmCkd
+RbRV#`
+F\6eR("
+/"OH$clSm'
+/"OH$clSm<
+SPU2 WMA Decode Middleware R0M0400SWSDS2SRC Ver.1.3 Copyright (C) Microsoft Corporation 1992-2006. All rights reserved.Copyright (C) 2011-2012 Renesas Electronics Corporation. All rights reserved.
+}~i}R?j
+c;3&@0<
+D;HvDb
+C;~T"q?X
+F;Ad({(
+>T a?X
+@P0!{U
+}~i}T?l
+B;HJ(d
+B;}T"q
+@J$dx`@e
+rhwPa(C
+ `ZZP0
+:S~,bHD)
+f;"V@0
+:8R!a9R!a:R!a
+0Iv$b<
+C;@J$d
+0Yv `|
+c;CxDb
+B;}RDb
+b;9T@a
+:8R_i?R
+B;cEBq6R(a B_i
+E4`PFxbHB
+j]G;ju
+@|Ix|jyU=l
+B;}\>mBxDaI~
+BJaeHb
+0edH0a
+ :8UHaz
+|{U\jO
+C;HB=j
+v@a?T a;P
+$||Z?n
+C;<R>j
+ ;JxDaI~
+ :<T`{?P
+yJ>d8@
+<{S=hIx
+:Jc}j{X
+i}T?lO
+jyU=j{X~k
+e4U?k={
+e3U;k={
+:MIeqwP
+B!a=R a
+EqC{Ea
+c;;T@a
+B;5P `
+0h@$cpA
+::T@a<T
+B;Bx}j
+/:kU6j
+^=m{\>o}[
+C;iW&lL
+B;HD_i
+@09UDa
+bB0`%{
+ G;D~ a
+juU{jwT<l
+ABDaA~
+a!c;E1
+\!C;7T a
+ig! ;:X
+:kPui,
+!C;0Wxa0Al
+U{kwU|jyT}h
+5"c;7" ;
+>"c;O" ;
+O"c;6T
+N"C;>P]h
+W"c;Y" ;
+]"b;=X
+o"c;?P,
+"b;<T@`
+" ;E~Yj
+."c;=X
+wR<lJ#B;
+"e;HA`
+I# ;Cy
+yZ=n)y
+h#e;zP
+h#E;:P4
+:U$ ;4
+'%e;"z
++&B;Qe
+)&c;1T
+U&b;9X
+W&D;=R"r2T
+'C;uR\j
+I&c;9X
+}'c;$A,
+'B;>Rha<R
+(C;}R]jJx
+q(C;Ax$a
++)b;?T@b7
+[BPa8R
+d)C;xR
+9)c;:T
+}EBPbKx$b
+0:Bx0bHL
+1|3V$c
+i)c;4X
+yir) ;@
+P0z)C;3T
+}EB,bB
+~"cbx%f
+yjuP;jwU<ly[
+*B;~P%q
+*D;>P r=T
+j4UWh/
+E*f;0*
+d`E* ;
+1<*C;uPBq8X
+L*c;Pa
+%*d;uP
+*c;7T!
+N+f;8R
+:rQ]h=R
+/,C;{P@q2X
+b,E;~Q~j0
+ rIvD`?Q
+"rIvZi{,
+,c;sP5z
+8jrXir
+V.B;sQ
+K-c;2X
+$`9@&`
+)@,`)@0`(@ `
+Th3ZTm
+$QWh1Q%
+:yT9ks
+/c;2UH`
+/b;-UH`
+0B;/UVjEz
+Q0F;E~
+i0g;;X
+{0g;;X
+41G;}R?hit
+/1g;;X
+A1g;;X
+`%U(`&U
+ 0HAUjF
+ 0HAVj
+ 0HA[j|2 ;p
+RjH@Sj%
+0H@Tj3
+0H@UjJ
+ 0HAVjn
+ 0HAWj
+0H@Sj.
+0H@Tj?
+0H@Ujf
+ 0HAWj
+ 0HAXjh
+ 0HAYj
+ 0HA[j
+0a1BfqaB
+33e;pQ
+4C;qRL
+"4c;$P
+V3d;/R
+'4c;$P
+$`|4 ;
+jrUzjuT
+5f;zP0z
+:3WVh-Q[k(
+@5b;Fz
+@5b;7X
+5c;0T@`
+T5c;yP
+5E;$T 
+5C;`t?h'
+96B;yP
+G6c;*T
+1EB ayP0z
+86c;*T
+G6c;*TT
+r6c;*T
+e6g;f6
+[6d;yP
+6 ;5T@`
+6c;yP=iZ
+ |EJAhHH
+aZ1nAI
+sn%8D;
+ :C;XQ
+h:e; C
+%<B;7a
+`:P.`9P,`
+,`4@.`
+`HAF`!A
+;b;!W!
+qJ:d0@
++<f;YB
+8@0`$@
+<`(@<`
+p=b;y=
+=E;cUqk
+A>E;(v
+le9`ld0J
+<ePR<d
+@J8dx`@e
+le9`ld8J
+qJ(ipH
+hJ,dx`Te
+a?B;PR
+he9`hd
+0@AE;"UH{
+hiX5ik
+XJ8dx`Ne
+fBD;]W$
+`J4dx`Re
+Dd@a*R
+k }R!${
+@SgL0b/
+\4+Ase
+@cmL0sf
+tmBmD@2
+C\DU(LE[
+EG][,IU(KHV
+!)A\eQ
+FY!k-LV|A
+"cnlfj
+BfY!Y.MU|N
+n|ASg(N
+@ ~/b(
+e<uQR!
+Rgr/S]
+gX][Vk
+s\t](Lrd
+AvR(Mq[
+`cgSfCe3
+|6hR("
+/"OH$clSmF
+/"OH$clSm5
+H$snclSm
+RbRV#`
+SlSnAQ
+gb/)Gh
+/"OH$Sm
+/"OH$Sm(
+SPU2 MP3 Decode Middleware R0M0400SM3DS3SRC Ver.3.1 (C) copyright Fraunhofer - IIS, 1995-2005 All Rights Reserved. Copyright (c) 2011 Renesas Electronics Corporation, All rights reserved.
+}~i}R?j
+D;HvDb
+C;~T"q?X
+B;}T"q
+>T a?X
+}~i}T?l
+B;HJ(dr
+<@J$dAxD`
+B;~X"q
+ `ZZP0
+:S~,bHD)
+s%~\^\
+:8R!a9R!a:R!a
+0Iv$b<
+C;@J$d
+0Yv `|
+c;CxDb
+:=TBaL
+B;}RDb
+b;9T@a
+:8R_i?R
+B;cEBq6R(a B_i
+FqwT<hyU
+E4`PFxbHB
+@|Ix|jyU=l
+B;}\>mBxDaI~
+`}U?l-
+BJaeHb
+>i~S>j
+B;:T=i+
+B;(AX`
+ :8UHab
+|{U\jR
+C;HB=j
+v@a?T a;P
+Z@L`O{
+Z@L`|T
+Z@L`}X
+@|{U>j
+q+EU`(@
+uW{kwV
+C;<R>j
+0Ix=l>
+ ;JxDaI~
+B;{X}j
+B!a=R!a
+0:DL}j
+F;yQ`a
+ :<T`{?P
+C;}R_j
+:wU|jyT=l
+VyjsU:juX
+:rZ8nsW
+D;0SYi;
+D;0SYi9X
+B;wPD`
+ ;}U?j
+c;=T@a
+0h@$cpA
+B;HJ(d
+c;;T!|
+:P~Lb%
+x=i~X~j
+:Ed[jI
+G b;4T}jyU>ha
+/:kU6j
+^=m{\>o}[
+ C;iW&lL
+}i!D;e
+i!g;=.
+U!b;X!
+g!b;=X
+b%q}T?lA
+!C;!z~h
+##C;6T{j
+;#B;jS
+jwU|jyS
+l{^#D;Kf
+\#c;j# ;
+m#c;o# ;
+q#e;y#
+jwU|jyT=l
+}*$B;A
+aA~DaA
+c$C;uR
+%b;:VPa
+a`B.` 
+:A&C;HB[j
+ic&D;s
+=ht&C;
+wU<kSd
+&c;.T@`-T``4T@`
+T`` T@`!T``!W
+X'b;?T@b7
+[BPa8R
+f'c;:T
+}EBPbKx$b
+0:Bx0bHL
+1|3V$c
+}EB,bB
+~"cbx%f
+T}k{V>i}U?jh
+=k9UHa
+\(g;7U
+=jm(D;
+v(g;0B
+(B;wT|j
+(C;;{[j7U
+:ta7nmT
+zkvX*r9)
+@1.RXi/
+{j5T@a
+Z)c;pB4a
+jXC]j4U
+kpC^khC]j4U
+;W]j4U
+Q)D;qV
+=l@*B;
+* ;}P^j
+@0HB^j
+r$w#r!w&s
+WjC{$`
+Cha`@``
+l-B;lTuj
+D|uU{jwW
+%-C;MBwj
+@-c;0B
+B-b;C-
+wkqy8k)
+j.e;4X
+%l89Pa
++/c;4X
+R/d;4X
+B/c;6T@a5T
+*0C;8T|i
+0c;4X[i7T
+'0f;4X
+`:.0 ;
+0c;z2 ;
+ 1]2B;
+X|CT"k:
+3:fQ@h
+5:sPzi
+p1?1D;/T*r
+8l(4C;
+-4c;/4 ;
+0:44D;
+kr4D;zT
+0:j4D;
+-bi"`2
+/"OSmCl0
+slCkSmcnv/ma
+CkSlcmsn}a
+/mdF/Q
+<?cmSnf/V/J
+cmSnCl4
+/"OSmCl%
+/"OcnSmCk]
+ciSnCj
+clSmCiL
+cnSkCj%
+cmSkCjm
+/"OcmSnCk
+/"OSmCkr
+clSmCkP
+/"OcmSnCk,
+/"OSmCk
+`,qq.u
+ckSiCm
+p(5X%0
+/"OcmCjI
+]ey%p5
+cmSkCi?
+cmSkCiP
+/"OSnCm
+OmxrMeCpuAudioProcessing
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Audio Codec NULL Necessary Function Line = %ld
+[AUDIO CMN] %s : Error OmxrMeCodecSetProcParam Line = %ld
+[AUDIO CMN] %s : Error OmxrMeCpuAudioEmptyBufferDone Line = %ld
+[AUDIO CMN] %s : Error OmxrMeCodecSetProcedParam Line = %ld
+[AUDIO CMN] %s : No Malloc Memory Line = %ld
+OmxrMeCpuAudioFillBufferDone
+[AUDIO CMN] OmxrMeCpuAudioSendNgParamValueResponse : Send NG Param Value Response  u16ParamNum = %d, u32ParamValue = %ld
+[AUDIO CMN] OmxrMeCpuAudioSendNgParamValueResponse : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioSendNgParamSizeResponse : Send NG Param Size Response  CorrectSize = %ld, IllegalSize = %d
+[AUDIO CMN] OmxrMeCpuAudioSendNgParamSizeResponse : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioSendFatalErrorResponse
+[AUDIO CMN] OmxrMeCpuAudioSendFatalErrorResponse : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioSendWriteDataFullResponse
+[AUDIO CMN] OmxrMeCpuAudioSendWriteDataFullResponse : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioSendInsufficientResourcResoponse
+[AUDIO CMN] OmxrMeCpuAudioSendInsufficientResourcResoponse : Can't Send Massage Line = %ld
+[AUDIO CMN] Error FileName = %s Error Line = %d
+[AUDIO CMN] OmxrMeCpuAudioSendFatalErrorNotify : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioSendProcErrorNotify
+[AUDIO CMN] OmxrMeCpuAudioSendProcErrorNotify : Can't Send Massage Line = %ld
+OmxrMeCpuAudioEmptyBufferDone
+[AUDIO CMN] OmxrMeCpuAudioDeinit
+[AUDIO CMN] OmxrMeCpuAudioDeinit : Audio Codec Deinit Error Line = %d
+[AUDIO CMN] OmxrMeCpuAudioDeinit : Audio Codec NULL Necessary Function Line = %ld
+OMX Audio Common Copyright(C) 2011 Renesas Electronics Corporation. All rights reserved.
+OmxrMeCpuAudioInit
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Can't Malloc Memory = %ld
+[AUDIO CMN] %s : Can't Set Regist CallBack Function = 0x%x
+PriorityLOW.ME.ACMN.MAIN
+[AUDIO CMN] %s : Create Thread Error = %ld
+[AUDIO CMN] OmxrMeCpuAudioCallBackRegistResource
+OmxrMeCpuAudioCommandInit
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Can't Send Massage Line = %ld
+OmxrMeCpuAudioCommandDeinit
+[AUDIO CMN] %s : Audio Codec Command Deinit Error Line = %ld
+OmxrMeCpuAudioEmptyThisBuffer
+[AUDIO CMN] %s : Write Data Full Line = %ld
+[AUDIO CMN] %s : Audio Codec NULL Necessary Function Line = %ld
+[AUDIO CMN] %s : Audio Codec EmptyThisBuffer Line = %ld
+OmxrMeCpuAudioFillThisBuffer
+[AUDIO CMN] %s : Audio Codec FillThisBuffer Line = %ld
+OmxrMeCpuAudioPortFlush
+OmxrMeCpuAudioPortFlushExecute
+[AUDIO CMN] %s : Input Port Flush Error Line = %d
+[AUDIO CMN] %s : Output Port Flush Error Line = %d
+[AUDIO CMN] OmxrMeCpuAudioPortEnable
+[AUDIO CMN] OmxrMeCpuAudioPortEnable : Can't Send Massage Line = %ld
+OmxrMeCpuAudioPortDisable
+OmxrMeCpuAudioPortDisableExecute
+[AUDIO CMN] %s : Input Port Disable Error Line = %d
+[AUDIO CMN] %s : Output Port Disable Error Line = %d
+[AUDIO CMN] OmxrMeCpuAudioInputPortFlush
+[AUDIO CMN] OmxrMeCpuAudioInputPortFlush : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioInputPortFlush : Input Port Flush Error Line = %d
+[AUDIO CMN] OmxrMeCpuAudioOutputPortFlush
+[AUDIO CMN] OmxrMeCpuAudioOutputPortFlush : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioInputPortDisable
+[AUDIO CMN] OmxrMeCpuAudioInputPortDisable : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioInputPortDisable : Input Port Disable Error Line = %d
+[AUDIO CMN] OmxrMeCpuAudioOutputPortDisable
+[AUDIO CMN] OmxrMeCpuAudioOutputPortDisable : Can't Send Massage Line = %ld
+OmxrMeCpuAudioProcMain
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Save Thread Error = %ld
+[AUDIO CMN] %s : Get Thread Id Error = %ld
+[AUDIO CMN] %s : Audio Codec NULL Necessary Function Line = %ld
+[AUDIO CMN] %s : Audio Codec Main Proc Line = %ld
+[AUDIO SWIP] %s : Can't Send Message Line = %ld
+OmxrMeCpuAudioProcComplete
+[AUDIO CMN] %s : Audio Port Flush Execute Error Line = %ld
+[AUDIO CMN] %s : Audio Port Disable Execute Error Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioProcCompleteToIdle
+OmxrMeCpuAudioProcCompleteToPause
+[AUDIO CMN] OmxrMeCpuAudioProcToPause 
+[AUDIO CMN] OmxrMeCpuAudioPause 
+[AUDIO CMN] OmxrMeCpuAudioPause : Can't Send Massage Line = %ld
+[AUDIO CMN] OmxrMeCpuAudioPauseToProc 
+[AUDIO CMN] OmxrMeCpuAudioPauseToProc : Can't Send Massage Line = %ld
+OmxrMeCpuAudioStart
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Audio Codec Start Error Line = %ld
+[AUDIO CMN] %s : Can't Send Massage Line = %ld
+OmxrMeCpuAudioStop
+[AUDIO CMN] %s
+[AUDIO CMN] %s : Audio Codec SW.IP Reset Stop Error Line = %ld
+[AUDIO CMN] %s : Can't Send Massage Line = %ld
+OmxrMeCpuAudioProcToStop
+ckSnCm
+/"OCnc
+/"OcmV
+/"OCnX
+/"OCnv
+/"OclSnCme
+/"OclSnCm;
+Cn"dB/!Q
+clSmCn,
+OMX AAC Encoder MC Copyright(C) 2011 Renesas Electronics Corporation. All rights reserved.
+OmxrMEngInit
+[AACE ME] %s
+[AACE ME] %s : Can't Init MEng Cmn = %ld
+OmxrMeShAaceCommandInit
+AACE ME] %s : Can't allocate extention shared memory!
+OmxrMeShAaceDeinit
+OmxrMeShAaceCommandDeinit
+[AACE ME] %s : Free Buffer Error RetVal = 0x%x
+OmxrMeShAaceStart
+OmxrMeShAaceSetEncodeParam
+OmxrMeShAaceEncodeMain
+[AUDIO SWIP] %s : sAaceSwipContext.AAC_status = %d
+OmxrMeShAaceSetStreamBufferParam
+OmxrMeShAaceEmptyThisBuffer
+OmxrMeShAaceFillThisBuffer
+OmxrMeShAaceEmptyBufferDone
+[AACE ME] %s : Can't Send Massage Line = %ld
+OmxrMeShAaceFillBufferDone
+OmxrMeShAaceSwipReset
+[AACE ME] %s : Illegal channel!
+[AACE ME] %s : Illegal format type!
+[AACE ME] OmxrMeShAaceSwipInit->RSAACE_Init()
+              RSAACE_AACInfo.channelMode          = 0x%x
+              RSAACE_AACInfo.sampleRate           = 0x%x
+              RSAACE_AACInfo.bitRate              = 0x%x
+              RSAACE_AACInfo.outputFormat         = 0x%x
+              RSAACE_AACInfo.enable_cbr           = 0x%x
+              RSAACE_AACInfo.gap                  = 0x%x
+              RSAACE_AACInfo.mode                 = 0x%x
+              RSAACE_AACInfo.home                 = 0x%x
+              RSAACE_AACInfo.original_copy        = 0x%x
+              RSAACE_AACInfo.copyright_id_present = 0x%x
+              RSAACE_AACInfo.copyright_id[0]      = 0x%x
+[AACE ME] %s : Can't Init SW.IP RetVal = %ld
+OmxrMeShAaceCodecConfig
+[AACE] OmxrMeShAaceCodecConfig : DecoderSpecificInfo = 0x%2x 0x%2x
+/"OSlCn
+/"OSlCm
+/"OSlCm
+SkClcm
+/"OCn)
+/"OCnx
+/"OCng
+/"OCnO
+/"OcnSm
+OMX DivX Decoder MC Copyright(C) 2011 Renesas Electronics Corporation. All rights reserved.
+video_decoder.divx
+OMX.RENESAS.VIDEO.DECODER.DIVX
+OMX.RENESAS.VIDEO.IPC
+OMX.RENESAS.INDEX.PARAM.VIDEO.DIVX
+OMX.RENESAS.INDEX.PARAM.VIDEO.REORDER
+OMX.RENESAS.INDEX.PARAM.VIDEO.STREAM.STORE.UNIT
+OMX.RENESAS.INDEX.PARAM.VIDEO.PICTURE.MEMORY.ALLOC
+OMX.RENESAS.INDEX.PARAM.VIDEO.TIME.STAMP.MODE
+[MC] OmxrMcDivXdInitIndexParamDivX
+[MC ERR] OmxrMcDivXdInitIndexParamDivX : Invalid parameter!
+[MC] OmxrMcDivXdUpdateIndexParamDivX
+[MC ERR] OmxrMcDivXdUpdateIndexParamDivX : Invalid parameter!
+[MC] OmxrMcDivXdGetIndexParamDivX
+[MC ERR] OmxrMcDivXGetIndexParamDivX : Invalid parameter!
+[MC ERR] OmxrMcDivXGetIndexParamDivX : nSize is not sizeof(OMXR_MC_VIDEO_PARAM_DIVXTYPE)!
+[MC] OmxrMcDivXdSetIndexParamDivX
+[MC ERR] OmxrMcDivXSetIndexParamDivX : Invalid parameter!
+[MC ERR] OmxrMcDivXSetIndexParamDivX : nSize is not sizeof(OMXR_MC_VIDEO_PARAM_DIVXTYPE)!
+[MC ERR] OmxrMcDivXSetIndexParamDivX : Invalid nPortIndex un-supported index!
+[MC ERR] OmxrMcDivXSetIndexParamDivX : Invalid Context!
+[MC ERR] OmxrMcDivXSetIndexParamDivX : Invalid DivX Version!
+[MC ERR] OmxrMcDivXSetIndexParamDivX : Faild OMXR_ME_CMD_SET_PARAMETER command!
+[MC] OmxrMcDivXInitializeParameterCodecSpecific
+[MC ERR] OmxrMcDivXInitializeParameterCodecSpecific : Invalid parameter!
+[MC ERR] OmxrMcDivXInitializeParameterCodecSpecific : Invalid Context!
+[MC] OmxrMcDivXdUpdateParameterCodecSpecific
+[MC ERR] OmxrMcDivXdUpdateParameterCodecSpecific : Invalid parameter!
+[MC ERR] OmxrMcDivXdUpdateParameterCodecSpecific : Invalid Context!
+[MC] OmxrMcDivXdGetParameterCodecSpecific
+[MC ERR] OmxrMcDivXdGetParameterCodecSpecific : Invalid parameter!
+[MC ERR] OmxrMcDivXdGetParameterCodecSpecific : Invalid Context!
+[MC] OmxrMcDivXdSetParameterCodecSpecific
+[MC ERR] OmxrMcDivXdSetParameterCodecSpecific : Invalid parameter!
+[MC ERR] OmxrMcDivXdSetParameterCodecSpecific : Invalid Context!
+[MC] OmxrMcDivXdChangeMeResultToMcResultCodecSpecific
+[MC ERR] OmxrMcDivXdChangeMeResultToMcResultCodecSpecific : Invalid parameter!
+[MC ERR] OmxrMcDivXdChangeMeResultToMcResultCodecSpecific : Invalid Context!
+[MC] OmxrMcComponentRoleEnum_mc_divxd : strRole = %p, u32Index = %d
+[MC ERR] OmxrMcComponentRoleEnum_mc_divxd : Invalid parameter!
+[MC] OMX_ComponentInit_mc_divxd
+[MC ERR] OMX_ComponentInit_mc_divxd : Invalid parameter!
+/"OcnSm
+OMX VP6 Decoder MC Copyright(C) 2011 Renesas Electronics Corporation. All rights reserved.
+video_decoder.vp6
+OMX.RENESAS.VIDEO.DECODER.VP6
+OMX.RENESAS.VIDEO.IPC
+OMX.RENESAS.INDEX.PARAM.VIDEO.REORDER
+OMX.RENESAS.INDEX.PARAM.VIDEO.PICTURE.MEMORY.ALLOC
+OMX.RENESAS.INDEX.PARAM.VIDEO.TIME.STAMP.MODE
+OMX.RENESAS.INDEX.PARAM.VIDEO.STREAM.STORE.UNIT
+[MC] OmxrMcComponentRoleEnum_mc_vp6d : strRole = %p, u32Index = %d
+[MC ERR] OmxrMcComponentRoleEnum_mc_vp6d : Invalid parameter!
+[MC] OMX_ComponentInit_mc_vp6d
+[MC ERR] OMX_ComponentInit_mc_vp6d : Invalid parameter!
+/"OSmCn
+/"OSnCm
+/"OSnCl
+/"OSnCl
+/"OsmcnSlCk
+/"OclSmCn\
+/"OclSnCm
+/"OckSmCn
+/"OclSmCn
+dB/"gt
+OMX DolbyDigital Decoder MC Copyright(C) 2010 Renesas Electronics Corporation. All rights reserved.
+OMX.RENESAS.INDEX.CONFIG.AUDIO.PCM
+OMX.RENESAS.INDEX.CONFIG.AUDIO.AC3D
+[MC] OmxrMcAc3dInitializeParamAudioAc3
+[MC] OmxrMcAc3dGetIndexParamAudioAc3
+[MC ERR] OmxrMcAc3dGetIndexParamAudioAc3 : nSize is not sizeof(OMXR_MC_AUDIO_PARAM_AC3DTYPE)!
+            : Correct Size = %ld Wrong Size = %ld
+[MC] OmxrMcAc3dUpdateIndexParamAudioPcm
+[MC ERR]   OmxrMcAc3dUpdateIndexParamAudioPcm : Invalid parameter!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioPcm : nSize is not sizeof(OMX_AUDIO_PARAM_PCMMODETYPE)!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioPcm : Invalid nPortIndex un-supported setting!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioPcm : Invalid nSamplingRate un-supported setting!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioPcm : Invalid nBitPerSample un-supported setting!
+[MC] OmxrMcAc3dUpdateIndexParamAudioAc3
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioAc3 : nSize is not sizeof(OMXR_MC_AUDIO_PARAM_AC3DTYPE)!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioAc3 : Invalid nPortIndex un-supported setting!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioAc3 : Invalid eKcapableMode un-supported setting!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioAc3 : Invalid eCompressionMode un-supported setting!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioAc3 : Invalid eOutputMode un-supported setting!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioAc3 : Invalid eStereoMode un-supported setting!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioAc3 : Invalid bLfeMode un-supported setting!
+[MC ERR] OmxrMcAc3dUpdateIndexParamAudioAc3 : Invalid eDualMonoMode un-supported setting!
+[MC] OmxrMcAc3dSetCommand
+[MC] OmxrMcAc3dStart
+[MC] OmxrMcAacdFillBufferDone
+[MC ERR] OmxrMcAc3dFillBufferDone : Invalid SamplingRate(%d)!
+[MC ERR] OmxrMcAc3dFillBufferDone : Invalid StreamType(%d)!
+[MC ERR] OmxrMcAc3dFillBufferDone : Invalid Bit Per Sample(%d)!
+[MC]   OmxrMcAc3dGetParameter
+[MC]   OmxrMcAc3dSetParameter
+[MC]   OmxrMcAc3dGetConfig
+[MC]   OmxrMcAc3dSetConfig
+[MC] OMX_ComponentInit
+[MC ERR] OMX_ComponentInit : Can't allocate memory!
+[MC ERR] OMX_ComponentInit : Failed OMXR_ME_CMD_INIT command! (0x%08lx)
+!T"U#V$W%Y&Q
+BbAW"!q
+/"OCn*
+e|5RgQ[r.
+eL5RbQ[".
+Vbb("+
+pr%"k!T
+B|2"5(
+/"OCnx
+p2dlfR$1U
+VcebR("O
+/clSnCm
+e|5RdQ\B.
+pBfARb.!
+5RdQRB.!
+pBbAU".Q
+pBgAUr.Q
+e|5RbQ\".
+(Gy&(D
+GK&y%[&
+>\`kfl@
+>L`[e\@
+(Gy$(E
+G[$y&k$
+~x5B>l`[e\@
+5r>l`[e\@
+5r>L`[e\@
+5l`[e\@
+7l`[e\@
+/"OciSkCj
+Gy"+!Sb
+Gy"+!K!
+F(Gy&(E
+G[&y$K&
+OMX DivX Decoder MC Copyright(C) 2011 Renesas Electronics Corporation. All rights reserved.
+M4VD_CE
+[DIVXD ME] OmxrMEngInit_me_divxd
+[DIVXD ME] %s line = %d: Video init failed!
+omxr_me_divxd.c
+[DIVXD ME] %s line = %d: DivX decoder context allocation is failed!
+[DIVXD ME] OmxrMeDivXdInit
+[DIVXD ME] %s line = %d: u32MaxWidth is illegal!
+[DIVXD ME] %s line = %d: u32MaxHeight is illegal!
+[DIVXD ME] %s line = %d: u32MinWidth is illegal!
+[DIVXD ME] %s line = %d: u32MinHeight is illegal!
+[DIVXD ME] %s line = %d: u32StreamStoreUnit is illegal!
+VPU_EXTENSION_DIVX_DEC
+EXTENSION_INFO
+[DIVXD ME] %s line = %d: OmxrGetConfigExtSection is failed!
+EXTENSION_HWIP_MODE
+[DIVXD ME] %s line = %d: Config define is illegal!
+[DivX ME]col not coded buffer = %d
+[DivX ME]DP Buffer = %d
+[DIVXD ME] %s line = %d: OmxrMeVideoUdfAllocateDpWorkBuffer is failed!
+[DIVXD ME] %s line = %d: Freeing dp buffer is failed!
+[DIVXD ME] %s line = %d: Freeing coded buffer is failed!
+[DIVXD ME] OmxrMeDivXdDeinit
+[DIVXD ME] %s line = %d: Freeing col not coded buffer is failed!
+[DIVXD ME] %s line = %d: OmxrMeVideoUdfFreeDpWorkBuffer is failed!
+[DIVXD ME] OmxrMeDivXdSetDefaultValue
+[DIVXD ME] OmxrMeDivXdSetInputData
+[DIVXD ME] OmxrMeDivXdGetDecodeInfo
+DIVXD_VLC
+M4VD_VLC
+[DIVXD ME] OmxrMeDivXdSetHeaderInfo
+[DIVXD ME] %s line = %d: DP buffer is not allocated!
+[DIVXD ME] %s line = %d: DP buffer size is insufficient!
+[DIVXD ME] OmxrMeDivXdGetPictureInfo
+[DIVXD ME] OmxrMeDivXdGetParameter
+[DIVXD ME] OmxrMeDivXdSetParameter
+[DIVXD ME] %s line = %d: OMXR_MC_IndexParamVideoStreamStoreUnit Parameter UnsupportedSetting
+[DIVXD ME] %s line = %d: DivX Version info is failed
+[DIVXD ME] OmxrMeDivXdGetConfig
+[DIVXD ME] OmxrMeDivXdSetConfig
+[DIVXD ME] OmxrMeDivXdFreeContext
+[DIVXD ME] OmxrMeDivXdPackedBitstreamCnotrol
+Current Codec State OMXR_ME_DIVXD_STATE_DEFAULT
+Current Codec State OMXR_ME_DIVXD_STATE_BUFFERING
+Current Codec State OMXR_ME_DIVXD_STATE_BUMPING
+[DIVXD ME] OmxrMeDivXdAnalyzeVop
+[DIVXD ME] %s line = %d:stream size error!!
+Current Picture Type OMXR_ME_DIVXD_NC_PICTURE
+Current Picture Type OMXR_ME_VIDEO_I_PICTURE
+Current Picture Type OMXR_ME_VIDEO_P_PICTURE
+Current Picture Type OMXR_ME_VIDEO_B_PICTURE
+Current Picture Type OMXR_ME_VIDEO_UNKNOWN_PICTURE
+[DIVXD ME] OmxrMeDivXdAnalyzeVol
+[DIVXD ME] %s line = %d: Coding error or Invalid Bitstream Header!!
+[DIVXD ME] %s line = %d: Invalid Bitstream Header!!
+[DIVXD ME] OmxrMeDivXdGetPictureStreamSize
+"U#V$W%Y&T'Q
+l1BgARr!!
+/"OCn*
+/"OCnv
+H^R.AUr%
+vFR<qb"GR
+/"OCnd
+/"OCnI
+OMX VP6 Decoder MC Copyright(C) 2011 Renesas Electronics Corporation. All rights reserved.
+VP6D_CE
+[VP6D ME] OmxrMEngInit_me_vp6d
+[VP6D ME] %s line = %d: Video init failed!
+omxr_me_vp6d.c
+[VP6D ME] %s line = %d: VP6 decoder context allocation is failed!
+[VP6D ME] OmxrMeVp6dInit
+[VP6D ME] %s line = %d: u32MaxWidth is illegal!
+[VP6D ME] %s line = %d: u32MaxHeight is illegal!
+[VP6D ME] %s line = %d: u32MinWidth is illegal!
+[VP6D ME] %s line = %d: u32MinHeight is illegal!
+[VP6D ME] %s line = %d: u32StreamStoreUnit is illegal!
+VPU_EXTENSION_VP6_DEC
+EXTENSION_INFO
+[VP6D ME] %s line = %d: OmxrGetConfigExtSection is failed!
+EXTENSION_HWIP_MODE
+[VP6D ME] %s line = %d: Config define is illegal!
+[VP6D ME]DP Buffer = %d
+[VP6D ME] %s line = %d: OmxrMeVideoUdfFreeDpWorkBuffer is failed!
+[VP6D ME] %s line = %d: OmxrMeVideoUdfAllocateDpWorkBuffer is failed!
+[VP6D ME] %s line = %d: Freeing dp buffer is failed!
+[VP6D ME] OmxrMeVp6dDeinit
+[VP6D ME] OmxrMeVp6dSetDefaultValue
+[VP6D ME] OmxrMeVp6dSetInputData
+[VP6D ME] OmxrMeVp6dGetDecodeInfo
+VP6D_VLC
+[VP6D ME] OmxrMeVp6dSetHeaderInfo
+[VP6D ME] %s line = %d: DP buffer is not allocated!
+[VP6D ME] OmxrMeVp6dGetPictureInfo
+[VP6D ME] OmxrMeVp6dGetParameter
+[VP6D ME] OmxrMeVp6dSetParameter
+[VP6D ME] OmxrMeVp6dGetConfig
+[VP6D ME] OmxrMeVp6dSetConfig
+[VP6D ME] OmxrMeVp6dFreeContext
+OcmSnCl2
+/"OCn}
+cnSmCkp
+F(Ff2K
+/"OclSnCm
+/"OclSnCm{
+/"OCl^
+/"OCn8
+/"OCnC
+/"OCny
+/"OSmCl`
+/"OCn<
+/"OcnSlCm2
+SmCnV/F/
+skclSnCm*
+OMX Dolby Digital Decoder MC Copyright(C) 2012 Renesas Electronics Corporation. All rights reserved.
+[DDD] OmxrMEngInit 
+[DDD] OmxrMEngInit : Can't Init MEng Cmn = %ld
+[DDD] OmxrMeDddCommandInit
+[DDD] OmxrMeDddDeinit
+[DDD] OmxrMeDddStart
+[DDD] OmxrMeDddEmptyThisBuffer
+[DDD] OmxrMeDddFillThisBuffer
+[DDD] OmxrMeDddSetDecodeParam
+[DDD] OmxrMeDddSetPcmBufferParam
+[DDD] OmxrMeDddCheckPortSetting
+[DDD] OmxrMeDddEmptyBufferDone
+[DDD] OmxrMeDddEmptyBufferDone : Can't Send Massage Line = %ld
+[DDD] OmxrMeDddFillBufferDone
+[DDD] OmxrMeDddFillBufferDone : Can't Send Massage Line = %ld
+[DDD SWIP] OmxrMeDddSwipInit
+[DDD SWIP] OmxrMeDddSwipInit : Can't Init RetVal = 0x%x
+[DDD SWIP] OmxrMeDddSwipDeinit
+[DDD SWIP] OmxrMeDddSwipDeinit : Can't Deinit RetVal = 0x%x
+[DDD SWIP] OmxrMeDddSwipGetVersion
+[DDD SWIP] OmxrMeDddSwipGetVersion version = %x
+[DDD SWIP] OmxrMeDddSwipInterrupt
+[DDD SWIP] OmxrMeDddSwipSetDecodeOpt
+[DDD SWIP] OmxrMeDddSwipInit : Can't SetDecOpt RetVal = 0x%x
+[DDD SWIP] OmxrMeDddSwipStreamTransfer
+[DDD SWIP] OmxrMeDddSwipStreamTransfer : OMXR_ME_DDD_SPECIAL_SEQUENCE_DATA_SIZE 0
+[DDD SWIP] OmxrMeDddSwipStreamTransfer : Can't Stream Transfer. Status = %ld
+[DDD SWIP] OmxrMeDddSwipDecode
+[DDD SWIP] OmxrMeDddSwipDecode : Can't Decode  Status = %ld
+[DDD SWIP] OmxrMeDddSwipPcmTransfer
+[DDD SWIP] OmxrMeDddSwipPcmTransfer : Can't Stream Transfer. Status = %ld
+[DDD SWIP] OmxrMeDddSwipDecodeComplete
+[DDD SWIP] OmxrMeDddSwipDecodeComplete : Can't Decode Complete CallBack
+[DDD SWIP] Decode Error: %ld
+[DDD SWIP] OmxrMeDddSwipFlush
+[DDD SWIP] OmxrDddSwipGetTransferPcmParam
+[DDD SWIP] OmxrMeDddSwipCallBackTransferPcm : Call Back Pcm Transfer Function (Size=%d, Flush=%d)
+[DDD SWIP] OmxrMeDddSwipCallBackTransferPcm Not EOS Mode
+[DDD SWIP] OmxrMeDddSwipCallBackTransferPcm : Can't Send Message Line = %ld
+[DDD SWIP] OmxrMeDddSwipCallBackTransferPcm : Fatal Error Line = %ld
+[DDD SWIP] OmxrMeDddSwipCallBackTransferStream
+[DDD SWIP] OmxrMeDddSwipCallBackTransferStream : Can't Send Message Line = %ld
+[DDD SWIP] OmxrMeDddSwipCallBackDecodeComplete
+[DDD SWIP] OmxrMeDddSwipCallBackDecodeComplete : Can't Send Message Line = %ld
+[DDD SWIP] OmxrMeDddSwipCallBackDecodeComplete : sDddSwipContext.sCbDecodeComplete.u32CallBack = %ld
+[DDD SWIP] OmxrMeDddSwipCallBackDecodeComplete : sDddSwipContext.sCbDecodeComplete.u32FlushMode = %ld
+skclSnH$
+/"OCnH$
+n SlKl
+cmSnl2"
+G[b,F}g
+vb.IR&6
+HVb.JR 6
+/"OcmSnClv/
+r&/Skcg@{
+b&/f/D
+hcjSiCk
+B,6aR("
+]sar/ci
+b(5]Fc`
+mL+flD
+]L+e\D
+-b(6C`
+kb}L,E
+C`!@!@
+]K+e\A
+mK+flA
+]L+e\D
+6dR("X
+n2!B"*
+GtF|Fl
+b/ShCk^
+dl=h4A
+dl=h4A
+dl=h4A
+dl=h4A
+dl=h4A
+dl=h4A
+dl=h4A
+dl=h4A
+dl=h4A
+DVCiAW
+h2HVB/l2LVQ
+ER(7IR,7MRN
+R!N!N!B(6
+T!B!B,8M5
+O\CaLXSkb/IV
+Vbs`"$
+Vfkb"$
+tVfkb"$
+tVfkb"$
+tVfkb"$
+tVfkb"$
+tVfkb"$
+tVfkb"$
+tVfkb"$
+bVfl2"-
+fVb,6b-
+bVfl2"-
+fVb,6b-
+bVfl2"-
+bVfl2"-
+fVb,6b-
+fVb,6b-
+bVfl2"-
+fVb,6b-
+fVb,6b-
+fVb,6b-
+bVfl2"-
+fVb,6b-
+bVfl2"-
+fVb,6b-
+fRb,6b-
+fQR,6a
+vRb"&QR!
+qFfb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"\2Ffb"Ff
+bmSncesf
+AVClB/
+h>ChB/Cj
+dSmSl@uT
+V@{l6k`
+V@{l6k`
+V@~l6k`
+V@{l6k`
+V@~l6k`
+V@{l6k`
+V@~l6k`
+V@{l6k`
+V@~l6k`
+V@|l6k`
+V@|l6k`
+V@zl6k`
+V@|l6k`
+V@zl6k`
+V@|l6k`
+V@zl6k`
+V@|l6k`
+V@zl6k`
+gBb@wf
+uFb"%Ffl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uBbRf,6b%
+!E!Gx6
+5ClX4\<
+>Ca(4,1
+2Cl,<(4
+>Cbh4l2&
+2Cl,<(4
+>sdl7v
+u"fRb,6f
+@Rfl2&
+@Rb,6f
+@Rb,6f
+@Rfl2&
+@Rfl2&
+@Rb,6f
+ubbRfl2"$Sf
+tbbRfl2"$Sb
+u"fRb,6f
+@Rb,6f
+@Rfl2&
+@Rfl2&
+@Rfl2&
+@Rb,6f
+gBb@wf
+uFb"%Ffl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uFfRbl2"%
+uBbRf,6b%
+!E!Gx6
+5ClX4\<
+>Ca(4,1
+2Cl,<(4
+>Cbh4l2&
+2Cl,<(4
+>sdl7v
+u"fRb,6f
+@Rfl2&
+@Rb,6f
+@Rb,6f
+@Rfl2&
+@Rfl2&
+@Rb,6f
+ubbRfl2"$Sf
+u@tbbRfl2"$Sb
+u"fRb,6f
+@Rb,6f
+@Rfl2&
+@Rfl2&
+@Rfl2&
+@Rb,6f
+AsjdR'
+,5tR("6
+B\2#`N
+dlvS`ht
+\uRfcb
+wTRQVo
+\6,6ceca
+hVUUUX**
+kb}M,E
+DL6c`.
+Q e\b#`
+eX4MB#`
+ClsishcmSn
+Gkb,E}g
+]K+e\A
+u!@!@!N
+sickSm
+C`!@!@
+fcbc`!B!B/
+!B!B!-H
+vb'IR&6
+HR"'KVcb
+`bJV &JV
+/CamdRfSg
+Rce`n(6C6
+CnCjCkCh
+E`b,b,5
+ucbX2N
+b F|B+&mf
+b flfc`
+l5Q._e
+!Kci!K'
+`ke\@f
+P(5kb~
+`ke\@j
+P(5kb~
+\z`v\w
+B,6l7Cf~
+R(6l7=
+e(u(6^
+B,6l7Cf
+TRskcjSl("
+cmSnl2"
+G[b,F}g
+vb.IR&6
+HVb.JR 6
+E\2#`N
+F,6h4A
+|5Sd!D!DM1
+F,6h4A
+F,6h5l
+Fh5SdM
+F,6h5Q
+gfffVUUU9
+cjL6\:
+B,9ck,:L<
+clL6\<
+c`#f`r\v.
+S`#f`r\vn
+GS`|=.
+\6,6c``
+cb`v\rn
+GS`|=.
+c`#f`r\v.
+/"OdRsm("
+FSaL:L6
+TRskcl("6
+},6\qc`
+Bl2X2-1
+ODR("5
+B,4C`)
+]4!F!Fc`
+!F!Fc`
+]4!F!Fc`
+!F!Fc`
+SnCkSdcef
+fbb!B"&
+dCnH~M
+V!BB+!E
+6iRjUkT!BlQ!EmW!D)
+}rU!BsT!FtQ!E"'!Da
+uRvVwU!BxT!F%
+yRzV{U!B|T!F}Q!E)
+ @EW!@
+*@On*@W
+F'4N2cd!B(1
+RZH#a-
+Vr/l2+
+s`w6n0!@
+6n0!@$
+SH4A SRC Middleware R0M0400SFRCH1SRC Ver.1.0 Copyright(C) 2011 Renesas Electronics Corporation. All rights reserved.
+0Qeo1AN
+G3%sR3
+{*4cG,4
+84p974\<64
+:5V5>5+EB5
+?F5Y$J5
+X5+1\5
+k5NNn5
+x5=;v5
+g5l@d5
+;G5?fB5
+e=5>:85
+F40s&4
+]>5q/M5
+$6<v&6
+,6ZX.6
+065^/6
+*6J!)6
+G'6"P%66;#6
+f5GMR5
+:6&WB6*
+26rd)6
+4)9;5@
+!7|+#7s(%7
+/7ul07
+07X~/7v
+7(7\b.7%x47
+x:7Pa@7
+W7Fv\7
+c7dR]7
+Iz7Pnn7Mcb7
+I7s4=7}{07
+f7;tw7
+'8*A*8
+/8>^18
+<8gd>8|
+pC8#jD8
+F8U'G8
+A8gA@8
+C'8ap$8
+S7DU?7=
+yV7{?q7
+}"8T](8
+b8pDg8X
+k8=%p8Vct8
+{z8o9v8
+8m8r{h8q
+*8]G$8
+88@'B8
+]T8QR]8~+f8
+p8n}f8\
+7WVj7D
+-98I)G8
+e8s9V8y
+98) N8
+-9!i19i
+49>089
+c9oxd9
+e9{je9
+M9%:K9
+89oD59
+Z8}iB8
+6J(q7>
+09D_79
+9%p|9h
+p9MVj9
+.92=:9
+\9a,g9q.r9
+9&\'9N~<9.
+O:>zR:
+g:m0j:
+9{:-l|:6z}:
+w:s=v:ETt:
+rb:-A_:)
+r9-_U9
+D;B5J;s
+O;B*U;A
+u;-q{;Cp
+Z;B*U;s
+O;B5J;)
+79-_U9P
+[:-A_:
+Ar:ETt:s=v:U
+b~:6z}:-l|:
+l:m0j:
+U:>zR:
+Q9N~<9&\'9
+}9q.r9a,g9o
+E92=:9
+.9OT#9
+c9MVj9
+v9%p|9
+>9D_79
+*8}iB8
+Z8,kq8
+19oD59!
+xH9%:K9A
+e9{je9
+e9oxd9
+m;9>089i
+49!i19
+b8) N8
+F8s9V8
+U8I)G8
+}d77>+7
+;7WVj7m>
+\8n}f8
+n8~+f8QR]8
+NK8@'B8
+l7eDE7]
+8]G$8*
+c8r{h8
+q8o9v8
+~x8Vct8=%p8X
+k8pDg8Q
+'.8T](8
+*7DU?7
+!8ap$8
+>8gA@8U
+G8U'G8P
+FE8#jD8
+?8gd>8
+38>^18>
+,8*A*8
+7;tw7v
+B7;H17|
+#7}{07s4=7
+*V7Mcb7Pnn7
+aW7dR]7
+a7Fv\7
+2F7Pa@7
+x:7%x47\b.7
+7%5y(w5OK
+.7X~/7G
+17ul07
+'7s(%7|+#7w
+z5)9;5
+ W!+|w
+I6&WB6
+=>5GMR53
+!66;#6"P%6
+G'6J!)6R
+-65^/6
+/6ZX.6
+9(6<v&6f
+[5q/M5
+40s&4B
+25>:85
+e=5?fB5
+`5l@d5
+s5=;v5
+p5NNn5
+~_5+1\5#
+M5Y$J5
+?F5+EB5V5>53
+54\<64p974=
+-4cG,4
+^3%sR3
+"L!#hF
+de$:nGF
+){%=<[
+c8x:p5
+Z~?^Tn
+4Cb::Z
+En<<7U
+B>G<:O%
+w7<hp]
++'A;i2
+oi?/D0
+FN7;t*
+a+;o>W
+4^a< M
+9S0<'RT
+{i=-a6
+mG<X;%
+mu7IbC
+L*:H`m
+7zH<5Zq
+>h|F?BCZ
+?C'4?a_\
+_*?yBZ
+UA ?VZ%?
+e}C:ZC
+q)=O'R
+VZ%?UA ?\,V
+3V<&Q1
+O$=~4L
+@l=/|:
+wZ;A&,
+too7==i
+-]7x1A
+f*:6Jk
+[87<+b\
+> ?=XH
+`Wp<pZ
+R@;YJp
+),";`<
+=AE<8+$
+S6_;sr3
+)fW;*'-
+X!=fGZ
+x1<=VW
+Rl;EQC
+nJ;3As
+o[9\5'
+"L!#hF
+omxr_default_config.cfg
+audio_decoder.aac
+audio_encoder.aac
+audio_decoder.wma
+audio_decoder.mp3
+audio_decoder.ac3

@@ -1,0 +1,9 @@
+{
+  "binary": "08-voice-recognition.bin",
+  "bytes": 577819,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "00001473010000000fd1080054ffbd72ae77d3988edc1c2f76766ba50c288964",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [],
+  "sha256": "cbf6f6d63d842ab14e34ba4fbd3335ce7cbcdec9ab4b76c25da53e3f3a4c5729"
+}

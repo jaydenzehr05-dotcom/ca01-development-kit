@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libnavi_if.so",
+  "examined_functions": [
+    "0001dcd4",
+    "0001e564"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 217,
+    "prompt_tokens": 1451,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1668
+  },
+  "next_focus": [
+    "File handle management",
+    "Memory allocation patterns"
+  ],
+  "observations": [
+    {
+      "address": "0x0001dcd4",
+      "claim": "Function reads data from a file handle.",
+      "evidence_snippet": "rq_fls_Read(local_14,1,param_3,param_2,auStack_1c,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001e564",
+      "claim": "Function allocates memory and reads file data.",
+      "evidence_snippet": "iVar1 = rq_mem_Alloc(2,uVar7)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two functions handle file operations and memory management. First reads data, second opens TTS files and manages memory.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "02d11afd4414659265ff78944f5a400de0cfaff1138ef45deb4daaa88f809981",
+  "unresolved_questions": [
+    "What is the purpose of the file operations?",
+    "What data is being read and stored?"
+  ]
+}

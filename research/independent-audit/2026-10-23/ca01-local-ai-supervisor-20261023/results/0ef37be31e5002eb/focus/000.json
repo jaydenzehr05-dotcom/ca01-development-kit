@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_VRS",
+  "examined_functions": [
+    "0001e2ac",
+    "0005f72c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 223,
+    "prompt_tokens": 1516,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1739
+  },
+  "next_focus": [
+    "File I/O error handling",
+    "XML parsing logic"
+  ],
+  "observations": [
+    {
+      "address": "0x0001e2ac",
+      "claim": "Processes XML files from directory listing",
+      "evidence_snippet": "strstr(local_34,\".xml\")",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0005f72c",
+      "claim": "Opens and closes files with error handling",
+      "evidence_snippet": "rq_fls_Open(param_1,&DAT_000aabe8,local_c,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0001e2ac initializes and processes XML files, while 0005f72c handles file operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1e2ac",
+    "5f72c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1e2ac",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "5f72c",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific XML processing occurs?",
+    "What is the purpose of DAT_0010c640?"
+  ]
+}

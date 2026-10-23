@@ -1,0 +1,67 @@
+{
+  "binary": "./opt/ftl/apl/PROC_HMI",
+  "examined_functions": [
+    "0003e9e8",
+    "0004058c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 265,
+    "prompt_tokens": 1463,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1728
+  },
+  "next_focus": [
+    "Path construction logic in 0003e9e8",
+    "Font loading sequence in 0004058c"
+  ],
+  "observations": [
+    {
+      "address": "0x0003e9e8",
+      "claim": "Constructs paths with '/opt/ftl/gui/MC/' prefix",
+      "evidence_snippet": "strncpy(param_2,\"/opt/ftl/gui/MC/\"",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0004058c",
+      "claim": "Initializes numerous global variables to 1",
+      "evidence_snippet": "memset(&DAT_0092d844,0,0x3c3c)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 0003e9e8 constructs file paths with hardcoded prefix and dynamic suffixes. Function 0004058c initializes large data structures and handles font loading.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "3e9e8",
+    "4058c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "3e9e8",
+      "score": 251,
+      "tags": [
+        "missing_resources",
+        "paths"
+      ]
+    },
+    {
+      "address": "4058c",
+      "score": 251,
+      "tags": [
+        "missing_resources",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the dynamic suffixes represent?",
+    "What is the purpose of the large memset operation?"
+  ]
+}

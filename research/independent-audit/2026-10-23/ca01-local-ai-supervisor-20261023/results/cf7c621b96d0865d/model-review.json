@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_HMI",
+  "examined_functions": [
+    "00065d8c",
+    "00065ddc"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 271,
+    "prompt_tokens": 523,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 794
+  },
+  "next_focus": [
+    "Function 000400c4",
+    "Parameter meanings"
+  ],
+  "observations": [
+    {
+      "address": "0x00065d8c",
+      "claim": "Selects MUI file based on param_2 and param_3 values",
+      "evidence_snippet": "if ((param_2 != 0xd) && (param_2 != 0))",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00065d8c",
+      "claim": "Calls FUN_000400c4 with specific MUI and MRA paths",
+      "evidence_snippet": "FUN_000400c4(param_1,\"Opening.mui\",\"open/fn/Opening.mra\")",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 00065d8c handles MUI file selection based on parameters, while 00065ddc uses fixed values.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "unresolved_questions": [
+    "What do param_2 and param_3 represent?",
+    "What is the purpose of FUN_000400c4?"
+  ]
+}

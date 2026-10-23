@@ -1,0 +1,71 @@
+{
+  "source_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "sysc_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+  "real_waitinit_executed": true,
+  "borrowed_thread_id_for_fixture": 39,
+  "borrowed_block_object_for_fixture": 64,
+  "task10_initialized": false,
+  "queue_send_performed": false,
+  "task39_initialized": false,
+  "original_callback_boundary": {
+    "symbol": "rq_tsk_BlockBegin",
+    "address": "0x10020d04",
+    "arguments": [
+      1,
+      1879109608,
+      16,
+      269723344
+    ],
+    "caller_return": "0x10020f5c"
+  },
+  "envelope": {
+    "queue_id": 1,
+    "size": 16,
+    "envelope": [
+      0,
+      5,
+      39,
+      10
+    ],
+    "ready": false
+  },
+  "original_instruction_count": 31,
+  "writes_during_original_waitinit": [
+    {
+      "address": "0x7000eff8",
+      "size": 4,
+      "value": "0x0"
+    },
+    {
+      "address": "0x7000effc",
+      "size": 4,
+      "value": "0x7000fff0"
+    },
+    {
+      "address": "0x7000efe8",
+      "size": 4,
+      "value": "0x0"
+    },
+    {
+      "address": "0x1013a6d0",
+      "size": 4,
+      "value": "0x1"
+    },
+    {
+      "address": "0x7000efec",
+      "size": 4,
+      "value": "0x5"
+    },
+    {
+      "address": "0x7000eff4",
+      "size": 4,
+      "value": "0xa"
+    },
+    {
+      "address": "0x7000eff0",
+      "size": 4,
+      "value": "0x27"
+    }
+  ],
+  "halt_reason": "unimplemented_import"
+}

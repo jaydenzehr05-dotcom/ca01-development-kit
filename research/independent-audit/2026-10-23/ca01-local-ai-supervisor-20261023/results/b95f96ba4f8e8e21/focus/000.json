@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_EXT",
+  "examined_functions": [
+    "00011474",
+    "00011550"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 264,
+    "prompt_tokens": 1154,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1418
+  },
+  "next_focus": [
+    "DAT_00023668 flag behavior",
+    "rq_fls_MakeDir function details"
+  ],
+  "observations": [
+    {
+      "address": "0x00011474",
+      "claim": "Clears temporary files if flag DAT_00023668 is '0'",
+      "evidence_snippet": "if (DAT_00023668 == '0')",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00011550",
+      "claim": "Creates directories during path traversal when encountering '/'",
+      "evidence_snippet": "if ((cVar3 == '/') && (bVar5 = bVar5 + 1, 3 < bVar5))",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00011474 manages temporary file cleanup based on a flag, while 00011550 handles directory creation and path traversal.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "11474",
+    "11550"
+  ],
+  "selection_evidence": [
+    {
+      "address": "11474",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "11550",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the 3-level directory check?",
+    "Are the file operations atomic?"
+  ]
+}

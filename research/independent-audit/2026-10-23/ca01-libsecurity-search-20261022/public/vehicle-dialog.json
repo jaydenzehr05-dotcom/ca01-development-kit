@@ -1,0 +1,65 @@
+{
+  "vinDetails": [
+    {
+      "title": "Doorjamb",
+      "sectionTitle": "You can find your VIN as indicated in highlighted sections of the Image",
+      "vinDescription": "You can find your VIN on a label on the driver-side doorjamb.",
+      "sectionSubTitle": "",
+      "vinImage": "/content/dam/sdp/toyota/assets/1.png"
+    },
+    {
+      "title": "Dashboard",
+      "sectionTitle": "You can find your VIN as indicated in highlighted sections of the Image",
+      "vinDescription": "You can find your VIN on a metal plate on your dashboard, near the windshield on the driver\u2019s side.",
+      "sectionSubTitle": "",
+      "vinImage": "/content/dam/sdp/toyota/assets/2.png"
+    },
+    {
+      "title": "Vehicle Registration Card",
+      "sectionTitle": "You can find your VIN as indicated in highlighted sections of the Image",
+      "vinDescription": "You can find your VIN on the vehicle registration card issued by the Department of Motor Vehicles.",
+      "sectionSubTitle": "",
+      "vinImage": "/content/dam/sdp/toyota/assets/3.png"
+    },
+    {
+      "title": "Insurance Card",
+      "sectionTitle": "You can find your VIN as indicated in highlighted sections of the Image",
+      "vinDescription": "You can find your VIN on the Insurance Identification Card issued by your insurance company.",
+      "sectionSubTitle": "",
+      "vinImage": "/content/dam/sdp/toyota/assets/4.png"
+    },
+    {
+      "title": "",
+      "sectionTitle": "",
+      "vinDescription": "",
+      "sectionSubTitle": "",
+      "vinImage": "/content/dam/sdp/toyota/assets/Path 48042@2x.png"
+    }
+  ],
+  "vin": "",
+  "region": null,
+  "lang": null,
+  "model": null,
+  "year": null,
+  "heading": "Select A Vehicle",
+  "vinLabel": "Enter Your VIN",
+  "vinDivilsionFieldError": "This VIN is not valid. Please enter a valid Toyota VIN",
+  "dropDownTitle": "Choose your Toyota Vehicle",
+  "multiMediaTitle": "Choose your Multimedia Unit Type",
+  "submitButton": "Go",
+  "multiMediaPlaceHolder": "Select Type",
+  "vinRegionBasedError": "This VIN is not valid. Please enter a valid US VIN",
+  "vinNotFoundError": "Requested VIN data not found",
+  "yearPlaceHolder": "Select Year",
+  "modelPlaceHolder": "Select Model",
+  "orLabel": "OR",
+  "vinFieldError": "Please enter a valid VIN",
+  "vinPlaceHolder": "TYPE VIN",
+  "findVinLabel": "Where can I find this?",
+  "imageType": "vehicleJelly",
+  "isImageEnabled": "yes",
+  "errorSignImageRef": "/content/dam/sdp/lexus/miscellaneous/error-sign.png",
+  "navigationText": "with navigation",
+  "withoutNavigationText": "without navigation",
+  "vinVehicleText": "Please enter VIN and proceed"
+}

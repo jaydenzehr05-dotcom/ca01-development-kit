@@ -1,0 +1,38 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DVDP",
+  "examined_functions": [
+    "000099a0",
+    "00009d50"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 235,
+    "prompt_tokens": 1433,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1668
+  },
+  "next_focus": [
+    "C",
+    "o",
+    "m"
+  ],
+  "observations": [
+    {
+      "address": "0x000099a0",
+      "claim": "Calls function pointer if conditions met",
+      "evidence_snippet": "(*DAT_000099cc)();",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function _INIT_0 checks for null pointer before calling a function pointer. FUN_00009d50 handles various command cases with conditional logic.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+  "unresolved_questions": [
+    "What is the purpose of command 0x1a handling?",
+    "What does the 't' and 'n' character check signify?"
+  ]
+}

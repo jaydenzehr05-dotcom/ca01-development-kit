@@ -1,0 +1,310 @@
+{
+  "binary": "09-boot.bin",
+  "bytes": 381272,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "0300df8b0000000028d105003000000018f102000000010038f0020008f00100",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [
+    {
+      "offset": "0x1c319",
+      "value": "SH(1st) image is NOT cached, load image from nor-flash"
+    },
+    {
+      "offset": "0x1c4eb",
+      "value": "system failed"
+    },
+    {
+      "offset": "0x1ceb2",
+      "value": "missing or unknown FLASH type"
+    },
+    {
+      "offset": "0x1ced1",
+      "value": "%s FLASH (%d x %d)"
+    },
+    {
+      "offset": "0x1d09f",
+      "value": "ERROR: too many flash sectors"
+    },
+    {
+      "offset": "0x1d0be",
+      "value": "Flash %s timeout at address %lx data %lx"
+    },
+    {
+      "offset": "0x1d0e8",
+      "value": "Flash %s error at address %lx"
+    },
+    {
+      "offset": "0x1d173",
+      "value": "## Unknown FLASH on Bank %d - Size = 0x%08lx = %ld MB"
+    },
+    {
+      "offset": "0x1d1aa",
+      "value": "Can't erase unknown flash type - aborted"
+    },
+    {
+      "offset": "0x1d465",
+      "value": "## Booting kernel from Legacy Image at %08lx ..."
+    },
+    {
+      "offset": "0x1d54a",
+      "value": "ERROR: can't get kernel image!"
+    },
+    {
+      "offset": "0x1d58d",
+      "value": "Could not find kernel entry point!"
+    },
+    {
+      "offset": "0x1d781",
+      "value": "passing arguments 'arg ...'; when booting a Linux kernel,"
+    },
+    {
+      "offset": "0x1dbca",
+      "value": "load binary file from a Ext2 filesystem"
+    },
+    {
+      "offset": "0x1dc61",
+      "value": "      to address 'addr' from ext2 filesystem"
+    },
+    {
+      "offset": "0x1de1f",
+      "value": "load binary file from a dos filesystem"
+    },
+    {
+      "offset": "0x1deb6",
+      "value": "      to address 'addr' from dos filesystem"
+    },
+    {
+      "offset": "0x1def0",
+      "value": "print information about filesystem"
+    },
+    {
+      "offset": "0x1df2c",
+      "value": "    - print information about filesystem from 'dev' on 'interface'"
+    },
+    {
+      "offset": "0x1e08b",
+      "value": "Error: end address (0x%08lx) not in flash!"
+    },
+    {
+      "offset": "0x1e0bb",
+      "value": "%sProtect Flash Bank # %ld"
+    },
+    {
+      "offset": "0x1e0f1",
+      "value": "%sProtect Flash Sectors %d-%d in Bank # %zu"
+    },
+    {
+      "offset": "0x1e123",
+      "value": "Only FLASH Banks # 1 ... # %d supported"
+    },
+    {
+      "offset": "0x1e173",
+      "value": "Erase Flash Bank # %ld "
+    },
+    {
+      "offset": "0x1e18b",
+      "value": "Erase Flash Sectors %d-%d in Bank # %zu "
+    },
+    {
+      "offset": "0x1e1c9",
+      "value": "print FLASH memory information"
+    },
+    {
+      "offset": "0x1e1e9",
+      "value": "    - print information for all FLASH memory banks"
+    },
+    {
+      "offset": "0x1e225",
+      "value": "    - print information for FLASH memory bank # N"
+    },
+    {
+      "offset": "0x1e257",
+      "value": "erase FLASH memory"
+    },
+    {
+      "offset": "0x1e274",
+      "value": "    - erase FLASH from addr 'start' to addr 'end'"
+    },
+    {
+      "offset": "0x1e2b7",
+      "value": "    - erase FLASH from addr 'start' to the end of sect w/addr 'start'+'len'-1"
+    },
+    {
+      "offset": "0x1e315",
+      "value": "    - erase sectors SF-SL in FLASH bank # N"
+    },
+    {
+      "offset": "0x1e34e",
+      "value": "    - erase FLASH bank # N"
+    },
+    {
+      "offset": "0x1e373",
+      "value": "    - erase all FLASH banks"
+    },
+    {
+      "offset": "0x1e38f",
+      "value": "enable or disable FLASH write protection"
+    },
+    {
+      "offset": "0x1e3c6",
+      "value": "    - protect FLASH from addr 'start' to addr 'end'"
+    },
+    {
+      "offset": "0x1e410",
+      "value": "    - protect FLASH from addr 'start' to end of sect w/addr 'start'+'len'-1"
+    },
+    {
+      "offset": "0x1e472",
+      "value": "    - protect sectors SF-SL in FLASH bank # N"
+    },
+    {
+      "offset": "0x1e4b3",
+      "value": "    - protect FLASH bank # N"
+    },
+    {
+      "offset": "0x1e4e0",
+      "value": "    - protect all FLASH banks"
+    },
+    {
+      "offset": "0x1e514",
+      "value": "    - make FLASH from addr 'start' to addr 'end' writable"
+    },
+    {
+      "offset": "0x1e565",
+      "value": "    - make FLASH from addr 'start' to end of sect w/addr 'start'+'len'-1 wrtable"
+    },
+    {
+      "offset": "0x1e5cc",
+      "value": "    - make sectors SF-SL writable in FLASH bank # N"
+    },
+    {
+      "offset": "0x1e613",
+      "value": "    - make FLASH bank # N writable"
+    },
+    {
+      "offset": "0x1e646",
+      "value": "    - make all FLASH banks writable"
+    },
+    {
+      "offset": "0x1ea0f",
+      "value": "Copy to Flash... "
+    },
+    {
+      "offset": "0x1ee93",
+      "value": "%s version %d.%d"
+    },
+    {
+      "offset": "0x1ef3e",
+      "value": "MMC sub system"
+    },
+    {
+      "offset": "0x1f4ec",
+      "value": "print monitor version"
+    },
+    {
+      "offset": "0x1f5b3",
+      "value": "Timeout writing to Flash"
+    },
+    {
+      "offset": "0x1f5cd",
+      "value": "Flash not Erased"
+    },
+    {
+      "offset": "0x1f5df",
+      "value": "Can't write to protected Flash sectors"
+    },
+    {
+      "offset": "0x1f607",
+      "value": "Outside available Flash"
+    },
+    {
+      "offset": "0x1f651",
+      "value": "Unknown Vendor of Flash"
+    },
+    {
+      "offset": "0x1f66a",
+      "value": "Unknown Type of Flash"
+    },
+    {
+      "offset": "0x1f681",
+      "value": "General Flash Programming Error"
+    },
+    {
+      "offset": "0x1f6b7",
+      "value": "flash.c"
+    },
+    {
+      "offset": "0x1f8f0",
+      "value": "Filesystem Image"
+    },
+    {
+      "offset": "0x1f91a",
+      "value": "Kernel Image"
+    },
+    {
+      "offset": "0x1fc25",
+      "value": "clear kernel memory"
+    },
+    {
+      "offset": "0x1fca4",
+      "value": "ext2load mmc 1:%d %lx /opt/ftl/boot/bios.bin"
+    },
+    {
+      "offset": "0x1fcef",
+      "value": "ext2load mmc 1:%d %lx /opt/ftl/boot/s-bios.bin"
+    },
+    {
+      "offset": "0x1fde3",
+      "value": "SWFLAG: rootfs->/dev/mmcblk0p1, uimg->mmc 1:1"
+    },
+    {
+      "offset": "0x1fe1b",
+      "value": "/dev/mmcblk0p1"
+    },
+    {
+      "offset": "0x1fe3b",
+      "value": "SWFLAG: rootfs->/dev/mmcblk0p2, uimg->mmc 1:2"
+    },
+    {
+      "offset": "0x1fe6a",
+      "value": "/dev/mmcblk0p2"
+    },
+    {
+      "offset": "0x1ff12",
+      "value": "Clear kernel memory"
+    },
+    {
+      "offset": "0x201e8",
+      "value": "incompatible version"
+    },
+    {
+      "offset": "0x20229",
+      "value": "Starting kernel ..."
+    },
+    {
+      "offset": "0x202e7",
+      "value": "Partition %d: Filesystem: %s \"%s\""
+    },
+    {
+      "offset": "0x203bc",
+      "value": "Failed to mount ext2 filesystem..."
+    },
+    {
+      "offset": "0x21665",
+      "value": "root_emmc=root=${root_dev} rootfstype=ext3 ro rootwait"
+    },
+    {
+      "offset": "0x217a4",
+      "value": "sl_set=${setargs} ${con} ${l_init} root=${root_dev} rootfstype=ext3 ro rootwait"
+    },
+    {
+      "offset": "0x21c6d",
+      "value": "opt_dir=10.0.2.2:/usr/local/export/opt/"
+    },
+    {
+      "offset": "0x41bae",
+      "value": "incompatible version"
+    }
+  ],
+  "sha256": "5d0aba88701e97db3a0c1d611fac0e9f2edd130c1262e4a4130a060c4da1db63"
+}

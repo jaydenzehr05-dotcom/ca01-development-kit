@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/lib/libipas_grp.so",
+  "examined_functions": [
+    "00039560",
+    "00039780"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 215,
+    "prompt_tokens": 2464,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2679
+  },
+  "next_focus": [
+    "Parameter validation logic",
+    "VRAM info retrieval mechanism"
+  ],
+  "observations": [
+    {
+      "address": "0x00039560",
+      "claim": "Function validates parameter 1 against 3 limit",
+      "evidence_snippet": "if (3 < param_1)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00039780",
+      "claim": "Function calls VRAM info retrieval with parameter 1",
+      "evidence_snippet": "fs_gdr_GetPhyPlaneVRAMINFO(param_1,",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle VRAM plane information and display plane composition. First function retrieves plane VRAM info based on parameters. Second function processes display plane composition.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "39560",
+    "39780"
+  ],
+  "selection_evidence": [
+    {
+      "address": "39560",
+      "score": 182,
+      "tags": [
+        "graphics"
+      ]
+    },
+    {
+      "address": "39780",
+      "score": 182,
+      "tags": [
+        "graphics"
+      ]
+    }
+  ],
+  "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the VRAM info values represent?",
+    "How are the display plane parameters used?"
+  ]
+}

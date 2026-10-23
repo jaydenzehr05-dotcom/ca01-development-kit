@@ -1,0 +1,22 @@
+{
+  "binary": "02-middle-ware.bin",
+  "bytes": 719415,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "0200d246010000002bf80a00002e2f6f70742f66746c2f62696e2f726d61315f",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [
+    {
+      "offset": "0xd",
+      "value": "./opt/ftl/bin/rma1_hwreg"
+    },
+    {
+      "offset": "0x10d",
+      "value": "./opt/ftl/bin/vigilancer"
+    },
+    {
+      "offset": "0x92cb9",
+      "value": "i\\^zsys"
+    }
+  ],
+  "sha256": "8ed2c0b2ec129582e4eb7ca901869eb36626fa11160683b4cf4fa232c7f3be1f"
+}

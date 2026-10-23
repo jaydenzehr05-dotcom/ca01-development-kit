@@ -1,0 +1,37 @@
+{
+  "binary": "./opt/ftl/lib/libipas_skt.so",
+  "examined_functions": [
+    "00011378",
+    "00011214"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 624,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 880
+  },
+  "next_focus": [
+    "Data structure at 0001124c",
+    "Function pointer at 00011254"
+  ],
+  "observations": [
+    {
+      "address": "0x00011214",
+      "claim": "Calls function pointer from data structure",
+      "evidence_snippet": "(**(code **)(iVar1 + DAT_00011254))",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function rq_skt_Open handles socket creation with error handling. Function _INIT_0 appears to be an initialization routine calling a function pointer.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "f6cb7d7fb510a4d97e81df828fcbb870e1dd678c12e01980adac898519e395a8",
+  "unresolved_questions": [
+    "What does param_1 value 2 represent?",
+    "What is the purpose of the data structure at 0001124c?"
+  ]
+}

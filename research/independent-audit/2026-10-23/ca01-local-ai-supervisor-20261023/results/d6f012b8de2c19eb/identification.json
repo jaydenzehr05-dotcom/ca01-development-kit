@@ -1,0 +1,9 @@
+{
+  "binary": "10-bootsig.bin",
+  "bytes": 356,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "0200ae1700000000400100002400000020010000e0ff03003800000020000000",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [],
+  "sha256": "d6f012b8de2c19eb561015b9e39a0c7bda771c1407838b4235aa7c61058ceb52"
+}

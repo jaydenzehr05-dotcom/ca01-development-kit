@@ -1,0 +1,30 @@
+{
+  "input": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/04-device-driver.bin",
+  "sha256": "f15d56c8da18a6cadda5aa6a0b9c17986e78c707b1a4270d9991d2beabcabbed",
+  "observed_component_prefix": 12,
+  "compressed_length": 236700,
+  "unverified_trailer_crc32_hex": "f6b6f128",
+  "unverified_gzip_isize": 552960,
+  "scan_range": [
+    64000,
+    130000
+  ],
+  "stats": {
+    "headers_tested": 255797,
+    "first_chunk_plausible": 1,
+    "eof_near_footer": 1
+  },
+  "candidates": [
+    {
+      "start_byte": 90137,
+      "start_bit": 7,
+      "output_bytes": 339905,
+      "end_approx_byte": 236435,
+      "footer_byte": 236436,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "e377aa6ef8aafe004f1eadc903deda6c5b818b4b1f5c27e3e5efe0a1a1183bf9"
+    }
+  ],
+  "elapsed_seconds": 1.672,
+  "disclaimer": "Candidate complete DEFLATE suffix (unknown encrypted prefix and 32 KiB initial LZ history); not original complete gzip or verified TAR"
+}

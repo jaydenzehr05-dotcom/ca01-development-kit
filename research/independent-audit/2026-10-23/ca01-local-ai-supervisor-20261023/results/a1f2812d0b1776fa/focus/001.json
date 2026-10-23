@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/lib/libipas_sysc.so",
+  "examined_functions": [
+    "00021cfc",
+    "00021dd0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 239,
+    "prompt_tokens": 1369,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1608
+  },
+  "next_focus": [
+    "File system call patterns",
+    "Error handling routines"
+  ],
+  "observations": [
+    {
+      "address": "0x00021cfc",
+      "claim": "Opens log file and sets up logging state",
+      "evidence_snippet": "iVar3 = rq_fls_Open(uVar2,iVar4 + DAT_00021dcc,local_1c,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00021dd0",
+      "claim": "Creates log files in directory with error handling",
+      "evidence_snippet": "iVar2 = rq_fls_Open(uVar3,iVar6 + iVar4,local_2c,0)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions handle file logging operations including opening, creating, and managing log files with error handling and directory operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "21cfc",
+    "21dd0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "21cfc",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "21dd0",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific log file naming convention is used?",
+    "What is the purpose of the 0x2c byte offset?"
+  ]
+}

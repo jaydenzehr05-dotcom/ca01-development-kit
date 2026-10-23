@@ -1,0 +1,38 @@
+[
+  {
+    "component": "middleware",
+    "exit_code": 0,
+    "stderr": "",
+    "expected_total": 1680262,
+    "source_sha256": "9277013ad5f3cd139c36371d56a8e259638be665800ea25ab7ae838e602bdebf",
+    "report": "/tmp/ca01-libsecurity-tools/middleware-infgen.txt",
+    "total_lines": [
+      "! stats total inout 682090:7 (553878) 1680262"
+    ],
+    "caveat": "Artificial 32768-byte zero history and alignment prelude added for disassembly; this does not reconstruct missing history or verify gzip CRC/signature."
+  },
+  {
+    "component": "kernel",
+    "exit_code": 0,
+    "stderr": "",
+    "expected_total": 1681828,
+    "source_sha256": "d34976cf69b7f67b2d384713d2a7ea06094063db86afc966e8a197972c3059eb",
+    "report": "/tmp/ca01-libsecurity-tools/kernel-infgen.txt",
+    "total_lines": [
+      "! stats total inout 1674350:4 (1671548) 1681828"
+    ],
+    "caveat": "Artificial 32768-byte zero history and alignment prelude added for disassembly; this does not reconstruct missing history or verify gzip CRC/signature."
+  },
+  {
+    "component": "audio",
+    "exit_code": 0,
+    "stderr": "",
+    "expected_total": 23472637,
+    "source_sha256": "6d78254c394b65dbfed0c7519815f30b0b18d3b8f2d9f99b29a04120cd5c2f8e",
+    "report": "/tmp/ca01-libsecurity-tools/audio-infgen.txt",
+    "total_lines": [
+      "! stats total inout 9349784:6 (6605733) 23472637"
+    ],
+    "caveat": "Artificial 32768-byte zero history and alignment prelude added for disassembly; this does not reconstruct missing history or verify gzip CRC/signature."
+  }
+]

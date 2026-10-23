@@ -1,0 +1,14 @@
+{
+  "binary": "05-bluetooth.bin",
+  "bytes": 633681,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "0000e1db0100000045ab09004a73c4a82f578866baca0799f3de27537f808f3b",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [
+    {
+      "offset": "0x403e",
+      "value": "WqO^qMUi"
+    }
+  ],
+  "sha256": "6fa1f29d8ac60f2c7068a9bd520e6edeb9c5a7e2040d257d7fcfc602bd5e4656"
+}

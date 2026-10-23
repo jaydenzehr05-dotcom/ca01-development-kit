@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_AUDIO",
+  "examined_functions": [
+    "00019dfc",
+    "0004d724"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 230,
+    "prompt_tokens": 1504,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1734
+  },
+  "next_focus": [
+    "File header structure",
+    "Cache mechanism"
+  ],
+  "observations": [
+    {
+      "address": "0x00019dfc",
+      "claim": "Opens and reads file header with error handling",
+      "evidence_snippet": "open(DAT_0001a094,0,param_3,param_4",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0004d724",
+      "claim": "Manages file caching and reopens files when needed",
+      "evidence_snippet": "close((&DAT_0014991c)[iVar3 * 2]",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00019dfc handles file reading with error checking, while 0004d724 manages file operations and caching.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05",
+  "unresolved_questions": [
+    "What is the purpose of the file header read?",
+    "How is the cache managed?"
+  ]
+}

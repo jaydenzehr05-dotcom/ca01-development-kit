@@ -1,0 +1,57 @@
+{
+  "hmi_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "sysc_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+  "entry": "0x3ec98",
+  "original_function_ran": true,
+  "file_service_genuine": false,
+  "input_file_exists": false,
+  "original_gui_rendered": false,
+  "results": [
+    {
+      "length": 7,
+      "returned": true,
+      "output_prefix": "b'(none)\\x00'",
+      "path_failed": true,
+      "original_instruction_count": 21,
+      "imported_services": [
+        {
+          "service": "rq_fls_Open",
+          "path": "type.txt",
+          "mode": "r",
+          "result": 1,
+          "meaning": "Explicit nonzero open-failure fixture; NOT original library code"
+        },
+        {
+          "service": "memcpy",
+          "size": 7,
+          "source": "0x296708",
+          "copied_first_7": "(none)"
+        }
+      ],
+      "caveat": "Original function, explicit failed file open and generic guest memcpy; not authentic file library"
+    },
+    {
+      "length": 16,
+      "returned": true,
+      "output_prefix": "b'(none)\\x00\\x00[MC]Read'",
+      "path_failed": true,
+      "original_instruction_count": 21,
+      "imported_services": [
+        {
+          "service": "rq_fls_Open",
+          "path": "type.txt",
+          "mode": "r",
+          "result": 1,
+          "meaning": "Explicit nonzero open-failure fixture; NOT original library code"
+        },
+        {
+          "service": "memcpy",
+          "size": 16,
+          "source": "0x296708",
+          "copied_first_7": "(none)"
+        }
+      ],
+      "caveat": "Original function, explicit failed file open and generic guest memcpy; not authentic file library"
+    }
+  ]
+}

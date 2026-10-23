@@ -1,0 +1,14 @@
+
+
+===== entry @ 0000d8f8 size=48 =====
+VALID true MESSAGE 
+
+void processEntry entry(undefined4 param_1,undefined4 param_2)
+
+{
+  __libc_start_main(DAT_0000d92c,param_2,&stack0x00000004,DAT_0000d930,DAT_0000d928,param_1);
+                    /* WARNING: Subroutine does not return */
+  abort();
+}
+
+

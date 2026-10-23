@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_SPC",
+  "examined_functions": [
+    "00010a48",
+    "00010cb0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 218,
+    "prompt_tokens": 2338,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2556
+  },
+  "next_focus": [
+    "Memory allocation patterns",
+    "Error handling routines"
+  ],
+  "observations": [
+    {
+      "address": "0x00010a48",
+      "claim": "Function validates input data before processing.",
+      "evidence_snippet": "if (local_20 == (byte *)0x0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00010cb0",
+      "claim": "Function allocates memory for message handling.",
+      "evidence_snippet": "puVar5 = (undefined4 *)rq_mem_Alloc(1,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle firmware communication and error tracing. First function processes data with validation, second manages system tasks and message sending.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "10a48",
+    "10cb0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "10a48",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "10cb0",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of DAT_00025d44?",
+    "How are the magic constants used in the code?"
+  ]
+}

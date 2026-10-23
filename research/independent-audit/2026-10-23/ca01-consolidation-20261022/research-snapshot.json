@@ -1,0 +1,107 @@
+{
+  "path": "/tmp/ca01-firmware-updater-research",
+  "head": "a562b3b3ca8ba91f697b2b8624cb0aeea9f8e479",
+  "status": " M README.md\n M docs/CA01_HARDWARE_INTERFACES.md\n M docs/CA01_MISSING_EXECUTABLES.md\n M docs/CA01_UPDATER_CALL_GRAPH.md\n M evidence/ca01-updater-binary-paths.json\n?? docs/CA01_ADDITIONAL_RECOVERY.md\n?? docs/CA01_DEPENDENCY_INVENTORY.md\n?? docs/CA01_LIBSECURITY_LOCAL_SEARCH.md\n?? docs/CA01_LIBSECURITY_PUBLIC_SEARCH.md\n?? docs/CA01_LIBSECURITY_SEARCH.md\n?? docs/CA01_SECURITY_INTERFACES.md\n?? evidence/ca01-additional-recovery.json\n?? evidence/ca01-dependency-inventory.json\n?? evidence/ca01-hardware-interfaces.json\n?? evidence/ca01-libsecurity-local-search.json\n?? evidence/ca01-libsecurity-public-search.json\n?? evidence/ca01-libsecurity-tool-validation.json\n?? evidence/ca01-security-interfaces.json\n?? tests/test_dependency_inventory.py\n?? tools/ca01_dependency_inventory.py\n",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 10091,
+      "sha256": "44c2df2ac06bd84bd9e24029af2ff8a2b100f04b992d6b0fa5784bca9ff4211e"
+    },
+    {
+      "path": "docs/CA01_ADDITIONAL_RECOVERY.md",
+      "size": 5118,
+      "sha256": "473ce25e76c17b7225d7ea6a7cdb7a43aa35fe26c87945aea877d5fdcc82b637"
+    },
+    {
+      "path": "docs/CA01_DEPENDENCY_INVENTORY.md",
+      "size": 8687,
+      "sha256": "4344004d981a4ba734a5da7e9d0adf9c7cdd4730a33f622726a13b090d2df784"
+    },
+    {
+      "path": "docs/CA01_HARDWARE_INTERFACES.md",
+      "size": 8169,
+      "sha256": "4b53beb7253f79ecf0d39c4f11deb9e41952c3da1967aa26deefd8da721fb0aa"
+    },
+    {
+      "path": "docs/CA01_LIBSECURITY_LOCAL_SEARCH.md",
+      "size": 4181,
+      "sha256": "8304ddfca3f6217229d65fe0291aa4db04d1512f78c5a46894ed58f73a57f3c0"
+    },
+    {
+      "path": "docs/CA01_LIBSECURITY_PUBLIC_SEARCH.md",
+      "size": 3553,
+      "sha256": "388cc29a9f8f23aafff0e73110259ab4a596a0771d84bb83a681afa82fcc9393"
+    },
+    {
+      "path": "docs/CA01_LIBSECURITY_SEARCH.md",
+      "size": 3084,
+      "sha256": "50298e38e9ce269b94a95636bc8cf0a269ba4dc6f2078749a3eb58b53609aab6"
+    },
+    {
+      "path": "docs/CA01_MISSING_EXECUTABLES.md",
+      "size": 5577,
+      "sha256": "b2af5b1df070b3614fbfb91b6877b68a3195309f40eb90c1b4518e9a281bc934"
+    },
+    {
+      "path": "docs/CA01_SECURITY_INTERFACES.md",
+      "size": 7379,
+      "sha256": "e9420c5d6903d8b57616031390b5683c03949520340ad197590de09f46062d86"
+    },
+    {
+      "path": "docs/CA01_UPDATER_CALL_GRAPH.md",
+      "size": 19125,
+      "sha256": "92db0b218c25ef23e6be3ef5f2b4e27862b73e0509923c00b970807aa56db891"
+    },
+    {
+      "path": "evidence/ca01-additional-recovery.json",
+      "size": 38676,
+      "sha256": "a199feb2191fd4130dfe821bb05e8601acf2bb7d40d0b50146a858ff45b3badb"
+    },
+    {
+      "path": "evidence/ca01-dependency-inventory.json",
+      "size": 1245379,
+      "sha256": "1131d3fc8fd6cfb6e5840aeaf76e3fbfeed0884b6181f31b7b611ad9cc6fd810"
+    },
+    {
+      "path": "evidence/ca01-hardware-interfaces.json",
+      "size": 34735,
+      "sha256": "2e5fa93aca5970be97894d8bf20f29d7578aad380003b77bb30bb2e8b04477f5"
+    },
+    {
+      "path": "evidence/ca01-libsecurity-local-search.json",
+      "size": 17141,
+      "sha256": "f8c1f63cfe379350185f5cc5ce7d079b5916b810c6c2b6f62935c4afbffa51ff"
+    },
+    {
+      "path": "evidence/ca01-libsecurity-public-search.json",
+      "size": 6018,
+      "sha256": "ac60e6803b5f20244afc5d0ed5554718bf08a9ffc2b06af22fd938b9ae7adbbd"
+    },
+    {
+      "path": "evidence/ca01-libsecurity-tool-validation.json",
+      "size": 4029,
+      "sha256": "aedf790f2268ed41e953e606a65edb252e20ddbd45321f5ef450f303d9378b60"
+    },
+    {
+      "path": "evidence/ca01-security-interfaces.json",
+      "size": 13238,
+      "sha256": "951421cb84b1537f8bc20de53cd16431a3bc20332d189e2e947420163a744bac"
+    },
+    {
+      "path": "evidence/ca01-updater-binary-paths.json",
+      "size": 12114,
+      "sha256": "52b1bc3bc93cbe9ddc4b613d1f7a78b5a4235e75878edaaf7a3687133e4755a5"
+    },
+    {
+      "path": "tests/test_dependency_inventory.py",
+      "size": 4509,
+      "sha256": "fedadc1fe61d0fa3e39b45b9c380f58169fe231af19c8afedf38df55cac4c955"
+    },
+    {
+      "path": "tools/ca01_dependency_inventory.py",
+      "size": 5338,
+      "sha256": "4a18e0000047023c3b04e5e56777e632161c9c05333d70077ffaa35780414e8c"
+    }
+  ]
+}

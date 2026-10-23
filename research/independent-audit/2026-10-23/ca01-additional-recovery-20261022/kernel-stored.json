@@ -1,0 +1,191 @@
+[
+  {
+    "byte": 199813,
+    "bit": 0,
+    "size": 1616241,
+    "end": 1808562,
+    "stored_length": 32822
+  },
+  {
+    "byte": 232640,
+    "bit": 0,
+    "size": 1583419,
+    "end": 1808562,
+    "stored_length": 32815
+  },
+  {
+    "byte": 265460,
+    "bit": 0,
+    "size": 1550604,
+    "end": 1808562,
+    "stored_length": 32810
+  },
+  {
+    "byte": 363881,
+    "bit": 0,
+    "size": 1452186,
+    "end": 1808562,
+    "stored_length": 32805
+  },
+  {
+    "byte": 396691,
+    "bit": 0,
+    "size": 1419381,
+    "end": 1808562,
+    "stored_length": 32812
+  },
+  {
+    "byte": 462316,
+    "bit": 0,
+    "size": 1353761,
+    "end": 1808562,
+    "stored_length": 32807
+  },
+  {
+    "byte": 495128,
+    "bit": 0,
+    "size": 1320954,
+    "end": 1808562,
+    "stored_length": 32830
+  },
+  {
+    "byte": 527963,
+    "bit": 0,
+    "size": 1288124,
+    "end": 1808562,
+    "stored_length": 32815
+  },
+  {
+    "byte": 560783,
+    "bit": 0,
+    "size": 1255309,
+    "end": 1808562,
+    "stored_length": 32820
+  },
+  {
+    "byte": 593608,
+    "bit": 0,
+    "size": 1222489,
+    "end": 1808562,
+    "stored_length": 32807
+  },
+  {
+    "byte": 724870,
+    "bit": 0,
+    "size": 1091170,
+    "end": 1808562,
+    "stored_length": 32802
+  },
+  {
+    "byte": 790496,
+    "bit": 0,
+    "size": 1025495,
+    "end": 1808562,
+    "stored_length": 32805
+  },
+  {
+    "byte": 823306,
+    "bit": 0,
+    "size": 992690,
+    "end": 1808562,
+    "stored_length": 32793
+  },
+  {
+    "byte": 856104,
+    "bit": 0,
+    "size": 959897,
+    "end": 1808562,
+    "stored_length": 32813
+  },
+  {
+    "byte": 888922,
+    "bit": 0,
+    "size": 927084,
+    "end": 1808562,
+    "stored_length": 32813
+  },
+  {
+    "byte": 921740,
+    "bit": 0,
+    "size": 894271,
+    "end": 1808562,
+    "stored_length": 32822
+  },
+  {
+    "byte": 1020174,
+    "bit": 0,
+    "size": 795821,
+    "end": 1808562,
+    "stored_length": 32832
+  },
+  {
+    "byte": 1053011,
+    "bit": 0,
+    "size": 762989,
+    "end": 1808562,
+    "stored_length": 32827
+  },
+  {
+    "byte": 1085843,
+    "bit": 0,
+    "size": 730162,
+    "end": 1808562,
+    "stored_length": 32810
+  },
+  {
+    "byte": 1118658,
+    "bit": 0,
+    "size": 697352,
+    "end": 1808562,
+    "stored_length": 32818
+  },
+  {
+    "byte": 1249943,
+    "bit": 0,
+    "size": 566077,
+    "end": 1808562,
+    "stored_length": 32810
+  },
+  {
+    "byte": 1282758,
+    "bit": 0,
+    "size": 533267,
+    "end": 1808562,
+    "stored_length": 32801
+  },
+  {
+    "byte": 1315564,
+    "bit": 0,
+    "size": 500466,
+    "end": 1808562,
+    "stored_length": 32823
+  },
+  {
+    "byte": 1348392,
+    "bit": 0,
+    "size": 467643,
+    "end": 1808562,
+    "stored_length": 32817
+  },
+  {
+    "byte": 1513334,
+    "bit": 0,
+    "size": 298469,
+    "end": 1808562,
+    "stored_length": 32833
+  },
+  {
+    "byte": 1546172,
+    "bit": 0,
+    "size": 265636,
+    "end": 1808562,
+    "stored_length": 32807
+  },
+  {
+    "byte": 1645000,
+    "bit": 0,
+    "size": 166489,
+    "end": 1808562,
+    "stored_length": 32835
+  }
+]

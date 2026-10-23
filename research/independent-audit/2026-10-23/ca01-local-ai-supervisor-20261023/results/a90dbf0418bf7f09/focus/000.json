@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DVDDECK",
+  "examined_functions": [
+    "0000e508",
+    "0000e640"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 232,
+    "prompt_tokens": 1495,
+    "prompt_tokens_details": {
+      "cached_tokens": 163
+    },
+    "total_tokens": 1727
+  },
+  "next_focus": [
+    "Memory allocation patterns",
+    "Message sending functions"
+  ],
+  "observations": [
+    {
+      "address": "0x0000e508",
+      "claim": "Function validates param_2 and calls rq_mem_Alloc",
+      "evidence_snippet": "if ((param_2 == 0) || (sVar1 = FUN_0000e284(), sVar1 == 0xff))",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0000e640",
+      "claim": "Function uses rq_sys_GetTskMode to check task mode",
+      "evidence_snippet": "iVar2 = rq_sys_GetTskMode(uVar3)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two functions handle DVD deck commands with memory allocation and message sending. Both validate parameters and call helper functions.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "e508",
+    "e640"
+  ],
+  "selection_evidence": [
+    {
+      "address": "e508",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "e640",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the helper functions do?",
+    "What are the data structures being copied?"
+  ]
+}

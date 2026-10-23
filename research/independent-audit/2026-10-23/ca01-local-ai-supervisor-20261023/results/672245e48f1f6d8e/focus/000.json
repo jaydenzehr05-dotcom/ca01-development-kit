@@ -1,0 +1,62 @@
+{
+  "binary": "./opt/ftl/lib/libi2c_cm.so",
+  "examined_functions": [
+    "00010718",
+    "00010744"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 233,
+    "prompt_tokens": 535,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 768
+  },
+  "next_focus": [
+    "D",
+    "a",
+    "t"
+  ],
+  "observations": [
+    {
+      "address": "0x00010718",
+      "claim": "Calls __gmon_start__ if condition is met",
+      "evidence_snippet": "if (*(int *)(DAT_0001073c + 0x10728 + DAT_00010740) == 0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00010744",
+      "claim": "Performs cleanup with __cxa_finalize if condition met",
+      "evidence_snippet": "if (*(int *)(iVar2 + DAT_00010790) != 0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Analysis of two ARM functions showing entry point and cleanup logic with conditional execution and library initialization calls.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "10718",
+    "10744"
+  ],
+  "selection_evidence": [
+    {
+      "address": "10718",
+      "score": 0,
+      "tags": []
+    },
+    {
+      "address": "10744",
+      "score": 0,
+      "tags": []
+    }
+  ],
+  "source_sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the data variables represent?",
+    "What is the purpose of the conditional checks?"
+  ]
+}

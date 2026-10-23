@@ -1,0 +1,27 @@
+{
+  "description": "Synthetic ARMEL GLES1 pbuffer test frames, NOT factory Toyota GUI",
+  "profiles": [
+    {
+      "width": 800,
+      "height": 480,
+      "pixel_exact_bridge": true,
+      "frames_sha256": [
+        "95c8c81f6f9d0878ce7d873e27360c5132be0de5f54fe0c464097b0444e6626a",
+        "c22372aece705b170e9028a48b40fd31726898d263647632deca10c90485c6a4",
+        "c9fbc23932c54f769c67e43d38dc25629db86c40101ace3ab991ae0524a2a3e7"
+      ],
+      "preview": "results/800x480/synthetic-frame00.png"
+    },
+    {
+      "width": 480,
+      "height": 480,
+      "pixel_exact_bridge": true,
+      "frames_sha256": [
+        "7b94f8ab53fc95d1d0fd54c3615a1be3fbeac9ca628c3cf4ad4d75fd99f30f5d",
+        "7cafb979c23b4855aa4935141068589732d1450d06170383f037fb4329f3d350",
+        "b993c69d27ffc0c1902757d69f86d98aeb4c6cd67d9242b2585f1f199d6a9a8e"
+      ],
+      "preview": "results/480x480/synthetic-frame00.png"
+    }
+  ]
+}

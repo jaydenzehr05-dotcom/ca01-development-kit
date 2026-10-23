@@ -1,0 +1,14 @@
+{
+  "binary": "01-sh-base.bin",
+  "bytes": 892788,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "01002d66000000005c9f0d00180000005c9f0d00000010001000c1a6aa8f8a25",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [
+    {
+      "offset": "0xaef14",
+      "value": "<?QTSmRaJ"
+    }
+  ],
+  "sha256": "91981572726e1e425b938a4aa8b0c4a768071fd02d307a52e15b70a3b2357b0a"
+}

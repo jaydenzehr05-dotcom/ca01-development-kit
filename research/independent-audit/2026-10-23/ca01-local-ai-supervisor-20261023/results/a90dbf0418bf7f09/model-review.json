@@ -1,0 +1,44 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DVDDECK",
+  "examined_functions": [
+    "000101dc",
+    "0006c228"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 207,
+    "prompt_tokens": 1072,
+    "prompt_tokens_details": {
+      "cached_tokens": 163
+    },
+    "total_tokens": 1279
+  },
+  "next_focus": [
+    "M",
+    "e",
+    "s"
+  ],
+  "observations": [
+    {
+      "address": "0x000101dc",
+      "claim": "Task uses prctl to set name 'app_com_task'",
+      "evidence_snippet": "prctl(0xf,\"app_com_task\",0,0,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0006c228",
+      "claim": "Task uses prctl to set name 'app_if_task'",
+      "evidence_snippet": "prctl(0xf,\"app_if_task\",0,0,0)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Two tasks manage DVD deck operations via prctl and message queues. One handles app communication, other manages interface.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+  "unresolved_questions": [
+    "What do the message queue functions do?",
+    "What are the specific task statuses?"
+  ]
+}

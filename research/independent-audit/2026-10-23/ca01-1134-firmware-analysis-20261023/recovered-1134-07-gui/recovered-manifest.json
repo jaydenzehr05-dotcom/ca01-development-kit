@@ -1,0 +1,35 @@
+[
+  {
+    "archive_path": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+    "partial_header_offset": 812986,
+    "partial_data_offset": 813498,
+    "size": 612522,
+    "sha256": "f41d7256548ae70881b8777ae76e37fdd0b6998577c8779cefd3ba25d4209d1b",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-07-gui/recovered/000c69ba-13UP_FR-CA_DA-Base_FormatA.xml"
+  },
+  {
+    "archive_path": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+    "partial_header_offset": 1426362,
+    "partial_data_offset": 1426874,
+    "size": 610350,
+    "sha256": "7442138ae913b6bf56cb52f3be5ae94d8c23bc9736763179d0f67d313e9780fa",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-07-gui/recovered/0015c5ba-13UP_ES-MX_DA-Base_FormatA.xml"
+  },
+  {
+    "archive_path": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+    "partial_header_offset": 2037690,
+    "partial_data_offset": 2038202,
+    "size": 596144,
+    "sha256": "1e9eca3854506419e67e812f60f45de0f40c4a90113f038f11fd7bafdb74b166",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-07-gui/recovered/001f19ba-13UP_EN-US-NA_DA-Base_FormatA.xml"
+  }
+]

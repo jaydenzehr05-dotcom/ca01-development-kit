@@ -1,0 +1,9 @@
+{
+  "binary": "06-audio.bin",
+  "bytes": 9383112,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "0000653b01000000bc2c8f00c62cd8066dbeaf8e75b03910ce29382f23483ffd",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [],
+  "sha256": "94a8b913e56f4e65a260a756c1efb5ab45a1e06a1e670d31b1284a182526e0a7"
+}

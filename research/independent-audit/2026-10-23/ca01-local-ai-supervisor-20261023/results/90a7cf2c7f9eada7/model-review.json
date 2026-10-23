@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libcoll.so",
+  "examined_functions": [
+    "00013bec",
+    "00013b6c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 223,
+    "prompt_tokens": 506,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 729
+  },
+  "next_focus": [
+    "Dynamic function resolution",
+    "Symbol __gmon_start__ usage"
+  ],
+  "observations": [
+    {
+      "address": "0x00013bec",
+      "claim": "Calls function pointer with offset calculation",
+      "evidence_snippet": "(**(code **)(iVar1 + DAT_00013c2c))(iVar1 + DAT_00013c28)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00013b6c",
+      "claim": "Calls __gmon_start__ symbol",
+      "evidence_snippet": "__gmon_start__();",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Two functions found: _INIT_0 with dynamic function call and processEntry calling __gmon_start__.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "90a7cf2c7f9eada7269b09643fcd9c7738bdb4ccab2f043e7419bdc36c852480",
+  "unresolved_questions": [
+    "What is the purpose of the offset calculation?",
+    "What does __gmon_start__ do in this context?"
+  ]
+}

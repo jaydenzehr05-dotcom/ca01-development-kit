@@ -1,0 +1,332 @@
+{
+  "status": "partial_untrusted_deflate_suffix",
+  "start_bit": 554498,
+  "end_bit": 5749011,
+  "end_byte_ceil": 718627,
+  "output_size": 1647494,
+  "known_bytes": 1623501,
+  "unknown_bytes": 23993,
+  "unique_unknown_history_slots": 2060,
+  "known_contiguous_suffix_start": 58946,
+  "known_contiguous_suffix_size": 1588548,
+  "known_contiguous_suffix_sha256": "fd1b6c671ab50ee99465d79af24100af0bf02e0b4c6a4f1dae6e475edc58cdee",
+  "zero_filled_output_sha256": "26fa53c3942a422784f3eb4d759557f1ecaa21e235f882406712b875f42cc396",
+  "blocks": [
+    {
+      "start_bit": 554498,
+      "end_bit": 595107,
+      "final": false,
+      "kind": 2,
+      "output_end": 12800
+    },
+    {
+      "start_bit": 595107,
+      "end_bit": 679861,
+      "final": false,
+      "kind": 2,
+      "output_end": 40538
+    },
+    {
+      "start_bit": 679861,
+      "end_bit": 721251,
+      "final": false,
+      "kind": 2,
+      "output_end": 52213
+    },
+    {
+      "start_bit": 721251,
+      "end_bit": 1011431,
+      "final": false,
+      "kind": 2,
+      "output_end": 130278
+    },
+    {
+      "start_bit": 1011431,
+      "end_bit": 1182726,
+      "final": false,
+      "kind": 2,
+      "output_end": 179529
+    },
+    {
+      "start_bit": 1182726,
+      "end_bit": 1223305,
+      "final": false,
+      "kind": 2,
+      "output_end": 190626
+    },
+    {
+      "start_bit": 1223305,
+      "end_bit": 1311398,
+      "final": false,
+      "kind": 2,
+      "output_end": 221988
+    },
+    {
+      "start_bit": 1311398,
+      "end_bit": 1350680,
+      "final": false,
+      "kind": 2,
+      "output_end": 239279
+    },
+    {
+      "start_bit": 1350680,
+      "end_bit": 1394078,
+      "final": false,
+      "kind": 2,
+      "output_end": 252862
+    },
+    {
+      "start_bit": 1394078,
+      "end_bit": 1436734,
+      "final": false,
+      "kind": 2,
+      "output_end": 269648
+    },
+    {
+      "start_bit": 1436734,
+      "end_bit": 1481986,
+      "final": false,
+      "kind": 2,
+      "output_end": 288925
+    },
+    {
+      "start_bit": 1481986,
+      "end_bit": 1526068,
+      "final": false,
+      "kind": 2,
+      "output_end": 303613
+    },
+    {
+      "start_bit": 1526068,
+      "end_bit": 1569706,
+      "final": false,
+      "kind": 2,
+      "output_end": 317489
+    },
+    {
+      "start_bit": 1569706,
+      "end_bit": 1612470,
+      "final": false,
+      "kind": 2,
+      "output_end": 329836
+    },
+    {
+      "start_bit": 1612470,
+      "end_bit": 1655655,
+      "final": false,
+      "kind": 2,
+      "output_end": 342933
+    },
+    {
+      "start_bit": 1655655,
+      "end_bit": 1699446,
+      "final": false,
+      "kind": 2,
+      "output_end": 362645
+    },
+    {
+      "start_bit": 1699446,
+      "end_bit": 1744260,
+      "final": false,
+      "kind": 2,
+      "output_end": 378049
+    },
+    {
+      "start_bit": 1744260,
+      "end_bit": 1783762,
+      "final": false,
+      "kind": 2,
+      "output_end": 390174
+    },
+    {
+      "start_bit": 1783762,
+      "end_bit": 1867996,
+      "final": false,
+      "kind": 2,
+      "output_end": 417212
+    },
+    {
+      "start_bit": 1867996,
+      "end_bit": 1911560,
+      "final": false,
+      "kind": 2,
+      "output_end": 439149
+    },
+    {
+      "start_bit": 1911560,
+      "end_bit": 1956761,
+      "final": false,
+      "kind": 2,
+      "output_end": 453249
+    },
+    {
+      "start_bit": 1956761,
+      "end_bit": 2127446,
+      "final": false,
+      "kind": 2,
+      "output_end": 507710
+    },
+    {
+      "start_bit": 2127446,
+      "end_bit": 2172465,
+      "final": false,
+      "kind": 2,
+      "output_end": 523326
+    },
+    {
+      "start_bit": 2172465,
+      "end_bit": 2490020,
+      "final": false,
+      "kind": 2,
+      "output_end": 596299
+    },
+    {
+      "start_bit": 2490020,
+      "end_bit": 2808373,
+      "final": false,
+      "kind": 2,
+      "output_end": 666983
+    },
+    {
+      "start_bit": 2808373,
+      "end_bit": 3138273,
+      "final": false,
+      "kind": 2,
+      "output_end": 727233
+    },
+    {
+      "start_bit": 3138273,
+      "end_bit": 3462565,
+      "final": false,
+      "kind": 2,
+      "output_end": 785866
+    },
+    {
+      "start_bit": 3462565,
+      "end_bit": 3503392,
+      "final": false,
+      "kind": 2,
+      "output_end": 887228
+    },
+    {
+      "start_bit": 3503392,
+      "end_bit": 3536177,
+      "final": false,
+      "kind": 2,
+      "output_end": 1001226
+    },
+    {
+      "start_bit": 3536177,
+      "end_bit": 3845000,
+      "final": false,
+      "kind": 2,
+      "output_end": 1061760
+    },
+    {
+      "start_bit": 3845000,
+      "end_bit": 4166869,
+      "final": false,
+      "kind": 2,
+      "output_end": 1118351
+    },
+    {
+      "start_bit": 4166869,
+      "end_bit": 4285620,
+      "final": false,
+      "kind": 2,
+      "output_end": 1243959
+    },
+    {
+      "start_bit": 4285620,
+      "end_bit": 4590638,
+      "final": false,
+      "kind": 2,
+      "output_end": 1300419
+    },
+    {
+      "start_bit": 4590638,
+      "end_bit": 4835332,
+      "final": false,
+      "kind": 2,
+      "output_end": 1406064
+    },
+    {
+      "start_bit": 4835332,
+      "end_bit": 4928501,
+      "final": false,
+      "kind": 2,
+      "output_end": 1463882
+    },
+    {
+      "start_bit": 4928501,
+      "end_bit": 5010582,
+      "final": false,
+      "kind": 2,
+      "output_end": 1486956
+    },
+    {
+      "start_bit": 5010582,
+      "end_bit": 5328070,
+      "final": false,
+      "kind": 2,
+      "output_end": 1566835
+    },
+    {
+      "start_bit": 5328070,
+      "end_bit": 5630029,
+      "final": false,
+      "kind": 2,
+      "output_end": 1611997
+    },
+    {
+      "start_bit": 5630029,
+      "end_bit": 5749011,
+      "final": true,
+      "kind": 2,
+      "output_end": 1647494
+    }
+  ],
+  "limits": [
+    "Missing prefix and unknown history are not recovered.",
+    "No gzip CRC or package signature is verified.",
+    "Complete individual entries require independent header, bounds and mask checks."
+  ],
+  "input_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/02-middle-ware.bin",
+  "input_sha256": "8ed2c0b2ec129582e4eb7ca901869eb36626fa11160683b4cf4fa232c7f3be1f",
+  "payload_offset": 524,
+  "payload_size": 718891,
+  "component_end_byte_ceil": 719151,
+  "zlib_crosschecks": [
+    {
+      "dictionary": "zeros",
+      "eof": true,
+      "output_size": 1647494,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    },
+    {
+      "dictionary": "ones_ff",
+      "eof": true,
+      "output_size": 1647494,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    },
+    {
+      "dictionary": "incrementing",
+      "eof": true,
+      "output_size": 1647494,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    }
+  ],
+  "fully_known_tar_entries": [],
+  "trailing_bytes": 264,
+  "unverified_gzip_footer_hypothesis": {
+    "offset": 718627,
+    "crc32_hex": "868e0631",
+    "isize": 1802240,
+    "remaining_after_footer": 256,
+    "crc_verified": false,
+    "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+  }
+}

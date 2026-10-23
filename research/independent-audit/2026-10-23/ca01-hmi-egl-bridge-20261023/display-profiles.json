@@ -1,0 +1,94 @@
+{
+  "source_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "elf_readonly_pt_load_vaddr": "0x00008000",
+  "pointer_literals": {
+    "DAT_0002a604": "0x002960a8",
+    "DAT_0002a608": "0x00296228",
+    "DAT_0002a60c": "0x00296288",
+    "DAT_0002a610": "0x00296168"
+  },
+  "interpretation": "FUN_0002b66c reads uint16 at +10 for width and +12 for height",
+  "note": "Profile selection requires runtime rq_sys_GetVclPara; variant choice is unproven.",
+  "records": [
+    {
+      "vaddr": "0x00295fe8",
+      "table_label_pointer": "0x0029630c",
+      "profile_id_word_at_4": 0,
+      "candidate_outer_width_at_6": 800,
+      "candidate_outer_height_at_8": 480,
+      "window_width_at_10": 800,
+      "window_height_at_12": 480,
+      "unknown_word_at_14": 0
+    },
+    {
+      "vaddr": "0x00296048",
+      "table_label_pointer": "0x00296310",
+      "profile_id_word_at_4": 1,
+      "candidate_outer_width_at_6": 800,
+      "candidate_outer_height_at_8": 480,
+      "window_width_at_10": 800,
+      "window_height_at_12": 480,
+      "unknown_word_at_14": 0
+    },
+    {
+      "vaddr": "0x002960a8",
+      "table_label_pointer": "0x00296310",
+      "profile_id_word_at_4": 1,
+      "candidate_outer_width_at_6": 800,
+      "candidate_outer_height_at_8": 480,
+      "window_width_at_10": 800,
+      "window_height_at_12": 480,
+      "unknown_word_at_14": 0
+    },
+    {
+      "vaddr": "0x00296108",
+      "table_label_pointer": "0x00296314",
+      "profile_id_word_at_4": 3,
+      "candidate_outer_width_at_6": 480,
+      "candidate_outer_height_at_8": 234,
+      "window_width_at_10": 480,
+      "window_height_at_12": 480,
+      "unknown_word_at_14": 0
+    },
+    {
+      "vaddr": "0x00296168",
+      "table_label_pointer": "0x00296314",
+      "profile_id_word_at_4": 3,
+      "candidate_outer_width_at_6": 480,
+      "candidate_outer_height_at_8": 234,
+      "window_width_at_10": 480,
+      "window_height_at_12": 480,
+      "unknown_word_at_14": 0
+    },
+    {
+      "vaddr": "0x002961c8",
+      "table_label_pointer": "0x0029631c",
+      "profile_id_word_at_4": 5,
+      "candidate_outer_width_at_6": 800,
+      "candidate_outer_height_at_8": 480,
+      "window_width_at_10": 800,
+      "window_height_at_12": 480,
+      "unknown_word_at_14": 0
+    },
+    {
+      "vaddr": "0x00296228",
+      "table_label_pointer": "0x0029631c",
+      "profile_id_word_at_4": 5,
+      "candidate_outer_width_at_6": 800,
+      "candidate_outer_height_at_8": 480,
+      "window_width_at_10": 800,
+      "window_height_at_12": 480,
+      "unknown_word_at_14": 0
+    },
+    {
+      "vaddr": "0x00296288",
+      "table_label_pointer": "0x00296320",
+      "profile_id_word_at_4": 4,
+      "candidate_outer_width_at_6": 800,
+      "candidate_outer_height_at_8": 480,
+      "window_width_at_10": 800,
+      "window_height_at_12": 480,
+      "unknown_word_at_14": 0
+    }
+  ]
+}

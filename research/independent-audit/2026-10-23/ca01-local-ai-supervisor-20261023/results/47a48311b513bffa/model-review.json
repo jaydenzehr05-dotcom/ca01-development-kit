@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_REPRO",
+  "examined_functions": [
+    "0000b8a8",
+    "000159f8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 235,
+    "prompt_tokens": 1497,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1732
+  },
+  "next_focus": [
+    "Error handling in function 0000b8a8",
+    "Filesystem mount behavior"
+  ],
+  "observations": [
+    {
+      "address": "0x0000b8a8",
+      "claim": "Function processes message header and traces errors",
+      "evidence_snippet": "msghdr->subev",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000159f8",
+      "claim": "Function mounts /dev/mmcblk0p3 to /opt/ftl/cddb/",
+      "evidence_snippet": "mount(\"/dev/mmcblk0p3/\"",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function at 0000b8a8 handles message header processing and error tracing. Function at 000159f8 mounts a filesystem.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+  "unresolved_questions": [
+    "What is the purpose of the check sum validation?",
+    "What is the significance of the module parameter?"
+  ]
+}

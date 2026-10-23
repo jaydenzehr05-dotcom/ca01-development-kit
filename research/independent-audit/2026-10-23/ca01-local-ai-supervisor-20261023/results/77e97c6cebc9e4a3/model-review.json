@@ -1,0 +1,37 @@
+{
+  "binary": "./opt/ftl/lib/libuie_api.so",
+  "examined_functions": [
+    "00010a28",
+    "00010b20"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1646,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 1902
+  },
+  "next_focus": [
+    "IPC message structure analysis",
+    "Parameter validation logic in function 00010b20"
+  ],
+  "observations": [
+    {
+      "address": "0x00010a28",
+      "claim": "Function validates VCL parameters before IPC communication",
+      "evidence_snippet": "if (local_137 == '\\b' || local_137 == '\\x02')",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions handle UI event processing and parameter validation. First checks VCL parameters, second processes API notifications with parameter validation.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "77e97c6cebc9e4a358ceb81c3afb91c8756785baf19691094857678ec21c78fd",
+  "unresolved_questions": [
+    "What specific IPC message is sent in function 00010a28?",
+    "What is the purpose of the switch statement in function 00010b20?"
+  ]
+}

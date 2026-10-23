@@ -1,0 +1,15 @@
+{
+  "input_name": "05-bluetooth",
+  "input_sha256": "6fa1f29d8ac60f2c7068a9bd520e6edeb9c5a7e2040d257d7fcfc602bd5e4656",
+  "start_bit": 812854,
+  "report_end": 5067233,
+  "output_size": 1656001,
+  "known_bytes": 1487773,
+  "unknown_bytes": 168228,
+  "all_tar_entries_count": 0,
+  "classification_counts": {},
+  "missing_previous_names": [],
+  "files": [],
+  "new_target_names": [],
+  "note": "Only individually checksum-valid and history-independent file bytes counted; not a complete recovered firmware filesystem"
+}

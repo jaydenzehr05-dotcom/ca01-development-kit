@@ -1,0 +1,62 @@
+{
+  "path": "/home/starlight/projects/rav4-radio/ca01-development-kit",
+  "head": "e30031dd527c2dd05667316904d48223509d221b",
+  "status": "?? docs/CA01_ARM_LINUX_PHASE1.md\n?? docs/CA01_ARM_LINUX_PHASE2.md\n?? docs/CA01_ARM_LOADER_AND_GRAPHICS.md\n?? docs/CA01_GUI_EMULATION_READINESS.md\n?? evidence/ca01-local-loader-and-graphics.json\n?? tests/test_loader_sandbox.py\n?? tools/ca01_arm_graphics_smoke.c\n?? tools/ca01_armel_compatibility.py\n?? tools/ca01_gui_dependency_audit.py\n?? tools/ca01_loader_sandbox.py\n?? tools/ca01_verify_armhf.py\n",
+  "files": [
+    {
+      "path": "docs/CA01_ARM_LINUX_PHASE1.md",
+      "size": 2048,
+      "sha256": "64b6f4537049a16fb6e12155a3abefbb3274a845e803463d26fe5e1e6e3a6630"
+    },
+    {
+      "path": "docs/CA01_ARM_LINUX_PHASE2.md",
+      "size": 3257,
+      "sha256": "ae9a89fa8c8ffd1f377720c1f51bda8dd09ba95629657e5a8f0e3f24465bb4e5"
+    },
+    {
+      "path": "docs/CA01_ARM_LOADER_AND_GRAPHICS.md",
+      "size": 5893,
+      "sha256": "300a88c2c7f91ae79ae5ea394e007a93e93d12a397da04851fd481808cd34977"
+    },
+    {
+      "path": "docs/CA01_GUI_EMULATION_READINESS.md",
+      "size": 2432,
+      "sha256": "aa8272f34c09ecb47c55e0207c7de6c8a29295f4bfbda870941ef5e6d72f68b4"
+    },
+    {
+      "path": "evidence/ca01-local-loader-and-graphics.json",
+      "size": 6880,
+      "sha256": "623c87affa0f4b60bff4eda54f0f919cbc259d60a0116a40a8bdce826f45a28c"
+    },
+    {
+      "path": "tests/test_loader_sandbox.py",
+      "size": 5785,
+      "sha256": "fd0606e615a850dcefe39f73dfaa89e1e94a74c2de241629e1d650daa743d1aa"
+    },
+    {
+      "path": "tools/ca01_arm_graphics_smoke.c",
+      "size": 3056,
+      "sha256": "8aff74697af5f7c6a192bd46d0566d3104e54a0041c25a6eb06311945ce65074"
+    },
+    {
+      "path": "tools/ca01_armel_compatibility.py",
+      "size": 1802,
+      "sha256": "73dac8713081faf6138f4c5ea1ad004d1c48dfe3662989e25134d4abfc1f67e3"
+    },
+    {
+      "path": "tools/ca01_gui_dependency_audit.py",
+      "size": 1699,
+      "sha256": "236815cd11403b3c52cb7a54c05bec39f8fe45139da37f255e21ec9b7023ed04"
+    },
+    {
+      "path": "tools/ca01_loader_sandbox.py",
+      "size": 8420,
+      "sha256": "2da71abdbc4fe93a634b5371558acc3513f55a461c09aecec89fa0d18620aa8e"
+    },
+    {
+      "path": "tools/ca01_verify_armhf.py",
+      "size": 1270,
+      "sha256": "69b21a486e4fc989ae453467a9d776d89eee6a0a2a1316c9bb31ef090439d923"
+    }
+  ]
+}

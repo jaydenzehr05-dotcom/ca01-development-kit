@@ -1,0 +1,59 @@
+{
+  "binary": "./opt/ftl/apl/PROC_NAVIIF",
+  "examined_functions": [
+    "00018520",
+    "00018afc"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 234,
+    "prompt_tokens": 1651,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1885
+  },
+  "next_focus": [
+    "Message sending functions",
+    "Error trace handling"
+  ],
+  "observations": [
+    {
+      "address": "0x00018520",
+      "claim": "Function checks param_2 byte at offset 0x19 for values 1 or 3",
+      "evidence_snippet": "*(char *)(param_2 + 0x19) != '\\x03'",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions handle navigation interface status and message processing with conditional logic based on parameter values and system states.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "18520",
+    "18afc"
+  ],
+  "selection_evidence": [
+    {
+      "address": "18520",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "18afc",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the specific magic numbers represent?",
+    "What is the purpose of the bit flag operations?"
+  ]
+}

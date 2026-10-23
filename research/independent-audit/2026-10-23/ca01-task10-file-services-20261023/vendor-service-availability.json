@@ -1,0 +1,304 @@
+{
+  "scanned": 59,
+  "files": [
+    {
+      "original_path": "./opt/ftl/lib/libipas_grp.so",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_grp.so",
+      "matches": [
+        {
+          "symbol": "rq_tsk_GetBlockObj",
+          "defined": false,
+          "virtual": "0x0"
+        },
+        {
+          "symbol": "rq_tsk_BlockBegin",
+          "defined": false,
+          "virtual": "0x0"
+        },
+        {
+          "symbol": "rq_tsk_GetTid",
+          "defined": false,
+          "virtual": "0x0"
+        },
+        {
+          "symbol": "rq_tsk_WaitInit",
+          "defined": false,
+          "virtual": "0x0"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/lib/libipas_sysc.so",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysc.so",
+      "matches": [
+        {
+          "symbol": "rq_tsk_GetBlockObj",
+          "defined": true,
+          "virtual": "0x20e70"
+        },
+        {
+          "symbol": "rq_tsk_BlockBegin",
+          "defined": true,
+          "virtual": "0x20d04"
+        },
+        {
+          "symbol": "rq_tsk_GetTid",
+          "defined": true,
+          "virtual": "0x20bf4"
+        },
+        {
+          "symbol": "rq_tsk_WaitInit",
+          "defined": true,
+          "virtual": "0x20f04"
+        },
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0x0"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/lib/libipas_sysp.so",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysp.so",
+      "matches": [
+        {
+          "symbol": "rq_tsk_GetBlockObj",
+          "defined": true,
+          "virtual": "0x20b04"
+        },
+        {
+          "symbol": "rq_tsk_BlockBegin",
+          "defined": true,
+          "virtual": "0x20998"
+        },
+        {
+          "symbol": "rq_tsk_GetTid",
+          "defined": true,
+          "virtual": "0x20888"
+        },
+        {
+          "symbol": "rq_tsk_WaitInit",
+          "defined": true,
+          "virtual": "0x20b98"
+        },
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0x0"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/lib/libnavi_if.so",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libnavi_if.so",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0x0"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/lib/libsct_ct.so",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libsct_ct.so",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0x0"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/lib/libDIS_IF.so",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libDIS_IF.so",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0x0"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_DSV",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DSV",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xa66c"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_EXT",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_EXT",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0x9db0"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_REPRO",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_REPRO",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xa650"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_VRS",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_VRS",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xadf8"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_SYSTEM",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SYSTEM",
+      "matches": [
+        {
+          "symbol": "rq_tsk_GetTid",
+          "defined": false,
+          "virtual": "0xe79c"
+        },
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xf114"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_DTV",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DTV",
+      "matches": [
+        {
+          "symbol": "rq_tsk_WaitInit",
+          "defined": false,
+          "virtual": "0xb8bc"
+        },
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xb940"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_HMI",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_HMI",
+      "matches": [
+        {
+          "symbol": "fs_mpl_Create",
+          "defined": false,
+          "virtual": "0xce3c"
+        },
+        {
+          "symbol": "rq_tsk_GetTid",
+          "defined": false,
+          "virtual": "0xcea8"
+        },
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xd4a8"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_AUDIO",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_AUDIO",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xafb8"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_VI",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_VI",
+      "matches": [
+        {
+          "symbol": "rq_tsk_GetBlockObj",
+          "defined": false,
+          "virtual": "0x9110"
+        },
+        {
+          "symbol": "rq_tsk_BlockBegin",
+          "defined": false,
+          "virtual": "0x9248"
+        },
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0x93b0"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_DVDDECK",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DVDDECK",
+      "matches": [
+        {
+          "symbol": "rq_tsk_GetTid",
+          "defined": false,
+          "virtual": "0x8e64"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_NAVIIF",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_NAVIIF",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xb3e8"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_DISPLAY",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DISPLAY",
+      "matches": [
+        {
+          "symbol": "rq_tsk_GetTid",
+          "defined": false,
+          "virtual": "0x11f80"
+        },
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0x12ebc"
+        }
+      ]
+    },
+    {
+      "original_path": "./opt/ftl/apl/PROC_UIEIF",
+      "local": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_UIEIF",
+      "matches": [
+        {
+          "symbol": "rq_fls_Open",
+          "defined": false,
+          "virtual": "0xc598"
+        }
+      ]
+    }
+  ]
+}

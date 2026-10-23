@@ -1,0 +1,66 @@
+{
+  "binary": "./opt/ftl/apl/PROC_VI",
+  "examined_functions": [
+    "000304f8",
+    "0000d2d8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 300,
+    "prompt_tokens": 1725,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2025
+  },
+  "next_focus": [
+    "Message receive and buffer handling in 000304f8",
+    "Device control request processing in 0000d2d8"
+  ],
+  "observations": [
+    {
+      "address": "0x000304f8",
+      "claim": "Writes beacon data to /mnt/usb1/BEACON_RDATA.BIN",
+      "evidence_snippet": "rq_fls_Write(local_24[0],1,local_2c[0x20],acStack_b8,&local_28,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0000d2d8",
+      "claim": "Handles device control request 0xcc with error tracing",
+      "evidence_snippet": "if (iVar11 != 0xcc) {",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 000304f8 handles message reception and file I/O operations, writing beacon data to USB storage. Function 0000d2d8 processes device control requests and manages file operations with error handling.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "304f8",
+    "d2d8"
+  ],
+  "selection_evidence": [
+    {
+      "address": "304f8",
+      "score": 389,
+      "tags": [
+        "filesystem",
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "d2d8",
+      "score": 232,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the 0x4d2 condition check?",
+    "What data structure is pointed to by param_1[3]?"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-23",
+  "scope": "Static C-like reconstruction and original ARM identity probe; not exact source/full GUI/startup",
+  "baseline_commit": "db49463f0bcaae024b297e146f949e4b4078ef8e",
+  "local_artifact_directory": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023",
+  "exports": {
+    "sysc": {
+      "program": "06-libipas_sysc.so",
+      "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+      "export_directory": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/sysc1127-verified",
+      "text_bodies_decompiled": 584,
+      "text_failures": 0,
+      "import_thunks": 376,
+      "other_executable_functions": 2,
+      "C_sha256": "243566533f14249a621991c16ab49b7e461c1882c7c16998be5350ca2fd80b0a",
+      "manifest_sha256": "23f52c1c1f4ab9a19bb9de9d2cec1a798862769d4d8ea25e12c3dcaa31a4f4ed"
+    },
+    "system": {
+      "program": "06-PROC_SYSTEM",
+      "sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+      "export_directory": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/system1127-verified",
+      "text_bodies_decompiled": 1193,
+      "text_failures": 0,
+      "import_thunks": 410,
+      "other_executable_functions": 2,
+      "C_sha256": "95bf249a69802aab6b35d5c8206f3cb5dcce7dc7640430ac8c2815ec90f19560",
+      "manifest_sha256": "ba0e2dce50305c98c341f4835fdecbd67dc0738a914e506284f6352d54d363a7"
+    },
+    "display": {
+      "program": "01116817-PROC_DISPLAY",
+      "sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "export_directory": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/display1134",
+      "text_bodies_decompiled": 6160,
+      "text_failures": 8,
+      "import_thunks": 536,
+      "other_executable_functions": 2,
+      "C_sha256": "c6f6f55f3f2726bc2395e4e700ae53ab1c40f870b9bfec19182048f95942df6f",
+      "manifest_sha256": "ed75feb9875952b3152a98520aaf2a26127bf006b808f40ad66f3310e32e7eb8",
+      "focused_successful_entries": 56,
+      "additional_distinct_focused_entries": [
+        "00045194",
+        "0009dbc0",
+        "0009de54",
+        "0009ded0",
+        "0012d134",
+        "0015ca0c",
+        "0015d658",
+        "0018c7e0",
+        "00220278",
+        "0023a5d8",
+        "00242c0c",
+        "0026e368",
+        "00274dd8",
+        "00279adc",
+        "0027b8d8",
+        "002983d0",
+        "00306294",
+        "00346654",
+        "00371eb4",
+        "00380ae0",
+        "003e01b0",
+        "003e1a0c",
+        "003e28e8"
+      ],
+      "unique_successful_text_entries": 6183
+    }
+  },
+  "original_inputs": {
+    "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysc.so": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+    "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SYSTEM": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+    "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f"
+  },
+  "entry_verification": {
+    "sysc1127": {
+      "entries": 962,
+      "file": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/sysc1127-sha256-entries.json",
+      "sha256": "2393dcf4b9b5cba3bdffb4659397c281b9c1e28d74ba8a85b9fa567d9c676c64"
+    },
+    "system1127": {
+      "entries": 1605,
+      "file": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/system1127-sha256-entries.json",
+      "sha256": "3264232d5487b101714b53b03a724dc67a44c227c112b147d9454ed79b12de1f"
+    },
+    "display1134": {
+      "entries": 56,
+      "file": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/display1134-sha256-entries.json",
+      "sha256": "fa90ea3df9e8fd8cd5b109365a186caea2a9d9d42f8981a96207b5e7297cb75f"
+    }
+  },
+  "analysis_limits": {
+    "display_autoanalysis_timeout_seconds": 360,
+    "display_broad_per_function_timeout_seconds": 8,
+    "display_failed_addresses": [
+      "00023968",
+      "000fdf50",
+      "00119ee0",
+      "00181b30",
+      "002059cc",
+      "00218134",
+      "003b1028",
+      "003b922c"
+    ],
+    "focused_candidates": 60,
+    "focused_exported": 56,
+    "focused_overlapping_candidates": [
+      "0023f568",
+      "00270930",
+      "00270b00",
+      "0027184c"
+    ],
+    "caveats": [
+      "Counts exclude PLT from text bodies",
+      "Function discovery is incomplete and may merge ranges",
+      "Entry-byte verification is not complete-body verification",
+      "Decompiled does not mean semantically verified or recompilable original source"
+    ]
+  },
+  "verification": {
+    "tests_passed": 135,
+    "failures": 0,
+    "log": "/tmp/ca01-critical-decompilation-final-tests.log",
+    "review": "Two P2 exporter-accounting/file-origin findings fixed and independently re-reviewed"
+  },
+  "task_identity": {
+    "original_canonical_entry": "0x20bf4",
+    "task_record_bytes": 80,
+    "thread_offset": 64,
+    "table_length_from_profile": 96,
+    "results": {
+      "search": 39,
+      "stale_cache": 39,
+      "unknown_thread": -1,
+      "cached_unmanaged": -1
+    },
+    "fixture_thread_table_tls": true,
+    "full_startup": false,
+    "task10_ready": false
+  },
+  "display_configuration": {
+    "process_id": 3,
+    "registry": "0x42c49c",
+    "main": "0x3e28e8",
+    "task_slots": 96,
+    "enabled_task_rows": 27,
+    "enabled_queue_rows": 28,
+    "task51_entry": "0x45194",
+    "task51_thread_name": "tsk_btc_Main",
+    "task51_receives_queue": 46,
+    "queue_row31_id": 32,
+    "queue_row32_id": 31,
+    "max_queue_capacity": 512
+  },
+  "code_committed": false,
+  "remote_push": false,
+  "original_files_changed": false
+}

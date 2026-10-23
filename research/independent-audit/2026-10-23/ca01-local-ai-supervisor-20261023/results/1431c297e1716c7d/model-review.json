@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libIFLB_CDDB.so",
+  "examined_functions": [
+    "000111fc",
+    "000112f4"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 223,
+    "prompt_tokens": 1222,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 1445
+  },
+  "next_focus": [
+    "VCL parameter handling",
+    "IPC message 0x12 content"
+  ],
+  "observations": [
+    {
+      "address": "0x000111fc",
+      "claim": "Returns error code 0xfffffffe for invalid parameters",
+      "evidence_snippet": "return 0xfffffffe;",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000112f4",
+      "claim": "Calls fd_cdi_SetStsInf(4) before IPC send",
+      "evidence_snippet": "fd_cdi_SetStsInf(4);",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two functions cdbCtlVupEndReq and cdbCtlVupStaReq handle VUP control requests with parameter validation and IPC communication.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "1431c297e1716c7d3a49964aa523eb97b868673553e709d7897ee3a086ddad75",
+  "unresolved_questions": [
+    "What do the VCL parameters represent?",
+    "What is the purpose of IPC message 0x12?"
+  ]
+}

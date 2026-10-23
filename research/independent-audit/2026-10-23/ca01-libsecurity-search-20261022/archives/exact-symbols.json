@@ -1,0 +1,19 @@
+{
+  "coverage": [
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "members": 94187,
+      "regular_members": 88049,
+      "bytes_scanned": 1237833553,
+      "nested_archives": 95
+    },
+    {
+      "archive": "20130619_LE2355.tgz",
+      "members": 35853,
+      "regular_members": 33803,
+      "bytes_scanned": 392724662,
+      "nested_archives": 0
+    }
+  ],
+  "exact_marker_hits": []
+}

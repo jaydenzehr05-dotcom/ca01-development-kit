@@ -1,0 +1,62 @@
+{
+  "binary": "./opt/ftl/lib/libi2c_cm.so",
+  "examined_functions": [
+    "00010d20",
+    "00010ffc"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 224,
+    "prompt_tokens": 1571,
+    "prompt_tokens_details": {
+      "cached_tokens": 242
+    },
+    "total_tokens": 1795
+  },
+  "next_focus": [
+    "D",
+    "a",
+    "t"
+  ],
+  "observations": [
+    {
+      "address": "0x00010d20",
+      "claim": "Function performs I2C send with ioctl and write operations.",
+      "evidence_snippet": "iVar8 = ioctl(*(int *)(iVar7 + param_1 * 4),0x703,uVar1);",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00010ffc",
+      "claim": "Closes I2C device file descriptor with error handling.",
+      "evidence_snippet": "iVar2 = close(iVar2);",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "I2C driver functions handling send operations and device closing with error retry logic.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "10d20",
+    "10ffc"
+  ],
+  "selection_evidence": [
+    {
+      "address": "10d20",
+      "score": 0,
+      "tags": []
+    },
+    {
+      "address": "10ffc",
+      "score": 0,
+      "tags": []
+    }
+  ],
+  "source_sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific I2C device addresses are being accessed?",
+    "What is the purpose of the retry loop with usleep?"
+  ]
+}

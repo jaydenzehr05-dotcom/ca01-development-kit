@@ -1,0 +1,85 @@
+{
+  "input": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/03-kernel.bin",
+  "sha256": "cbc36473d2e5f7bd98d990db7489ce9789ce3c0df3fb92d308edfe1c65087c82",
+  "scan_bytes": [
+    130000,
+    230000
+  ],
+  "valid_len_nlen_headers": 3,
+  "candidates_tested": 15,
+  "successes": [
+    {
+      "start_byte": 166988,
+      "start_bit": 4,
+      "stored_length": 32818,
+      "output_bytes": 1649062,
+      "end_approx_byte": 1808516,
+      "trailing_bytes": 264,
+      "output_sha256_with_zeros": "579ba5383ac47e28c765fcfdf6e6a812f3b18f70ae85977de24cc67c9561b7b5"
+    },
+    {
+      "start_byte": 166988,
+      "start_bit": 5,
+      "stored_length": 32818,
+      "output_bytes": 1649062,
+      "end_approx_byte": 1808516,
+      "trailing_bytes": 264,
+      "output_sha256_with_zeros": "579ba5383ac47e28c765fcfdf6e6a812f3b18f70ae85977de24cc67c9561b7b5"
+    },
+    {
+      "start_byte": 199811,
+      "start_bit": 0,
+      "stored_length": 32822,
+      "output_bytes": 1616244,
+      "end_approx_byte": 1808516,
+      "trailing_bytes": 264,
+      "output_sha256_with_zeros": "23b19569a932d1bd0a7cde54bfb18df90b96c6cfe4cdb86e6effaca57477e264"
+    },
+    {
+      "start_byte": 199811,
+      "start_bit": 1,
+      "stored_length": 32822,
+      "output_bytes": 1616244,
+      "end_approx_byte": 1808516,
+      "trailing_bytes": 264,
+      "output_sha256_with_zeros": "23b19569a932d1bd0a7cde54bfb18df90b96c6cfe4cdb86e6effaca57477e264"
+    },
+    {
+      "start_byte": 199811,
+      "start_bit": 2,
+      "stored_length": 32822,
+      "output_bytes": 1616244,
+      "end_approx_byte": 1808516,
+      "trailing_bytes": 264,
+      "output_sha256_with_zeros": "23b19569a932d1bd0a7cde54bfb18df90b96c6cfe4cdb86e6effaca57477e264"
+    },
+    {
+      "start_byte": 199811,
+      "start_bit": 3,
+      "stored_length": 32822,
+      "output_bytes": 1616244,
+      "end_approx_byte": 1808516,
+      "trailing_bytes": 264,
+      "output_sha256_with_zeros": "23b19569a932d1bd0a7cde54bfb18df90b96c6cfe4cdb86e6effaca57477e264"
+    },
+    {
+      "start_byte": 199811,
+      "start_bit": 4,
+      "stored_length": 32822,
+      "output_bytes": 1616244,
+      "end_approx_byte": 1808516,
+      "trailing_bytes": 264,
+      "output_sha256_with_zeros": "23b19569a932d1bd0a7cde54bfb18df90b96c6cfe4cdb86e6effaca57477e264"
+    },
+    {
+      "start_byte": 199811,
+      "start_bit": 5,
+      "stored_length": 32822,
+      "output_bytes": 1616244,
+      "end_approx_byte": 1808516,
+      "trailing_bytes": 264,
+      "output_sha256_with_zeros": "23b19569a932d1bd0a7cde54bfb18df90b96c6cfe4cdb86e6effaca57477e264"
+    }
+  ],
+  "limitation": "Bounded stored-block candidate scan; initial history unknown and remaining source encrypted."
+}

@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libAdlRd.so",
+  "examined_functions": [
+    "0001447c",
+    "00016ad0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 233,
+    "prompt_tokens": 761,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 994
+  },
+  "next_focus": [
+    "Database file path validation logic",
+    "File copy operation parameters"
+  ],
+  "observations": [
+    {
+      "address": "0x0001447c",
+      "claim": "Function validates input parameter before file operations",
+      "evidence_snippet": "if (param_2 == (char *)0x0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00016ad0",
+      "claim": "Function performs file copy operation before opening database",
+      "evidence_snippet": "uVar1 = util_file_copy(iVar2 + DAT_00016b6c",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function fd_adl_RdoSqlDrop handles SQL database file dropping by validating path and removing files. Function fc_aur_Chk1stWrite manages initial write checks and file copying.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "a2e1403bc89b737d4f9cf503dd6419a676d723715626fade1e8fe5a12e64b777",
+  "unresolved_questions": [
+    "What specific file paths are being validated?",
+    "What is the purpose of the file copy operation?"
+  ]
+}

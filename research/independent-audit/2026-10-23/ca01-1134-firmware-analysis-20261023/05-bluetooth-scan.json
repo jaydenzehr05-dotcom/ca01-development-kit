@@ -1,0 +1,30 @@
+{
+  "input": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/05-bluetooth.bin",
+  "sha256": "6fa1f29d8ac60f2c7068a9bd520e6edeb9c5a7e2040d257d7fcfc602bd5e4656",
+  "observed_component_prefix": 12,
+  "compressed_length": 633669,
+  "unverified_trailer_crc32_hex": "332503bb",
+  "unverified_gzip_isize": 1863680,
+  "scan_range": [
+    64000,
+    130000
+  ],
+  "stats": {
+    "headers_tested": 258464,
+    "first_chunk_plausible": 1,
+    "eof_near_footer": 1
+  },
+  "candidates": [
+    {
+      "start_byte": 101606,
+      "start_bit": 6,
+      "output_bytes": 1656001,
+      "end_approx_byte": 633404,
+      "footer_byte": 633405,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "924e35e6ec0f47481a4f9f2f4902a3daf9a4a3c15b53f7710ac78cec4b0e9790"
+    }
+  ],
+  "elapsed_seconds": 1.714,
+  "disclaimer": "Candidate complete DEFLATE suffix (unknown encrypted prefix and 32 KiB initial LZ history); not original complete gzip or verified TAR"
+}

@@ -1,0 +1,66 @@
+{
+  "input": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/02-middle-ware.bin",
+  "sha256": "8ed2c0b2ec129582e4eb7ca901869eb36626fa11160683b4cf4fa232c7f3be1f",
+  "observed_component_prefix": 524,
+  "compressed_length": 718891,
+  "unverified_trailer_crc32_hex": "868e0631",
+  "unverified_gzip_isize": 1802240,
+  "scan_range": [
+    64000,
+    130000
+  ],
+  "stats": {
+    "headers_tested": 264298,
+    "first_chunk_plausible": 5,
+    "eof_near_footer": 5
+  },
+  "candidates": [
+    {
+      "start_byte": 69312,
+      "start_bit": 2,
+      "output_bytes": 1647494,
+      "end_approx_byte": 718627,
+      "footer_byte": 718627,
+      "footer_error_bytes": 0,
+      "output_sha256_with_zero_dictionary": "26fa53c3942a422784f3eb4d759557f1ecaa21e235f882406712b875f42cc396"
+    },
+    {
+      "start_byte": 74388,
+      "start_bit": 3,
+      "output_bytes": 1634694,
+      "end_approx_byte": 718626,
+      "footer_byte": 718627,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "d32ae3d386ebba09a98f598d412e46baea81589c4638f07ab023dba16bd4f140"
+    },
+    {
+      "start_byte": 90156,
+      "start_bit": 3,
+      "output_bytes": 1595281,
+      "end_approx_byte": 718626,
+      "footer_byte": 718627,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "d9ead3b7fc70b7cecd75dddcbc21c3ae757a73e05404ddf1b89a0b60e0de5290"
+    },
+    {
+      "start_byte": 84982,
+      "start_bit": 5,
+      "output_bytes": 1606956,
+      "end_approx_byte": 718626,
+      "footer_byte": 718627,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "989f32fc669b13738515a721471b11c30c1e57566c800b07f360a03da8e2a6a8"
+    },
+    {
+      "start_byte": 126428,
+      "start_bit": 7,
+      "output_bytes": 1517216,
+      "end_approx_byte": 718626,
+      "footer_byte": 718627,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "a6982cc1e0976a4d72c33e4c50f6e8125dfa56a3a331afd48c0663339042ff08"
+    }
+  ],
+  "elapsed_seconds": 3.077,
+  "disclaimer": "Candidate complete DEFLATE suffix (unknown encrypted prefix and 32 KiB initial LZ history); not original complete gzip or verified TAR"
+}

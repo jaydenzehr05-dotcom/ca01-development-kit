@@ -1,0 +1,590 @@
+CA01 System Library Startup Static Decompiled Analysis
+program=06-libipas_sysc.so
+functionCount=1256
+
+==== fs_sys_InitCom AT 0001976c body=12
+CALLS fs_sys_InitCom 00027848
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_sys_InitCom(void)
+
+{
+  (*(code *)PTR_fs_sys_InitCom_000412ac)();
+  return;
+}
+
+
+
+==== fs_cnf_Load AT 00019b14 body=12
+CALLS fs_cnf_Load 0001c950
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_cnf_Load(void)
+
+{
+  (*(code *)PTR_fs_cnf_Load_000413e4)();
+  return;
+}
+
+
+
+==== fs_psm_Init AT 00019bec body=12
+CALLS fs_psm_Init 000358ac
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_psm_Init(void)
+
+{
+  (*(code *)PTR_fs_psm_Init_0004142c)();
+  return;
+}
+
+
+
+==== fs_tsk_Init AT 00019c7c body=12
+CALLS fs_tsk_Init 00030518
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_tsk_Init(void)
+
+{
+  (*(code *)PTR_fs_tsk_Init_0004145c)();
+  return;
+}
+
+
+
+==== fs_ipc_Init AT 00019ee0 body=12
+CALLS fs_ipc_Init 000343cc
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_ipc_Init(void)
+
+{
+  (*(code *)PTR_fs_ipc_Init_00041528)();
+  return;
+}
+
+
+
+==== fs_prc_Init AT 0001a06c body=12
+CALLS fs_prc_Init 00034d78
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_prc_Init(void)
+
+{
+  (*(code *)PTR_fs_prc_Init_000415ac)();
+  return;
+}
+
+
+
+==== fs_shm_Init AT 0001a408 body=12
+CALLS fs_shm_Init 00035f18
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_shm_Init(void)
+
+{
+  (*(code *)PTR_fs_shm_Init_000416e0)();
+  return;
+}
+
+
+
+==== SysPowerOn AT 0001aeac body=940
+CALLS fs_prc_Init 0001a06c
+CALLS fs_sys_InitCom 0001976c
+CALLS rq_mmd_PowerTrace 0001a288
+CALLS rq_psm_Create 000194fc
+CALLS fs_shm_Init 0001a408
+CALLS fs_drc_SlvInit 000198a4
+CALLS rq_drc_ErrorTraceP 0001a36c
+CALLS fs_sys_PowerTrace 0001a15c
+CALLS fs_zsy_InitCom 00019ce8
+CALLS fs_psm_Init 00019bec
+CALLS fs_sys_ExInit 000199c4
+CALLS rq_shm_Create 0001a45c
+CALLS rq_ipc_Create 000199ac
+CALLS fs_cnf_Load 00019b14
+CALLS fs_abk_Init 0001a084
+CALLS fs_ipc_Init 00019ee0
+CALLS fs_tsk_Init 00019c7c
+CALLS rq_sys_ForceStnby 00019574
+CALL_COUNT 18
+DECOMP_OK true ERROR 
+
+void SysPowerOn(int param_1)
+
+{
+  int iVar1;
+  code *pcVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  int *piVar7;
+  int iVar8;
+  int iVar9;
+  
+  iVar9 = DAT_0001b24c;
+  fs_cnf_Load();
+  iVar8 = 0;
+  fs_zsy_InitCom();
+  fs_prc_Init(param_1);
+  iVar9 = iVar9 + 0x1aed8;
+  fs_sys_InitCom();
+  iVar4 = 0;
+  fs_abk_Init();
+  fs_drc_SlvInit();
+  fs_tsk_Init();
+  fs_ipc_Init();
+  fs_shm_Init();
+  fs_psm_Init();
+  piVar7 = *(int **)(iVar9 + DAT_0001b250);
+  do {
+    while( true ) {
+      iVar3 = iVar8 + 0x28;
+      iVar6 = iVar4 + 1;
+      iVar1 = iVar8 + *piVar7;
+      if ((*(int *)(iVar8 + *piVar7) == 1) &&
+         (iVar1 = rq_ipc_Create(iVar4,iVar1 + 8,*(undefined4 *)(iVar1 + 0x20),
+                                *(undefined4 *)(iVar1 + 0x24)), iVar1 != 0)) {
+        rq_drc_ErrorTraceP(0xffffffff,1,0x13000200,iVar4,iVar1,0,0);
+        rq_sys_ForceStnby();
+        iVar1 = *piVar7;
+        iVar5 = *(int *)(iVar3 + iVar1);
+      }
+      else {
+        iVar1 = *piVar7;
+        iVar5 = *(int *)(iVar3 + iVar1);
+      }
+      if (iVar5 == 1) break;
+LAB_0001af18:
+      iVar4 = iVar4 + 2;
+      iVar8 = iVar8 + 0x50;
+      if (iVar4 == 0x20) goto LAB_0001aff0;
+    }
+    iVar3 = iVar3 + iVar1;
+    iVar1 = rq_ipc_Create(iVar6,iVar3 + 8,*(undefined4 *)(iVar3 + 0x20),
+                          *(undefined4 *)(iVar3 + 0x24));
+    if (iVar1 == 0) goto LAB_0001af18;
+    iVar4 = iVar4 + 2;
+    iVar8 = iVar8 + 0x50;
+    rq_drc_ErrorTraceP(0xffffffff,1,0x13000200,iVar6,iVar1,0,0);
+    rq_sys_ForceStnby();
+  } while (iVar4 != 0x20);
+LAB_0001aff0:
+  iVar4 = 0;
+  piVar7 = *(int **)(iVar9 + DAT_0001b254);
+  do {
+    while( true ) {
+      iVar8 = iVar4 + 1;
+      if ((*(int *)(*piVar7 + iVar4 * 0x20) == 1) &&
+         (iVar1 = rq_psm_Create(iVar4,*piVar7 + iVar4 * 0x20 + 8), iVar1 != 0)) {
+        rq_drc_ErrorTraceP(0xffffffff,1,0x13000201,iVar4,iVar1,0,0);
+        rq_sys_ForceStnby();
+        iVar1 = *piVar7 + iVar8 * 0x20;
+        iVar3 = *(int *)(*piVar7 + iVar8 * 0x20);
+      }
+      else {
+        iVar1 = *piVar7 + iVar8 * 0x20;
+        iVar3 = *(int *)(*piVar7 + iVar8 * 0x20);
+      }
+      if ((iVar3 == 1) && (iVar1 = rq_psm_Create(iVar8,iVar1 + 8), iVar1 != 0)) break;
+      iVar4 = iVar4 + 2;
+      if (iVar4 == 0x40) goto LAB_0001b0d4;
+    }
+    iVar4 = iVar4 + 2;
+    rq_drc_ErrorTraceP(0xffffffff,1,0x13000201,iVar8,iVar1,0,0);
+    rq_sys_ForceStnby();
+  } while (iVar4 != 0x40);
+LAB_0001b0d4:
+  iVar8 = 0;
+  iVar4 = 0;
+  piVar7 = *(int **)(iVar9 + DAT_0001b258);
+  do {
+    iVar1 = iVar8 + 0xc;
+    if ((*(int *)(iVar8 + *piVar7) == 1) &&
+       (iVar3 = rq_shm_Create(iVar4,*(undefined4 *)(iVar8 + *piVar7 + 8)), iVar3 != 0)) {
+      rq_drc_ErrorTraceP(0xffffffff,1,0x13000202,iVar4,iVar3,0,0);
+      rq_sys_ForceStnby();
+      iVar3 = *piVar7;
+      iVar6 = *(int *)(iVar1 + iVar3);
+    }
+    else {
+      iVar3 = *piVar7;
+      iVar6 = *(int *)(iVar1 + iVar3);
+    }
+    iVar5 = DAT_0001b25c;
+    if ((iVar6 == 1) &&
+       (iVar1 = rq_shm_Create(iVar4 + 1,*(undefined4 *)(iVar1 + iVar3 + 8)), iVar5 = DAT_0001b25c,
+       iVar1 != 0)) {
+      rq_drc_ErrorTraceP(0xffffffff,1,0x13000202,iVar4 + 1,iVar1,0,0);
+      rq_sys_ForceStnby();
+      iVar5 = DAT_0001b25c;
+    }
+    iVar8 = iVar8 + 0x18;
+    iVar4 = iVar4 + 2;
+    DAT_0001b25c = iVar5;
+  } while (iVar4 != 0x40);
+  fs_sys_ExInit();
+  if (0 < *(int *)(**(int **)(iVar9 + iVar5) + 0xc)) {
+    iVar4 = 0;
+    piVar7 = *(int **)(iVar9 + DAT_0001b260);
+    do {
+      pcVar2 = *(code **)(*piVar7 + iVar4 * 4);
+      iVar4 = iVar4 + 1;
+      if (pcVar2 != (code *)0x0) {
+        (*pcVar2)();
+      }
+    } while (iVar4 < *(int *)(**(int **)(iVar9 + iVar5) + 0xc));
+  }
+  fs_sys_PowerTrace(1,0);
+  rq_mmd_PowerTrace(param_1 * 0x100 + 3U & 0xffff,0);
+                    /* WARNING: Could not recover jumptable at 0x0001a188. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR_fc_sys_AccStart_00041608)(param_1);
+  return;
+}
+
+
+
+==== fs_cnf_Load AT 0001c950 body=108
+CALLS fc_cnf_ErrEnd 0001a3e4
+CALLS fc_cnf_Main 00019e98
+CALLS fc_cnf_Init 00019afc
+CALL_COUNT 3
+DECOMP_OK true ERROR 
+
+void fs_cnf_Load(void)
+
+{
+  int iVar1;
+  int iVar2;
+  uint *puVar3;
+  
+  iVar1 = DAT_0001c9b0;
+  fc_cnf_Init();
+  if (**(int **)(iVar1 + 0x1c968 + DAT_0001c9b4) == 0) {
+    fc_cnf_ErrEnd();
+  }
+  iVar2 = fc_cnf_Main();
+  if (iVar2 != 0) {
+    fc_cnf_ErrEnd();
+  }
+  puVar3 = *(uint **)(iVar1 + 0x1c968 + DAT_0001c9b8);
+  *puVar3 = (*puVar3 & 0xfffff000) + 0x1000;
+                    /* WARNING: Could not recover jumptable at 0x00019798. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR_fc_cnf_Exit_000412b8)();
+  return;
+}
+
+
+
+==== fs_sys_InitCom AT 00027848 body=168
+CALLS fs_rtc_PreInit 0002576c
+CALLS fc_sys_InitComAdr 0001a324
+CALLS fs_drc_PreInit 00029c30
+CALLS fs_pwr_PreInit 000242d8
+CALLS fs_drv_MemInit 000198bc
+CALLS fs_sys_ExPreInit 000270f4
+CALLS fs_mmd_PreInit 000229e0
+CALLS fc_sys_InitLts 000197b4
+CALLS fs_sys_RTCS_init 00019700
+CALLS fs_bkm_PreInit 000207b4
+CALLS fs_vcl_PreInit 00028eb0
+CALL_COUNT 11
+DECOMP_OK true ERROR 
+
+void fs_sys_InitCom(void)
+
+{
+  int iVar1;
+  undefined4 *puVar2;
+  
+  iVar1 = DAT_000278f0;
+  fs_drv_MemInit();
+  fc_sys_InitComAdr();
+  fc_sys_InitLts();
+  fs_sys_RTCS_init();
+  puVar2 = *(undefined4 **)(iVar1 + 0x27864 + DAT_000278f4);
+  if ((code *)*puVar2 == (code *)0x0) {
+    return;
+  }
+  (*(code *)*puVar2)();
+  if ((code *)puVar2[1] == (code *)0x0) {
+    return;
+  }
+  (*(code *)puVar2[1])();
+  if ((code *)puVar2[2] == (code *)0x0) {
+    return;
+  }
+  (*(code *)puVar2[2])();
+  if ((code *)puVar2[3] == (code *)0x0) {
+    return;
+  }
+  (*(code *)puVar2[3])();
+  if ((code *)puVar2[4] == (code *)0x0) {
+    return;
+  }
+  (*(code *)puVar2[4])();
+  if ((code *)puVar2[5] == (code *)0x0) {
+    return;
+  }
+  (*(code *)puVar2[5])();
+  if ((code *)puVar2[6] == (code *)0x0) {
+    return;
+  }
+  (*(code *)puVar2[6])();
+  if ((code *)puVar2[7] == (code *)0x0) {
+    return;
+  }
+  (*(code *)puVar2[7])();
+  return;
+}
+
+
+
+==== fs_sys_CnfEntry AT 0002dde0 body=328
+CALL_COUNT 0
+DECOMP_OK true ERROR 
+
+void fs_sys_CnfEntry(undefined4 *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  undefined4 *puVar7;
+  undefined4 *puVar8;
+  int iVar9;
+  undefined4 *puVar10;
+  undefined4 *puVar11;
+  undefined4 *puVar12;
+  undefined4 uVar13;
+  undefined4 *puVar14;
+  undefined4 *puVar15;
+  undefined4 uVar16;
+  undefined4 uVar17;
+  undefined4 uVar18;
+  undefined4 uVar19;
+  undefined4 *puVar20;
+  undefined4 uVar21;
+  undefined4 *puVar22;
+  undefined4 *puVar23;
+  undefined4 *puVar24;
+  
+  iVar9 = DAT_0002df28 + 0x2ddf8;
+  puVar20 = *(undefined4 **)(iVar9 + DAT_0002df34);
+  puVar7 = *(undefined4 **)(iVar9 + DAT_0002df4c);
+  puVar15 = *(undefined4 **)(iVar9 + DAT_0002df38);
+  puVar14 = *(undefined4 **)(iVar9 + DAT_0002df3c);
+  puVar12 = *(undefined4 **)(iVar9 + DAT_0002df40);
+  puVar11 = *(undefined4 **)(iVar9 + DAT_0002df44);
+  puVar10 = *(undefined4 **)(iVar9 + DAT_0002df2c);
+  puVar24 = *(undefined4 **)(iVar9 + DAT_0002df48);
+  puVar22 = *(undefined4 **)(iVar9 + DAT_0002df50);
+  puVar23 = *(undefined4 **)(iVar9 + DAT_0002df54);
+  puVar8 = *(undefined4 **)(iVar9 + DAT_0002df58);
+  **(undefined4 **)(iVar9 + DAT_0002df30) = *param_1;
+  uVar18 = param_1[2];
+  *puVar20 = param_1[1];
+  *puVar15 = uVar18;
+  uVar21 = param_1[4];
+  uVar18 = param_1[5];
+  *puVar14 = param_1[3];
+  *puVar12 = uVar21;
+  uVar21 = param_1[6];
+  *puVar11 = uVar18;
+  uVar16 = param_1[8];
+  uVar18 = param_1[7];
+  *puVar10 = uVar21;
+  *puVar24 = uVar18;
+  *puVar7 = uVar16;
+  uVar18 = param_1[10];
+  uVar21 = param_1[0xb];
+  *puVar22 = param_1[9];
+  iVar6 = DAT_0002df70;
+  iVar5 = DAT_0002df6c;
+  iVar4 = DAT_0002df68;
+  iVar3 = DAT_0002df64;
+  iVar2 = DAT_0002df60;
+  iVar1 = DAT_0002df5c;
+  *puVar8 = uVar21;
+  puVar14 = *(undefined4 **)(iVar9 + iVar5);
+  puVar8 = *(undefined4 **)(iVar9 + iVar1);
+  puVar12 = *(undefined4 **)(iVar9 + iVar2);
+  uVar19 = param_1[0xc];
+  puVar11 = *(undefined4 **)(iVar9 + iVar3);
+  uVar13 = param_1[0xe];
+  puVar10 = *(undefined4 **)(iVar9 + iVar4);
+  *puVar23 = uVar18;
+  uVar17 = param_1[0xd];
+  puVar7 = *(undefined4 **)(iVar9 + iVar6);
+  uVar21 = param_1[0x11];
+  uVar16 = param_1[0xf];
+  uVar18 = param_1[0x10];
+  *puVar12 = uVar19;
+  *puVar11 = uVar17;
+  *puVar10 = uVar13;
+  *puVar14 = uVar16;
+  *puVar7 = uVar18;
+  *puVar8 = uVar21;
+  return;
+}
+
+
+
+==== fs_tsk_Init AT 00030518 body=144
+CALLS pthread_mutex_init 0001a0cc
+CALLS calloc 000198c8
+CALLS rq_drc_ErrorTraceP 0001a36c
+CALLS rq_sys_ForceStnby 00019574
+CALL_COUNT 4
+DECOMP_OK true ERROR 
+
+void fs_tsk_Init(void)
+
+{
+  void *pvVar1;
+  size_t __nmemb;
+  int iVar2;
+  int iVar3;
+  
+  iVar2 = DAT_000305a8 + 0x30530;
+  pthread_mutex_init(*(pthread_mutex_t **)(iVar2 + DAT_000305ac),(pthread_mutexattr_t *)0x0);
+  iVar3 = *(int *)(iVar2 + DAT_000305b4);
+  __nmemb = *(size_t *)(**(int **)(iVar2 + DAT_000305b0) + 0x1c);
+  *(size_t *)(iVar3 + 4) = __nmemb;
+  pvVar1 = calloc(__nmemb,0x50);
+  *(void **)(iVar3 + 8) = pvVar1;
+  if (pvVar1 != (void *)0x0) {
+    return;
+  }
+  rq_drc_ErrorTraceP(0xffffffff,0,0x11002000,0,0,0,0);
+  rq_sys_ForceStnby();
+  return;
+}
+
+
+
+==== fs_ipc_Init AT 000343cc body=28
+CALLS memset 00019964
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_ipc_Init(void)
+
+{
+  memset(*(void **)(DAT_000343e8 + 0x343e4 + DAT_000343ec),0,0x80);
+  return;
+}
+
+
+
+==== fs_prc_Init AT 00034d78 body=68
+CALLS fs_zsy_GetComAdr 00019898
+CALLS getpid 0001a4c8
+CALL_COUNT 2
+DECOMP_OK true ERROR 
+
+void fs_prc_Init(int param_1)
+
+{
+  __pid_t _Var1;
+  int iVar2;
+  int *piVar3;
+  int iVar4;
+  
+  iVar2 = DAT_00034dbc + 0x34d90;
+  piVar3 = *(int **)(iVar2 + DAT_00034dc0);
+  fs_zsy_GetComAdr(0,piVar3,0x280);
+  iVar4 = *piVar3;
+  _Var1 = getpid();
+  **(int **)(iVar2 + DAT_00034dc4) = param_1;
+  *(__pid_t *)(iVar4 + param_1 * 4) = _Var1;
+  return;
+}
+
+
+
+==== fs_psm_Init AT 000358ac body=28
+CALLS memset 00019964
+CALL_COUNT 1
+DECOMP_OK true ERROR 
+
+void fs_psm_Init(void)
+
+{
+  memset(*(void **)(DAT_000358c8 + 0x358c4 + DAT_000358cc),0,0x100);
+  return;
+}
+
+
+
+==== fs_shm_Init AT 00035f18 body=292
+CALLS mmap 000195b0
+CALLS ftruncate 0001a384
+CALLS __errno_location 0001a7a4
+CALLS shm_open 000194f0
+CALLS rq_drc_ErrorTraceP 0001a36c
+CALLS rq_sys_ForceStnby 00019574
+CALL_COUNT 6
+DECOMP_OK true ERROR 
+
+void fs_shm_Init(void)
+
+{
+  int __fd;
+  int iVar1;
+  void *pvVar2;
+  int *piVar3;
+  undefined4 uVar4;
+  int iVar5;
+  size_t *psVar6;
+  
+  iVar5 = DAT_0003603c + 0x35f30;
+  __fd = shm_open((char *)(iVar5 + DAT_00036040),2,0x1b6);
+  if (__fd < 0) {
+    piVar3 = __errno_location();
+    uVar4 = 0xb5000007;
+    iVar1 = 0;
+  }
+  else {
+    psVar6 = *(size_t **)(iVar5 + DAT_00036044);
+    iVar1 = ftruncate(__fd,*psVar6);
+    if (-1 < iVar1) {
+      pvVar2 = mmap((void *)0x0,*psVar6,3,1,__fd,0);
+      iVar1 = iVar5 + DAT_00036048;
+      *(void **)(iVar5 + DAT_00036048) = pvVar2;
+      if (pvVar2 != (void *)0xffffffff) {
+        *(size_t *)(iVar1 + 4) = (int)pvVar2 + *psVar6;
+        return;
+      }
+      piVar3 = __errno_location();
+      rq_drc_ErrorTraceP(0xffffffff,0,0xb5000009,__fd,0,0,*piVar3);
+      rq_sys_ForceStnby();
+      return;
+    }
+    piVar3 = __errno_location();
+    uVar4 = 0xb5000008;
+  }
+  rq_drc_ErrorTraceP(0xffffffff,0,uVar4,__fd,iVar1,0,*piVar3);
+  rq_sys_ForceStnby();
+  return;
+}
+
+

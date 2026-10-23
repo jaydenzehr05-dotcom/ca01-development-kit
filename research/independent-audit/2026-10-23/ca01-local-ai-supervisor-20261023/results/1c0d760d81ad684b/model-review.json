@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libDIS_IF.so",
+  "examined_functions": [
+    "000182cc",
+    "000184b8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 229,
+    "prompt_tokens": 1522,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 1751
+  },
+  "next_focus": [
+    "Flash storage interface functions",
+    "Data validation routines"
+  ],
+  "observations": [
+    {
+      "address": "0x000182cc",
+      "claim": "Reads logo data from flash with size validation",
+      "evidence_snippet": "local_144 = local_144 | local_148 << 0x10",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000184b8",
+      "claim": "Reads UIC operational data from flash storage",
+      "evidence_snippet": "local_3c = local_3c | local_40 << 0x10",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle firmware logo and UIC data retrieval from flash storage with error checking.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "1c0d760d81ad684bf5570278ffeb9c801607715efea03533fdf6b42db3d87e49",
+  "unresolved_questions": [
+    "What specific flash storage addresses are accessed?",
+    "What is the purpose of fd_pdc_SetFdcSts() calls?"
+  ]
+}

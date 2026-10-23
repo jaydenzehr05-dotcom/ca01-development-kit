@@ -1,0 +1,9 @@
+{
+  "binary": "07-gui.bin",
+  "bytes": 529973,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "00006844010000002916080021fd626fe4342a614bec1110abb9678997a32dd7",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [],
+  "sha256": "c10b091dc28f582e605b7f531f822b9cf68b7688bc7f1d32f89e3471f8e9ed6a"
+}

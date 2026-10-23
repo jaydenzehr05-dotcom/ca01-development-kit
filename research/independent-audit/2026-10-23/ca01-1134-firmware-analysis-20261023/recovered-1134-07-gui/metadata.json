@@ -1,0 +1,181 @@
+{
+  "status": "partial_untrusted_deflate_suffix",
+  "start_bit": 540910,
+  "end_bit": 4237569,
+  "end_byte_ceil": 529697,
+  "output_size": 2644922,
+  "known_bytes": 2588152,
+  "unknown_bytes": 56770,
+  "unique_unknown_history_slots": 360,
+  "known_contiguous_suffix_start": 811498,
+  "known_contiguous_suffix_size": 1833424,
+  "known_contiguous_suffix_sha256": "44787e6fd98c0b0d5e47bc94c91478b381b9d1d1c80e21b73c2849cc7256d48b",
+  "zero_filled_output_sha256": "c245605a1d787f1ccce26052329532ce38d3780a49d5b97b2c478cf93372ddf5",
+  "blocks": [
+    {
+      "start_bit": 540910,
+      "end_bit": 810219,
+      "final": false,
+      "kind": 2,
+      "output_end": 39407
+    },
+    {
+      "start_bit": 810219,
+      "end_bit": 1080523,
+      "final": false,
+      "kind": 2,
+      "output_end": 78255
+    },
+    {
+      "start_bit": 1080523,
+      "end_bit": 1349828,
+      "final": false,
+      "kind": 2,
+      "output_end": 115310
+    },
+    {
+      "start_bit": 1349828,
+      "end_bit": 1550269,
+      "final": false,
+      "kind": 2,
+      "output_end": 230517
+    },
+    {
+      "start_bit": 1550269,
+      "end_bit": 1817075,
+      "final": false,
+      "kind": 2,
+      "output_end": 608466
+    },
+    {
+      "start_bit": 1817075,
+      "end_bit": 2087187,
+      "final": false,
+      "kind": 2,
+      "output_end": 646846
+    },
+    {
+      "start_bit": 2087187,
+      "end_bit": 2356867,
+      "final": false,
+      "kind": 2,
+      "output_end": 684293
+    },
+    {
+      "start_bit": 2356867,
+      "end_bit": 2626572,
+      "final": false,
+      "kind": 2,
+      "output_end": 724619
+    },
+    {
+      "start_bit": 2626572,
+      "end_bit": 2896934,
+      "final": false,
+      "kind": 2,
+      "output_end": 763042
+    },
+    {
+      "start_bit": 2896934,
+      "end_bit": 3165778,
+      "final": false,
+      "kind": 2,
+      "output_end": 799817
+    },
+    {
+      "start_bit": 3165778,
+      "end_bit": 3281876,
+      "final": false,
+      "kind": 2,
+      "output_end": 855908
+    },
+    {
+      "start_bit": 3281876,
+      "end_bit": 3846707,
+      "final": false,
+      "kind": 2,
+      "output_end": 1901038
+    },
+    {
+      "start_bit": 3846707,
+      "end_bit": 4237569,
+      "final": true,
+      "kind": 2,
+      "output_end": 2644922
+    }
+  ],
+  "limits": [
+    "Missing prefix and unknown history are not recovered.",
+    "No gzip CRC or package signature is verified.",
+    "Complete individual entries require independent header, bounds and mask checks."
+  ],
+  "input_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/07-gui.bin",
+  "input_sha256": "c10b091dc28f582e605b7f531f822b9cf68b7688bc7f1d32f89e3471f8e9ed6a",
+  "payload_offset": 12,
+  "payload_size": 529961,
+  "component_end_byte_ceil": 529709,
+  "zlib_crosschecks": [
+    {
+      "dictionary": "zeros",
+      "eof": true,
+      "output_size": 2644922,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    },
+    {
+      "dictionary": "ones_ff",
+      "eof": true,
+      "output_size": 2644922,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    },
+    {
+      "dictionary": "incrementing",
+      "eof": true,
+      "output_size": 2644922,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    }
+  ],
+  "fully_known_tar_entries": [
+    {
+      "archive_path": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+      "partial_header_offset": 812986,
+      "partial_data_offset": 813498,
+      "size": 612522,
+      "sha256": "f41d7256548ae70881b8777ae76e37fdd0b6998577c8779cefd3ba25d4209d1b",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    },
+    {
+      "archive_path": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+      "partial_header_offset": 1426362,
+      "partial_data_offset": 1426874,
+      "size": 610350,
+      "sha256": "7442138ae913b6bf56cb52f3be5ae94d8c23bc9736763179d0f67d313e9780fa",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    },
+    {
+      "archive_path": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "partial_header_offset": 2037690,
+      "partial_data_offset": 2038202,
+      "size": 596144,
+      "sha256": "1e9eca3854506419e67e812f60f45de0f40c4a90113f038f11fd7bafdb74b166",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    }
+  ],
+  "trailing_bytes": 264,
+  "unverified_gzip_footer_hypothesis": {
+    "offset": 529697,
+    "crc32_hex": "7f27bc23",
+    "isize": 2723840,
+    "remaining_after_footer": 256,
+    "crc_verified": false,
+    "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+  }
+}

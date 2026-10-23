@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_CDP",
+  "examined_functions": [
+    "000099e0",
+    "00009e54"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 268,
+    "prompt_tokens": 1278,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1546
+  },
+  "next_focus": [
+    "Analyze the function pointer at DAT_00009a0c",
+    "Examine the FUN_0000a500 function call"
+  ],
+  "observations": [
+    {
+      "address": "0x000099e0",
+      "claim": "Calls function pointer if conditions are met",
+      "evidence_snippet": "(*DAT_00009a0c)();",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00009e54",
+      "claim": "Validates input parameter 3 and character at offset 2",
+      "evidence_snippet": "if (*(int *)(param_1 + 4) != 3)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function _INIT_0 checks for null pointer before calling a function pointer. FUN_00009e54 validates input parameters and processes data based on specific conditions.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a",
+  "unresolved_questions": [
+    "What is the purpose of the function pointer call in _INIT_0?",
+    "What does FUN_00009e54 do after processing the data?"
+  ]
+}

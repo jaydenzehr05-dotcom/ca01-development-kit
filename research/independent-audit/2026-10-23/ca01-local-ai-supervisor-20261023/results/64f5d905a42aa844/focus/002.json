@@ -1,0 +1,62 @@
+{
+  "binary": "./opt/ftl/apl/PROC_HMI",
+  "examined_functions": [
+    "0004640c",
+    "00046678"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 201,
+    "prompt_tokens": 1966,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2167
+  },
+  "next_focus": [
+    "M",
+    "e",
+    "m"
+  ],
+  "observations": [
+    {
+      "address": "0x00046678",
+      "claim": "Function allocates memory for GUI word list parsing.",
+      "evidence_snippet": "puVar3 = (undefined4 *)fs_mpl_Alloc(2,8)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle XML parsing for GUI word lists with error tracing and memory allocation.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "4640c",
+    "46678"
+  ],
+  "selection_evidence": [
+    {
+      "address": "4640c",
+      "score": 245,
+      "tags": [
+        "missing_resources",
+        "paths"
+      ]
+    },
+    {
+      "address": "46678",
+      "score": 245,
+      "tags": [
+        "missing_resources",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the XML parsing?",
+    "What do the error codes represent?"
+  ]
+}

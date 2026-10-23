@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libVOIAudioStream.so",
+  "examined_functions": [
+    "0001c55c",
+    "00012edc"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 237,
+    "prompt_tokens": 1088,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 1325
+  },
+  "next_focus": [
+    "File access pattern analysis",
+    "Setup routine behavior"
+  ],
+  "observations": [
+    {
+      "address": "0x0001c55c",
+      "claim": "Function opens file and reads data into allocated buffer",
+      "evidence_snippet": "fopen(param_1,(char *)(iVar4 + DAT_0001c67c))",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00012edc",
+      "claim": "Initialization function calls a setup routine via function pointer",
+      "evidence_snippet": "(**(code **)(iVar1 + DAT_00012f1c))",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0001c55c appears to load audio stream data from a file into allocated memory, while 00012edc handles initialization.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "c5b9d0c56a1f7539e91851fe4958316987b401d81769d40711b7102f4a62c7f1",
+  "unresolved_questions": [
+    "What is the purpose of the file access pattern?",
+    "What does the setup routine do?"
+  ]
+}

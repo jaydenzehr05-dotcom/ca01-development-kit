@@ -1,0 +1,1175 @@
+T-SB-0024-20
+
+March 10, 2020
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Service
+Category
+
+Audio/Visual/Telematics
+
+Section
+
+Navigation/Multi Info Display
+
+Market USA
+
+Applicability
+YEAR(S)
+
+MODEL(S)
+
+2016 - 2017
+
+Camry, Camry HV
+
+2016 - 2019
+
+Corolla, Prius
+
+2016 - 2018
+
+RAV4, RAV4 HV
+
+ADDITIONAL INFORMATION
+
+SUPERSESSION NOTICE
+The information contained in this bulletin supersedes Service Bulletin No. T-SB-0003-19.
+ The Introduction and Software Update Information sections have been updated.
+Service Bulletin No. T-SB-0003-19 is obsolete and any printed versions should be discarded.
+
+© 2020 Toyota Motor Sales, USA
+
+Page 1 of 17
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 2 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Introduction
+
+Some 2016 model year vehicles equipped with Entune™ Audio (version UU.11.13), Entune™
+Audio Plus (version EU.20.21), or Entune™ Premium Audio (CU.20.22) or older may exhibit one
+or more of the following conditions:
+
+
+Bluetooth® audio information is missing from instrument cluster MID
+
+
+
+Long street names are not indicated when using turn-by-turn directions
+
+
+
+Abnormal navigation routing
+
+
+
+Toyota Park Assist Settings button displays in the Settings menu
+
+
+
+System is unable to call phone numbers with “-” present in the number
+
+
+
+System is unable to send SMS via the Quick Message feature
+
+
+
+Abnormal Bluetooth® audio playback when inserting and removing the iPhone® USB
+cable from the USB port
+
+
+
+System is unable to play audio from iPhone® connected via USB when two phones are
+connected via Bluetooth® at the same time
+
+
+
+Browse button operates intermittently in Bluetooth® audio
+
+
+
+Screen flickers when switching between day and night modes
+
+
+
+Abnormal Pandora Internet Radio operation when switching between two iPhones
+
+
+
+Unit reboots intermittently
+
+
+
+Diagnostic Trouble Code (DTC) U1110 or B15E6 is present
+
+
+
+Diagnostic screen displays intermittently
+
+
+
+Weather Map is inoperative
+
+
+
+“Unable to connect to server” displays when using voice recognition and searching
+for “IHOP”
+
+
+
+Panoramic view monitor operates abnormally
+
+© 2020 Toyota Motor Sales, USA
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 3 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Introduction (continued)
+
+Some 2016 – 2019 model year vehicles equipped with Entune™ Audio (version UU.10.48),
+Entune™ Audio Plus (version EU.10.68 or EU.20.25 or EU.20.28), or Entune™ Premium Audio
+(CU.10.71 or CU.10.72 or CU.20.05 or CU.20.08) may exhibit one or more of the
+following conditions:
+
+
+Inoperative swiping feature on Apps or Setup screens
+
+
+
+Meijer department store is intermittently pronounced “Mee-jer”
+
+
+
+Number of transferred contacts does not update
+
+
+
+Slacker Radio skips two songs when using steering wheel controls
+
+
+
+Starting Pandora Internet Radio via voice recognition is intermittently inoperative
+
+
+
+FM mode displays the incorrect number of available stations intermittently
+
+
+
+Voice recognition does not start intermittently
+
+
+
+Audio intermittently displays on the Home screen
+
+
+
+Rumbling sound when no audio is playing
+
+
+
+Intermittent “Message list could not be loaded” displays when retrieving messages
+
+
+
+Audio information does not match between the head unit and the instrument cluster
+
+
+
+Instrument cluster has incorrect display of XM channels
+
+
+
+Panoramic camera view is intermittently inoperative
+
+
+
+Scout voice guidance has rear speakers muted
+
+
+
+USB audio playback resets after key cycle
+
+© 2020 Toyota Motor Sales, USA
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 4 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Introduction (continued)
+
+Some 2016 – 2017 model year vehicles equipped with Entune™ Audio (version UU.11.16),
+Entune™ Audio Plus (version EU.20.25), or Entune™ Premium Audio (CU.20.26) or older may
+exhibit one or more of the following conditions:
+
+
+System is unable to adjust volume during voice navigation operation
+
+
+
+“Low Fuel Level” pop-up does not display on the navigation screen
+
+
+
+Abnormal POI operation
+
+
+
+Freezing on the fuel consumption screen
+
+
+
+Phone book fails to completely load
+
+
+
+Phone widget shows phone number instead of phone book name
+
+
+
+Toyota Entune™ App Suite will not download
+
+
+
+Incorrect navigation location displays on traffic map
+
+
+
+Incoming call screen information is incorrect
+
+
+
+Bluetooth® connection takes too long
+
+
+
+Abnormal Bluetooth® operation switching between phones
+
+
+
+Diagnostic Trouble Code (DTC) U0293 set
+
+
+
+When switching from Bluetooth® audio to Entune™ Audio, no sound is output
+
+
+
+XM presets cannot be set
+
+© 2020 Toyota Motor Sales, USA
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 5 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Introduction (continued)
+
+Some 2016 – 2017 model year vehicles equipped with Entune™ Audio (version UU.11.19),
+Entune™ Audio Plus (version EU.22.06), or Entune™ Premium Audio (CU.22.06) or older may
+exhibit one or more of the following conditions:
+
+
+Unable to change the time intermittently
+
+
+
+Unit reboots intermittently
+
+
+
+Backup camera stays on too long
+
+
+
+Unable to browse contacts while driving
+
+
+
+Unable to use the dial pad while driving
+
+
+
+Unable to switch Bluetooth® devices while driving
+
+
+
+Incorrect items selected when inputting addresses for navigation
+
+
+
+Spotify song information does not display
+
+
+
+Reduce the number of prompts when using voice recognition
+
+Some 2016 – 2018 model year vehicles equipped with Entune™ Audio (version UU.11.27),
+Entune™ Audio Plus (version EU.22.15), or Entune™ Premium Audio (CU.22.15) or older may
+exhibit one or more of the following conditions:
+
+
+Unable to select HD radio using voice recognition
+
+
+
+Unable to browse music using voice recognition
+
+
+
+Unable to select FM genre using voice recognition
+
+
+
+Unable to delete destination using voice recognition
+
+
+
+Voice prompt interrupt is defaulted to off
+
+
+
+Abnormal Bluetooth® pop-up messages
+
+
+
+Intermittent Bluetooth® disconnection
+
+
+
+Unable to set XM channel 000 as a preset
+
+
+
+Intermittent freeze condition
+
+
+
+Abnormal Bluetooth® volume operation
+
+
+
+Unable to stop voice training
+
+
+
+Contact image missing or partially displayed with iOS 11.3.x or later
+
+© 2020 Toyota Motor Sales, USA
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 6 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Introduction (continued)
+
+Some 2016 – 2018 model year Toyota vehicles equipped with Entune™ Audio Plus (version
+EU.22.39 or EU.32.39) or Entune™ Premium Audio (version CU.22.39 or CU.22.39) may exhibit
+one or more of the following conditions:
+
+
+Intermittent radio rebooting
+
+
+
+Speed limit is not displayed
+
+
+
+Abnormal route guidance
+
+
+
+Navigation makes detour around destination
+
+
+
+Unable to read the part number of the XM tuner
+
+
+
+Song title and artist are not displayed when using a foreign language
+
+
+
+Clock does not update when GPS signal is lost
+
+Some 2016 – 2018 model year Toyota vehicles equipped with Entune™ Audio Plus (version
+EU.22.46 or EU.32.46) or Entune™ Premium Audio (version CU.32.44 or CU.22.44) may exhibit
+one or more of the following conditions:
+
+
+Clock intermittently changing to an incorrect time (7:00)
+
+
+
+Radio station presets intermittently return to default
+
+Updated software is now available to address these conditions, improve hands-free sound
+quality, and enhance other visual and usability features. Follow the Software Update Procedure in
+this bulletin to install the latest software version.
+
+© 2020 Toyota Motor Sales, USA
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 7 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Warranty Information
+OP CODE
+
+EL9053
+
+DESCRIPTION
+
+Software Update
+
+TIME
+
+MODEL
+
+OFP
+
+Camry, Camry HV
+
+86804-06180
+86804-06190
+86140-06660
+86140-06670
+
+Corolla
+
+86140-02460
+86140-02470
+86804-02070
+86140-02520
+86140-02540
+86804-02100
+
+RAV4, RAV4 HV
+
+86804-0R030
+86804-0R040
+86140-0R170
+86140-42110
+86140-0R180
+86804-42100
+86804-42110
+86140-42460
+
+Prius C
+
+86140-52330
+86140-52270
+86140-52260
+86804-52040
+86804-52050
+
+0.3
+
+APPLICABLE WARRANTY
+ This repair is covered under the Toyota Basic Warranty. This warranty is in effect for
+36 months or 36,000 miles, whichever occurs first, from the vehicle’s in-service date.
+ Warranty application is limited to occurrence of the specified condition described in
+this bulletin.
+
+© 2020 Toyota Motor Sales, USA
+
+T1
+
+T2
+
+73
+
+74
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 8 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Information
+HEAD UNIT
+
+APPLICABLE FILE ON THE USB DRIVE
+
+Entune™ Audio
+
+15TBDANA-CA01_1134.kwi
+
+Entune™ Audio Plus
+
+15TDDANA-CA01_2247.kwi
+15TDDANA-CA02_3247.kwi
+
+Entune™ Premium Audio
+
+15TDANNA-CA01_2247.kwi
+15TDANNA-CA02_3247.kwi
+
+MULTIMEDIA SOFTWARE FILE DOWNLOAD
+The multimedia software update file may be downloaded directly from this Service Bulletin by
+clicking on the file name in the table above. Once downloaded, the file may be extracted (unzipped)
+from the zip file and saved to a blank USB flash drive.
+For USB flash drive requirements and download instructions, refer to TIS – Diagnostics –
+Reprogramming – Reference Documents – Multimedia Software Download Instructions.
+
+© 2020 Toyota Motor Sales, USA
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 9 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure
+
+1. Confirm the audio system type by checking the panel ID printed above the top right or
+bottom right of the display.
+Figure 1.
+
+2
+
+1
+
+4
+
+3
+
+1
+
+Corolla
+
+3
+
+Camry, Camry HV
+
+2
+
+RAV4, RAV4 HV
+
+4
+
+Prius C
+
+MODEL
+
+YEAR
+
+ENTUNE™ AUDIO
+
+ENTUNE™ AUDIO PLUS
+
+ENTUNE™ PREMIUM
+
+Camry,
+Camry HV
+
+2016 – 2017
+
+100614
+
+N/A
+
+100612
+100613
+
+100574
+100582
+
+100575
+100576
+100583
+100584
+100868
+100869
+100870
+100871
+
+RAV4,
+RAV4 HV
+
+2016 – 2018
+
+100573
+100581
+100874
+100875
+
+Prius C
+
+2016 – 2019
+
+100629
+100745
+100876
+
+N/A
+
+100628
+100872
+100744
+
+Corolla
+
+2016 – 2019
+
+100639
+100571
+100877
+
+100638
+100570
+100880
+
+100637
+100873
+100569
+
+© 2020 Toyota Motor Sales, USA
+
+100878
+100879
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 10 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure (continued)
+
+2. Perform steps 7 – 11 and verify the latest software needs to be installed.
+Is the software up to date?
+
+
+
+YES — This bulletin does NOT apply. Continue diagnosis using the applicable
+Repair Manual.
+NO — Continue to step 3.
+
+3. Insert the USB flash drive into the vehicle USB port.
+4. Start the engine.
+5. When the Select Audio Source screen
+displays, continue to the next step.
+
+Figure 2.
+
+6. When the USB source icon highlights and
+displays the USB name with the icon,
+continue to the next step.
+
+Figure 3.
+
+© 2020 Toyota Motor Sales, USA
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 11 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure (continued)
+
+7. Go to the Setup screen.
+A. For Entune™ Audio:
+Press the Setup button on the panel.
+Figure 4.
+
+1
+
+2
+
+3
+
+4
+
+1
+
+Corolla
+
+3
+
+Camry, Camry HV
+
+2
+
+RAV4, RAV4 HV
+
+4
+
+Prius C
+
+© 2020 Toyota Motor Sales, USA
+
+T-SB-0024-20
+
+March 10, 2020
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure (continued)
+
+B. For Entune™ Audio Plus/Entune™ Premium Audio:
+(1) Press the Apps button on the left or right of the panel.
+Figure 5. Camry, Camry HV, Corolla,
+RAV4, RAV4 HV
+
+Figure 6. Prius C
+
+Figure 7.
+
+NOTE
+If the Entune™ pop-up displays, select OK.
+
+(2) Select Setup on the Apps screen.
+
+8. Select General on the Setup screen.
+
+Figure 8.
+
+Figure 9.
+
+© 2020 Toyota Motor Sales, USA
+
+Page 12 of 17
+
+T-SB-0024-20
+
+March 10, 2020
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure (continued)
+
+9. Select Software Update from the list on the
+General Settings screen.
+
+Figure 10.
+
+HINT
+Scroll down the list until
+Software Update displays.
+
+Figure 11.
+
+10. Select Update on the
+Software Update screen.
+
+Figure 12.
+
+NOTE
+If software is detected properly, a
+“New Software was found.” pop-up will display.
+
+© 2020 Toyota Motor Sales, USA
+
+Page 13 of 17
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 14 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure (continued)
+
+11. Verify that the NEW software is up to date
+on the Software Update screen.
+
+Figure 13.
+
+Table 1. Software Version Information
+ENTUNE™ AUDIO
+TYPE
+
+CURRENT
+VERSION
+
+NEW VERSION
+
+Operating
+System
+
+UU.11.34
+
+Device Driver
+
+UU.11.34
+
+Audio
+
+UU.11.34
+
+Navigation
+Bluetooth
+GUI
+
+UU.10.48
+UU.11.06
+UU.11.08
+UU.11.13
+UU.11.16
+UU.11.17
+UU.11.19
+UU.11.27
+
+–
+
+UU.11.34
+UU.11.34
+UU.11.34
+
+Middleware
+Kernel
+
+UU.11.34
+
+Voice
+Recognition
+
+UU.11.34
+
+12. Select Update Software on the
+Software Update screen.
+
+ENTUNE™ AUDIO PLUS
+CURRENT
+VERSION
+
+NEW VERSION
+
+ENTUNE™ PREMIUM AUDIO
+CURRENT
+VERSION
+
+–
+
+EU.10.68
+EU.20.05
+EU.20.08
+EU.20.21
+EU.20.25
+EU.21.01
+EU.22.04
+EU.22.06
+EU.22.15
+EU.20.14
+EU.20.17
+EU.22.19
+EU.22.39
+
+EU.32.39
+EU.22.46
+EU.32.46
+
+EU.22.47 or
+EU.32.47
+EU.22.47 or
+EU.32.47
+EU.22.47 or
+EU.32.47
+EU.22.47 or
+EU.32.47
+EU.22.47 or
+EU.32.47
+EU.22.47 or
+EU.32.47
+EU.22.47 or
+EU.32.47
+
+Figure 14.
+
+© 2020 Toyota Motor Sales, USA
+
+NEW VERSION
+
+CU.10.71
+CU.20.05
+CU.20.08
+CU.20.14
+CU.20.17
+CU.20.22
+CU.20.26
+CU.22.04
+CU.22.06
+CU.22.15
+CU.22.19
+CU.22.39
+CU.32.39
+CU.22.44
+CU.32.44
+
+CU.22.47 or
+CU.32.47
+CU.22.47 or
+CU.32.47
+CU.22.47 or
+CU.32.47
+CU.22.47 or
+CU.32.47
+CU.22.47 or
+CU.32.47
+CU.22.47 or
+CU.32.47
+CU.22.47 or
+CU.32.47
+CU.22.47 or
+CU.32.47
+
+T-SB-0024-20
+
+March 10, 2020
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure (continued)
+
+13. Select Yes on the “Would you like to start the
+software update?” pop-up.
+
+Figure 15.
+
+Figure 16.
+
+NOTE
+Entune™ Audio Plus ONLY: Select the left box
+on the “This preset is currently empty. Would
+you like to save [XXXX] as a preset?” pop-up.
+
+14. This unit will begin installation.
+
+Figure 17.
+
+NOTE
+Do NOT turn off ACC before the software is
+ready for updating.
+
+© 2020 Toyota Motor Sales, USA
+
+Page 15 of 17
+
+T-SB-0024-20
+
+March 10, 2020
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure (continued)
+
+15. When “The software is ready for updating”
+displays, cycle the ignition OFF, wait 30
+seconds, then cycle the ignition ON again.
+
+Figure 18.
+
+16. Wait for the audio system to complete the
+software update.
+
+Figure 19.
+
+NOTE
+Do NOT turn off ACC before the next Toyota
+logo screen displays.
+
+When the Toyota logo screen displays, the
+update is complete.
+
+Figure 20.
+
+17. Remove the USB flash drive from the vehicle USB port.
+18. When the the Select Audio Source screen
+displays, continue to the next step.
+
+Figure 21.
+
+© 2020 Toyota Motor Sales, USA
+
+Page 16 of 17
+
+T-SB-0024-20
+
+March 10, 2020
+
+Page 17 of 17
+
+Entune Audio Head Unit Software Update (Denso-Ten)
+Software Update Procedure (continued)
+
+19. Perform steps 7 – 10 of the Software Update Procedure to re-enter the
+Software Update screen.
+
+20. Verify that the software information is updated on the Software Update screen.
+Table 2. New Software Version Information
+
+TYPE
+
+ENTUNE™ AUDIO
+
+M/D/Y
+
+ENTUNE™
+AUDIO PLUS
+
+M/D/Y
+
+ENTUNE™
+PREMIUM
+AUDIO
+
+NEW VERSION
+
+NEW VERSION
+
+NEW VERSION
+
+Boot
+
+UU.11.34
+
+EU.22.47 or
+EU.32.47
+
+CU.22.47 or
+CU.32.47
+
+Voice
+Recognition
+
+UU.11.34
+
+EU.22.47 or
+EU.32.47
+
+CU.22.47 or
+CU.32.47
+
+GUI
+
+UU.11.34
+
+EU.22.47 or
+EU.32.47
+
+CU.22.47 or
+CU.32.47
+
+Audio
+
+UU.11.34
+
+EU.22.47 or
+EU.32.47
+
+CU.22.47 or
+CU.32.47
+
+Bluetooth
+
+UU.11.34
+
+Navigation
+
+–
+
+Device Driver
+
+UU.11.34
+
+Kernel
+
+UU.11.34
+
+EU.22.47 or
+EU.32.47
+
+CU.22.47 or
+CU.32.47
+
+Operating
+System
+
+UU.11.34
+
+-
+
+–
+
+Middleware
+
+UU.11.34
+
+EU.22.47 or
+EU.32.47
+
+CU.22.47 or
+CU.32.47
+
+Power
+
+UU.11.34
+
+EU.22.47 or
+EU.32.47
+
+CU.22.47 or
+CU.32.47
+
+Updated
+Date
+(If no GPS
+signal, date
+may NOT be
+accurate)
+
+M/D/Y
+
+EU.22.47 or
+EU.32.47
+
+CU.22.47 or
+Updated
+Updated
+CU.32.47
+Date
+Date
+(If no GPS CU.22.47 or
+(If no GPS
+–
+signal, date CU.32.47
+signal, date
+may NOT
+EU.22.47 or be accurate) CU.22.47 or may NOT
+CU.32.47 be accurate)
+EU.32.47
+
+21. If this bulletin is being applied for contact images missing, delete ALL Bluetooth® pairings, then
+re-pair ALL devices.
+
+© 2020 Toyota Motor Sales, USA
+
+

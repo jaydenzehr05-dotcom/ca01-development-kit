@@ -1,0 +1,129 @@
+{
+  "unchanged_original_entry_sha256": {
+    "0x2bb08": "ec669fa5a75e23307aa4e9c22f0b73ca2a5c59c36fdef62347b10184d6f3dc69",
+    "0x2b66c": "f69ec9e328081b6b32d3f72d82fe305cf93d192f5e33c96a47ecab2d120b9248",
+    "0x1e092c": "6d6f7c222d1240966afc8d34378eb32f2e43afcba5bd0806c733fd22f0d02650",
+    "0x1c4654": "0c678be2d269021907b75942bbe836975b37fca84060e541cefcc652dfe93171",
+    "0x1e0640": "ffdb5e3dcb18034443544f3eae1dd05590a7e25ba518cb7dcd0552ddf6f0885e",
+    "0x2b9fc": "c1fa9532ece506b3e88d16ba61f6eaf0150d9394e163adf0e850dc251746f3ce",
+    "0x1602c": "3e183f33dd355a2055c1e594dccc480a53189cd54f6b25e2589267a2a0c06f0a"
+  },
+  "fixture_original_entries": [
+    "0x2bb08",
+    "0x1e092c",
+    "0x1c4654",
+    "0x1e0640",
+    "0x1e092c",
+    "0x1c4654",
+    "0x1e0640",
+    "0x1e092c",
+    "0x1c4654",
+    "0x1e0640"
+  ],
+  "scope": "Original ARM graphics slice with fixture-supplied state and modeled services; not full Toyota application startup.",
+  "hmi_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "slice_completed": true,
+  "exit_code": 0,
+  "graphics_ready": true,
+  "allocation_failure_observed": false,
+  "original_gl_draw_calls": 3,
+  "original_gl_clear_calls": 3,
+  "original_frame_submissions": 3,
+  "frames": 3,
+  "captures": [
+    {
+      "sha256": "1300dd29d686e9d6b5b8c99f7c981a58061a26baf2fb7027388b9f339ca3b973",
+      "width": 800,
+      "height": 480,
+      "foreground_pixels": 64000,
+      "background_rgb": [
+        17,
+        34,
+        68
+      ],
+      "foreground_rgb": [
+        255,
+        255,
+        255
+      ],
+      "original_geometry_function": "0x1c4654",
+      "fixture_input_rectangle": [
+        400,
+        160
+      ]
+    },
+    {
+      "sha256": "57da3292a373359033a1a75e85c9e121fdf220955dabd270c5b99028a1e0aa7f",
+      "width": 800,
+      "height": 480,
+      "foreground_pixels": 65124,
+      "background_rgb": [
+        17,
+        34,
+        68
+      ],
+      "foreground_rgb": [
+        255,
+        255,
+        255
+      ],
+      "original_geometry_function": "0x1c4654",
+      "fixture_input_rectangle": [
+        402,
+        162
+      ]
+    },
+    {
+      "sha256": "77ac3e417a549e7faa7bf201663e8de40dd204f21bd13e4a97c20afe7deb6b3b",
+      "width": 800,
+      "height": 480,
+      "foreground_pixels": 66256,
+      "background_rgb": [
+        17,
+        34,
+        68
+      ],
+      "foreground_rgb": [
+        255,
+        255,
+        255
+      ],
+      "original_geometry_function": "0x1c4654",
+      "fixture_input_rectangle": [
+        404,
+        164
+      ]
+    }
+  ],
+  "buffer_handles": [
+    3389063169,
+    3389063170,
+    3389063171
+  ],
+  "descriptor_tokens": [
+    3405840385,
+    3405840386,
+    3405840387
+  ],
+  "full_application_started": false,
+  "factory_menu_rendered": false,
+  "original_functions": [
+    "0x16094",
+    "0x2b66c",
+    "0x2bb08",
+    "0x2b170",
+    "0x1e092c",
+    "0x1c4654",
+    "0x1e0640",
+    "0x2b9fc",
+    "0x1602c"
+  ],
+  "substitutions": [
+    "Private imports bound to real ARMEL Mesa or explicit display model; other imports terminate",
+    "Vehicle-profile selector0x2a548 selects one measured original config record",
+    "Graphics-state block, projection, current white color and rectangle dimensions are fixture inputs",
+    "Display descriptors use modeled handles and distinct memory tokens, no physical-address claim",
+    "Initial system/task/parent startup barriers are outside this bounded rendering slice"
+  ],
+  "error": ""
+}

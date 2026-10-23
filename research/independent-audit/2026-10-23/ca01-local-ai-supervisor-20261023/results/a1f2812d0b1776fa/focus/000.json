@@ -1,0 +1,59 @@
+{
+  "binary": "./opt/ftl/lib/libipas_sysc.so",
+  "examined_functions": [
+    "0001e7c0",
+    "0001e854"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 263,
+    "prompt_tokens": 852,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1115
+  },
+  "next_focus": [
+    "Flash operation constants",
+    "Error handling paths"
+  ],
+  "observations": [
+    {
+      "address": "0x0001e7c0",
+      "claim": "Reads data from flash with size validation",
+      "evidence_snippet": "iVar1 = rq_fls_Read(local_14[0],1,param_3,param_2,&local_18,0)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions fc_bkm_FlsRead and fc_bkm_FlsWrite handle flash read and write operations with error checking and file closing.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1e7c0",
+    "1e854"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1e7c0",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "1e854",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do DAT_0001e84c and DAT_0001e904 contain?",
+    "What is the purpose of sync() calls?"
+  ]
+}

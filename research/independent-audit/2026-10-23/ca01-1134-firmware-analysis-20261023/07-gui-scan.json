@@ -1,0 +1,39 @@
+{
+  "input": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/07-gui.bin",
+  "sha256": "c10b091dc28f582e605b7f531f822b9cf68b7688bc7f1d32f89e3471f8e9ed6a",
+  "observed_component_prefix": 12,
+  "compressed_length": 529961,
+  "unverified_trailer_crc32_hex": "7f27bc23",
+  "unverified_gzip_isize": 2723840,
+  "scan_range": [
+    64000,
+    130000
+  ],
+  "stats": {
+    "headers_tested": 262401,
+    "first_chunk_plausible": 2,
+    "eof_near_footer": 2
+  },
+  "candidates": [
+    {
+      "start_byte": 101277,
+      "start_bit": 3,
+      "output_bytes": 2605515,
+      "end_approx_byte": 529696,
+      "footer_byte": 529697,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "328f052bd6add3b323dc35f68841e02797f974f367e61936aa76705bd31b299b"
+    },
+    {
+      "start_byte": 67613,
+      "start_bit": 6,
+      "output_bytes": 2644922,
+      "end_approx_byte": 529696,
+      "footer_byte": 529697,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "c245605a1d787f1ccce26052329532ce38d3780a49d5b97b2c478cf93372ddf5"
+    }
+  ],
+  "elapsed_seconds": 2.714,
+  "disclaimer": "Candidate complete DEFLATE suffix (unknown encrypted prefix and 32 KiB initial LZ history); not original complete gzip or verified TAR"
+}

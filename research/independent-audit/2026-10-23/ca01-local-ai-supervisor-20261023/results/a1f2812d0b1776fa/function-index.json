@@ -1,0 +1,11 @@
+{
+  "binary": "./opt/ftl/lib/libipas_sysc.so",
+  "created": "2026-10-23T19:46:00+00:00",
+  "entries": 962,
+  "failed": 0,
+  "kind": "complete_discovery_index",
+  "not_attempted": 0,
+  "note": "Every Ghidra-discovered function enumerated; no source-level or semantic verification implied",
+  "skipped": false,
+  "source_bodies_indexed": 584
+}

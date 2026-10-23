@@ -1,0 +1,66 @@
+{
+  "binary": "./opt/ftl/apl/PROC_UIEIF",
+  "examined_functions": [
+    "0002d13c",
+    "0001b314"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 274,
+    "prompt_tokens": 2313,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2587
+  },
+  "next_focus": [
+    "File path construction in 0002d13c",
+    "Data parsing in 0001b314"
+  ],
+  "observations": [
+    {
+      "address": "0x0002d13c",
+      "claim": "Function reads UIE backup files using fscanf and access checks.",
+      "evidence_snippet": "fscanf(local_2c[0],\"%s\",acStack_170)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001b314",
+      "claim": "Function processes UIE data with file operations and string manipulations.",
+      "evidence_snippet": "fscanf(in_stack_ffffffe4,\"%s\",local_4d0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0002d13c handles UIE file operations, including reading backup files and managing paths. Function 0001b314 appears to process UIE data with file access and string operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "2d13c",
+    "1b314"
+  ],
+  "selection_evidence": [
+    {
+      "address": "2d13c",
+      "score": 272,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    },
+    {
+      "address": "1b314",
+      "score": 232,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific UIE data is being processed?",
+    "Are these functions part of a larger UIE management system?"
+  ]
+}

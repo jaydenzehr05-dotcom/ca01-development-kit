@@ -1,0 +1,14 @@
+! infgen 3.6 output
+!
+gzip
+! stats table 74:1
+! stats literals 7.2 bits each (36321/5033)
+! stats matches 94.1% (7810 x 10.2)
+! stats inout 22516:2 (12843) 84855 0
+! stats total inout 22516:2 (12843) 84855
+! stats total block average 84855.0 uncompressed
+! stats total block average 12843.0 symbols
+! stats total literals 7.2 bits each
+! stats total matches 94.1% (7810 x 10.2)
+!
+length

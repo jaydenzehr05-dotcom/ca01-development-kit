@@ -1,0 +1,448 @@
+
+=== FUN_0001b048 @ 0001b048 size=624===
+COMPLETED true ERR 
+
+undefined4 FUN_0001b048(void)
+
+{
+  int iVar1;
+  size_t sVar2;
+  undefined4 uVar3;
+  undefined4 *puVar4;
+  undefined1 auStack_1abc [28];
+  uint local_1aa0;
+  undefined4 local_70;
+  undefined2 local_6c;
+  undefined1 local_6a;
+  undefined4 local_30;
+  undefined4 uStack_2c;
+  undefined4 uStack_28;
+  undefined2 local_24;
+  undefined1 local_22;
+  
+  FUN_0002136c(auStack_1abc);
+  FUN_0001e13c(0x35,10,0x7c9,local_1aa0,"stInfo.ulPartFlag");
+  if ((local_1aa0 & 1) == 0) {
+    puVar4 = &DAT_000240e4;
+  }
+  else {
+    puVar4 = &DAT_000240cc;
+  }
+  local_30 = *puVar4;
+  uStack_2c = puVar4[1];
+  uStack_28 = puVar4[2];
+  local_22 = (undefined1)((uint)puVar4[3] >> 0x10);
+  local_24 = (undefined2)puVar4[3];
+  iVar1 = rq_fls_MakeDir("/mnt/rpr_rb_root",0);
+  if (iVar1 != 0) {
+    rq_drc_ErrorTraceP(0,&DAT_00060002,0x4300,iVar1,0,0,0);
+  }
+  iVar1 = mount("/","/mnt/rpr_rb_root","ext3",0x1000,(void *)0x0);
+  if (iVar1 < 0) {
+    uVar3 = 0x4301;
+  }
+  else {
+    iVar1 = mount((char *)&local_30,"/var/verup/","ext3",0,(void *)0x0);
+    if (iVar1 < 0) {
+      uVar3 = 0x4302;
+    }
+    else {
+      memset(&local_70,0,0x40);
+      local_6a = (undefined1)((uint)DAT_000290f8 >> 0x10);
+      local_6c = (undefined2)DAT_000290f8;
+      local_70 = DAT_000290f4;
+      sVar2 = strlen((char *)&local_70);
+      memcpy((char *)((int)&local_70 + sVar2),"/mnt/rpr_rb_root",0x11);
+      sVar2 = strlen((char *)&local_70);
+      memcpy((char *)((int)&local_70 + sVar2),&DAT_000290fc,3);
+      sVar2 = strlen((char *)&local_70);
+      memcpy((char *)((int)&local_70 + sVar2),&DAT_00029100,2);
+      sVar2 = strlen((char *)&local_70);
+      memcpy((char *)((int)&local_70 + sVar2),"/var/verup/",0xc);
+      sVar2 = strlen((char *)&local_70);
+      DAT_0007d0c9 = 3;
+      iVar1 = FUN_0001de48(0xb,&DAT_00060002,0x300,0xc,&local_70,sVar2);
+      if (iVar1 == 0) {
+        DAT_0007d4d5 = 1;
+        rq_tim_Start(0xd,0);
+        return 0;
+      }
+      uVar3 = 0x4303;
+    }
+  }
+  rq_drc_ErrorTraceP(0,&DAT_00060002,uVar3,iVar1,0,0,0);
+  return 0xffffffff;
+}
+
+
+
+=== FUN_0001b2b8 @ 0001b2b8 size=352===
+COMPLETED true ERR 
+
+undefined4 FUN_0001b2b8(void)
+
+{
+  size_t sVar1;
+  int iVar2;
+  undefined4 uVar3;
+  undefined4 *puVar4;
+  undefined1 auStack_1abc [28];
+  uint local_1aa0;
+  undefined4 local_70;
+  undefined4 uStack_6c;
+  undefined2 local_68;
+  undefined1 local_66;
+  undefined4 local_30;
+  undefined4 uStack_2c;
+  undefined4 uStack_28;
+  undefined2 local_24;
+  undefined1 local_22;
+  
+  FUN_0002136c(auStack_1abc);
+  FUN_0001e13c(0x35,10,0x786,local_1aa0,"stInfo.ulPartFlag");
+  if ((local_1aa0 & 1) == 0) {
+    puVar4 = &DAT_000240e4;
+  }
+  else {
+    puVar4 = &DAT_000240cc;
+  }
+  local_30 = *puVar4;
+  uStack_2c = puVar4[1];
+  uStack_28 = puVar4[2];
+  local_22 = (undefined1)((uint)puVar4[3] >> 0x10);
+  local_24 = (undefined2)puVar4[3];
+  umount((char *)&local_30);
+  memset(&local_70,0,0x40);
+  local_66 = (undefined1)((uint)DAT_0002910c >> 0x10);
+  local_70 = DAT_00029104;
+  uStack_6c = DAT_00029108;
+  local_68 = (undefined2)DAT_0002910c;
+  strcat((char *)&local_70,(char *)&local_30);
+  sVar1 = strlen((char *)&local_70);
+  DAT_0007d0c9 = 2;
+  iVar2 = FUN_0001de48(0xb,&DAT_00060002,0x300,0xc,&local_70,sVar1);
+  if (iVar2 == 0) {
+    DAT_0007d4d5 = 1;
+    rq_tim_Start(0xd,0);
+    uVar3 = 0;
+  }
+  else {
+    rq_drc_ErrorTraceP(0,&DAT_00060001,0x4313,iVar2,0,0,0);
+    uVar3 = 0xffffffff;
+  }
+  return uVar3;
+}
+
+
+
+=== FUN_00015b04 @ 00015b04 size=1464===
+COMPLETED true ERR 
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_00015b04(void)
+
+{
+  bool bVar1;
+  int iVar2;
+  int iVar3;
+  ssize_t sVar4;
+  int iVar5;
+  int *piVar6;
+  size_t sVar7;
+  undefined4 uVar8;
+  uint uVar9;
+  char acStack_290 [256];
+  char acStack_190 [248];
+  char **local_98;
+  size_t local_94;
+  char *local_90;
+  size_t local_8c;
+  undefined4 local_88;
+  undefined4 uStack_84;
+  char local_80 [4];
+  char acStack_7c [4];
+  char acStack_78 [4];
+  char acStack_74 [4];
+  char local_70 [4];
+  char acStack_6c [4];
+  char acStack_68 [4];
+  uint local_64;
+  char local_60 [4];
+  char acStack_5c [4];
+  undefined2 local_58;
+  undefined *local_34;
+  undefined4 local_30;
+  undefined4 local_2c;
+  undefined4 local_28;
+  void *local_24;
+  
+  if (DAT_0007cf44 != '\x06') {
+    return;
+  }
+  switch(DAT_0007cdbc) {
+  case 1:
+    break;
+  case 2:
+    memset(&local_88,0,0x80);
+    local_88 = DAT_0002415c;
+    uStack_84 = DAT_00024160;
+    strcat((char *)&local_88,(char *)&DAT_0007cdac);
+    sVar7 = strlen((char *)&local_88);
+    memcpy((char *)((int)&local_88 + sVar7),&DAT_0002411c,2);
+    strcat((char *)&local_88,s_emms_mdt_000384c8 + (uint)(byte)DAT_0007cdc0 * 0x20);
+    local_8c = strlen((char *)&local_88);
+    local_90 = (char *)&local_88;
+    FUN_0001de48(0xb,&DAT_00060006,0x300,0xf);
+    rq_tim_Start(0xc,0);
+    return;
+  case 3:
+    usleep(3000000);
+    umount2((char *)&DAT_0007cdac,1);
+    usleep(3000000);
+    memset(&local_90,0,0x80);
+    local_90 = (char *)s_fsck__a__dev_mmcblk0p3_mount__de_00024120._0_4_;
+    local_8c._0_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[4];
+    local_8c._1_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[5];
+    local_8c._2_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[6];
+    local_8c._3_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[7];
+    local_88._0_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[8];
+    local_88._1_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[9];
+    local_88._2_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[10];
+    local_88._3_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0xb];
+    uStack_84._0_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0xc];
+    uStack_84._1_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0xd];
+    uStack_84._2_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0xe];
+    uStack_84._3_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0xf];
+    local_80[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x10];
+    local_80[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x11];
+    local_80[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x12];
+    local_80[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x13];
+    acStack_7c[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x14];
+    acStack_7c[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x15];
+    acStack_7c[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x16];
+    acStack_7c[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x17];
+    acStack_78[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x18];
+    acStack_78[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x19];
+    acStack_78[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x1a];
+    acStack_78[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x1b];
+    acStack_74[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x1c];
+    acStack_74[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x1d];
+    acStack_74[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x1e];
+    acStack_74[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x1f];
+    local_70[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x20];
+    local_70[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x21];
+    local_70[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x22];
+    local_70[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x23];
+    acStack_6c[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x24];
+    acStack_6c[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x25];
+    acStack_6c[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x26];
+    acStack_6c[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x27];
+    acStack_68[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x28];
+    acStack_68[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x29];
+    acStack_68[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x2a];
+    acStack_68[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x2b];
+    local_64._0_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x2c];
+    local_64._1_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x2d];
+    local_64._2_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x2e];
+    local_64._3_1_ = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x2f];
+    local_60[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x30];
+    local_60[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x31];
+    local_60[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x32];
+    local_60[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x33];
+    acStack_5c[0] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x34];
+    acStack_5c[1] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x35];
+    acStack_5c[2] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x36];
+    acStack_5c[3] = s_fsck__a__dev_mmcblk0p3_mount__de_00024120[0x37];
+    local_58 = (undefined2)ram0x00024158;
+    local_94 = strlen((char *)&local_90);
+    local_98 = &local_90;
+    FUN_0001de48(0xb,&DAT_00060006,0x300,0xf);
+    rq_tim_Start(0xc,0);
+    return;
+  default:
+    return;
+  case 5:
+    FUN_000159f8(0);
+    FUN_0000faf4(0);
+    return;
+  case 6:
+    FUN_0000fbac();
+    return;
+  }
+  local_24 = (void *)0x0;
+  if (0xd < (byte)DAT_0007cdc0) {
+    iVar2 = cdbCtlVupEndReq(&DAT_00060006,FUN_0000fac4);
+    if (iVar2 != 0) {
+      FUN_0000fc4c(0xffffffff,0xffffffff,0);
+    }
+    FUN_0000faf4(4);
+    return;
+  }
+  memset(acStack_190,0,0x100);
+  memset(acStack_290,0,0x100);
+  strcpy(acStack_190,DAT_00010110);
+  sVar7 = strlen(acStack_190);
+  memcpy(acStack_190 + sVar7,&DAT_0002411c,2);
+  strcat(acStack_190,s_emms_mdt_000384c8 + (uint)(byte)DAT_0007cdc0 * 0x20);
+  strcpy(acStack_290,(char *)&DAT_0007cdac);
+  strcat(acStack_290,s_emms_mdt_000384c8 + (uint)(byte)DAT_0007cdc0 * 0x20);
+  sVar7 = getpagesize();
+  iVar2 = posix_memalign(&local_24,sVar7,0x40000);
+  if (iVar2 != 0) {
+    rq_drc_ErrorTraceP(0,&DAT_00060006,0x4302,0,0,0,0);
+    FUN_0000fc4c(0xffffffff,0xffffffff,0);
+    return;
+  }
+  iVar2 = FUN_00023dec(acStack_190,&local_90);
+  if (iVar2 < 0) {
+    piVar6 = __errno_location();
+    uVar8 = 0x4303;
+LAB_0000ff80:
+    rq_drc_ErrorTraceP(0,&DAT_00060006,uVar8,*piVar6,0,0,0);
+    FUN_0000fc4c(0xffffffff,0xffffffff,local_24);
+    return;
+  }
+  iVar2 = open(acStack_190,0);
+  if (iVar2 < 0) {
+    piVar6 = __errno_location();
+    uVar8 = 0x4304;
+    goto LAB_0000ff80;
+  }
+  iVar3 = open(acStack_290,0x114c2,0x1a4);
+  if (iVar3 < 0) {
+    piVar6 = __errno_location();
+    iVar3 = *piVar6;
+    if (iVar3 != 0x11) {
+      uVar8 = 0x4306;
+      goto LAB_0000ffe4;
+    }
+    iVar3 = open(acStack_290,0x11402,0x1a4);
+    if (iVar3 < 0) {
+      uVar8 = 0x4305;
+      iVar3 = *piVar6;
+      goto LAB_0000ffe4;
+    }
+  }
+  uVar9 = 0;
+  bVar1 = false;
+  do {
+    do {
+      if (local_64 <= uVar9) {
+        FUN_0000fc18(iVar2,iVar3,local_24);
+        rq_tim_Start(0xc,0);
+        local_28 = 0;
+        local_2c = 0;
+        local_34 = &DAT_00060006;
+        local_30 = 0x300;
+        rq_msg_Send(0xf,&local_34,0x10);
+        return;
+      }
+      sVar4 = read(iVar2,local_24,0x40000);
+      uVar9 = uVar9 + sVar4;
+      if (sVar4 < 0) {
+        piVar6 = __errno_location();
+        uVar8 = 0x4307;
+        iVar5 = *piVar6;
+LAB_000100b0:
+        rq_drc_ErrorTraceP(0,&DAT_00060006,uVar8,iVar5,0,0,0);
+        FUN_0000fc4c(iVar2,iVar3,local_24);
+        return;
+      }
+      if (sVar4 != 0x40000) {
+        close(iVar3);
+        bVar1 = true;
+        iVar3 = open(acStack_290,0x401);
+        if (iVar3 < 0) {
+          piVar6 = __errno_location();
+          uVar8 = 0x4309;
+          iVar5 = *piVar6;
+          goto LAB_000100b0;
+        }
+      }
+      iVar5 = FUN_0000fc6c(iVar3,local_24,sVar4);
+      if (iVar5 < 0) {
+        uVar8 = 0x430a;
+        goto LAB_000100b0;
+      }
+    } while (!bVar1);
+    close(iVar3);
+    iVar3 = open(acStack_290,0x11402,0x1a4);
+  } while (-1 < iVar3);
+  piVar6 = __errno_location();
+  uVar8 = 0x430b;
+  iVar3 = *piVar6;
+LAB_0000ffe4:
+  rq_drc_ErrorTraceP(0,&DAT_00060006,uVar8,iVar3,0,0,0);
+  FUN_0000fc4c(iVar2,0xffffffff,local_24);
+  return;
+}
+
+
+
+=== FUN_00015c44 @ 00015c44 size=484===
+COMPLETED true ERR 
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_00015c44(int param_1)
+
+{
+  int iVar1;
+  undefined4 *puVar2;
+  
+  if (*(int *)(param_1 + 4) != 0xd) {
+    FUN_0001e13c(0x35,0x1d,0xdf,0,"RECV [Unkhown]");
+    rq_drc_ErrorTraceP(0,&DAT_00060006,0x2902,*(undefined4 *)(param_1 + 4),0,0,0);
+    return;
+  }
+  FUN_0001e13c(0x35,0x1d,0xd8,0,"RECV [EVE_UPD_START_REQ]");
+  puVar2 = *(undefined4 **)(param_1 + 0xc);
+  FUN_0001e13c(0x35,0x1d,0x16f,*(undefined4 *)(param_1 + 8),"msghdr->subev");
+  if (DAT_0007cf44 != '\0') {
+    rq_drc_ErrorTraceP(0,&DAT_00060006,0x2905,*puVar2,0,0,0);
+    FUN_000159f8(0xff);
+    return;
+  }
+  DAT_0007cf44 = 6;
+  FUN_00015ab0(param_1);
+  FUN_0000fbdc();
+  DAT_0007cdba = (undefined1)((uint)DAT_00024110 >> 0x10);
+  DAT_0007cdac = DAT_00024104;
+  DAT_0007cdb0 = DAT_00024108;
+  DAT_0007cdb4 = DAT_0002410c;
+  _DAT_0007cdb8 = (undefined2)DAT_00024110;
+  iVar1 = mount("/dev/mmcblk0p3/","/opt/ftl/cddb/","ext3",0x20,(void *)0x0);
+  if (iVar1 < 0) {
+    rq_drc_ErrorTraceP(0,&DAT_00060001,0x4300,iVar1,0,0,0);
+    FUN_0000fbac();
+    return;
+  }
+  iVar1 = cdbCtlVupStaReq(&DAT_00060006,FUN_0000fac4);
+  if (iVar1 == 0) {
+    return;
+  }
+  FUN_0000fbac();
+  return;
+}
+
+
+
+=== FUN_000159f8 @ 000159f8 size=140===
+COMPLETED true ERR 
+
+void FUN_000159f8(undefined4 param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = mount("/dev/mmcblk0p3/","/opt/ftl/cddb/","ext3",0x21,(void *)0x0);
+  if (iVar1 < 0) {
+    rq_drc_ErrorTraceP(0,&DAT_00060006,0x2906,iVar1,0,0,0);
+  }
+  FUN_000216a8(&DAT_00060006,param_1,0);
+  DAT_0007cf44 = 0;
+  return;
+}
+
+

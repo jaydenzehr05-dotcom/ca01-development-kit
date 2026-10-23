@@ -1,0 +1,9 @@
+{
+  "binary": "04-device-driver.bin",
+  "bytes": 236712,
+  "classification": "filename/magic/string indicators only",
+  "first32hex": "00004582010000009c9c0300fadf3000e1aa331fe62736fd70e3252f6edca18e",
+  "note": "No full filesystem extraction or firmware execution; text can be incidental.",
+  "possible_paths": [],
+  "sha256": "f15d56c8da18a6cadda5aa6a0b9c17986e78c707b1a4270d9991d2beabcabbed"
+}

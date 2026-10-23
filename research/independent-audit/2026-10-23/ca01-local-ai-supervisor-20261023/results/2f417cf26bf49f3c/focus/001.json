@@ -1,0 +1,67 @@
+{
+  "binary": "./opt/ftl/apl/PROC_SYSTEM",
+  "examined_functions": [
+    "00027850",
+    "00061b18"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 249,
+    "prompt_tokens": 2435,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2684
+  },
+  "next_focus": [
+    "Version value processing logic",
+    "File access error handling"
+  ],
+  "observations": [
+    {
+      "address": "0x00027850",
+      "claim": "Accesses /opt/ftl/SDIMG.VER file for version data",
+      "evidence_snippet": "pcVar2 = \"/opt/ftl/SDIMG.VER\"",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00061b18",
+      "claim": "Reads version info from /var/backup/DBIMG.VER",
+      "evidence_snippet": "rq_fls_Open(\"/var/backup/DBIMG.VER\"",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle version data retrieval from firmware files and system parameters. One accesses SDIMG.VER, NFIMG.VER, and DBIMG.VER files while the other manages VCL parameters.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "27850",
+    "61b18"
+  ],
+  "selection_evidence": [
+    {
+      "address": "27850",
+      "score": 282,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    },
+    {
+      "address": "61b18",
+      "score": 282,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the VCL parameter handling?",
+    "How are the version values used after retrieval?"
+  ]
+}

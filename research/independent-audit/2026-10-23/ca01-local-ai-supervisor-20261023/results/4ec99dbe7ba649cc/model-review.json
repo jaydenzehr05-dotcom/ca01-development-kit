@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_REPRO",
+  "examined_functions": [
+    "0000b8a8",
+    "000159f8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 220,
+    "prompt_tokens": 1497,
+    "prompt_tokens_details": {
+      "cached_tokens": 31
+    },
+    "total_tokens": 1717
+  },
+  "next_focus": [
+    "Error handling in checksum validation",
+    "Filesystem mount behavior"
+  ],
+  "observations": [
+    {
+      "address": "0x0000b8a8",
+      "claim": "Function processes message header and traces errors",
+      "evidence_snippet": "msghdr->subev",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000159f8",
+      "claim": "Function mounts ext3 filesystem from mmcblk0p3",
+      "evidence_snippet": "mount(\"/dev/mmcblk0p3/\"",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function at 0000b8a8 handles message header processing and error tracing. Function at 000159f8 mounts a filesystem.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+  "unresolved_questions": [
+    "What is the purpose of the checksum validation?",
+    "What is the significance of the module switch case?"
+  ]
+}

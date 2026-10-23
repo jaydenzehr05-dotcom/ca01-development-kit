@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/lib/libipas_grp.so",
+  "examined_functions": [
+    "0001b034",
+    "0001b300"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 189,
+    "prompt_tokens": 2236,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2425
+  },
+  "next_focus": [
+    "Color format decoding",
+    "Memory layout analysis"
+  ],
+  "observations": [
+    {
+      "address": "0x0001b034",
+      "claim": "Performs color blending with alpha transparency",
+      "evidence_snippet": "uVar5 == 0",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001b300",
+      "claim": "Fills VRAM with solid color patterns",
+      "evidence_snippet": "memset(puVar14,param_1,__n)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle VRAM display and filling operations with color blending and memory management.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1b034",
+    "1b300"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1b034",
+      "score": 182,
+      "tags": [
+        "graphics"
+      ]
+    },
+    {
+      "address": "1b300",
+      "score": 182,
+      "tags": [
+        "graphics"
+      ]
+    }
+  ],
+  "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific display formats are supported?",
+    "How are the color parameters interpreted?"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "input_name": "07-gui",
+  "input_sha256": "c10b091dc28f582e605b7f531f822b9cf68b7688bc7f1d32f89e3471f8e9ed6a",
+  "start_bit": 540910,
+  "report_end": 4237569,
+  "output_size": 2644922,
+  "known_bytes": 2588152,
+  "unknown_bytes": 56770,
+  "all_tar_entries_count": 3,
+  "classification_counts": {
+    "identical_to_1127": 3
+  },
+  "missing_previous_names": [],
+  "files": [
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+      "size": 612522,
+      "sha256": "f41d7256548ae70881b8777ae76e37fdd0b6998577c8779cefd3ba25d4209d1b",
+      "status": "identical_to_1127"
+    },
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+      "size": 610350,
+      "sha256": "7442138ae913b6bf56cb52f3be5ae94d8c23bc9736763179d0f67d313e9780fa",
+      "status": "identical_to_1127"
+    },
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "size": 596144,
+      "sha256": "1e9eca3854506419e67e812f60f45de0f40c4a90113f038f11fd7bafdb74b166",
+      "status": "identical_to_1127"
+    }
+  ],
+  "new_target_names": [],
+  "note": "Only individually checksum-valid and history-independent file bytes counted; not a complete recovered firmware filesystem"
+}

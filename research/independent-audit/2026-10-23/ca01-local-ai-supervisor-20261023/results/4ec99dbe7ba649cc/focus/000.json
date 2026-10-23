@@ -1,0 +1,69 @@
+{
+  "binary": "./opt/ftl/apl/PROC_REPRO",
+  "examined_functions": [
+    "0000b720",
+    "00015b04"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 266,
+    "prompt_tokens": 2407,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2673
+  },
+  "next_focus": [
+    "Analyze the jumptable in function 0000b720",
+    "Examine the file operations in function 00015b04"
+  ],
+  "observations": [
+    {
+      "address": "0x0000b720",
+      "claim": "Handles umount and system state transitions",
+      "evidence_snippet": "umount(\"/var/verup/\")",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00015b04",
+      "claim": "Manages file reading and writing operations",
+      "evidence_snippet": "read(iVar2,local_24,0x40000)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0000b720 handles system state transitions and backup operations. Function 00015b04 manages file operations and error handling.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "b720",
+    "15b04"
+  ],
+  "selection_evidence": [
+    {
+      "address": "b720",
+      "score": 443,
+      "tags": [
+        "filesystem",
+        "missing_libs",
+        "paths"
+      ]
+    },
+    {
+      "address": "15b04",
+      "score": 387,
+      "tags": [
+        "filesystem",
+        "startup_ipc",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the jumptable at 0000b720?",
+    "What data is stored in DAT_0007cd84?"
+  ]
+}

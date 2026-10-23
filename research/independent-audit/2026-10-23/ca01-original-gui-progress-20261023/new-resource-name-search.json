@@ -1,0 +1,17 @@
+{
+  "DENSO_TEN_17_OSS_SOFT_PACK.zip": {
+    "entries_scanned": 95,
+    "matches": [],
+    "scope": "Archive filenames only, not nested file bodies"
+  },
+  "OSS_SOFT_PACK.tgz": {
+    "entries_scanned": 44362,
+    "matches": [],
+    "scope": "Archive filenames only, not nested file bodies"
+  },
+  "20130619_LE2355.tgz": {
+    "entries_scanned": 35853,
+    "matches": [],
+    "scope": "Archive filenames only, not nested file bodies"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "binary": "./opt/ftl/apl/PROC_CDP",
+  "examined_functions": [
+    "00010000",
+    "000154f8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 241,
+    "prompt_tokens": 2166,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2407
+  },
+  "next_focus": [
+    "Parameter handling in first function",
+    "Array indexing in second function"
+  ],
+  "observations": [
+    {
+      "address": "0x000154f8",
+      "claim": "Function uses switch on array index with timer operations.",
+      "evidence_snippet": "switch((&DAT_000383f5)[uVar4 * 0x72])",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle device communication states and connection statuses. First function processes command cases 1-4, second manages connection states and timer operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "10000",
+    "154f8"
+  ],
+  "selection_evidence": [
+    {
+      "address": "10000",
+      "score": 4,
+      "tags": []
+    },
+    {
+      "address": "154f8",
+      "score": 4,
+      "tags": []
+    }
+  ],
+  "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the memory offsets represent?",
+    "What is the purpose of the timer value 0xc?"
+  ]
+}

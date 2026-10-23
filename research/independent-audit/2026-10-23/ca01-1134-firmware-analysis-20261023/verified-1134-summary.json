@@ -1,0 +1,53 @@
+{
+  "package": "15TBDANA-CA01",
+  "version_older": "UU.11.27",
+  "version_new": "UU.11.34",
+  "old_sha256": "39431b79ed849be627c13be586019ceaab34470a534b76c385f73f1748d367ca",
+  "new_sha256": "71c62cdcc357b5f249b216d68c06bd31168ab16939aab010a68777ffead04dbc",
+  "changed_package_components": 9,
+  "unchanged_components": [
+    "SH Base"
+  ],
+  "validated_complete_files_counts": {
+    "06-audio": {
+      "complete": 47,
+      "identical": 23,
+      "changed": 24
+    },
+    "07-gui": {
+      "complete": 3,
+      "identical": 3,
+      "changed": 0
+    },
+    "08-voice-recognition": {
+      "complete": 6,
+      "identical": 6,
+      "changed": 0
+    }
+  },
+  "unique_recovered_file_count": 56,
+  "changed_recovered_files": 24,
+  "unchanged_recovered_files": 32,
+  "critical_elf_text_unchanged": [
+    "PROC_HMI",
+    "PROC_SYSTEM",
+    "PROC_REPRO"
+  ],
+  "critical_elf_text_changed": [
+    "PROC_DISPLAY",
+    "PROC_VRS"
+  ],
+  "recovered_shared_libraries_unchanged": 20,
+  "new_verified_GUI_MC_mra_mui_font_assets": 0,
+  "no_new_verified_files_among_complete_recoveries": true,
+  "rea_unblob_nested_subtasks": {
+    "07-gui": 0,
+    "06-audio": 0
+  },
+  "caveats": [
+    "No full compressed prefixes, no CRC verification of whole components, no Toyota signature validation.",
+    "Cannot rule out files stored only in inaccessible leading component regions or the factory root filesystem.",
+    "Build-date-only changes in HMI do not demonstrate any new menu source code.",
+    "New DISPLAY code changes do not by themselves establish a new public ABI or working HMI startup."
+  ]
+}

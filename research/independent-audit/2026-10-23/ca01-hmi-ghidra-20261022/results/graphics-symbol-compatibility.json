@@ -1,0 +1,19 @@
+{
+  "libraries": {
+    "libEGL.so": {
+      "candidate": "/home/starlight/projects/rav4-radio/system-audit/gui-emulation/armel-rootfs/usr/lib/arm-linux-gnueabi/libEGL.so.1",
+      "imports": 18,
+      "export_names_found": 18,
+      "unresolved_names": [],
+      "no_direct_symbols_in_library": false
+    },
+    "libGLES_CM.so": {
+      "candidate": "/home/starlight/projects/rav4-radio/system-audit/gui-emulation/armel-rootfs/usr/lib/arm-linux-gnueabi/libGLESv1_CM.so.1",
+      "imports": 55,
+      "export_names_found": 55,
+      "unresolved_names": [],
+      "no_direct_symbols_in_library": false
+    }
+  },
+  "note": "Export-name matching only; does NOT establish graphics ABI/driver, library-init, or full GUI compatibility."
+}

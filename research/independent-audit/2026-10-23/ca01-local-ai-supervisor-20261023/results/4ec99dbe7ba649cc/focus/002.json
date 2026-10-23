@@ -1,0 +1,66 @@
+{
+  "binary": "./opt/ftl/apl/PROC_REPRO",
+  "examined_functions": [
+    "0001e58c",
+    "0002353c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 287,
+    "prompt_tokens": 1748,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2035
+  },
+  "next_focus": [
+    "File system operations in function 0002353c",
+    "Data flow in function 0001e58c"
+  ],
+  "observations": [
+    {
+      "address": "0x0001e58c",
+      "claim": "Reads ModelId from /opt/ftl/ModelId file",
+      "evidence_snippet": "rq_fls_Open(\"/opt/ftl/ModelId\"",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0002353c",
+      "claim": "Writes data to /var/backup/13CyRprVupDLNew file",
+      "evidence_snippet": "rq_fls_Open(\"/var/backup/13CyRprVupDLNew\"",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0001e58c reads ModelId from /opt/ftl/ModelId file, with fallback values. Function 0002353c handles various operations based on parameter values, including file operations and system calls.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1e58c",
+    "2353c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1e58c",
+      "score": 272,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    },
+    {
+      "address": "2353c",
+      "score": 232,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the ModelId file?",
+    "What data is written to the backup file?"
+  ]
+}

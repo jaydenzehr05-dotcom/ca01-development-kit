@@ -1,0 +1,11 @@
+{
+  "binary": "./opt/ftl/lib/libipas_grp.so",
+  "created": "2026-10-23T19:43:15+00:00",
+  "entries": 1116,
+  "failed": 0,
+  "kind": "complete_discovery_index",
+  "not_attempted": 0,
+  "note": "Every Ghidra-discovered function enumerated; no source-level or semantic verification implied",
+  "skipped": false,
+  "source_bodies_indexed": 648
+}

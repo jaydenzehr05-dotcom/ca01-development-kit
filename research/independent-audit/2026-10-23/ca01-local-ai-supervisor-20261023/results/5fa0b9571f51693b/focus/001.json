@@ -1,0 +1,59 @@
+{
+  "binary": "./opt/ftl/lib/libipas_sysp.so",
+  "examined_functions": [
+    "00021060",
+    "00021134"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 267,
+    "prompt_tokens": 1383,
+    "prompt_tokens_details": {
+      "cached_tokens": 163
+    },
+    "total_tokens": 1650
+  },
+  "next_focus": [
+    "File naming logic in fc_log_GetFileName",
+    "Error handling in fc_log_Create"
+  ],
+  "observations": [
+    {
+      "address": "0x00021060",
+      "claim": "Opens log file using fc_log_GetFileName and rq_fls_Open",
+      "evidence_snippet": "uVar2 = fc_log_GetFileName(*(undefined4 *)(iVar5 + 0x10),iVar4 + DAT_0002112c);",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions handle file logging operations including opening, creating, and managing log files with error handling and directory operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "21060",
+    "21134"
+  ],
+  "selection_evidence": [
+    {
+      "address": "21060",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "21134",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific log file names are generated?",
+    "What is the purpose of the delay in fc_log_Open?"
+  ]
+}

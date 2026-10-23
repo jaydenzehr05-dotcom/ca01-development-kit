@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_REPRO",
+  "examined_functions": [
+    "00018fc8",
+    "00019de8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 288,
+    "prompt_tokens": 1793,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2081
+  },
+  "next_focus": [
+    "Data flow after memcpy in 00018fc8",
+    "File path referenced by auStack_1520"
+  ],
+  "observations": [
+    {
+      "address": "0x00018fc8",
+      "claim": "Function opens and reads a file using rq_fls_Open and rq_fls_Read.",
+      "evidence_snippet": "iVar7 = rq_fls_Open(auStack_1520,&DAT_00024028,&local_30,0);",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00019de8",
+      "claim": "Function reads data from a file into a provided buffer.",
+      "evidence_snippet": "iVar1 = rq_fls_Read(local_1c[0],1,param_2,param_3,&local_20,0);",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 00018fc8 appears to handle file operations and data processing, while 00019de8 reads files into buffers.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "18fc8",
+    "19de8"
+  ],
+  "selection_evidence": [
+    {
+      "address": "18fc8",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "19de8",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the 0xf4 byte read operation?",
+    "What data structure is being processed after memcpy?"
+  ]
+}

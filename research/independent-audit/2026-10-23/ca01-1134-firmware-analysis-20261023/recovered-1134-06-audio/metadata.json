@@ -1,0 +1,3508 @@
+{
+  "status": "partial_untrusted_deflate_suffix",
+  "start_bit": 525621,
+  "end_bit": 75062688,
+  "end_byte_ceil": 9382836,
+  "output_size": 23439895,
+  "known_bytes": 23423809,
+  "unknown_bytes": 16086,
+  "unique_unknown_history_slots": 1017,
+  "known_contiguous_suffix_start": 44295,
+  "known_contiguous_suffix_size": 23395600,
+  "known_contiguous_suffix_sha256": "2189d629d6271d9d6bb7940315c273672c6809742150e8148f7799ade19b3d5a",
+  "zero_filled_output_sha256": "e9563e6a0c43c7179523e36e82a1240193aa30921b9433faebd905272f68a63e",
+  "blocks": [
+    {
+      "start_bit": 525621,
+      "end_bit": 568329,
+      "final": false,
+      "kind": 2,
+      "output_end": 14262
+    },
+    {
+      "start_bit": 568329,
+      "end_bit": 605400,
+      "final": false,
+      "kind": 2,
+      "output_end": 43564
+    },
+    {
+      "start_bit": 605400,
+      "end_bit": 653397,
+      "final": false,
+      "kind": 2,
+      "output_end": 71367
+    },
+    {
+      "start_bit": 653397,
+      "end_bit": 1084646,
+      "final": false,
+      "kind": 2,
+      "output_end": 371526
+    },
+    {
+      "start_bit": 1084646,
+      "end_bit": 1519245,
+      "final": false,
+      "kind": 2,
+      "output_end": 696946
+    },
+    {
+      "start_bit": 1519245,
+      "end_bit": 1940623,
+      "final": false,
+      "kind": 2,
+      "output_end": 983569
+    },
+    {
+      "start_bit": 1940623,
+      "end_bit": 1990601,
+      "final": false,
+      "kind": 2,
+      "output_end": 1012909
+    },
+    {
+      "start_bit": 1990601,
+      "end_bit": 2241006,
+      "final": false,
+      "kind": 2,
+      "output_end": 1138683
+    },
+    {
+      "start_bit": 2241006,
+      "end_bit": 2616197,
+      "final": false,
+      "kind": 2,
+      "output_end": 1228936
+    },
+    {
+      "start_bit": 2616197,
+      "end_bit": 2984774,
+      "final": false,
+      "kind": 2,
+      "output_end": 1313615
+    },
+    {
+      "start_bit": 2984774,
+      "end_bit": 3220024,
+      "final": false,
+      "kind": 2,
+      "output_end": 1380165
+    },
+    {
+      "start_bit": 3220024,
+      "end_bit": 3269737,
+      "final": false,
+      "kind": 2,
+      "output_end": 1396438
+    },
+    {
+      "start_bit": 3269737,
+      "end_bit": 3309382,
+      "final": false,
+      "kind": 2,
+      "output_end": 1410695
+    },
+    {
+      "start_bit": 3309382,
+      "end_bit": 3693166,
+      "final": false,
+      "kind": 2,
+      "output_end": 1502131
+    },
+    {
+      "start_bit": 3693166,
+      "end_bit": 3837255,
+      "final": false,
+      "kind": 2,
+      "output_end": 1548951
+    },
+    {
+      "start_bit": 3837255,
+      "end_bit": 3886842,
+      "final": false,
+      "kind": 2,
+      "output_end": 1563501
+    },
+    {
+      "start_bit": 3886842,
+      "end_bit": 3978040,
+      "final": false,
+      "kind": 2,
+      "output_end": 1593164
+    },
+    {
+      "start_bit": 3978040,
+      "end_bit": 4362580,
+      "final": false,
+      "kind": 2,
+      "output_end": 1685420
+    },
+    {
+      "start_bit": 4362580,
+      "end_bit": 4505891,
+      "final": false,
+      "kind": 2,
+      "output_end": 1728738
+    },
+    {
+      "start_bit": 4505891,
+      "end_bit": 4554723,
+      "final": false,
+      "kind": 2,
+      "output_end": 1749689
+    },
+    {
+      "start_bit": 4554723,
+      "end_bit": 4644169,
+      "final": false,
+      "kind": 2,
+      "output_end": 1778149
+    },
+    {
+      "start_bit": 4644169,
+      "end_bit": 4694688,
+      "final": false,
+      "kind": 2,
+      "output_end": 1844007
+    },
+    {
+      "start_bit": 4694688,
+      "end_bit": 4740583,
+      "final": false,
+      "kind": 2,
+      "output_end": 1858847
+    },
+    {
+      "start_bit": 4740583,
+      "end_bit": 4789606,
+      "final": false,
+      "kind": 2,
+      "output_end": 1874343
+    },
+    {
+      "start_bit": 4789606,
+      "end_bit": 4840330,
+      "final": false,
+      "kind": 2,
+      "output_end": 1891106
+    },
+    {
+      "start_bit": 4840330,
+      "end_bit": 4885414,
+      "final": false,
+      "kind": 2,
+      "output_end": 1908214
+    },
+    {
+      "start_bit": 4885414,
+      "end_bit": 4928224,
+      "final": false,
+      "kind": 2,
+      "output_end": 1921359
+    },
+    {
+      "start_bit": 4928224,
+      "end_bit": 5020858,
+      "final": false,
+      "kind": 2,
+      "output_end": 1948664
+    },
+    {
+      "start_bit": 5020858,
+      "end_bit": 5388329,
+      "final": false,
+      "kind": 2,
+      "output_end": 2045487
+    },
+    {
+      "start_bit": 5388329,
+      "end_bit": 5483241,
+      "final": false,
+      "kind": 2,
+      "output_end": 2072711
+    },
+    {
+      "start_bit": 5483241,
+      "end_bit": 5529515,
+      "final": false,
+      "kind": 2,
+      "output_end": 2092239
+    },
+    {
+      "start_bit": 5529515,
+      "end_bit": 5578107,
+      "final": false,
+      "kind": 2,
+      "output_end": 2107325
+    },
+    {
+      "start_bit": 5578107,
+      "end_bit": 5627979,
+      "final": false,
+      "kind": 2,
+      "output_end": 2127188
+    },
+    {
+      "start_bit": 5627979,
+      "end_bit": 5675289,
+      "final": false,
+      "kind": 2,
+      "output_end": 2144652
+    },
+    {
+      "start_bit": 5675289,
+      "end_bit": 5724498,
+      "final": false,
+      "kind": 2,
+      "output_end": 2162820
+    },
+    {
+      "start_bit": 5724498,
+      "end_bit": 5769984,
+      "final": false,
+      "kind": 2,
+      "output_end": 2178564
+    },
+    {
+      "start_bit": 5769984,
+      "end_bit": 5818743,
+      "final": false,
+      "kind": 2,
+      "output_end": 2192898
+    },
+    {
+      "start_bit": 5818743,
+      "end_bit": 5862559,
+      "final": false,
+      "kind": 2,
+      "output_end": 2213590
+    },
+    {
+      "start_bit": 5862559,
+      "end_bit": 6007521,
+      "final": false,
+      "kind": 2,
+      "output_end": 2261700
+    },
+    {
+      "start_bit": 6007521,
+      "end_bit": 6153420,
+      "final": false,
+      "kind": 2,
+      "output_end": 2303125
+    },
+    {
+      "start_bit": 6153420,
+      "end_bit": 6205861,
+      "final": false,
+      "kind": 2,
+      "output_end": 2319304
+    },
+    {
+      "start_bit": 6205861,
+      "end_bit": 6257711,
+      "final": false,
+      "kind": 2,
+      "output_end": 2334373
+    },
+    {
+      "start_bit": 6257711,
+      "end_bit": 6563210,
+      "final": false,
+      "kind": 2,
+      "output_end": 2422127
+    },
+    {
+      "start_bit": 6563210,
+      "end_bit": 6713441,
+      "final": false,
+      "kind": 2,
+      "output_end": 2464294
+    },
+    {
+      "start_bit": 6713441,
+      "end_bit": 6765258,
+      "final": false,
+      "kind": 2,
+      "output_end": 2478719
+    },
+    {
+      "start_bit": 6765258,
+      "end_bit": 6817398,
+      "final": false,
+      "kind": 2,
+      "output_end": 2493571
+    },
+    {
+      "start_bit": 6817398,
+      "end_bit": 6868692,
+      "final": false,
+      "kind": 2,
+      "output_end": 2508438
+    },
+    {
+      "start_bit": 6868692,
+      "end_bit": 6919840,
+      "final": false,
+      "kind": 2,
+      "output_end": 2523486
+    },
+    {
+      "start_bit": 6919840,
+      "end_bit": 7024382,
+      "final": false,
+      "kind": 2,
+      "output_end": 2585507
+    },
+    {
+      "start_bit": 7024382,
+      "end_bit": 7406556,
+      "final": false,
+      "kind": 2,
+      "output_end": 2689412
+    },
+    {
+      "start_bit": 7406556,
+      "end_bit": 7772620,
+      "final": false,
+      "kind": 2,
+      "output_end": 2783345
+    },
+    {
+      "start_bit": 7772620,
+      "end_bit": 7820862,
+      "final": false,
+      "kind": 2,
+      "output_end": 2801427
+    },
+    {
+      "start_bit": 7820862,
+      "end_bit": 7870522,
+      "final": false,
+      "kind": 2,
+      "output_end": 2824220
+    },
+    {
+      "start_bit": 7870522,
+      "end_bit": 8243269,
+      "final": false,
+      "kind": 2,
+      "output_end": 2910540
+    },
+    {
+      "start_bit": 8243269,
+      "end_bit": 8474429,
+      "final": false,
+      "kind": 2,
+      "output_end": 2979288
+    },
+    {
+      "start_bit": 8474429,
+      "end_bit": 8516642,
+      "final": false,
+      "kind": 2,
+      "output_end": 2995331
+    },
+    {
+      "start_bit": 8516642,
+      "end_bit": 8899342,
+      "final": false,
+      "kind": 2,
+      "output_end": 3094655
+    },
+    {
+      "start_bit": 8899342,
+      "end_bit": 8948131,
+      "final": false,
+      "kind": 2,
+      "output_end": 3108065
+    },
+    {
+      "start_bit": 8948131,
+      "end_bit": 9329322,
+      "final": false,
+      "kind": 2,
+      "output_end": 3205909
+    },
+    {
+      "start_bit": 9329322,
+      "end_bit": 9709346,
+      "final": false,
+      "kind": 2,
+      "output_end": 3304667
+    },
+    {
+      "start_bit": 9709346,
+      "end_bit": 10006808,
+      "final": false,
+      "kind": 2,
+      "output_end": 3388401
+    },
+    {
+      "start_bit": 10006808,
+      "end_bit": 10053569,
+      "final": false,
+      "kind": 2,
+      "output_end": 3401712
+    },
+    {
+      "start_bit": 10053569,
+      "end_bit": 10434769,
+      "final": false,
+      "kind": 2,
+      "output_end": 3491891
+    },
+    {
+      "start_bit": 10434769,
+      "end_bit": 10818784,
+      "final": false,
+      "kind": 2,
+      "output_end": 3581679
+    },
+    {
+      "start_bit": 10818784,
+      "end_bit": 10869671,
+      "final": false,
+      "kind": 2,
+      "output_end": 3596652
+    },
+    {
+      "start_bit": 10869671,
+      "end_bit": 10918134,
+      "final": false,
+      "kind": 2,
+      "output_end": 3610285
+    },
+    {
+      "start_bit": 10918134,
+      "end_bit": 10969234,
+      "final": false,
+      "kind": 2,
+      "output_end": 3625729
+    },
+    {
+      "start_bit": 10969234,
+      "end_bit": 11209729,
+      "final": false,
+      "kind": 2,
+      "output_end": 3711891
+    },
+    {
+      "start_bit": 11209729,
+      "end_bit": 11251578,
+      "final": false,
+      "kind": 2,
+      "output_end": 3730031
+    },
+    {
+      "start_bit": 11251578,
+      "end_bit": 11293703,
+      "final": false,
+      "kind": 2,
+      "output_end": 3747767
+    },
+    {
+      "start_bit": 11293703,
+      "end_bit": 11525007,
+      "final": false,
+      "kind": 2,
+      "output_end": 3823151
+    },
+    {
+      "start_bit": 11525007,
+      "end_bit": 11908457,
+      "final": false,
+      "kind": 2,
+      "output_end": 3922854
+    },
+    {
+      "start_bit": 11908457,
+      "end_bit": 12112735,
+      "final": false,
+      "kind": 2,
+      "output_end": 3983793
+    },
+    {
+      "start_bit": 12112735,
+      "end_bit": 12156053,
+      "final": false,
+      "kind": 2,
+      "output_end": 3998414
+    },
+    {
+      "start_bit": 12156053,
+      "end_bit": 12550339,
+      "final": false,
+      "kind": 2,
+      "output_end": 4104460
+    },
+    {
+      "start_bit": 12550339,
+      "end_bit": 12601853,
+      "final": false,
+      "kind": 2,
+      "output_end": 4121651
+    },
+    {
+      "start_bit": 12601853,
+      "end_bit": 13007579,
+      "final": false,
+      "kind": 2,
+      "output_end": 4225832
+    },
+    {
+      "start_bit": 13007579,
+      "end_bit": 13059369,
+      "final": false,
+      "kind": 2,
+      "output_end": 4241511
+    },
+    {
+      "start_bit": 13059369,
+      "end_bit": 13112118,
+      "final": false,
+      "kind": 2,
+      "output_end": 4258932
+    },
+    {
+      "start_bit": 13112118,
+      "end_bit": 13164167,
+      "final": false,
+      "kind": 2,
+      "output_end": 4273659
+    },
+    {
+      "start_bit": 13164167,
+      "end_bit": 13473543,
+      "final": false,
+      "kind": 2,
+      "output_end": 4361335
+    },
+    {
+      "start_bit": 13473543,
+      "end_bit": 13527622,
+      "final": false,
+      "kind": 2,
+      "output_end": 4378764
+    },
+    {
+      "start_bit": 13527622,
+      "end_bit": 13937725,
+      "final": false,
+      "kind": 2,
+      "output_end": 4484975
+    },
+    {
+      "start_bit": 13937725,
+      "end_bit": 14096234,
+      "final": false,
+      "kind": 2,
+      "output_end": 4530291
+    },
+    {
+      "start_bit": 14096234,
+      "end_bit": 14149234,
+      "final": false,
+      "kind": 2,
+      "output_end": 4548340
+    },
+    {
+      "start_bit": 14149234,
+      "end_bit": 14199856,
+      "final": false,
+      "kind": 2,
+      "output_end": 4563867
+    },
+    {
+      "start_bit": 14199856,
+      "end_bit": 14610000,
+      "final": false,
+      "kind": 2,
+      "output_end": 4673547
+    },
+    {
+      "start_bit": 14610000,
+      "end_bit": 15010159,
+      "final": false,
+      "kind": 2,
+      "output_end": 4780792
+    },
+    {
+      "start_bit": 15010159,
+      "end_bit": 15060416,
+      "final": false,
+      "kind": 2,
+      "output_end": 4795043
+    },
+    {
+      "start_bit": 15060416,
+      "end_bit": 15197451,
+      "final": false,
+      "kind": 2,
+      "output_end": 4844403
+    },
+    {
+      "start_bit": 15197451,
+      "end_bit": 15237270,
+      "final": false,
+      "kind": 2,
+      "output_end": 4855869
+    },
+    {
+      "start_bit": 15237270,
+      "end_bit": 15279139,
+      "final": false,
+      "kind": 2,
+      "output_end": 4868362
+    },
+    {
+      "start_bit": 15279139,
+      "end_bit": 15321473,
+      "final": false,
+      "kind": 2,
+      "output_end": 4881613
+    },
+    {
+      "start_bit": 15321473,
+      "end_bit": 15359591,
+      "final": false,
+      "kind": 2,
+      "output_end": 4893054
+    },
+    {
+      "start_bit": 15359591,
+      "end_bit": 15443323,
+      "final": false,
+      "kind": 2,
+      "output_end": 4917975
+    },
+    {
+      "start_bit": 15443323,
+      "end_bit": 15724928,
+      "final": false,
+      "kind": 2,
+      "output_end": 5393884
+    },
+    {
+      "start_bit": 15724928,
+      "end_bit": 15767834,
+      "final": false,
+      "kind": 2,
+      "output_end": 5421375
+    },
+    {
+      "start_bit": 15767834,
+      "end_bit": 15846755,
+      "final": false,
+      "kind": 2,
+      "output_end": 5456403
+    },
+    {
+      "start_bit": 15846755,
+      "end_bit": 15888779,
+      "final": false,
+      "kind": 2,
+      "output_end": 5469092
+    },
+    {
+      "start_bit": 15888779,
+      "end_bit": 15988002,
+      "final": false,
+      "kind": 2,
+      "output_end": 5503441
+    },
+    {
+      "start_bit": 15988002,
+      "end_bit": 16085336,
+      "final": false,
+      "kind": 2,
+      "output_end": 5530604
+    },
+    {
+      "start_bit": 16085336,
+      "end_bit": 16186537,
+      "final": false,
+      "kind": 2,
+      "output_end": 5558948
+    },
+    {
+      "start_bit": 16186537,
+      "end_bit": 16288279,
+      "final": false,
+      "kind": 2,
+      "output_end": 5594708
+    },
+    {
+      "start_bit": 16288279,
+      "end_bit": 16338855,
+      "final": false,
+      "kind": 2,
+      "output_end": 5611801
+    },
+    {
+      "start_bit": 16338855,
+      "end_bit": 16736821,
+      "final": false,
+      "kind": 2,
+      "output_end": 5716115
+    },
+    {
+      "start_bit": 16736821,
+      "end_bit": 17130873,
+      "final": false,
+      "kind": 2,
+      "output_end": 5819332
+    },
+    {
+      "start_bit": 17130873,
+      "end_bit": 17181704,
+      "final": false,
+      "kind": 2,
+      "output_end": 5835132
+    },
+    {
+      "start_bit": 17181704,
+      "end_bit": 17282584,
+      "final": false,
+      "kind": 2,
+      "output_end": 5874368
+    },
+    {
+      "start_bit": 17282584,
+      "end_bit": 17334762,
+      "final": false,
+      "kind": 2,
+      "output_end": 5897500
+    },
+    {
+      "start_bit": 17334762,
+      "end_bit": 17386910,
+      "final": false,
+      "kind": 2,
+      "output_end": 5918667
+    },
+    {
+      "start_bit": 17386910,
+      "end_bit": 17436880,
+      "final": false,
+      "kind": 2,
+      "output_end": 5933588
+    },
+    {
+      "start_bit": 17436880,
+      "end_bit": 17830401,
+      "final": false,
+      "kind": 2,
+      "output_end": 6045519
+    },
+    {
+      "start_bit": 17830401,
+      "end_bit": 17882863,
+      "final": false,
+      "kind": 2,
+      "output_end": 6066831
+    },
+    {
+      "start_bit": 17882863,
+      "end_bit": 17932169,
+      "final": false,
+      "kind": 2,
+      "output_end": 6083063
+    },
+    {
+      "start_bit": 17932169,
+      "end_bit": 17976199,
+      "final": false,
+      "kind": 2,
+      "output_end": 6111112
+    },
+    {
+      "start_bit": 17976199,
+      "end_bit": 18139638,
+      "final": false,
+      "kind": 2,
+      "output_end": 6393369
+    },
+    {
+      "start_bit": 18139638,
+      "end_bit": 18182489,
+      "final": false,
+      "kind": 2,
+      "output_end": 6421436
+    },
+    {
+      "start_bit": 18182489,
+      "end_bit": 18225562,
+      "final": false,
+      "kind": 2,
+      "output_end": 6455784
+    },
+    {
+      "start_bit": 18225562,
+      "end_bit": 18268638,
+      "final": false,
+      "kind": 2,
+      "output_end": 6473404
+    },
+    {
+      "start_bit": 18268638,
+      "end_bit": 18312099,
+      "final": false,
+      "kind": 2,
+      "output_end": 6488240
+    },
+    {
+      "start_bit": 18312099,
+      "end_bit": 18684816,
+      "final": false,
+      "kind": 2,
+      "output_end": 6586820
+    },
+    {
+      "start_bit": 18684816,
+      "end_bit": 18733030,
+      "final": false,
+      "kind": 2,
+      "output_end": 6600515
+    },
+    {
+      "start_bit": 18733030,
+      "end_bit": 18781408,
+      "final": false,
+      "kind": 2,
+      "output_end": 6616663
+    },
+    {
+      "start_bit": 18781408,
+      "end_bit": 19163876,
+      "final": false,
+      "kind": 2,
+      "output_end": 6715503
+    },
+    {
+      "start_bit": 19163876,
+      "end_bit": 19557730,
+      "final": false,
+      "kind": 2,
+      "output_end": 6818801
+    },
+    {
+      "start_bit": 19557730,
+      "end_bit": 19696991,
+      "final": false,
+      "kind": 2,
+      "output_end": 6879949
+    },
+    {
+      "start_bit": 19696991,
+      "end_bit": 19737724,
+      "final": false,
+      "kind": 2,
+      "output_end": 6900163
+    },
+    {
+      "start_bit": 19737724,
+      "end_bit": 19778391,
+      "final": false,
+      "kind": 2,
+      "output_end": 6924339
+    },
+    {
+      "start_bit": 19778391,
+      "end_bit": 19820941,
+      "final": false,
+      "kind": 2,
+      "output_end": 6941736
+    },
+    {
+      "start_bit": 19820941,
+      "end_bit": 19864684,
+      "final": false,
+      "kind": 2,
+      "output_end": 6962104
+    },
+    {
+      "start_bit": 19864684,
+      "end_bit": 19905867,
+      "final": false,
+      "kind": 2,
+      "output_end": 6974564
+    },
+    {
+      "start_bit": 19905867,
+      "end_bit": 20284679,
+      "final": false,
+      "kind": 2,
+      "output_end": 7068667
+    },
+    {
+      "start_bit": 20284679,
+      "end_bit": 20331415,
+      "final": false,
+      "kind": 2,
+      "output_end": 7083460
+    },
+    {
+      "start_bit": 20331415,
+      "end_bit": 20381067,
+      "final": false,
+      "kind": 2,
+      "output_end": 7099178
+    },
+    {
+      "start_bit": 20381067,
+      "end_bit": 20428417,
+      "final": false,
+      "kind": 2,
+      "output_end": 7113247
+    },
+    {
+      "start_bit": 20428417,
+      "end_bit": 20821465,
+      "final": false,
+      "kind": 2,
+      "output_end": 7224472
+    },
+    {
+      "start_bit": 20821465,
+      "end_bit": 21119533,
+      "final": false,
+      "kind": 2,
+      "output_end": 7309999
+    },
+    {
+      "start_bit": 21119533,
+      "end_bit": 21169034,
+      "final": false,
+      "kind": 2,
+      "output_end": 7324027
+    },
+    {
+      "start_bit": 21169034,
+      "end_bit": 21218184,
+      "final": false,
+      "kind": 2,
+      "output_end": 7338125
+    },
+    {
+      "start_bit": 21218184,
+      "end_bit": 21269352,
+      "final": false,
+      "kind": 2,
+      "output_end": 7353134
+    },
+    {
+      "start_bit": 21269352,
+      "end_bit": 21666359,
+      "final": false,
+      "kind": 2,
+      "output_end": 7449375
+    },
+    {
+      "start_bit": 21666359,
+      "end_bit": 22059276,
+      "final": false,
+      "kind": 2,
+      "output_end": 7549612
+    },
+    {
+      "start_bit": 22059276,
+      "end_bit": 22158984,
+      "final": false,
+      "kind": 2,
+      "output_end": 7576877
+    },
+    {
+      "start_bit": 22158984,
+      "end_bit": 22541511,
+      "final": false,
+      "kind": 2,
+      "output_end": 7668069
+    },
+    {
+      "start_bit": 22541511,
+      "end_bit": 22925946,
+      "final": false,
+      "kind": 2,
+      "output_end": 7762885
+    },
+    {
+      "start_bit": 22925946,
+      "end_bit": 23306156,
+      "final": false,
+      "kind": 2,
+      "output_end": 7853988
+    },
+    {
+      "start_bit": 23306156,
+      "end_bit": 23694377,
+      "final": false,
+      "kind": 2,
+      "output_end": 7946496
+    },
+    {
+      "start_bit": 23694377,
+      "end_bit": 24071282,
+      "final": false,
+      "kind": 2,
+      "output_end": 8039856
+    },
+    {
+      "start_bit": 24071282,
+      "end_bit": 24437690,
+      "final": false,
+      "kind": 2,
+      "output_end": 8125128
+    },
+    {
+      "start_bit": 24437690,
+      "end_bit": 24822217,
+      "final": false,
+      "kind": 2,
+      "output_end": 8222439
+    },
+    {
+      "start_bit": 24822217,
+      "end_bit": 25203818,
+      "final": false,
+      "kind": 2,
+      "output_end": 8319211
+    },
+    {
+      "start_bit": 25203818,
+      "end_bit": 25584551,
+      "final": false,
+      "kind": 2,
+      "output_end": 8415763
+    },
+    {
+      "start_bit": 25584551,
+      "end_bit": 25964382,
+      "final": false,
+      "kind": 2,
+      "output_end": 8514907
+    },
+    {
+      "start_bit": 25964382,
+      "end_bit": 26195975,
+      "final": false,
+      "kind": 2,
+      "output_end": 8579646
+    },
+    {
+      "start_bit": 26195975,
+      "end_bit": 26240493,
+      "final": false,
+      "kind": 2,
+      "output_end": 8592598
+    },
+    {
+      "start_bit": 26240493,
+      "end_bit": 26288088,
+      "final": false,
+      "kind": 2,
+      "output_end": 8608284
+    },
+    {
+      "start_bit": 26288088,
+      "end_bit": 26379102,
+      "final": false,
+      "kind": 2,
+      "output_end": 8640986
+    },
+    {
+      "start_bit": 26379102,
+      "end_bit": 26475565,
+      "final": false,
+      "kind": 2,
+      "output_end": 8673162
+    },
+    {
+      "start_bit": 26475565,
+      "end_bit": 26546648,
+      "final": false,
+      "kind": 2,
+      "output_end": 8693603
+    },
+    {
+      "start_bit": 26546648,
+      "end_bit": 26810156,
+      "final": false,
+      "kind": 2,
+      "output_end": 8735882
+    },
+    {
+      "start_bit": 26810156,
+      "end_bit": 27056075,
+      "final": false,
+      "kind": 2,
+      "output_end": 8769871
+    },
+    {
+      "start_bit": 27056075,
+      "end_bit": 27298942,
+      "final": false,
+      "kind": 2,
+      "output_end": 8803805
+    },
+    {
+      "start_bit": 27298942,
+      "end_bit": 27562943,
+      "final": false,
+      "kind": 2,
+      "output_end": 8842632
+    },
+    {
+      "start_bit": 27562943,
+      "end_bit": 27807498,
+      "final": false,
+      "kind": 2,
+      "output_end": 8876167
+    },
+    {
+      "start_bit": 27807498,
+      "end_bit": 28051504,
+      "final": false,
+      "kind": 2,
+      "output_end": 8909742
+    },
+    {
+      "start_bit": 28051504,
+      "end_bit": 28306303,
+      "final": false,
+      "kind": 2,
+      "output_end": 8947821
+    },
+    {
+      "start_bit": 28306303,
+      "end_bit": 28604671,
+      "final": false,
+      "kind": 2,
+      "output_end": 8994439
+    },
+    {
+      "start_bit": 28604671,
+      "end_bit": 28653564,
+      "final": false,
+      "kind": 2,
+      "output_end": 9017476
+    },
+    {
+      "start_bit": 28653564,
+      "end_bit": 28913345,
+      "final": false,
+      "kind": 2,
+      "output_end": 9062643
+    },
+    {
+      "start_bit": 28913345,
+      "end_bit": 29183313,
+      "final": false,
+      "kind": 2,
+      "output_end": 9103245
+    },
+    {
+      "start_bit": 29183313,
+      "end_bit": 29462905,
+      "final": false,
+      "kind": 2,
+      "output_end": 9147153
+    },
+    {
+      "start_bit": 29462905,
+      "end_bit": 29759431,
+      "final": false,
+      "kind": 2,
+      "output_end": 9195689
+    },
+    {
+      "start_bit": 29759431,
+      "end_bit": 30003995,
+      "final": false,
+      "kind": 2,
+      "output_end": 9230577
+    },
+    {
+      "start_bit": 30003995,
+      "end_bit": 30246690,
+      "final": false,
+      "kind": 2,
+      "output_end": 9265763
+    },
+    {
+      "start_bit": 30246690,
+      "end_bit": 30534596,
+      "final": false,
+      "kind": 2,
+      "output_end": 9311700
+    },
+    {
+      "start_bit": 30534596,
+      "end_bit": 30788078,
+      "final": false,
+      "kind": 2,
+      "output_end": 9347889
+    },
+    {
+      "start_bit": 30788078,
+      "end_bit": 31092730,
+      "final": false,
+      "kind": 2,
+      "output_end": 9425075
+    },
+    {
+      "start_bit": 31092730,
+      "end_bit": 31141418,
+      "final": false,
+      "kind": 2,
+      "output_end": 9444595
+    },
+    {
+      "start_bit": 31141418,
+      "end_bit": 31181695,
+      "final": false,
+      "kind": 2,
+      "output_end": 9466023
+    },
+    {
+      "start_bit": 31181695,
+      "end_bit": 31347536,
+      "final": false,
+      "kind": 2,
+      "output_end": 9580104
+    },
+    {
+      "start_bit": 31347536,
+      "end_bit": 31392867,
+      "final": false,
+      "kind": 2,
+      "output_end": 9593912
+    },
+    {
+      "start_bit": 31392867,
+      "end_bit": 31766929,
+      "final": false,
+      "kind": 2,
+      "output_end": 9682071
+    },
+    {
+      "start_bit": 31766929,
+      "end_bit": 32150788,
+      "final": false,
+      "kind": 2,
+      "output_end": 9769576
+    },
+    {
+      "start_bit": 32150788,
+      "end_bit": 32533961,
+      "final": false,
+      "kind": 2,
+      "output_end": 9861517
+    },
+    {
+      "start_bit": 32533961,
+      "end_bit": 32914981,
+      "final": false,
+      "kind": 2,
+      "output_end": 9949259
+    },
+    {
+      "start_bit": 32914981,
+      "end_bit": 33011908,
+      "final": false,
+      "kind": 2,
+      "output_end": 9975921
+    },
+    {
+      "start_bit": 33011908,
+      "end_bit": 33060598,
+      "final": false,
+      "kind": 2,
+      "output_end": 9991488
+    },
+    {
+      "start_bit": 33060598,
+      "end_bit": 33111013,
+      "final": false,
+      "kind": 2,
+      "output_end": 10010928
+    },
+    {
+      "start_bit": 33111013,
+      "end_bit": 33158283,
+      "final": false,
+      "kind": 2,
+      "output_end": 10024415
+    },
+    {
+      "start_bit": 33158283,
+      "end_bit": 33206944,
+      "final": false,
+      "kind": 2,
+      "output_end": 10039959
+    },
+    {
+      "start_bit": 33206944,
+      "end_bit": 33256913,
+      "final": false,
+      "kind": 2,
+      "output_end": 10056187
+    },
+    {
+      "start_bit": 33256913,
+      "end_bit": 33306955,
+      "final": false,
+      "kind": 2,
+      "output_end": 10071643
+    },
+    {
+      "start_bit": 33306955,
+      "end_bit": 33355030,
+      "final": false,
+      "kind": 2,
+      "output_end": 10087030
+    },
+    {
+      "start_bit": 33355030,
+      "end_bit": 33404339,
+      "final": false,
+      "kind": 2,
+      "output_end": 10105627
+    },
+    {
+      "start_bit": 33404339,
+      "end_bit": 33454985,
+      "final": false,
+      "kind": 2,
+      "output_end": 10128535
+    },
+    {
+      "start_bit": 33454985,
+      "end_bit": 33504046,
+      "final": false,
+      "kind": 2,
+      "output_end": 10146633
+    },
+    {
+      "start_bit": 33504046,
+      "end_bit": 33554515,
+      "final": false,
+      "kind": 2,
+      "output_end": 10168667
+    },
+    {
+      "start_bit": 33554515,
+      "end_bit": 33647042,
+      "final": false,
+      "kind": 2,
+      "output_end": 10194957
+    },
+    {
+      "start_bit": 33647042,
+      "end_bit": 33697066,
+      "final": false,
+      "kind": 2,
+      "output_end": 10219601
+    },
+    {
+      "start_bit": 33697066,
+      "end_bit": 33745612,
+      "final": false,
+      "kind": 2,
+      "output_end": 10238075
+    },
+    {
+      "start_bit": 33745612,
+      "end_bit": 33793245,
+      "final": false,
+      "kind": 2,
+      "output_end": 10251938
+    },
+    {
+      "start_bit": 33793245,
+      "end_bit": 33843567,
+      "final": false,
+      "kind": 2,
+      "output_end": 10271109
+    },
+    {
+      "start_bit": 33843567,
+      "end_bit": 33890651,
+      "final": false,
+      "kind": 2,
+      "output_end": 10284692
+    },
+    {
+      "start_bit": 33890651,
+      "end_bit": 34033746,
+      "final": false,
+      "kind": 2,
+      "output_end": 10324479
+    },
+    {
+      "start_bit": 34033746,
+      "end_bit": 34082164,
+      "final": false,
+      "kind": 2,
+      "output_end": 10341212
+    },
+    {
+      "start_bit": 34082164,
+      "end_bit": 34128907,
+      "final": false,
+      "kind": 2,
+      "output_end": 10354729
+    },
+    {
+      "start_bit": 34128907,
+      "end_bit": 34174726,
+      "final": false,
+      "kind": 2,
+      "output_end": 10370784
+    },
+    {
+      "start_bit": 34174726,
+      "end_bit": 34222903,
+      "final": false,
+      "kind": 2,
+      "output_end": 10385895
+    },
+    {
+      "start_bit": 34222903,
+      "end_bit": 34272438,
+      "final": false,
+      "kind": 2,
+      "output_end": 10405360
+    },
+    {
+      "start_bit": 34272438,
+      "end_bit": 34319033,
+      "final": false,
+      "kind": 2,
+      "output_end": 10418799
+    },
+    {
+      "start_bit": 34319033,
+      "end_bit": 34414044,
+      "final": false,
+      "kind": 2,
+      "output_end": 10445920
+    },
+    {
+      "start_bit": 34414044,
+      "end_bit": 34463313,
+      "final": false,
+      "kind": 2,
+      "output_end": 10464179
+    },
+    {
+      "start_bit": 34463313,
+      "end_bit": 34510666,
+      "final": false,
+      "kind": 2,
+      "output_end": 10478935
+    },
+    {
+      "start_bit": 34510666,
+      "end_bit": 34558239,
+      "final": false,
+      "kind": 2,
+      "output_end": 10493136
+    },
+    {
+      "start_bit": 34558239,
+      "end_bit": 34651079,
+      "final": false,
+      "kind": 2,
+      "output_end": 10521923
+    },
+    {
+      "start_bit": 34651079,
+      "end_bit": 34701948,
+      "final": false,
+      "kind": 2,
+      "output_end": 10543884
+    },
+    {
+      "start_bit": 34701948,
+      "end_bit": 34751925,
+      "final": false,
+      "kind": 2,
+      "output_end": 10563081
+    },
+    {
+      "start_bit": 34751925,
+      "end_bit": 34800407,
+      "final": false,
+      "kind": 2,
+      "output_end": 10579785
+    },
+    {
+      "start_bit": 34800407,
+      "end_bit": 34849825,
+      "final": false,
+      "kind": 2,
+      "output_end": 10599431
+    },
+    {
+      "start_bit": 34849825,
+      "end_bit": 34901439,
+      "final": false,
+      "kind": 2,
+      "output_end": 10628112
+    },
+    {
+      "start_bit": 34901439,
+      "end_bit": 34949994,
+      "final": false,
+      "kind": 2,
+      "output_end": 10648217
+    },
+    {
+      "start_bit": 34949994,
+      "end_bit": 35333001,
+      "final": false,
+      "kind": 2,
+      "output_end": 10749282
+    },
+    {
+      "start_bit": 35333001,
+      "end_bit": 35432230,
+      "final": false,
+      "kind": 2,
+      "output_end": 10778592
+    },
+    {
+      "start_bit": 35432230,
+      "end_bit": 35535351,
+      "final": false,
+      "kind": 2,
+      "output_end": 10808280
+    },
+    {
+      "start_bit": 35535351,
+      "end_bit": 35639094,
+      "final": false,
+      "kind": 2,
+      "output_end": 10837565
+    },
+    {
+      "start_bit": 35639094,
+      "end_bit": 35692547,
+      "final": false,
+      "kind": 2,
+      "output_end": 10852507
+    },
+    {
+      "start_bit": 35692547,
+      "end_bit": 35746570,
+      "final": false,
+      "kind": 2,
+      "output_end": 10868453
+    },
+    {
+      "start_bit": 35746570,
+      "end_bit": 35798664,
+      "final": false,
+      "kind": 2,
+      "output_end": 10885625
+    },
+    {
+      "start_bit": 35798664,
+      "end_bit": 36099038,
+      "final": false,
+      "kind": 2,
+      "output_end": 10969524
+    },
+    {
+      "start_bit": 36099038,
+      "end_bit": 36150780,
+      "final": false,
+      "kind": 2,
+      "output_end": 10986059
+    },
+    {
+      "start_bit": 36150780,
+      "end_bit": 36201632,
+      "final": false,
+      "kind": 2,
+      "output_end": 11002607
+    },
+    {
+      "start_bit": 36201632,
+      "end_bit": 36589230,
+      "final": false,
+      "kind": 2,
+      "output_end": 11097900
+    },
+    {
+      "start_bit": 36589230,
+      "end_bit": 36970258,
+      "final": false,
+      "kind": 2,
+      "output_end": 11192349
+    },
+    {
+      "start_bit": 36970258,
+      "end_bit": 37351691,
+      "final": false,
+      "kind": 2,
+      "output_end": 11281936
+    },
+    {
+      "start_bit": 37351691,
+      "end_bit": 37732439,
+      "final": false,
+      "kind": 2,
+      "output_end": 11372783
+    },
+    {
+      "start_bit": 37732439,
+      "end_bit": 38110069,
+      "final": false,
+      "kind": 2,
+      "output_end": 11458316
+    },
+    {
+      "start_bit": 38110069,
+      "end_bit": 38161091,
+      "final": false,
+      "kind": 2,
+      "output_end": 11472824
+    },
+    {
+      "start_bit": 38161091,
+      "end_bit": 38212327,
+      "final": false,
+      "kind": 2,
+      "output_end": 11489447
+    },
+    {
+      "start_bit": 38212327,
+      "end_bit": 38259942,
+      "final": false,
+      "kind": 2,
+      "output_end": 11502539
+    },
+    {
+      "start_bit": 38259942,
+      "end_bit": 38634927,
+      "final": false,
+      "kind": 2,
+      "output_end": 11588806
+    },
+    {
+      "start_bit": 38634927,
+      "end_bit": 39003322,
+      "final": false,
+      "kind": 2,
+      "output_end": 11670723
+    },
+    {
+      "start_bit": 39003322,
+      "end_bit": 39380782,
+      "final": false,
+      "kind": 2,
+      "output_end": 11754683
+    },
+    {
+      "start_bit": 39380782,
+      "end_bit": 39750449,
+      "final": false,
+      "kind": 2,
+      "output_end": 11832419
+    },
+    {
+      "start_bit": 39750449,
+      "end_bit": 40105750,
+      "final": false,
+      "kind": 2,
+      "output_end": 11905888
+    },
+    {
+      "start_bit": 40105750,
+      "end_bit": 40477980,
+      "final": false,
+      "kind": 2,
+      "output_end": 11984491
+    },
+    {
+      "start_bit": 40477980,
+      "end_bit": 40869778,
+      "final": false,
+      "kind": 2,
+      "output_end": 12081571
+    },
+    {
+      "start_bit": 40869778,
+      "end_bit": 41241908,
+      "final": false,
+      "kind": 2,
+      "output_end": 12165330
+    },
+    {
+      "start_bit": 41241908,
+      "end_bit": 41610371,
+      "final": false,
+      "kind": 2,
+      "output_end": 12257874
+    },
+    {
+      "start_bit": 41610371,
+      "end_bit": 41660843,
+      "final": false,
+      "kind": 2,
+      "output_end": 12291403
+    },
+    {
+      "start_bit": 41660843,
+      "end_bit": 42085410,
+      "final": false,
+      "kind": 2,
+      "output_end": 12651764
+    },
+    {
+      "start_bit": 42085410,
+      "end_bit": 42504052,
+      "final": false,
+      "kind": 2,
+      "output_end": 12978522
+    },
+    {
+      "start_bit": 42504052,
+      "end_bit": 42933320,
+      "final": false,
+      "kind": 2,
+      "output_end": 13391076
+    },
+    {
+      "start_bit": 42933320,
+      "end_bit": 43355283,
+      "final": false,
+      "kind": 2,
+      "output_end": 13680483
+    },
+    {
+      "start_bit": 43355283,
+      "end_bit": 43792989,
+      "final": false,
+      "kind": 2,
+      "output_end": 13965626
+    },
+    {
+      "start_bit": 43792989,
+      "end_bit": 44222601,
+      "final": false,
+      "kind": 2,
+      "output_end": 14173675
+    },
+    {
+      "start_bit": 44222601,
+      "end_bit": 44275952,
+      "final": false,
+      "kind": 2,
+      "output_end": 14199913
+    },
+    {
+      "start_bit": 44275952,
+      "end_bit": 44325331,
+      "final": false,
+      "kind": 2,
+      "output_end": 14225395
+    },
+    {
+      "start_bit": 44325331,
+      "end_bit": 44742364,
+      "final": false,
+      "kind": 2,
+      "output_end": 14574313
+    },
+    {
+      "start_bit": 44742364,
+      "end_bit": 44843264,
+      "final": false,
+      "kind": 2,
+      "output_end": 14647553
+    },
+    {
+      "start_bit": 44843264,
+      "end_bit": 45261915,
+      "final": false,
+      "kind": 2,
+      "output_end": 14980478
+    },
+    {
+      "start_bit": 45261915,
+      "end_bit": 45678578,
+      "final": false,
+      "kind": 2,
+      "output_end": 15360220
+    },
+    {
+      "start_bit": 45678578,
+      "end_bit": 45725207,
+      "final": false,
+      "kind": 2,
+      "output_end": 15389282
+    },
+    {
+      "start_bit": 45725207,
+      "end_bit": 45772502,
+      "final": false,
+      "kind": 2,
+      "output_end": 15417831
+    },
+    {
+      "start_bit": 45772502,
+      "end_bit": 45820193,
+      "final": false,
+      "kind": 2,
+      "output_end": 15455640
+    },
+    {
+      "start_bit": 45820193,
+      "end_bit": 46136212,
+      "final": false,
+      "kind": 2,
+      "output_end": 15517798
+    },
+    {
+      "start_bit": 46136212,
+      "end_bit": 46454650,
+      "final": false,
+      "kind": 2,
+      "output_end": 15598395
+    },
+    {
+      "start_bit": 46454650,
+      "end_bit": 46739460,
+      "final": false,
+      "kind": 2,
+      "output_end": 15735202
+    },
+    {
+      "start_bit": 46739460,
+      "end_bit": 47110780,
+      "final": false,
+      "kind": 2,
+      "output_end": 15823607
+    },
+    {
+      "start_bit": 47110780,
+      "end_bit": 47486161,
+      "final": false,
+      "kind": 2,
+      "output_end": 15909815
+    },
+    {
+      "start_bit": 47486161,
+      "end_bit": 47535981,
+      "final": false,
+      "kind": 2,
+      "output_end": 15925996
+    },
+    {
+      "start_bit": 47535981,
+      "end_bit": 47908681,
+      "final": false,
+      "kind": 2,
+      "output_end": 16012310
+    },
+    {
+      "start_bit": 47908681,
+      "end_bit": 48289804,
+      "final": false,
+      "kind": 2,
+      "output_end": 16100688
+    },
+    {
+      "start_bit": 48289804,
+      "end_bit": 48664812,
+      "final": false,
+      "kind": 2,
+      "output_end": 16191557
+    },
+    {
+      "start_bit": 48664812,
+      "end_bit": 49049583,
+      "final": false,
+      "kind": 2,
+      "output_end": 16282604
+    },
+    {
+      "start_bit": 49049583,
+      "end_bit": 49423367,
+      "final": false,
+      "kind": 2,
+      "output_end": 16369955
+    },
+    {
+      "start_bit": 49423367,
+      "end_bit": 49801134,
+      "final": false,
+      "kind": 2,
+      "output_end": 16455640
+    },
+    {
+      "start_bit": 49801134,
+      "end_bit": 50180955,
+      "final": false,
+      "kind": 2,
+      "output_end": 16549217
+    },
+    {
+      "start_bit": 50180955,
+      "end_bit": 50320893,
+      "final": false,
+      "kind": 2,
+      "output_end": 16596007
+    },
+    {
+      "start_bit": 50320893,
+      "end_bit": 50360404,
+      "final": false,
+      "kind": 2,
+      "output_end": 16609144
+    },
+    {
+      "start_bit": 50360404,
+      "end_bit": 50403555,
+      "final": false,
+      "kind": 2,
+      "output_end": 16623882
+    },
+    {
+      "start_bit": 50403555,
+      "end_bit": 50482528,
+      "final": false,
+      "kind": 2,
+      "output_end": 16656479
+    },
+    {
+      "start_bit": 50482528,
+      "end_bit": 50526156,
+      "final": false,
+      "kind": 2,
+      "output_end": 16724947
+    },
+    {
+      "start_bit": 50526156,
+      "end_bit": 50796364,
+      "final": false,
+      "kind": 2,
+      "output_end": 16788794
+    },
+    {
+      "start_bit": 50796364,
+      "end_bit": 51096588,
+      "final": false,
+      "kind": 2,
+      "output_end": 16865739
+    },
+    {
+      "start_bit": 51096588,
+      "end_bit": 51139643,
+      "final": false,
+      "kind": 2,
+      "output_end": 16890372
+    },
+    {
+      "start_bit": 51139643,
+      "end_bit": 51497485,
+      "final": false,
+      "kind": 2,
+      "output_end": 16973736
+    },
+    {
+      "start_bit": 51497485,
+      "end_bit": 51825729,
+      "final": false,
+      "kind": 2,
+      "output_end": 17066419
+    },
+    {
+      "start_bit": 51825729,
+      "end_bit": 52214519,
+      "final": false,
+      "kind": 2,
+      "output_end": 17171624
+    },
+    {
+      "start_bit": 52214519,
+      "end_bit": 52419126,
+      "final": false,
+      "kind": 2,
+      "output_end": 17234644
+    },
+    {
+      "start_bit": 52419126,
+      "end_bit": 52521948,
+      "final": false,
+      "kind": 2,
+      "output_end": 17264193
+    },
+    {
+      "start_bit": 52521948,
+      "end_bit": 52618737,
+      "final": false,
+      "kind": 2,
+      "output_end": 17291588
+    },
+    {
+      "start_bit": 52618737,
+      "end_bit": 52670749,
+      "final": false,
+      "kind": 2,
+      "output_end": 17308035
+    },
+    {
+      "start_bit": 52670749,
+      "end_bit": 53053879,
+      "final": false,
+      "kind": 2,
+      "output_end": 17402275
+    },
+    {
+      "start_bit": 53053879,
+      "end_bit": 53440051,
+      "final": false,
+      "kind": 2,
+      "output_end": 17495673
+    },
+    {
+      "start_bit": 53440051,
+      "end_bit": 53719520,
+      "final": false,
+      "kind": 2,
+      "output_end": 17628493
+    },
+    {
+      "start_bit": 53719520,
+      "end_bit": 53762927,
+      "final": false,
+      "kind": 2,
+      "output_end": 17650571
+    },
+    {
+      "start_bit": 53762927,
+      "end_bit": 53812384,
+      "final": false,
+      "kind": 2,
+      "output_end": 17726448
+    },
+    {
+      "start_bit": 53812384,
+      "end_bit": 53858251,
+      "final": false,
+      "kind": 2,
+      "output_end": 17754119
+    },
+    {
+      "start_bit": 53858251,
+      "end_bit": 53897643,
+      "final": false,
+      "kind": 2,
+      "output_end": 17766044
+    },
+    {
+      "start_bit": 53897643,
+      "end_bit": 53941584,
+      "final": false,
+      "kind": 2,
+      "output_end": 17791267
+    },
+    {
+      "start_bit": 53941584,
+      "end_bit": 53986026,
+      "final": false,
+      "kind": 2,
+      "output_end": 17804393
+    },
+    {
+      "start_bit": 53986026,
+      "end_bit": 54368831,
+      "final": false,
+      "kind": 2,
+      "output_end": 17912585
+    },
+    {
+      "start_bit": 54368831,
+      "end_bit": 54414622,
+      "final": false,
+      "kind": 2,
+      "output_end": 17929111
+    },
+    {
+      "start_bit": 54414622,
+      "end_bit": 54460820,
+      "final": false,
+      "kind": 2,
+      "output_end": 17944504
+    },
+    {
+      "start_bit": 54460820,
+      "end_bit": 54502486,
+      "final": false,
+      "kind": 2,
+      "output_end": 17958239
+    },
+    {
+      "start_bit": 54502486,
+      "end_bit": 54543698,
+      "final": false,
+      "kind": 2,
+      "output_end": 17973497
+    },
+    {
+      "start_bit": 54543698,
+      "end_bit": 54685065,
+      "final": false,
+      "kind": 2,
+      "output_end": 18013041
+    },
+    {
+      "start_bit": 54685065,
+      "end_bit": 54828239,
+      "final": false,
+      "kind": 2,
+      "output_end": 18052979
+    },
+    {
+      "start_bit": 54828239,
+      "end_bit": 54877826,
+      "final": false,
+      "kind": 2,
+      "output_end": 18066907
+    },
+    {
+      "start_bit": 54877826,
+      "end_bit": 55265061,
+      "final": false,
+      "kind": 2,
+      "output_end": 18162397
+    },
+    {
+      "start_bit": 55265061,
+      "end_bit": 55316567,
+      "final": false,
+      "kind": 2,
+      "output_end": 18179455
+    },
+    {
+      "start_bit": 55316567,
+      "end_bit": 55366441,
+      "final": false,
+      "kind": 2,
+      "output_end": 18198637
+    },
+    {
+      "start_bit": 55366441,
+      "end_bit": 55758113,
+      "final": false,
+      "kind": 2,
+      "output_end": 18302867
+    },
+    {
+      "start_bit": 55758113,
+      "end_bit": 56147221,
+      "final": false,
+      "kind": 2,
+      "output_end": 18398039
+    },
+    {
+      "start_bit": 56147221,
+      "end_bit": 56547585,
+      "final": false,
+      "kind": 2,
+      "output_end": 18504796
+    },
+    {
+      "start_bit": 56547585,
+      "end_bit": 56931162,
+      "final": false,
+      "kind": 2,
+      "output_end": 18599172
+    },
+    {
+      "start_bit": 56931162,
+      "end_bit": 57305798,
+      "final": false,
+      "kind": 2,
+      "output_end": 18695821
+    },
+    {
+      "start_bit": 57305798,
+      "end_bit": 57355079,
+      "final": false,
+      "kind": 2,
+      "output_end": 18709570
+    },
+    {
+      "start_bit": 57355079,
+      "end_bit": 57751434,
+      "final": false,
+      "kind": 2,
+      "output_end": 18809236
+    },
+    {
+      "start_bit": 57751434,
+      "end_bit": 58145304,
+      "final": false,
+      "kind": 2,
+      "output_end": 18910055
+    },
+    {
+      "start_bit": 58145304,
+      "end_bit": 58530299,
+      "final": false,
+      "kind": 2,
+      "output_end": 19002207
+    },
+    {
+      "start_bit": 58530299,
+      "end_bit": 58631166,
+      "final": false,
+      "kind": 2,
+      "output_end": 19033586
+    },
+    {
+      "start_bit": 58631166,
+      "end_bit": 59022055,
+      "final": false,
+      "kind": 2,
+      "output_end": 19135679
+    },
+    {
+      "start_bit": 59022055,
+      "end_bit": 59406122,
+      "final": false,
+      "kind": 2,
+      "output_end": 19238660
+    },
+    {
+      "start_bit": 59406122,
+      "end_bit": 59457288,
+      "final": false,
+      "kind": 2,
+      "output_end": 19255972
+    },
+    {
+      "start_bit": 59457288,
+      "end_bit": 59843743,
+      "final": false,
+      "kind": 2,
+      "output_end": 19355260
+    },
+    {
+      "start_bit": 59843743,
+      "end_bit": 59896881,
+      "final": false,
+      "kind": 2,
+      "output_end": 19370947
+    },
+    {
+      "start_bit": 59896881,
+      "end_bit": 59947475,
+      "final": false,
+      "kind": 2,
+      "output_end": 19385284
+    },
+    {
+      "start_bit": 59947475,
+      "end_bit": 60146751,
+      "final": false,
+      "kind": 2,
+      "output_end": 19441461
+    },
+    {
+      "start_bit": 60146751,
+      "end_bit": 60523569,
+      "final": false,
+      "kind": 2,
+      "output_end": 19528237
+    },
+    {
+      "start_bit": 60523569,
+      "end_bit": 60930802,
+      "final": false,
+      "kind": 2,
+      "output_end": 19636131
+    },
+    {
+      "start_bit": 60930802,
+      "end_bit": 61186672,
+      "final": false,
+      "kind": 2,
+      "output_end": 19708242
+    },
+    {
+      "start_bit": 61186672,
+      "end_bit": 61235733,
+      "final": false,
+      "kind": 2,
+      "output_end": 19721918
+    },
+    {
+      "start_bit": 61235733,
+      "end_bit": 61289141,
+      "final": false,
+      "kind": 2,
+      "output_end": 19739921
+    },
+    {
+      "start_bit": 61289141,
+      "end_bit": 61687727,
+      "final": false,
+      "kind": 2,
+      "output_end": 19842264
+    },
+    {
+      "start_bit": 61687727,
+      "end_bit": 62085800,
+      "final": false,
+      "kind": 2,
+      "output_end": 19950638
+    },
+    {
+      "start_bit": 62085800,
+      "end_bit": 62133952,
+      "final": false,
+      "kind": 2,
+      "output_end": 19965015
+    },
+    {
+      "start_bit": 62133952,
+      "end_bit": 62182576,
+      "final": false,
+      "kind": 2,
+      "output_end": 19978748
+    },
+    {
+      "start_bit": 62182576,
+      "end_bit": 62232015,
+      "final": false,
+      "kind": 2,
+      "output_end": 19993365
+    },
+    {
+      "start_bit": 62232015,
+      "end_bit": 62613982,
+      "final": false,
+      "kind": 2,
+      "output_end": 20086395
+    },
+    {
+      "start_bit": 62613982,
+      "end_bit": 62662398,
+      "final": false,
+      "kind": 2,
+      "output_end": 20101003
+    },
+    {
+      "start_bit": 62662398,
+      "end_bit": 62711484,
+      "final": false,
+      "kind": 2,
+      "output_end": 20116663
+    },
+    {
+      "start_bit": 62711484,
+      "end_bit": 62759374,
+      "final": false,
+      "kind": 2,
+      "output_end": 20131299
+    },
+    {
+      "start_bit": 62759374,
+      "end_bit": 63139261,
+      "final": false,
+      "kind": 2,
+      "output_end": 20227447
+    },
+    {
+      "start_bit": 63139261,
+      "end_bit": 63505521,
+      "final": false,
+      "kind": 2,
+      "output_end": 20304639
+    },
+    {
+      "start_bit": 63505521,
+      "end_bit": 63872824,
+      "final": false,
+      "kind": 2,
+      "output_end": 20378913
+    },
+    {
+      "start_bit": 63872824,
+      "end_bit": 64249525,
+      "final": false,
+      "kind": 2,
+      "output_end": 20463932
+    },
+    {
+      "start_bit": 64249525,
+      "end_bit": 64631352,
+      "final": false,
+      "kind": 2,
+      "output_end": 20559650
+    },
+    {
+      "start_bit": 64631352,
+      "end_bit": 65007367,
+      "final": false,
+      "kind": 2,
+      "output_end": 20654388
+    },
+    {
+      "start_bit": 65007367,
+      "end_bit": 65381863,
+      "final": false,
+      "kind": 2,
+      "output_end": 20749028
+    },
+    {
+      "start_bit": 65381863,
+      "end_bit": 65759243,
+      "final": false,
+      "kind": 2,
+      "output_end": 20841888
+    },
+    {
+      "start_bit": 65759243,
+      "end_bit": 66135005,
+      "final": false,
+      "kind": 2,
+      "output_end": 20938984
+    },
+    {
+      "start_bit": 66135005,
+      "end_bit": 66181898,
+      "final": false,
+      "kind": 2,
+      "output_end": 20953248
+    },
+    {
+      "start_bit": 66181898,
+      "end_bit": 66230379,
+      "final": false,
+      "kind": 2,
+      "output_end": 20967044
+    },
+    {
+      "start_bit": 66230379,
+      "end_bit": 66602229,
+      "final": false,
+      "kind": 2,
+      "output_end": 21057123
+    },
+    {
+      "start_bit": 66602229,
+      "end_bit": 66649913,
+      "final": false,
+      "kind": 2,
+      "output_end": 21072464
+    },
+    {
+      "start_bit": 66649913,
+      "end_bit": 66698627,
+      "final": false,
+      "kind": 2,
+      "output_end": 21089609
+    },
+    {
+      "start_bit": 66698627,
+      "end_bit": 67078657,
+      "final": false,
+      "kind": 2,
+      "output_end": 21188611
+    },
+    {
+      "start_bit": 67078657,
+      "end_bit": 67272681,
+      "final": false,
+      "kind": 2,
+      "output_end": 21243529
+    },
+    {
+      "start_bit": 67272681,
+      "end_bit": 67319129,
+      "final": false,
+      "kind": 2,
+      "output_end": 21258193
+    },
+    {
+      "start_bit": 67319129,
+      "end_bit": 67700157,
+      "final": false,
+      "kind": 2,
+      "output_end": 21352206
+    },
+    {
+      "start_bit": 67700157,
+      "end_bit": 68073888,
+      "final": false,
+      "kind": 2,
+      "output_end": 21445448
+    },
+    {
+      "start_bit": 68073888,
+      "end_bit": 68123379,
+      "final": false,
+      "kind": 2,
+      "output_end": 21460137
+    },
+    {
+      "start_bit": 68123379,
+      "end_bit": 68515535,
+      "final": false,
+      "kind": 2,
+      "output_end": 21559450
+    },
+    {
+      "start_bit": 68515535,
+      "end_bit": 68762592,
+      "final": false,
+      "kind": 2,
+      "output_end": 21631244
+    },
+    {
+      "start_bit": 68762592,
+      "end_bit": 68811770,
+      "final": false,
+      "kind": 2,
+      "output_end": 21645075
+    },
+    {
+      "start_bit": 68811770,
+      "end_bit": 69186061,
+      "final": false,
+      "kind": 2,
+      "output_end": 21741772
+    },
+    {
+      "start_bit": 69186061,
+      "end_bit": 69233903,
+      "final": false,
+      "kind": 2,
+      "output_end": 21754842
+    },
+    {
+      "start_bit": 69233903,
+      "end_bit": 69620873,
+      "final": false,
+      "kind": 2,
+      "output_end": 21860343
+    },
+    {
+      "start_bit": 69620873,
+      "end_bit": 70007816,
+      "final": false,
+      "kind": 2,
+      "output_end": 21964500
+    },
+    {
+      "start_bit": 70007816,
+      "end_bit": 70054404,
+      "final": false,
+      "kind": 2,
+      "output_end": 21982958
+    },
+    {
+      "start_bit": 70054404,
+      "end_bit": 70090814,
+      "final": false,
+      "kind": 2,
+      "output_end": 21998334
+    },
+    {
+      "start_bit": 70090814,
+      "end_bit": 70129937,
+      "final": false,
+      "kind": 2,
+      "output_end": 22014187
+    },
+    {
+      "start_bit": 70129937,
+      "end_bit": 70218038,
+      "final": false,
+      "kind": 2,
+      "output_end": 22040853
+    },
+    {
+      "start_bit": 70218038,
+      "end_bit": 70263139,
+      "final": false,
+      "kind": 2,
+      "output_end": 22061305
+    },
+    {
+      "start_bit": 70263139,
+      "end_bit": 70309861,
+      "final": false,
+      "kind": 2,
+      "output_end": 22109954
+    },
+    {
+      "start_bit": 70309861,
+      "end_bit": 70437214,
+      "final": false,
+      "kind": 2,
+      "output_end": 22145977
+    },
+    {
+      "start_bit": 70437214,
+      "end_bit": 70526612,
+      "final": false,
+      "kind": 2,
+      "output_end": 22174937
+    },
+    {
+      "start_bit": 70526612,
+      "end_bit": 70569457,
+      "final": false,
+      "kind": 2,
+      "output_end": 22194328
+    },
+    {
+      "start_bit": 70569457,
+      "end_bit": 70612430,
+      "final": false,
+      "kind": 2,
+      "output_end": 22207786
+    },
+    {
+      "start_bit": 70612430,
+      "end_bit": 70696438,
+      "final": false,
+      "kind": 2,
+      "output_end": 22242527
+    },
+    {
+      "start_bit": 70696438,
+      "end_bit": 70743364,
+      "final": false,
+      "kind": 2,
+      "output_end": 22272856
+    },
+    {
+      "start_bit": 70743364,
+      "end_bit": 71063410,
+      "final": false,
+      "kind": 2,
+      "output_end": 22350204
+    },
+    {
+      "start_bit": 71063410,
+      "end_bit": 71106618,
+      "final": false,
+      "kind": 2,
+      "output_end": 22404304
+    },
+    {
+      "start_bit": 71106618,
+      "end_bit": 71388468,
+      "final": false,
+      "kind": 2,
+      "output_end": 22485846
+    },
+    {
+      "start_bit": 71388468,
+      "end_bit": 71432575,
+      "final": false,
+      "kind": 2,
+      "output_end": 22501019
+    },
+    {
+      "start_bit": 71432575,
+      "end_bit": 71809867,
+      "final": false,
+      "kind": 2,
+      "output_end": 22592666
+    },
+    {
+      "start_bit": 71809867,
+      "end_bit": 72193873,
+      "final": false,
+      "kind": 2,
+      "output_end": 22687518
+    },
+    {
+      "start_bit": 72193873,
+      "end_bit": 72566538,
+      "final": false,
+      "kind": 2,
+      "output_end": 22769305
+    },
+    {
+      "start_bit": 72566538,
+      "end_bit": 72935188,
+      "final": false,
+      "kind": 2,
+      "output_end": 22847676
+    },
+    {
+      "start_bit": 72935188,
+      "end_bit": 73300878,
+      "final": false,
+      "kind": 2,
+      "output_end": 22924632
+    },
+    {
+      "start_bit": 73300878,
+      "end_bit": 73433530,
+      "final": false,
+      "kind": 2,
+      "output_end": 22964068
+    },
+    {
+      "start_bit": 73433530,
+      "end_bit": 73758583,
+      "final": false,
+      "kind": 2,
+      "output_end": 23033865
+    },
+    {
+      "start_bit": 73758583,
+      "end_bit": 73799600,
+      "final": false,
+      "kind": 2,
+      "output_end": 23046145
+    },
+    {
+      "start_bit": 73799600,
+      "end_bit": 73842570,
+      "final": false,
+      "kind": 2,
+      "output_end": 23063263
+    },
+    {
+      "start_bit": 73842570,
+      "end_bit": 73986365,
+      "final": false,
+      "kind": 2,
+      "output_end": 23110047
+    },
+    {
+      "start_bit": 73986365,
+      "end_bit": 74029711,
+      "final": false,
+      "kind": 2,
+      "output_end": 23129803
+    },
+    {
+      "start_bit": 74029711,
+      "end_bit": 74413911,
+      "final": false,
+      "kind": 2,
+      "output_end": 23226511
+    },
+    {
+      "start_bit": 74413911,
+      "end_bit": 74612382,
+      "final": false,
+      "kind": 2,
+      "output_end": 23282646
+    },
+    {
+      "start_bit": 74612382,
+      "end_bit": 74654526,
+      "final": false,
+      "kind": 2,
+      "output_end": 23310977
+    },
+    {
+      "start_bit": 74654526,
+      "end_bit": 74697794,
+      "final": false,
+      "kind": 2,
+      "output_end": 23326636
+    },
+    {
+      "start_bit": 74697794,
+      "end_bit": 75062688,
+      "final": true,
+      "kind": 2,
+      "output_end": 23439895
+    }
+  ],
+  "limits": [
+    "Missing prefix and unknown history are not recovered.",
+    "No gzip CRC or package signature is verified.",
+    "Complete individual entries require independent header, bounds and mask checks."
+  ],
+  "input_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/06-audio.bin",
+  "input_sha256": "94a8b913e56f4e65a260a756c1efb5ab45a1e06a1e670d31b1284a182526e0a7",
+  "payload_offset": 12,
+  "payload_size": 9383100,
+  "component_end_byte_ceil": 9382848,
+  "zlib_crosschecks": [
+    {
+      "dictionary": "zeros_last_90",
+      "eof": true,
+      "output_size": 23439895,
+      "alignment_prelude_output_bytes": 1,
+      "symbolic_output_matches": true
+    },
+    {
+      "dictionary": "ones_ff_last_91",
+      "eof": true,
+      "output_size": 23439895,
+      "alignment_prelude_output_bytes": 1,
+      "symbolic_output_matches": true
+    },
+    {
+      "dictionary": "incrementing_last_92",
+      "eof": true,
+      "output_size": 23439895,
+      "alignment_prelude_output_bytes": 1,
+      "symbolic_output_matches": true
+    }
+  ],
+  "fully_known_tar_entries": [
+    {
+      "archive_path": "./opt/ftl/lib/libipas_grp.so",
+      "partial_header_offset": 1092119,
+      "partial_data_offset": 1092631,
+      "size": 251584,
+      "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libVOIdata_cp.so",
+      "partial_header_offset": 1344535,
+      "partial_data_offset": 1345047,
+      "size": 20840,
+      "sha256": "911b997a5a4ecb16d98bd9a6a73a2e46af1e4abfc6ea77c27a7827c861bfdba8",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libipas_sysc.so",
+      "partial_header_offset": 1366039,
+      "partial_data_offset": 1366551,
+      "size": 173652,
+      "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libi2c_cm.so",
+      "partial_header_offset": 1540631,
+      "partial_data_offset": 1541143,
+      "size": 6356,
+      "sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libipas_sysp.so",
+      "partial_header_offset": 1547799,
+      "partial_data_offset": 1548311,
+      "size": 173560,
+      "sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libComFlmLb.so",
+      "partial_header_offset": 1721879,
+      "partial_data_offset": 1722391,
+      "size": 9384,
+      "sha256": "e5ca3288453da45f666c8855ec5d2a29243f765789a36ad3a6943e674c4355b6",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libcoll.so",
+      "partial_header_offset": 1732119,
+      "partial_data_offset": 1732631,
+      "size": 108344,
+      "sha256": "90a7cf2c7f9eada7269b09643fcd9c7738bdb4ccab2f043e7419bdc36c852480",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libipas_skt.so",
+      "partial_header_offset": 1841175,
+      "partial_data_offset": 1841687,
+      "size": 10160,
+      "sha256": "f6cb7d7fb510a4d97e81df828fcbb870e1dd678c12e01980adac898519e395a8",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libAdlRd.so",
+      "partial_header_offset": 1851927,
+      "partial_data_offset": 1852439,
+      "size": 43016,
+      "sha256": "a2e1403bc89b737d4f9cf503dd6419a676d723715626fade1e8fe5a12e64b777",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libnavi_if.so",
+      "partial_header_offset": 1895959,
+      "partial_data_offset": 1896471,
+      "size": 106416,
+      "sha256": "02d11afd4414659265ff78944f5a400de0cfaff1138ef45deb4daaa88f809981",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libAdlCd.so",
+      "partial_header_offset": 2002967,
+      "partial_data_offset": 2003479,
+      "size": 22432,
+      "sha256": "3831438fb969950ff20fd11e1c704f9235f58ec5d93c5a0d55a06471acd32ce2",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libDisdb_if.so",
+      "partial_header_offset": 2026007,
+      "partial_data_offset": 2026519,
+      "size": 54204,
+      "sha256": "8486692809990cec2d1551858aea42991884886460d952979452e5b8a7f0fe47",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libAdlUb.so",
+      "partial_header_offset": 2080791,
+      "partial_data_offset": 2081303,
+      "size": 47080,
+      "sha256": "f8d509b18b2be933eacdf5d09794570ce6757129190076d6815d9bcc99c0d845",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libsct_ct.so",
+      "partial_header_offset": 2128407,
+      "partial_data_offset": 2128919,
+      "size": 10996,
+      "sha256": "383924353b752d9c02f953ecf773584affc5232e15b73a707b9d4f4f659d6fae",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libuie_api.so",
+      "partial_header_offset": 2140183,
+      "partial_data_offset": 2140695,
+      "size": 9104,
+      "sha256": "77e97c6cebc9e4a358ceb81c3afb91c8756785baf19691094857678ec21c78fd",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libDIS_IF.so",
+      "partial_header_offset": 2149911,
+      "partial_data_offset": 2150423,
+      "size": 54396,
+      "sha256": "1c0d760d81ad684bf5570278ffeb9c801607715efea03533fdf6b42db3d87e49",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libipas_ls1.so",
+      "partial_header_offset": 2205207,
+      "partial_data_offset": 2205719,
+      "size": 20516,
+      "sha256": "7373e2d470fbac95dbf7a7a1dd68cca59187fdb43450244fc706f8bbf7affc24",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libedbsong.so",
+      "partial_header_offset": 2226711,
+      "partial_data_offset": 2227223,
+      "size": 352368,
+      "sha256": "fcbd4cf0c639442e7d80877daf274ef6cd3e552bb917ea9f16bdba180d14337d",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libVOIAudioStream.so",
+      "partial_header_offset": 2579991,
+      "partial_data_offset": 2580503,
+      "size": 74684,
+      "sha256": "c5b9d0c56a1f7539e91851fe4958316987b401d81769d40711b7102f4a62c7f1",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/lib/libIFLB_CDDB.so",
+      "partial_header_offset": 2655255,
+      "partial_data_offset": 2655767,
+      "size": 24040,
+      "sha256": "1431c297e1716c7d3a49964aa523eb97b868673553e709d7897ee3a086ddad75",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "archive_path": "./opt/ftl/boot/bios.bin",
+      "partial_header_offset": 2680343,
+      "partial_data_offset": 2680855,
+      "size": 77544,
+      "sha256": "921d06ebb8137d9d32c9fda436dcc16f61d03d42545e1080ec7fc840771716c6",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    },
+    {
+      "archive_path": "./opt/ftl/boot/RTFM_SH4A_MA100_2nd.bin_ticket",
+      "partial_header_offset": 2758679,
+      "partial_data_offset": 2759191,
+      "size": 32,
+      "sha256": "29fff98c03ad766f133d14f9df6de668cbc88d4a9fd3009ad26afdd5362f5e4a",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    },
+    {
+      "archive_path": "./opt/ftl/boot/s-bios.bin",
+      "partial_header_offset": 2759703,
+      "partial_data_offset": 2760215,
+      "size": 7796,
+      "sha256": "ca126afb9b1255e19c4c0cdc2dd6de5fb04eae8230719fa5a0cdfdd529a4e9c7",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    },
+    {
+      "archive_path": "./opt/ftl/dev/mXT540E_TM8L.bin",
+      "partial_header_offset": 2768919,
+      "partial_data_offset": 2769431,
+      "size": 478,
+      "sha256": "d46c9190136c83c3535a26968e9ed337d0144a1f1c1965b36501a2ea29d202e5",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    },
+    {
+      "archive_path": "./opt/ftl/dev/mXT540E_TS8L.bin",
+      "partial_header_offset": 2769943,
+      "partial_data_offset": 2770455,
+      "size": 478,
+      "sha256": "7ff5dc4b7363b7fb9ad86836fe84609c0c0840bf5d6c4832c470e1bc48a57461",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    },
+    {
+      "archive_path": "./opt/ftl/bin/FlashImageCreater",
+      "partial_header_offset": 2771479,
+      "partial_data_offset": 2771991,
+      "size": 15252,
+      "sha256": "a30874c2d9d658ff2f49581edfd90a9d4976ff67340afd199ae81e096bc0f91e",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/bin/snap.sh",
+      "partial_header_offset": 2787351,
+      "partial_data_offset": 2787863,
+      "size": 8090,
+      "sha256": "527b70c22a2f8f3830cda231482a7b4c64c4e140cf6cafa1969d5c3b74c42f55",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": false
+    },
+    {
+      "archive_path": "./opt/ftl/bin/FlashImageWriter",
+      "partial_header_offset": 2796055,
+      "partial_data_offset": 2796567,
+      "size": 18524,
+      "sha256": "db3b38c1a9fd31b7a4e01ff33a65636849da45d829afc3d5aba2aec827fee18f",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DSV",
+      "partial_header_offset": 2816023,
+      "partial_data_offset": 2816535,
+      "size": 155636,
+      "sha256": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_MMP",
+      "partial_header_offset": 2972183,
+      "partial_data_offset": 2972695,
+      "size": 772556,
+      "sha256": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_EXT",
+      "partial_header_offset": 3745303,
+      "partial_data_offset": 3745815,
+      "size": 73208,
+      "sha256": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_REPRO",
+      "partial_header_offset": 3819031,
+      "partial_data_offset": 3819543,
+      "size": 168592,
+      "sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_CDDB",
+      "partial_header_offset": 3988503,
+      "partial_data_offset": 3989015,
+      "size": 1461952,
+      "sha256": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_VRS",
+      "partial_header_offset": 5451287,
+      "partial_data_offset": 5451799,
+      "size": 1008440,
+      "sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_SYSTEM",
+      "partial_header_offset": 6460439,
+      "partial_data_offset": 6460951,
+      "size": 495980,
+      "sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DTV",
+      "partial_header_offset": 6957079,
+      "partial_data_offset": 6957591,
+      "size": 2617748,
+      "sha256": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_HMI",
+      "partial_header_offset": 9575447,
+      "partial_data_offset": 9575959,
+      "size": 6152368,
+      "sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_AUDIO",
+      "partial_header_offset": 15728663,
+      "partial_data_offset": 15729175,
+      "size": 1150180,
+      "sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_VI",
+      "partial_header_offset": 16879639,
+      "partial_data_offset": 16880151,
+      "size": 187556,
+      "sha256": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DVDDECK",
+      "partial_header_offset": 17068055,
+      "partial_data_offset": 17068567,
+      "size": 712576,
+      "sha256": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_NAVIIF",
+      "partial_header_offset": 17781271,
+      "partial_data_offset": 17781783,
+      "size": 135556,
+      "sha256": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DISPLAY",
+      "partial_header_offset": 17917463,
+      "partial_data_offset": 17917975,
+      "size": 4480028,
+      "sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_CDP",
+      "partial_header_offset": 22398487,
+      "partial_data_offset": 22398999,
+      "size": 89016,
+      "sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_UIEIF",
+      "partial_header_offset": 22488087,
+      "partial_data_offset": 22488599,
+      "size": 566552,
+      "sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_SPC",
+      "partial_header_offset": 23055383,
+      "partial_data_offset": 23055895,
+      "size": 65092,
+      "sha256": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_TMD",
+      "partial_header_offset": 23121431,
+      "partial_data_offset": 23121943,
+      "size": 197364,
+      "sha256": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DVDP",
+      "partial_header_offset": 23319575,
+      "partial_data_offset": 23320087,
+      "size": 109540,
+      "sha256": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "elf": true,
+      "elf_class": "ELF32",
+      "elf_data_encoding": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    }
+  ],
+  "trailing_bytes": 264,
+  "unverified_gzip_footer_hypothesis": {
+    "offset": 9382836,
+    "crc32_hex": "82ee0d5e",
+    "isize": 23592960,
+    "remaining_after_footer": 256,
+    "crc_verified": false,
+    "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+  }
+}

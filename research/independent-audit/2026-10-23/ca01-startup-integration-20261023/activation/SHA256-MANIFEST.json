@@ -1,0 +1,52 @@
+[
+  {
+    "path": "/tmp/ca01-activation-20261023/ACTIVATION_FINDINGS.md",
+    "sha256": "2b9a948e847fcd8aaa981848a9338a11a3c4ee8b40c16e5377cfa6c46587e49e",
+    "size": 5533
+  },
+  {
+    "path": "/tmp/ca01-activation-20261023/sysc.txt",
+    "sha256": "0fbaf560f3caf83a1f0b77cd7390b2b58a4fd2c6c5b411323841f53b15682367",
+    "size": 84171
+  },
+  {
+    "path": "/tmp/ca01-activation-20261023/detail.txt",
+    "sha256": "10aa062bfc5f949929fbb9d161127a056b921476b703f3ac97d9da7bceb93745",
+    "size": 87956
+  },
+  {
+    "path": "/tmp/ca01-activation-20261023/startup-boundary-fast.json",
+    "sha256": "eb8744e8749995456c439eef5b233735dce67a713141867e65614e119d4de4b6",
+    "size": 4822
+  },
+  {
+    "path": "/tmp/ca01-activation-20261023/startup-boundary-fast.log",
+    "sha256": "daf22ddab58dfa97da68a2b553ba63b8a0d8ea99b9fa51e9c2a13e1219319483",
+    "size": 78
+  },
+  {
+    "path": "/tmp/ca01-activation-20261023/tests-red.log",
+    "sha256": "0555a9d8b7715350eb72cb570eb1ae8f9c388a4c42a42700d8bb8a6f52dd454f",
+    "size": 1050
+  },
+  {
+    "path": "/tmp/ca01-activation-20261023/tests-green.log",
+    "sha256": "40c805b4e1ba8faf15735727b19d1b190a8c51c161a9a8f05d19c152f67c2bfc",
+    "size": 1022
+  },
+  {
+    "path": "/tmp/ca01-activation-20261023/tests-final.log",
+    "sha256": "2b9f191653cbf929e1a4fe2746d4b3c4323324146ef99e124e8643b1caf962b7",
+    "size": 1453
+  },
+  {
+    "path": "/home/starlight/projects/rav4-radio/ca01-development-kit/tools/ca01_startup_trace.py",
+    "sha256": "d4608bfc006241045ca6b2cd3170b489a5fea2464a8ac7427c8a56f7996fe062",
+    "size": 12122
+  },
+  {
+    "path": "/home/starlight/projects/rav4-radio/ca01-development-kit/tests/test_ca01_startup_trace.py",
+    "sha256": "1d8ab17a7bb100c504fb071e3aa729df877938976aea414fe9665e7a530245ee",
+    "size": 3861
+  }
+]

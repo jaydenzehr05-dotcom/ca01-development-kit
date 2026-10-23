@@ -1,0 +1,37 @@
+{
+  "binary": "./opt/ftl/apl/PROC_UIEIF",
+  "examined_functions": [
+    "00017248",
+    "000217a0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 250,
+    "prompt_tokens": 1441,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1691
+  },
+  "next_focus": [
+    "Error handling paths in both functions",
+    "Data at DAT_00021948"
+  ],
+  "observations": [
+    {
+      "address": "0x00017248",
+      "claim": "Unmounts and reformats /opt/ftl/var/uie partition",
+      "evidence_snippet": "umount2(\"/opt/ftl/var/uie\",1);",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions handle filesystem operations on /opt/ftl/var/uie, including unmounting, formatting with mkfs.vfat, and mounting.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4",
+  "unresolved_questions": [
+    "What is the purpose of the backup directory?",
+    "What do the magic numbers in FUN_000341ac represent?"
+  ]
+}

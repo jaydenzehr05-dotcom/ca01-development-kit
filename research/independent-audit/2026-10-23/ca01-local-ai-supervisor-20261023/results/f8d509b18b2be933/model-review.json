@@ -1,0 +1,37 @@
+{
+  "binary": "./opt/ftl/lib/libAdlUb.so",
+  "examined_functions": [
+    "000139cc",
+    "00016e9c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 223,
+    "prompt_tokens": 765,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 988
+  },
+  "next_focus": [
+    "Database file path construction",
+    "File copy operation details"
+  ],
+  "observations": [
+    {
+      "address": "0x00016e9c",
+      "claim": "Copies file and opens database on first write check.",
+      "evidence_snippet": "util_file_copy(iVar2 + DAT_00016f38,iVar2 + DAT_00016f3c",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle SQL database dropping and first-write checking with file operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "f8d509b18b2be933eacdf5d09794570ce6757129190076d6815d9bcc99c0d845",
+  "unresolved_questions": [
+    "What is the purpose of the first-write check?",
+    "How are the file paths constructed?"
+  ]
+}

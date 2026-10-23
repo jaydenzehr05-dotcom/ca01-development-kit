@@ -1,0 +1,1048 @@
+[
+  {
+    "executable": "PROC_HMI",
+    "old_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+    "new_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+    "entry_unchanged": true,
+    "old_entry": "0xd8f8",
+    "new_entry": "0xd8f8",
+    "old_needed": [
+      "libm.so.6",
+      "librt.so.1",
+      "libGLES_CM.so",
+      "libOpenVG.so",
+      "libEGL.so",
+      "libexpat.so.1",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_ls1.so",
+      "libipas_pcd.so",
+      "libipas_sysc.so",
+      "libipas_trc.so",
+      "libipas_grp.so",
+      "libpthread.so.0",
+      "libdisplay_if.so",
+      "libdismng_if.so",
+      "libDIS_IF.so",
+      "libLMMDB_IF.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libcva_db.so",
+      "libadi_ct.so",
+      "libComFlmLb.so",
+      "libmir_if.so",
+      "libspc_if.so",
+      "libuie_db.so",
+      "libuie_api.so",
+      "libVRS_IF.so",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "new_needed": [
+      "libm.so.6",
+      "librt.so.1",
+      "libGLES_CM.so",
+      "libOpenVG.so",
+      "libEGL.so",
+      "libexpat.so.1",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_ls1.so",
+      "libipas_pcd.so",
+      "libipas_sysc.so",
+      "libipas_trc.so",
+      "libipas_grp.so",
+      "libpthread.so.0",
+      "libdisplay_if.so",
+      "libdismng_if.so",
+      "libDIS_IF.so",
+      "libLMMDB_IF.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libcva_db.so",
+      "libadi_ct.so",
+      "libComFlmLb.so",
+      "libmir_if.so",
+      "libspc_if.so",
+      "libuie_db.so",
+      "libuie_api.so",
+      "libVRS_IF.so",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "added_dependencies": [],
+    "removed_dependencies": [],
+    "added_import_symbols": [],
+    "removed_import_symbols": [],
+    "new_defined_symbols": [],
+    "removed_defined_symbols": [],
+    "old_sections": {
+      ".text": {
+        "offset": 22776,
+        "virtual_address": 55544,
+        "size": 2648064,
+        "sha256": "a113c97cf0e0fefda59d20e8836fe02dfa8740166252d41090906a6eb0aa3e58"
+      },
+      ".rodata": {
+        "offset": 2670848,
+        "virtual_address": 2703616,
+        "size": 3328636,
+        "sha256": "94692f73000054053ae062275285f0c6f520fe794e55ed46977f5e1a386b30c5"
+      },
+      ".data": {
+        "offset": 6084900,
+        "virtual_address": 6150436,
+        "size": 16272,
+        "sha256": "68eacb4f4e24fba685a870582720b63f3f5747e8be16f68fb24946b567da882c"
+      },
+      ".dynsym": {
+        "offset": 3120,
+        "virtual_address": 35888,
+        "size": 6800,
+        "sha256": "46cc69cd9b92f7348c5e4e2d0773c4c6fbcc304fd12819c04c8b3fdbe221cd4c"
+      },
+      ".dynamic": {
+        "offset": 6083376,
+        "virtual_address": 6148912,
+        "size": 472,
+        "sha256": "228ed8c1cbb7cffaad4f629c33c13e3766e42469f82113a591674b8afc072efc"
+      },
+      ".ARM.exidx": {
+        "offset": 6008340,
+        "virtual_address": 6041108,
+        "size": 75024,
+        "sha256": "341fd123cd4675a3afdc206b9ed33f5bab1e2f2238a66d668a9dc1e02b186129"
+      },
+      ".plt": {
+        "offset": 19648,
+        "virtual_address": 52416,
+        "size": 3128,
+        "sha256": "139a955fdaba259e289f198753ae58fd0f6e338cd33a6d371b1f64b541690e9f"
+      }
+    },
+    "new_sections": {
+      ".text": {
+        "offset": 22776,
+        "virtual_address": 55544,
+        "size": 2648064,
+        "sha256": "a113c97cf0e0fefda59d20e8836fe02dfa8740166252d41090906a6eb0aa3e58"
+      },
+      ".rodata": {
+        "offset": 2670848,
+        "virtual_address": 2703616,
+        "size": 3328636,
+        "sha256": "394d04daeee0e530b270c0703c9fe173c088bcd02798200d5c5da7cccffd0987"
+      },
+      ".data": {
+        "offset": 6084900,
+        "virtual_address": 6150436,
+        "size": 16272,
+        "sha256": "68eacb4f4e24fba685a870582720b63f3f5747e8be16f68fb24946b567da882c"
+      },
+      ".dynsym": {
+        "offset": 3120,
+        "virtual_address": 35888,
+        "size": 6800,
+        "sha256": "46cc69cd9b92f7348c5e4e2d0773c4c6fbcc304fd12819c04c8b3fdbe221cd4c"
+      },
+      ".dynamic": {
+        "offset": 6083376,
+        "virtual_address": 6148912,
+        "size": 472,
+        "sha256": "228ed8c1cbb7cffaad4f629c33c13e3766e42469f82113a591674b8afc072efc"
+      },
+      ".ARM.exidx": {
+        "offset": 6008340,
+        "virtual_address": 6041108,
+        "size": 75024,
+        "sha256": "341fd123cd4675a3afdc206b9ed33f5bab1e2f2238a66d668a9dc1e02b186129"
+      },
+      ".plt": {
+        "offset": 19648,
+        "virtual_address": 52416,
+        "size": 3128,
+        "sha256": "139a955fdaba259e289f198753ae58fd0f6e338cd33a6d371b1f64b541690e9f"
+      }
+    },
+    "text_sha_identical": true,
+    "old_str_count": 20190,
+    "new_str_count": 20190,
+    "new_strings_count": 2,
+    "removed_strings_count": 2,
+    "new_strings": [
+      "18:25:48",
+      "Apr 23 2018"
+    ],
+    "removed_strings": [
+      "17:05:22",
+      "Nov 10 2017"
+    ],
+    "target_new_strings": [],
+    "exact_byte_differences": {
+      "offsets": [
+        "0x596790",
+        "0x596791",
+        "0x596792",
+        "0x596794",
+        "0x596795",
+        "0x59679a",
+        "0x59679d",
+        "0x59679f",
+        "0x5967a2",
+        "0x5967a3"
+      ],
+      "old": [
+        78,
+        111,
+        118,
+        49,
+        48,
+        55,
+        55,
+        48,
+        50,
+        50
+      ],
+      "new": [
+        65,
+        112,
+        114,
+        50,
+        51,
+        56,
+        56,
+        50,
+        52,
+        56
+      ]
+    }
+  },
+  {
+    "executable": "PROC_DISPLAY",
+    "old_sha256": "4755da50d4396cb213eb905ed49d6118cd8f330d05a35aa928b1bef8b2045004",
+    "new_sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+    "entry_unchanged": true,
+    "old_entry": "0x139b8",
+    "new_entry": "0x139b8",
+    "old_needed": [
+      "libm.so.6",
+      "librt.so.1",
+      "libexpat.so.1",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_ls1.so",
+      "libipas_tab.so",
+      "libipas_can.so",
+      "libipas_pcd.so",
+      "libipas_sysc.so",
+      "libipas_pcmc.so",
+      "libipas_trc.so",
+      "libipas_mda.so",
+      "libipas_lcn.so",
+      "libipas_apc.so",
+      "libipas_skt.so",
+      "libipas_util.so",
+      "libiflb_btm.so",
+      "libmmp_prc.so",
+      "libhmi_if.so",
+      "libdismng_if.so",
+      "libsyssrcc_if.so",
+      "libIFLB_NAVIIF.so",
+      "libomx_service.so",
+      "libsqlite3.so.0",
+      "libsysras_if.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libadi_ct.so",
+      "libgps_ct.so",
+      "libir_ct.so",
+      "libscp_ct.so",
+      "libvcl_in.so",
+      "libComFlmLb.so",
+      "libIFLB_REPRO.so",
+      "libasound.so.2",
+      "libasoundex.so",
+      "libAdlBt.so",
+      "libAdlCd.so",
+      "libAdlRd.so",
+      "libAdlUb.so",
+      "libLMMDB_IF.so",
+      "libVRS_IF.so",
+      "libpthread.so.0",
+      "libmir_if.so",
+      "libspc_if.so",
+      "libuie_api.so",
+      "libuie_db.so",
+      "libcoll.so",
+      "libecli.so",
+      "libedbsong.so",
+      "libgsp.so",
+      "libinit.so",
+      "libopt.so",
+      "libIFLB_CDDB.so",
+      "libNTWSET_IF.so",
+      "libdsv_db.so",
+      "libdsv_api.so",
+      "libsecurity.so",
+      "libDIS_IF.so",
+      "libscac_lib_srb.so.1",
+      "libscac_implement.so.1",
+      "libscac_provide.so.1",
+      "libsct_ct.so",
+      "libswi_ct.so",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "libmod.so"
+    ],
+    "new_needed": [
+      "libm.so.6",
+      "librt.so.1",
+      "libexpat.so.1",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_ls1.so",
+      "libipas_tab.so",
+      "libipas_can.so",
+      "libipas_pcd.so",
+      "libipas_sysc.so",
+      "libipas_pcmc.so",
+      "libipas_trc.so",
+      "libipas_mda.so",
+      "libipas_lcn.so",
+      "libipas_apc.so",
+      "libipas_skt.so",
+      "libipas_util.so",
+      "libiflb_btm.so",
+      "libmmp_prc.so",
+      "libhmi_if.so",
+      "libdismng_if.so",
+      "libsyssrcc_if.so",
+      "libIFLB_NAVIIF.so",
+      "libomx_service.so",
+      "libsqlite3.so.0",
+      "libsysras_if.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libadi_ct.so",
+      "libgps_ct.so",
+      "libir_ct.so",
+      "libscp_ct.so",
+      "libvcl_in.so",
+      "libComFlmLb.so",
+      "libIFLB_REPRO.so",
+      "libasound.so.2",
+      "libasoundex.so",
+      "libAdlBt.so",
+      "libAdlCd.so",
+      "libAdlRd.so",
+      "libAdlUb.so",
+      "libLMMDB_IF.so",
+      "libVRS_IF.so",
+      "libpthread.so.0",
+      "libmir_if.so",
+      "libspc_if.so",
+      "libuie_api.so",
+      "libuie_db.so",
+      "libcoll.so",
+      "libecli.so",
+      "libedbsong.so",
+      "libgsp.so",
+      "libinit.so",
+      "libopt.so",
+      "libIFLB_CDDB.so",
+      "libNTWSET_IF.so",
+      "libdsv_db.so",
+      "libdsv_api.so",
+      "libsecurity.so",
+      "libDIS_IF.so",
+      "libscac_lib_srb.so.1",
+      "libscac_implement.so.1",
+      "libscac_provide.so.1",
+      "libsct_ct.so",
+      "libswi_ct.so",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "libmod.so"
+    ],
+    "added_dependencies": [],
+    "removed_dependencies": [],
+    "added_import_symbols": [],
+    "removed_import_symbols": [],
+    "new_defined_symbols": [],
+    "removed_defined_symbols": [],
+    "old_sections": {
+      ".text": {
+        "offset": 47544,
+        "virtual_address": 80312,
+        "size": 3996420,
+        "sha256": "b671bd831ff56c95093df392776a4a9d10d3f5e159cac15c54f5cc3e62b7f010"
+      },
+      ".rodata": {
+        "offset": 4043972,
+        "virtual_address": 4076740,
+        "size": 299356,
+        "sha256": "a2099c67c9b50aa66f50e5538608c3d0ac71c813a7589be44096f19eebe52613"
+      },
+      ".data": {
+        "offset": 4439388,
+        "virtual_address": 4504924,
+        "size": 14168,
+        "sha256": "997cd078aa2c68d74ae9d57e351c1bd71c299c4be9dae56bda3fdf60bbae7ddf"
+      },
+      ".dynsym": {
+        "offset": 5692,
+        "virtual_address": 38460,
+        "size": 12960,
+        "sha256": "0e8cedd86fc9c01bf9dec178eb99d5ba9fddb61f2980add2c2858a52b34c2567"
+      },
+      ".dynamic": {
+        "offset": 4435980,
+        "virtual_address": 4501516,
+        "size": 776,
+        "sha256": "8381f75efb89e74f698e4ff97b8d766c1f76cb31912b17a0003805c5490d9f89"
+      },
+      ".ARM.exidx": {
+        "offset": 4353612,
+        "virtual_address": 4386380,
+        "size": 79296,
+        "sha256": "d11d57ed9e4889ad3be9f851218343321d75ed720dd69de600b52c6dcaa23148"
+      },
+      ".plt": {
+        "offset": 39672,
+        "virtual_address": 72440,
+        "size": 7868,
+        "sha256": "f7dac8102f52354b3ace8e018c92c699b34ed56e614ad9f97ee2fce2e9acd20c"
+      }
+    },
+    "new_sections": {
+      ".text": {
+        "offset": 47544,
+        "virtual_address": 80312,
+        "size": 3996140,
+        "sha256": "42639017adf8a392dcf7a22b085857569efa050a0dc7f99e7c74af9c87c70662"
+      },
+      ".rodata": {
+        "offset": 4043692,
+        "virtual_address": 4076460,
+        "size": 299356,
+        "sha256": "f4e6c662b86e9949845f565d04d53fc00dc5caa80bf3963aae67fc1a26a3568b"
+      },
+      ".data": {
+        "offset": 4439388,
+        "virtual_address": 4504924,
+        "size": 14168,
+        "sha256": "a4d0cafab02662eb9af8aa89837625c3fba6aba2ee1fdc0b55487dd0c7a73d6d"
+      },
+      ".dynsym": {
+        "offset": 5692,
+        "virtual_address": 38460,
+        "size": 12960,
+        "sha256": "773c648ad43d66a360467db7b4880da4e33c2dba6dbcfb04595f70cf912a1ca0"
+      },
+      ".dynamic": {
+        "offset": 4435980,
+        "virtual_address": 4501516,
+        "size": 776,
+        "sha256": "999f5e2524c4ba1605ff869028237058796f0d0c1d386d78174c8be755e55b2a"
+      },
+      ".ARM.exidx": {
+        "offset": 4353332,
+        "virtual_address": 4386100,
+        "size": 79296,
+        "sha256": "ccea265052e4ab788f1f9e5894b408caa7acfd8586db3d774708d55c8f8b4ee5"
+      },
+      ".plt": {
+        "offset": 39672,
+        "virtual_address": 72440,
+        "size": 7868,
+        "sha256": "f7dac8102f52354b3ace8e018c92c699b34ed56e614ad9f97ee2fce2e9acd20c"
+      }
+    },
+    "text_sha_identical": false,
+    "old_str_count": 2061,
+    "new_str_count": 2061,
+    "new_strings_count": 3,
+    "removed_strings_count": 3,
+    "new_strings": [
+      "*\"*\"*\"*\".&.&.&.&2*2*2*2*5.5.5.5.92929292?5?5?5?5?9?9?946?",
+      "18:25:26",
+      "Apr 23 2018"
+    ],
+    "removed_strings": [
+      "*\"*\"*\"*\".&.&.&.&2*2*2*2*5.5.5.5.92929292?5?5?5?5?9?9?9L7?",
+      "17:05:01",
+      "Nov 10 2017"
+    ],
+    "target_new_strings": []
+  },
+  {
+    "executable": "PROC_SYSTEM",
+    "old_sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+    "new_sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+    "entry_unchanged": true,
+    "old_entry": "0xf230",
+    "new_entry": "0xf230",
+    "old_needed": [
+      "libm.so.6",
+      "librt.so.1",
+      "libipas_sysp.so",
+      "libipas_pcmp.so",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_grp.so",
+      "libipas_trc.so",
+      "libpthread.so.0",
+      "libasoundex.so",
+      "libsyssrcp_if.so",
+      "libusb-0.1.so.4",
+      "librtapi.so",
+      "libaud_dsp.so",
+      "libsysras_if.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libadi_ct.so",
+      "libipd_ct.so",
+      "libComFlmLb.so",
+      "libDisdb_if.so",
+      "libDIS_IF.so",
+      "libcva_db.so",
+      "libLMMDBSYS_IF.so",
+      "libdsv_api.so",
+      "libdsv_db.so",
+      "libIFLB_REPRO.so",
+      "libsecurity.so",
+      "librom_dc.so",
+      "libscac_lib_srb.so.1",
+      "libscac_implement.so.1",
+      "libscac_provide.so.1",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "libasound.so.2"
+    ],
+    "new_needed": [
+      "libm.so.6",
+      "librt.so.1",
+      "libipas_sysp.so",
+      "libipas_pcmp.so",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_grp.so",
+      "libipas_trc.so",
+      "libpthread.so.0",
+      "libasoundex.so",
+      "libsyssrcp_if.so",
+      "libusb-0.1.so.4",
+      "librtapi.so",
+      "libaud_dsp.so",
+      "libsysras_if.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libadi_ct.so",
+      "libipd_ct.so",
+      "libComFlmLb.so",
+      "libDisdb_if.so",
+      "libDIS_IF.so",
+      "libcva_db.so",
+      "libLMMDBSYS_IF.so",
+      "libdsv_api.so",
+      "libdsv_db.so",
+      "libIFLB_REPRO.so",
+      "libsecurity.so",
+      "librom_dc.so",
+      "libscac_lib_srb.so.1",
+      "libscac_implement.so.1",
+      "libscac_provide.so.1",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "libasound.so.2"
+    ],
+    "added_dependencies": [],
+    "removed_dependencies": [],
+    "added_import_symbols": [],
+    "removed_import_symbols": [],
+    "new_defined_symbols": [],
+    "removed_defined_symbols": [],
+    "old_sections": {
+      ".text": {
+        "offset": 29232,
+        "virtual_address": 62000,
+        "size": 350912,
+        "sha256": "74223ebb2a9c501f004cb97e7942b307f6745eab9c9b8375086c2cac687e01c9"
+      },
+      ".rodata": {
+        "offset": 380152,
+        "virtual_address": 412920,
+        "size": 94004,
+        "sha256": "943e669c6d7e82c3be57a60dc2e3425d9fd267fee177dca8f481b66470d126ca"
+      },
+      ".data": {
+        "offset": 488300,
+        "virtual_address": 553836,
+        "size": 96,
+        "sha256": "abf6a82e01ca27ea1cf571fd54f2fe4ca5fc07a8aa63d182cea2eb2720d5dd1a"
+      },
+      ".dynsym": {
+        "offset": 3392,
+        "virtual_address": 36160,
+        "size": 7760,
+        "sha256": "8277a58485864b5aec72d997fe8d1a7245874267daf715cf26c421698a9b8d3a"
+      },
+      ".dynamic": {
+        "offset": 486048,
+        "virtual_address": 551584,
+        "size": 512,
+        "sha256": "580a380f1e2d57ffb8471a731e57730e459ca07ce1c1644ac50a75db7638613b"
+      },
+      ".ARM.exidx": {
+        "offset": 475272,
+        "virtual_address": 508040,
+        "size": 10760,
+        "sha256": "fe8d4c582cad41d02244ab3bcffbe87b8fe7c13923e90897d0dba78bd9a05746"
+      },
+      ".plt": {
+        "offset": 24032,
+        "virtual_address": 56800,
+        "size": 5192,
+        "sha256": "5dca2ba6028dff259c13ec4582fe3e2d569c5ec29a876708cb5380e5b2efbacb"
+      }
+    },
+    "new_sections": {
+      ".text": {
+        "offset": 29232,
+        "virtual_address": 62000,
+        "size": 350912,
+        "sha256": "74223ebb2a9c501f004cb97e7942b307f6745eab9c9b8375086c2cac687e01c9"
+      },
+      ".rodata": {
+        "offset": 380152,
+        "virtual_address": 412920,
+        "size": 94004,
+        "sha256": "f60873ecfe0469c9472ca1691d6facb1b13fbd8a1c63b1bb6758bec3817a4eca"
+      },
+      ".data": {
+        "offset": 488300,
+        "virtual_address": 553836,
+        "size": 96,
+        "sha256": "abf6a82e01ca27ea1cf571fd54f2fe4ca5fc07a8aa63d182cea2eb2720d5dd1a"
+      },
+      ".dynsym": {
+        "offset": 3392,
+        "virtual_address": 36160,
+        "size": 7760,
+        "sha256": "8277a58485864b5aec72d997fe8d1a7245874267daf715cf26c421698a9b8d3a"
+      },
+      ".dynamic": {
+        "offset": 486048,
+        "virtual_address": 551584,
+        "size": 512,
+        "sha256": "580a380f1e2d57ffb8471a731e57730e459ca07ce1c1644ac50a75db7638613b"
+      },
+      ".ARM.exidx": {
+        "offset": 475272,
+        "virtual_address": 508040,
+        "size": 10760,
+        "sha256": "fe8d4c582cad41d02244ab3bcffbe87b8fe7c13923e90897d0dba78bd9a05746"
+      },
+      ".plt": {
+        "offset": 24032,
+        "virtual_address": 56800,
+        "size": 5192,
+        "sha256": "5dca2ba6028dff259c13ec4582fe3e2d569c5ec29a876708cb5380e5b2efbacb"
+      }
+    },
+    "text_sha_identical": true,
+    "old_str_count": 942,
+    "new_str_count": 942,
+    "new_strings_count": 2,
+    "removed_strings_count": 2,
+    "new_strings": [
+      "18:23:10",
+      "Apr 23 2018"
+    ],
+    "removed_strings": [
+      "17:02:41",
+      "Nov 10 2017"
+    ],
+    "target_new_strings": []
+  },
+  {
+    "executable": "PROC_REPRO",
+    "old_sha256": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+    "new_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+    "entry_unchanged": true,
+    "old_entry": "0xa6c0",
+    "new_entry": "0xa6c0",
+    "old_needed": [
+      "libm.so.6",
+      "libz.so.1",
+      "librt.so.1",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_ls1.so",
+      "libipas_tab.so",
+      "libipas_can.so",
+      "libipas_sysc.so",
+      "libdismng_if.so",
+      "libipas_trc.so",
+      "libipas_mda.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libadi_ct.so",
+      "libComFlmLb.so",
+      "libIFLB_CDDB.so",
+      "libIFLB_NAVIIF.so",
+      "libLMMDBSYS_IF.so",
+      "libnavi_ex.so",
+      "libipas_skt.so",
+      "libsecurity.so",
+      "libexpat.so.1",
+      "libscac_lib_srb.so.1",
+      "libscac_implement.so.1",
+      "libscac_provide.so.1",
+      "libswi_ct.so",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "new_needed": [
+      "libm.so.6",
+      "libz.so.1",
+      "librt.so.1",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_ls1.so",
+      "libipas_tab.so",
+      "libipas_can.so",
+      "libipas_sysc.so",
+      "libdismng_if.so",
+      "libipas_trc.so",
+      "libipas_mda.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libadi_ct.so",
+      "libComFlmLb.so",
+      "libIFLB_CDDB.so",
+      "libIFLB_NAVIIF.so",
+      "libLMMDBSYS_IF.so",
+      "libnavi_ex.so",
+      "libipas_skt.so",
+      "libsecurity.so",
+      "libexpat.so.1",
+      "libscac_lib_srb.so.1",
+      "libscac_implement.so.1",
+      "libscac_provide.so.1",
+      "libswi_ct.so",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "added_dependencies": [],
+    "removed_dependencies": [],
+    "added_import_symbols": [],
+    "removed_import_symbols": [],
+    "new_defined_symbols": [],
+    "removed_defined_symbols": [],
+    "old_sections": {
+      ".text": {
+        "offset": 9920,
+        "virtual_address": 42688,
+        "size": 104264,
+        "sha256": "14a13b130d9b9c26a5be6dc01243888dc9ac2ff684f023186635fadcdc53322a"
+      },
+      ".rodata": {
+        "offset": 114192,
+        "virtual_address": 146960,
+        "size": 46328,
+        "sha256": "fa7baf9a5b31dcee091ec8c6199761cd64810a317e9dc4446b463e8496c34f11"
+      },
+      ".data": {
+        "offset": 165056,
+        "virtual_address": 230592,
+        "size": 456,
+        "sha256": "89808539b1bce45361e98c43695986c3fcabbb234bc74afaba321ef5f01e6d19"
+      },
+      ".dynsym": {
+        "offset": 1544,
+        "virtual_address": 34312,
+        "size": 2608,
+        "sha256": "3c71056c967cea67fe4b7514724e0c87c940a0e9aec98600853fd69fab34ae98"
+      },
+      ".dynamic": {
+        "offset": 164012,
+        "virtual_address": 229548,
+        "size": 464,
+        "sha256": "93310b4d197aeba943e72f0fec60d8de1db71ccdd5cec83f72e9d178d13e1bb3"
+      },
+      ".ARM.exidx": {
+        "offset": 161336,
+        "virtual_address": 194104,
+        "size": 2664,
+        "sha256": "40a208382d4b34f293caec1af7f10e38e5c9629e8016040963fa1c6680b3fa19"
+      },
+      ".plt": {
+        "offset": 8204,
+        "virtual_address": 40972,
+        "size": 1712,
+        "sha256": "cc7dc9973d45bad84588a53a7ab9ef741badf8d926068e1a6029a4cb54df7c16"
+      }
+    },
+    "new_sections": {
+      ".text": {
+        "offset": 9920,
+        "virtual_address": 42688,
+        "size": 104264,
+        "sha256": "14a13b130d9b9c26a5be6dc01243888dc9ac2ff684f023186635fadcdc53322a"
+      },
+      ".rodata": {
+        "offset": 114192,
+        "virtual_address": 146960,
+        "size": 46328,
+        "sha256": "b28eaeff874511fe09d218c426318946663a15f76de0ac8bce5df439cb3776b5"
+      },
+      ".data": {
+        "offset": 165056,
+        "virtual_address": 230592,
+        "size": 456,
+        "sha256": "89808539b1bce45361e98c43695986c3fcabbb234bc74afaba321ef5f01e6d19"
+      },
+      ".dynsym": {
+        "offset": 1544,
+        "virtual_address": 34312,
+        "size": 2608,
+        "sha256": "3c71056c967cea67fe4b7514724e0c87c940a0e9aec98600853fd69fab34ae98"
+      },
+      ".dynamic": {
+        "offset": 164012,
+        "virtual_address": 229548,
+        "size": 464,
+        "sha256": "93310b4d197aeba943e72f0fec60d8de1db71ccdd5cec83f72e9d178d13e1bb3"
+      },
+      ".ARM.exidx": {
+        "offset": 161336,
+        "virtual_address": 194104,
+        "size": 2664,
+        "sha256": "40a208382d4b34f293caec1af7f10e38e5c9629e8016040963fa1c6680b3fa19"
+      },
+      ".plt": {
+        "offset": 8204,
+        "virtual_address": 40972,
+        "size": 1712,
+        "sha256": "cc7dc9973d45bad84588a53a7ab9ef741badf8d926068e1a6029a4cb54df7c16"
+      }
+    },
+    "text_sha_identical": true,
+    "old_str_count": 575,
+    "new_str_count": 575,
+    "new_strings_count": 2,
+    "removed_strings_count": 2,
+    "new_strings": [
+      "18:23:40",
+      "Apr 23 2018"
+    ],
+    "removed_strings": [
+      "17:03:14",
+      "Nov 10 2017"
+    ],
+    "target_new_strings": []
+  },
+  {
+    "executable": "PROC_VRS",
+    "old_sha256": "cdc2f7a613e5a9a9a2a122a97a5cf62bbf5a7a27b863b36ea6427df2bf731976",
+    "new_sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+    "entry_unchanged": true,
+    "old_entry": "0xb200",
+    "new_entry": "0xb200",
+    "old_needed": [
+      "libm.so.6",
+      "librt.so.1",
+      "libexpat.so.1",
+      "libipas_acd.so",
+      "libipas_pcd.so",
+      "libipas_pcmc.so",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_ls1.so",
+      "libipas_sysc.so",
+      "libipas_trc.so",
+      "libsyssrcc_if.so",
+      "libasoundex.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libadi_ct.so",
+      "libComFlmLb.so",
+      "libLMMDB_IF.so",
+      "libIFLB_NAVIIF.so",
+      "libDIS_IF.so",
+      "libcva_db.so",
+      "libuie_db.so",
+      "libuie_api.so",
+      "libVOIapi.so",
+      "libVOITTS.so",
+      "libVOIAudioStream.so",
+      "libVOIutil_cfg.so",
+      "libVOIutil_lp.so",
+      "libVOIutil_th.so",
+      "libVOIdata_cp.so",
+      "libVBTEngineClient.so",
+      "libVECITransport.so",
+      "libVBTLoader.so",
+      "libsse.so",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "new_needed": [
+      "libm.so.6",
+      "librt.so.1",
+      "libexpat.so.1",
+      "libipas_acd.so",
+      "libipas_pcd.so",
+      "libipas_pcmc.so",
+      "libipas_std.so",
+      "libipas_fls.so",
+      "libipas_ls1.so",
+      "libipas_sysc.so",
+      "libipas_trc.so",
+      "libsyssrcc_if.so",
+      "libasoundex.so",
+      "libgpo_ct.so",
+      "libi2c_cm.so",
+      "libmem_ct.so",
+      "libadi_ct.so",
+      "libComFlmLb.so",
+      "libLMMDB_IF.so",
+      "libIFLB_NAVIIF.so",
+      "libDIS_IF.so",
+      "libcva_db.so",
+      "libuie_db.so",
+      "libuie_api.so",
+      "libVOIapi.so",
+      "libVOITTS.so",
+      "libVOIAudioStream.so",
+      "libVOIutil_cfg.so",
+      "libVOIutil_lp.so",
+      "libVOIutil_th.so",
+      "libVOIdata_cp.so",
+      "libVBTEngineClient.so",
+      "libVECITransport.so",
+      "libVBTLoader.so",
+      "libsse.so",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ],
+    "added_dependencies": [],
+    "removed_dependencies": [],
+    "added_import_symbols": [],
+    "removed_import_symbols": [],
+    "new_defined_symbols": [],
+    "removed_defined_symbols": [],
+    "old_sections": {
+      ".text": {
+        "offset": 12800,
+        "virtual_address": 45568,
+        "size": 619976,
+        "sha256": "f9ccebc4e982af3564c58ae52650db2f497ce2f1f13e9957e197bb7c46808dca"
+      },
+      ".rodata": {
+        "offset": 632784,
+        "virtual_address": 665552,
+        "size": 330980,
+        "sha256": "50a403b91a1db1cf1998512bfab5b6284d57586aed2d7fe6eb780d1e1508a92b"
+      },
+      ".data": {
+        "offset": 977312,
+        "virtual_address": 1042848,
+        "size": 26480,
+        "sha256": "d0c26f2a963c27512b91bc9b370b141268c3830557005c62987fd088460f9f2b"
+      },
+      ".dynsym": {
+        "offset": 1964,
+        "virtual_address": 34732,
+        "size": 3232,
+        "sha256": "6f3df962e9561d3e2f22db1bf32f4bdd5340d474eb1141fc39412446708d82cf"
+      },
+      ".dynamic": {
+        "offset": 976048,
+        "virtual_address": 1041584,
+        "size": 520,
+        "sha256": "08116d30a4bd54b1bc7f40421c9405505ffb9a8e6341cb8da2b7657201167de9"
+      },
+      ".ARM.exidx": {
+        "offset": 964388,
+        "virtual_address": 997156,
+        "size": 11648,
+        "sha256": "6ebf627b6be893cceb93d2bf1cfe70453e7273609e07392b691570758b66e77d"
+      },
+      ".plt": {
+        "offset": 10596,
+        "virtual_address": 43364,
+        "size": 2204,
+        "sha256": "af07d412727ade421f2558041ec9bd94d0699e24b24f8d7e8c6f2c8262348b16"
+      }
+    },
+    "new_sections": {
+      ".text": {
+        "offset": 12800,
+        "virtual_address": 45568,
+        "size": 620124,
+        "sha256": "2d335f1b6b27463cbfd5ceefa54a8b3515286bd227ecdb2194bff508dee4888f"
+      },
+      ".rodata": {
+        "offset": 632932,
+        "virtual_address": 665700,
+        "size": 330980,
+        "sha256": "4787817e6ccfdbf4845b8501f498bdf58894011212b697328d9df84ac9819dbe"
+      },
+      ".data": {
+        "offset": 977460,
+        "virtual_address": 1042996,
+        "size": 26480,
+        "sha256": "ba0b7db4b0950b51b4c023a9793ea590a55f86c366ae00a65cd9a685938dd2bc"
+      },
+      ".dynsym": {
+        "offset": 1964,
+        "virtual_address": 34732,
+        "size": 3232,
+        "sha256": "bd75890b8333cb0e8ef5cb587848e51bc37d60d494c8f5b9b50c6b21f9e65c83"
+      },
+      ".dynamic": {
+        "offset": 976196,
+        "virtual_address": 1041732,
+        "size": 520,
+        "sha256": "dc3c0eaa64cd9702b45b233a54994ee9ce55e30fca7a850114ae976700348684"
+      },
+      ".ARM.exidx": {
+        "offset": 964536,
+        "virtual_address": 997304,
+        "size": 11648,
+        "sha256": "d3dad7a9328b63db96bd97fd073785305ac549d1ca4241a61b2e217c7caccb42"
+      },
+      ".plt": {
+        "offset": 10596,
+        "virtual_address": 43364,
+        "size": 2204,
+        "sha256": "f4495796eff579416480dae114eb0c739d401235bb073b10db7923503aa45269"
+      }
+    },
+    "text_sha_identical": false,
+    "old_str_count": 1522,
+    "new_str_count": 1522,
+    "new_strings_count": 2,
+    "removed_strings_count": 2,
+    "new_strings": [
+      "18:23:19",
+      "Apr 23 2018"
+    ],
+    "removed_strings": [
+      "17:02:54",
+      "Nov 10 2017"
+    ],
+    "target_new_strings": []
+  }
+]

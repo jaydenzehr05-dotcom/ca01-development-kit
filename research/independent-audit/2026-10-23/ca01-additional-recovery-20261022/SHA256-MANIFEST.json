@@ -1,0 +1,412 @@
+[
+  {
+    "relative_path": "audio/UNTRUSTED.partial.bin",
+    "size": 23439868,
+    "sha256": "7ce824f2308b534309a371ebc7b41a89dcf59288276a4b0a78bd7d4a87a69ff8"
+  },
+  {
+    "relative_path": "audio/known-byte-mask.bin",
+    "size": 23439868,
+    "sha256": "af933a15a01173172a2a03daaf29fbdfc726a7f380142f66b846b52ae4150ded"
+  },
+  {
+    "relative_path": "audio/metadata.json",
+    "size": 79267,
+    "sha256": "8b0336798192d938de9398ab5a4621465938cd340848d748db76dbceb835b6f4"
+  },
+  {
+    "relative_path": "audio/recovered/0010abfc-libipas_grp.so",
+    "size": 251584,
+    "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef"
+  },
+  {
+    "relative_path": "audio/recovered/001485fc-libVOIdata_cp.so",
+    "size": 20840,
+    "sha256": "911b997a5a4ecb16d98bd9a6a73a2e46af1e4abfc6ea77c27a7827c861bfdba8"
+  },
+  {
+    "relative_path": "audio/recovered/0014d9fc-libipas_sysc.so",
+    "size": 173652,
+    "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4"
+  },
+  {
+    "relative_path": "audio/recovered/001783fc-libi2c_cm.so",
+    "size": 6356,
+    "sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed"
+  },
+  {
+    "relative_path": "audio/recovered/00179ffc-libipas_sysp.so",
+    "size": 173560,
+    "sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5"
+  },
+  {
+    "relative_path": "audio/recovered/001a47fc-libComFlmLb.so",
+    "size": 9384,
+    "sha256": "e5ca3288453da45f666c8855ec5d2a29243f765789a36ad3a6943e674c4355b6"
+  },
+  {
+    "relative_path": "audio/recovered/001a6ffc-libcoll.so",
+    "size": 108344,
+    "sha256": "90a7cf2c7f9eada7269b09643fcd9c7738bdb4ccab2f043e7419bdc36c852480"
+  },
+  {
+    "relative_path": "audio/recovered/001c19fc-libipas_skt.so",
+    "size": 10160,
+    "sha256": "f6cb7d7fb510a4d97e81df828fcbb870e1dd678c12e01980adac898519e395a8"
+  },
+  {
+    "relative_path": "audio/recovered/001c43fc-libAdlRd.so",
+    "size": 43016,
+    "sha256": "a2e1403bc89b737d4f9cf503dd6419a676d723715626fade1e8fe5a12e64b777"
+  },
+  {
+    "relative_path": "audio/recovered/001ceffc-libnavi_if.so",
+    "size": 106416,
+    "sha256": "02d11afd4414659265ff78944f5a400de0cfaff1138ef45deb4daaa88f809981"
+  },
+  {
+    "relative_path": "audio/recovered/001e91fc-libAdlCd.so",
+    "size": 22432,
+    "sha256": "3831438fb969950ff20fd11e1c704f9235f58ec5d93c5a0d55a06471acd32ce2"
+  },
+  {
+    "relative_path": "audio/recovered/001eebfc-libDisdb_if.so",
+    "size": 54204,
+    "sha256": "8486692809990cec2d1551858aea42991884886460d952979452e5b8a7f0fe47"
+  },
+  {
+    "relative_path": "audio/recovered/001fc1fc-libAdlUb.so",
+    "size": 47080,
+    "sha256": "f8d509b18b2be933eacdf5d09794570ce6757129190076d6815d9bcc99c0d845"
+  },
+  {
+    "relative_path": "audio/recovered/00207bfc-libsct_ct.so",
+    "size": 10996,
+    "sha256": "383924353b752d9c02f953ecf773584affc5232e15b73a707b9d4f4f659d6fae"
+  },
+  {
+    "relative_path": "audio/recovered/0020a9fc-libuie_api.so",
+    "size": 9104,
+    "sha256": "77e97c6cebc9e4a358ceb81c3afb91c8756785baf19691094857678ec21c78fd"
+  },
+  {
+    "relative_path": "audio/recovered/0020cffc-libDIS_IF.so",
+    "size": 54396,
+    "sha256": "1c0d760d81ad684bf5570278ffeb9c801607715efea03533fdf6b42db3d87e49"
+  },
+  {
+    "relative_path": "audio/recovered/0021a7fc-libipas_ls1.so",
+    "size": 20516,
+    "sha256": "7373e2d470fbac95dbf7a7a1dd68cca59187fdb43450244fc706f8bbf7affc24"
+  },
+  {
+    "relative_path": "audio/recovered/0021fbfc-libedbsong.so",
+    "size": 352368,
+    "sha256": "fcbd4cf0c639442e7d80877daf274ef6cd3e552bb917ea9f16bdba180d14337d"
+  },
+  {
+    "relative_path": "audio/recovered/00275ffc-libVOIAudioStream.so",
+    "size": 74684,
+    "sha256": "c5b9d0c56a1f7539e91851fe4958316987b401d81769d40711b7102f4a62c7f1"
+  },
+  {
+    "relative_path": "audio/recovered/002885fc-libIFLB_CDDB.so",
+    "size": 24040,
+    "sha256": "1431c297e1716c7d3a49964aa523eb97b868673553e709d7897ee3a086ddad75"
+  },
+  {
+    "relative_path": "audio/recovered/0028e7fc-bios.bin",
+    "size": 77544,
+    "sha256": "9337508604e644ba558f3a5808a91fce4751c5fa6453dd5d8d9dfaa82e79b87b"
+  },
+  {
+    "relative_path": "audio/recovered/002a19fc-RTFM_SH4A_MA100_2nd.bin_ticket",
+    "size": 32,
+    "sha256": "364590a730f59cf05ad9eb9d00a98341df6b645594faf095211397081ef162e7"
+  },
+  {
+    "relative_path": "audio/recovered/002a1dfc-s-bios.bin",
+    "size": 7796,
+    "sha256": "cb97bb7ba20143f8e731f719c6888d5443b963695efe1369e90f0d1e59d2dbef"
+  },
+  {
+    "relative_path": "audio/recovered/002a41fc-mXT540E_TM8L.bin",
+    "size": 478,
+    "sha256": "d46c9190136c83c3535a26968e9ed337d0144a1f1c1965b36501a2ea29d202e5"
+  },
+  {
+    "relative_path": "audio/recovered/002a45fc-mXT540E_TS8L.bin",
+    "size": 478,
+    "sha256": "7ff5dc4b7363b7fb9ad86836fe84609c0c0840bf5d6c4832c470e1bc48a57461"
+  },
+  {
+    "relative_path": "audio/recovered/002a4bfc-FlashImageCreater",
+    "size": 15252,
+    "sha256": "48bb5513f542d276568bd6ab77e4790fc1480031ae92a934a34b95f7d0626b70"
+  },
+  {
+    "relative_path": "audio/recovered/002a89fc-snap.sh",
+    "size": 8090,
+    "sha256": "527b70c22a2f8f3830cda231482a7b4c64c4e140cf6cafa1969d5c3b74c42f55"
+  },
+  {
+    "relative_path": "audio/recovered/002aabfc-FlashImageWriter",
+    "size": 18524,
+    "sha256": "40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa"
+  },
+  {
+    "relative_path": "audio/recovered/002af9fc-PROC_DSV",
+    "size": 155636,
+    "sha256": "7ec50c5a61291cacf19cee1128a603162f99df1b59c2f2dc6c88533e6831b463"
+  },
+  {
+    "relative_path": "audio/recovered/002d5bfc-PROC_MMP",
+    "size": 772556,
+    "sha256": "8c21cb0cf1fa2e145b5c8f1a2fd28473ddf994a20b9ac6579e960a81b534d8fa"
+  },
+  {
+    "relative_path": "audio/recovered/003927fc-PROC_EXT",
+    "size": 73208,
+    "sha256": "56446dd9bdccaa417d1334cd7aa3543311f25954d8b2fe56e0203e6407195976"
+  },
+  {
+    "relative_path": "audio/recovered/003a47fc-PROC_REPRO",
+    "size": 168592,
+    "sha256": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771"
+  },
+  {
+    "relative_path": "audio/recovered/003cddfc-PROC_CDDB",
+    "size": 1461952,
+    "sha256": "51c8f56bcb66fca5576e3be44c0155cb5727b85eabf4b176406a4b796d9e2115"
+  },
+  {
+    "relative_path": "audio/recovered/00532ffc-PROC_VRS",
+    "size": 1008292,
+    "sha256": "cdc2f7a613e5a9a9a2a122a97a5cf62bbf5a7a27b863b36ea6427df2bf731976"
+  },
+  {
+    "relative_path": "audio/recovered/006295fc-PROC_SYSTEM",
+    "size": 495980,
+    "sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26"
+  },
+  {
+    "relative_path": "audio/recovered/006a29fc-PROC_DTV",
+    "size": 2617748,
+    "sha256": "968d129dd831acb3f5b92885ff7f0e0d53840868e4e6e030ac18996a5a183c30"
+  },
+  {
+    "relative_path": "audio/recovered/00921dfc-PROC_HMI",
+    "size": 6152368,
+    "sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503"
+  },
+  {
+    "relative_path": "audio/recovered/00f001fc-PROC_AUDIO",
+    "size": 1150180,
+    "sha256": "fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05"
+  },
+  {
+    "relative_path": "audio/recovered/010191fc-PROC_VI",
+    "size": 187556,
+    "sha256": "5afc19aec96a7acca1a0c1f27ca704f9fe3c63a25a2538775932905450df7b00"
+  },
+  {
+    "relative_path": "audio/recovered/010471fc-PROC_DVDDECK",
+    "size": 712576,
+    "sha256": "588cd697066ea9d859f3e93683248374bc88952934b2e84bb9c92978687a95c4"
+  },
+  {
+    "relative_path": "audio/recovered/010f53fc-PROC_NAVIIF",
+    "size": 135556,
+    "sha256": "13e95b7508e4e6fd2106a069b3fd226c9776b81ff8eb60ef74f30ececb997e85"
+  },
+  {
+    "relative_path": "audio/recovered/011167fc-PROC_DISPLAY",
+    "size": 4480028,
+    "sha256": "4755da50d4396cb213eb905ed49d6118cd8f330d05a35aa928b1bef8b2045004"
+  },
+  {
+    "relative_path": "audio/recovered/0155c7fc-PROC_CDP",
+    "size": 89016,
+    "sha256": "5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a"
+  },
+  {
+    "relative_path": "audio/recovered/015725fc-PROC_UIEIF",
+    "size": 566552,
+    "sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4"
+  },
+  {
+    "relative_path": "audio/recovered/015fcdfc-PROC_SPC",
+    "size": 65092,
+    "sha256": "b83fed7b7e6070895c419e27a6b5b4e197d4b66d97fe25dbbf953a25a80d94f8"
+  },
+  {
+    "relative_path": "audio/recovered/0160cffc-PROC_TMD",
+    "size": 197364,
+    "sha256": "9b3189ed775ffb23148150bf763cd09f8f3c7c651f4156c8f80c3b596ab83914"
+  },
+  {
+    "relative_path": "audio/recovered/0163d5fc-PROC_DVDP",
+    "size": 109540,
+    "sha256": "e2f6688f90b51dd5c4a849cc42518dbc616e5d67cf3171270ccd403a7f1b346c"
+  },
+  {
+    "relative_path": "audio/recovered-manifest.json",
+    "size": 24524,
+    "sha256": "357e90589fc9de8a165f0c8efba1fc7d498c8843bc0ee3ba8ccd8bec1caa6d26"
+  },
+  {
+    "relative_path": "audio-report.json",
+    "size": 79267,
+    "sha256": "8b0336798192d938de9398ab5a4621465938cd340848d748db76dbceb835b6f4"
+  },
+  {
+    "relative_path": "audio-stored.json",
+    "size": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "relative_path": "component-magic.json",
+    "size": 604,
+    "sha256": "5f2d765d94b80f4a18efa6101c760031ae71ba746e15a123b7e6711bd24e001d"
+  },
+  {
+    "relative_path": "driver/UNTRUSTED.partial.bin",
+    "size": 339904,
+    "sha256": "7c1957e5565bbe291cc19cddce958bf93a0489696c497a8fd802c4d127454066"
+  },
+  {
+    "relative_path": "driver/known-byte-mask.bin",
+    "size": 339904,
+    "sha256": "9c31ec89e452eab4383617122142cc8b7f60f9239c1f2c5ec2745f02d00234a1"
+  },
+  {
+    "relative_path": "driver/metadata.json",
+    "size": 3336,
+    "sha256": "04dc4329875c89f750a4a93e3c690836551b7e07fe8525cde7dad5c76f47ca26"
+  },
+  {
+    "relative_path": "driver/recovered-manifest.json",
+    "size": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "relative_path": "driver-report.json",
+    "size": 3335,
+    "sha256": "acfd2500322e1bee23fad85f595d6dfdbdb847521c4190cb24e249810993420e"
+  },
+  {
+    "relative_path": "headers.json",
+    "size": 19144,
+    "sha256": "b4bce19a6e73a7b5542fa57ba6058b0b604d43fbb4ba75749fa0a09dcaa9a737"
+  },
+  {
+    "relative_path": "kernel-classification.json",
+    "size": 606,
+    "sha256": "ca953a52999bfeb094f648bc164ec4a26a4a1d5a29de1d9801f3e4de70f58ab2"
+  },
+  {
+    "relative_path": "kernel-earlier/UNTRUSTED.partial.bin",
+    "size": 1649059,
+    "sha256": "1dc1e69bdf3f43cd6a482f84465eb90bb031253e00eac617d07ccab3caef6038"
+  },
+  {
+    "relative_path": "kernel-earlier/known-byte-mask.bin",
+    "size": 1649059,
+    "sha256": "15b0d329a8528b8c29ea0b80daba7a452beff25be25f4bc70a6bf4c023ddeb9c"
+  },
+  {
+    "relative_path": "kernel-earlier/metadata.json",
+    "size": 8628,
+    "sha256": "922e0958b20a4eebc325f3db268327e415a37554849558e707f1e3baff408d9f"
+  },
+  {
+    "relative_path": "kernel-earlier/recovered-manifest.json",
+    "size": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "relative_path": "kernel-earlier-report.json",
+    "size": 8628,
+    "sha256": "922e0958b20a4eebc325f3db268327e415a37554849558e707f1e3baff408d9f"
+  },
+  {
+    "relative_path": "kernel-report.json",
+    "size": 8068,
+    "sha256": "8a969cd6ea99c1ed6bcb08e7286fcf3fdca20adf715098a33be5f3c71b38aba5"
+  },
+  {
+    "relative_path": "kernel-scan.json",
+    "size": 2029,
+    "sha256": "cd16ee49ae382cc93123776d58deb7d877d0af56d778d9d4ca76a333f9576c3a"
+  },
+  {
+    "relative_path": "kernel-stored.json",
+    "size": 2995,
+    "sha256": "439610aa44c85e5595c10963064dc9d0481e6daaa41a955ac613af063d5d5e11"
+  },
+  {
+    "relative_path": "kernel-stored2.json",
+    "size": 2555,
+    "sha256": "545e2f7849f601ce1ae3adec054715c15332637b8de9117ee12e113e2dff7c91"
+  },
+  {
+    "relative_path": "scan.json",
+    "size": 1771,
+    "sha256": "09ffabb83032f38b76a8b0ae87d54c69db2bef2788724f2fb3bc06673bd63262"
+  },
+  {
+    "relative_path": "voice/UNTRUSTED.partial.bin",
+    "size": 2451203,
+    "sha256": "f523570025f4e141620b4a597c3a218a7d9c483cc31f1884abbb123ea890a52c"
+  },
+  {
+    "relative_path": "voice/known-byte-mask.bin",
+    "size": 2451203,
+    "sha256": "8d4f2eb0fa387c819a07c353e74884a002c86d4ebf5c53a28555f4823f488546"
+  },
+  {
+    "relative_path": "voice/metadata.json",
+    "size": 13717,
+    "sha256": "075cd7934c954fc8906aa5674cc38ce5801f43f4a675d75e641b98bcd9194d5a"
+  },
+  {
+    "relative_path": "voice/recovered/000b4b03-VBAgent.db",
+    "size": 94208,
+    "sha256": "38c5945b610470623763cd0601b06f390cc9cb8876b23c8cc65a500d030a0001"
+  },
+  {
+    "relative_path": "voice/recovered/000cbd03-VBSystem.db",
+    "size": 715776,
+    "sha256": "375601055ffc86b201d770ed17eacd1fb1f5484a43286f9836233d1b3d891a48"
+  },
+  {
+    "relative_path": "voice/recovered/0017af03-VBAgent.db",
+    "size": 96256,
+    "sha256": "9c27c8ab84d2d47e61f4877c61e1ec7223d6d1ae01fb6a20a56e1236e387d575"
+  },
+  {
+    "relative_path": "voice/recovered/00192903-VBSystem.db",
+    "size": 712704,
+    "sha256": "c2ef59298f4f23e37b42438ffc13ca13fc73be55d3bc425bf7c7ba1ee2783ab3"
+  },
+  {
+    "relative_path": "voice/recovered/00240b03-VOI_VERSION",
+    "size": 19,
+    "sha256": "d4f4b59e4473967b5ff89e135f47b419e6ed681a32d30756a64bb71ae2a3a36a"
+  },
+  {
+    "relative_path": "voice/recovered/00240f03-Hints.db",
+    "size": 77824,
+    "sha256": "acd42de1c609b92d721059fa45acfc4de464a2b9a7476f173586c0329773ee99"
+  },
+  {
+    "relative_path": "voice/recovered-manifest.json",
+    "size": 2694,
+    "sha256": "073c9e243528f1f239a00be19e028736992e556886f931d611a7d48054abe2b3"
+  },
+  {
+    "relative_path": "voice-report.json",
+    "size": 13717,
+    "sha256": "075cd7934c954fc8906aa5674cc38ce5801f43f4a675d75e641b98bcd9194d5a"
+  }
+]

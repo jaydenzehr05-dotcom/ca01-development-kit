@@ -1,0 +1,152 @@
+{
+  "scope": "59 hash-checked recovered CA01 entries, limited related source archive names; not a full proprietary system image",
+  "references": {
+    "PROC_HMI": [
+      {
+        "term": "MC/",
+        "occurrences": [
+          {
+            "file_offset": "0x28e6f9",
+            "context": "3\u0012"
+          }
+        ]
+      },
+      {
+        "term": "/font/",
+        "occurrences": [
+          {
+            "file_offset": "0x28e72c",
+            "context": ""
+          }
+        ]
+      },
+      {
+        "term": "ScreenTrans.mui",
+        "occurrences": [
+          {
+            "file_offset": "0x46d350",
+            "context": "2_Qw_TW.mui"
+          }
+        ]
+      },
+      {
+        "term": "allwords_na.xml",
+        "occurrences": [
+          {
+            "file_offset": "0x28e96c",
+            "context": "/allwords/"
+          }
+        ]
+      },
+      {
+        "term": "libdisplay_if.so",
+        "occurrences": [
+          {
+            "file_offset": "0x3287",
+            "context": "tBmpSiz"
+          }
+        ]
+      },
+      {
+        "term": "libdismng_if.so",
+        "occurrences": [
+          {
+            "file_offset": "0x3317",
+            "context": "rPosNty"
+          }
+        ]
+      }
+    ]
+  },
+  "files_checked": 59,
+  "mismatches": [],
+  "resource_paths": [
+    "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+    "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+    "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+    "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+    "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+    "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml"
+  ],
+  "unique_gui_files": [
+    {
+      "path": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "sha256": "1e9eca3854506419e67e812f60f45de0f40c4a90113f038f11fd7bafdb74b166"
+    },
+    {
+      "path": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+      "sha256": "7442138ae913b6bf56cb52f3be5ae94d8c23bc9736763179d0f67d313e9780fa"
+    },
+    {
+      "path": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+      "sha256": "f41d7256548ae70881b8777ae76e37fdd0b6998577c8779cefd3ba25d4209d1b"
+    }
+  ],
+  "interesting_embedded_signatures": [
+    {
+      "file": "./opt/ftl/apl/PROC_HMI",
+      "signatures": [
+        {
+          "kind": "png",
+          "offsets": [
+            "0x59baac",
+            "0x59bb34",
+            "0x59bb50"
+          ]
+        },
+        {
+          "kind": "jpeg",
+          "offsets": [
+            "0x59ba40"
+          ]
+        },
+        {
+          "kind": "gif89a",
+          "offsets": [
+            "0x59b8f8"
+          ]
+        },
+        {
+          "kind": "otf",
+          "offsets": [
+            "0x2366c0",
+            "0x59f530"
+          ]
+        }
+      ]
+    }
+  ],
+  "repo_other_assets": [],
+  "archives": {
+    "DENSO_TEN_17_OSS_SOFT_PACK.zip": {
+      "member_count": 95,
+      "target_name_matches": [],
+      "limitation": "Source archive names only; source is not established as CA01 proprietary files"
+    },
+    "OSS_SOFT_PACK.tgz": {
+      "member_count": 44362,
+      "target_name_matches": [],
+      "limitation": "Source archive names only; source is not established as CA01 proprietary files"
+    },
+    "20130619_LE2355.tgz": {
+      "member_count": 35853,
+      "target_name_matches": [],
+      "limitation": "Source archive names only; source is not established as CA01 proprietary files"
+    }
+  },
+  "limitation": "KWI extraction is partial; lack of a recovered path is not proof that original radio lacks it.",
+  "raw_gui_component": {
+    "bytes": 529975,
+    "sha256": "c982d69e1bef9bb6852e46cc33fc575ac5061739d88c39241ab9bef38bf4c87e",
+    "target_resource_names_found": {
+      "MC/": false,
+      "/font/": false,
+      "ScreenTrans.mui": false,
+      "allwords_na.xml": false,
+      "libdisplay_if.so": false,
+      "libdismng_if.so": false
+    },
+    "tar_ustar_header_signature_count": 0,
+    "note": "This is a compressed/encrypted(?) vendor component. Negative raw string scan does not imply absent compressed content."
+  }
+}

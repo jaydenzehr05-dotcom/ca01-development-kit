@@ -1,0 +1,3867 @@
+FUNCTION rq_sys_ForceStnby @ 00019574
+
+void rq_sys_ForceStnby(void)
+
+{
+  (*(code *)PTR_rq_sys_ForceStnby_00041204)();
+  return;
+}
+
+
+00019574 adr r12,0x1957c
+00019578 add r12,r12,#0x27000
+0001957c ldr pc,[r12,#0xc88]!
+FUNCTION rq_tsk_ExtDel @ 000195a4
+
+void rq_tsk_ExtDel(void)
+
+{
+  (*(code *)PTR_rq_tsk_ExtDel_00041214)();
+  return;
+}
+
+
+000195a4 adr r12,0x195ac
+000195a8 add r12,r12,#0x27000
+000195ac ldr pc,[r12,#0xc68]!
+FUNCTION rq_sys_SetModelInfo @ 000196a0
+
+void rq_sys_SetModelInfo(void)
+
+{
+  (*(code *)PTR_rq_sys_SetModelInfo_00041268)();
+  return;
+}
+
+
+000196a0 adr r12,0x196a8
+000196a4 add r12,r12,#0x27000
+000196a8 ldr pc,[r12,#0xbc0]!
+FUNCTION rq_tsk_GetBlockObj @ 000196dc
+
+void rq_tsk_GetBlockObj(void)
+
+{
+  (*(code *)PTR_rq_tsk_GetBlockObj_0004127c)();
+  return;
+}
+
+
+000196dc adr r12,0x196e4
+000196e0 add r12,r12,#0x27000
+000196e4 ldr pc,[r12,#0xb98]!
+FUNCTION rq_sys_NtyTskSts @ 00019844
+
+void rq_sys_NtyTskSts(void)
+
+{
+  (*(code *)PTR_rq_sys_NtyTskSts_000412f4)();
+  return;
+}
+
+
+00019844 adr r12,0x1984c
+00019848 add r12,r12,#0x27000
+0001984c ldr pc,[r12,#0xaa8]!
+FUNCTION rq_tsk_Suspend @ 000198ec
+
+void rq_tsk_Suspend(void)
+
+{
+  (*(code *)PTR_rq_tsk_Suspend_0004132c)();
+  return;
+}
+
+
+000198ec adr r12,0x198f4
+000198f0 add r12,r12,#0x27000
+000198f4 ldr pc,[r12,#0xa38]!
+FUNCTION rq_tsk_notIPAS @ 00019904
+
+void rq_tsk_notIPAS(void)
+
+{
+  (*(code *)PTR_rq_tsk_notIPAS_00041334)();
+  return;
+}
+
+
+00019904 adr r12,0x1990c
+00019908 add r12,r12,#0x27000
+0001990c ldr pc,[r12,#0xa28]!
+FUNCTION fc_sys_AccOnStop @ 00019958
+
+void fc_sys_AccOnStop(void)
+
+{
+  (*(code *)PTR_fc_sys_AccOnStop_00041350)();
+  return;
+}
+
+
+00019958 adr r12,0x19960
+0001995c add r12,r12,#0x27000
+00019960 ldr pc,[r12,#0x9f0]!
+FUNCTION fc_sys_SysOnCtl @ 000199f4
+
+void fc_sys_SysOnCtl(void)
+
+{
+  (*(code *)PTR_fc_sys_SysOnCtl_00041384)();
+  return;
+}
+
+
+000199f4 adr r12,0x199fc
+000199f8 add r12,r12,#0x27000
+000199fc ldr pc,[r12,#0x988]!
+FUNCTION rq_sys_IndClr @ 00019a84
+
+void rq_sys_IndClr(void)
+
+{
+  (*(code *)PTR_rq_sys_IndClr_000413b4)();
+  return;
+}
+
+
+00019a84 adr r12,0x19a8c
+00019a88 add r12,r12,#0x27000
+00019a8c ldr pc,[r12,#0x928]!
+FUNCTION rq_sys_GetAcc @ 00019ac0
+
+void rq_sys_GetAcc(void)
+
+{
+  (*(code *)PTR_rq_sys_GetAcc_000413c8)();
+  return;
+}
+
+
+00019ac0 adr r12,0x19ac8
+00019ac4 add r12,r12,#0x27000
+00019ac8 ldr pc,[r12,#0x900]!
+FUNCTION rq_tsk_BlockEnd @ 00019b38
+
+void rq_tsk_BlockEnd(void)
+
+{
+  (*(code *)PTR_rq_tsk_BlockEnd_000413f0)();
+  return;
+}
+
+
+00019b38 adr r12,0x19b40
+00019b3c add r12,r12,#0x27000
+00019b40 ldr pc,[r12,#0x8b0]!
+FUNCTION rq_sys_GetTick1ms @ 00019b68
+
+void rq_sys_GetTick1ms(void)
+
+{
+  (*(code *)PTR_rq_sys_GetTick1ms_00041400)();
+  return;
+}
+
+
+00019b68 adr r12,0x19b70
+00019b6c add r12,r12,#0x27000
+00019b70 ldr pc,[r12,#0x890]!
+FUNCTION rq_tsk_Delay @ 00019c10
+
+void rq_tsk_Delay(void)
+
+{
+  (*(code *)PTR_rq_tsk_Delay_00041438)();
+  return;
+}
+
+
+00019c10 adr r12,0x19c18
+00019c14 add r12,r12,#0x27000
+00019c18 ldr pc,[r12,#0x820]!
+FUNCTION rq_tsk_Create @ 00019c70
+
+void rq_tsk_Create(void)
+
+{
+  (*(code *)PTR_rq_tsk_Create_00041458)();
+  return;
+}
+
+
+00019c70 adr r12,0x19c78
+00019c74 add r12,r12,#0x27000
+00019c78 ldr pc,[r12,#0x7e0]!
+FUNCTION rq_tsk_Delete @ 00019c88
+
+void rq_tsk_Delete(void)
+
+{
+  (*(code *)PTR_rq_tsk_Delete_00041460)();
+  return;
+}
+
+
+00019c88 adr r12,0x19c90
+00019c8c add r12,r12,#0x27000
+00019c90 ldr pc,[r12,#0x7d0]!
+FUNCTION rq_tsk_BlockBegin @ 00019d3c
+
+void rq_tsk_BlockBegin(void)
+
+{
+  (*(code *)PTR_rq_tsk_BlockBegin_0004149c)();
+  return;
+}
+
+
+00019d3c adr r12,0x19d44
+00019d40 add r12,r12,#0x27000
+00019d44 ldr pc,[r12,#0x758]!
+FUNCTION rq_tsk_GetTid @ 00019dd8
+
+void rq_tsk_GetTid(void)
+
+{
+  (*(code *)PTR_rq_tsk_GetTid_000414d0)();
+  return;
+}
+
+
+00019dd8 adr r12,0x19de0
+00019ddc add r12,r12,#0x27000
+00019de0 ldr pc,[r12,#0x6f0]!
+FUNCTION rq_tsk_Resume @ 00019f58
+
+void rq_tsk_Resume(void)
+
+{
+  (*(code *)PTR_rq_tsk_Resume_00041550)();
+  return;
+}
+
+
+00019f58 adr r12,0x19f60
+00019f5c add r12,r12,#0x27000
+00019f60 ldr pc,[r12,#0x5f0]!
+FUNCTION rq_tsk_Stop @ 0001a030
+
+void rq_tsk_Stop(void)
+
+{
+  (*(code *)PTR_rq_tsk_Stop_00041598)();
+  return;
+}
+
+
+0001a030 adr r12,0x1a038
+0001a034 add r12,r12,#0x27000
+0001a038 ldr pc,[r12,#0x560]!
+FUNCTION rq_sys_GetChkSum @ 0001a09c
+
+void rq_sys_GetChkSum(void)
+
+{
+  (*(code *)PTR_rq_sys_GetChkSum_000415bc)();
+  return;
+}
+
+
+0001a09c adr r12,0x1a0a4
+0001a0a0 add r12,r12,#0x27000
+0001a0a4 ldr pc,[r12,#0x518]!
+FUNCTION rq_sys_GetModelInfo @ 0001a0b4
+
+void rq_sys_GetModelInfo(void)
+
+{
+  (*(code *)PTR_rq_sys_GetModelInfo_000415c4)();
+  return;
+}
+
+
+0001a0b4 adr r12,0x1a0bc
+0001a0b8 add r12,r12,#0x27000
+0001a0bc ldr pc,[r12,#0x508]!
+FUNCTION rq_tsk_Start @ 0001a168
+
+void rq_tsk_Start(void)
+
+{
+  (*(code *)PTR_rq_tsk_Start_00041600)();
+  return;
+}
+
+
+0001a168 adr r12,0x1a170
+0001a16c add r12,r12,#0x27000
+0001a170 ldr pc,[r12,#0x490]!
+FUNCTION rq_sys_SetAcf @ 0001a3c0
+
+void rq_sys_SetAcf(void)
+
+{
+  (*(code *)PTR_rq_sys_SetAcf_000416c8)();
+  return;
+}
+
+
+0001a3c0 adr r12,0x1a3c8
+0001a3c4 add r12,r12,#0x27000
+0001a3c8 ldr pc,[r12,#0x300]!
+FUNCTION rq_sys_SetAcc @ 0001a600
+
+void rq_sys_SetAcc(void)
+
+{
+  (*(code *)PTR_rq_sys_SetAcc_00041788)();
+  return;
+}
+
+
+0001a600 adr r12,0x1a608
+0001a604 add r12,r12,#0x27000
+0001a608 ldr pc,[r12,#0x180]!
+FUNCTION rq_sys_GetVclPara @ 0001a648
+
+void rq_sys_GetVclPara(void)
+
+{
+  (*(code *)PTR_rq_sys_GetVclPara_000417a0)();
+  return;
+}
+
+
+0001a648 adr r12,0x1a650
+0001a64c add r12,r12,#0x27000
+0001a650 ldr pc,[r12,#0x150]!
+FUNCTION rq_tsk_Exit @ 0001a6d8
+
+void rq_tsk_Exit(void)
+
+{
+  (*(code *)PTR_rq_tsk_Exit_000417d0)();
+  return;
+}
+
+
+0001a6d8 adr r12,0x1a6e0
+0001a6dc add r12,r12,#0x27000
+0001a6e0 ldr pc,[r12,#0xf0]!
+FUNCTION rq_sys_GetTick10ms @ 0001a7b0
+
+void rq_sys_GetTick10ms(void)
+
+{
+  (*(code *)PTR_rq_sys_GetTick10ms_00041818)();
+  return;
+}
+
+
+0001a7b0 adr r12,0x1a7b8
+0001a7b4 add r12,r12,#0x27000
+0001a7b8 ldr pc,[r12,#0x60]!
+FUNCTION rq_sys_GetAcf @ 0001a870
+
+void rq_sys_GetAcf(void)
+
+{
+  (*(code *)PTR_rq_sys_GetAcf_00041858)();
+  return;
+}
+
+
+0001a870 adr r12,0x1a878
+0001a874 add r12,r12,#0x26000
+0001a878 ldr pc,[r12,#0xfe0]!
+FUNCTION rq_sys_GetSecDet @ 00026548
+
+undefined4 rq_sys_GetSecDet(void)
+
+{
+  return 0;
+}
+
+
+00026548 mov r0,#0x0
+0002654c bx lr
+FUNCTION rq_sys_GetShAdr @ 00026550
+
+undefined4 rq_sys_GetShAdr(uint param_1,int *param_2,undefined4 *param_3)
+
+{
+  int iVar1;
+  int iVar2;
+  
+  if (param_1 < 8) {
+    iVar2 = **(int **)(DAT_00026598 + 0x26560 + DAT_0002659c);
+    iVar1 = *(int *)(iVar2 + param_1 * 8);
+    if (iVar1 != 0) {
+      *param_2 = iVar1;
+      *param_3 = *(undefined4 *)(iVar2 + param_1 * 8 + 4);
+      return 0;
+    }
+  }
+  return 0xffffffff;
+}
+
+
+00026550 cmp r0,#0x7
+00026554 ldr r3,[0x26598]
+00026558 add r3,pc,r3
+0002655c bls 0x00026568
+00026560 mvn r0,#0x0
+00026564 bx lr
+00026568 ldr r12,[0x2659c]
+0002656c ldr r3,[r3,r12]
+00026570 ldr r12,[r3,#0x0]
+00026574 ldr r3,[r12,r0,lsl #0x3]
+00026578 cmp r3,#0x0
+0002657c beq 0x00026560
+00026580 add r12,r12,r0, lsl #0x3
+00026584 str r3,[r1,#0x0]
+00026588 mov r0,#0x0
+0002658c ldr r1,[r12,#0x4]
+00026590 str r1,[r2,#0x0]
+00026594 bx lr
+FUNCTION rq_sys_SetShAdr @ 000265a0
+
+void rq_sys_SetShAdr(uint param_1,undefined4 param_2,undefined4 param_3)
+
+{
+  int iVar1;
+  
+  if (7 < param_1) {
+    return;
+  }
+  iVar1 = **(int **)(DAT_000265cc + 0x265b0 + DAT_000265d0);
+  *(undefined4 *)(iVar1 + param_1 * 8) = param_2;
+  *(undefined4 *)(iVar1 + param_1 * 8 + 4) = param_3;
+  return;
+}
+
+
+000265a0 cmp r0,#0x7
+000265a4 ldr r3,[0x265cc]
+000265a8 add r3,pc,r3
+000265ac bxhi lr
+000265b0 ldr r12,[0x265d0]
+000265b4 ldr r3,[r3,r12]
+000265b8 ldr r3,[r3,#0x0]
+000265bc add r12,r3,r0, lsl #0x3
+000265c0 str r1,[r3,r0,lsl #0x3]
+000265c4 str r2,[r12,#0x4]
+000265c8 bx lr
+FUNCTION rq_sys_GetExtCnctSts @ 000265dc
+
+undefined1 rq_sys_GetExtCnctSts(void)
+
+{
+  return *(undefined1 *)**(undefined4 **)(DAT_000265f8 + 0x265ec + DAT_000265fc);
+}
+
+
+000265dc ldr r1,[0x265f8]
+000265e0 ldr r2,[0x265fc]
+000265e4 add r3,pc,r1
+000265e8 ldr r0,[r3,r2]
+000265ec ldr r3,[r0,#0x0]
+000265f0 ldrb r0,[r3,#0x0]
+000265f4 bx lr
+FUNCTION rq_sys_GetDiagCod @ 00026600
+
+undefined4 rq_sys_GetDiagCod(void)
+
+{
+  return *(undefined4 *)**(undefined4 **)(DAT_0002661c + 0x26610 + DAT_00026620);
+}
+
+
+00026600 ldr r1,[0x2661c]
+00026604 ldr r2,[0x26620]
+00026608 add r3,pc,r1
+0002660c ldr r0,[r3,r2]
+00026610 ldr r3,[r0,#0x0]
+00026614 ldr r0,[r3,#0x0]
+00026618 bx lr
+FUNCTION rq_sys_GetDvdPathWay @ 00026624
+
+undefined4 rq_sys_GetDvdPathWay(void)
+
+{
+  return 1;
+}
+
+
+00026624 mov r0,#0x1
+00026628 bx lr
+FUNCTION rq_sys_GetExtInfo @ 000267ec
+
+void rq_sys_GetExtInfo(void *param_1)
+
+{
+  memcpy(param_1,(void *)**(undefined4 **)(DAT_00026808 + 0x26800 + DAT_0002680c),0x156);
+  return;
+}
+
+
+000267ec ldr r12,[0x26808]
+000267f0 movw r2,#0x156
+000267f4 ldr r1,[0x2680c]
+000267f8 add r3,pc,r12
+000267fc ldr r3,[r3,r1]
+00026800 ldr r1,[r3,#0x0]
+00026804 b 0x00019e5c
+FUNCTION rq_sys_GetVclTypDsp2 @ 00026810
+
+void rq_sys_GetVclTypDsp2(void *param_1)
+
+{
+  memcpy(param_1,(void *)(**(int **)(DAT_00026834 + 0x26824 + DAT_00026838) + 0x26ba),0xa261);
+  return;
+}
+
+
+00026810 ldr r12,[0x26834]
+00026814 movw r2,#0xa261
+00026818 ldr r1,[0x26838]
+0002681c add r3,pc,r12
+00026820 ldr r3,[r3,r1]
+00026824 ldr r12,[r3,#0x0]
+00026828 add r1,r12,#0x2680
+0002682c add r1,r1,#0x3a
+00026830 b 0x00019e5c
+FUNCTION rq_sys_GetVclTypDsp @ 0002683c
+
+void rq_sys_GetVclTypDsp(void *param_1)
+
+{
+  memcpy(param_1,(void *)(**(int **)(DAT_0002685c + 0x26850 + DAT_00026860) + 0x66),0x25f4);
+  return;
+}
+
+
+0002683c ldr r1,[0x2685c]
+00026840 movw r2,#0x25f4
+00026844 ldr r12,[0x26860]
+00026848 add r3,pc,r1
+0002684c ldr r3,[r3,r12]
+00026850 ldr r1,[r3,#0x0]
+00026854 add r1,r1,#0x66
+00026858 b 0x00019e5c
+FUNCTION rq_sys_GetVclTypAll @ 00026864
+
+void rq_sys_GetVclTypAll(void *param_1)
+
+{
+  memcpy(param_1,(void *)**(undefined4 **)(DAT_00026880 + 0x26878 + DAT_00026884),0xc91e);
+  return;
+}
+
+
+00026864 ldr r12,[0x26880]
+00026868 movw r2,#0xc91e
+0002686c ldr r1,[0x26884]
+00026870 add r3,pc,r12
+00026874 ldr r3,[r3,r1]
+00026878 ldr r1,[r3,#0x0]
+0002687c b 0x00019e5c
+FUNCTION rq_sys_GetVclPara @ 00026888
+
+void rq_sys_GetVclPara(void *param_1)
+
+{
+  memcpy(param_1,(void *)**(undefined4 **)(DAT_000268a4 + 0x2689c + DAT_000268a8),0x100);
+  return;
+}
+
+
+00026888 ldr r12,[0x268a4]
+0002688c mov r2,#0x100
+00026890 ldr r1,[0x268a8]
+00026894 add r3,pc,r12
+00026898 ldr r3,[r3,r1]
+0002689c ldr r1,[r3,#0x0]
+000268a0 b 0x00019e5c
+FUNCTION rq_sys_GetVerUp @ 000268ac
+
+void rq_sys_GetVerUp(undefined4 *param_1)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  
+  iVar1 = **(int **)(DAT_000268d4 + 0x268c0 + DAT_000268d8);
+  uVar2 = *(undefined4 *)(iVar1 + 0x4c);
+  uVar3 = *(undefined4 *)(iVar1 + 0x50);
+  uVar4 = *(undefined4 *)(iVar1 + 0x54);
+  *param_1 = *(undefined4 *)(iVar1 + 0x48);
+  param_1[1] = uVar2;
+  param_1[2] = uVar3;
+  param_1[3] = uVar4;
+  return;
+}
+
+
+000268ac ldr r3,[0x268d4]
+000268b0 cpy r12,r0
+000268b4 ldr r2,[0x268d8]
+000268b8 add r3,pc,r3
+000268bc ldr r1,[r3,r2]
+000268c0 ldr r0,[r1,#0x0]
+000268c4 add r3,r0,#0x48
+000268c8 ldmia r3,{r0,r1,r2,r3}
+000268cc stmia r12,{r0,r1,r2,r3}
+000268d0 bx lr
+FUNCTION rq_sys_GetEPID @ 000268dc
+
+void rq_sys_GetEPID(void *param_1)
+
+{
+  memcpy(param_1,(void *)(**(int **)(DAT_000268fc + 0x268f0 + DAT_00026900) + 0x22),0x24);
+  return;
+}
+
+
+000268dc ldr r1,[0x268fc]
+000268e0 mov r2,#0x24
+000268e4 ldr r12,[0x26900]
+000268e8 add r3,pc,r1
+000268ec ldr r3,[r3,r12]
+000268f0 ldr r1,[r3,#0x0]
+000268f4 add r1,r1,#0x22
+000268f8 b 0x00019e5c
+FUNCTION rq_sys_GetModelInfo @ 00026904
+
+void rq_sys_GetModelInfo(void *param_1)
+
+{
+  memcpy(param_1,(void *)(**(int **)(DAT_00026924 + 0x26918 + DAT_00026928) + 4),0x1e);
+  return;
+}
+
+
+00026904 ldr r1,[0x26924]
+00026908 mov r2,#0x1e
+0002690c ldr r12,[0x26928]
+00026910 add r3,pc,r1
+00026914 ldr r3,[r3,r12]
+00026918 ldr r1,[r3,#0x0]
+0002691c add r1,r1,#0x4
+00026920 b 0x00019e5c
+FUNCTION rq_sys_StopDiagCod @ 00026ab0
+
+void rq_sys_StopDiagCod(void)
+
+{
+  undefined4 local_c [2];
+  
+  local_c[0] = 0xf1e3d2c4;
+  fs_drv_MemWrite(0x403103e0,local_c,4,0);
+  return;
+}
+
+
+00026ab0 str lr,[sp,#-0x4]!
+00026ab4 sub sp,sp,#0xc
+00026ab8 add r1,sp,#0x8
+00026abc movw r3,#0xd2c4
+00026ac0 movw r0,#0x3e0
+00026ac4 movt r3,#0xf1e3
+00026ac8 mov r2,#0x4
+00026acc str r3,[r1,#-0x4]!
+00026ad0 movt r0,#0x4031
+00026ad4 mov r3,#0x0
+00026ad8 bl 0x0001a3cc
+00026adc add sp,sp,#0xc
+00026ae0 ldr pc,[sp],#0x4
+FUNCTION rq_sys_SetShFlg @ 00026ae4
+
+void rq_sys_SetShFlg(int param_1,undefined4 param_2)
+
+{
+  undefined4 local_c [2];
+  
+  if (param_1 < 8) {
+    local_c[0] = param_2;
+    fs_drv_MemWrite((param_1 + 0x39a9c080) * 4,local_c,4,0);
+  }
+  return;
+}
+
+
+00026ae4 str lr,[sp,#-0x4]!
+00026ae8 cmp r0,#0x7
+00026aec sub sp,sp,#0xc
+00026af0 str r1,[sp,#0x4]
+00026af4 bgt 0x00026b18
+00026af8 movw r1,#0xc080
+00026afc movt r1,#0x39a9
+00026b00 add r12,r0,r1
+00026b04 mov r2,#0x4
+00026b08 add r1,sp,#0x4
+00026b0c mov r3,#0x0
+00026b10 mov r0,r12, lsl #0x2
+00026b14 bl 0x0001a3cc
+00026b18 add sp,sp,#0xc
+00026b1c ldr pc,[sp],#0x4
+FUNCTION rq_sys_SetHtBeatTime @ 00026b20
+
+void rq_sys_SetHtBeatTime(int param_1)
+
+{
+  undefined4 uVar1;
+  
+  if (param_1 == 0) {
+    uVar1 = 0xbea10030;
+  }
+  else {
+    if (param_1 != 1) {
+      rq_drc_ErrorTraceP(0,0,0xbea10ec1,param_1,0,0,0);
+      return;
+    }
+    uVar1 = 0xbea10020;
+  }
+                    /* WARNING: Could not recover jumptable at 0x000199e4. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR_rq_sys_SetShFlg_0004137c)(6,uVar1);
+  return;
+}
+
+
+000199dc adr r12,0x199e4
+000199e0 add r12,r12,#0x27000
+000199e4 ldr pc,[r12,#0x998]!
+00026b20 subs r3,r0,#0x0
+00026b24 str lr,[sp,#-0x4]!
+00026b28 sub sp,sp,#0x14
+00026b2c beq 0x00026b7c
+00026b30 cmp r3,#0x1
+00026b34 movweq r1,#0x20
+00026b38 movteq r1,#0xbea1
+00026b3c bne 0x00026b50
+00026b40 mov r0,#0x6
+00026b44 add sp,sp,#0x14
+00026b48 ldr lr,[sp],#0x4
+00026b4c b 0x000199dc
+00026b50 mov r12,#0x0
+00026b54 movw r2,#0xec1
+00026b58 cpy r0,r12
+00026b5c movt r2,#0xbea1
+00026b60 cpy r1,r12
+00026b64 str r12,[sp,#0x0]
+00026b68 str r12,[sp,#0x4]
+00026b6c str r12,[sp,#0x8]
+00026b70 bl 0x0001a36c
+00026b74 add sp,sp,#0x14
+00026b78 ldr pc,[sp],#0x4
+00026b7c movw r1,#0x30
+00026b80 movt r1,#0xbea1
+00026b84 b 0x00026b40
+FUNCTION rq_sys_SetVersion @ 00026d5c
+
+void rq_sys_SetVersion(int param_1,char *param_2)
+
+{
+  if (0xf < param_1) {
+    return;
+  }
+  if (param_1 != 0xc) {
+    strncpy((char *)(param_1 * 0x20 + **(int **)(DAT_00026da4 + 0x26d6c + DAT_00026da8)),param_2,
+            0x20);
+    return;
+  }
+  memcpy((void *)(**(int **)(DAT_00026da4 + 0x26d6c + DAT_00026da8) + 0x180),param_2,6);
+  return;
+}
+
+
+00026d5c cmp r0,#0xf
+00026d60 ldr r3,[0x26da4]
+00026d64 add r3,pc,r3
+00026d68 bxgt lr
+00026d6c cmp r0,#0xc
+00026d70 beq 0x00026d8c
+00026d74 ldr r12,[0x26da8]
+00026d78 mov r2,#0x20
+00026d7c ldr r3,[r3,r12]
+00026d80 ldr r3,[r3,#0x0]
+00026d84 mla r0,r0,r2,r3
+00026d88 b 0x000197f0
+00026d8c ldr r0,[0x26da8]
+00026d90 mov r2,#0x6
+00026d94 ldr r12,[r3,r0]
+00026d98 ldr r0,[r12,#0x0]
+00026d9c add r0,r0,#0x180
+00026da0 b 0x00019e5c
+FUNCTION rq_sys_GetVersion @ 00026dac
+
+undefined4 rq_sys_GetVersion(int param_1,char *param_2)
+
+{
+  int iVar1;
+  int *piVar2;
+  
+  iVar1 = DAT_00026e38 + 0x26dc4;
+  if (param_1 < 0x10) {
+    if (param_1 == 0xc) {
+      rq_prc_GetPrcid();
+      memcpy(param_2,(void *)(**(int **)(iVar1 + DAT_00026e3c) + 0x180),0x20);
+      return 0;
+    }
+    piVar2 = *(int **)(iVar1 + DAT_00026e3c);
+    if (*(char *)(*piVar2 + param_1 * 0x20) != '\0') {
+      rq_prc_GetPrcid();
+      strncpy(param_2,(char *)(param_1 * 0x20 + *piVar2),0x20);
+      return 0;
+    }
+  }
+  return 0xffffffff;
+}
+
+
+00026dac stmdb sp!,{r4,r5,r6,lr}
+00026db0 cmp r0,#0xf
+00026db4 ldr r4,[0x26e38]
+00026db8 cpy r6,r1
+00026dbc add r4,pc,r4
+00026dc0 bgt 0x00026e10
+00026dc4 cmp r0,#0xc
+00026dc8 bne 0x00026df4
+00026dcc bl 0x00019e80
+00026dd0 ldr r12,[0x26e3c]
+00026dd4 cpy r0,r6
+00026dd8 mov r2,#0x20
+00026ddc ldr r3,[r4,r12]
+00026de0 ldr r1,[r3,#0x0]
+00026de4 add r1,r1,#0x180
+00026de8 bl 0x00019e5c
+00026dec mov r0,#0x0
+00026df0 ldmia sp!,{r4,r5,r6,pc}
+00026df4 ldr r3,[0x26e3c]
+00026df8 mov r5,r0, lsl #0x5
+00026dfc ldr r4,[r4,r3]
+00026e00 ldr r1,[r4,#0x0]
+00026e04 ldrb r2,[r1,r0,lsl #0x5]
+00026e08 cmp r2,#0x0
+00026e0c bne 0x00026e18
+00026e10 mvn r0,#0x0
+00026e14 ldmia sp!,{r4,r5,r6,pc}
+00026e18 bl 0x00019e80
+00026e1c ldr r12,[r4,#0x0]
+00026e20 cpy r0,r6
+00026e24 mov r2,#0x20
+00026e28 add r1,r5,r12
+00026e2c bl 0x000197f0
+00026e30 mov r0,#0x0
+00026e34 ldmia sp!,{r4,r5,r6,pc}
+FUNCTION rq_sys_SetExtInfo @ 0002777c
+
+undefined4 rq_sys_SetExtInfo(void *param_1)
+
+{
+  undefined4 *puVar1;
+  
+  puVar1 = *(undefined4 **)(DAT_000277bc + 0x27794 + DAT_000277c0);
+  memcpy((void *)*puVar1,param_1,0x156);
+  fs_sys_BakMemWrite(0xb,*puVar1,0x156);
+  return 0;
+}
+
+
+0002777c stmdb sp!,{r3,r4,r5,lr}
+00027780 ldr r3,[0x277bc]
+00027784 cpy r1,r0
+00027788 ldr r0,[0x277c0]
+0002778c add r3,pc,r3
+00027790 movw r4,#0x156
+00027794 cpy r2,r4
+00027798 ldr r5,[r3,r0]
+0002779c ldr r0,[r5,#0x0]
+000277a0 bl 0x00019e5c
+000277a4 ldr r1,[r5,#0x0]
+000277a8 cpy r2,r4
+000277ac mov r0,#0xb
+000277b0 bl 0x00019694
+000277b4 mov r0,#0x0
+000277b8 ldmia sp!,{r3,r4,r5,pc}
+FUNCTION rq_sys_IndClr @ 00027ca4
+
+void rq_sys_IndClr(uint param_1,undefined4 param_2)
+
+{
+  if (param_1 < 5) {
+                    /* WARNING: Could not recover jumptable at 0x00019714. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)PTR_fc_sys_IndPrc_0004128c)(0,param_1,param_2);
+    return;
+  }
+  rq_drc_ErrorTraceP(0,0,0x310000c0,param_1,0,0,0);
+  return;
+}
+
+
+0001970c adr r12,0x19714
+00019710 add r12,r12,#0x27000
+00019714 ldr pc,[r12,#0xb78]!
+00027ca4 cmp r0,#0x4
+00027ca8 cpy r2,r1
+00027cac str lr,[sp,#-0x4]!
+00027cb0 sub sp,sp,#0x14
+00027cb4 bhi 0x00027ccc
+00027cb8 cpy r1,r0
+00027cbc mov r0,#0x0
+00027cc0 add sp,sp,#0x14
+00027cc4 ldr lr,[sp],#0x4
+00027cc8 b 0x0001970c
+00027ccc mov r12,#0x0
+00027cd0 cpy r3,r0
+00027cd4 movw r2,#0xc0
+00027cd8 cpy r0,r12
+00027cdc movt r2,#0x3100
+00027ce0 cpy r1,r12
+00027ce4 str r12,[sp,#0x0]
+00027ce8 str r12,[sp,#0x4]
+00027cec str r12,[sp,#0x8]
+00027cf0 bl 0x0001a36c
+00027cf4 add sp,sp,#0x14
+00027cf8 ldr pc,[sp],#0x4
+FUNCTION rq_sys_InitDiagCod @ 000286ec
+
+void rq_sys_InitDiagCod(void)
+
+{
+  int iVar1;
+  int local_14 [2];
+  
+  iVar1 = DAT_00028768;
+  fs_drv_MemRead(0x403103e0,local_14,4,0);
+  *(uint *)**(undefined4 **)(iVar1 + 0x28724 + DAT_0002876c) = (uint)(local_14[0] == -0xe1c2d3c);
+  local_14[0] = 0;
+  fs_drv_MemWrite(0x403103e0,local_14,4,0);
+  return;
+}
+
+
+000286ec stmdb sp!,{r4,r5,lr}
+000286f0 sub sp,sp,#0xc
+000286f4 add r4,sp,#0x4
+000286f8 mov r2,#0x4
+000286fc mov r3,#0x0
+00028700 movw r0,#0x3e0
+00028704 cpy r1,r4
+00028708 movt r0,#0x4031
+0002870c ldr r5,[0x28768]
+00028710 bl 0x0001a1a4
+00028714 ldr r1,[0x2876c]
+00028718 movw r12,#0xd2c4
+0002871c add r5,pc,r5
+00028720 ldr r2,[sp,#0x4]
+00028724 movt r12,#0xf1e3
+00028728 ldr r0,[r5,r1]
+0002872c cmp r2,r12
+00028730 mov r12,#0x0
+00028734 cpy r1,r4
+00028738 moveq r2,#0x1
+0002873c movne r2,#0x0
+00028740 ldr r3,[r0,#0x0]
+00028744 movw r0,#0x3e0
+00028748 movt r0,#0x4031
+0002874c str r2,[r3,#0x0]
+00028750 cpy r3,r12
+00028754 mov r2,#0x4
+00028758 str r12,[sp,#0x4]
+0002875c bl 0x0001a3cc
+00028760 add sp,sp,#0xc
+00028764 ldmia sp!,{r4,r5,pc}
+FUNCTION rq_sys_ClrMem @ 00028770
+
+void rq_sys_ClrMem(void)
+
+{
+  int iVar1;
+  
+  rq_drc_StopTrace();
+  rq_mmd_SetRecSts(0);
+  iVar1 = fs_sys_GetLtsFd();
+  if (0 < iVar1) {
+    lites_trace_stop();
+  }
+  fs_sys_BakMemWriteStop();
+  rq_bkm_Stop();
+  fc_sys_DelBakFil(0);
+  fc_sys_DelBakFil(1);
+  iVar1 = rq_abk_Stop();
+  if (iVar1 != 0) {
+    rq_drc_ErrorTraceP(0,0,0x310000a0,0,0,0,0);
+  }
+  iVar1 = rq_abk_Clr(2);
+  if (iVar1 != 0) {
+    rq_drc_ErrorTraceP(0,0,0x310000b0,0,0,0,0);
+  }
+  fc_sys_ClrBakMem(6);
+  rq_sys_IndClr(0,0);
+  fs_flm_Erase(0x700000,0x40000);
+  fs_flm_Erase(0x760000,0x80000);
+  sync();
+  return;
+}
+
+
+00028770 str lr,[sp,#-0x4]!
+00028774 sub sp,sp,#0x14
+00028778 bl 0x00019bb0
+0002877c mov r0,#0x0
+00028780 bl 0x00019cc4
+00028784 bl 0x0001a468
+00028788 cmp r0,#0x0
+0002878c ble 0x00028794
+00028790 bl 0x0001a420
+00028794 bl 0x0001a30c
+00028798 bl 0x000195c8
+0002879c mov r0,#0x0
+000287a0 bl 0x0001961c
+000287a4 mov r0,#0x1
+000287a8 bl 0x0001961c
+000287ac bl 0x0001a300
+000287b0 cmp r0,#0x0
+000287b4 bne 0x00028828
+000287b8 mov r0,#0x2
+000287bc bl 0x0001a5dc
+000287c0 cmp r0,#0x0
+000287c4 beq 0x000287f0
+000287c8 mov lr,#0x0
+000287cc movw r2,#0xb0
+000287d0 cpy r0,lr
+000287d4 movt r2,#0x3100
+000287d8 cpy r1,lr
+000287dc cpy r3,lr
+000287e0 str lr,[sp,#0x0]
+000287e4 str lr,[sp,#0x4]
+000287e8 str lr,[sp,#0x8]
+000287ec bl 0x0001a36c
+000287f0 mov r0,#0x6
+000287f4 bl 0x0001a864
+000287f8 mov r0,#0x0
+000287fc cpy r1,r0
+00028800 bl 0x00019a84
+00028804 mov r1,#0x40000
+00028808 mov r0,#0x700000
+0002880c bl 0x00019508
+00028810 mov r1,#0x80000
+00028814 mov r0,#0x760000
+00028818 bl 0x00019508
+0002881c add sp,sp,#0x14
+00028820 ldr lr,[sp],#0x4
+00028824 b 0x00019550
+00028828 mov r12,#0x0
+0002882c movw r2,#0xa0
+00028830 cpy r0,r12
+00028834 movt r2,#0x3100
+00028838 cpy r1,r12
+0002883c cpy r3,r12
+00028840 str r12,[sp,#0x0]
+00028844 str r12,[sp,#0x4]
+00028848 str r12,[sp,#0x8]
+0002884c bl 0x0001a36c
+00028850 b 0x000287b8
+FUNCTION rq_sys_GetOutDay @ 00028854
+
+void rq_sys_GetOutDay(undefined4 param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = fs_flm_Read(param_1,&DAT_000f0020,8);
+  if (iVar1 != 0) {
+    rq_drc_ErrorTraceP(0,0,0x31000090,0,0,0,0);
+  }
+  return;
+}
+
+
+00028854 str lr,[sp,#-0x4]!
+00028858 movw r1,#0x20
+0002885c sub sp,sp,#0x14
+00028860 movt r1,#0xf
+00028864 mov r2,#0x8
+00028868 bl 0x0001a7c8
+0002886c cmp r0,#0x0
+00028870 beq 0x0002889c
+00028874 mov r12,#0x0
+00028878 movw r2,#0x90
+0002887c cpy r0,r12
+00028880 movt r2,#0x3100
+00028884 cpy r1,r12
+00028888 cpy r3,r12
+0002888c str r12,[sp,#0x0]
+00028890 str r12,[sp,#0x4]
+00028894 str r12,[sp,#0x8]
+00028898 bl 0x0001a36c
+0002889c add sp,sp,#0x14
+000288a0 ldr pc,[sp],#0x4
+FUNCTION rq_sys_GetProNo @ 000288a4
+
+void rq_sys_GetProNo(undefined4 param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = fs_flm_Read(param_1,0xf0000,0x10);
+  if (iVar1 != 0) {
+    rq_drc_ErrorTraceP(0,0,0x31000070,0,0,0,0);
+  }
+  return;
+}
+
+
+000288a4 str lr,[sp,#-0x4]!
+000288a8 mov r1,#0xf0000
+000288ac sub sp,sp,#0x14
+000288b0 mov r2,#0x10
+000288b4 bl 0x0001a7c8
+000288b8 cmp r0,#0x0
+000288bc beq 0x000288e8
+000288c0 mov r12,#0x0
+000288c4 movw r2,#0x70
+000288c8 cpy r0,r12
+000288cc movt r2,#0x3100
+000288d0 cpy r1,r12
+000288d4 cpy r3,r12
+000288d8 str r12,[sp,#0x0]
+000288dc str r12,[sp,#0x4]
+000288e0 str r12,[sp,#0x8]
+000288e4 bl 0x0001a36c
+000288e8 add sp,sp,#0x14
+000288ec ldr pc,[sp],#0x4
+FUNCTION rq_sys_GetSerNo @ 000288f0
+
+void rq_sys_GetSerNo(undefined4 param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = fs_flm_Read(param_1,&DAT_000f0010,0x10);
+  if (iVar1 != 0) {
+    rq_drc_ErrorTraceP(0,0,0x31000080,0,0,0,0);
+  }
+  return;
+}
+
+
+000288f0 str lr,[sp,#-0x4]!
+000288f4 movw r1,#0x10
+000288f8 sub sp,sp,#0x14
+000288fc movt r1,#0xf
+00028900 mov r2,#0x10
+00028904 bl 0x0001a7c8
+00028908 cmp r0,#0x0
+0002890c beq 0x00028938
+00028910 mov r12,#0x0
+00028914 movw r2,#0x80
+00028918 cpy r0,r12
+0002891c movt r2,#0x3100
+00028920 cpy r1,r12
+00028924 cpy r3,r12
+00028928 str r12,[sp,#0x0]
+0002892c str r12,[sp,#0x4]
+00028930 str r12,[sp,#0x8]
+00028934 bl 0x0001a36c
+00028938 add sp,sp,#0x14
+0002893c ldr pc,[sp],#0x4
+FUNCTION rq_sys_SetModelInfo @ 00028940
+
+undefined4 rq_sys_SetModelInfo(char *param_1)
+
+{
+  char cVar1;
+  char cVar2;
+  uint uVar3;
+  int iVar4;
+  int iVar5;
+  int *piVar6;
+  int iVar7;
+  undefined4 local_38;
+  undefined4 local_34;
+  undefined4 local_30;
+  undefined4 local_2c;
+  undefined4 local_28;
+  undefined4 uStack_24;
+  undefined4 local_20;
+  ushort local_1c;
+  
+  iVar4 = DAT_00028ab8;
+  iVar5 = DAT_00028ab4 + 0x28958;
+  iVar7 = **(int **)(iVar5 + DAT_00028ab8);
+  local_38 = *(undefined4 *)(iVar7 + 4);
+  local_34 = *(undefined4 *)(iVar7 + 8);
+  local_30 = *(undefined4 *)(iVar7 + 0xc);
+  local_2c = *(undefined4 *)(iVar7 + 0x10);
+  local_28 = *(undefined4 *)(iVar7 + 0x14);
+  uStack_24 = *(undefined4 *)(iVar7 + 0x18);
+  local_20 = *(undefined4 *)(iVar7 + 0x1c);
+  if (*param_1 != -1) {
+    uVar3 = (uint)local_38 >> 8;
+    local_38 = CONCAT31((int3)uVar3,*param_1);
+  }
+  local_1c = (ushort)*(undefined4 *)(iVar7 + 0x20);
+  if (param_1[1] != -1) {
+    local_38._0_2_ = CONCAT11(param_1[1],(undefined1)local_38);
+  }
+  if (param_1[2] != -1) {
+    local_38._0_3_ = CONCAT12(param_1[2],(undefined2)local_38);
+  }
+  if (param_1[3] != -1) {
+    local_38 = CONCAT13(param_1[3],(undefined3)local_38);
+  }
+  if (param_1[4] != -1) {
+    uVar3 = (uint)local_34 >> 8;
+    local_34 = CONCAT31((int3)uVar3,param_1[4]);
+  }
+  if (param_1[5] != -1) {
+    local_34._0_2_ = CONCAT11(param_1[5],(undefined1)local_34);
+  }
+  if (param_1[6] != -1) {
+    local_34._0_3_ = CONCAT12(param_1[6],(undefined2)local_34);
+  }
+  if (param_1[7] != -1) {
+    local_34 = CONCAT13(param_1[7],(undefined3)local_34);
+  }
+  if (param_1[8] != -1) {
+    uVar3 = (uint)local_30 >> 8;
+    local_30 = CONCAT31((int3)uVar3,param_1[8]);
+  }
+  cVar1 = param_1[0xd];
+  if (param_1[9] != -1) {
+    local_30._0_2_ = CONCAT11(param_1[9],(undefined1)local_30);
+  }
+  cVar2 = param_1[0xe];
+  if (param_1[10] != -1) {
+    local_30._0_3_ = CONCAT12(param_1[10],(undefined2)local_30);
+  }
+  if (param_1[0xb] != -1) {
+    local_30 = CONCAT13(param_1[0xb],(undefined3)local_30);
+  }
+  if (param_1[0xc] != -1) {
+    uVar3 = (uint)local_2c >> 8;
+    local_2c = CONCAT31((int3)uVar3,param_1[0xc]);
+  }
+  if (cVar1 == -0x56 || cVar1 == -1) {
+    local_2c._0_2_ = CONCAT11(cVar1,(undefined1)local_2c);
+  }
+  if (cVar2 == -1 || cVar2 == -0x56) {
+    local_2c._0_3_ = CONCAT12(cVar2,(undefined2)local_2c);
+  }
+  if (param_1[0x17] != -1) {
+    uStack_24 = CONCAT13(param_1[0x17],(undefined3)uStack_24);
+  }
+  if (param_1[0x18] != -1) {
+    uVar3 = (uint)local_20 >> 8;
+    local_20 = CONCAT31((int3)uVar3,param_1[0x18]);
+  }
+  if (param_1[0x19] != -1) {
+    local_20._0_2_ = CONCAT11(param_1[0x19],(undefined1)local_20);
+  }
+  if (param_1[0x1a] != -1) {
+    local_20._0_3_ = CONCAT12(param_1[0x1a],(undefined2)local_20);
+  }
+  local_1c = rq_sys_GetChkSum(&local_38,0x1c);
+  piVar6 = *(int **)(iVar5 + iVar4);
+  local_1c = ~local_1c;
+  memcpy((void *)(*piVar6 + 4),&local_38,0x1e);
+  fs_sys_BakMemWrite(10,*piVar6,0x84);
+  return 0;
+}
+
+
+00028940 stmdb sp!,{r4,r5,r6,r7,r8,lr}
+00028944 ldr r5,[0x28ab4]
+00028948 ldr r6,[0x28ab8]
+0002894c cpy r12,r0
+00028950 add r5,pc,r5
+00028954 ldrb r7,[r0,#0x0]
+00028958 sub sp,sp,#0x20
+0002895c ldr r3,[r5,r6]
+00028960 cmp r7,#0xff
+00028964 cpy lr,sp
+00028968 cpy r4,sp
+0002896c ldr r8,[r3,#0x0]
+00028970 add r8,r8,#0x4
+00028974 ldmia r8!,{r0,r1,r2,r3}
+00028978 stmia lr!,{r0,r1,r2,r3}
+0002897c ldmia r8,{r0,r1,r2,r3}
+00028980 strbne r7,[sp,#0x0]
+00028984 stmia lr!,{r0,r1,r2}
+00028988 strh r3,[lr,#0x0]
+0002898c ldrb r2,[r12,#0x1]
+00028990 ldrb r1,[r12,#0x2]
+00028994 ldrb r0,[r12,#0x3]
+00028998 cmp r2,#0xff
+0002899c ldrb r3,[r12,#0x4]
+000289a0 ldrb lr,[r12,#0x5]
+000289a4 strbne r2,[sp,#0x1]
+000289a8 cmp r1,#0xff
+000289ac ldrb r2,[r12,#0x6]
+000289b0 strbne r1,[sp,#0x2]
+000289b4 cmp r0,#0xff
+000289b8 ldrb r1,[r12,#0x7]
+000289bc strbne r0,[sp,#0x3]
+000289c0 cmp r3,#0xff
+000289c4 strbne r3,[sp,#0x4]
+000289c8 cmp lr,#0xff
+000289cc strbne lr,[sp,#0x5]
+000289d0 cmp r2,#0xff
+000289d4 strbne r2,[sp,#0x6]
+000289d8 cmp r1,#0xff
+000289dc strbne r1,[sp,#0x7]
+000289e0 ldrb r0,[r12,#0x8]
+000289e4 ldrb r3,[r12,#0x9]
+000289e8 ldrb lr,[r12,#0xa]
+000289ec cmp r0,#0xff
+000289f0 ldrb r2,[r12,#0xb]
+000289f4 ldrb r1,[r12,#0xc]
+000289f8 strbne r0,[sp,#0x8]
+000289fc cmp r3,#0xff
+00028a00 ldrb r0,[r12,#0xd]
+00028a04 strbne r3,[sp,#0x9]
+00028a08 cmp lr,#0xff
+00028a0c ldrb r3,[r12,#0xe]
+00028a10 strbne lr,[sp,#0xa]
+00028a14 cmp r2,#0xff
+00028a18 ldrb lr,[r12,#0x17]
+00028a1c strbne r2,[sp,#0xb]
+00028a20 cmp r1,#0xff
+00028a24 ldrb r2,[r12,#0x18]
+00028a28 strbne r1,[sp,#0xc]
+00028a2c cmp r0,#0xaa
+00028a30 cmpne r0,#0xff
+00028a34 ldrb r1,[r12,#0x19]
+00028a38 strbeq r0,[sp,#0xd]
+00028a3c cmp r3,#0xff
+00028a40 cmpne r3,#0xaa
+00028a44 ldrb r0,[r12,#0x1a]
+00028a48 strbeq r3,[sp,#0xe]
+00028a4c cmp lr,#0xff
+00028a50 strbne lr,[sp,#0x17]
+00028a54 cmp r2,#0xff
+00028a58 strbne r2,[sp,#0x18]
+00028a5c cmp r1,#0xff
+00028a60 strbne r1,[sp,#0x19]
+00028a64 cmp r0,#0xff
+00028a68 mov r1,#0x1c
+00028a6c strbne r0,[sp,#0x1a]
+00028a70 cpy r0,sp
+00028a74 bl 0x0001a09c
+00028a78 ldr r5,[r5,r6]
+00028a7c cpy r1,sp
+00028a80 mov r2,#0x1e
+00028a84 ldr r12,[r5,#0x0]
+00028a88 mvn r3,r0
+00028a8c add r0,r12,#0x4
+00028a90 strh r3,[sp,#0x1c]
+00028a94 bl 0x00019e5c
+00028a98 ldr r1,[r5,#0x0]
+00028a9c mov r2,#0x84
+00028aa0 mov r0,#0xa
+00028aa4 bl 0x00019694
+00028aa8 mov r0,#0x0
+00028aac add sp,sp,#0x20
+00028ab0 ldmia sp!,{r4,r5,r6,r7,r8,pc}
+FUNCTION rq_sys_SetAcc @ 0002db74
+
+void rq_sys_SetAcc(undefined4 param_1)
+
+{
+  *(undefined4 *)(*(int *)(DAT_0002db8c + 0x2db84 + DAT_0002db90) + 8) = param_1;
+  return;
+}
+
+
+0002db74 ldr r1,[0x2db8c]
+0002db78 ldr r2,[0x2db90]
+0002db7c add r3,pc,r1
+0002db80 ldr r3,[r3,r2]
+0002db84 str r0,[r3,#0x8]
+0002db88 bx lr
+FUNCTION rq_sys_GetAcc @ 0002db94
+
+undefined4 rq_sys_GetAcc(void)
+
+{
+  return *(undefined4 *)(*(int *)(DAT_0002dbac + 0x2dba4 + DAT_0002dbb0) + 8);
+}
+
+
+0002db94 ldr r0,[0x2dbac]
+0002db98 ldr r2,[0x2dbb0]
+0002db9c add r3,pc,r0
+0002dba0 ldr r3,[r3,r2]
+0002dba4 ldr r0,[r3,#0x8]
+0002dba8 bx lr
+FUNCTION rq_sys_SetAcfI @ 0002dbb4
+
+void rq_sys_SetAcfI(uint param_1,int param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(DAT_0002dbdc + 0x2dbc8 + DAT_0002dbe0);
+  uVar1 = *(uint *)(iVar2 + 0xc);
+  if (param_2 == 0) {
+    uVar1 = uVar1 & ~param_1;
+  }
+  else {
+    uVar1 = param_1 | uVar1;
+  }
+  *(uint *)(iVar2 + 0xc) = uVar1;
+  return;
+}
+
+
+0002dbb4 ldr r12,[0x2dbdc]
+0002dbb8 cmp r1,#0x0
+0002dbbc ldr r1,[0x2dbe0]
+0002dbc0 add r3,pc,r12
+0002dbc4 ldr r3,[r3,r1]
+0002dbc8 ldr r2,[r3,#0xc]
+0002dbcc biceq r0,r2,r0
+0002dbd0 orrne r0,r0,r2
+0002dbd4 str r0,[r3,#0xc]
+0002dbd8 bx lr
+FUNCTION rq_sys_SetAcf @ 0002dbe4
+
+void rq_sys_SetAcf(undefined4 param_1,int param_2)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x0001a5cc. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR_rq_sys_SetAcfI_00041774)(param_1,param_2 == 1);
+  return;
+}
+
+
+0001a5c4 adr r12,0x1a5cc
+0001a5c8 add r12,r12,#0x27000
+0001a5cc ldr pc,[r12,#0x1a8]!
+0002dbe4 cmp r1,#0x1
+0002dbe8 movne r1,#0x0
+0002dbec b 0x0001a5c4
+FUNCTION rq_sys_GetAcf @ 0002dbf0
+
+bool rq_sys_GetAcf(uint param_1)
+
+{
+  return (param_1 & *(uint *)(*(int *)(DAT_0002dc14 + 0x2dc00 + DAT_0002dc18) + 0xc)) != 0;
+}
+
+
+0002dbf0 ldr r12,[0x2dc14]
+0002dbf4 ldr r2,[0x2dc18]
+0002dbf8 add r3,pc,r12
+0002dbfc ldr r1,[r3,r2]
+0002dc00 ldr r3,[r1,#0xc]
+0002dc04 tst r0,r3
+0002dc08 moveq r0,#0x0
+0002dc0c movne r0,#0x1
+0002dc10 bx lr
+FUNCTION rq_sys_GetStnbySts @ 0002dc1c
+
+undefined4 rq_sys_GetStnbySts(void)
+
+{
+  return *(undefined4 *)(*(int *)(DAT_0002dc34 + 0x2dc2c + DAT_0002dc38) + 0x1c);
+}
+
+
+0002dc1c ldr r0,[0x2dc34]
+0002dc20 ldr r2,[0x2dc38]
+0002dc24 add r3,pc,r0
+0002dc28 ldr r3,[r3,r2]
+0002dc2c ldr r0,[r3,#0x1c]
+0002dc30 bx lr
+FUNCTION rq_sys_GetTskMode @ 0002dc3c
+
+undefined1 rq_sys_GetTskMode(int param_1)
+
+{
+  return *(undefined1 *)
+          (*(int *)(*(int *)(DAT_0002dc5c + 0x2dc50 + DAT_0002dc60) + 8) + param_1 * 0x50);
+}
+
+
+0002dc3c ldr r12,[0x2dc5c]
+0002dc40 add r0,r0,r0, lsl #0x2
+0002dc44 ldr r2,[0x2dc60]
+0002dc48 add r3,pc,r12
+0002dc4c ldr r1,[r3,r2]
+0002dc50 ldr r3,[r1,#0x8]
+0002dc54 ldrb r0,[r3,r0,lsl #0x4]
+0002dc58 bx lr
+FUNCTION rq_sys_GetChkSum @ 0002dc64
+
+short rq_sys_GetChkSum(byte *param_1,uint param_2)
+
+{
+  uint uVar1;
+  byte bVar2;
+  byte *pbVar3;
+  short sVar4;
+  byte *pbVar5;
+  byte *pbVar6;
+  uint uVar7;
+  
+  uVar1 = param_2 >> 2;
+  pbVar3 = param_1 + param_2;
+  if (uVar1 == 0) {
+    sVar4 = 0;
+    goto LAB_0002dd48;
+  }
+  sVar4 = (ushort)param_1[1] + (ushort)*param_1 + (ushort)param_1[2] + (ushort)param_1[3];
+  uVar7 = 1;
+  if (uVar1 != 1) {
+    pbVar5 = param_1 + 4;
+    if ((uVar1 - 1 & 1) != 0) {
+      uVar7 = 2;
+      sVar4 = sVar4 + (ushort)param_1[5] + (ushort)param_1[4] + (ushort)param_1[6] +
+                      (ushort)param_1[7];
+      pbVar5 = param_1 + 8;
+      if (uVar1 == 2) goto LAB_0002dd44;
+    }
+    do {
+      uVar7 = uVar7 + 2;
+      sVar4 = (ushort)pbVar5[5] + (ushort)pbVar5[4] + (ushort)pbVar5[6] + (ushort)pbVar5[7] +
+              sVar4 + (ushort)pbVar5[1] + (ushort)*pbVar5 + (ushort)pbVar5[2] + (ushort)pbVar5[3];
+      pbVar5 = pbVar5 + 8;
+    } while (uVar1 != uVar7);
+  }
+LAB_0002dd44:
+  param_1 = param_1 + uVar1 * 4;
+LAB_0002dd48:
+  if (param_1 < pbVar3) {
+    pbVar5 = param_1 + 1;
+    sVar4 = sVar4 + (ushort)*param_1;
+    if (pbVar5 < pbVar3) {
+      pbVar6 = pbVar5;
+      if (((uint)(pbVar3 + ~(uint)param_1) & 1) != 0) {
+        pbVar6 = param_1 + 2;
+        sVar4 = sVar4 + (ushort)*pbVar5;
+        if (pbVar3 <= pbVar6) {
+          return sVar4;
+        }
+      }
+      do {
+        pbVar5 = pbVar6 + 1;
+        bVar2 = *pbVar6;
+        pbVar6 = pbVar6 + 2;
+        sVar4 = (ushort)*pbVar5 + sVar4 + (ushort)bVar2;
+      } while (pbVar6 < pbVar3);
+    }
+  }
+  return sVar4;
+}
+
+
+0002dc64 stmdb sp!,{r4,r5,r6,r7,r8,r9,r10}
+0002dc68 mov r5,r1, lsr #0x2
+0002dc6c cmp r5,#0x0
+0002dc70 add r1,r0,r1
+0002dc74 movle r2,#0x0
+0002dc78 ble 0x0002dd48
+0002dc7c ldrb r12,[r0,#0x1]
+0002dc80 cmp r5,#0x1
+0002dc84 ldrb r2,[r0,#0x0]
+0002dc88 sub r6,r5,#0x1
+0002dc8c ldrb r3,[r0,#0x2]
+0002dc90 and r6,r6,#0x1
+0002dc94 add r4,r12,r2
+0002dc98 ldrb r12,[r0,#0x3]
+0002dc9c add r2,r4,r3
+0002dca0 add r3,r0,#0x4
+0002dca4 add r2,r2,r12
+0002dca8 mov r4,#0x1
+0002dcac beq 0x0002dd44
+0002dcb0 cmp r6,#0x0
+0002dcb4 beq 0x0002dcec
+0002dcb8 ldrb r6,[r3,#0x1]
+0002dcbc mov r4,#0x2
+0002dcc0 ldrb r12,[r3,#0x0]
+0002dcc4 cmp r5,r4
+0002dcc8 ldrb r7,[r3,#0x2]
+0002dccc add r12,r6,r12
+0002dcd0 ldrb r6,[r3,#0x3]
+0002dcd4 add r12,r12,r7
+0002dcd8 add r3,r3,#0x4
+0002dcdc add r12,r12,r6
+0002dce0 add r2,r2,r12
+0002dce4 uxth r2,r2
+0002dce8 beq 0x0002dd44
+0002dcec ldrb r9,[r3,#0x1]
+0002dcf0 add r12,r3,#0x4
+0002dcf4 ldrb r6,[r3,#0x0]
+0002dcf8 add r4,r4,#0x2
+0002dcfc ldrb r7,[r3,#0x2]
+0002dd00 cmp r5,r4
+0002dd04 add r8,r9,r6
+0002dd08 ldrb r6,[r3,#0x4]
+0002dd0c add r10,r8,r7
+0002dd10 ldrb r9,[r3,#0x3]
+0002dd14 ldrb r8,[r12,#0x1]
+0002dd18 add r3,r12,#0x4
+0002dd1c ldrb r7,[r12,#0x2]
+0002dd20 add r10,r10,r9
+0002dd24 add r8,r8,r6
+0002dd28 ldrb r6,[r12,#0x3]
+0002dd2c add r2,r2,r10
+0002dd30 add r12,r8,r7
+0002dd34 add r12,r12,r6
+0002dd38 uxtah r2,r12,r2
+0002dd3c uxth r2,r2
+0002dd40 bne 0x0002dcec
+0002dd44 add r0,r0,r5, lsl #0x2
+0002dd48 cmp r1,r0
+0002dd4c bls 0x0002ddb4
+0002dd50 cpy r3,r0
+0002dd54 mvn r0,r0
+0002dd58 ldrb r12,[r3],#0x1
+0002dd5c add r0,r0,r1
+0002dd60 and r0,r0,#0x1
+0002dd64 add r2,r2,r12
+0002dd68 cmp r1,r3
+0002dd6c uxth r2,r2
+0002dd70 bls 0x0002ddb4
+0002dd74 cmp r0,#0x0
+0002dd78 beq 0x0002dd90
+0002dd7c ldrb r12,[r3],#0x1
+0002dd80 add r2,r2,r12
+0002dd84 cmp r1,r3
+0002dd88 uxth r2,r2
+0002dd8c bls 0x0002ddb4
+0002dd90 cpy r0,r3
+0002dd94 ldrb r12,[r3,#0x1]
+0002dd98 ldrb r3,[r0],#0x1
+0002dd9c add r2,r2,r3
+0002dda0 add r3,r0,#0x1
+0002dda4 cmp r1,r3
+0002dda8 uxtah r2,r12,r2
+0002ddac uxth r2,r2
+0002ddb0 bhi 0x0002dd90
+0002ddb4 cpy r0,r2
+0002ddb8 ldmia sp!,{r4,r5,r6,r7,r8,r9,r10}
+0002ddbc bx lr
+FUNCTION rq_sys_NtyTskSts @ 0002e02c
+
+void rq_sys_NtyTskSts(int param_1)
+
+{
+  int iVar1;
+  long lVar2;
+  int iVar3;
+  int iVar4;
+  int local_30 [3];
+  int local_24;
+  undefined1 auStack_20 [4];
+  int aiStack_1c [2];
+  
+  iVar4 = DAT_0002e124 + 0x2e044;
+  local_24 = param_1;
+  if (param_1 == 0) {
+    pthread_setcanceltype(1,aiStack_1c);
+    iVar1 = rq_tsk_GetTid();
+    iVar3 = *(int *)(*(int *)(iVar4 + DAT_0002e12c) + 8);
+    lVar2 = syscall(0xe0);
+    *(long *)(iVar3 + iVar1 * 0x50 + 0x4c) = lVar2;
+    local_30[1] = 3;
+    local_30[0] = param_1;
+    local_30[2] = iVar1;
+    rq_msg_Send(1,local_30,0x10);
+  }
+  else {
+    iVar1 = rq_tsk_GetTid();
+    local_30[1] = 3;
+    local_30[0] = 0;
+    local_30[2] = iVar1;
+    rq_msg_Send(1,local_30,0x10);
+    if (param_1 == 3) {
+                    /* WARNING: Subroutine does not return */
+      pthread_exit((void *)0x0);
+    }
+  }
+  if (((*(int *)(*(int *)(iVar4 + DAT_0002e128) + 0x24) - 1U < 2) && (iVar1 != 3)) && (param_1 == 0)
+     ) {
+    rq_flg_Wait(1,1,auStack_20);
+  }
+  return;
+}
+
+
+0002e02c stmdb sp!,{r4,r5,r6,r7,lr}
+0002e030 subs r4,r0,#0x0
+0002e034 ldr r5,[0x2e124]
+0002e038 sub sp,sp,#0x1c
+0002e03c add r5,pc,r5
+0002e040 beq 0x0002e0c0
+0002e044 bl 0x00019dd8
+0002e048 cpy r1,sp
+0002e04c mov r2,#0x10
+0002e050 mov r3,#0x3
+0002e054 str r4,[sp,#0xc]
+0002e058 mov r7,#0x0
+0002e05c str r3,[sp,#0x4]
+0002e060 str r7,[sp,#0x0]
+0002e064 cpy r6,r0
+0002e068 mov r0,#0x1
+0002e06c str r6,[sp,#0x8]
+0002e070 bl 0x00019d90
+0002e074 cmp r4,#0x3
+0002e078 beq 0x0002e11c
+0002e07c ldr r2,[0x2e128]
+0002e080 ldr r1,[r5,r2]
+0002e084 ldr lr,[r1,#0x24]
+0002e088 sub r0,lr,#0x1
+0002e08c cmp r0,#0x1
+0002e090 bls 0x0002e09c
+0002e094 add sp,sp,#0x1c
+0002e098 ldmia sp!,{r4,r5,r6,r7,pc}
+0002e09c cmp r6,#0x3
+0002e0a0 beq 0x0002e094
+0002e0a4 cmp r4,#0x0
+0002e0a8 bne 0x0002e094
+0002e0ac mov r0,#0x1
+0002e0b0 add r2,sp,#0x10
+0002e0b4 cpy r1,r0
+0002e0b8 bl 0x0001a624
+0002e0bc b 0x0002e094
+0002e0c0 add r1,sp,#0x14
+0002e0c4 mov r0,#0x1
+0002e0c8 bl 0x0001a780
+0002e0cc bl 0x00019dd8
+0002e0d0 ldr r12,[0x2e12c]
+0002e0d4 ldr r2,[r5,r12]
+0002e0d8 ldr r1,[r2,#0x8]
+0002e0dc add r7,r0,r0, lsl #0x2
+0002e0e0 cpy r6,r0
+0002e0e4 mov r0,#0xe0
+0002e0e8 add r7,r1,r7, lsl #0x4
+0002e0ec bl 0x0001a6f0
+0002e0f0 cpy r1,sp
+0002e0f4 mov r2,#0x10
+0002e0f8 mov r3,#0x3
+0002e0fc str r0,[r7,#0x4c]
+0002e100 mov r0,#0x1
+0002e104 str r3,[sp,#0x4]
+0002e108 str r4,[sp,#0x0]
+0002e10c str r6,[sp,#0x8]
+0002e110 str r4,[sp,#0xc]
+0002e114 bl 0x00019d90
+0002e118 b 0x0002e07c
+0002e11c cpy r0,r7
+0002e120 bl 0x0001964c
+FUNCTION rq_sys_ForceStnby @ 0002e130
+
+void rq_sys_ForceStnby(void)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  
+  rq_drc_ErrorTraceFlush();
+  iVar1 = DAT_0002e194;
+  fs_sys_PowerTrace(0xd0,0);
+  iVar2 = rq_prc_GetPrcid();
+  rq_mmd_PowerTrace(iVar2 * 0x100 + 0x5aU & 0xfffe,0);
+  uVar3 = rq_prc_GetPrcid();
+  uVar4 = rq_tsk_GetTid();
+  rq_drc_syslog(iVar1 + 0x2e160 + DAT_0002e198,uVar3,uVar4);
+                    /* WARNING: Could not recover jumptable at 0x00019b4c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR_rq_tsk_Backtrace_000413f4)();
+  return;
+}
+
+
+00019b44 adr r12,0x19b4c
+00019b48 add r12,r12,#0x27000
+00019b4c ldr pc,[r12,#0x8a8]!
+0002e130 stmdb sp!,{r4,r5,r6,lr}
+0002e134 bl 0x0001a120
+0002e138 mov r1,#0x0
+0002e13c mov r0,#0xd0
+0002e140 ldr r4,[0x2e194]
+0002e144 bl 0x0001a15c
+0002e148 bl 0x00019e80
+0002e14c movw r2,#0xfffe
+0002e150 movt r2,#0x0
+0002e154 mov r1,#0x0
+0002e158 add r4,pc,r4
+0002e15c mov r5,r0, lsl #0x8
+0002e160 add r3,r5,#0x5a
+0002e164 and r0,r3,r2
+0002e168 bl 0x0001a288
+0002e16c bl 0x00019e80
+0002e170 cpy r5,r0
+0002e174 bl 0x00019dd8
+0002e178 cpy r1,r5
+0002e17c cpy r2,r0
+0002e180 ldr r0,[0x2e198]
+0002e184 add r0,r4,r0
+0002e188 bl 0x000196e8
+0002e18c ldmia sp!,{r4,r5,r6,lr}
+0002e190 b 0x00019b44
+FUNCTION rq_sys_GetTick10ms @ 0002e220
+
+uint rq_sys_GetTick10ms(void)
+
+{
+  uint uVar1;
+  
+  uVar1 = FUN_0002e19c();
+  return uVar1 / 10;
+}
+
+
+0002e220 stmdb sp!,{r3,lr}
+0002e224 bl 0x0002e19c
+0002e228 movw r3,#0xcccd
+0002e22c movt r3,#0xcccc
+0002e230 umull r2,r0,r3,r0
+0002e234 mov r0,r0, lsr #0x3
+0002e238 ldmia sp!,{r3,pc}
+FUNCTION rq_sys_GetAccOnTime @ 0002e240
+
+int rq_sys_GetAccOnTime(void)
+
+{
+  int iVar1;
+  int iVar2;
+  
+  iVar1 = FUN_0002e19c();
+  iVar2 = *(int *)(DAT_0002e26c + 0x2e258 + DAT_0002e270);
+  return (*(int *)(iVar2 + 0x10) - *(int *)(iVar2 + 0x18)) + iVar1;
+}
+
+
+0002e240 stmdb sp!,{r4,lr}
+0002e244 bl 0x0002e19c
+0002e248 ldr r4,[0x2e26c]
+0002e24c ldr r3,[0x2e270]
+0002e250 add r4,pc,r4
+0002e254 ldr r12,[r4,r3]
+0002e258 ldr r2,[r12,#0x18]
+0002e25c ldr r1,[r12,#0x10]
+0002e260 rsb r3,r2,r1
+0002e264 add r0,r3,r0
+0002e268 ldmia sp!,{r4,pc}
+FUNCTION rq_tsk_notIPAS @ 0003024c
+
+void rq_tsk_notIPAS(void)
+
+{
+  undefined4 *puVar1;
+  
+  puVar1 = (undefined4 *)__tls_get_addr(DAT_00030268 + 0x3025c);
+  *puVar1 = 0xffffffff;
+  return;
+}
+
+
+0003024c ldr r0,[0x30268]
+00030250 stmdb sp!,{r3,lr}
+00030254 add r0,pc,r0
+00030258 bl 0x0001a1ec
+0003025c mvn r3,#0x0
+00030260 str r3,[r0,#0x0]
+00030264 ldmia sp!,{r3,pc}
+FUNCTION rq_tsk_Backtrace @ 00030330
+
+void rq_tsk_Backtrace(void)
+
+{
+  uint uVar1;
+  void *__ptr;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  undefined4 auStack_1b0 [101];
+  
+  iVar5 = DAT_00030424;
+  uVar1 = backtrace(auStack_1b0,100);
+  rq_drc_syslog(iVar5 + 0x30354 + DAT_00030428,uVar1);
+  __ptr = (void *)backtrace_symbols(auStack_1b0,uVar1);
+  if (__ptr == (void *)0x0) {
+    return;
+  }
+  if (1 < (int)uVar1) {
+    iVar5 = iVar5 + 0x30354 + DAT_0003042c;
+    rq_drc_syslog(iVar5,1,auStack_1b0[1],*(undefined4 *)((int)__ptr + 4));
+    if (2 < (int)uVar1) {
+      iVar2 = 2;
+      if ((uVar1 & 1) != 0) {
+        rq_drc_syslog(iVar5,2,auStack_1b0[2],*(undefined4 *)((int)__ptr + 8));
+        iVar2 = 3;
+        if ((int)uVar1 < 4) goto LAB_00030414;
+      }
+      do {
+        iVar4 = iVar2 + 1;
+        iVar3 = iVar2 + 2;
+        rq_drc_syslog(iVar5,iVar2,auStack_1b0[iVar2],*(undefined4 *)((int)__ptr + iVar2 * 4));
+        rq_drc_syslog(iVar5,iVar4,auStack_1b0[iVar4],*(undefined4 *)((int)__ptr + iVar4 * 4));
+        iVar2 = iVar3;
+      } while (iVar3 < (int)uVar1);
+    }
+  }
+LAB_00030414:
+  free(__ptr);
+  return;
+}
+
+
+00030330 stmdb sp!,{r4,r5,r6,r7,r8,r10,lr}
+00030334 sub sp,sp,#0x194
+00030338 mov r1,#0x64
+0003033c ldr r4,[0x30424]
+00030340 cpy r0,sp
+00030344 cpy r8,sp
+00030348 bl 0x00019f88
+0003034c add r4,pc,r4
+00030350 cpy r1,r0
+00030354 cpy r10,r0
+00030358 ldr r0,[0x30428]
+0003035c add r0,r4,r0
+00030360 bl 0x000196e8
+00030364 cpy r0,sp
+00030368 cpy r1,r10
+0003036c bl 0x00019acc
+00030370 subs r6,r0,#0x0
+00030374 beq 0x0003041c
+00030378 cmp r10,#0x1
+0003037c ble 0x00030414
+00030380 ldr r7,[0x3042c]
+00030384 mov r1,#0x1
+00030388 ldr r2,[sp,#0x4]
+0003038c and r5,r10,r1
+00030390 add r7,r4,r7
+00030394 ldr r3,[r6,#0x4]
+00030398 mov r4,#0x2
+0003039c cpy r8,sp
+000303a0 cpy r0,r7
+000303a4 bl 0x000196e8
+000303a8 cmp r10,r4
+000303ac ble 0x00030414
+000303b0 cmp r5,#0x0
+000303b4 beq 0x000303dc
+000303b8 mov r2,#0x8
+000303bc cpy r1,r4
+000303c0 ldr r3,[r6,r2]
+000303c4 cpy r0,r7
+000303c8 ldr r2,[sp,r2]
+000303cc mov r4,#0x3
+000303d0 bl 0x000196e8
+000303d4 cmp r10,r4
+000303d8 ble 0x00030414
+000303dc add r5,r4,#0x1
+000303e0 cpy r1,r4
+000303e4 ldr r2,[r8,r4,lsl #0x2]
+000303e8 cpy r0,r7
+000303ec ldr r3,[r6,r4,lsl #0x2]
+000303f0 add r4,r5,#0x1
+000303f4 bl 0x000196e8
+000303f8 cpy r0,r7
+000303fc cpy r1,r5
+00030400 ldr r2,[r8,r5,lsl #0x2]
+00030404 ldr r3,[r6,r5,lsl #0x2]
+00030408 bl 0x000196e8
+0003040c cmp r10,r4
+00030410 bgt 0x000303dc
+00030414 cpy r0,r6
+00030418 bl 0x00019b98
+0003041c add sp,sp,#0x194
+00030420 ldmia sp!,{r4,r5,r6,r7,r8,r10,pc}
+FUNCTION rq_tsk_Resume @ 000304a0
+
+void rq_tsk_Resume(undefined4 param_1)
+
+{
+  rq_drc_ErrorTraceP(0,0,0x11000300,param_1,0,0,0);
+  return;
+}
+
+
+000304a0 mov r12,#0x0
+000304a4 cpy r3,r0
+000304a8 str lr,[sp,#-0x4]!
+000304ac sub sp,sp,#0x14
+000304b0 cpy r0,r12
+000304b4 movw r2,#0x300
+000304b8 cpy r1,r12
+000304bc movt r2,#0x1100
+000304c0 str r12,[sp,#0x0]
+000304c4 str r12,[sp,#0x4]
+000304c8 str r12,[sp,#0x8]
+000304cc bl 0x0001a36c
+000304d0 add sp,sp,#0x14
+000304d4 ldr pc,[sp],#0x4
+FUNCTION rq_tsk_Suspend @ 000304dc
+
+void rq_tsk_Suspend(undefined4 param_1)
+
+{
+  rq_drc_ErrorTraceP(0,0,0x11000200,param_1,0,0,0);
+  return;
+}
+
+
+000304dc mov r12,#0x0
+000304e0 cpy r3,r0
+000304e4 str lr,[sp,#-0x4]!
+000304e8 sub sp,sp,#0x14
+000304ec cpy r0,r12
+000304f0 movw r2,#0x200
+000304f4 cpy r1,r12
+000304f8 movt r2,#0x1100
+000304fc str r12,[sp,#0x0]
+00030500 str r12,[sp,#0x4]
+00030504 str r12,[sp,#0x8]
+00030508 bl 0x0001a36c
+0003050c add sp,sp,#0x14
+00030510 ldr pc,[sp],#0x4
+FUNCTION rq_tsk_GetPol @ 000305b8
+
+undefined4 rq_tsk_GetPol(int param_1)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  int local_18;
+  sched_param sStack_14;
+  
+  iVar2 = *(int *)(*(int *)(DAT_000306ac + 0x305d0 + DAT_000306b0) + 8) + param_1 * 0x50;
+  if (*(int *)(iVar2 + 0xc) == 1) {
+    iVar2 = pthread_getschedparam(*(pthread_t *)(iVar2 + 0x40),&local_18,&sStack_14);
+    if (iVar2 == 0) {
+      if (local_18 == 0) {
+        uVar1 = 1;
+      }
+      else if (local_18 == 1) {
+        uVar1 = 2;
+      }
+      else {
+        rq_drc_ErrorTraceP(0,0,0x11001530,param_1,local_18,0,0);
+        uVar1 = 0xffffffff;
+      }
+    }
+    else {
+      rq_drc_ErrorTraceP(0,0,0x11001520,iVar2,param_1,0,0);
+      uVar1 = 0xffffffff;
+    }
+  }
+  else {
+    rq_drc_ErrorTraceP(0,0,0x11001510,param_1,0,0,0);
+    rq_sys_ForceStnby();
+    uVar1 = 0xffffffff;
+  }
+  return uVar1;
+}
+
+
+000305b8 stmdb sp!,{r4,r5,r6,lr}
+000305bc ldr r6,[0x306ac]
+000305c0 ldr r1,[0x306b0]
+000305c4 add r2,r0,r0, lsl #0x2
+000305c8 add r3,pc,r6
+000305cc cpy r4,r0
+000305d0 sub sp,sp,#0x18
+000305d4 ldr r0,[r3,r1]
+000305d8 ldr r3,[r0,#0x8]
+000305dc add r3,r3,r2, lsl #0x4
+000305e0 ldr r6,[r3,#0xc]
+000305e4 cmp r6,#0x1
+000305e8 bne 0x0003064c
+000305ec ldr r0,[r3,#0x40]
+000305f0 add r1,sp,#0x10
+000305f4 add r2,sp,#0x14
+000305f8 bl 0x0001a264
+000305fc subs r5,r0,#0x0
+00030600 bne 0x00030680
+00030604 ldr r12,[sp,#0x10]
+00030608 cmp r12,#0x0
+0003060c cpyeq r0,r6
+00030610 beq 0x00030644
+00030614 cmp r12,#0x1
+00030618 moveq r0,#0x2
+0003061c beq 0x00030644
+00030620 cpy r1,r5
+00030624 cpy r3,r4
+00030628 movw r2,#0x1530
+0003062c movt r2,#0x1100
+00030630 str r12,[sp,#0x0]
+00030634 str r5,[sp,#0x4]
+00030638 str r5,[sp,#0x8]
+0003063c bl 0x0001a36c
+00030640 mvn r0,#0x0
+00030644 add sp,sp,#0x18
+00030648 ldmia sp!,{r4,r5,r6,pc}
+0003064c mov r12,#0x0
+00030650 cpy r3,r4
+00030654 cpy r0,r12
+00030658 cpy r1,r12
+0003065c movw r2,#0x1510
+00030660 movt r2,#0x1100
+00030664 str r12,[sp,#0x0]
+00030668 str r12,[sp,#0x4]
+0003066c str r12,[sp,#0x8]
+00030670 bl 0x0001a36c
+00030674 bl 0x00019574
+00030678 mvn r0,#0x0
+0003067c b 0x00030644
+00030680 mov lr,#0x0
+00030684 cpy r3,r5
+00030688 cpy r0,lr
+0003068c movw r2,#0x1520
+00030690 cpy r1,lr
+00030694 movt r2,#0x1100
+00030698 stmia sp,{r4,lr}
+0003069c str lr,[sp,#0x8]
+000306a0 bl 0x0001a36c
+000306a4 mvn r0,#0x0
+000306a8 b 0x00030644
+FUNCTION rq_tsk_ChgPol @ 000306b4
+
+undefined4 rq_tsk_ChgPol(int param_1,int param_2,int param_3)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  int *piVar3;
+  int iVar4;
+  int __policy;
+  int iVar5;
+  int iVar6;
+  int local_30;
+  sched_param local_2c [2];
+  
+  iVar6 = DAT_00030874;
+  iVar5 = DAT_00030870 + 0x306cc;
+  iVar2 = param_1 * 0x50;
+  iVar4 = iVar2 + *(int *)(*(int *)(iVar5 + DAT_00030874) + 8);
+  if (*(int *)(iVar4 + 0xc) == 1) {
+    if (param_2 == 1) {
+      __policy = 0;
+    }
+    else {
+      __policy = 1;
+      if (param_2 != 2) {
+        rq_drc_ErrorTraceP(0,0,0x11001410,param_1,param_2,0,0);
+        return 0xffffffff;
+      }
+    }
+    iVar4 = pthread_getschedparam(*(pthread_t *)(iVar4 + 0x40),&local_30,local_2c);
+    if (iVar4 == 0) {
+      if (__policy != local_30) {
+        iVar6 = *(int *)(iVar5 + iVar6);
+        if (__policy == 0) {
+          local_2c[0].__sched_priority = 0;
+        }
+        else {
+          local_2c[0].__sched_priority = 0x14 - param_3;
+        }
+        iVar4 = pthread_setschedparam
+                          (*(pthread_t *)(*(int *)(iVar6 + 8) + iVar2 + 0x40),__policy,local_2c);
+        if (iVar4 != 0) {
+          rq_drc_ErrorTraceP(0,0,0x11001430,iVar4,param_1,param_2,0);
+          return 0xffffffff;
+        }
+        if ((__policy == 0) &&
+           (iVar2 = setpriority(PRIO_PROCESS,*(id_t *)(*(int *)(iVar6 + 8) + iVar2 + 0x4c),param_3),
+           iVar2 < 0)) {
+          piVar3 = __errno_location();
+          rq_drc_ErrorTraceP(0,0,0x11001440,*piVar3,param_1,param_3,0);
+          return 0;
+        }
+      }
+      uVar1 = 0;
+    }
+    else {
+      rq_drc_ErrorTraceP(0,0,0x11001420,iVar4,param_1,0,0);
+      uVar1 = 0xffffffff;
+    }
+  }
+  else {
+    rq_drc_ErrorTraceP(0,0,0x11001400,param_1,0,0,0);
+    rq_sys_ForceStnby();
+    uVar1 = 0xffffffff;
+  }
+  return uVar1;
+}
+
+
+000306b4 stmdb sp!,{r4,r5,r6,r7,r8,r9,r10,r11,lr}
+000306b8 ldr r7,[0x30870]
+000306bc ldr r10,[0x30874]
+000306c0 add r8,r0,r0, lsl #0x2
+000306c4 add r7,pc,r7
+000306c8 cpy r5,r0
+000306cc mov r8,r8, lsl #0x4
+000306d0 sub sp,sp,#0x1c
+000306d4 ldr r0,[r7,r10]
+000306d8 cpy r6,r1
+000306dc cpy r11,r2
+000306e0 ldr r3,[r0,#0x8]
+000306e4 add r3,r8,r3
+000306e8 ldr r4,[r3,#0xc]
+000306ec cmp r4,#0x1
+000306f0 bne 0x00030810
+000306f4 cmp r1,#0x1
+000306f8 beq 0x00030734
+000306fc cmp r1,#0x2
+00030700 beq 0x00030738
+00030704 mov lr,#0x0
+00030708 cpy r3,r5
+0003070c cpy r0,lr
+00030710 movw r2,#0x1410
+00030714 cpy r1,lr
+00030718 movt r2,#0x1100
+0003071c stmia sp,{r6,lr}
+00030720 str lr,[sp,#0x8]
+00030724 bl 0x0001a36c
+00030728 mvn r0,#0x0
+0003072c add sp,sp,#0x1c
+00030730 ldmia sp!,{r4,r5,r6,r7,r8,r9,r10,r11,pc}
+00030734 mov r4,#0x0
+00030738 add r9,sp,#0x14
+0003073c ldr r0,[r3,#0x40]
+00030740 add r1,sp,#0x10
+00030744 cpy r2,r9
+00030748 bl 0x0001a264
+0003074c cmp r0,#0x0
+00030750 bne 0x00030844
+00030754 ldr r3,[sp,#0x10]
+00030758 cmp r4,r3
+0003075c beq 0x0003079c
+00030760 ldr r7,[r7,r10]
+00030764 cmp r4,#0x0
+00030768 rsbne r3,r11,#0x14
+0003076c cpy r2,r9
+00030770 cpyeq r3,r4
+00030774 str r3,[sp,#0x14]
+00030778 ldr r0,[r7,#0x8]
+0003077c cpy r1,r4
+00030780 add r3,r0,r8
+00030784 ldr r0,[r3,#0x40]
+00030788 bl 0x00019c94
+0003078c subs r3,r0,#0x0
+00030790 bne 0x000307ec
+00030794 cmp r4,#0x0
+00030798 beq 0x000307a4
+0003079c mov r0,#0x0
+000307a0 b 0x0003072c
+000307a4 ldr r1,[r7,#0x8]
+000307a8 cpy r2,r11
+000307ac add r8,r1,r8
+000307b0 ldr r1,[r8,#0x4c]
+000307b4 bl 0x00019c04
+000307b8 cmp r0,#0x0
+000307bc bge 0x0003079c
+000307c0 bl 0x0001a7a4
+000307c4 cpy r1,r4
+000307c8 movw r2,#0x1440
+000307cc movt r2,#0x1100
+000307d0 ldr r3,[r0,#0x0]
+000307d4 cpy r0,r4
+000307d8 stmia sp,{r5,r11}
+000307dc str r4,[sp,#0x8]
+000307e0 bl 0x0001a36c
+000307e4 cpy r0,r4
+000307e8 b 0x0003072c
+000307ec mov lr,#0x0
+000307f0 movw r2,#0x1430
+000307f4 cpy r0,lr
+000307f8 movt r2,#0x1100
+000307fc cpy r1,lr
+00030800 stmia sp,{r5,r6,lr}
+00030804 bl 0x0001a36c
+00030808 mvn r0,#0x0
+0003080c b 0x0003072c
+00030810 mov r12,#0x0
+00030814 cpy r3,r5
+00030818 cpy r0,r12
+0003081c cpy r1,r12
+00030820 movw r2,#0x1400
+00030824 movt r2,#0x1100
+00030828 str r12,[sp,#0x0]
+0003082c str r12,[sp,#0x4]
+00030830 str r12,[sp,#0x8]
+00030834 bl 0x0001a36c
+00030838 bl 0x00019574
+0003083c mvn r0,#0x0
+00030840 b 0x0003072c
+00030844 mov r12,#0x0
+00030848 cpy r3,r0
+0003084c movw r2,#0x1420
+00030850 cpy r0,r12
+00030854 movt r2,#0x1100
+00030858 cpy r1,r12
+0003085c stmia sp,{r5,r12}
+00030860 str r12,[sp,#0x8]
+00030864 bl 0x0001a36c
+00030868 mvn r0,#0x0
+0003086c b 0x0003072c
+FUNCTION rq_tsk_Ref @ 00030878
+
+void rq_tsk_Ref(int param_1,undefined4 *param_2)
+
+{
+  int *piVar1;
+  int iVar2;
+  int iStack_20;
+  sched_param local_1c [2];
+  
+  iVar2 = *(int *)(*(int *)(DAT_0003094c + 0x30890 + DAT_00030950) + 8) + param_1 * 0x50;
+  if (*(int *)(iVar2 + 0xc) == 1) {
+    *param_2 = 6;
+    param_2[1] = 9;
+    iVar2 = pthread_getschedparam(*(pthread_t *)(iVar2 + 0x40),&iStack_20,local_1c);
+    if (iVar2 < 0) {
+      piVar1 = __errno_location();
+      rq_drc_ErrorTraceP(0,0,0x11000c00,iVar2,param_1,*piVar1,0);
+      param_2[2] = 1;
+    }
+    else {
+      param_2[2] = local_1c[0].__sched_priority;
+    }
+  }
+  else {
+    rq_drc_ErrorTraceP(0,0,0x11000c00,param_1,0,0,0);
+    rq_sys_ForceStnby();
+  }
+  return;
+}
+
+
+00030878 stmdb sp!,{r4,r5,r6,r7,lr}
+0003087c ldr r4,[0x3094c]
+00030880 add r2,r0,r0, lsl #0x2
+00030884 cpy r6,r0
+00030888 add r3,pc,r4
+0003088c cpy r4,r1
+00030890 ldr r1,[0x30950]
+00030894 sub sp,sp,#0x1c
+00030898 ldr r0,[r3,r1]
+0003089c ldr r3,[r0,#0x8]
+000308a0 add r2,r3,r2, lsl #0x4
+000308a4 ldr r5,[r2,#0xc]
+000308a8 cmp r5,#0x1
+000308ac beq 0x000308e4
+000308b0 mov r12,#0x0
+000308b4 cpy r3,r6
+000308b8 cpy r0,r12
+000308bc movw r2,#0xc00
+000308c0 cpy r1,r12
+000308c4 movt r2,#0x1100
+000308c8 str r12,[sp,#0x0]
+000308cc str r12,[sp,#0x4]
+000308d0 str r12,[sp,#0x8]
+000308d4 bl 0x0001a36c
+000308d8 bl 0x00019574
+000308dc add sp,sp,#0x1c
+000308e0 ldmia sp!,{r4,r5,r6,r7,pc}
+000308e4 mov lr,#0x6
+000308e8 mov r7,#0x9
+000308ec str lr,[r4,#0x0]
+000308f0 add r1,sp,#0x10
+000308f4 str r7,[r4,#0x4]
+000308f8 ldr r0,[r2,#0x40]
+000308fc add r2,sp,#0x14
+00030900 bl 0x0001a264
+00030904 subs r7,r0,#0x0
+00030908 ldrge r2,[sp,#0x14]
+0003090c strge r2,[r4,#0x8]
+00030910 bge 0x000308dc
+00030914 bl 0x0001a7a4
+00030918 str r6,[sp,#0x0]
+0003091c mov r12,#0x0
+00030920 cpy r3,r7
+00030924 movw r2,#0xc00
+00030928 cpy r1,r12
+0003092c movt r2,#0x1100
+00030930 ldr lr,[r0,#0x0]
+00030934 cpy r0,r12
+00030938 str r12,[sp,#0x8]
+0003093c str lr,[sp,#0x4]
+00030940 bl 0x0001a36c
+00030944 str r5,[r4,#0x8]
+00030948 b 0x000308dc
+FUNCTION rq_tsk_ChgPri @ 00030954
+
+void rq_tsk_ChgPri(int param_1,int param_2)
+
+{
+  int iVar1;
+  int *piVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  int local_28;
+  sched_param local_24;
+  
+  iVar1 = DAT_00030b20;
+  iVar5 = DAT_00030b1c + 0x3096c;
+  iVar3 = param_1 * 0x50;
+  iVar4 = iVar3 + *(int *)(*(int *)(iVar5 + DAT_00030b20) + 8);
+  if (*(int *)(iVar4 + 0xc) == 1) {
+    iVar4 = pthread_getschedparam(*(pthread_t *)(iVar4 + 0x40),&local_28,&local_24);
+    if (iVar4 < 0) {
+      piVar2 = __errno_location();
+      rq_drc_ErrorTraceP(0,0,0x11000910,iVar4,param_1,*piVar2,0);
+    }
+    else if (local_28 == 1) {
+      if (param_2 == 0) {
+        param_2 = *(int *)(**(int **)(iVar5 + DAT_00030b24) + param_1 * 0x30 + 0xc);
+      }
+      local_24.__sched_priority = 0x14 - param_2;
+      iVar3 = pthread_setschedparam
+                        (*(pthread_t *)(*(int *)(*(int *)(iVar5 + iVar1) + 8) + iVar3 + 0x40),1,
+                         &local_24);
+      if (iVar3 != 0) {
+        rq_drc_ErrorTraceP(0,0,0x11000920,iVar3,param_1,0,0);
+        rq_sys_ForceStnby();
+      }
+    }
+    else {
+      if (param_2 == 0) {
+        param_2 = *(int *)(**(int **)(iVar5 + DAT_00030b24) + param_1 * 0x30 + 0xc);
+      }
+      iVar4 = *(int *)(iVar5 + iVar1);
+      iVar1 = setpriority(PRIO_PROCESS,*(id_t *)(*(int *)(iVar4 + 8) + iVar3 + 0x4c),param_2);
+      if (iVar1 < 0) {
+        piVar2 = __errno_location();
+        rq_drc_ErrorTraceP(0,0,0x11000930,param_1,
+                           *(undefined4 *)(*(int *)(iVar4 + 8) + iVar3 + 0x4c),param_2,*piVar2);
+      }
+    }
+  }
+  else {
+    rq_drc_ErrorTraceP(0,0,0x11000900,param_1,0,0,0);
+    rq_sys_ForceStnby();
+  }
+  return;
+}
+
+
+00030954 stmdb sp!,{r4,r5,r6,r7,r8,r9,r10,lr}
+00030958 ldr r7,[0x30b1c]
+0003095c ldr r8,[0x30b20]
+00030960 add r5,r0,r0, lsl #0x2
+00030964 add r7,pc,r7
+00030968 cpy r4,r0
+0003096c mov r5,r5, lsl #0x4
+00030970 sub sp,sp,#0x18
+00030974 ldr r0,[r7,r8]
+00030978 cpy r6,r1
+0003097c ldr r3,[r0,#0x8]
+00030980 add r3,r5,r3
+00030984 ldr r2,[r3,#0xc]
+00030988 cmp r2,#0x1
+0003098c beq 0x000309c4
+00030990 mov r12,#0x0
+00030994 cpy r3,r4
+00030998 cpy r0,r12
+0003099c movw r2,#0x900
+000309a0 cpy r1,r12
+000309a4 movt r2,#0x1100
+000309a8 str r12,[sp,#0x0]
+000309ac str r12,[sp,#0x4]
+000309b0 str r12,[sp,#0x8]
+000309b4 bl 0x0001a36c
+000309b8 bl 0x00019574
+000309bc add sp,sp,#0x18
+000309c0 ldmia sp!,{r4,r5,r6,r7,r8,r9,r10,pc}
+000309c4 add r10,sp,#0x14
+000309c8 ldr r0,[r3,#0x40]
+000309cc add r1,sp,#0x10
+000309d0 cpy r2,r10
+000309d4 bl 0x0001a264
+000309d8 subs r9,r0,#0x0
+000309dc blt 0x00030ae8
+000309e0 ldr r1,[sp,#0x10]
+000309e4 cmp r1,#0x1
+000309e8 beq 0x00030a68
+000309ec cmp r6,#0x0
+000309f0 bne 0x00030a0c
+000309f4 ldr r3,[0x30b24]
+000309f8 add r1,r4,r4, lsl #0x1
+000309fc ldr r2,[r7,r3]
+00030a00 ldr r6,[r2,#0x0]
+00030a04 add r12,r6,r1, lsl #0x4
+00030a08 ldr r6,[r12,#0xc]
+00030a0c ldr r7,[r7,r8]
+00030a10 mov r0,#0x0
+00030a14 cpy r2,r6
+00030a18 ldr r12,[r7,#0x8]
+00030a1c add lr,r12,r5
+00030a20 ldr r1,[lr,#0x4c]
+00030a24 bl 0x00019c04
+00030a28 cmp r0,#0x0
+00030a2c bge 0x000309bc
+00030a30 bl 0x0001a7a4
+00030a34 ldr r12,[r7,#0x8]
+00030a38 cpy r3,r4
+00030a3c movw r2,#0x930
+00030a40 add r5,r12,r5
+00030a44 movt r2,#0x1100
+00030a48 ldr r1,[r5,#0x4c]
+00030a4c stmia sp,{r1,r6}
+00030a50 ldr r12,[r0,#0x0]
+00030a54 mov r0,#0x0
+00030a58 cpy r1,r0
+00030a5c str r12,[sp,#0x8]
+00030a60 bl 0x0001a36c
+00030a64 b 0x000309bc
+00030a68 cmp r6,#0x0
+00030a6c rsbne r6,r6,#0x14
+00030a70 strne r6,[sp,#0x14]
+00030a74 bne 0x00030a98
+00030a78 ldr r2,[0x30b24]
+00030a7c add r12,r4,r4, lsl #0x1
+00030a80 ldr r1,[r7,r2]
+00030a84 ldr lr,[r1,#0x0]
+00030a88 add r0,lr,r12, lsl #0x4
+00030a8c ldr r3,[r0,#0xc]
+00030a90 rsb r2,r3,#0x14
+00030a94 str r2,[sp,#0x14]
+00030a98 ldr r0,[r7,r8]
+00030a9c cpy r2,r10
+00030aa0 mov r1,#0x1
+00030aa4 ldr r3,[r0,#0x8]
+00030aa8 add r5,r3,r5
+00030aac ldr r0,[r5,#0x40]
+00030ab0 bl 0x00019c94
+00030ab4 subs r3,r0,#0x0
+00030ab8 beq 0x000309bc
+00030abc mov lr,#0x0
+00030ac0 movw r2,#0x920
+00030ac4 cpy r0,lr
+00030ac8 movt r2,#0x1100
+00030acc cpy r1,lr
+00030ad0 str lr,[sp,#0x4]
+00030ad4 str lr,[sp,#0x8]
+00030ad8 str r4,[sp,#0x0]
+00030adc bl 0x0001a36c
+00030ae0 bl 0x00019574
+00030ae4 b 0x000309bc
+00030ae8 bl 0x0001a7a4
+00030aec str r4,[sp,#0x0]
+00030af0 mov r12,#0x0
+00030af4 cpy r3,r9
+00030af8 movw r2,#0x910
+00030afc cpy r1,r12
+00030b00 movt r2,#0x1100
+00030b04 ldr lr,[r0,#0x0]
+00030b08 cpy r0,r12
+00030b0c str r12,[sp,#0x8]
+00030b10 str lr,[sp,#0x4]
+00030b14 bl 0x0001a36c
+00030b18 b 0x000309bc
+FUNCTION rq_tsk_Delete @ 00030b28
+
+void rq_tsk_Delete(int param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = *(int *)(*(int *)(DAT_00030b60 + 0x30b40 + DAT_00030b64) + 8);
+  *(undefined1 *)(iVar1 + param_1 * 0x50) = 0;
+  memset((void *)(iVar1 + param_1 * 0x50),0,0x50);
+  return;
+}
+
+
+00030b28 ldr r1,[0x30b60]
+00030b2c add r12,r0,r0, lsl #0x2
+00030b30 ldr r0,[0x30b64]
+00030b34 mov r2,#0x50
+00030b38 add r3,pc,r1
+00030b3c str r4,[sp,#-0x4]!
+00030b40 ldr r3,[r3,r0]
+00030b44 mov r4,#0x0
+00030b48 cpy r1,r4
+00030b4c ldr r3,[r3,#0x8]
+00030b50 add r0,r3,r12, lsl #0x4
+00030b54 strb r4,[r3,r12,lsl #0x4]
+00030b58 ldr r4,[sp],#0x4
+00030b5c b 0x00019964
+FUNCTION rq_tsk_BlockEnd @ 00030b68
+
+void rq_tsk_BlockEnd(int param_1)
+
+{
+  undefined4 local_18;
+  undefined4 local_14;
+  undefined4 uStack_10;
+  undefined4 local_c;
+  
+  if ((param_1 < 1) || (**(int **)(DAT_00030bec + 0x30b7c + DAT_00030bf0) <= param_1)) {
+    rq_drc_ErrorTraceP(0,0,0x11001300,0,0,0,0);
+  }
+  else {
+    local_18 = 0;
+    uStack_10 = 0;
+    local_c = 0;
+    local_14 = 0;
+    rq_msg_Send(param_1,&local_18,0x10);
+  }
+  return;
+}
+
+
+00030b68 subs r2,r0,#0x0
+00030b6c ldr r3,[0x30bec]
+00030b70 str lr,[sp,#-0x4]!
+00030b74 add r3,pc,r3
+00030b78 sub sp,sp,#0x24
+00030b7c ble 0x00030b94
+00030b80 ldr lr,[0x30bf0]
+00030b84 ldr r12,[r3,lr]
+00030b88 ldr r1,[r12,#0x0]
+00030b8c cmp r2,r1
+00030b90 blt 0x00030bc4
+00030b94 mov r12,#0x0
+00030b98 movw r2,#0x1300
+00030b9c cpy r0,r12
+00030ba0 movt r2,#0x1100
+00030ba4 cpy r1,r12
+00030ba8 cpy r3,r12
+00030bac str r12,[sp,#0x0]
+00030bb0 str r12,[sp,#0x4]
+00030bb4 str r12,[sp,#0x8]
+00030bb8 bl 0x0001a36c
+00030bbc add sp,sp,#0x24
+00030bc0 ldr pc,[sp],#0x4
+00030bc4 add r1,sp,#0x10
+00030bc8 mov r3,#0x0
+00030bcc add lr,r1,#0x8
+00030bd0 mov r2,#0x10
+00030bd4 str r3,[sp,#0x10]
+00030bd8 str r3,[lr],#0x4
+00030bdc str r3,[lr,#0x0]
+00030be0 str r3,[sp,#0x14]
+00030be4 bl 0x00019d90
+00030be8 b 0x00030bbc
+FUNCTION rq_tsk_GetTid @ 00030bf4
+
+int rq_tsk_GetTid(void)
+
+{
+  pthread_t *ppVar1;
+  pthread_t pVar2;
+  int *piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  pVar2 = pthread_self();
+  iVar8 = DAT_00030cf4 + 0x30c08;
+  piVar3 = (int *)__tls_get_addr(DAT_00030cf8 + 0x30c14);
+  iVar6 = *piVar3;
+  if ((-2 < iVar6) &&
+     ((iVar6 == -1 ||
+      ((iVar6 != 0 &&
+       (*(pthread_t *)(*(int *)(*(int *)(iVar8 + DAT_00030cfc) + 8) + iVar6 * 0x50 + 0x40) == pVar2)
+       ))))) {
+    return iVar6;
+  }
+  iVar6 = *(int *)(iVar8 + DAT_00030cfc);
+  uVar4 = *(uint *)(iVar6 + 4);
+  if ((int)uVar4 < 1) {
+    return -1;
+  }
+  iVar6 = *(int *)(iVar6 + 8);
+  if (*(pthread_t *)(iVar6 + 0x40) == pVar2) {
+    iVar8 = 0;
+  }
+  else {
+    iVar5 = iVar6;
+    iVar7 = 0;
+    if ((uVar4 & 1) == 0) {
+      iVar8 = 1;
+      iVar5 = iVar6 + 0x50;
+      iVar7 = iVar8;
+      if (*(pthread_t *)(iVar6 + 0x90) == pVar2) goto LAB_00030c98;
+    }
+    do {
+      iVar8 = iVar7 + 1;
+      if ((int)uVar4 <= iVar8) {
+        return -1;
+      }
+    } while ((*(pthread_t *)(iVar5 + 0x90) != pVar2) &&
+            (ppVar1 = (pthread_t *)(iVar5 + 0xe0), iVar8 = iVar7 + 2, iVar5 = iVar5 + 0xa0,
+            iVar7 = iVar8, *ppVar1 != pVar2));
+  }
+LAB_00030c98:
+  piVar3 = (int *)__tls_get_addr(DAT_00030d00 + 0x30ca4);
+  *piVar3 = iVar8;
+  return iVar8;
+}
+
+
+00030bf4 stmdb sp!,{r4,r5,r6,lr}
+00030bf8 bl 0x0001a7bc
+00030bfc ldr r6,[0x30cf4]
+00030c00 add r6,pc,r6
+00030c04 cpy r5,r0
+00030c08 ldr r0,[0x30cf8]
+00030c0c add r0,pc,r0
+00030c10 bl 0x0001a1ec
+00030c14 ldr r4,[r0,#0x0]
+00030c18 cmn r4,#0x1
+00030c1c blt 0x00030c54
+00030c20 beq 0x00030c4c
+00030c24 cmp r4,#0x0
+00030c28 beq 0x00030c54
+00030c2c ldr r3,[0x30cfc]
+00030c30 add r0,r4,r4, lsl #0x2
+00030c34 ldr r2,[r6,r3]
+00030c38 ldr lr,[r2,#0x8]
+00030c3c add r12,lr,r0, lsl #0x4
+00030c40 ldr r1,[r12,#0x40]
+00030c44 cmp r1,r5
+00030c48 bne 0x00030c58
+00030c4c cpy r0,r4
+00030c50 ldmia sp!,{r4,r5,r6,pc}
+00030c54 ldr r3,[0x30cfc]
+00030c58 ldr r3,[r6,r3]
+00030c5c ldr r0,[r3,#0x4]
+00030c60 cmp r0,#0x0
+00030c64 ble 0x00030ce0
+00030c68 ldr r3,[r3,#0x8]
+00030c6c ldr r2,[r3,#0x40]
+00030c70 cmp r2,r5
+00030c74 beq 0x00030cec
+00030c78 tst r0,#0x1
+00030c7c mov r4,#0x0
+00030c80 bne 0x00030cd0
+00030c84 ldr r12,[r3,#0x90]
+00030c88 mov r4,#0x1
+00030c8c add r3,r3,#0x50
+00030c90 cmp r12,r5
+00030c94 bne 0x00030cd0
+00030c98 ldr r3,[0x30d00]
+00030c9c add r0,pc,r3
+00030ca0 bl 0x0001a1ec
+00030ca4 str r4,[r0,#0x0]
+00030ca8 cpy r0,r4
+00030cac ldmia sp!,{r4,r5,r6,pc}
+00030cb0 ldr r1,[r3,#0x90]
+00030cb4 add r3,r3,#0xa0
+00030cb8 cmp r1,r5
+00030cbc beq 0x00030c98
+00030cc0 ldr lr,[r2,#0x90]
+00030cc4 add r4,r4,#0x1
+00030cc8 cmp lr,r5
+00030ccc beq 0x00030c98
+00030cd0 add r4,r4,#0x1
+00030cd4 add r2,r3,#0x50
+00030cd8 cmp r4,r0
+00030cdc blt 0x00030cb0
+00030ce0 mvn r4,#0x0
+00030ce4 cpy r0,r4
+00030ce8 ldmia sp!,{r4,r5,r6,pc}
+00030cec mov r4,#0x0
+00030cf0 b 0x00030c98
+FUNCTION rq_tsk_BlockBegin @ 00030d04
+
+void rq_tsk_BlockBegin(undefined4 param_1,int param_2,undefined4 param_3)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  undefined1 auStack_30 [20];
+  
+  iVar2 = rq_tsk_GetTid();
+  iVar5 = DAT_00030e68;
+  iVar4 = DAT_00030e64 + 0x30d28;
+  if (iVar2 == -1) {
+    rq_drc_ErrorTraceP(0,0,0x11001200,0,0,0,0);
+  }
+  else {
+    rq_msg_Send(param_1,param_2,param_3);
+    iVar1 = iVar2 * 0x50;
+    iVar3 = *(int *)(*(int *)(*(int *)(iVar4 + iVar5) + 8) + iVar1 + 8);
+    if ((iVar3 < 1) || (**(int **)(iVar4 + DAT_00030e6c) <= iVar3)) {
+      rq_drc_ErrorTraceP(0,0,0x11001210,iVar2,0,0,0);
+      *(undefined4 *)(*(int *)(*(int *)(iVar4 + iVar5) + 8) + iVar1 + 8) = 0;
+    }
+    else {
+      iVar3 = rq_msg_ReceiveT(iVar3,auStack_30,60000);
+      if (iVar3 != 0) {
+        rq_drc_ErrorTraceP(0xffffffff,0,0x11001220,iVar2,param_1,0,0);
+        rq_sys_ForceStnby();
+        if (*(int *)(param_2 + 0xc) != 0) {
+          rq_mem_Free(1);
+        }
+      }
+      iVar5 = *(int *)(iVar4 + iVar5);
+      rq_msg_Delete(*(undefined4 *)(*(int *)(iVar5 + 8) + iVar1 + 8));
+      *(undefined4 *)(*(int *)(iVar5 + 8) + iVar1 + 8) = 0;
+    }
+  }
+  return;
+}
+
+
+00030d04 stmdb sp!,{r4,r5,r6,r7,r8,r10,lr}
+00030d08 sub sp,sp,#0x24
+00030d0c cpy r5,r0
+00030d10 cpy r10,r1
+00030d14 cpy r6,r2
+00030d18 bl 0x00019dd8
+00030d1c ldr r4,[0x30e64]
+00030d20 add r4,pc,r4
+00030d24 cmn r0,#0x1
+00030d28 cpy r8,r0
+00030d2c beq 0x00030df4
+00030d30 ldr r7,[0x30e68]
+00030d34 cpy r2,r6
+00030d38 cpy r0,r5
+00030d3c cpy r1,r10
+00030d40 bl 0x00019d90
+00030d44 add r6,r8,r8, lsl #0x2
+00030d48 ldr r1,[r4,r7]
+00030d4c mov r6,r6, lsl #0x4
+00030d50 ldr r0,[r1,#0x8]
+00030d54 add r3,r0,r6
+00030d58 ldr r0,[r3,#0x8]
+00030d5c cmp r0,#0x0
+00030d60 ble 0x00030d78
+00030d64 ldr r12,[0x30e6c]
+00030d68 ldr lr,[r4,r12]
+00030d6c ldr r2,[lr,#0x0]
+00030d70 cmp r0,r2
+00030d74 blt 0x00030db8
+00030d78 mov r5,#0x0
+00030d7c cpy r3,r8
+00030d80 cpy r0,r5
+00030d84 cpy r1,r5
+00030d88 movw r2,#0x1210
+00030d8c movt r2,#0x1100
+00030d90 str r5,[sp,#0x0]
+00030d94 str r5,[sp,#0x4]
+00030d98 str r5,[sp,#0x8]
+00030d9c bl 0x0001a36c
+00030da0 ldr r0,[r4,r7]
+00030da4 ldr r3,[r0,#0x8]
+00030da8 add r6,r3,r6
+00030dac str r5,[r6,#0x8]
+00030db0 add sp,sp,#0x24
+00030db4 ldmia sp!,{r4,r5,r6,r7,r8,r10,pc}
+00030db8 add r1,sp,#0x10
+00030dbc movw r2,#0xea60
+00030dc0 bl 0x00019814
+00030dc4 cmp r0,#0x0
+00030dc8 bne 0x00030e20
+00030dcc ldr r4,[r4,r7]
+00030dd0 ldr r3,[r4,#0x8]
+00030dd4 add r12,r3,r6
+00030dd8 ldr r0,[r12,#0x8]
+00030ddc bl 0x00019ef8
+00030de0 ldr r2,[r4,#0x8]
+00030de4 mov r1,#0x0
+00030de8 add r6,r2,r6
+00030dec str r1,[r6,#0x8]
+00030df0 b 0x00030db0
+00030df4 mov r12,#0x0
+00030df8 movw r2,#0x1200
+00030dfc cpy r0,r12
+00030e00 movt r2,#0x1100
+00030e04 cpy r1,r12
+00030e08 cpy r3,r12
+00030e0c str r12,[sp,#0x0]
+00030e10 str r12,[sp,#0x4]
+00030e14 str r12,[sp,#0x8]
+00030e18 bl 0x0001a36c
+00030e1c b 0x00030db0
+00030e20 mov lr,#0x0
+00030e24 cpy r3,r8
+00030e28 cpy r1,lr
+00030e2c mvn r0,#0x0
+00030e30 movw r2,#0x1220
+00030e34 movt r2,#0x1100
+00030e38 str lr,[sp,#0x4]
+00030e3c str lr,[sp,#0x8]
+00030e40 str r5,[sp,#0x0]
+00030e44 bl 0x0001a36c
+00030e48 bl 0x00019574
+00030e4c ldr r1,[r10,#0xc]
+00030e50 cmp r1,#0x0
+00030e54 beq 0x00030dcc
+00030e58 mov r0,#0x1
+00030e5c bl 0x00019778
+00030e60 b 0x00030dcc
+FUNCTION rq_tsk_GetBlockObj @ 00030e70
+
+undefined4 rq_tsk_GetBlockObj(void)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  int iVar3;
+  int iVar4;
+  
+  iVar1 = rq_tsk_GetTid();
+  if (iVar1 == -1) {
+    uVar2 = 0;
+    rq_drc_ErrorTraceP(0,0,0x11001100,0,0,0,0);
+  }
+  else {
+    iVar3 = *(int *)(DAT_00030efc + 0x30e88 + DAT_00030f00);
+    iVar4 = *(int *)(iVar3 + 8);
+    uVar2 = rq_msg_Create(0xffffffff,1,0x10);
+    iVar3 = *(int *)(iVar3 + 8);
+    *(undefined4 *)(iVar1 * 0x50 + iVar4 + 8) = uVar2;
+    uVar2 = *(undefined4 *)(iVar3 + iVar1 * 0x50 + 8);
+  }
+  return uVar2;
+}
+
+
+00030e70 stmdb sp!,{r4,r5,r6,lr}
+00030e74 sub sp,sp,#0x10
+00030e78 bl 0x00019dd8
+00030e7c ldr r4,[0x30efc]
+00030e80 add r4,pc,r4
+00030e84 cmn r0,#0x1
+00030e88 beq 0x00030ecc
+00030e8c ldr r12,[0x30f00]
+00030e90 add r2,r0,r0, lsl #0x2
+00030e94 mov r1,#0x1
+00030e98 mvn r0,#0x0
+00030e9c mov r5,r2, lsl #0x4
+00030ea0 mov r2,#0x10
+00030ea4 ldr r4,[r4,r12]
+00030ea8 ldr r6,[r4,#0x8]
+00030eac bl 0x0001a360
+00030eb0 ldr r3,[r4,#0x8]
+00030eb4 add r6,r5,r6
+00030eb8 add r5,r3,r5
+00030ebc str r0,[r6,#0x8]
+00030ec0 ldr r0,[r5,#0x8]
+00030ec4 add sp,sp,#0x10
+00030ec8 ldmia sp!,{r4,r5,r6,pc}
+00030ecc mov r4,#0x0
+00030ed0 movw r2,#0x1100
+00030ed4 cpy r0,r4
+00030ed8 movt r2,#0x1100
+00030edc cpy r1,r4
+00030ee0 cpy r3,r4
+00030ee4 str r4,[sp,#0x0]
+00030ee8 str r4,[sp,#0x4]
+00030eec str r4,[sp,#0x8]
+00030ef0 bl 0x0001a36c
+00030ef4 cpy r0,r4
+00030ef8 b 0x00030ec4
+FUNCTION rq_tsk_WaitInit @ 00030f04
+
+void rq_tsk_WaitInit(undefined4 param_1)
+
+{
+  int *piVar1;
+  undefined4 local_18;
+  undefined4 local_14;
+  undefined4 local_10;
+  undefined4 local_c;
+  
+  piVar1 = *(int **)(DAT_00030f64 + 0x30f18 + DAT_00030f68);
+  local_18 = 0;
+  *piVar1 = *piVar1 + 1;
+  local_14 = 5;
+  local_10 = rq_tsk_GetTid();
+  local_c = param_1;
+  rq_tsk_GetBlockObj();
+  rq_tsk_BlockBegin(1,&local_18,0x10);
+  return;
+}
+
+
+00030f04 ldr r2,[0x30f64]
+00030f08 mov r12,#0x5
+00030f0c ldr r1,[0x30f68]
+00030f10 add r3,pc,r2
+00030f14 stmdb sp!,{r4,lr}
+00030f18 ldr r3,[r3,r1]
+00030f1c cpy r4,r0
+00030f20 sub sp,sp,#0x10
+00030f24 mov lr,#0x0
+00030f28 ldr r0,[r3,#0x0]
+00030f2c str lr,[sp,#0x0]
+00030f30 add r2,r0,#0x1
+00030f34 str r2,[r3,#0x0]
+00030f38 str r12,[sp,#0x4]
+00030f3c bl 0x00019dd8
+00030f40 str r4,[sp,#0xc]
+00030f44 str r0,[sp,#0x8]
+00030f48 bl 0x000196dc
+00030f4c mov r0,#0x1
+00030f50 cpy r1,sp
+00030f54 mov r2,#0x10
+00030f58 bl 0x00019d3c
+00030f5c add sp,sp,#0x10
+00030f60 ldmia sp!,{r4,pc}
+FUNCTION rq_tsk_Reboot @ 00030f6c
+
+void rq_tsk_Reboot(void)
+
+{
+  undefined4 local_20;
+  undefined4 local_1c;
+  int local_18;
+  undefined4 local_14;
+  
+  local_18 = rq_tsk_GetTid();
+  *(undefined1 *)(*(int *)(*(int *)(DAT_00030fcc + 0x30f8c + DAT_00030fd0) + 8) + local_18 * 0x50) =
+       1;
+  local_1c = 4;
+  local_14 = 0;
+  local_20 = 0;
+  rq_msg_Send(1,&local_20,0x10);
+  return;
+}
+
+
+00030f6c stmdb sp!,{r4,r5,r6,lr}
+00030f70 sub sp,sp,#0x10
+00030f74 bl 0x00019dd8
+00030f78 ldr r4,[0x30fcc]
+00030f7c ldr r2,[0x30fd0]
+00030f80 mov lr,#0x1
+00030f84 add r4,pc,r4
+00030f88 cpy r1,sp
+00030f8c mov r12,#0x0
+00030f90 ldr r6,[r4,r2]
+00030f94 mov r2,#0x10
+00030f98 ldr r4,[r6,#0x8]
+00030f9c add r5,r0,r0, lsl #0x2
+00030fa0 cpy r3,r0
+00030fa4 cpy r0,lr
+00030fa8 strb lr,[r4,r5,lsl #0x4]
+00030fac mov lr,#0x4
+00030fb0 str r3,[sp,#0x8]
+00030fb4 str lr,[sp,#0x4]
+00030fb8 str r12,[sp,#0xc]
+00030fbc str r12,[sp,#0x0]
+00030fc0 bl 0x00019d90
+00030fc4 add sp,sp,#0x10
+00030fc8 ldmia sp!,{r4,r5,r6,pc}
+FUNCTION rq_tsk_GetPri @ 00030fd4
+
+int rq_tsk_GetPri(int param_1)
+
+{
+  int *piVar1;
+  id_t __who;
+  int iVar2;
+  int iVar3;
+  int local_20;
+  sched_param local_1c [2];
+  
+  iVar3 = *(int *)(DAT_00031110 + 0x30ff0 + DAT_00031114);
+  iVar2 = param_1 * 0x50 + *(int *)(iVar3 + 8);
+  if (*(int *)(iVar2 + 0xc) == 1) {
+    iVar2 = pthread_getschedparam(*(pthread_t *)(iVar2 + 0x40),&local_20,local_1c);
+    if (iVar2 < 0) {
+      piVar1 = __errno_location();
+      iVar3 = 0;
+      rq_drc_ErrorTraceP(0,0,0x11000a01,iVar2,param_1,*piVar1,0);
+    }
+    else if (local_20 == 1) {
+      iVar3 = 0x14 - local_1c[0].__sched_priority;
+    }
+    else {
+      piVar1 = __errno_location();
+      __who = *(id_t *)(*(int *)(iVar3 + 8) + param_1 * 0x50 + 0x4c);
+      *piVar1 = 0;
+      iVar3 = getpriority(PRIO_PROCESS,__who);
+      if ((iVar3 < 0) && (*piVar1 != 0)) {
+        rq_drc_ErrorTraceP(0,0,0x11000a02,param_1,*piVar1,0,0);
+      }
+    }
+  }
+  else {
+    iVar3 = 0;
+    rq_drc_ErrorTraceP(0,0,0x11000a00,param_1,0,0,0);
+    rq_sys_ForceStnby();
+  }
+  return iVar3;
+}
+
+
+00030fd4 ldr r1,[0x31110]
+00030fd8 stmdb sp!,{r4,r5,r6,r7,lr}
+00030fdc add r4,r0,r0, lsl #0x2
+00030fe0 cpy r6,r0
+00030fe4 ldr r0,[0x31114]
+00030fe8 add r3,pc,r1
+00030fec mov r4,r4, lsl #0x4
+00030ff0 sub sp,sp,#0x1c
+00030ff4 ldr r5,[r3,r0]
+00030ff8 ldr r3,[r5,#0x8]
+00030ffc add r3,r4,r3
+00031000 ldr r2,[r3,#0xc]
+00031004 cmp r2,#0x1
+00031008 beq 0x00031048
+0003100c mov r12,#0x0
+00031010 cpy r3,r6
+00031014 cpy r0,r12
+00031018 cpy r1,r12
+0003101c movw r2,#0xa00
+00031020 movt r2,#0x1100
+00031024 str r12,[sp,#0x0]
+00031028 cpy r4,r12
+0003102c str r12,[sp,#0x4]
+00031030 str r12,[sp,#0x8]
+00031034 bl 0x0001a36c
+00031038 bl 0x00019574
+0003103c cpy r0,r4
+00031040 add sp,sp,#0x1c
+00031044 ldmia sp!,{r4,r5,r6,r7,pc}
+00031048 ldr r0,[r3,#0x40]
+0003104c add r1,sp,#0x10
+00031050 add r2,sp,#0x14
+00031054 bl 0x0001a264
+00031058 subs r7,r0,#0x0
+0003105c blt 0x000310d8
+00031060 ldr r2,[sp,#0x10]
+00031064 cmp r2,#0x1
+00031068 beq 0x000310cc
+0003106c bl 0x0001a7a4
+00031070 ldr r1,[r5,#0x8]
+00031074 mov r5,#0x0
+00031078 add r4,r1,r4
+0003107c ldr r1,[r4,#0x4c]
+00031080 str r5,[r0,#0x0]
+00031084 cpy r7,r0
+00031088 cpy r0,r5
+0003108c bl 0x00019d0c
+00031090 subs r4,r0,#0x0
+00031094 bge 0x0003103c
+00031098 ldr r12,[r7,#0x0]
+0003109c cmp r12,r5
+000310a0 beq 0x0003103c
+000310a4 cpy r0,r5
+000310a8 cpy r3,r6
+000310ac movw r2,#0xa02
+000310b0 cpy r1,r5
+000310b4 movt r2,#0x1100
+000310b8 str r12,[sp,#0x0]
+000310bc str r5,[sp,#0x4]
+000310c0 str r5,[sp,#0x8]
+000310c4 bl 0x0001a36c
+000310c8 b 0x0003103c
+000310cc ldr r3,[sp,#0x14]
+000310d0 rsb r4,r3,#0x14
+000310d4 b 0x0003103c
+000310d8 bl 0x0001a7a4
+000310dc str r6,[sp,#0x0]
+000310e0 mov r12,#0x0
+000310e4 cpy r3,r7
+000310e8 cpy r1,r12
+000310ec movw r2,#0xa01
+000310f0 movt r2,#0x1100
+000310f4 cpy r4,r12
+000310f8 ldr lr,[r0,#0x0]
+000310fc cpy r0,r12
+00031100 str r12,[sp,#0x8]
+00031104 str lr,[sp,#0x4]
+00031108 bl 0x0001a36c
+0003110c b 0x0003103c
+FUNCTION rq_tsk_Delay @ 00031118
+
+void rq_tsk_Delay(int param_1)
+
+{
+  int iVar1;
+  timespec local_18;
+  
+  iVar1 = rq_tsk_GetTid();
+  pthread_testcancel();
+  clock_gettime(0,&local_18);
+  local_18.tv_sec = param_1 / 1000 + local_18.tv_sec;
+  local_18.tv_nsec = (param_1 % 1000) * 1000000 + local_18.tv_nsec;
+  if (999999999 < local_18.tv_nsec) {
+    local_18.tv_sec = local_18.tv_nsec / 1000000000 + local_18.tv_sec;
+    local_18.tv_nsec = local_18.tv_nsec % 1000000000;
+  }
+  if (1 < iVar1) {
+    fs_sys_SendShutMsg(iVar1,0);
+    fs_tsk_WDTimerStart(iVar1);
+  }
+  do {
+    iVar1 = clock_nanosleep(0,1,&local_18,(timespec *)0x0);
+  } while (iVar1 == 4);
+  return;
+}
+
+
+00031118 stmdb sp!,{r4,r5,r6,lr}
+0003111c sub sp,sp,#0x8
+00031120 cpy r5,r0
+00031124 bl 0x00019dd8
+00031128 cpy r4,sp
+0003112c cpy r6,r0
+00031130 bl 0x0001a42c
+00031134 cpy r1,sp
+00031138 mov r0,#0x0
+0003113c bl 0x00019640
+00031140 movw r3,#0x4dd3
+00031144 movt r3,#0x1062
+00031148 mov r1,r5, asr #0x1f
+0003114c ldr r0,[sp,#0x0]
+00031150 smull r2,r12,r3,r5
+00031154 movw r2,#0x4240
+00031158 movt r2,#0xf
+0003115c movw r3,#0xc9ff
+00031160 movt r3,#0x3b9a
+00031164 rsb r1,r1,r12, asr #0x6
+00031168 mov r12,#0x3e8
+0003116c add r0,r1,r0
+00031170 str r0,[sp,#0x0]
+00031174 mls r5,r12,r1,r5
+00031178 ldr r12,[sp,#0x4]
+0003117c mla r5,r2,r5,r12
+00031180 cmp r5,r3
+00031184 str r5,[sp,#0x4]
+00031188 ble 0x000311b8
+0003118c movw lr,#0x2fa1
+00031190 movt lr,#0x44b8
+00031194 mov r1,r5, asr #0x1f
+00031198 movw r3,#0xca00
+0003119c smull r12,r2,lr,r5
+000311a0 movt r3,#0x3b9a
+000311a4 rsb lr,r1,r2, asr #0x1c
+000311a8 add r0,lr,r0
+000311ac str r0,[sp,#0x0]
+000311b0 mls r5,r3,lr,r5
+000311b4 str r5,[sp,#0x4]
+000311b8 cmp r6,#0x1
+000311bc ble 0x000311d4
+000311c0 cpy r0,r6
+000311c4 mov r1,#0x0
+000311c8 bl 0x0001a198
+000311cc cpy r0,r6
+000311d0 bl 0x0001a2c4
+000311d4 mov r0,#0x0
+000311d8 mov r1,#0x1
+000311dc cpy r2,sp
+000311e0 cpy r3,r0
+000311e4 bl 0x000195f8
+000311e8 cmp r0,#0x4
+000311ec beq 0x000311d4
+000311f0 add sp,sp,#0x8
+000311f4 ldmia sp!,{r4,r5,r6,pc}
+FUNCTION rq_tsk_ExtDel @ 000311f8
+
+void rq_tsk_ExtDel(void)
+
+{
+  int iVar1;
+  int iVar2;
+  
+  iVar1 = rq_tsk_GetTid();
+  iVar2 = DAT_0003127c + 0x31210;
+  if (iVar1 == -1) {
+    rq_drc_ErrorTraceP(0xffffffff,0,0x11000601,0,0,0,0);
+    return;
+  }
+  fs_tim_TskTimerStop();
+  iVar2 = *(int *)(iVar2 + DAT_00031280);
+  memset((void *)(iVar1 * 0x50 + *(int *)(iVar2 + 8)),0,0x50);
+  *(undefined1 *)(*(int *)(iVar2 + 8) + iVar1 * 0x50) = 0;
+                    /* WARNING: Subroutine does not return */
+  pthread_exit((void *)0x0);
+}
+
+
+000311f8 stmdb sp!,{r4,r5,lr}
+000311fc sub sp,sp,#0x14
+00031200 bl 0x00019dd8
+00031204 ldr r5,[0x3127c]
+00031208 add r5,pc,r5
+0003120c cmn r0,#0x1
+00031210 cpy r4,r0
+00031214 bne 0x00031244
+00031218 mov r12,#0x0
+0003121c movw r2,#0x601
+00031220 cpy r1,r12
+00031224 movt r2,#0x1100
+00031228 cpy r3,r12
+0003122c str r12,[sp,#0x0]
+00031230 str r12,[sp,#0x4]
+00031234 str r12,[sp,#0x8]
+00031238 bl 0x0001a36c
+0003123c add sp,sp,#0x14
+00031240 ldmia sp!,{r4,r5,pc}
+00031244 bl 0x0001a570
+00031248 ldr r12,[0x31280]
+0003124c mov r2,#0x50
+00031250 mov r1,#0x0
+00031254 mul r4,r2,r4
+00031258 ldr r5,[r5,r12]
+0003125c ldr r0,[r5,#0x8]
+00031260 add r0,r4,r0
+00031264 bl 0x00019964
+00031268 ldr r2,[r5,#0x8]
+0003126c mov r3,#0x0
+00031270 cpy r0,r3
+00031274 strb r3,[r2,r4]
+00031278 bl 0x0001964c
+FUNCTION rq_tsk_Exit @ 00031284
+
+void rq_tsk_Exit(void)
+
+{
+  int iVar1;
+  
+  iVar1 = rq_tsk_GetTid();
+  if (iVar1 == -1) {
+    rq_drc_ErrorTraceP(0xffffffff,0,0x11000501,0,0,0,0);
+    return;
+  }
+  *(undefined1 *)(iVar1 * 0x50 + *(int *)(*(int *)(DAT_000312f4 + 0x3129c + DAT_000312f8) + 8)) = 1;
+  fs_tim_TskTimerStop();
+                    /* WARNING: Subroutine does not return */
+  pthread_exit((void *)0x0);
+}
+
+
+00031284 stmdb sp!,{r4,lr}
+00031288 sub sp,sp,#0x10
+0003128c bl 0x00019dd8
+00031290 ldr r4,[0x312f4]
+00031294 add r4,pc,r4
+00031298 cmn r0,#0x1
+0003129c bne 0x000312cc
+000312a0 mov r12,#0x0
+000312a4 movw r2,#0x501
+000312a8 cpy r1,r12
+000312ac movt r2,#0x1100
+000312b0 cpy r3,r12
+000312b4 str r12,[sp,#0x0]
+000312b8 str r12,[sp,#0x4]
+000312bc str r12,[sp,#0x8]
+000312c0 bl 0x0001a36c
+000312c4 add sp,sp,#0x10
+000312c8 ldmia sp!,{r4,pc}
+000312cc ldr r12,[0x312f8]
+000312d0 mov r1,#0x50
+000312d4 mul r3,r1,r0
+000312d8 mov r1,#0x1
+000312dc ldr lr,[r4,r12]
+000312e0 ldr r2,[lr,#0x8]
+000312e4 strb r1,[r3,r2]
+000312e8 bl 0x0001a570
+000312ec mov r0,#0x0
+000312f0 bl 0x0001964c
+FUNCTION rq_tsk_Stop @ 000312fc
+
+void rq_tsk_Stop(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(DAT_0003139c + 0x31314 + DAT_000313a0);
+  *(undefined1 *)(*(int *)(iVar2 + 8) + param_1 * 0x50) = 1;
+  fs_tim_TskTimerStop();
+  iVar1 = pthread_cancel(*(pthread_t *)(*(int *)(iVar2 + 8) + param_1 * 0x50 + 0x40));
+  iVar2 = pthread_join(*(pthread_t *)(*(int *)(iVar2 + 8) + param_1 * 0x50 + 0x40),(void **)0x0);
+  if (iVar2 == 0 && iVar1 == 0) {
+    return;
+  }
+  rq_drc_ErrorTraceP(0,0,0x11000400,iVar1,iVar2,param_1,0);
+  rq_sys_ForceStnby();
+  return;
+}
+
+
+000312fc stmdb sp!,{r4,r5,r6,r7,lr}
+00031300 ldr r7,[0x3139c]
+00031304 ldr lr,[0x313a0]
+00031308 add r12,r0,r0, lsl #0x2
+0003130c add r2,pc,r7
+00031310 sub sp,sp,#0x14
+00031314 mov r6,#0x1
+00031318 mov r5,r12, lsl #0x4
+0003131c ldr r7,[r2,lr]
+00031320 cpy r4,r0
+00031324 ldr r2,[r7,#0x8]
+00031328 strb r6,[r2,r12,lsl #0x4]
+0003132c bl 0x0001a570
+00031330 ldr r0,[r7,#0x8]
+00031334 add r1,r0,r5
+00031338 ldr r0,[r1,#0x40]
+0003133c bl 0x0001a7d4
+00031340 ldr r3,[r7,#0x8]
+00031344 mov r1,#0x0
+00031348 add r5,r3,r5
+0003134c cpy r6,r0
+00031350 ldr r0,[r5,#0x40]
+00031354 bl 0x0001a834
+00031358 orrs r3,r0,r6
+0003135c cpy r12,r0
+00031360 bne 0x0003136c
+00031364 add sp,sp,#0x14
+00031368 ldmia sp!,{r4,r5,r6,r7,pc}
+0003136c mov lr,#0x0
+00031370 cpy r3,r6
+00031374 cpy r0,lr
+00031378 cpy r1,lr
+0003137c movw r2,#0x400
+00031380 movt r2,#0x1100
+00031384 str r12,[sp,#0x0]
+00031388 stmib sp,{r4,lr}
+0003138c bl 0x0001a36c
+00031390 add sp,sp,#0x14
+00031394 ldmia sp!,{r4,r5,r6,r7,lr}
+00031398 b 0x00019574
+FUNCTION rq_tsk_Start @ 000313a4
+
+void rq_tsk_Start(int param_1)
+
+{
+  int iVar1;
+  pthread_attr_t pStack_38;
+  sched_param local_14;
+  
+  iVar1 = *(int *)(*(int *)(DAT_0003148c + 0x313c4 + DAT_00031490) + 8) + param_1 * 0x50;
+  pthread_attr_init(&pStack_38);
+  if (*(int *)(iVar1 + 0x18) < 1) {
+    pthread_attr_setschedpolicy(&pStack_38,0);
+    local_14.__sched_priority = 0;
+    pthread_attr_setschedparam(&pStack_38,&local_14);
+  }
+  else {
+    pthread_attr_setschedpolicy(&pStack_38,1);
+    local_14.__sched_priority = 0x14 - *(int *)(iVar1 + 0x18);
+    pthread_attr_setschedparam(&pStack_38,&local_14);
+  }
+  pthread_attr_setinheritsched(&pStack_38,1);
+  iVar1 = pthread_create((pthread_t *)(iVar1 + 0x40),&pStack_38,*(__start_routine **)(iVar1 + 0x14),
+                         (void *)0x0);
+  if (iVar1 != 0) {
+    rq_drc_ErrorTraceP(0xffffffff,0,0x11000101,iVar1,param_1,0,0);
+    rq_sys_ForceStnby();
+  }
+  fs_tsk_WDTimerStart(param_1);
+  return;
+}
+
+
+000313a4 stmdb sp!,{r4,r5,r6,lr}
+000313a8 add r5,r0,r0, lsl #0x2
+000313ac cpy r4,r0
+000313b0 ldr r0,[0x3148c]
+000313b4 ldr r2,[0x31490]
+000313b8 sub sp,sp,#0x38
+000313bc add r3,pc,r0
+000313c0 add r6,sp,#0x10
+000313c4 ldr r12,[r3,r2]
+000313c8 cpy r0,r6
+000313cc ldr r1,[r12,#0x8]
+000313d0 add r5,r1,r5, lsl #0x4
+000313d4 bl 0x0001a2a0
+000313d8 ldr r3,[r5,#0x18]
+000313dc cmp r3,#0x0
+000313e0 ble 0x00031468
+000313e4 mov r1,#0x1
+000313e8 cpy r0,r6
+000313ec bl 0x00019748
+000313f0 ldr r12,[r5,#0x18]
+000313f4 add r1,sp,#0x38
+000313f8 cpy r0,r6
+000313fc rsb r3,r12,#0x14
+00031400 str r3,[r1,#-0x4]!
+00031404 bl 0x00019a30
+00031408 mov r1,#0x1
+0003140c cpy r0,r6
+00031410 bl 0x00019f1c
+00031414 mov r3,#0x0
+00031418 cpy r1,r6
+0003141c ldr r2,[r5,#0x14]
+00031420 add r0,r5,#0x40
+00031424 bl 0x00019e38
+00031428 subs r3,r0,#0x0
+0003142c beq 0x00031458
+00031430 mov lr,#0x0
+00031434 mvn r0,#0x0
+00031438 cpy r1,lr
+0003143c movw r2,#0x101
+00031440 movt r2,#0x1100
+00031444 str lr,[sp,#0x4]
+00031448 str lr,[sp,#0x8]
+0003144c str r4,[sp,#0x0]
+00031450 bl 0x0001a36c
+00031454 bl 0x00019574
+00031458 cpy r0,r4
+0003145c bl 0x0001a2c4
+00031460 add sp,sp,#0x38
+00031464 ldmia sp!,{r4,r5,r6,pc}
+00031468 mov r1,#0x0
+0003146c cpy r0,r6
+00031470 bl 0x00019748
+00031474 add r1,sp,#0x38
+00031478 mov r2,#0x0
+0003147c cpy r0,r6
+00031480 str r2,[r1,#-0x4]!
+00031484 bl 0x00019a30
+00031488 b 0x00031408
+FUNCTION rq_tsk_Create @ 00031494
+
+int rq_tsk_Create(int param_1,undefined4 *param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  int iVar5;
+  pthread_mutex_t *__mutex;
+  int iVar6;
+  
+  iVar1 = DAT_00031560;
+  iVar5 = DAT_0003155c + 0x314ac;
+  __mutex = *(pthread_mutex_t **)(iVar5 + DAT_00031560);
+  pthread_mutex_lock(__mutex);
+  if ((param_1 == -1) && (param_1 = fc_tsk_GetFree(), param_1 == -1)) {
+    pthread_mutex_unlock(__mutex);
+    rq_drc_ErrorTraceP(0xffffffff,0,0x11000000,0,0,0,0);
+    rq_sys_ForceStnby();
+    iVar6 = -0x50;
+  }
+  else {
+    iVar6 = param_1 * 0x50;
+  }
+  uVar2 = param_2[1];
+  uVar3 = param_2[2];
+  uVar4 = param_2[3];
+  iVar6 = iVar6 + *(int *)(*(int *)(iVar5 + DAT_00031564) + 8);
+  *(undefined4 *)(iVar6 + 0xc) = *param_2;
+  *(undefined4 *)(iVar6 + 0x10) = uVar2;
+  *(undefined4 *)(iVar6 + 0x14) = uVar3;
+  *(undefined4 *)(iVar6 + 0x18) = uVar4;
+  uVar2 = param_2[5];
+  uVar3 = param_2[6];
+  uVar4 = param_2[7];
+  *(undefined4 *)(iVar6 + 0x1c) = param_2[4];
+  *(undefined4 *)(iVar6 + 0x20) = uVar2;
+  *(undefined4 *)(iVar6 + 0x24) = uVar3;
+  *(undefined4 *)(iVar6 + 0x28) = uVar4;
+  uVar2 = param_2[9];
+  uVar3 = param_2[10];
+  uVar4 = param_2[0xb];
+  *(undefined4 *)(iVar6 + 0x2c) = param_2[8];
+  *(undefined4 *)(iVar6 + 0x30) = uVar2;
+  *(undefined4 *)(iVar6 + 0x34) = uVar3;
+  *(undefined4 *)(iVar6 + 0x38) = uVar4;
+  pthread_mutex_unlock(*(pthread_mutex_t **)(iVar5 + iVar1));
+  return param_1;
+}
+
+
+00031494 stmdb sp!,{r4,r5,r6,r7,r8,lr}
+00031498 ldr r5,[0x3155c]
+0003149c ldr r6,[0x31560]
+000314a0 cpy r7,r0
+000314a4 add r5,pc,r5
+000314a8 sub sp,sp,#0x10
+000314ac cpy r4,r1
+000314b0 ldr r8,[r5,r6]
+000314b4 cpy r0,r8
+000314b8 bl 0x00019d84
+000314bc cmn r7,#0x1
+000314c0 beq 0x00031514
+000314c4 add lr,r7,r7, lsl #0x2
+000314c8 mov lr,lr, lsl #0x4
+000314cc ldr r12,[0x31564]
+000314d0 ldmia r4!,{r0,r1,r2,r3}
+000314d4 ldr r12,[r5,r12]
+000314d8 ldr r12,[r12,#0x8]
+000314dc add lr,lr,r12
+000314e0 add lr,lr,#0xc
+000314e4 cpy r12,lr
+000314e8 stmia r12!,{r0,r1,r2,r3}
+000314ec cpy lr,r12
+000314f0 ldmia r4!,{r0,r1,r2,r3}
+000314f4 stmia lr!,{r0,r1,r2,r3}
+000314f8 ldmia r4,{r0,r1,r2,r3}
+000314fc stmia lr,{r0,r1,r2,r3}
+00031500 ldr r0,[r5,r6]
+00031504 bl 0x00019c1c
+00031508 cpy r0,r7
+0003150c add sp,sp,#0x10
+00031510 ldmia sp!,{r4,r5,r6,r7,r8,pc}
+00031514 bl 0x000197c0
+00031518 cmn r0,#0x1
+0003151c cpy r7,r0
+00031520 bne 0x000314c4
+00031524 cpy r0,r8
+00031528 bl 0x00019c1c
+0003152c mov r12,#0x0
+00031530 cpy r1,r12
+00031534 cpy r0,r7
+00031538 mov r2,#0x11000000
+0003153c cpy r3,r12
+00031540 str r12,[sp,#0x0]
+00031544 str r12,[sp,#0x4]
+00031548 str r12,[sp,#0x8]
+0003154c bl 0x0001a36c
+00031550 bl 0x00019574
+00031554 mvn lr,#0x4f
+00031558 b 0x000314cc
+FUNCTION fc_sys_AccOnStop @ 00032bdc
+
+void fc_sys_AccOnStop(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = DAT_00032cbc + 0x32bf4;
+  iVar1 = **(int **)(iVar2 + DAT_00032cc0) + param_1 * 0x30;
+  switch(*(undefined4 *)(iVar1 + 4)) {
+  case 1:
+    break;
+  case 2:
+    break;
+  case 3:
+    break;
+  case 4:
+    break;
+  case 5:
+    break;
+  case 6:
+    break;
+  case 7:
+    if (*(int *)(iVar1 + 0x20) != 0) {
+      fc_sys_SndSysStsNty(param_1,0);
+      return;
+    }
+    if (*(code **)(iVar1 + 0x28) == (code *)0x0) {
+      return;
+    }
+    (**(code **)(iVar1 + 0x28))();
+    return;
+  case 8:
+    break;
+  default:
+    rq_drc_ErrorTraceP(0,0,0x4000400,*(undefined4 *)(iVar1 + 4),0,0,0);
+    return;
+  }
+  rq_tsk_Start(*(undefined4 *)(iVar1 + 0x1c));
+  *(undefined1 *)(*(int *)(*(int *)(iVar2 + DAT_00032cc4) + 8) + param_1 * 0x50) = 2;
+  return;
+}
+
+
+00032bdc stmdb sp!,{r4,r5,lr}
+00032be0 ldr r5,[0x32cbc]
+00032be4 ldr r12,[0x32cc0]
+00032be8 add r1,r0,r0, lsl #0x1
+00032bec add r5,pc,r5
+00032bf0 cpy r4,r0
+00032bf4 sub sp,sp,#0x14
+00032bf8 ldr r0,[r5,r12]
+00032bfc ldr r3,[r0,#0x0]
+00032c00 add r1,r3,r1, lsl #0x4
+00032c04 ldr r3,[r1,#0x4]
+00032c08 sub r2,r3,#0x1
+00032c0c cmp r2,#0x7
+00032c10 addls pc,pc,r2, lsl #0x2
+00032c14 b 0x00032c80
+00032c18 b 0x00032c58
+00032c1c b 0x00032c58
+00032c20 b 0x00032c58
+00032c24 b 0x00032c58
+00032c28 b 0x00032c58
+00032c2c b 0x00032c58
+00032c30 b 0x00032c38
+00032c34 b 0x00032c58
+00032c38 ldr r0,[r1,#0x20]
+00032c3c cmp r0,#0x0
+00032c40 bne 0x00032ca8
+00032c44 ldr r3,[r1,#0x28]
+00032c48 cmp r3,#0x0
+00032c4c beq 0x00032c78
+00032c50 blx r3
+00032c54 b 0x00032c78
+00032c58 ldr r0,[r1,#0x1c]
+00032c5c add r4,r4,r4, lsl #0x2
+00032c60 bl 0x0001a168
+00032c64 ldr r0,[0x32cc4]
+00032c68 mov r2,#0x2
+00032c6c ldr r3,[r5,r0]
+00032c70 ldr r1,[r3,#0x8]
+00032c74 strb r2,[r1,r4,lsl #0x4]
+00032c78 add sp,sp,#0x14
+00032c7c ldmia sp!,{r4,r5,pc}
+00032c80 mov lr,#0x0
+00032c84 movw r2,#0x400
+00032c88 cpy r0,lr
+00032c8c movt r2,#0x400
+00032c90 cpy r1,lr
+00032c94 str lr,[sp,#0x0]
+00032c98 str lr,[sp,#0x4]
+00032c9c str lr,[sp,#0x8]
+00032ca0 bl 0x0001a36c
+00032ca4 b 0x00032c78
+00032ca8 cpy r0,r4
+00032cac mov r1,#0x0
+00032cb0 add sp,sp,#0x14
+00032cb4 ldmia sp!,{r4,r5,lr}
+00032cb8 b 0x0001a18c
+FUNCTION fc_sys_SysOnCtl @ 00033bcc
+
+void fc_sys_SysOnCtl(uint param_1)
+
+{
+  undefined1 uVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  uint uVar5;
+  int iVar6;
+  int iVar7;
+  int *piVar8;
+  int iVar9;
+  
+  iVar2 = DAT_00033cf4;
+  iVar9 = DAT_00033cf0 + 0x33be4;
+  if (2 < *(int *)(*(int *)(iVar9 + DAT_00033cf4) + 4)) {
+    iVar7 = 0xa0;
+    iVar6 = 0x60;
+    uVar5 = 2;
+    piVar8 = *(int **)(iVar9 + DAT_00033cf8);
+    do {
+      if (((*(int *)(*piVar8 + iVar6) != 1) ||
+          (iVar4 = *(int *)(iVar9 + iVar2),
+          (param_1 & *(uint *)(*(int *)(iVar4 + 8) + iVar7 + 0x30)) == 0)) ||
+         (iVar3 = rq_sys_GetAcf(), iVar3 == 0)) goto LAB_00033c10;
+      uVar1 = *(undefined1 *)(*(int *)(iVar4 + 8) + iVar7);
+      switch(uVar1) {
+      case 0:
+        break;
+      case 1:
+        fc_sys_AccOnStop(uVar5 & 0xff);
+        break;
+      case 2:
+        goto LAB_00033cb4;
+      case 3:
+LAB_00033cb4:
+        fc_sys_AccOnInitAct(uVar5 & 0xff);
+        break;
+      case 4:
+        break;
+      case 5:
+        break;
+      case 6:
+        break;
+      case 7:
+        fc_sys_AccOnShutPrc(uVar5 & 0xff);
+        break;
+      case 8:
+        break;
+      default:
+        rq_drc_ErrorTraceP(0,0,0x4000200,uVar1,0,0,0);
+      }
+LAB_00033c10:
+      uVar5 = uVar5 + 1;
+      iVar6 = iVar6 + 0x30;
+      iVar7 = iVar7 + 0x50;
+    } while ((int)uVar5 < *(int *)(*(int *)(iVar9 + iVar2) + 4));
+  }
+  return;
+}
+
+
+00033bcc stmdb sp!,{r4,r5,r6,r7,r8,r9,r10,r11,lr}
+00033bd0 ldr r8,[0x33cf0]
+00033bd4 ldr r10,[0x33cf4]
+00033bd8 cpy r9,r0
+00033bdc add r8,pc,r8
+00033be0 sub sp,sp,#0x1c
+00033be4 ldr r0,[r8,r10]
+00033be8 ldr r3,[r0,#0x4]
+00033bec cmp r3,#0x2
+00033bf0 ble 0x00033ca0
+00033bf4 ldr r1,[0x33cf8]
+00033bf8 mov r6,#0xa0
+00033bfc mov r5,#0x60
+00033c00 mov r4,#0x2
+00033c04 mov r11,#0x0
+00033c08 ldr r7,[r8,r1]
+00033c0c b 0x00033c2c
+00033c10 ldr r2,[r8,r10]
+00033c14 add r4,r4,#0x1
+00033c18 add r5,r5,#0x30
+00033c1c add r6,r6,#0x50
+00033c20 ldr r3,[r2,#0x4]
+00033c24 cmp r3,r4
+00033c28 ble 0x00033ca0
+00033c2c ldr r12,[r7,#0x0]
+00033c30 ldr r2,[r12,r5]
+00033c34 cmp r2,#0x1
+00033c38 bne 0x00033c10
+00033c3c ldr r3,[r8,r10]
+00033c40 ldr r0,[r3,#0x8]
+00033c44 add r1,r0,r6
+00033c48 ldr r0,[r1,#0x30]
+00033c4c tst r9,r0
+00033c50 beq 0x00033c10
+00033c54 str r3,[sp,#0x14]
+00033c58 bl 0x0001a870
+00033c5c ldr r3,[sp,#0x14]
+00033c60 cmp r0,#0x0
+00033c64 beq 0x00033c10
+00033c68 ldr lr,[r3,#0x8]
+00033c6c ldrb r3,[lr,r6]
+00033c70 cmp r3,#0x8
+00033c74 addls pc,pc,r3, lsl #0x2
+00033c78 b 0x00033ccc
+00033c7c b 0x00033c10
+00033c80 b 0x00033cc0
+00033c84 b 0x00033cb4
+00033c88 b 0x00033cb4
+00033c8c b 0x00033c10
+00033c90 b 0x00033c10
+00033c94 b 0x00033c10
+00033c98 b 0x00033ca8
+00033c9c b 0x00033c10
+00033ca0 add sp,sp,#0x1c
+00033ca4 ldmia sp!,{r4,r5,r6,r7,r8,r9,r10,r11,pc}
+00033ca8 uxtb r0,r4
+00033cac bl 0x0001a228
+00033cb0 b 0x00033c10
+00033cb4 uxtb r0,r4
+00033cb8 bl 0x0001a4bc
+00033cbc b 0x00033c10
+00033cc0 uxtb r0,r4
+00033cc4 bl 0x00019958
+00033cc8 b 0x00033c10
+00033ccc movw r2,#0x200
+00033cd0 cpy r0,r11
+00033cd4 movt r2,#0x400
+00033cd8 cpy r1,r11
+00033cdc str r11,[sp,#0x0]
+00033ce0 str r11,[sp,#0x4]
+00033ce4 str r11,[sp,#0x8]
+00033ce8 bl 0x0001a36c
+00033cec b 0x00033c10

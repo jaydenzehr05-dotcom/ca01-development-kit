@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_CDDB",
+  "examined_functions": [
+    "00010394",
+    "000103f8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 213,
+    "prompt_tokens": 678,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 891
+  },
+  "next_focus": [
+    "Message sending function behavior",
+    "Memory allocation patterns"
+  ],
+  "observations": [
+    {
+      "address": "0x00010394",
+      "claim": "Function sends message with 0x10 length parameter",
+      "evidence_snippet": "local_1c = 0x10;",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000103f8",
+      "claim": "Function sends message with 0xf length parameter",
+      "evidence_snippet": "local_1c = 0xf;",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Two similar functions allocate memory and send messages with different parameters. Both use rq_mem_Alloc and rq_msg_Send with similar structures.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "10394",
+    "103f8"
+  ],
+  "selection_evidence": [
+    {
+      "address": "10394",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "103f8",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the different length parameters signify?",
+    "What is the purpose of the rq_mem_Alloc calls?"
+  ]
+}

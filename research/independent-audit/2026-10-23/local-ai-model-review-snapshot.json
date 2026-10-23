@@ -1,0 +1,4980 @@
+{
+  "snapshot_at": "2026-10-23T21:14:30+00:00",
+  "review_count": 89,
+  "warning": "LLM interpretations are unverified hypotheses; distinct from Ghidra coverage",
+  "results": [
+    {
+      "relative_path": "results/02d11afd44146592/model-review.json",
+      "sha256": "788e15577bdba8a0f5b81c1126c6d4eed907891b331ad4ca571e5c507428ebd7",
+      "result": {
+        "binary": "./opt/ftl/lib/libnavi_if.so",
+        "examined_functions": [
+          "0001dcd4",
+          "0001e564"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 217,
+          "prompt_tokens": 1451,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 1668
+        },
+        "next_focus": [
+          "File handle management",
+          "Memory allocation patterns"
+        ],
+        "observations": [
+          {
+            "address": "0x0001dcd4",
+            "claim": "Function reads data from a file handle.",
+            "evidence_snippet": "rq_fls_Read(local_14,1,param_3,param_2,auStack_1c,0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0001e564",
+            "claim": "Function allocates memory and reads file data.",
+            "evidence_snippet": "iVar1 = rq_mem_Alloc(2,uVar7)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Two functions handle file operations and memory management. First reads data, second opens TTS files and manages memory.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "02d11afd4414659265ff78944f5a400de0cfaff1138ef45deb4daaa88f809981",
+        "unresolved_questions": [
+          "What is the purpose of the file operations?",
+          "What data is being read and stored?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/043b2d3ccbcca36d/model-review.json",
+      "sha256": "56fad09217d43a2d4c3c0976c8203ab83cfa07d09d40da1bf2e1b9028fb50daa",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_CDP",
+        "examined_functions": [
+          "000099e0",
+          "00009e54"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 264,
+          "prompt_tokens": 1280,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1544
+        },
+        "next_focus": [
+          "Analyze function pointer at DAT_00009a0c",
+          "Examine FUN_0000a500 function"
+        ],
+        "observations": [
+          {
+            "address": "0x000099e0",
+            "claim": "Calls function pointer if conditions met",
+            "evidence_snippet": "(*DAT_00009a0c)();",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00009e54",
+            "claim": "Validates input parameter 3 and character at offset 2",
+            "evidence_snippet": "if (*(int *)(param_1 + 4) != 3)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function _INIT_0 checks for null pointer before calling a function pointer. FUN_00009e54 validates input parameters and processes data based on specific conditions.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+        "unresolved_questions": [
+          "What is the purpose of the function pointer call in _INIT_0?",
+          "What does FUN_00009e54 do after processing the data?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/0ef37be31e5002eb/model-review.json",
+      "sha256": "7fa82093770ed27278d6ad478df51cef2325fa7a8860e0b96d4ed12ba146a677",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_VRS",
+        "examined_functions": [
+          "000461e8",
+          "0001cf90"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 282,
+          "prompt_tokens": 2236,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2518
+        },
+        "next_focus": [
+          "Memory management functions",
+          "File I/O error handling"
+        ],
+        "observations": [
+          {
+            "address": "0x000461e8",
+            "claim": "Function performs memory cleanup and error tracing on initialization failure.",
+            "evidence_snippet": "rq_drc_ErrorTraceP(0,&DAT_000b1000,0x2381,2,0,0,0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0001cf90",
+            "claim": "Function reads data from a file with validation and error reporting.",
+            "evidence_snippet": "rq_fls_Read(local_1c,1,uVar4,auStack_54c,&local_20,0)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 000461e8 handles initialization and cleanup logic with error tracing and memory management. Function 0001cf90 manages file operations and data reading with error handling.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+        "unresolved_questions": [
+          "What is the purpose of the 'AppsAgentApps' string?",
+          "What does the 'LAB_0000ec54' label reference?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/1431c297e1716c7d/model-review.json",
+      "sha256": "6499cb2d11a093957f9e48afae79a711a955d4ecbf5d16be43afea42ed861b4d",
+      "result": {
+        "binary": "./opt/ftl/lib/libIFLB_CDDB.so",
+        "examined_functions": [
+          "000111fc",
+          "000112f4"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 223,
+          "prompt_tokens": 1222,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 1445
+        },
+        "next_focus": [
+          "VCL parameter handling",
+          "IPC message 0x12 content"
+        ],
+        "observations": [
+          {
+            "address": "0x000111fc",
+            "claim": "Returns error code 0xfffffffe for invalid parameters",
+            "evidence_snippet": "return 0xfffffffe;",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000112f4",
+            "claim": "Calls fd_cdi_SetStsInf(4) before IPC send",
+            "evidence_snippet": "fd_cdi_SetStsInf(4);",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Two functions cdbCtlVupEndReq and cdbCtlVupStaReq handle VUP control requests with parameter validation and IPC communication.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "1431c297e1716c7d3a49964aa523eb97b868673553e709d7897ee3a086ddad75",
+        "unresolved_questions": [
+          "What do the VCL parameters represent?",
+          "What is the purpose of IPC message 0x12?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/15f3bc8afa901ec7/model-review.json",
+      "sha256": "ad1627b40b23692fabe363ab668e75d588b5ae6360beb2bf6c067fbfbe9f95aa",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_AUDIO",
+        "examined_functions": [
+          "00019dfc",
+          "0004d724"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 285,
+          "prompt_tokens": 1505,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1790
+        },
+        "next_focus": [
+          "File path DAT_0001a094 analysis",
+          "Memory allocation in 00019dfc"
+        ],
+        "observations": [
+          {
+            "address": "0x00019dfc",
+            "claim": "Opens and reads from a file with error handling",
+            "evidence_snippet": "iVar6 = open(DAT_0001a094,0,param_3,param_4,param_4)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0004d724",
+            "claim": "Manages file handles and performs open/close operations",
+            "evidence_snippet": "iVar1 = open(__file,0x1042,0x1c0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 00019dfc handles file reading with error checking, while 0004d724 manages file operations and caching.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+        "unresolved_questions": [
+          "What is the purpose of the file access pattern in 00019dfc?",
+          "How does the caching mechanism in 0004d724 interact with 00019dfc?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/1a526239fbe5b3b7/model-review.json",
+      "sha256": "20490a30e39f643564f6d2c0cb6605ec1352fb6669b16ae059e8ce39e17be556",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DTV",
+        "examined_functions": [
+          "000a0044",
+          "000243b4"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 221,
+          "prompt_tokens": 1629,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1850
+        },
+        "next_focus": [
+          "0",
+          "0",
+          "0"
+        ],
+        "observations": [
+          {
+            "address": "0x000a0044",
+            "claim": "Initializes and mounts a filesystem",
+            "evidence_snippet": "rq_fls_Init(&DAT_001a135c)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000243b4",
+            "claim": "Extracts UI layout properties from configuration",
+            "evidence_snippet": "FUN_0004f8f0(param_1,\"paddingTop\"",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 000a0044 initializes and mounts a filesystem. Function 000243b4 processes UI layout properties from configuration.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+        "unresolved_questions": [
+          "What do the rq_fls_* functions do?",
+          "What is the purpose of the configuration parsing?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/1c0d760d81ad684b/model-review.json",
+      "sha256": "4f4f07fc2aece9b384e6d0ff7162d8026fc02d3ea68414f6618f98def49a0bb4",
+      "result": {
+        "binary": "./opt/ftl/lib/libDIS_IF.so",
+        "examined_functions": [
+          "000182cc",
+          "000184b8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 229,
+          "prompt_tokens": 1522,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 1751
+        },
+        "next_focus": [
+          "Flash storage interface functions",
+          "Data validation routines"
+        ],
+        "observations": [
+          {
+            "address": "0x000182cc",
+            "claim": "Reads logo data from flash with size validation",
+            "evidence_snippet": "local_144 = local_144 | local_148 << 0x10",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000184b8",
+            "claim": "Reads UIC operational data from flash storage",
+            "evidence_snippet": "local_3c = local_3c | local_40 << 0x10",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle firmware logo and UIC data retrieval from flash storage with error checking.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "1c0d760d81ad684bf5570278ffeb9c801607715efea03533fdf6b42db3d87e49",
+        "unresolved_questions": [
+          "What specific flash storage addresses are accessed?",
+          "What is the purpose of fd_pdc_SetFdcSts() calls?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/21c2f32554f16c6a/model-review.json",
+      "sha256": "f468421671eb75f1594679cea60c94fe3f67a6d5b7260b5e8238e6e05fa84e4d",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_NAVIIF",
+        "examined_functions": [
+          "000216fc",
+          "000227f4"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 255,
+          "prompt_tokens": 1789,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2044
+        },
+        "next_focus": [
+          "File path construction in 000216fc",
+          "Message queue data content in 000227f4"
+        ],
+        "observations": [
+          {
+            "address": "0x000216fc",
+            "claim": "Function reads from file paths constructed with DWR directory.",
+            "evidence_snippet": "strncpy(acStack_130,\"/tmp/dsv/DWR/\"",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000227f4",
+            "claim": "Function opens message queues for NVI send/receive communication.",
+            "evidence_snippet": "mq_open(\"/IPC_NVI_SND_MSG\"",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 000216fc appears to handle file operations with DSV library data, while 000227f4 manages message queues for NVI communication.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+        "unresolved_questions": [
+          "What is the purpose of the DSV library data access?",
+          "What data is transmitted via the message queues?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/23daecdd67cbf4c9/model-review.json",
+      "sha256": "3366739dbe21d828a583aa3598425bdbe9d43f1bfb67e47dc4f748078e703a58",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_CDDB",
+        "examined_functions": [
+          "0000d158",
+          "0000d1a0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 226,
+          "prompt_tokens": 1525,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1751
+        },
+        "next_focus": [
+          "Error handling functions",
+          "Data operation functions"
+        ],
+        "observations": [
+          {
+            "address": "0x0000d158",
+            "claim": "Checks for null pointer and invalid size before mounting",
+            "evidence_snippet": "if (*(int *)(param_1 + 4) != 0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0000d1a0",
+            "claim": "Initializes global variables and performs similar mount and data operations",
+            "evidence_snippet": "DAT_00384f74 = 0;",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions validate parameters, mount filesystem, and handle CDDB data operations with error tracing.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+        "unresolved_questions": [
+          "What do the error codes 0x14 and 0x15 represent?",
+          "What is the purpose of FUN_0000d3ec()?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/28e8b7d000b0d764/model-review.json",
+      "sha256": "abaed341ecd12574c7ca07fc1827306c17c72fa6c93ac7f86bece66d97362ef9",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_TMD",
+        "examined_functions": [
+          "00009f04",
+          "0000a960"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 244,
+          "prompt_tokens": 943,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1187
+        },
+        "next_focus": [
+          "Complete string-to-code mapping in FUN_0000a960",
+          "Analyze function pointer initialization in _INIT_0"
+        ],
+        "observations": [
+          {
+            "address": "0x00009f04",
+            "claim": "Calls function pointer if conditions met",
+            "evidence_snippet": "(*DAT_00009f30)();",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0000a960",
+            "claim": "Maps string parameters to integer identifiers",
+            "evidence_snippet": "strcmp(param_1,\"providerName\")",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function _INIT_0 performs conditional execution of a function pointer, while FUN_0000a960 maps string parameters to integer codes.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+        "unresolved_questions": [
+          "What is the purpose of the function pointer in _INIT_0?",
+          "Are all string mappings accounted for in FUN_0000a960?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/2f417cf26bf49f3c/model-review.json",
+      "sha256": "29fa95c133ccf40c7e6c19ea130874eb2fb6e09cfca2eae9170e56d6dbb3e93f",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_SYSTEM",
+        "examined_functions": [
+          "0002eb74",
+          "0005f6b8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 243,
+          "prompt_tokens": 1768,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2011
+        },
+        "next_focus": [
+          "Flash device ioctl handling",
+          "Backup file extraction process"
+        ],
+        "observations": [
+          {
+            "address": "0x0002eb74",
+            "claim": "Extracts backup file using tar command",
+            "evidence_snippet": "tar zxvfm /mnt/usb1/13PFBACKUPDB.KWI",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0002eb74",
+            "claim": "Reads data from flash device",
+            "evidence_snippet": "ioctl(__fd,0x4004ff10,&local_48)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0002eb74 handles flash device operations and backup extraction. Function 0005f6b8 manages uSD card unmounting.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+        "unresolved_questions": [
+          "What is the purpose of the flash device ioctl operation?",
+          "What is the significance of the specific magic number 0xa5b4c3d2?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/37707bc33d7fa157/model-review.json",
+      "sha256": "7c44263c20431114be16388b382ed5d9669856fda95bff14c9f564173a53bc0f",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_SPC",
+        "examined_functions": [
+          "0000934c",
+          "00009954"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 222,
+          "prompt_tokens": 836,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1058
+        },
+        "next_focus": [
+          "Message command handling logic",
+          "Function pointer initialization"
+        ],
+        "observations": [
+          {
+            "address": "0x0000934c",
+            "claim": "Calls function pointer if condition is met",
+            "evidence_snippet": "(*DAT_00009378)();",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00009954",
+            "claim": "Processes messages based on command values",
+            "evidence_snippet": "if (local_28 == 0xc200)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function _INIT_0 performs conditional execution of a stored function pointer, while FUN_00009954 handles message processing with various command cases.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+        "unresolved_questions": [
+          "What is the purpose of prctl call?",
+          "What does rq_sys_NtyTskSts do?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/3831438fb969950f/model-review.json",
+      "sha256": "5068986af3f14b9297cdd87d28d9d51dd1dc2097bbb99ca6267f3c685520d4b1",
+      "result": {
+        "binary": "./opt/ftl/lib/libAdlCd.so",
+        "examined_functions": [
+          "000123f8",
+          "0001389c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 242,
+          "prompt_tokens": 747,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 989
+        },
+        "next_focus": [
+          "File path constants in DAT_00012478",
+          "util_file_copy function behavior"
+        ],
+        "observations": [
+          {
+            "address": "0x0001389c",
+            "claim": "Writes start data using file copy utility",
+            "evidence_snippet": "util_file_copy(iVar2 + DAT_00013918,iVar2 + DAT_0001391c,0xa0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle SQL database dropping and file copying operations with potential security implications.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "3831438fb969950ff20fd11e1c704f9235f58ec5d93c5a0d55a06471acd32ce2",
+        "unresolved_questions": [
+          "What are the specific file paths being manipulated?",
+          "How is the validation check for database names performed?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/383924353b752d9c/model-review.json",
+      "sha256": "27d9a61449e7bd8969a9f8e1147fbeae49b20488421f94fc03c9f4edc5c4e53c",
+      "result": {
+        "binary": "./opt/ftl/lib/libsct_ct.so",
+        "examined_functions": [
+          "000112cc",
+          "00011468"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 253,
+          "prompt_tokens": 1245,
+          "prompt_tokens_details": {
+            "cached_tokens": 159
+          },
+          "total_tokens": 1498
+        },
+        "next_focus": [
+          "I2C command structure and device identification",
+          "Default parameter file content and format"
+        ],
+        "observations": [
+          {
+            "address": "0x000112cc",
+            "claim": "Function reads parameter file with fallback to default data on error.",
+            "evidence_snippet": "memcpy(param_2,*(void **)(iVar2 + DAT_00011464),0x1df)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00011468",
+            "claim": "Function sends I2C command with error handling and trace logging.",
+            "evidence_snippet": "rq_i2c_ConSendRcv(0,1,&local_2c,2)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle parameter file reading and I2C data reading with error tracing and fallback mechanisms.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "383924353b752d9c02f953ecf773584affc5232e15b73a707b9d4f4f659d6fae",
+        "unresolved_questions": [
+          "What is the purpose of the default data at DAT_00011464?",
+          "What device or sensor does I2C communication target?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/47a48311b513bffa/model-review.json",
+      "sha256": "55f4454fb8dd78033df3aa1832dc6e64847ebb84be9cd9a8e22f75e51eb18777",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_REPRO",
+        "examined_functions": [
+          "0000b8a8",
+          "000159f8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 235,
+          "prompt_tokens": 1497,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 1732
+        },
+        "next_focus": [
+          "Error handling in function 0000b8a8",
+          "Filesystem mount behavior"
+        ],
+        "observations": [
+          {
+            "address": "0x0000b8a8",
+            "claim": "Function processes message header and traces errors",
+            "evidence_snippet": "msghdr->subev",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000159f8",
+            "claim": "Function mounts /dev/mmcblk0p3 to /opt/ftl/cddb/",
+            "evidence_snippet": "mount(\"/dev/mmcblk0p3/\"",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function at 0000b8a8 handles message header processing and error tracing. Function at 000159f8 mounts a filesystem.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+        "unresolved_questions": [
+          "What is the purpose of the check sum validation?",
+          "What is the significance of the module parameter?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/4ec99dbe7ba649cc/model-review.json",
+      "sha256": "f13a708a86a8e32b17efaf277014bb622a45fab6533fdd93dc48315d64a145ac",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_REPRO",
+        "examined_functions": [
+          "0000b8a8",
+          "000159f8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 220,
+          "prompt_tokens": 1497,
+          "prompt_tokens_details": {
+            "cached_tokens": 31
+          },
+          "total_tokens": 1717
+        },
+        "next_focus": [
+          "Error handling in checksum validation",
+          "Filesystem mount behavior"
+        ],
+        "observations": [
+          {
+            "address": "0x0000b8a8",
+            "claim": "Function processes message header and traces errors",
+            "evidence_snippet": "msghdr->subev",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000159f8",
+            "claim": "Function mounts ext3 filesystem from mmcblk0p3",
+            "evidence_snippet": "mount(\"/dev/mmcblk0p3/\"",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function at 0000b8a8 handles message header processing and error tracing. Function at 000159f8 mounts a filesystem.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+        "unresolved_questions": [
+          "What is the purpose of the checksum validation?",
+          "What is the significance of the module switch case?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/5a2afe5ea4fb2cb4/model-review.json",
+      "sha256": "eb3eb53853616342bb2bd483c84f1e43ae3adbd56ed1ffd4b8bbd67379de1066",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_CDP",
+        "examined_functions": [
+          "000099e0",
+          "00009e54"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 268,
+          "prompt_tokens": 1278,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1546
+        },
+        "next_focus": [
+          "Analyze the function pointer at DAT_00009a0c",
+          "Examine the FUN_0000a500 function call"
+        ],
+        "observations": [
+          {
+            "address": "0x000099e0",
+            "claim": "Calls function pointer if conditions are met",
+            "evidence_snippet": "(*DAT_00009a0c)();",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00009e54",
+            "claim": "Validates input parameter 3 and character at offset 2",
+            "evidence_snippet": "if (*(int *)(param_1 + 4) != 3)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function _INIT_0 checks for null pointer before calling a function pointer. FUN_00009e54 validates input parameters and processes data based on specific conditions.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a",
+        "unresolved_questions": [
+          "What is the purpose of the function pointer call in _INIT_0?",
+          "What does FUN_00009e54 do after processing the data?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/5fa0b9571f51693b/model-review.json",
+      "sha256": "bf28da8c65e2106889321f0025a5f43edf0b2f7ac0c2b8dfcd705d7c7b843abc",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_sysp.so",
+        "examined_functions": [
+          "0002fdf8",
+          "00031320"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 213,
+          "prompt_tokens": 1615,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 1828
+        },
+        "next_focus": [
+          "System command execution details",
+          "Synchronization loop behavior"
+        ],
+        "observations": [
+          {
+            "address": "0x0002fdf8",
+            "claim": "Initializes mutex with priority inheritance protocol",
+            "evidence_snippet": "pthread_mutexattr_setprotocol(apStack_14,2)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00031320",
+            "claim": "Executes system command for power management",
+            "evidence_snippet": "uVar4 = system((char *)(iVar11 + iVar8))",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Two functions initialize RTCS mutex with priority inheritance and synchronize system parameters. First function sets up mutex attributes, second handles system synchronization and power tracing.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+        "unresolved_questions": [
+          "What specific system command is executed?",
+          "What is the purpose of the synchronization loop?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/64f5d905a42aa844/model-review.json",
+      "sha256": "685e26316f3b96ebbb4d65ee4682e9bd0717b7bc6313e1955460060f46ed7763",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_HMI",
+        "examined_functions": [
+          "00065d8c",
+          "00065ddc"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 278,
+          "prompt_tokens": 521,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 799
+        },
+        "next_focus": [
+          "Function FUN_000400c4",
+          "Parameter meanings in 00065d8c"
+        ],
+        "observations": [
+          {
+            "address": "0x00065d8c",
+            "claim": "Selects MUI file based on param_2 and param_3 values",
+            "evidence_snippet": "if ((param_2 != 0xd) && (param_2 != 0))",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00065d8c",
+            "claim": "Calls FUN_000400c4 with specific MUI and MRA paths",
+            "evidence_snippet": "FUN_000400c4(param_1,\"Opening.mui\"",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 00065d8c handles MUI file selection based on parameters, while 00065ddc uses fixed values.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+        "unresolved_questions": [
+          "What is the purpose of param_2=0xd and param_2=0?",
+          "What do param_3 values 2 and 4 represent?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/672245e48f1f6d8e/model-review.json",
+      "sha256": "f7aaf96521e91fb585abe0ef0266e82ade655d5b1a430289ecda842ae486e117",
+      "result": {
+        "binary": "./opt/ftl/lib/libi2c_cm.so",
+        "examined_functions": [
+          "000110d4",
+          "00010a44",
+          "00010798",
+          "000107dc"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen2.5-Coder-7B-Instruct-Q5_K_M",
+        "model_usage": {
+          "completion_tokens": 452,
+          "prompt_tokens": 3099,
+          "prompt_tokens_details": {
+            "cached_tokens": 3
+          },
+          "total_tokens": 3551
+        },
+        "next_focus": [
+          "Investigate the specific I2C devices being initialized.",
+          "Analyze the retry logic in detail.",
+          "Understand the error codes and their meanings."
+        ],
+        "observations": [],
+        "overview": "The firmware contains functions for I2C communication, including initialization, receiving data, and sending/receiving data. The code includes error handling and retries for I2C operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+        "unresolved_questions": [
+          "What are the specific I2C devices being initialized?",
+          "What is the purpose of the retry logic in the I2C functions?",
+          "What are the meanings of the error codes used in the error handling?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/7373e2d470fbac95/model-review.json",
+      "sha256": "50059606da2ef0cb65e0e58a27a0cfdf6866a23254309b7ee771fa92ece29b91",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_ls1.so",
+        "examined_functions": [
+          "00012208",
+          "0001241c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 234,
+          "prompt_tokens": 1380,
+          "prompt_tokens_details": {
+            "cached_tokens": 159
+          },
+          "total_tokens": 1614
+        },
+        "next_focus": [
+          "fs_sys_BakMemRead function behavior",
+          "rq_sys_GetChkSum implementation"
+        ],
+        "observations": [
+          {
+            "address": "0x00012208",
+            "claim": "Validates system information integrity with checksum",
+            "evidence_snippet": "rq_sys_GetChkSum(__dest,0x18)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0001241c",
+            "claim": "Validates history data integrity with checksum",
+            "evidence_snippet": "rq_sys_GetChkSum(__dest,0x22)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions validate system and history data integrity using checksums. Both perform backup memory reads and validation.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "7373e2d470fbac95dbf7a7a1dd68cca59187fdb43450244fc706f8bbf7affc24",
+        "unresolved_questions": [
+          "What do the error codes 0x1004, 5, 6, 8 signify?",
+          "What is the purpose of fc_dbs_Ls1InitSysInf?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/77e97c6cebc9e4a3/model-review.json",
+      "sha256": "56e837aa863b61a47e513f776e8b96f1a83934e843c1834d6e692cb8eca9e8e9",
+      "result": {
+        "binary": "./opt/ftl/lib/libuie_api.so",
+        "examined_functions": [
+          "00010a28",
+          "00010b20"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 256,
+          "prompt_tokens": 1646,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 1902
+        },
+        "next_focus": [
+          "IPC message structure analysis",
+          "Parameter validation logic in function 00010b20"
+        ],
+        "observations": [
+          {
+            "address": "0x00010a28",
+            "claim": "Function validates VCL parameters before IPC communication",
+            "evidence_snippet": "if (local_137 == '\\b' || local_137 == '\\x02')",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions handle UI event processing and parameter validation. First checks VCL parameters, second processes API notifications with parameter validation.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "77e97c6cebc9e4a358ceb81c3afb91c8756785baf19691094857678ec21c78fd",
+        "unresolved_questions": [
+          "What specific IPC message is sent in function 00010a28?",
+          "What is the purpose of the switch statement in function 00010b20?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/7d867b15822a183e/model-review.json",
+      "sha256": "f85de26f95e99b3d23837d23e741132ebd72816fc7a312b7b1e17244a70f7e7a",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_UIEIF",
+        "examined_functions": [
+          "00017248",
+          "000217a0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 222,
+          "prompt_tokens": 1441,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1663
+        },
+        "next_focus": [
+          "E",
+          "r",
+          "r"
+        ],
+        "observations": [
+          {
+            "address": "0x00017248",
+            "claim": "Unmounts and reformats /opt/ftl/var/uie partition",
+            "evidence_snippet": "umount2(\"/opt/ftl/var/uie\",1);",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions handle filesystem operations on /opt/ftl/var/uie, including unmounting, formatting with mkfs.vfat, and mounting.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+        "unresolved_questions": [
+          "What is the purpose of the different error codes?",
+          "Are the mount points hardcoded for specific hardware?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/8486692809990cec/model-review.json",
+      "sha256": "09de32b764cad86898399623d2fb4feff8bc8200c2baf6bfa22e680d7e99de53",
+      "result": {
+        "binary": "./opt/ftl/lib/libDisdb_if.so",
+        "examined_functions": [
+          "00015644",
+          "0001571c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 245,
+          "prompt_tokens": 1629,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 1874
+        },
+        "next_focus": [
+          "Timer mode handling logic",
+          "Error trace function behavior"
+        ],
+        "observations": [],
+        "overview": "Two functions manage timing operations: fs_bll_TimReset initializes timer data structures, and fs_bll_TimMng updates timer states based on elapsed time.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "8486692809990cec2d1551858aea42991884886460d952979452e5b8a7f0fe47",
+        "unresolved_questions": [
+          "What do the timer modes 1 and 2 represent?",
+          "How are the timer values used in the broader system?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/8f3a3324604b7682/model-review.json",
+      "sha256": "1545d2d79bba686b7a31b405e5803a90ac7d45a93b30f30f3c73d0ca30f4f6e3",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DVDP",
+        "examined_functions": [
+          "000099a0",
+          "00009d50"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 235,
+          "prompt_tokens": 1433,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1668
+        },
+        "next_focus": [
+          "C",
+          "o",
+          "m"
+        ],
+        "observations": [
+          {
+            "address": "0x000099a0",
+            "claim": "Calls function pointer if conditions met",
+            "evidence_snippet": "(*DAT_000099cc)();",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function _INIT_0 checks for null pointer before calling a function pointer. FUN_00009d50 handles various command cases with conditional logic.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+        "unresolved_questions": [
+          "What is the purpose of command 0x1a handling?",
+          "What does the 't' and 'n' character check signify?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/90a7cf2c7f9eada7/model-review.json",
+      "sha256": "80042593c0039e02a058ac1c559632d364b1100841d0c45800b4da990326e401",
+      "result": {
+        "binary": "./opt/ftl/lib/libcoll.so",
+        "examined_functions": [
+          "00013bec",
+          "00013b6c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 223,
+          "prompt_tokens": 506,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 729
+        },
+        "next_focus": [
+          "Dynamic function resolution",
+          "Symbol __gmon_start__ usage"
+        ],
+        "observations": [
+          {
+            "address": "0x00013bec",
+            "claim": "Calls function pointer with offset calculation",
+            "evidence_snippet": "(**(code **)(iVar1 + DAT_00013c2c))(iVar1 + DAT_00013c28)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00013b6c",
+            "claim": "Calls __gmon_start__ symbol",
+            "evidence_snippet": "__gmon_start__();",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Two functions found: _INIT_0 with dynamic function call and processEntry calling __gmon_start__.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "90a7cf2c7f9eada7269b09643fcd9c7738bdb4ccab2f043e7419bdc36c852480",
+        "unresolved_questions": [
+          "What is the purpose of the offset calculation?",
+          "What does __gmon_start__ do in this context?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/911b997a5a4ecb16/model-review.json",
+      "sha256": "e0ced54f8e53706fd62e7002c44b6e4d011d051b28aefab2eba4f0b87a367973",
+      "result": {
+        "binary": "./opt/ftl/lib/libVOIdata_cp.so",
+        "examined_functions": [
+          "00011828",
+          "00010ed8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 257,
+          "prompt_tokens": 1344,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 1601
+        },
+        "next_focus": [
+          "Analyze FUN_000141e4",
+          "Examine file paths and permissions"
+        ],
+        "observations": [
+          {
+            "address": "0x00011828",
+            "claim": "Function validates file contents using strcat and FUN_000141e4",
+            "evidence_snippet": "strcat((char *)&local_184,pcVar6);",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00010ed8",
+            "claim": "Initialization function checks and calls a code pointer",
+            "evidence_snippet": "if (*(code **)(iVar1 + DAT_00010f18) == (code *)0x0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function VOIdata_check_updated appears to validate data files by comparing file contents and checking file operations. _INIT_0 handles initialization routines.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "911b997a5a4ecb16d98bd9a6a73a2e46af1e4abfc6ea77c27a7827c861bfdba8",
+        "unresolved_questions": [
+          "What does FUN_000141e4 function do?",
+          "What is the purpose of the file operations?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/a1f2812d0b1776fa/model-review.json",
+      "sha256": "aed22a3485c2f2f0723f4516eabfdaa31c1ba9541f36871700d6e684ff33b43b",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_sysc.so",
+        "examined_functions": [
+          "00031568",
+          "0001abfc"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 240,
+          "prompt_tokens": 906,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 1146
+        },
+        "next_focus": [
+          "Message handling functions",
+          "Error reporting mechanism"
+        ],
+        "observations": [
+          {
+            "address": "0x00031568",
+            "claim": "Initializes RTC mutex with protocol and priority ceiling",
+            "evidence_snippet": "pthread_mutexattr_setprotocol(apStack_14,2)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 00031568 initializes RTC mutex attributes with error handling. Function 0001abfc implements a message receiving task loop.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+        "unresolved_questions": [
+          "What are the specific error message formats?",
+          "What do the message types 0, 1, and 2 represent?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/a2e1403bc89b737d/model-review.json",
+      "sha256": "8304984c11946ac3dcb10619da45c4f6b086434cf000e2ba0ad4d3ecd734657c",
+      "result": {
+        "binary": "./opt/ftl/lib/libAdlRd.so",
+        "examined_functions": [
+          "0001447c",
+          "00016ad0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 233,
+          "prompt_tokens": 761,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 994
+        },
+        "next_focus": [
+          "Database file path validation logic",
+          "File copy operation parameters"
+        ],
+        "observations": [
+          {
+            "address": "0x0001447c",
+            "claim": "Function validates input parameter before file operations",
+            "evidence_snippet": "if (param_2 == (char *)0x0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00016ad0",
+            "claim": "Function performs file copy operation before opening database",
+            "evidence_snippet": "uVar1 = util_file_copy(iVar2 + DAT_00016b6c",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function fd_adl_RdoSqlDrop handles SQL database file dropping by validating path and removing files. Function fc_aur_Chk1stWrite manages initial write checks and file copying.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "a2e1403bc89b737d4f9cf503dd6419a676d723715626fade1e8fe5a12e64b777",
+        "unresolved_questions": [
+          "What specific file paths are being validated?",
+          "What is the purpose of the file copy operation?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/a30874c2d9d658ff/model-review.json",
+      "sha256": "dc3ec5008868460cd781177c92147be65cb11ede007afa6ef6b26b37e16d320e",
+      "result": {
+        "binary": "./opt/ftl/bin/FlashImageCreater",
+        "examined_functions": [
+          "000092e0",
+          "00008a70"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 246,
+          "prompt_tokens": 1599,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 1845
+        },
+        "next_focus": [
+          "Function FUN_00009fc8",
+          "Function FUN_00009df8"
+        ],
+        "observations": [
+          {
+            "address": "0x000092e0",
+            "claim": "Calculates checksum using fread and FUN_00009fc8",
+            "evidence_snippet": "fread(auStack_1010,1,0x1000,__stream)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 000092e0 appears to calculate a checksum of a file, while 00008a70 handles command-line arguments and file validation.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "a30874c2d9d658ff2f49581edfd90a9d4976ff67340afd199ae81e096bc0f91e",
+        "unresolved_questions": [
+          "What is the purpose of the checksum function?",
+          "How are command-line arguments processed?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/a90dbf0418bf7f09/model-review.json",
+      "sha256": "0d1b8e83cad1de85fd2582b8dbacccf1f446db9d59d6cefb7f4355e57328acf3",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DVDDECK",
+        "examined_functions": [
+          "000101dc",
+          "0006c228"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 207,
+          "prompt_tokens": 1072,
+          "prompt_tokens_details": {
+            "cached_tokens": 163
+          },
+          "total_tokens": 1279
+        },
+        "next_focus": [
+          "M",
+          "e",
+          "s"
+        ],
+        "observations": [
+          {
+            "address": "0x000101dc",
+            "claim": "Task uses prctl to set name 'app_com_task'",
+            "evidence_snippet": "prctl(0xf,\"app_com_task\",0,0,0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0006c228",
+            "claim": "Task uses prctl to set name 'app_if_task'",
+            "evidence_snippet": "prctl(0xf,\"app_if_task\",0,0,0)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Two tasks manage DVD deck operations via prctl and message queues. One handles app communication, other manages interface.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+        "unresolved_questions": [
+          "What do the message queue functions do?",
+          "What are the specific task statuses?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/b95f96ba4f8e8e21/model-review.json",
+      "sha256": "18fd33789468e75c6ad59052d27439b694d0328e020489c3c84a0588c05fc9c4",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_EXT",
+        "examined_functions": [
+          "00012a84",
+          "000133a8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 331,
+          "prompt_tokens": 1199,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1530
+        },
+        "next_focus": [
+          "Data flow analysis of buffer auStack_144 in function 00012a84",
+          "Filesystem path constants in function 000133a8"
+        ],
+        "observations": [
+          {
+            "address": "0x00012a84",
+            "claim": "Mounts a vfat filesystem at a hardcoded path",
+            "evidence_snippet": "mount(DAT_00012be0,DAT_00012be0 + -0x20,\"vfat\"",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000133a8",
+            "claim": "Creates and removes a RevFile.txt using system commands",
+            "evidence_snippet": "sprintf(acStack_74,\"dd if=/dev/zero of=%s/RevFile.txt bs=512 count=1\"",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 00012a84 mounts a vfat filesystem, reads data into a buffer, and returns success/failure codes. Function 000133a8 handles filesystem operations including mounting, creating files, and removing them.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+        "unresolved_questions": [
+          "What is the purpose of the data read in function 00012a84?",
+          "What is the significance of the hardcoded paths in function 000133a8?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/c5b9d0c56a1f7539/model-review.json",
+      "sha256": "1afebd189c1ed29eb3a8f8484cbd59304d721abe1f407205e15cf3be3f5ae4b8",
+      "result": {
+        "binary": "./opt/ftl/lib/libVOIAudioStream.so",
+        "examined_functions": [
+          "0001c55c",
+          "00012edc"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 237,
+          "prompt_tokens": 1088,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 1325
+        },
+        "next_focus": [
+          "File access pattern analysis",
+          "Setup routine behavior"
+        ],
+        "observations": [
+          {
+            "address": "0x0001c55c",
+            "claim": "Function opens file and reads data into allocated buffer",
+            "evidence_snippet": "fopen(param_1,(char *)(iVar4 + DAT_0001c67c))",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00012edc",
+            "claim": "Initialization function calls a setup routine via function pointer",
+            "evidence_snippet": "(**(code **)(iVar1 + DAT_00012f1c))",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0001c55c appears to load audio stream data from a file into allocated memory, while 00012edc handles initialization.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "c5b9d0c56a1f7539e91851fe4958316987b401d81769d40711b7102f4a62c7f1",
+        "unresolved_questions": [
+          "What is the purpose of the file access pattern?",
+          "What does the setup routine do?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/c826857156b51869/model-review.json",
+      "sha256": "f474baaa8608c60d51261d79fbce802bc73e0f0e9dcf084f9ddf9098160d4dbe",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_MMP",
+        "examined_functions": [
+          "000765e8",
+          "0006a7b4"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 265,
+          "prompt_tokens": 1590,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1855
+        },
+        "next_focus": [
+          "SD card test file operations",
+          "Semaphore synchronization mechanism"
+        ],
+        "observations": [
+          {
+            "address": "0x000765e8",
+            "claim": "Writes test data to /sd_test.dat and verifies readback.",
+            "evidence_snippet": "write(iVar2,auStack_12c,0x100)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0006a7b4",
+            "claim": "Uses semaphore to synchronize song file selection with timeout.",
+            "evidence_snippet": "rq_sem_TakeT(0xe)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 000765e8 appears to handle SD card test operations with file I/O and error tracing. Function 0006a7b4 manages semaphore-based timing for song file selection.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+        "unresolved_questions": [
+          "What is the purpose of the 0x100 byte buffer operations?",
+          "How are the error trace values 0x1234, 0x5678, 0x9abc used?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/c87538f1de097ef0/model-review.json",
+      "sha256": "e1ae8d9096f3e07849bfa0930424a746db423702691d033dc084f38867eea411",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_grp.so",
+        "examined_functions": [
+          "0003e5c4",
+          "000447b8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 250,
+          "prompt_tokens": 1493,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 1743
+        },
+        "next_focus": [
+          "Analyze jump table handling",
+          "Reverse engineer fc_grp_LibFntC_initcue"
+        ],
+        "observations": [
+          {
+            "address": "0x0003e5c4",
+            "claim": "Calls fc_grp_LibFntC_initcue three times with offsets",
+            "evidence_snippet": "fc_grp_LibFntC_initcue(iVar1 + 0x1dc34)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000447b8",
+            "claim": "Initializes memory structures with memset and sets up data pointers",
+            "evidence_snippet": "memset(pvVar12,0,0xa0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Two functions analyzed: font memory initialization and general library initialization. First function calls font initialization routines and a jump table. Second function initializes data structures and sets up memory.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "unresolved_questions": [
+          "What is the purpose of the jump table in first function?",
+          "What do the offset values represent in first function?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/cf7c621b96d0865d/model-review.json",
+      "sha256": "8e656d7bfbc1b5242c91129f59fa20cacaf5aabbec7894f69fcc67cb5dea7e0e",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_HMI",
+        "examined_functions": [
+          "00065d8c",
+          "00065ddc"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 271,
+          "prompt_tokens": 523,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 794
+        },
+        "next_focus": [
+          "Function 000400c4",
+          "Parameter meanings"
+        ],
+        "observations": [
+          {
+            "address": "0x00065d8c",
+            "claim": "Selects MUI file based on param_2 and param_3 values",
+            "evidence_snippet": "if ((param_2 != 0xd) && (param_2 != 0))",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00065d8c",
+            "claim": "Calls FUN_000400c4 with specific MUI and MRA paths",
+            "evidence_snippet": "FUN_000400c4(param_1,\"Opening.mui\",\"open/fn/Opening.mra\")",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 00065d8c handles MUI file selection based on parameters, while 00065ddc uses fixed values.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+        "unresolved_questions": [
+          "What do param_2 and param_3 represent?",
+          "What is the purpose of FUN_000400c4?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/db3b38c1a9fd31b7/model-review.json",
+      "sha256": "eb46fad0c26b0a96fcff29d8db6a8b049da8487a736822866850c9e57fd58c48",
+      "result": {
+        "binary": "./opt/ftl/bin/FlashImageWriter",
+        "examined_functions": [
+          "00009374",
+          "00008a30"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 213,
+          "prompt_tokens": 2267,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2480
+        },
+        "next_focus": [
+          "Flash block size constants",
+          "Command line argument processing"
+        ],
+        "observations": [
+          {
+            "address": "0x00009374",
+            "claim": "Function validates flash block sizes match expected values",
+            "evidence_snippet": "__size != sVar6",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00008a30",
+            "claim": "Function checks for root user privileges",
+            "evidence_snippet": "_Var6 != 0",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 00009374 handles flash image writing with size validation and error handling. Function 00008a30 processes command line arguments and validates user permissions.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "db3b38c1a9fd31b7a4e01ff33a65636849da45d829afc3d5aba2aec827fee18f",
+        "unresolved_questions": [
+          "What are the specific flash block size constants?",
+          "What is the purpose of the size validation check?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/e5ca3288453da45f/model-review.json",
+      "sha256": "e7f55221a9e7a63b851cfbb9b9f6aa1286e91bb9de3ce6dbd771ba95ba49d754",
+      "result": {
+        "binary": "./opt/ftl/lib/libComFlmLb.so",
+        "examined_functions": [
+          "00010fac",
+          "00010b68"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 258,
+          "prompt_tokens": 1366,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 1624
+        },
+        "next_focus": [
+          "File creation and error handling logic",
+          "Ioctl command 0x8001ff01 usage"
+        ],
+        "observations": [
+          {
+            "address": "0x00010fac",
+            "claim": "Opens a file using the open() system call",
+            "evidence_snippet": "iVar2 = open(__file,2);",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00010fac",
+            "claim": "Calls ioctl with command 0x8001ff01",
+            "evidence_snippet": "iVar2 = ioctl(iVar2,0x8001ff01,piVar9 + 1);",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function fs_drv_FlmInit initializes a flash driver by opening a file, handling errors, and setting up ioctl operations. _INIT_0 performs initialization checks and calls a function pointer.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "e5ca3288453da45f666c8855ec5d2a29243f765789a36ad3a6943e674c4355b6",
+        "unresolved_questions": [
+          "What is the purpose of gnu_dev_makedev?",
+          "What does FUN_00011760 do?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/e5eb7a2861f8747d/model-review.json",
+      "sha256": "fc9b7689704d5276b3220fb5400b06c874d87d2fdc31c86284432044e7357267",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_UIEIF",
+        "examined_functions": [
+          "00017248",
+          "000217a0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 250,
+          "prompt_tokens": 1441,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1691
+        },
+        "next_focus": [
+          "Error handling paths in both functions",
+          "Data at DAT_00021948"
+        ],
+        "observations": [
+          {
+            "address": "0x00017248",
+            "claim": "Unmounts and reformats /opt/ftl/var/uie partition",
+            "evidence_snippet": "umount2(\"/opt/ftl/var/uie\",1);",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions handle filesystem operations on /opt/ftl/var/uie, including unmounting, formatting with mkfs.vfat, and mounting.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4",
+        "unresolved_questions": [
+          "What is the purpose of the backup directory?",
+          "What do the magic numbers in FUN_000341ac represent?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/e823e814559f4b47/model-review.json",
+      "sha256": "6f1b428bb5a96927b75809fdd05f2e89ba3e06d315a5d5c870f686bde324dfb1",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_VI",
+        "examined_functions": [
+          "0000ea38",
+          "00029c64"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 238,
+          "prompt_tokens": 1674,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1912
+        },
+        "next_focus": [
+          "Directory creation logic",
+          "USB write timing constraints"
+        ],
+        "observations": [
+          {
+            "address": "0x0000ea38",
+            "claim": "Opens directory and handles mount errors",
+            "evidence_snippet": "rq_fls_OpenDir(*param_1 + 0xc,param_1 + 0xf,0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00029c64",
+            "claim": "Writes beacon data to USB storage",
+            "evidence_snippet": "rq_fls_Write(local_10,1,1,local_c,&local_14,0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0000ea38 handles directory operations and file system mounting. Function 00029c64 manages USB beacon data writing.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+        "unresolved_questions": [
+          "What specific error codes indicate failure?",
+          "What is the purpose of the 0x27a offset?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/ed6c8180598afb2f/model-review.json",
+      "sha256": "fedb491f8757e9e15b8701974a03ad2983145287e02da90f74657b615a29d876",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DISPLAY",
+        "examined_functions": [
+          "001849f4",
+          "00275f3c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 284,
+          "prompt_tokens": 985,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1269
+        },
+        "next_focus": [
+          "Flash file system error codes",
+          "Model info structure layout"
+        ],
+        "observations": [
+          {
+            "address": "0x001849f4",
+            "claim": "Conditional logic depends on model info byte at DAT_0122edfe",
+            "evidence_snippet": "if (DAT_0122edfe != '\\x01')",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00275f3c",
+            "claim": "Flash read operation with error handling for file system access",
+            "evidence_snippet": "iVar1 = rq_fls_Read(auStack_14[0],1,0x2000,DAT_00276040,&uStack_18,0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 001849f4 handles display info setting based on model and parameter values. Function 00275f3c manages flash file system operations and device initialization.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+        "unresolved_questions": [
+          "What specific model information is retrieved by rq_sys_GetModelInfo?",
+          "What is the purpose of fs_drv_SwiTswDevInit function call?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/f3e37052d8875031/model-review.json",
+      "sha256": "810012f1bf4b39a25f159ef7e57d83e881e7e7c218e37c9d67f586f2c9cf5b59",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DSV",
+        "examined_functions": [
+          "00015104",
+          "000257c4"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 244,
+          "prompt_tokens": 2083,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2327
+        },
+        "next_focus": [
+          "Dictionary file format",
+          "Inflate operation details"
+        ],
+        "observations": [
+          {
+            "address": "0x00015104",
+            "claim": "Uses inflateInit_ with version string '1.2.3'",
+            "evidence_snippet": "inflateInit_(&local_68,\"1.2.3\",0x38)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000257c4",
+            "claim": "Accesses dictionary files with preset encoding ID",
+            "evidence_snippet": "sprintf(acStack_e8,\"%s%d%s\",\"/opt/ftl/dsv/dic/PresetDictionaryEncid\"",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Two similar functions handle decompression with dictionary file operations. Both use inflateInit_ and inflate, accessing /opt/ftl/dsv/dic/ paths.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+        "unresolved_questions": [
+          "What is the purpose of the dictionary files?",
+          "How are the decompressed results used?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/f6cb7d7fb510a4d9/model-review.json",
+      "sha256": "15ea8a877d2789e291220d62c6c5e51f4d3fd39953f1bf5fb8c592ee6fa1b774",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_skt.so",
+        "examined_functions": [
+          "00011378",
+          "00011214"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 256,
+          "prompt_tokens": 624,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 880
+        },
+        "next_focus": [
+          "Data structure at 0001124c",
+          "Function pointer at 00011254"
+        ],
+        "observations": [
+          {
+            "address": "0x00011214",
+            "claim": "Calls function pointer from data structure",
+            "evidence_snippet": "(**(code **)(iVar1 + DAT_00011254))",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function rq_skt_Open handles socket creation with error handling. Function _INIT_0 appears to be an initialization routine calling a function pointer.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "f6cb7d7fb510a4d97e81df828fcbb870e1dd678c12e01980adac898519e395a8",
+        "unresolved_questions": [
+          "What does param_1 value 2 represent?",
+          "What is the purpose of the data structure at 0001124c?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/f8d509b18b2be933/model-review.json",
+      "sha256": "ff3c223287e7a084d8590a9ba50ff9f6a60b4f04c29abb9fbaaf53c062d60e89",
+      "result": {
+        "binary": "./opt/ftl/lib/libAdlUb.so",
+        "examined_functions": [
+          "000139cc",
+          "00016e9c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 223,
+          "prompt_tokens": 765,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 988
+        },
+        "next_focus": [
+          "Database file path construction",
+          "File copy operation details"
+        ],
+        "observations": [
+          {
+            "address": "0x00016e9c",
+            "claim": "Copies file and opens database on first write check.",
+            "evidence_snippet": "util_file_copy(iVar2 + DAT_00016f38,iVar2 + DAT_00016f3c",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle SQL database dropping and first-write checking with file operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "f8d509b18b2be933eacdf5d09794570ce6757129190076d6815d9bcc99c0d845",
+        "unresolved_questions": [
+          "What is the purpose of the first-write check?",
+          "How are the file paths constructed?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/fc38e66676a9fe45/model-review.json",
+      "sha256": "788bb68aaeb264d7fde476d0faca7a9749a574cb762dd84dc3398464b54c920a",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_AUDIO",
+        "examined_functions": [
+          "00019dfc",
+          "0004d724"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 230,
+          "prompt_tokens": 1504,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1734
+        },
+        "next_focus": [
+          "File header structure",
+          "Cache mechanism"
+        ],
+        "observations": [
+          {
+            "address": "0x00019dfc",
+            "claim": "Opens and reads file header with error handling",
+            "evidence_snippet": "open(DAT_0001a094,0,param_3,param_4",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0004d724",
+            "claim": "Manages file caching and reopens files when needed",
+            "evidence_snippet": "close((&DAT_0014991c)[iVar3 * 2]",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 00019dfc handles file reading with error checking, while 0004d724 manages file operations and caching.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05",
+        "unresolved_questions": [
+          "What is the purpose of the file header read?",
+          "How is the cache managed?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/fcbd4cf0c639442e/model-review.json",
+      "sha256": "0cd4bc73163e1d93a7dfebccd3891dbc5a70b28108745218de89a47e757abc82",
+      "result": {
+        "binary": "./opt/ftl/lib/libedbsong.so",
+        "examined_functions": [
+          "00029204",
+          "0002a45c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 230,
+          "prompt_tokens": 2199,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 2429
+        },
+        "next_focus": [
+          "Database connection state variables",
+          "USB device status validation logic"
+        ],
+        "observations": [
+          {
+            "address": "0x00029204",
+            "claim": "Database disconnection calls SQLDisconnect and SQLFreeConnect functions.",
+            "evidence_snippet": "sVar1 = e_rdb_SQLDisconnect",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0002a45c",
+            "claim": "USB image selection validates device status and mutex locking.",
+            "evidence_snippet": "iVar2 = df_edb_LockMutex",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 00029204 handles database disconnection with error logging. Function 0002a45c manages USB image file selection with mutex locking and status checks.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "source_sha256": "fcbd4cf0c639442e7d80877daf274ef6cd3e552bb917ea9f16bdba180d14337d",
+        "unresolved_questions": [
+          "What specific database connection states are being managed?",
+          "What is the purpose of the USB device manager ID check?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/043b2d3ccbcca36d/focus/000.json",
+      "sha256": "7aee04477d47ed6779c0ddd7f8f0e1b1101eb34bc8c1d0f54afaa839566f52ba",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_CDP",
+        "examined_functions": [
+          "00018bbc",
+          "00009d60"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 244,
+          "prompt_tokens": 1136,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1380
+        },
+        "next_focus": [
+          "Memory allocation function rq_mem_Alloc",
+          "Message sending function rq_msg_Send"
+        ],
+        "observations": [
+          {
+            "address": "0x00018bbc",
+            "claim": "Processes '-v' command-line option for verbose output",
+            "evidence_snippet": "if (iVar1 == 0x76) goto LAB_00018c90;",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00009d60",
+            "claim": "Allocates memory and sends message with memcpy",
+            "evidence_snippet": "memcpy(__dest,param_5,8);",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 00018bbc handles command-line arguments with getopt, processes '-v' flag, and prints build info. Function 00009d60 manages memory allocation and message sending.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "18bbc",
+          "9d60"
+        ],
+        "selection_evidence": [
+          {
+            "address": "18bbc",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "9d60",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the getopt loop logic?",
+          "What does fs_sys_CnfEntry do?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/043b2d3ccbcca36d/focus/001.json",
+      "sha256": "8d7c2e4e5997f3cb25c851ae558d7eece9339f2e6e097dae0211f56f912f1b46",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_CDP",
+        "examined_functions": [
+          "00010000",
+          "000154f8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 241,
+          "prompt_tokens": 2166,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2407
+        },
+        "next_focus": [
+          "Parameter handling in first function",
+          "Array indexing in second function"
+        ],
+        "observations": [
+          {
+            "address": "0x000154f8",
+            "claim": "Function uses switch on array index with timer operations.",
+            "evidence_snippet": "switch((&DAT_000383f5)[uVar4 * 0x72])",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle device communication states and connection statuses. First function processes command cases 1-4, second manages connection states and timer operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "10000",
+          "154f8"
+        ],
+        "selection_evidence": [
+          {
+            "address": "10000",
+            "score": 4,
+            "tags": []
+          },
+          {
+            "address": "154f8",
+            "score": 4,
+            "tags": []
+          }
+        ],
+        "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the memory offsets represent?",
+          "What is the purpose of the timer value 0xc?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/043b2d3ccbcca36d/focus/002.json",
+      "sha256": "b517bf0878a911ac191a28dfc0ccf6f31a7e0963b859e5b8eb886503417bf4dc",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_CDP",
+        "examined_functions": [
+          "000162e0",
+          "00009ec0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 328,
+          "prompt_tokens": 1542,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1870
+        },
+        "next_focus": [
+          "Analyze DAT_00036f10 initialization",
+          "Reverse engineer FUN_000170fc"
+        ],
+        "observations": [],
+        "overview": "Function 000162e0 handles state-based returns with switch-case logic. Function 00009ec0 processes command cases with conditional branches and function calls.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "162e0",
+          "9ec0"
+        ],
+        "selection_evidence": [
+          {
+            "address": "162e0",
+            "score": 4,
+            "tags": []
+          },
+          {
+            "address": "9ec0",
+            "score": 4,
+            "tags": []
+          }
+        ],
+        "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the jumptable at 0x000383b8?",
+          "How are DAT_00036f10 and DAT_00036f1b initialized?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/0ef37be31e5002eb/focus/000.json",
+      "sha256": "8435fdb70152c25e9329ddc4ddc8045e30641c8e54cece88901dadb59c3cee6c",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_VRS",
+        "examined_functions": [
+          "0001e2ac",
+          "0005f72c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 223,
+          "prompt_tokens": 1516,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1739
+        },
+        "next_focus": [
+          "File I/O error handling",
+          "XML parsing logic"
+        ],
+        "observations": [
+          {
+            "address": "0x0001e2ac",
+            "claim": "Processes XML files from directory listing",
+            "evidence_snippet": "strstr(local_34,\".xml\")",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0005f72c",
+            "claim": "Opens and closes files with error handling",
+            "evidence_snippet": "rq_fls_Open(param_1,&DAT_000aabe8,local_c,0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0001e2ac initializes and processes XML files, while 0005f72c handles file operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "1e2ac",
+          "5f72c"
+        ],
+        "selection_evidence": [
+          {
+            "address": "1e2ac",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "5f72c",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific XML processing occurs?",
+          "What is the purpose of DAT_0010c640?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/0ef37be31e5002eb/focus/001.json",
+      "sha256": "f25c934b732b228835b80b3e09c46e6daad4d8b458bc7951e87493c3c855b60b",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_VRS",
+        "examined_functions": [
+          "0005f7fc",
+          "00060728"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 234,
+          "prompt_tokens": 1468,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1702
+        },
+        "next_focus": [
+          "Error handling in file operations",
+          "Backup file purpose"
+        ],
+        "observations": [
+          {
+            "address": "0x0005f7fc",
+            "claim": "Function validates parameters before proceeding",
+            "evidence_snippet": "if (param_1 == 0 || param_2 == 0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00060728",
+            "claim": "Checks for existence of mclr_req.dat file",
+            "evidence_snippet": "sprintf(acStack_5c,\"%s%s\",\"/var/backup/vrs/\",\"mclr_req.dat\")",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0005f7fc handles file operations with error checking and memory management. Function 00060728 checks for a backup file existence.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "5f7fc",
+          "60728"
+        ],
+        "selection_evidence": [
+          {
+            "address": "5f7fc",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "60728",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the file operations?",
+          "What do the error codes represent?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/15f3bc8afa901ec7/focus/000.json",
+      "sha256": "4d6129aceaa0ca31b13a526f3bb666138947f91db5fb06929603b8fd0c2ca93e",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_AUDIO",
+        "examined_functions": [
+          "0006de38",
+          "00056130"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 277,
+          "prompt_tokens": 2664,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2941
+        },
+        "next_focus": [
+          "File I/O error handling in 0006de38",
+          "Message sending mechanism in 00056130"
+        ],
+        "observations": [
+          {
+            "address": "0x0006de38",
+            "claim": "Opens file 'A:/TEN/PSDB.KWI' with error handling",
+            "evidence_snippet": "rq_fls_Open(\"A:/TEN/PSDB.KWI\"",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00056130",
+            "claim": "Sends message with specific parameters via rq_msg_Send",
+            "evidence_snippet": "rq_msg_Send(0xf,&local_38,0x10)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0006de38 handles file operations with error tracing, while 00056130 manages memory and message sending.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "6de38",
+          "56130"
+        ],
+        "selection_evidence": [
+          {
+            "address": "6de38",
+            "score": 326,
+            "tags": [
+              "missing_libs",
+              "update_recovery"
+            ]
+          },
+          {
+            "address": "56130",
+            "score": 198,
+            "tags": [
+              "startup_ipc",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the file 'A:/TEN/PSDB.KWI'?",
+          "What do the error codes 0x1020-0x1023 signify?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/15f3bc8afa901ec7/focus/001.json",
+      "sha256": "1b4109f7db0eb9bb7e099483a4fff88061fb6e5774e90594199c2338d594a4f4",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_AUDIO",
+        "examined_functions": [
+          "00054250",
+          "000578b0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 313,
+          "prompt_tokens": 2712,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 3025
+        },
+        "next_focus": [
+          "Audio state transition logic in 00054250",
+          "ALSA error handling in 000578b0"
+        ],
+        "observations": [],
+        "overview": "Function 00054250 handles audio playback mode control with state transitions. Function 000578b0 manages audio task initialization and ALSA operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "54250",
+          "578b0"
+        ],
+        "selection_evidence": [
+          {
+            "address": "54250",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "578b0",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the 'e' character check in DAT_0013b429?",
+          "How does FUN_00056130() determine ALSA open errors?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/15f3bc8afa901ec7/focus/002.json",
+      "sha256": "1fa6da8edcef39fa2056892a6d53b2e5e7d7ddc271c3688a81d3391e5d790594",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_AUDIO",
+        "examined_functions": [
+          "000268dc",
+          "0004dc10"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 233,
+          "prompt_tokens": 1118,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1351
+        },
+        "next_focus": [
+          "Message sending function rq_msg_Send",
+          "Memory allocation function rq_mem_Alloc"
+        ],
+        "observations": [
+          {
+            "address": "0x000268dc",
+            "claim": "Initializes multiple global variables to zero",
+            "evidence_snippet": "DAT_00140f97 = 0;",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0004dc10",
+            "claim": "Conditionally allocates memory and sends message 0xd",
+            "evidence_snippet": "if (DAT_00299d3a == '\\0')",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 000268dc initializes audio-related variables and calls several subfunctions. Function 0004dc10 handles specific message sending based on conditional checks.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "268dc",
+          "4dc10"
+        ],
+        "selection_evidence": [
+          {
+            "address": "268dc",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "4dc10",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the initialized globals represent?",
+          "What is the purpose of message 0xd?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/1a526239fbe5b3b7/focus/000.json",
+      "sha256": "77f0377944ecc89e20a3de09de18b5555973110493c6228214d53342acaca62c",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DTV",
+        "examined_functions": [
+          "000ac8cc",
+          "000a0a8c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 274,
+          "prompt_tokens": 768,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1042
+        },
+        "next_focus": [
+          "Investigate FUN_000ac188 function",
+          "Analyze rq_fls_OpenDir behavior"
+        ],
+        "observations": [
+          {
+            "address": "0x000ac8cc",
+            "claim": "Loads font files by copying paths and calling FUN_000ac188",
+            "evidence_snippet": "strcpy(acStack_11c,DAT_0027e2d8)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000a0a8c",
+            "claim": "Opens directory using rq_fls_OpenDir and handles errors",
+            "evidence_snippet": "iVar1 = rq_fls_OpenDir(auStack_170",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 000ac8cc handles font loading by copying strings and calling a font loading function. Function 000a0a8c appears to open a directory using rq_fls_OpenDir.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "ac8cc",
+          "a0a8c"
+        ],
+        "selection_evidence": [
+          {
+            "address": "ac8cc",
+            "score": 287,
+            "tags": [
+              "missing_resources",
+              "paths"
+            ]
+          },
+          {
+            "address": "a0a8c",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What are the actual font file names being loaded?",
+          "What is the purpose of the error handling in function 000a0a8c?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/21c2f32554f16c6a/focus/000.json",
+      "sha256": "72e8812a9130fafd769e002ff46d66906339600fa21afc4d78c0706775f954e0",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_NAVIIF",
+        "examined_functions": [
+          "00018520",
+          "00018afc"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 234,
+          "prompt_tokens": 1651,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1885
+        },
+        "next_focus": [
+          "Message sending functions",
+          "Error trace handling"
+        ],
+        "observations": [
+          {
+            "address": "0x00018520",
+            "claim": "Function checks param_2 byte at offset 0x19 for values 1 or 3",
+            "evidence_snippet": "*(char *)(param_2 + 0x19) != '\\x03'",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions handle navigation interface status and message processing with conditional logic based on parameter values and system states.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "18520",
+          "18afc"
+        ],
+        "selection_evidence": [
+          {
+            "address": "18520",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "18afc",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the specific magic numbers represent?",
+          "What is the purpose of the bit flag operations?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/23daecdd67cbf4c9/focus/000.json",
+      "sha256": "5da709ac21ec6ca3240e91ab55d6077c00d3adb7ab37341218ccdc53218d3c20",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_CDDB",
+        "examined_functions": [
+          "00010394",
+          "000103f8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 213,
+          "prompt_tokens": 678,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 891
+        },
+        "next_focus": [
+          "Message sending function behavior",
+          "Memory allocation patterns"
+        ],
+        "observations": [
+          {
+            "address": "0x00010394",
+            "claim": "Function sends message with 0x10 length parameter",
+            "evidence_snippet": "local_1c = 0x10;",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x000103f8",
+            "claim": "Function sends message with 0xf length parameter",
+            "evidence_snippet": "local_1c = 0xf;",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Two similar functions allocate memory and send messages with different parameters. Both use rq_mem_Alloc and rq_msg_Send with similar structures.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "10394",
+          "103f8"
+        ],
+        "selection_evidence": [
+          {
+            "address": "10394",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "103f8",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the different length parameters signify?",
+          "What is the purpose of the rq_mem_Alloc calls?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/28e8b7d000b0d764/focus/000.json",
+      "sha256": "859d18767bc6f6e6cf4be1b80037363e9531b3157af09af00074ce9fa9fd1019",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_TMD",
+        "examined_functions": [
+          "00020904",
+          "000219c8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 244,
+          "prompt_tokens": 1907,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2151
+        },
+        "next_focus": [
+          "TMD command processing flow",
+          "Memory allocation behavior"
+        ],
+        "observations": [
+          {
+            "address": "0x000219c8",
+            "claim": "Function allocates memory and sends message based on parameter",
+            "evidence_snippet": "puVar1 = (undefined1 *)rq_mem_Alloc(1,0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 00020904 handles TMD processing with state transitions and hardware operations. Function 000219c8 manages memory allocation and message sending based on parameter validation.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "20904",
+          "219c8"
+        ],
+        "selection_evidence": [
+          {
+            "address": "20904",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "219c8",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the hardware state variables?",
+          "How are the message parameters constructed?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/2f417cf26bf49f3c/focus/000.json",
+      "sha256": "f2c0387b70158265d4c5ede1de3757ec233fa2347683ef7e6290bca9580a194b",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_SYSTEM",
+        "examined_functions": [
+          "0002ead0",
+          "0000fd9c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 291,
+          "prompt_tokens": 1586,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1877
+        },
+        "next_focus": [
+          "USB mounting error handling",
+          "Display configuration file selection logic"
+        ],
+        "observations": [
+          {
+            "address": "0x0002ead0",
+            "claim": "Attempts to mount USB with vfat and checks for 13PFBACKUPDB.KWI file",
+            "evidence_snippet": "mount(param_1,\"/mnt/usb1\",\"vfat\",0xc0ed0000,\"iocharset=utf8\")",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 0002ead0 attempts mounting USB devices with vfat filesystem and checks for a specific file. Function 0000fd9c handles display configuration and file operations based on system parameters.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "2ead0",
+          "fd9c"
+        ],
+        "selection_evidence": [
+          {
+            "address": "2ead0",
+            "score": 289,
+            "tags": [
+              "filesystem",
+              "update_recovery"
+            ]
+          },
+          {
+            "address": "fd9c",
+            "score": 284,
+            "tags": [
+              "missing_libs",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the 13PFBACKUPDB.KWI file check?",
+          "How are the display configuration files utilized after reading?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/2f417cf26bf49f3c/focus/001.json",
+      "sha256": "1d5841b79829ff27d172f3efcd0a9639e552e2a79f248f6f70305dc234088cc8",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_SYSTEM",
+        "examined_functions": [
+          "00027850",
+          "00061b18"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 249,
+          "prompt_tokens": 2435,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2684
+        },
+        "next_focus": [
+          "Version value processing logic",
+          "File access error handling"
+        ],
+        "observations": [
+          {
+            "address": "0x00027850",
+            "claim": "Accesses /opt/ftl/SDIMG.VER file for version data",
+            "evidence_snippet": "pcVar2 = \"/opt/ftl/SDIMG.VER\"",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00061b18",
+            "claim": "Reads version info from /var/backup/DBIMG.VER",
+            "evidence_snippet": "rq_fls_Open(\"/var/backup/DBIMG.VER\"",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle version data retrieval from firmware files and system parameters. One accesses SDIMG.VER, NFIMG.VER, and DBIMG.VER files while the other manages VCL parameters.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "27850",
+          "61b18"
+        ],
+        "selection_evidence": [
+          {
+            "address": "27850",
+            "score": 282,
+            "tags": [
+              "missing_libs",
+              "paths"
+            ]
+          },
+          {
+            "address": "61b18",
+            "score": 282,
+            "tags": [
+              "missing_libs",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the VCL parameter handling?",
+          "How are the version values used after retrieval?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/37707bc33d7fa157/focus/000.json",
+      "sha256": "f75593e5d1d356d02922128f8f9af9a87088b56bf036bc073182e12206ea9b90",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_SPC",
+        "examined_functions": [
+          "00010a48",
+          "00010cb0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 218,
+          "prompt_tokens": 2338,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2556
+        },
+        "next_focus": [
+          "Memory allocation patterns",
+          "Error handling routines"
+        ],
+        "observations": [
+          {
+            "address": "0x00010a48",
+            "claim": "Function validates input data before processing.",
+            "evidence_snippet": "if (local_20 == (byte *)0x0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00010cb0",
+            "claim": "Function allocates memory for message handling.",
+            "evidence_snippet": "puVar5 = (undefined4 *)rq_mem_Alloc(1,0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle firmware communication and error tracing. First function processes data with validation, second manages system tasks and message sending.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "10a48",
+          "10cb0"
+        ],
+        "selection_evidence": [
+          {
+            "address": "10a48",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "10cb0",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of DAT_00025d44?",
+          "How are the magic constants used in the code?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/4ec99dbe7ba649cc/focus/000.json",
+      "sha256": "8145421fec972318e3b96f9c95c18bd8261dc97b98e54bdbada7627ec862839a",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_REPRO",
+        "examined_functions": [
+          "0000b720",
+          "00015b04"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 266,
+          "prompt_tokens": 2407,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2673
+        },
+        "next_focus": [
+          "Analyze the jumptable in function 0000b720",
+          "Examine the file operations in function 00015b04"
+        ],
+        "observations": [
+          {
+            "address": "0x0000b720",
+            "claim": "Handles umount and system state transitions",
+            "evidence_snippet": "umount(\"/var/verup/\")",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00015b04",
+            "claim": "Manages file reading and writing operations",
+            "evidence_snippet": "read(iVar2,local_24,0x40000)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0000b720 handles system state transitions and backup operations. Function 00015b04 manages file operations and error handling.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "b720",
+          "15b04"
+        ],
+        "selection_evidence": [
+          {
+            "address": "b720",
+            "score": 443,
+            "tags": [
+              "filesystem",
+              "missing_libs",
+              "paths"
+            ]
+          },
+          {
+            "address": "15b04",
+            "score": 387,
+            "tags": [
+              "filesystem",
+              "startup_ipc",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the jumptable at 0000b720?",
+          "What data is stored in DAT_0007cd84?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/4ec99dbe7ba649cc/focus/001.json",
+      "sha256": "c2e5aa61be50d01902b45e70a9f40403e60688efb6349a5f69a7d475fd889a18",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_REPRO",
+        "examined_functions": [
+          "0001cd1c",
+          "0001e384"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 306,
+          "prompt_tokens": 1673,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1979
+        },
+        "next_focus": [
+          "Directory traversal logic in 0001cd1c",
+          "Version file parsing in 0001e384"
+        ],
+        "observations": [
+          {
+            "address": "0x0001cd1c",
+            "claim": "Function handles LOADING.KWI file specifically when param_1 equals 3",
+            "evidence_snippet": "iVar5 = strcmp(local_30,\"LOADING.KWI\");",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0001e384",
+            "claim": "Function reads fixed-size version file with 7-byte read",
+            "evidence_snippet": "iVar1 = rq_fls_Read(local_c,1,7,param_1,&local_10,0);",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0001cd1c processes directory contents, handling specific file 'LOADING.KWI' and calling helper functions. Function 0001e384 reads version file /opt/ftl/SDIMG.VER.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "1cd1c",
+          "1e384"
+        ],
+        "selection_evidence": [
+          {
+            "address": "1cd1c",
+            "score": 332,
+            "tags": [
+              "missing_libs",
+              "update_recovery"
+            ]
+          },
+          {
+            "address": "1e384",
+            "score": 272,
+            "tags": [
+              "missing_libs",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the numerous DAT_0007dxxx variables?",
+          "How are the helper functions FUN_0001c918 and FUN_0001ca78 used?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/4ec99dbe7ba649cc/focus/002.json",
+      "sha256": "03389f45574ec7ed4e3dccd928266633794f58e066dcf76bdbd3407fc76b5360",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_REPRO",
+        "examined_functions": [
+          "0001e58c",
+          "0002353c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 287,
+          "prompt_tokens": 1748,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2035
+        },
+        "next_focus": [
+          "File system operations in function 0002353c",
+          "Data flow in function 0001e58c"
+        ],
+        "observations": [
+          {
+            "address": "0x0001e58c",
+            "claim": "Reads ModelId from /opt/ftl/ModelId file",
+            "evidence_snippet": "rq_fls_Open(\"/opt/ftl/ModelId\"",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0002353c",
+            "claim": "Writes data to /var/backup/13CyRprVupDLNew file",
+            "evidence_snippet": "rq_fls_Open(\"/var/backup/13CyRprVupDLNew\"",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0001e58c reads ModelId from /opt/ftl/ModelId file, with fallback values. Function 0002353c handles various operations based on parameter values, including file operations and system calls.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "1e58c",
+          "2353c"
+        ],
+        "selection_evidence": [
+          {
+            "address": "1e58c",
+            "score": 272,
+            "tags": [
+              "missing_libs",
+              "paths"
+            ]
+          },
+          {
+            "address": "2353c",
+            "score": 232,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the ModelId file?",
+          "What data is written to the backup file?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/4ec99dbe7ba649cc/focus/003.json",
+      "sha256": "827da2544f776b61dbbe6ec863d24e313b4ff98dde959a10e11886e99f2e0f0e",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_REPRO",
+        "examined_functions": [
+          "00018fc8",
+          "00019de8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 288,
+          "prompt_tokens": 1793,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2081
+        },
+        "next_focus": [
+          "Data flow after memcpy in 00018fc8",
+          "File path referenced by auStack_1520"
+        ],
+        "observations": [
+          {
+            "address": "0x00018fc8",
+            "claim": "Function opens and reads a file using rq_fls_Open and rq_fls_Read.",
+            "evidence_snippet": "iVar7 = rq_fls_Open(auStack_1520,&DAT_00024028,&local_30,0);",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00019de8",
+            "claim": "Function reads data from a file into a provided buffer.",
+            "evidence_snippet": "iVar1 = rq_fls_Read(local_1c[0],1,param_2,param_3,&local_20,0);",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 00018fc8 appears to handle file operations and data processing, while 00019de8 reads files into buffers.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "18fc8",
+          "19de8"
+        ],
+        "selection_evidence": [
+          {
+            "address": "18fc8",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "19de8",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the 0xf4 byte read operation?",
+          "What data structure is being processed after memcpy?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/5fa0b9571f51693b/focus/000.json",
+      "sha256": "1bf38fc236e0b221ade2a22254d20066a1c2422a4ca6790759a99b676e9afd34",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_sysp.so",
+        "examined_functions": [
+          "0001d790",
+          "0001d824"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 270,
+          "prompt_tokens": 855,
+          "prompt_tokens_details": {
+            "cached_tokens": 163
+          },
+          "total_tokens": 1125
+        },
+        "next_focus": [
+          "Flash memory operation details",
+          "Error handling in flash operations"
+        ],
+        "observations": [
+          {
+            "address": "0x0001d790",
+            "claim": "Reads data from flash memory with size validation",
+            "evidence_snippet": "iVar1 = rq_fls_Read(local_14[0],1,param_3,param_2,&local_18,0)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions fc_bkm_FlsRead and fc_bkm_FlsWrite handle flash memory read and write operations with error checking and file closing.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "1d790",
+          "1d824"
+        ],
+        "selection_evidence": [
+          {
+            "address": "1d790",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "1d824",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do DAT_0001d81c and DAT_0001d8d4 represent?",
+          "What is the purpose of sync() calls?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/5fa0b9571f51693b/focus/001.json",
+      "sha256": "1cd4038c1da0b401dde9441e1540f7f2e68d46b54705775f541d6c849320567a",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_sysp.so",
+        "examined_functions": [
+          "00021060",
+          "00021134"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 267,
+          "prompt_tokens": 1383,
+          "prompt_tokens_details": {
+            "cached_tokens": 163
+          },
+          "total_tokens": 1650
+        },
+        "next_focus": [
+          "File naming logic in fc_log_GetFileName",
+          "Error handling in fc_log_Create"
+        ],
+        "observations": [
+          {
+            "address": "0x00021060",
+            "claim": "Opens log file using fc_log_GetFileName and rq_fls_Open",
+            "evidence_snippet": "uVar2 = fc_log_GetFileName(*(undefined4 *)(iVar5 + 0x10),iVar4 + DAT_0002112c);",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions handle file logging operations including opening, creating, and managing log files with error handling and directory operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "21060",
+          "21134"
+        ],
+        "selection_evidence": [
+          {
+            "address": "21060",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "21134",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific log file names are generated?",
+          "What is the purpose of the delay in fc_log_Open?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/64f5d905a42aa844/focus/000.json",
+      "sha256": "af4f1703ce8f3ec767b77800f124b08ab069bfd6eb2e08053f2cdd775ded829e",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_HMI",
+        "examined_functions": [
+          "00016094",
+          "0003e9a0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 239,
+          "prompt_tokens": 607,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 846
+        },
+        "next_focus": [
+          "Analyze sysDisMngInit function",
+          "Examine global variable usage"
+        ],
+        "observations": [
+          {
+            "address": "0x00016094",
+            "claim": "Initializes multiple global variables to zero",
+            "evidence_snippet": "DAT_01a24bbc = 0;",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0003e9a0",
+            "claim": "Constructs file paths by concatenating strings",
+            "evidence_snippet": "strncpy(param_2,\"/opt/ftl/gui/MC/\"",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 00016094 initializes multiple global variables to zero and calls sysDisMngInit. Function 0003e9a0 constructs file paths by concatenating strings.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "16094",
+          "3e9a0"
+        ],
+        "selection_evidence": [
+          {
+            "address": "16094",
+            "score": 406,
+            "tags": [
+              "missing_libs",
+              "graphics"
+            ]
+          },
+          {
+            "address": "3e9a0",
+            "score": 251,
+            "tags": [
+              "missing_resources",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of sysDisMngInit?",
+          "What are the initialized global variables used for?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/64f5d905a42aa844/focus/001.json",
+      "sha256": "2d8267efb2679e471604ec522f9f1ca0a953c8e7ea1b47ef282a6de71bac701e",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_HMI",
+        "examined_functions": [
+          "0003e9e8",
+          "0004058c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 265,
+          "prompt_tokens": 1463,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1728
+        },
+        "next_focus": [
+          "Path construction logic in 0003e9e8",
+          "Font loading sequence in 0004058c"
+        ],
+        "observations": [
+          {
+            "address": "0x0003e9e8",
+            "claim": "Constructs paths with '/opt/ftl/gui/MC/' prefix",
+            "evidence_snippet": "strncpy(param_2,\"/opt/ftl/gui/MC/\"",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0004058c",
+            "claim": "Initializes numerous global variables to 1",
+            "evidence_snippet": "memset(&DAT_0092d844,0,0x3c3c)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 0003e9e8 constructs file paths with hardcoded prefix and dynamic suffixes. Function 0004058c initializes large data structures and handles font loading.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "3e9e8",
+          "4058c"
+        ],
+        "selection_evidence": [
+          {
+            "address": "3e9e8",
+            "score": 251,
+            "tags": [
+              "missing_resources",
+              "paths"
+            ]
+          },
+          {
+            "address": "4058c",
+            "score": 251,
+            "tags": [
+              "missing_resources",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the dynamic suffixes represent?",
+          "What is the purpose of the large memset operation?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/64f5d905a42aa844/focus/002.json",
+      "sha256": "2861cda274fed21a2b0dd7766a941a10d6100bae755a6d16546dc023f5655d00",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_HMI",
+        "examined_functions": [
+          "0004640c",
+          "00046678"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 201,
+          "prompt_tokens": 1966,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2167
+        },
+        "next_focus": [
+          "M",
+          "e",
+          "m"
+        ],
+        "observations": [
+          {
+            "address": "0x00046678",
+            "claim": "Function allocates memory for GUI word list parsing.",
+            "evidence_snippet": "puVar3 = (undefined4 *)fs_mpl_Alloc(2,8)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle XML parsing for GUI word lists with error tracing and memory allocation.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "4640c",
+          "46678"
+        ],
+        "selection_evidence": [
+          {
+            "address": "4640c",
+            "score": 245,
+            "tags": [
+              "missing_resources",
+              "paths"
+            ]
+          },
+          {
+            "address": "46678",
+            "score": 245,
+            "tags": [
+              "missing_resources",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the XML parsing?",
+          "What do the error codes represent?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/672245e48f1f6d8e/focus/000.json",
+      "sha256": "3fd5aca3722e5be550bf885930a871928375a386473c665316d2ccb6c7783b04",
+      "result": {
+        "binary": "./opt/ftl/lib/libi2c_cm.so",
+        "examined_functions": [
+          "00010718",
+          "00010744"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 233,
+          "prompt_tokens": 535,
+          "prompt_tokens_details": {
+            "cached_tokens": 160
+          },
+          "total_tokens": 768
+        },
+        "next_focus": [
+          "D",
+          "a",
+          "t"
+        ],
+        "observations": [
+          {
+            "address": "0x00010718",
+            "claim": "Calls __gmon_start__ if condition is met",
+            "evidence_snippet": "if (*(int *)(DAT_0001073c + 0x10728 + DAT_00010740) == 0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00010744",
+            "claim": "Performs cleanup with __cxa_finalize if condition met",
+            "evidence_snippet": "if (*(int *)(iVar2 + DAT_00010790) != 0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Analysis of two ARM functions showing entry point and cleanup logic with conditional execution and library initialization calls.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "10718",
+          "10744"
+        ],
+        "selection_evidence": [
+          {
+            "address": "10718",
+            "score": 0,
+            "tags": []
+          },
+          {
+            "address": "10744",
+            "score": 0,
+            "tags": []
+          }
+        ],
+        "source_sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the data variables represent?",
+          "What is the purpose of the conditional checks?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/672245e48f1f6d8e/focus/001.json",
+      "sha256": "ca7713ae879c1b260cf36fd12e622d085ac1e70ad876a1763cc8023e0e05538c",
+      "result": {
+        "binary": "./opt/ftl/lib/libi2c_cm.so",
+        "examined_functions": [
+          "00010d20",
+          "00010ffc"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 224,
+          "prompt_tokens": 1571,
+          "prompt_tokens_details": {
+            "cached_tokens": 242
+          },
+          "total_tokens": 1795
+        },
+        "next_focus": [
+          "D",
+          "a",
+          "t"
+        ],
+        "observations": [
+          {
+            "address": "0x00010d20",
+            "claim": "Function performs I2C send with ioctl and write operations.",
+            "evidence_snippet": "iVar8 = ioctl(*(int *)(iVar7 + param_1 * 4),0x703,uVar1);",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00010ffc",
+            "claim": "Closes I2C device file descriptor with error handling.",
+            "evidence_snippet": "iVar2 = close(iVar2);",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "I2C driver functions handling send operations and device closing with error retry logic.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "10d20",
+          "10ffc"
+        ],
+        "selection_evidence": [
+          {
+            "address": "10d20",
+            "score": 0,
+            "tags": []
+          },
+          {
+            "address": "10ffc",
+            "score": 0,
+            "tags": []
+          }
+        ],
+        "source_sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific I2C device addresses are being accessed?",
+          "What is the purpose of the retry loop with usleep?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/7d867b15822a183e/focus/000.json",
+      "sha256": "1878ec23a73e59ec8ea08db8dcfc28dc8df32f7700cc9c0866fd547b5a1395c1",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_UIEIF",
+        "examined_functions": [
+          "000316a4",
+          "0000eb94"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 310,
+          "prompt_tokens": 2001,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2311
+        },
+        "next_focus": [
+          "Analyze the font file content handling",
+          "Investigate the HOMINF backup file structure"
+        ],
+        "observations": [
+          {
+            "address": "0x000316a4",
+            "claim": "Function opens and reads a font file, handling allocation and error cases.",
+            "evidence_snippet": "rq_fls_Open(\"/opt/ftl/gui/font/Tfont1212c_T1.otf\"",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Function 000316a4 handles font file operations, opening, reading, and error handling for Tfont1212c_T1.otf. Function 0000eb94 appears to manage UI events and file operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "316a4",
+          "eb94"
+        ],
+        "selection_evidence": [
+          {
+            "address": "316a4",
+            "score": 479,
+            "tags": [
+              "missing_resources",
+              "missing_libs",
+              "paths"
+            ]
+          },
+          {
+            "address": "eb94",
+            "score": 380,
+            "tags": [
+              "missing_libs",
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the font file handling in function 000316a4?",
+          "What specific UI information is written in function 0000eb94 case 0x10?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/7d867b15822a183e/focus/001.json",
+      "sha256": "64c53072727db72c84f299b5b60a7062329b67a032d426b5a9494c36530bb096",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_UIEIF",
+        "examined_functions": [
+          "0001356c",
+          "0002a820"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 222,
+          "prompt_tokens": 1993,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2215
+        },
+        "next_focus": [
+          "File path validation logic",
+          "Error handling in backup operations"
+        ],
+        "observations": [
+          {
+            "address": "0x0001356c",
+            "claim": "Function opens and reads UIE files with error logging.",
+            "evidence_snippet": "rq_fls_Open(param_1,\"r\",local_1c,0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0002a820",
+            "claim": "Function manages UIE backup archive operations and file transfers.",
+            "evidence_snippet": "rq_fls_Open(local_58,\"r\",&local_20,0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle UIE file operations including read, open, and backup processes with error handling.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "1356c",
+          "2a820"
+        ],
+        "selection_evidence": [
+          {
+            "address": "1356c",
+            "score": 278,
+            "tags": [
+              "missing_libs",
+              "paths"
+            ]
+          },
+          {
+            "address": "2a820",
+            "score": 272,
+            "tags": [
+              "missing_libs",
+              "paths"
+            ]
+          }
+        ],
+        "source_sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific UIE file formats are processed?",
+          "How are error codes translated to user-facing messages?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/7d867b15822a183e/focus/002.json",
+      "sha256": "0f2d2879b22fd9c9e7f8a8f761ae741f0953a773617bd37e115779b278148dc3",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_UIEIF",
+        "examined_functions": [
+          "0002d13c",
+          "0001b314"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 274,
+          "prompt_tokens": 2313,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2587
+        },
+        "next_focus": [
+          "File path construction in 0002d13c",
+          "Data parsing in 0001b314"
+        ],
+        "observations": [
+          {
+            "address": "0x0002d13c",
+            "claim": "Function reads UIE backup files using fscanf and access checks.",
+            "evidence_snippet": "fscanf(local_2c[0],\"%s\",acStack_170)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0001b314",
+            "claim": "Function processes UIE data with file operations and string manipulations.",
+            "evidence_snippet": "fscanf(in_stack_ffffffe4,\"%s\",local_4d0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0002d13c handles UIE file operations, including reading backup files and managing paths. Function 0001b314 appears to process UIE data with file access and string operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "2d13c",
+          "1b314"
+        ],
+        "selection_evidence": [
+          {
+            "address": "2d13c",
+            "score": 272,
+            "tags": [
+              "missing_libs",
+              "paths"
+            ]
+          },
+          {
+            "address": "1b314",
+            "score": 232,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific UIE data is being processed?",
+          "Are these functions part of a larger UIE management system?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/8f3a3324604b7682/focus/000.json",
+      "sha256": "167dd7491564be9452ba09031d2c37d792a5ff3af4b9281fc6543c604431d47a",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DVDP",
+        "examined_functions": [
+          "0001d9d8",
+          "00009b80"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 236,
+          "prompt_tokens": 1128,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1364
+        },
+        "next_focus": [
+          "0001d9d8",
+          "00009b80"
+        ],
+        "observations": [
+          {
+            "address": "0x0001d9d8",
+            "claim": "Function processes '-v' flag for verbose output",
+            "evidence_snippet": "if (iVar1 == 0x76) {",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00009b80",
+            "claim": "Function allocates memory and sends message",
+            "evidence_snippet": "memcpy(__dest,param_5,8)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 0001d9d8 handles command-line arguments with 'v' flag for verbose output. Function 00009b80 manages memory allocation and message sending.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "1d9d8",
+          "9b80"
+        ],
+        "selection_evidence": [
+          {
+            "address": "1d9d8",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "9b80",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of fs_sys_CnfEntry?",
+          "What does rq_mem_Alloc(1) allocate?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/a1f2812d0b1776fa/focus/000.json",
+      "sha256": "ea68f879588a170067cf37b5ec90db4c3f0b61fce5280979c737293eea142720",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_sysc.so",
+        "examined_functions": [
+          "0001e7c0",
+          "0001e854"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 263,
+          "prompt_tokens": 852,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 1115
+        },
+        "next_focus": [
+          "Flash operation constants",
+          "Error handling paths"
+        ],
+        "observations": [
+          {
+            "address": "0x0001e7c0",
+            "claim": "Reads data from flash with size validation",
+            "evidence_snippet": "iVar1 = rq_fls_Read(local_14[0],1,param_3,param_2,&local_18,0)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions fc_bkm_FlsRead and fc_bkm_FlsWrite handle flash read and write operations with error checking and file closing.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "1e7c0",
+          "1e854"
+        ],
+        "selection_evidence": [
+          {
+            "address": "1e7c0",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "1e854",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do DAT_0001e84c and DAT_0001e904 contain?",
+          "What is the purpose of sync() calls?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/a1f2812d0b1776fa/focus/001.json",
+      "sha256": "c8d129cfa6e4c3ee1e6007f47703a5a0e53669703b74a2f3ef99f4bfdbf73c7e",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_sysc.so",
+        "examined_functions": [
+          "00021cfc",
+          "00021dd0"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 239,
+          "prompt_tokens": 1369,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 1608
+        },
+        "next_focus": [
+          "File system call patterns",
+          "Error handling routines"
+        ],
+        "observations": [
+          {
+            "address": "0x00021cfc",
+            "claim": "Opens log file and sets up logging state",
+            "evidence_snippet": "iVar3 = rq_fls_Open(uVar2,iVar4 + DAT_00021dcc,local_1c,0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00021dd0",
+            "claim": "Creates log files in directory with error handling",
+            "evidence_snippet": "iVar2 = rq_fls_Open(uVar3,iVar6 + iVar4,local_2c,0)",
+            "model_confidence": "high"
+          }
+        ],
+        "overview": "Functions handle file logging operations including opening, creating, and managing log files with error handling and directory operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "21cfc",
+          "21dd0"
+        ],
+        "selection_evidence": [
+          {
+            "address": "21cfc",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "21dd0",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific log file naming convention is used?",
+          "What is the purpose of the 0x2c byte offset?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/a90dbf0418bf7f09/focus/000.json",
+      "sha256": "ee1ecda1ffa21231c4da0d3827409e45fe0012e140cdb6ab132a3d9ef8a006cf",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DVDDECK",
+        "examined_functions": [
+          "0000e508",
+          "0000e640"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 232,
+          "prompt_tokens": 1495,
+          "prompt_tokens_details": {
+            "cached_tokens": 163
+          },
+          "total_tokens": 1727
+        },
+        "next_focus": [
+          "Memory allocation patterns",
+          "Message sending functions"
+        ],
+        "observations": [
+          {
+            "address": "0x0000e508",
+            "claim": "Function validates param_2 and calls rq_mem_Alloc",
+            "evidence_snippet": "if ((param_2 == 0) || (sVar1 = FUN_0000e284(), sVar1 == 0xff))",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0000e640",
+            "claim": "Function uses rq_sys_GetTskMode to check task mode",
+            "evidence_snippet": "iVar2 = rq_sys_GetTskMode(uVar3)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Two functions handle DVD deck commands with memory allocation and message sending. Both validate parameters and call helper functions.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "e508",
+          "e640"
+        ],
+        "selection_evidence": [
+          {
+            "address": "e508",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "e640",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the helper functions do?",
+          "What are the data structures being copied?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/b95f96ba4f8e8e21/focus/000.json",
+      "sha256": "459ba834b5c8259def1e800d51d008cb7cd54cbebd263cce19efde359b977d6d",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_EXT",
+        "examined_functions": [
+          "00011474",
+          "00011550"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 264,
+          "prompt_tokens": 1154,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1418
+        },
+        "next_focus": [
+          "DAT_00023668 flag behavior",
+          "rq_fls_MakeDir function details"
+        ],
+        "observations": [
+          {
+            "address": "0x00011474",
+            "claim": "Clears temporary files if flag DAT_00023668 is '0'",
+            "evidence_snippet": "if (DAT_00023668 == '0')",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00011550",
+            "claim": "Creates directories during path traversal when encountering '/'",
+            "evidence_snippet": "if ((cVar3 == '/') && (bVar5 = bVar5 + 1, 3 < bVar5))",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 00011474 manages temporary file cleanup based on a flag, while 00011550 handles directory creation and path traversal.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "11474",
+          "11550"
+        ],
+        "selection_evidence": [
+          {
+            "address": "11474",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "11550",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the 3-level directory check?",
+          "Are the file operations atomic?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/c826857156b51869/focus/000.json",
+      "sha256": "9676191a8faefd4477b1f4742b273bf7418ef0671cb11c53fb3218ae5f5b3642",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_MMP",
+        "examined_functions": [
+          "00069ddc",
+          "0001b6d8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 298,
+          "prompt_tokens": 1617,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 1915
+        },
+        "next_focus": [
+          "State transition logic in 00069ddc",
+          "Memory allocation in 0001b6d8"
+        ],
+        "observations": [],
+        "overview": "Function 00069ddc handles message processing with state checks and sends messages. Function 0001b6d8 allocates memory and sends messages.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "69ddc",
+          "1b6d8"
+        ],
+        "selection_evidence": [
+          {
+            "address": "69ddc",
+            "score": 152,
+            "tags": [
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "1b6d8",
+            "score": 148,
+            "tags": [
+              "startup_ipc"
+            ]
+          }
+        ],
+        "source_sha256": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of state 0x0d4fb4?",
+          "What data is sent in message 0x2d?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/c87538f1de097ef0/focus/000.json",
+      "sha256": "13bbd3302e34d05e1ac2068b0f8f5090010a6b302a728d6c7d30184aead5792e",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_grp.so",
+        "examined_functions": [
+          "0001b034",
+          "0001b300"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 189,
+          "prompt_tokens": 2236,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2425
+        },
+        "next_focus": [
+          "Color format decoding",
+          "Memory layout analysis"
+        ],
+        "observations": [
+          {
+            "address": "0x0001b034",
+            "claim": "Performs color blending with alpha transparency",
+            "evidence_snippet": "uVar5 == 0",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0001b300",
+            "claim": "Fills VRAM with solid color patterns",
+            "evidence_snippet": "memset(puVar14,param_1,__n)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle VRAM display and filling operations with color blending and memory management.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "1b034",
+          "1b300"
+        ],
+        "selection_evidence": [
+          {
+            "address": "1b034",
+            "score": 182,
+            "tags": [
+              "graphics"
+            ]
+          },
+          {
+            "address": "1b300",
+            "score": 182,
+            "tags": [
+              "graphics"
+            ]
+          }
+        ],
+        "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific display formats are supported?",
+          "How are the color parameters interpreted?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/c87538f1de097ef0/focus/001.json",
+      "sha256": "6b8984ad9775241612bfcb6e038e89e5e679290ee75a4aa1a063bc51cc3c97fc",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_grp.so",
+        "examined_functions": [
+          "000365ec",
+          "00039144"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 242,
+          "prompt_tokens": 2161,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2403
+        },
+        "next_focus": [
+          "Color blending algorithm details",
+          "Rectangle hit detection logic"
+        ],
+        "observations": [
+          {
+            "address": "0x00039144",
+            "claim": "Fills VRAM rectangles with solid color values.",
+            "evidence_snippet": "memset(puVar13,param_2,__n)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle VRAM display writes and fills with color blending and rectangle operations.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "365ec",
+          "39144"
+        ],
+        "selection_evidence": [
+          {
+            "address": "365ec",
+            "score": 182,
+            "tags": [
+              "graphics"
+            ]
+          },
+          {
+            "address": "39144",
+            "score": 182,
+            "tags": [
+              "graphics"
+            ]
+          }
+        ],
+        "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of param_7 in fc_gdr_WriteDispVram?",
+          "How does param_3[5] control fill behavior in fc_gdr_DspFillVram?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/c87538f1de097ef0/focus/002.json",
+      "sha256": "2c2ce27b1b633c18176c980e7267f31688d683a84fc1fecbc6a7107b5b1d8f61",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_grp.so",
+        "examined_functions": [
+          "00039560",
+          "00039780"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 215,
+          "prompt_tokens": 2464,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2679
+        },
+        "next_focus": [
+          "Parameter validation logic",
+          "VRAM info retrieval mechanism"
+        ],
+        "observations": [
+          {
+            "address": "0x00039560",
+            "claim": "Function validates parameter 1 against 3 limit",
+            "evidence_snippet": "if (3 < param_1)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00039780",
+            "claim": "Function calls VRAM info retrieval with parameter 1",
+            "evidence_snippet": "fs_gdr_GetPhyPlaneVRAMINFO(param_1,",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle VRAM plane information and display plane composition. First function retrieves plane VRAM info based on parameters. Second function processes display plane composition.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "39560",
+          "39780"
+        ],
+        "selection_evidence": [
+          {
+            "address": "39560",
+            "score": 182,
+            "tags": [
+              "graphics"
+            ]
+          },
+          {
+            "address": "39780",
+            "score": 182,
+            "tags": [
+              "graphics"
+            ]
+          }
+        ],
+        "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the VRAM info values represent?",
+          "How are the display plane parameters used?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/c87538f1de097ef0/focus/003.json",
+      "sha256": "0329628cc2ceb50e28137672da433b3f9472732c03d963cd5d59718170a477dd",
+      "result": {
+        "binary": "./opt/ftl/lib/libipas_grp.so",
+        "examined_functions": [
+          "0003a300",
+          "0001b908"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 216,
+          "prompt_tokens": 1942,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2158
+        },
+        "next_focus": [
+          "Parameter validation logic",
+          "VRAM configuration flow"
+        ],
+        "observations": [
+          {
+            "address": "0x0003a300",
+            "claim": "Function validates parameter 'param_2' range 0-3",
+            "evidence_snippet": "if (3 < param_2)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0001b908",
+            "claim": "Function sets VRAM parameters with bounds checking",
+            "evidence_snippet": "if (param_6 < 0x3fffd)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function fc_gdr_SetPhyPlane validates and processes physical plane parameters, while fs_gdr_BEUSetOutVRAM configures output VRAM settings.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "3a300",
+          "1b908"
+        ],
+        "selection_evidence": [
+          {
+            "address": "3a300",
+            "score": 182,
+            "tags": [
+              "graphics"
+            ]
+          },
+          {
+            "address": "1b908",
+            "score": 178,
+            "tags": [
+              "graphics"
+            ]
+          }
+        ],
+        "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What do the magic numbers represent?",
+          "How are the VRAM settings used?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/e823e814559f4b47/focus/000.json",
+      "sha256": "5c6aaae2f786a46c847d8bfce3477e6521c8efa5fe8aca96f12882e6131152f5",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_VI",
+        "examined_functions": [
+          "000304f8",
+          "0000d2d8"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 300,
+          "prompt_tokens": 1725,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2025
+        },
+        "next_focus": [
+          "Message receive and buffer handling in 000304f8",
+          "Device control request processing in 0000d2d8"
+        ],
+        "observations": [
+          {
+            "address": "0x000304f8",
+            "claim": "Writes beacon data to /mnt/usb1/BEACON_RDATA.BIN",
+            "evidence_snippet": "rq_fls_Write(local_24[0],1,local_2c[0x20],acStack_b8,&local_28,0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0000d2d8",
+            "claim": "Handles device control request 0xcc with error tracing",
+            "evidence_snippet": "if (iVar11 != 0xcc) {",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 000304f8 handles message reception and file I/O operations, writing beacon data to USB storage. Function 0000d2d8 processes device control requests and manages file operations with error handling.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "304f8",
+          "d2d8"
+        ],
+        "selection_evidence": [
+          {
+            "address": "304f8",
+            "score": 389,
+            "tags": [
+              "filesystem",
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "d2d8",
+            "score": 232,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the 0x4d2 condition check?",
+          "What data structure is pointed to by param_1[3]?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/ed6c8180598afb2f/focus/000.json",
+      "sha256": "b6f185b709695f449baddd2a627b116760f8a673137e233020a5588ba477e73f",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DISPLAY",
+        "examined_functions": [
+          "00273cfc",
+          "0027484c"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 273,
+          "prompt_tokens": 2363,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2636
+        },
+        "next_focus": [
+          "State machine logic in 00273cfc",
+          "Error handling in 0027484c"
+        ],
+        "observations": [
+          {
+            "address": "0x00273cfc",
+            "claim": "Uses rq_fls_Open for file operations with hardcoded path",
+            "evidence_snippet": "rq_fls_Open(auStack_7c,&DAT_00419ffc,&DAT_00ba0904,0)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0027484c",
+            "claim": "Calls FUN_0026f8fc in error handling loop with trace messages",
+            "evidence_snippet": "FUN_0026f8fc(iVar2)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Functions handle display processing and file operations with state machine logic. Contains file system calls and error handling.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "273cfc",
+          "27484c"
+        ],
+        "selection_evidence": [
+          {
+            "address": "273cfc",
+            "score": 232,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "27484c",
+            "score": 232,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What is the purpose of the state machine in function 00273cfc?",
+          "What do the hardcoded strings represent in function 0027484c?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/ed6c8180598afb2f/focus/001.json",
+      "sha256": "af6accab14435d4e5e658c3db884cc162b2360fca8b2b4d81e53de7e8c8c5a70",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DISPLAY",
+        "examined_functions": [
+          "00137e80",
+          "0014a510"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 256,
+          "prompt_tokens": 1812,
+          "prompt_tokens_details": {
+            "cached_tokens": 158
+          },
+          "total_tokens": 2068
+        },
+        "next_focus": [
+          "Parameter validation in 00137e80",
+          "Memory allocation details in 0014a510"
+        ],
+        "observations": [
+          {
+            "address": "0x00137e80",
+            "claim": "Function validates input parameters and opens directories.",
+            "evidence_snippet": "if ((param_1 == 0 || param_3 == 0) || (param_6 == (uint *)0x0))",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x0014a510",
+            "claim": "Function reads file info and allocates memory for data processing.",
+            "evidence_snippet": "iVar1 = rq_mem_Alloc(2,uStack_44)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Function 00137e80 handles directory operations and file path construction. Function 0014a510 manages file reading and memory allocation.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "137e80",
+          "14a510"
+        ],
+        "selection_evidence": [
+          {
+            "address": "137e80",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          },
+          {
+            "address": "14a510",
+            "score": 228,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific file operations are performed?",
+          "How are the memory allocations utilized?"
+        ]
+      }
+    },
+    {
+      "relative_path": "results/f3e37052d8875031/focus/000.json",
+      "sha256": "ab36ec6ad52a47f76fb17cbcb160c1d83870f8173c06a44070e5dbab9b9941a0",
+      "result": {
+        "binary": "./opt/ftl/apl/PROC_DSV",
+        "examined_functions": [
+          "00011e08",
+          "00019e28"
+        ],
+        "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+        "kind": "model_hypothesis_review",
+        "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+        "model_usage": {
+          "completion_tokens": 281,
+          "prompt_tokens": 2379,
+          "prompt_tokens_details": {
+            "cached_tokens": 162
+          },
+          "total_tokens": 2660
+        },
+        "next_focus": [
+          "File pattern matching logic in 00011e08",
+          "Switch case handling in 00019e28"
+        ],
+        "observations": [
+          {
+            "address": "0x00011e08",
+            "claim": "Removes files matching specific patterns and name criteria.",
+            "evidence_snippet": "memcmp(pcVar11 + 5,(void *)((int)pvVar7 + 0x1f),6)",
+            "model_confidence": "high"
+          },
+          {
+            "address": "0x00019e28",
+            "claim": "Manages file operations including removal and logging.",
+            "evidence_snippet": "rq_fls_Remove(local_104,0)",
+            "model_confidence": "medium"
+          }
+        ],
+        "overview": "Two functions handle file operations and directory management. Function 00011e08 removes files based on name patterns, while 00019e28 manages file operations and logging.",
+        "provenance": "LLM-generated hypotheses; NOT independently verified",
+        "review_stage": "focused_candidate_review",
+        "selected_addresses": [
+          "11e08",
+          "19e28"
+        ],
+        "selection_evidence": [
+          {
+            "address": "11e08",
+            "score": 374,
+            "tags": [
+              "missing_libs",
+              "startup_ipc"
+            ]
+          },
+          {
+            "address": "19e28",
+            "score": 232,
+            "tags": [
+              "missing_libs"
+            ]
+          }
+        ],
+        "source_sha256": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+        "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+        "unresolved_questions": [
+          "What specific file patterns trigger removal in function 00011e08?",
+          "What is the purpose of the switch statement in function 00019e28?"
+        ]
+      }
+    }
+  ]
+}

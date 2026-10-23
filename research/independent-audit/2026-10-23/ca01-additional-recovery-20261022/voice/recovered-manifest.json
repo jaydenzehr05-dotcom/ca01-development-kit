@@ -1,0 +1,68 @@
+[
+  {
+    "archive_path": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBAgent.db",
+    "partial_header_offset": 739587,
+    "partial_data_offset": 740099,
+    "size": 94208,
+    "sha256": "38c5945b610470623763cd0601b06f390cc9cb8876b23c8cc65a500d030a0001",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/tmp/ca01-more-recovery/voice/recovered/000b4b03-VBAgent.db"
+  },
+  {
+    "archive_path": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBSystem.db",
+    "partial_header_offset": 834307,
+    "partial_data_offset": 834819,
+    "size": 715776,
+    "sha256": "375601055ffc86b201d770ed17eacd1fb1f5484a43286f9836233d1b3d891a48",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/tmp/ca01-more-recovery/voice/recovered/000cbd03-VBSystem.db"
+  },
+  {
+    "archive_path": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBAgent.db",
+    "partial_header_offset": 1551619,
+    "partial_data_offset": 1552131,
+    "size": 96256,
+    "sha256": "9c27c8ab84d2d47e61f4877c61e1ec7223d6d1ae01fb6a20a56e1236e387d575",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/tmp/ca01-more-recovery/voice/recovered/0017af03-VBAgent.db"
+  },
+  {
+    "archive_path": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBSystem.db",
+    "partial_header_offset": 1648387,
+    "partial_data_offset": 1648899,
+    "size": 712704,
+    "sha256": "c2ef59298f4f23e37b42438ffc13ca13fc73be55d3bc425bf7c7ba1ee2783ab3",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/tmp/ca01-more-recovery/voice/recovered/00192903-VBSystem.db"
+  },
+  {
+    "archive_path": "./opt/ftl/var/backup/vrs/VOI/VOI_VERSION",
+    "partial_header_offset": 2361603,
+    "partial_data_offset": 2362115,
+    "size": 19,
+    "sha256": "d4f4b59e4473967b5ff89e135f47b419e6ed681a32d30756a64bb71ae2a3a36a",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/tmp/ca01-more-recovery/voice/recovered/00240b03-VOI_VERSION"
+  },
+  {
+    "archive_path": "./opt/ftl/var/backup/vrs/VOI/Hints.db",
+    "partial_header_offset": 2362627,
+    "partial_data_offset": 2363139,
+    "size": 77824,
+    "sha256": "acd42de1c609b92d721059fa45acfc4de464a2b9a7476f173586c0329773ee99",
+    "header_checksum_valid": true,
+    "header_and_entire_contents_dictionary_independent": true,
+    "elf": false,
+    "local_file": "/tmp/ca01-more-recovery/voice/recovered/00240f03-Hints.db"
+  }
+]

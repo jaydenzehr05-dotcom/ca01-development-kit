@@ -1,0 +1,59 @@
+{
+  "binary": "./opt/ftl/lib/libipas_grp.so",
+  "examined_functions": [
+    "000365ec",
+    "00039144"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 242,
+    "prompt_tokens": 2161,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2403
+  },
+  "next_focus": [
+    "Color blending algorithm details",
+    "Rectangle hit detection logic"
+  ],
+  "observations": [
+    {
+      "address": "0x00039144",
+      "claim": "Fills VRAM rectangles with solid color values.",
+      "evidence_snippet": "memset(puVar13,param_2,__n)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle VRAM display writes and fills with color blending and rectangle operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "365ec",
+    "39144"
+  ],
+  "selection_evidence": [
+    {
+      "address": "365ec",
+      "score": 182,
+      "tags": [
+        "graphics"
+      ]
+    },
+    {
+      "address": "39144",
+      "score": 182,
+      "tags": [
+        "graphics"
+      ]
+    }
+  ],
+  "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of param_7 in fc_gdr_WriteDispVram?",
+    "How does param_3[5] control fill behavior in fc_gdr_DspFillVram?"
+  ]
+}

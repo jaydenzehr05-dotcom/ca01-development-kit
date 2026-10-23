@@ -1,0 +1,48 @@
+{
+  "binary": "./opt/ftl/apl/PROC_CDP",
+  "examined_functions": [
+    "000162e0",
+    "00009ec0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 328,
+    "prompt_tokens": 1542,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1870
+  },
+  "next_focus": [
+    "Analyze DAT_00036f10 initialization",
+    "Reverse engineer FUN_000170fc"
+  ],
+  "observations": [],
+  "overview": "Function 000162e0 handles state-based returns with switch-case logic. Function 00009ec0 processes command cases with conditional branches and function calls.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "162e0",
+    "9ec0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "162e0",
+      "score": 4,
+      "tags": []
+    },
+    {
+      "address": "9ec0",
+      "score": 4,
+      "tags": []
+    }
+  ],
+  "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the jumptable at 0x000383b8?",
+    "How are DAT_00036f10 and DAT_00036f1b initialized?"
+  ]
+}

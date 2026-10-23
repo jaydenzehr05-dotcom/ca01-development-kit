@@ -1,0 +1,67 @@
+{
+  "binary": "./opt/ftl/apl/PROC_HMI",
+  "examined_functions": [
+    "00016094",
+    "0003e9a0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 239,
+    "prompt_tokens": 607,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 846
+  },
+  "next_focus": [
+    "Analyze sysDisMngInit function",
+    "Examine global variable usage"
+  ],
+  "observations": [
+    {
+      "address": "0x00016094",
+      "claim": "Initializes multiple global variables to zero",
+      "evidence_snippet": "DAT_01a24bbc = 0;",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0003e9a0",
+      "claim": "Constructs file paths by concatenating strings",
+      "evidence_snippet": "strncpy(param_2,\"/opt/ftl/gui/MC/\"",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 00016094 initializes multiple global variables to zero and calls sysDisMngInit. Function 0003e9a0 constructs file paths by concatenating strings.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "16094",
+    "3e9a0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "16094",
+      "score": 406,
+      "tags": [
+        "missing_libs",
+        "graphics"
+      ]
+    },
+    {
+      "address": "3e9a0",
+      "score": 251,
+      "tags": [
+        "missing_resources",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of sysDisMngInit?",
+    "What are the initialized global variables used for?"
+  ]
+}

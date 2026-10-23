@@ -1,0 +1,12 @@
+{
+  "binary_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+  "corrected": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/ghidra/merged-resume-1-reconciled",
+  "stats": {
+    "improved": 2064,
+    "new_total": 8354,
+    "still_not_attempted": 0,
+    "failed": 1
+  },
+  "original_resume_output_preserved": true,
+  "note": "One supplemental function had status failed, not merely unattempted"
+}

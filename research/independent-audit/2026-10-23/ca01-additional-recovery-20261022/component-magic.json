@@ -1,0 +1,42 @@
+[
+  {
+    "component": "03-kernel.bin",
+    "hits": []
+  },
+  {
+    "component": "10-bootsig.bin",
+    "hits": []
+  },
+  {
+    "component": "05-bluetooth.bin",
+    "hits": []
+  },
+  {
+    "component": "01-sh-base.bin",
+    "hits": []
+  },
+  {
+    "component": "02-middle-ware.bin",
+    "hits": []
+  },
+  {
+    "component": "07-gui.bin",
+    "hits": []
+  },
+  {
+    "component": "04-device-driver.bin",
+    "hits": []
+  },
+  {
+    "component": "06-audio.bin",
+    "hits": []
+  },
+  {
+    "component": "08-voice-recognition.bin",
+    "hits": []
+  },
+  {
+    "component": "09-boot.bin",
+    "hits": []
+  }
+]

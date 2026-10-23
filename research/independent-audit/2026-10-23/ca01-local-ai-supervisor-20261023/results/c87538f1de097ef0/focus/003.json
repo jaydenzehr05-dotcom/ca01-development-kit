@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/lib/libipas_grp.so",
+  "examined_functions": [
+    "0003a300",
+    "0001b908"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 216,
+    "prompt_tokens": 1942,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2158
+  },
+  "next_focus": [
+    "Parameter validation logic",
+    "VRAM configuration flow"
+  ],
+  "observations": [
+    {
+      "address": "0x0003a300",
+      "claim": "Function validates parameter 'param_2' range 0-3",
+      "evidence_snippet": "if (3 < param_2)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001b908",
+      "claim": "Function sets VRAM parameters with bounds checking",
+      "evidence_snippet": "if (param_6 < 0x3fffd)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function fc_gdr_SetPhyPlane validates and processes physical plane parameters, while fs_gdr_BEUSetOutVRAM configures output VRAM settings.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "3a300",
+    "1b908"
+  ],
+  "selection_evidence": [
+    {
+      "address": "3a300",
+      "score": 182,
+      "tags": [
+        "graphics"
+      ]
+    },
+    {
+      "address": "1b908",
+      "score": 178,
+      "tags": [
+        "graphics"
+      ]
+    }
+  ],
+  "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the magic numbers represent?",
+    "How are the VRAM settings used?"
+  ]
+}

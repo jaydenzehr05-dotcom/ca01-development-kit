@@ -1,0 +1,875 @@
+{
+  "binary_indicators": [
+    {
+      "name": "PROC_HMI",
+      "sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+      "strings_examined": 28880,
+      "relevant_hit_count": 3,
+      "hits": [
+        {
+          "offset": "0x28e6ec",
+          "text": "/opt/ftl/gui/MC/"
+        },
+        {
+          "offset": "0x28e720",
+          "text": "/opt/ftl/gui/font/"
+        },
+        {
+          "offset": "0x28e910",
+          "text": "/opt/ftl/gui/allwords/"
+        }
+      ]
+    },
+    {
+      "name": "PROC_DISPLAY",
+      "sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "strings_examined": 3107,
+      "relevant_hit_count": 25,
+      "hits": [
+        {
+          "offset": "0x3decb0",
+          "text": "/opt/ftl/var/backup/btdb.tar.gz"
+        },
+        {
+          "offset": "0x3ed1e8",
+          "text": "/opt/ftl/bin/rgt"
+        },
+        {
+          "offset": "0x3ed22e",
+          "text": "/opt/ftl/bin/rgt"
+        },
+        {
+          "offset": "0x3ed274",
+          "text": "/opt/ftl/bin/rgt"
+        },
+        {
+          "offset": "0x3ed2b8",
+          "text": "\"V/opt/ftl/bin/rgt"
+        },
+        {
+          "offset": "0x3ed3d4",
+          "text": "/opt/ftl/bin/rgt"
+        },
+        {
+          "offset": "0x3ed41a",
+          "text": "/opt/ftl/bin/rgt"
+        },
+        {
+          "offset": "0x3ed460",
+          "text": "/opt/ftl/bin/rgt"
+        },
+        {
+          "offset": "0x3ed4a4",
+          "text": "\"V/opt/ftl/bin/rgt"
+        },
+        {
+          "offset": "0x3f2b94",
+          "text": "/opt/ftl/apl/chn_traf_list.csv"
+        },
+        {
+          "offset": "0x3f2ee0",
+          "text": "/opt/ftl/gui/allwords/"
+        },
+        {
+          "offset": "0x3f3bc4",
+          "text": "/opt/ftl/SDIMG.VER"
+        },
+        {
+          "offset": "0x400f24",
+          "text": "/opt/ftl/ModelId"
+        },
+        {
+          "offset": "0x411e38",
+          "text": "/opt/ftl/dsv/xmlogo/"
+        },
+        {
+          "offset": "0x41380c",
+          "text": "/opt/ftl/bin/dic/TW/"
+        },
+        {
+          "offset": "0x413b2c",
+          "text": "/opt/ftl/NFIMG.VER"
+        },
+        {
+          "offset": "0x4141bc",
+          "text": "/opt/ftl/dev/mXT540E_FM6C.bin"
+        },
+        {
+          "offset": "0x4141dc",
+          "text": "/opt/ftl/dev/mXT540E_TS8L.bin"
+        },
+        {
+          "offset": "0x4141fc",
+          "text": "/opt/ftl/dev/mXT540E_TSCL.bin"
+        },
+        {
+          "offset": "0x41421c",
+          "text": "/opt/ftl/dev/mXT540E_TSCR.bin"
+        },
+        {
+          "offset": "0x41423c",
+          "text": "/opt/ftl/dev/mXT540E_TM8L.bin"
+        },
+        {
+          "offset": "0x41425c",
+          "text": "/opt/ftl/dev/mXT540E_TMCL.bin"
+        },
+        {
+          "offset": "0x41427c",
+          "text": "/opt/ftl/dev/mXT540E_TMCR.bin"
+        },
+        {
+          "offset": "0x41429c",
+          "text": "/opt/ftl/dev/mXT540E_TLAL.bin"
+        },
+        {
+          "offset": "0x4142dc",
+          "text": "/opt/ftl/dev/bu21024_Ften_13MOP_single.bin"
+        }
+      ]
+    },
+    {
+      "name": "PROC_SYSTEM",
+      "sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+      "strings_examined": 1317,
+      "relevant_hit_count": 13,
+      "hits": [
+        {
+          "offset": "0x5cd28",
+          "text": "/opt/ftl/apl/opn/opn_tega_pl.bin"
+        },
+        {
+          "offset": "0x5cd4c",
+          "text": "/opt/ftl/apl/opn/opn_tega.bin"
+        },
+        {
+          "offset": "0x5cd6c",
+          "text": "/opt/ftl/apl/opn/opn_tvga_pl.bin"
+        },
+        {
+          "offset": "0x5cd90",
+          "text": "/opt/ftl/apl/opn/opn_tvga.bin"
+        },
+        {
+          "offset": "0x5cdb0",
+          "text": "/opt/ftl/apl/opn/opn_tvga1_1_pl.bin"
+        },
+        {
+          "offset": "0x5cdd4",
+          "text": "/opt/ftl/apl/opn/opn_tvga1_1.bin"
+        },
+        {
+          "offset": "0x5cdf8",
+          "text": "/opt/ftl/apl/opn/opn_fvga.bin"
+        },
+        {
+          "offset": "0x5ce18",
+          "text": "/opt/ftl/apl/opn/opn_lvga_pl.bin"
+        },
+        {
+          "offset": "0x5ce3c",
+          "text": "/opt/ftl/apl/opn/opn_lvga.bin"
+        },
+        {
+          "offset": "0x61930",
+          "text": "/opt/ftl/NFIMG.VER"
+        },
+        {
+          "offset": "0x61944",
+          "text": "/opt/ftl/SDIMG.VER"
+        },
+        {
+          "offset": "0x628fc",
+          "text": "/opt/ftl/bin/VUC/refresh/systemrefresh"
+        },
+        {
+          "offset": "0x696d4",
+          "text": "/opt/ftl/apl/"
+        }
+      ]
+    },
+    {
+      "name": "PROC_REPRO",
+      "sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+      "strings_examined": 767,
+      "relevant_hit_count": 10,
+      "hits": [
+        {
+          "offset": "0x1c0cc",
+          "text": "/dev/mmcblk0p1"
+        },
+        {
+          "offset": "0x1c0e4",
+          "text": "/dev/mmcblk0p2"
+        },
+        {
+          "offset": "0x1c104",
+          "text": "/opt/ftl/cddb/"
+        },
+        {
+          "offset": "0x1c120",
+          "text": "fsck -a /dev/mmcblk0p3;mount /dev/mmcblk0p3 /opt/ftl/cddb"
+        },
+        {
+          "offset": "0x1c164",
+          "text": "/dev/mmcblk0p3/"
+        },
+        {
+          "offset": "0x21104",
+          "text": "mkfs.ext3 "
+        },
+        {
+          "offset": "0x21110",
+          "text": "/dev/mmcblk0p1/"
+        },
+        {
+          "offset": "0x21120",
+          "text": "/dev/mmcblk0p2/"
+        },
+        {
+          "offset": "0x22a88",
+          "text": "/opt/ftl/SDIMG.VER"
+        },
+        {
+          "offset": "0x22a9c",
+          "text": "/opt/ftl/ModelId"
+        }
+      ]
+    }
+  ],
+  "related_source_archive_indicators": [
+    {
+      "archive": "20130619_LE2355.tgz",
+      "config_candidates": 457,
+      "filesystem_config_records": [
+        {
+          "name": "./src/arch/parisc/configs/b180_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/parisc/configs/default_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/parisc/configs/a500_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/parisc/configs/c3000_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/parisc/configs/712_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/um/defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_EXT3_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/mn10300/configs/asb2303_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/IP0X_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD_NAND=y",
+            "CONFIG_MMC_BLOCK=m",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_YAFFS_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/CM-BF527_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/CM-BF548_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=m",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/TCM-BF537_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_JFFS2_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF561-ACVILON_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD_NAND=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_CRAMFS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF518F-EZBRD_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF561-EZKIT_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF533-EZKIT_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/H8606_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF527-EZKIT-V2_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD_NAND=m",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF538-EZKIT_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD_NAND=m",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF533-STAMP_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/PNAV-10_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD_NAND=y",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/CM-BF561_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_JFFS2_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF526-EZBRD_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD_NAND=m",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/TCM-BF518_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/CM-BF537E_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/SRV1_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD_NAND=m",
+            "CONFIG_YAFFS_FS=m",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF548-EZKIT_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD_NAND=y",
+            "CONFIG_MMC_BLOCK=m",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/CM-BF533_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_FAT_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BF537-STAMP_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_JFFS2_FS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/CM-BF537U_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_JFFS2_FS=y"
+          ]
+        },
+        {
+          "name": "./src/arch/blackfin/configs/BlackStamp_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_YAFFS_FS=m",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        }
+      ],
+      "fstab_or_mtd_source_paths": [],
+      "warning": "Related open-source archives may describe other Denso/Fujitsu Ten models or releases, NOT confirmed CA01 production kernel"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "config_candidates": 453,
+      "filesystem_config_records": [
+        {
+          "name": "kernel/src/arch/frv/defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/cris/configs/etrax-100lx_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_CRAMFS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/cris/configs/etraxfs_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_CRAMFS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/cris/configs/artpec_3_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_CRAMFS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/cris/configs/etrax-100lx_v2_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_CRAMFS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/alpha/defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_FAT_FS=y",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/m32700ut.up_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/mappi.nommu_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/m32104ut_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/mappi2.vdec2_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/mappi2.opsp_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/mappi3.smp_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/usrv_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_CRAMFS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/mappi.up_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/oaks32r_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/opsput_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/mappi.smp_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_JFFS2_FS=y",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m32r/configs/m32700ut.smp_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_MTD=y",
+            "CONFIG_MTD_BLOCK=y",
+            "CONFIG_MMC_BLOCK=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/multi_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/mac_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=m"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/atari_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/mvme147_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/sun3x_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/q40_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/apollo_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/sun3_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/mvme16x_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/amiga_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/hp300_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        },
+        {
+          "name": "kernel/src/arch/m68k/configs/bvme6000_defconfig",
+          "filesystem_config_lines": [
+            "CONFIG_BLK_DEV_INITRD=y",
+            "CONFIG_EXT3_FS=y",
+            "CONFIG_FAT_FS=y",
+            "CONFIG_CRAMFS=m",
+            "CONFIG_SQUASHFS=m",
+            "CONFIG_NFS_FS=y"
+          ]
+        }
+      ],
+      "fstab_or_mtd_source_paths": [
+        {
+          "name": "boot/src/common/cmd_mtdparts.c",
+          "reason": "filesystem/mtd-named source path"
+        }
+      ],
+      "warning": "Related open-source archives may describe other Denso/Fujitsu Ten models or releases, NOT confirmed CA01 production kernel"
+    }
+  ],
+  "conclusion_scope": "Read-only triage; not proof of filesystem format on actual head unit"
+}

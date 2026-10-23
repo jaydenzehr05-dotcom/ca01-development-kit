@@ -1,0 +1,44 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DTV",
+  "examined_functions": [
+    "000a0044",
+    "000243b4"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 221,
+    "prompt_tokens": 1629,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1850
+  },
+  "next_focus": [
+    "0",
+    "0",
+    "0"
+  ],
+  "observations": [
+    {
+      "address": "0x000a0044",
+      "claim": "Initializes and mounts a filesystem",
+      "evidence_snippet": "rq_fls_Init(&DAT_001a135c)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000243b4",
+      "claim": "Extracts UI layout properties from configuration",
+      "evidence_snippet": "FUN_0004f8f0(param_1,\"paddingTop\"",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 000a0044 initializes and mounts a filesystem. Function 000243b4 processes UI layout properties from configuration.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+  "unresolved_questions": [
+    "What do the rq_fls_* functions do?",
+    "What is the purpose of the configuration parsing?"
+  ]
+}

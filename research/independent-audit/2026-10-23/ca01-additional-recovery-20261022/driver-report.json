@@ -1,0 +1,118 @@
+{
+  "status": "partial_untrusted_deflate_suffix",
+  "start_bit": 721102,
+  "end_bit": 1891422,
+  "end_byte_ceil": 236428,
+  "output_size": 339904,
+  "known_bytes": 279867,
+  "unknown_bytes": 60037,
+  "unique_unknown_history_slots": 707,
+  "known_contiguous_suffix_start": 312576,
+  "known_contiguous_suffix_size": 27328,
+  "known_contiguous_suffix_sha256": "0734d3799d89b88892611eaa5a486b83510c1d73ec5d0e0f4673d70bd5856414",
+  "zero_filled_output_sha256": "7c1957e5565bbe291cc19cddce958bf93a0489696c497a8fd802c4d127454066",
+  "blocks": [
+    {
+      "start_bit": 721102,
+      "end_bit": 1089263,
+      "final": false,
+      "kind": 2,
+      "output_end": 89550
+    },
+    {
+      "start_bit": 1089263,
+      "end_bit": 1289941,
+      "final": false,
+      "kind": 2,
+      "output_end": 167958
+    },
+    {
+      "start_bit": 1289941,
+      "end_bit": 1656769,
+      "final": false,
+      "kind": 2,
+      "output_end": 265242
+    },
+    {
+      "start_bit": 1656769,
+      "end_bit": 1889419,
+      "final": false,
+      "kind": 2,
+      "output_end": 333520
+    },
+    {
+      "start_bit": 1889419,
+      "end_bit": 1891422,
+      "final": true,
+      "kind": 2,
+      "output_end": 339904
+    }
+  ],
+  "limits": [
+    "Missing prefix and unknown history are not recovered.",
+    "No gzip CRC or package signature is verified.",
+    "Complete individual entries require independent header, bounds and mask checks."
+  ],
+  "input_path": "/home/starlight/projects/rav4-radio/stock-firmware/components/04-device-driver.bin",
+  "input_sha256": "d04237fc1b9c844c607559f6a1e4140f294d469ca48f038c3a2271f3f762b48a",
+  "payload_offset": 12,
+  "payload_size": 236692,
+  "component_end_byte_ceil": 236440,
+  "zlib_crosschecks": [
+    {
+      "dictionary": "zeros",
+      "eof": true,
+      "output_size": 339904,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    },
+    {
+      "dictionary": "ones_ff",
+      "eof": true,
+      "output_size": 339904,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    },
+    {
+      "dictionary": "incrementing",
+      "eof": true,
+      "output_size": 339904,
+      "alignment_prelude_output_bytes": 0,
+      "symbolic_output_matches": true
+    }
+  ],
+  "fully_known_tar_entries": [],
+  "trailing_bytes": 264,
+  "unverified_gzip_footer_hypothesis": {
+    "offset": 236428,
+    "crc32_hex": "4e91adb4",
+    "isize": 552960,
+    "remaining_after_footer": 256,
+    "crc_verified": false,
+    "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+  },
+  "incomplete_entries": [
+    {
+      "offset": 158144,
+      "name": "./lib/modules/2.6.35.7/kernel/opt/cachedmem.ko",
+      "size": 85949,
+      "type": "0",
+      "header_unknown_bytes": 0,
+      "content_unknown_bytes": 9426,
+      "content_size_in_bounds": true,
+      "zero_filled_sha256": "a31000d33223f7438087f04639d33bd0d5047fa3e24c4786d649cd56535acca8",
+      "complete": false
+    },
+    {
+      "offset": 244672,
+      "name": "./lib/modules/2.6.35.7/kernel/opt/dmamem.ko",
+      "size": 88975,
+      "type": "0",
+      "header_unknown_bytes": 0,
+      "content_unknown_bytes": 1258,
+      "content_size_in_bounds": true,
+      "zero_filled_sha256": "a30cf44c2ff2468ca6996c1e9a24f237e723cc2a2435bf2de250b373e8d1915e",
+      "complete": false
+    }
+  ]
+}

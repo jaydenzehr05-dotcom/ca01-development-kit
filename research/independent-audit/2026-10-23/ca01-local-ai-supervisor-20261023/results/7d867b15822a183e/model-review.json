@@ -1,0 +1,38 @@
+{
+  "binary": "./opt/ftl/apl/PROC_UIEIF",
+  "examined_functions": [
+    "00017248",
+    "000217a0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 222,
+    "prompt_tokens": 1441,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1663
+  },
+  "next_focus": [
+    "E",
+    "r",
+    "r"
+  ],
+  "observations": [
+    {
+      "address": "0x00017248",
+      "claim": "Unmounts and reformats /opt/ftl/var/uie partition",
+      "evidence_snippet": "umount2(\"/opt/ftl/var/uie\",1);",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions handle filesystem operations on /opt/ftl/var/uie, including unmounting, formatting with mkfs.vfat, and mounting.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+  "unresolved_questions": [
+    "What is the purpose of the different error codes?",
+    "Are the mount points hardcoded for specific hardware?"
+  ]
+}

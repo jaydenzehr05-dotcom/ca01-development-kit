@@ -1,0 +1,200 @@
+{
+  "scope": "Research scripts, official sources/responses, diagnostic outputs; no target execution",
+  "files": [
+    {
+      "path": "local/audio-leading-elf-sections.json",
+      "size": 9814,
+      "sha256": "208ef2c6ed579802142665b25c0831867dfc5080bdb347b8f4356d928d86e23c"
+    },
+    {
+      "path": "local/audio-strings.txt",
+      "size": 11524,
+      "sha256": "9ded6ae3c7f9bdf5739d1cd1a2395aedd7465884220d3354785d83ef2cd0de30"
+    },
+    {
+      "path": "local/elf_tail.py",
+      "size": 1516,
+      "sha256": "60a1f9694d9e5b0041076271f2fc6d8fa2c19a9648473ae4a5adb195effeceee"
+    },
+    {
+      "path": "local/middleware-strings.txt",
+      "size": 94608,
+      "sha256": "b2a0309fca2d4dada5e00a8c498522015f4d78f8332dc6052f1a68c06bcf6f33"
+    },
+    {
+      "path": "local/region-signatures.json",
+      "size": 3411,
+      "sha256": "9851f8c004bd9183977b7284b40b6c2ba4a13a20605df408935635f80cef275a"
+    },
+    {
+      "path": "local/signatures.py",
+      "size": 2485,
+      "sha256": "17302e8f62b1b2342a2abf8b17b5f3b92031da486365a5d344cde95e22b76569"
+    },
+    {
+      "path": "local/stored_scan.json",
+      "size": 1819,
+      "sha256": "d85b2fc0581293bf4f1ff8833bd45b3ff0504140f32a37000965cec6eef119d5"
+    },
+    {
+      "path": "local/stored_scan.py",
+      "size": 1525,
+      "sha256": "07ee903dfce0ac9589b58801fc937fa64764b1c70c0e69014497f0e83cf3e59d"
+    },
+    {
+      "path": "public/1134-portal-headers.txt",
+      "size": 1935,
+      "sha256": "368d38550c7a7f9470b6c9496e7ec0e85eabe457aeb9945b94842c834cb9776f"
+    },
+    {
+      "path": "public/1134-portal-response.bin",
+      "size": 107054,
+      "sha256": "478b19560cb0f4f3d95b361f3fc4d6a327f9e6d78bf862be70939b6a14852241"
+    },
+    {
+      "path": "public/alternate-year-results.json",
+      "size": 1128,
+      "sha256": "8afaf2af727d491c82e2ac3cf9414c916623861029517217b2cb83a7b7d92774"
+    },
+    {
+      "path": "public/bulletin-2020.pdf",
+      "size": 1049660,
+      "sha256": "f039ef03ba7200198010649e765721b184c2bf3076e17ab8377ffe0bdcdc8825"
+    },
+    {
+      "path": "public/bulletin-2020.txt",
+      "size": 16384,
+      "sha256": "d3780092432b9c088823fc21ed682117cfdb7d8cc2d657a228776d941cfb5481"
+    },
+    {
+      "path": "public/owner-portal.html",
+      "size": 15219,
+      "sha256": "4719b8cbc5d5625ac13070717a93bcd3d97043f4d1f655d3708277ce4c119703"
+    },
+    {
+      "path": "public/pdf-link-streams.txt",
+      "size": 1281668,
+      "sha256": "4fc9f27fa18747a2ce620975edb691b58db6361644d9cde357daaef829feaa7a"
+    },
+    {
+      "path": "public/rav4-2016.json",
+      "size": 183,
+      "sha256": "40c2149635ede9666f001c9d9135b0b4bf649986459e1c4c52e2c65e79f29d7d"
+    },
+    {
+      "path": "public/rav4-updates-2014.response",
+      "size": 263,
+      "sha256": "714ca8d74b752a402909a6a80c1fc5cf4a1270ddc7ad69f5ceec0d6b107419ef"
+    },
+    {
+      "path": "public/rav4-updates-2015.response",
+      "size": 243,
+      "sha256": "fe5db8fe062880774863432eef7be58cbb241b9ff6c253fb6319dbe1b453726c"
+    },
+    {
+      "path": "public/rav4-updates.json",
+      "size": 243,
+      "sha256": "05c229a0e9248d6f7906fe0ca4c3a5ae7f8e247c3c63c1cb81da58ac824d68cd"
+    },
+    {
+      "path": "public/software-update-headers.txt",
+      "size": 299,
+      "sha256": "7c23d6003da657e3e4168dbe4fbd6671d2dc4da5d9dbb8422ebf9b7779fdb553"
+    },
+    {
+      "path": "public/software-update.js",
+      "size": 434722,
+      "sha256": "3d7508ed5eab6f1a779293aa37578e139e4ec8afdfd93d2d0798319bda096e52"
+    },
+    {
+      "path": "public/updates.html",
+      "size": 31382,
+      "sha256": "eefd2e06491c04d070f7a0a4142a56cab36868f30182cc45820a60d2794b9258"
+    },
+    {
+      "path": "public/vehicle-dialog.json",
+      "size": 2619,
+      "sha256": "f048f914dccdfed9a12798d002e654b023b5c12c0e2a744f891956e3e60822cf"
+    },
+    {
+      "path": "public/vehicle-garage.js",
+      "size": 411185,
+      "sha256": "600b376424b7451bcfa685b936798edc7ea5664e4807982f259a3777cdbed87c"
+    },
+    {
+      "path": "public/write_report.py",
+      "size": 2686,
+      "sha256": "0974ee896348e47974c5a0b601bdfeab22986c56448f9d426811f3cfa7112164"
+    },
+    {
+      "path": "archives/exact-symbols.json",
+      "size": 389,
+      "sha256": "123973005eb9cc084db397f802194468ad507ca8413e1ab2aa5192907b2ce2f5"
+    },
+    {
+      "path": "archives/scan.py",
+      "size": 1377,
+      "sha256": "b230a4d476f3029c04101163a970e47e3eaef85b3b7959d182c031cad7b5fbdc"
+    },
+    {
+      "path": "tools/audio-infgen.txt",
+      "size": 58448,
+      "sha256": "0b9490567184c981e96580a178a49112f07eb67ab9ef9e4276226d804487e520"
+    },
+    {
+      "path": "tools/check_streams.py",
+      "size": 1578,
+      "sha256": "3f3579067f315fa4d1cb7ed55ce6a13718c12f6dc4542bb22e6e34087b08a295"
+    },
+    {
+      "path": "tools/infgen",
+      "size": 46936,
+      "sha256": "b1722e4291c50d4971898eb472124488b6dd691d93f863bea3a539954c5ea7e1"
+    },
+    {
+      "path": "tools/infgen-source/.gitignore",
+      "size": 17,
+      "sha256": "ee942cfc9c9102d807c1369c330bed8ba39192819ae34f73d256ef8e109d9743"
+    },
+    {
+      "path": "tools/infgen-source/LICENSE",
+      "size": 925,
+      "sha256": "8fc449009384266f8c32ae76916d6e6d8cd9494d07070c3c6e1b80517d2b6cbc"
+    },
+    {
+      "path": "tools/infgen-source/README.md",
+      "size": 1020,
+      "sha256": "ff1d46a572f87045a5d40394069802a2c119d087775e0c31111a71e9d2f57bba"
+    },
+    {
+      "path": "tools/infgen-source/infgen.c",
+      "size": 84855,
+      "sha256": "3a43bd54dfd16135dd7bcf08cf532b64c605110e699921ba64ab7d6d16048d93"
+    },
+    {
+      "path": "tools/infgen-source/infstats.c",
+      "size": 16884,
+      "sha256": "d7e991113ea33b2594974a4779f9942c9d53f6810b61dbcd0735b988aedc6d22"
+    },
+    {
+      "path": "tools/kernel-infgen.txt",
+      "size": 5135,
+      "sha256": "5f852c9352a6b4f42c6073ba717a369af8a795caf268626df3230b5bb43b9d41"
+    },
+    {
+      "path": "tools/middleware-infgen.txt",
+      "size": 6030,
+      "sha256": "fdf2180c108d82c6e65dc134094acb6be1d1355140731ab045d5664f15d07d78"
+    },
+    {
+      "path": "tools/self-test.txt",
+      "size": 387,
+      "sha256": "e5878e128021249dd52bac68c920591d244b9c241355555111003938cb4d2aaa"
+    },
+    {
+      "path": "tools/stream-checks.json",
+      "size": 1536,
+      "sha256": "658d7e7b5c3e45c42f5c3dc30bcb8d1c0b401fc9000b16b8673a7675a5dccf02"
+    }
+  ]
+}

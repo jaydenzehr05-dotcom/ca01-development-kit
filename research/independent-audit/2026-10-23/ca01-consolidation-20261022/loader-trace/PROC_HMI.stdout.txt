@@ -1,0 +1,36 @@
+	linux-vdso.so.1 (0x40830000)
+	libm.so.6 => /lib/arm-linux-gnueabi/libm.so.6 (0x40831000)
+	librt.so.1 => /lib/arm-linux-gnueabi/librt.so.1 (0x4082d000)
+	libGLES_CM.so => not found
+	libOpenVG.so => not found
+	libEGL.so => /lib/arm-linux-gnueabi/libEGL.so (0x408a0000)
+	libexpat.so.1 => /lib/arm-linux-gnueabi/libexpat.so.1 (0x408d1000)
+	libipas_std.so => not found
+	libipas_fls.so => not found
+	libipas_ls1.so => /opt/ftl/lib/libipas_ls1.so (0x408f8000)
+	libipas_pcd.so => not found
+	libipas_sysc.so => /opt/ftl/lib/libipas_sysc.so (0x40908000)
+	libipas_trc.so => not found
+	libipas_grp.so => /opt/ftl/lib/libipas_grp.so (0x40a48000)
+	libpthread.so.0 => /lib/arm-linux-gnueabi/libpthread.so.0 (0x4089b000)
+	libdisplay_if.so => not found
+	libdismng_if.so => not found
+	libDIS_IF.so => /opt/ftl/lib/libDIS_IF.so (0x41a90000)
+	libLMMDB_IF.so => not found
+	libgpo_ct.so => not found
+	libi2c_cm.so => /opt/ftl/lib/libi2c_cm.so (0x41aa8000)
+	libmem_ct.so => not found
+	libcva_db.so => not found
+	libadi_ct.so => not found
+	libComFlmLb.so => /opt/ftl/lib/libComFlmLb.so (0x41ab8000)
+	libmir_if.so => not found
+	libspc_if.so => not found
+	libuie_db.so => not found
+	libuie_api.so => /opt/ftl/lib/libuie_api.so (0x41ac8000)
+	libVRS_IF.so => not found
+	libgcc_s.so.1 => /lib/arm-linux-gnueabi/libgcc_s.so.1 (0x41ad2000)
+	libc.so.6 => /lib/arm-linux-gnueabi/libc.so.6 (0x41af2000)
+	/lib/ld-linux.so.3 (0x40801000)
+	libGLdispatch.so.0 => /lib/arm-linux-gnueabi/libGLdispatch.so.0 (0x41c80000)
+	libipas_trc.so => not found
+	libuie_db.so => not found

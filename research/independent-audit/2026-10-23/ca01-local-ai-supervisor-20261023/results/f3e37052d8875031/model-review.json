@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DSV",
+  "examined_functions": [
+    "00015104",
+    "000257c4"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 244,
+    "prompt_tokens": 2083,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2327
+  },
+  "next_focus": [
+    "Dictionary file format",
+    "Inflate operation details"
+  ],
+  "observations": [
+    {
+      "address": "0x00015104",
+      "claim": "Uses inflateInit_ with version string '1.2.3'",
+      "evidence_snippet": "inflateInit_(&local_68,\"1.2.3\",0x38)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000257c4",
+      "claim": "Accesses dictionary files with preset encoding ID",
+      "evidence_snippet": "sprintf(acStack_e8,\"%s%d%s\",\"/opt/ftl/dsv/dic/PresetDictionaryEncid\"",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two similar functions handle decompression with dictionary file operations. Both use inflateInit_ and inflate, accessing /opt/ftl/dsv/dic/ paths.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+  "unresolved_questions": [
+    "What is the purpose of the dictionary files?",
+    "How are the decompressed results used?"
+  ]
+}

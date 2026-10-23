@@ -1,0 +1,37 @@
+{
+  "binary": "./opt/ftl/lib/libAdlCd.so",
+  "examined_functions": [
+    "000123f8",
+    "0001389c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 242,
+    "prompt_tokens": 747,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 989
+  },
+  "next_focus": [
+    "File path constants in DAT_00012478",
+    "util_file_copy function behavior"
+  ],
+  "observations": [
+    {
+      "address": "0x0001389c",
+      "claim": "Writes start data using file copy utility",
+      "evidence_snippet": "util_file_copy(iVar2 + DAT_00013918,iVar2 + DAT_0001391c,0xa0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions handle SQL database dropping and file copying operations with potential security implications.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "3831438fb969950ff20fd11e1c704f9235f58ec5d93c5a0d55a06471acd32ce2",
+  "unresolved_questions": [
+    "What are the specific file paths being manipulated?",
+    "How is the validation check for database names performed?"
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "scope": "Bounded ORIGINAL ARM HMI instructions under Unicorn; import boundaries synthetic. No real display library or Toyota application startup.",
+  "source_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "profiles": [
+    {
+      "profile": "0x295fe8",
+      "width": 800,
+      "height": 480,
+      "failed_malloc": false,
+      "window_address": "0x70001000",
+      "window_first_six": [
+        "0x320",
+        "0x1e0",
+        "0x320",
+        "0x2",
+        "0x3",
+        "0x26c98b4"
+      ],
+      "handles": [
+        "0x31000000",
+        "0x31100000",
+        "0x31200000"
+      ],
+      "descriptor_stride": 16,
+      "handle_word_offset": 12,
+      "display_allocation_failure_ignored_by_original": false,
+      "callback_word_7_from_uninitialized_malloc": "0xa5a5a5a5",
+      "tail_words_preserved": [
+        "0xa5a5a5a5",
+        "0xa5a5a5a5"
+      ],
+      "calls": [
+        {
+          "service": "sysDisMngMemAlloc",
+          "size": 1536000,
+          "descriptor": "0x1a24bb8",
+          "synthetic_handle": "0x31000000",
+          "service_return": 0
+        },
+        {
+          "service": "sysDisMngMemAlloc",
+          "size": 1536000,
+          "descriptor": "0x1a24bc8",
+          "synthetic_handle": "0x31100000",
+          "service_return": 0
+        },
+        {
+          "service": "sysDisMngMemAlloc",
+          "size": 1536000,
+          "descriptor": "0x1a24bd8",
+          "synthetic_handle": "0x31200000",
+          "service_return": 0
+        },
+        {
+          "service": "malloc",
+          "requested": 32,
+          "synthetic": true
+        }
+      ],
+      "run_instruction_count": 99
+    },
+    {
+      "profile": "0x296108",
+      "width": 480,
+      "height": 480,
+      "failed_malloc": false,
+      "window_address": "0x70001000",
+      "window_first_six": [
+        "0x1e0",
+        "0x1e0",
+        "0x1e0",
+        "0x2",
+        "0x3",
+        "0x26c98b4"
+      ],
+      "handles": [
+        "0x31000000",
+        "0x31100000",
+        "0x31200000"
+      ],
+      "descriptor_stride": 16,
+      "handle_word_offset": 12,
+      "display_allocation_failure_ignored_by_original": false,
+      "callback_word_7_from_uninitialized_malloc": "0xa5a5a5a5",
+      "tail_words_preserved": [
+        "0xa5a5a5a5",
+        "0xa5a5a5a5"
+      ],
+      "calls": [
+        {
+          "service": "sysDisMngMemAlloc",
+          "size": 921600,
+          "descriptor": "0x1a24bb8",
+          "synthetic_handle": "0x31000000",
+          "service_return": 0
+        },
+        {
+          "service": "sysDisMngMemAlloc",
+          "size": 921600,
+          "descriptor": "0x1a24bc8",
+          "synthetic_handle": "0x31100000",
+          "service_return": 0
+        },
+        {
+          "service": "sysDisMngMemAlloc",
+          "size": 921600,
+          "descriptor": "0x1a24bd8",
+          "synthetic_handle": "0x31200000",
+          "service_return": 0
+        },
+        {
+          "service": "malloc",
+          "requested": 32,
+          "synthetic": true
+        }
+      ],
+      "run_instruction_count": 99
+    }
+  ],
+  "caveats": [
+    "Original FUN_0002a548 vehicle selection was replaced by a verified profile pointer",
+    "Original imported sysDisMngMemAlloc was replaced with a synthetic descriptor writer, not authentic vendor implementation",
+    "Original constructor leaves window words 6/7 untouched; calloc-like test memory would have masked this. Real malloc contents are undefined until another component sets them.",
+    "No original GL calls, fonts, textures, GUI state machine, or screen pixels executed"
+  ],
+  "malloc_failure": {
+    "profile": "0x295fe8",
+    "width": 800,
+    "height": 480,
+    "failed_malloc": true,
+    "window_address": null,
+    "calls": [
+      {
+        "service": "sysDisMngMemAlloc",
+        "size": 1536000,
+        "descriptor": "0x1a24bb8",
+        "synthetic_handle": "0x31000000",
+        "service_return": 0
+      },
+      {
+        "service": "sysDisMngMemAlloc",
+        "size": 1536000,
+        "descriptor": "0x1a24bc8",
+        "synthetic_handle": "0x31100000",
+        "service_return": 0
+      },
+      {
+        "service": "sysDisMngMemAlloc",
+        "size": 1536000,
+        "descriptor": "0x1a24bd8",
+        "synthetic_handle": "0x31200000",
+        "service_return": 0
+      },
+      {
+        "service": "malloc",
+        "requested": 32,
+        "synthetic": true
+      }
+    ],
+    "run_instruction_count": 42,
+    "no_window": true
+  },
+  "display_allocation_failure": {
+    "profile": "0x295fe8",
+    "width": 800,
+    "height": 480,
+    "failed_malloc": false,
+    "window_address": "0x70001000",
+    "window_first_six": [
+      "0x320",
+      "0x1e0",
+      "0x320",
+      "0x2",
+      "0x3",
+      "0x26c98b4"
+    ],
+    "handles": [
+      "0x31000000",
+      "0x0",
+      "0x31200000"
+    ],
+    "descriptor_stride": 16,
+    "handle_word_offset": 12,
+    "display_allocation_failure_ignored_by_original": true,
+    "callback_word_7_from_uninitialized_malloc": "0xa5a5a5a5",
+    "tail_words_preserved": [
+      "0xa5a5a5a5",
+      "0xa5a5a5a5"
+    ],
+    "calls": [
+      {
+        "service": "sysDisMngMemAlloc",
+        "size": 1536000,
+        "descriptor": "0x1a24bb8",
+        "synthetic_handle": "0x31000000",
+        "service_return": 0
+      },
+      {
+        "service": "sysDisMngMemAlloc",
+        "size": 1536000,
+        "descriptor": "0x1a24bc8",
+        "synthetic_handle": null,
+        "service_return": -1
+      },
+      {
+        "service": "sysDisMngMemAlloc",
+        "size": 1536000,
+        "descriptor": "0x1a24bd8",
+        "synthetic_handle": "0x31200000",
+        "service_return": 0
+      },
+      {
+        "service": "malloc",
+        "requested": 32,
+        "synthetic": true
+      }
+    ],
+    "run_instruction_count": 99
+  },
+  "plane": {
+    "original_function": "0x15f84",
+    "calls": [
+      {
+        "service": "sysDisMngPlnDispSw",
+        "r0": "0x0",
+        "r1": "0x0",
+        "r2": "0x0",
+        "r3": "0x0"
+      },
+      {
+        "service": "sysDisMngPlnAlpha",
+        "r0": "0x0",
+        "r1": "0xff",
+        "r2": "0x1",
+        "r3": "0x0"
+      },
+      {
+        "service": "sysDisMngPlnTrans",
+        "r0": "0x0",
+        "r1": "0x0",
+        "r2": "0xff00ff",
+        "r3": "0x0"
+      }
+    ],
+    "imported_call": "0xd4fc",
+    "noted": "Transparency field semantics still unverified"
+  }
+}

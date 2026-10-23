@@ -1,0 +1,14 @@
+{
+  "combined": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/ghidra/merged-resume-1",
+  "main": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/ghidra/decomp",
+  "note": "No original binaries or repository files changed",
+  "original_source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+  "stats": {
+    "failed": 0,
+    "improved": 2064,
+    "new_total": 8354,
+    "still_not_attempted": 1
+  },
+  "status": "success",
+  "supplement": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/ghidra/resume-1/isolated"
+}

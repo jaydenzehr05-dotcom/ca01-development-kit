@@ -1,0 +1,699 @@
+{
+  "recovered_gui_entries": 6,
+  "unique_gui_paths": 3,
+  "versions": {
+    "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml": 1,
+    "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml": 1,
+    "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml": 1
+  },
+  "items": [
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+      "bytes": 612522,
+      "sha256": "f41d7256548ae70881b8777ae76e37fdd0b6998577c8779cefd3ba25d4209d1b",
+      "matches_manifest": true,
+      "root_tag": "root",
+      "wordlists": 12,
+      "tags_most_common": [
+        [
+          "parts",
+          2785
+        ],
+        [
+          "FT",
+          448
+        ],
+        [
+          "BR",
+          194
+        ],
+        [
+          "fixed",
+          155
+        ],
+        [
+          "wordlist",
+          12
+        ],
+        [
+          "listinfo",
+          12
+        ],
+        [
+          "listver",
+          12
+        ],
+        [
+          "hmispecver",
+          12
+        ],
+        [
+          "fnname",
+          12
+        ],
+        [
+          "specname",
+          12
+        ],
+        [
+          "grade",
+          12
+        ],
+        [
+          "responsiblegrp",
+          12
+        ]
+      ],
+      "matching_text_examples": [
+        {
+          "tag": "FT",
+          "text": "[Screen Title]"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Nombre de préréglages radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Nombre de préréglages radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+      "bytes": 610350,
+      "sha256": "7442138ae913b6bf56cb52f3be5ae94d8c23bc9736763179d0f67d313e9780fa",
+      "matches_manifest": true,
+      "root_tag": "root",
+      "wordlists": 12,
+      "tags_most_common": [
+        [
+          "parts",
+          2785
+        ],
+        [
+          "FT",
+          448
+        ],
+        [
+          "BR",
+          183
+        ],
+        [
+          "fixed",
+          155
+        ],
+        [
+          "wordlist",
+          12
+        ],
+        [
+          "listinfo",
+          12
+        ],
+        [
+          "listver",
+          12
+        ],
+        [
+          "hmispecver",
+          12
+        ],
+        [
+          "fnname",
+          12
+        ],
+        [
+          "specname",
+          12
+        ],
+        [
+          "grade",
+          12
+        ],
+        [
+          "responsiblegrp",
+          12
+        ]
+      ],
+      "matching_text_examples": [
+        {
+          "tag": "FT",
+          "text": "[Screen Title]"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Número de configuraciones predeterminadas de radio"
+        },
+        {
+          "tag": "parts",
+          "text": "N.º de conf. predet. de radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "bytes": 596144,
+      "sha256": "1e9eca3854506419e67e812f60f45de0f40c4a90113f038f11fd7bafdb74b166",
+      "matches_manifest": true,
+      "root_tag": "root",
+      "wordlists": 12,
+      "tags_most_common": [
+        [
+          "parts",
+          2785
+        ],
+        [
+          "FT",
+          448
+        ],
+        [
+          "fixed",
+          153
+        ],
+        [
+          "BR",
+          114
+        ],
+        [
+          "wordlist",
+          12
+        ],
+        [
+          "listinfo",
+          12
+        ],
+        [
+          "listver",
+          12
+        ],
+        [
+          "hmispecver",
+          12
+        ],
+        [
+          "fnname",
+          12
+        ],
+        [
+          "specname",
+          12
+        ],
+        [
+          "grade",
+          12
+        ],
+        [
+          "responsiblegrp",
+          12
+        ]
+      ],
+      "matching_text_examples": [
+        {
+          "tag": "parts",
+          "text": "Home"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 1"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 2"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 3"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 4"
+        },
+        {
+          "tag": "parts",
+          "text": "Home"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 1"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 2"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 3"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 4"
+        },
+        {
+          "tag": "parts",
+          "text": "Home"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 1"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 2"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 3"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 4"
+        }
+      ]
+    },
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+      "bytes": 612522,
+      "sha256": "f41d7256548ae70881b8777ae76e37fdd0b6998577c8779cefd3ba25d4209d1b",
+      "matches_manifest": true,
+      "root_tag": "root",
+      "wordlists": 12,
+      "tags_most_common": [
+        [
+          "parts",
+          2785
+        ],
+        [
+          "FT",
+          448
+        ],
+        [
+          "BR",
+          194
+        ],
+        [
+          "fixed",
+          155
+        ],
+        [
+          "wordlist",
+          12
+        ],
+        [
+          "listinfo",
+          12
+        ],
+        [
+          "listver",
+          12
+        ],
+        [
+          "hmispecver",
+          12
+        ],
+        [
+          "fnname",
+          12
+        ],
+        [
+          "specname",
+          12
+        ],
+        [
+          "grade",
+          12
+        ],
+        [
+          "responsiblegrp",
+          12
+        ]
+      ],
+      "matching_text_examples": [
+        {
+          "tag": "FT",
+          "text": "[Screen Title]"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Nombre de préréglages radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Nombre de préréglages radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+      "bytes": 610350,
+      "sha256": "7442138ae913b6bf56cb52f3be5ae94d8c23bc9736763179d0f67d313e9780fa",
+      "matches_manifest": true,
+      "root_tag": "root",
+      "wordlists": 12,
+      "tags_most_common": [
+        [
+          "parts",
+          2785
+        ],
+        [
+          "FT",
+          448
+        ],
+        [
+          "BR",
+          183
+        ],
+        [
+          "fixed",
+          155
+        ],
+        [
+          "wordlist",
+          12
+        ],
+        [
+          "listinfo",
+          12
+        ],
+        [
+          "listver",
+          12
+        ],
+        [
+          "hmispecver",
+          12
+        ],
+        [
+          "fnname",
+          12
+        ],
+        [
+          "specname",
+          12
+        ],
+        [
+          "grade",
+          12
+        ],
+        [
+          "responsiblegrp",
+          12
+        ]
+      ],
+      "matching_text_examples": [
+        {
+          "tag": "FT",
+          "text": "[Screen Title]"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Número de configuraciones predeterminadas de radio"
+        },
+        {
+          "tag": "parts",
+          "text": "N.º de conf. predet. de radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        },
+        {
+          "tag": "parts",
+          "text": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "bytes": 596144,
+      "sha256": "1e9eca3854506419e67e812f60f45de0f40c4a90113f038f11fd7bafdb74b166",
+      "matches_manifest": true,
+      "root_tag": "root",
+      "wordlists": 12,
+      "tags_most_common": [
+        [
+          "parts",
+          2785
+        ],
+        [
+          "FT",
+          448
+        ],
+        [
+          "fixed",
+          153
+        ],
+        [
+          "BR",
+          114
+        ],
+        [
+          "wordlist",
+          12
+        ],
+        [
+          "listinfo",
+          12
+        ],
+        [
+          "listver",
+          12
+        ],
+        [
+          "hmispecver",
+          12
+        ],
+        [
+          "fnname",
+          12
+        ],
+        [
+          "specname",
+          12
+        ],
+        [
+          "grade",
+          12
+        ],
+        [
+          "responsiblegrp",
+          12
+        ]
+      ],
+      "matching_text_examples": [
+        {
+          "tag": "parts",
+          "text": "Home"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 1"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 2"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 3"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 4"
+        },
+        {
+          "tag": "parts",
+          "text": "Home"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 1"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 2"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 3"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 4"
+        },
+        {
+          "tag": "parts",
+          "text": "Home"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 1"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 2"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 3"
+        },
+        {
+          "tag": "parts",
+          "text": "Home 4"
+        }
+      ]
+    }
+  ]
+}

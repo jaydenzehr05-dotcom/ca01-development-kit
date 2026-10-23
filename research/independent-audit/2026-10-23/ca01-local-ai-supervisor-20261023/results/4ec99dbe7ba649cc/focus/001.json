@@ -1,0 +1,67 @@
+{
+  "binary": "./opt/ftl/apl/PROC_REPRO",
+  "examined_functions": [
+    "0001cd1c",
+    "0001e384"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 306,
+    "prompt_tokens": 1673,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1979
+  },
+  "next_focus": [
+    "Directory traversal logic in 0001cd1c",
+    "Version file parsing in 0001e384"
+  ],
+  "observations": [
+    {
+      "address": "0x0001cd1c",
+      "claim": "Function handles LOADING.KWI file specifically when param_1 equals 3",
+      "evidence_snippet": "iVar5 = strcmp(local_30,\"LOADING.KWI\");",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001e384",
+      "claim": "Function reads fixed-size version file with 7-byte read",
+      "evidence_snippet": "iVar1 = rq_fls_Read(local_c,1,7,param_1,&local_10,0);",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0001cd1c processes directory contents, handling specific file 'LOADING.KWI' and calling helper functions. Function 0001e384 reads version file /opt/ftl/SDIMG.VER.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1cd1c",
+    "1e384"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1cd1c",
+      "score": 332,
+      "tags": [
+        "missing_libs",
+        "update_recovery"
+      ]
+    },
+    {
+      "address": "1e384",
+      "score": 272,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the numerous DAT_0007dxxx variables?",
+    "How are the helper functions FUN_0001c918 and FUN_0001ca78 used?"
+  ]
+}

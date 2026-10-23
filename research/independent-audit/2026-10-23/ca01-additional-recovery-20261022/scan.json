@@ -1,0 +1,112 @@
+[
+  {
+    "component": "02-middle-ware.bin",
+    "prefix": 524,
+    "previous_start": [
+      69313,
+      6
+    ],
+    "scan_range": [
+      64000,
+      69313
+    ],
+    "hits": [],
+    "seconds": 0.2186126708984375
+  },
+  {
+    "component": "04-device-driver.bin",
+    "prefix": 12,
+    "previous_start": [
+      90137,
+      6
+    ],
+    "scan_range": [
+      64000,
+      90137
+    ],
+    "hits": [],
+    "seconds": 0.7272422313690186
+  },
+  {
+    "component": "05-bluetooth.bin",
+    "prefix": 12,
+    "previous_start": [
+      101515,
+      6
+    ],
+    "scan_range": [
+      64000,
+      101515
+    ],
+    "hits": [],
+    "seconds": 1.0834934711456299
+  },
+  {
+    "component": "06-audio.bin",
+    "prefix": 12,
+    "previous_start": [
+      71041,
+      2
+    ],
+    "scan_range": [
+      64000,
+      71041
+    ],
+    "hits": [
+      {
+        "start_byte": 65703,
+        "bit": 7,
+        "size": 23439868,
+        "end": 9382710
+      }
+    ],
+    "seconds": 1.920461654663086
+  },
+  {
+    "component": "07-gui.bin",
+    "prefix": 12,
+    "previous_start": [
+      67615,
+      4
+    ],
+    "scan_range": [
+      64000,
+      67615
+    ],
+    "hits": [],
+    "seconds": 0.17669129371643066
+  },
+  {
+    "component": "08-voice-recognition.bin",
+    "prefix": 12,
+    "previous_start": [
+      85768,
+      0
+    ],
+    "scan_range": [
+      64000,
+      85768
+    ],
+    "hits": [
+      {
+        "start_byte": 67954,
+        "bit": 6,
+        "size": 2451203,
+        "end": 577529
+      },
+      {
+        "start_byte": 73871,
+        "bit": 3,
+        "size": 2431342,
+        "end": 577529
+      },
+      {
+        "start_byte": 79467,
+        "bit": 7,
+        "size": 2412391,
+        "end": 577529
+      }
+    ],
+    "seconds": 0.9196896553039551
+  }
+]

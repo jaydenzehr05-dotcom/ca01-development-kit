@@ -1,0 +1,33 @@
+[
+  {
+    "task": {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/inner-1134/07-gui.payload.bin",
+      "depth": 0,
+      "blob_id": "",
+      "is_multi_file": false
+    },
+    "reports": [
+      {
+        "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/inner-1134/07-gui.payload.bin",
+        "size": 529961,
+        "is_dir": false,
+        "is_file": true,
+        "is_link": false,
+        "link_target": null,
+        "__typename__": "StatReport"
+      },
+      {
+        "magic": "data",
+        "mime_type": "application/octet-stream",
+        "__typename__": "FileMagicReport"
+      },
+      {
+        "md5": "8e74ccf574fd212fe936ccd30983f2c9",
+        "sha1": "44e2409f8d7fc4a6d6916744d27b586bb1d4da8e",
+        "sha256": "92fb0df67c32715edab6a4a97018cc40d050f0773130275797446f28872823b0",
+        "__typename__": "HashReport"
+      }
+    ],
+    "subtasks": []
+  }
+]

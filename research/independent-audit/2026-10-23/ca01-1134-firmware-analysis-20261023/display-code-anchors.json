@@ -1,0 +1,596 @@
+[
+  {
+    "name": "PROC_DISPLAY",
+    "code_sha_1127": "b671bd831ff56c95093df392776a4a9d10d3f5e159cac15c54f5cc3e62b7f010",
+    "code_sha_1134": "42639017adf8a392dcf7a22b085857569efa050a0dc7f99e7c74af9c87c70662",
+    "text_length_1127": 3996420,
+    "text_length_1134": 3996140,
+    "vaddr_1127": "0x139b8",
+    "vaddr_1134": "0x139b8",
+    "has_symtab_1127": false,
+    "has_symtab_1134": false,
+    "checked_64byte_samples": 31222,
+    "matched_at_exact_same_offset": 10370,
+    "matched_anywhere_at_4byte_alignment": 19941,
+    "relocated_window_percentage": 63.87,
+    "same_offset_window_percentage": 33.21,
+    "most_common_relative_shifts": [
+      [
+        0,
+        10252
+      ],
+      [
+        -280,
+        7314
+      ],
+      [
+        -284,
+        1751
+      ],
+      [
+        32,
+        386
+      ],
+      [
+        2224,
+        7
+      ],
+      [
+        1112,
+        6
+      ],
+      [
+        228,
+        5
+      ],
+      [
+        480,
+        4
+      ],
+      [
+        148,
+        4
+      ],
+      [
+        4388,
+        4
+      ],
+      [
+        340,
+        4
+      ],
+      [
+        280,
+        3
+      ],
+      [
+        356,
+        3
+      ],
+      [
+        2996448,
+        3
+      ],
+      [
+        2834460,
+        3
+      ],
+      [
+        2784176,
+        3
+      ],
+      [
+        40,
+        3
+      ],
+      [
+        68688,
+        3
+      ]
+    ],
+    "unmatched_sample_examples": [
+      {
+        "old_text_offset": 0,
+        "old_vaddr": "0x139b8",
+        "old_first_16_hex": "00b0a0e300e0a0e304109de40d20a0e1"
+      },
+      {
+        "old_text_offset": 384,
+        "old_vaddr": "0x13b38",
+        "old_first_16_hex": "d00403e354d04de23e0040e3021100e3"
+      },
+      {
+        "old_text_offset": 512,
+        "old_vaddr": "0x13bb8",
+        "old_first_16_hex": "00e0a0e30020a0e300e084e5b821c3e1"
+      },
+      {
+        "old_text_offset": 12160,
+        "old_vaddr": "0x16938",
+        "old_first_16_hex": "0620a0e3120080e2156c85e20af2ffeb"
+      },
+      {
+        "old_text_offset": 15104,
+        "old_vaddr": "0x174b8",
+        "old_first_16_hex": "12ecffeb0490d7e5000059e32f01000a"
+      },
+      {
+        "old_text_offset": 16128,
+        "old_vaddr": "0x178b8",
+        "old_first_16_hex": "006050e25700000a0a20a0e10810a0e1"
+      },
+      {
+        "old_text_offset": 39936,
+        "old_vaddr": "0x1d5b8",
+        "old_first_16_hex": "0620d4e50420c0e51080bde830402de9"
+      },
+      {
+        "old_text_offset": 40064,
+        "old_vaddr": "0x1d638",
+        "old_first_16_hex": "0050a0e104208de57bffffebff3f0fe3"
+      },
+      {
+        "old_text_offset": 40192,
+        "old_vaddr": "0x1d6b8",
+        "old_first_16_hex": "301204e33e1040e380c081e004208de2"
+      },
+      {
+        "old_text_offset": 40960,
+        "old_vaddr": "0x1d9b8",
+        "old_first_16_hex": "0410a0e30050a0e304508de59afeffeb"
+      },
+      {
+        "old_text_offset": 41088,
+        "old_vaddr": "0x1da38",
+        "old_first_16_hex": "301204e33e1040e380c081e004208de2"
+      },
+      {
+        "old_text_offset": 41344,
+        "old_vaddr": "0x1db38",
+        "old_first_16_hex": "70402de908d04de20310a0e30060a0e1"
+      },
+      {
+        "old_text_offset": 41856,
+        "old_vaddr": "0x1dd38",
+        "old_first_16_hex": "1080bde830402de90cd04de20310a0e3"
+      },
+      {
+        "old_text_offset": 41984,
+        "old_vaddr": "0x1ddb8",
+        "old_first_16_hex": "ff3f0fe3030050e10040a0e10900000a"
+      },
+      {
+        "old_text_offset": 42240,
+        "old_vaddr": "0x1deb8",
+        "old_first_16_hex": "0cd04de20310a0e30020a0e30050a0e1"
+      },
+      {
+        "old_text_offset": 42368,
+        "old_vaddr": "0x1df38",
+        "old_first_16_hex": "0040a0e10900000a301204e33e1040e3"
+      },
+      {
+        "old_text_offset": 42624,
+        "old_vaddr": "0x1e038",
+        "old_first_16_hex": "30402de90cd04de20310a0e30020a0e3"
+      },
+      {
+        "old_text_offset": 42752,
+        "old_vaddr": "0x1e0b8",
+        "old_first_16_hex": "ff3f0fe3030050e10040a0e10b00000a"
+      },
+      {
+        "old_text_offset": 43008,
+        "old_vaddr": "0x1e1b8",
+        "old_first_16_hex": "0b00000a301204e33e1040e380c081e0"
+      },
+      {
+        "old_text_offset": 43264,
+        "old_vaddr": "0x1e2b8",
+        "old_first_16_hex": "3080bde830402de90cd04de20310a0e3"
+      },
+      {
+        "old_text_offset": 43392,
+        "old_vaddr": "0x1e338",
+        "old_first_16_hex": "3dfcffebff3f0fe3030050e10040a0e1"
+      },
+      {
+        "old_text_offset": 43776,
+        "old_vaddr": "0x1e4b8",
+        "old_first_16_hex": "3080bde830402de90cd04de20210a0e3"
+      },
+      {
+        "old_text_offset": 43904,
+        "old_vaddr": "0x1e538",
+        "old_first_16_hex": "030050e10040a0e10b00000a301204e3"
+      },
+      {
+        "old_text_offset": 44160,
+        "old_vaddr": "0x1e638",
+        "old_first_16_hex": "3080bde830402de90310a0e30cd04de2"
+      },
+      {
+        "old_text_offset": 44288,
+        "old_vaddr": "0x1e6b8",
+        "old_first_16_hex": "301204e33e1040e380c081e004208de2"
+      },
+      {
+        "old_text_offset": 44416,
+        "old_vaddr": "0x1e738",
+        "old_first_16_hex": "0020a0130c20801508d08de21080bde8"
+      },
+      {
+        "old_text_offset": 44544,
+        "old_vaddr": "0x1e7b8",
+        "old_first_16_hex": "1dfbffebff3f0fe3030050e10040a0e1"
+      },
+      {
+        "old_text_offset": 44928,
+        "old_vaddr": "0x1e938",
+        "old_first_16_hex": "0c2080150cd08de23080bde830402de9"
+      },
+      {
+        "old_text_offset": 45056,
+        "old_vaddr": "0x1e9b8",
+        "old_first_16_hex": "9dfaffebff3f0fe3030050e10040a0e1"
+      },
+      {
+        "old_text_offset": 45312,
+        "old_vaddr": "0x1eab8",
+        "old_first_16_hex": "3080bde830402de90cd04de20310a0e3"
+      }
+    ],
+    "caveat": "Exact 64-byte chunks found elsewhere in new code; a match does not prove all code behavior is preserved"
+  },
+  {
+    "name": "PROC_VRS",
+    "code_sha_1127": "f9ccebc4e982af3564c58ae52650db2f497ce2f1f13e9957e197bb7c46808dca",
+    "code_sha_1134": "2d335f1b6b27463cbfd5ceefa54a8b3515286bd227ecdb2194bff508dee4888f",
+    "text_length_1127": 619976,
+    "text_length_1134": 620124,
+    "vaddr_1127": "0xb200",
+    "vaddr_1134": "0xb200",
+    "has_symtab_1127": false,
+    "has_symtab_1134": false,
+    "checked_64byte_samples": 4844,
+    "matched_at_exact_same_offset": 342,
+    "matched_anywhere_at_4byte_alignment": 1188,
+    "relocated_window_percentage": 24.53,
+    "same_offset_window_percentage": 7.06,
+    "most_common_relative_shifts": [
+      [
+        148,
+        483
+      ],
+      [
+        0,
+        336
+      ],
+      [
+        8,
+        313
+      ],
+      [
+        18452,
+        9
+      ],
+      [
+        37484,
+        5
+      ],
+      [
+        18444,
+        4
+      ],
+      [
+        1164,
+        2
+      ],
+      [
+        828,
+        1
+      ],
+      [
+        552,
+        1
+      ],
+      [
+        7052,
+        1
+      ],
+      [
+        504920,
+        1
+      ],
+      [
+        542020,
+        1
+      ],
+      [
+        4732,
+        1
+      ],
+      [
+        1548,
+        1
+      ],
+      [
+        652,
+        1
+      ],
+      [
+        448,
+        1
+      ],
+      [
+        4980,
+        1
+      ],
+      [
+        4332,
+        1
+      ]
+    ],
+    "unmatched_sample_examples": [
+      {
+        "old_text_offset": 0,
+        "old_vaddr": "0xb200",
+        "old_first_16_hex": "00b0a0e300e0a0e304109de40d20a0e1"
+      },
+      {
+        "old_text_offset": 128,
+        "old_vaddr": "0xb280",
+        "old_first_16_hex": "1451100020009fe508402de9003090e5"
+      },
+      {
+        "old_text_offset": 256,
+        "old_vaddr": "0xb300",
+        "old_first_16_hex": "103040e3000093e5f9ffffea0000a0e3"
+      },
+      {
+        "old_text_offset": 640,
+        "old_vaddr": "0xb480",
+        "old_first_16_hex": "142001e30430a0e100e08de504e08de5"
+      },
+      {
+        "old_text_offset": 768,
+        "old_vaddr": "0xb500",
+        "old_first_16_hex": "78ffffeb511000e3031040e300c0a0e3"
+      },
+      {
+        "old_text_offset": 896,
+        "old_vaddr": "0xb580",
+        "old_first_16_hex": "004050e20150a013dcffff1a80059fe5"
+      },
+      {
+        "old_text_offset": 1024,
+        "old_vaddr": "0xb600",
+        "old_first_16_hex": "004050e26effff1a0410a0e1012ba0e3"
+      },
+      {
+        "old_text_offset": 1152,
+        "old_vaddr": "0xb680",
+        "old_first_16_hex": "100040e356feffeb8c249fe5280505e3"
+      },
+      {
+        "old_text_offset": 1280,
+        "old_vaddr": "0xb700",
+        "old_first_16_hex": "100040e30a1040e3fffdffeb18c105e3"
+      },
+      {
+        "old_text_offset": 1408,
+        "old_vaddr": "0xb780",
+        "old_first_16_hex": "0420a0e1281505e3101040e3000093e5"
+      },
+      {
+        "old_text_offset": 1536,
+        "old_vaddr": "0xb800",
+        "old_first_16_hex": "00408de5c9feffeb004050e2fcfeff0a"
+      },
+      {
+        "old_text_offset": 1664,
+        "old_vaddr": "0xb880",
+        "old_first_16_hex": "e3feff0a97feffeb511000e300c0a0e3"
+      },
+      {
+        "old_text_offset": 1792,
+        "old_vaddr": "0xb900",
+        "old_first_16_hex": "004050e20150a013ddffff1a20029fe5"
+      },
+      {
+        "old_text_offset": 1920,
+        "old_vaddr": "0xb980",
+        "old_first_16_hex": "004050e20250a013bdffff1aa4019fe5"
+      },
+      {
+        "old_text_offset": 2048,
+        "old_vaddr": "0xba00",
+        "old_first_16_hex": "004050e20350a0139dffff1a28019fe5"
+      },
+      {
+        "old_text_offset": 2176,
+        "old_vaddr": "0xba80",
+        "old_first_16_hex": "004050e20450a0137dffff1aac009fe5"
+      },
+      {
+        "old_text_offset": 2304,
+        "old_vaddr": "0xbb00",
+        "old_first_16_hex": "004050e256feff0a0550a0e35cffffea"
+      },
+      {
+        "old_text_offset": 2688,
+        "old_vaddr": "0xbc80",
+        "old_first_16_hex": "5c4905e3105040e3104040e314d04de2"
+      },
+      {
+        "old_text_offset": 2816,
+        "old_vaddr": "0xbd00",
+        "old_first_16_hex": "102040e330002de9005092e50030a0e3"
+      },
+      {
+        "old_text_offset": 2944,
+        "old_vaddr": "0xbd80",
+        "old_first_16_hex": "0310c2e50410c2e50510c2e53000bde8"
+      },
+      {
+        "old_text_offset": 3712,
+        "old_vaddr": "0xc080",
+        "old_first_16_hex": "afffffea5ce905e310e040e31020a0e3"
+      },
+      {
+        "old_text_offset": 3968,
+        "old_vaddr": "0xc180",
+        "old_first_16_hex": "10d04de20800000ac8ffffeb3c1905e3"
+      },
+      {
+        "old_text_offset": 4096,
+        "old_vaddr": "0xc200",
+        "old_first_16_hex": "00c08de504c08de508c08de533faffeb"
+      },
+      {
+        "old_text_offset": 4352,
+        "old_vaddr": "0xc300",
+        "old_first_16_hex": "0100008a010052e30800009a00c0a0e3"
+      },
+      {
+        "old_text_offset": 4480,
+        "old_vaddr": "0xc380",
+        "old_first_16_hex": "2940c3e5abffffeb0000a0e31080bde8"
+      },
+      {
+        "old_text_offset": 4608,
+        "old_vaddr": "0xc400",
+        "old_first_16_hex": "9c8c02e30a8040e300109ae52100d1e5"
+      },
+      {
+        "old_text_offset": 5120,
+        "old_vaddr": "0xc600",
+        "old_first_16_hex": "70008de835f9ffeb0100a0e3ceffffea"
+      },
+      {
+        "old_text_offset": 5760,
+        "old_vaddr": "0xc880",
+        "old_first_16_hex": "01005ce11600009a6cfeffeb5c0905e3"
+      },
+      {
+        "old_text_offset": 6016,
+        "old_vaddr": "0xc980",
+        "old_first_16_hex": "5c1905e3101040e3000091e52630d0e5"
+      },
+      {
+        "old_text_offset": 6272,
+        "old_vaddr": "0xca80",
+        "old_first_16_hex": "10d08de21080bde80d0050e310402de9"
+      }
+    ],
+    "caveat": "Exact 64-byte chunks found elsewhere in new code; a match does not prove all code behavior is preserved"
+  },
+  {
+    "name": "PROC_HMI",
+    "code_sha_1127": "a113c97cf0e0fefda59d20e8836fe02dfa8740166252d41090906a6eb0aa3e58",
+    "code_sha_1134": "a113c97cf0e0fefda59d20e8836fe02dfa8740166252d41090906a6eb0aa3e58",
+    "text_length_1127": 2648064,
+    "text_length_1134": 2648064,
+    "vaddr_1127": "0xd8f8",
+    "vaddr_1134": "0xd8f8",
+    "has_symtab_1127": false,
+    "has_symtab_1134": false,
+    "checked_64byte_samples": 20688,
+    "matched_at_exact_same_offset": 20688,
+    "matched_anywhere_at_4byte_alignment": 20685,
+    "relocated_window_percentage": 99.99,
+    "same_offset_window_percentage": 100.0,
+    "most_common_relative_shifts": [
+      [
+        0,
+        20425
+      ],
+      [
+        21404,
+        7
+      ],
+      [
+        325976,
+        6
+      ],
+      [
+        708,
+        6
+      ],
+      [
+        326500,
+        5
+      ],
+      [
+        4516,
+        4
+      ],
+      [
+        1096,
+        4
+      ],
+      [
+        524,
+        4
+      ],
+      [
+        768,
+        4
+      ],
+      [
+        1516,
+        4
+      ],
+      [
+        41912,
+        4
+      ],
+      [
+        124968,
+        3
+      ],
+      [
+        87972,
+        3
+      ],
+      [
+        176,
+        3
+      ],
+      [
+        468,
+        2
+      ],
+      [
+        78024,
+        2
+      ],
+      [
+        235420,
+        2
+      ],
+      [
+        3744,
+        2
+      ]
+    ],
+    "unmatched_sample_examples": [
+      {
+        "old_text_offset": 142848,
+        "old_vaddr": "0x306f8",
+        "old_first_16_hex": "0150a0e10260a0e10080a0e10720a0e1"
+      },
+      {
+        "old_text_offset": 1568000,
+        "old_vaddr": "0x18c5f8",
+        "old_first_16_hex": "ff14c4e301e088e004c09ee50c10a0e1"
+      },
+      {
+        "old_text_offset": 1833984,
+        "old_vaddr": "0x1cd4f8",
+        "old_first_16_hex": "084700eb0400a0e1c7feffeb0400a0e1"
+      }
+    ],
+    "caveat": "Exact 64-byte chunks found elsewhere in new code; a match does not prove all code behavior is preserved"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "binary": "./opt/ftl/apl/PROC_MMP",
+  "examined_functions": [
+    "00069ddc",
+    "0001b6d8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 298,
+    "prompt_tokens": 1617,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1915
+  },
+  "next_focus": [
+    "State transition logic in 00069ddc",
+    "Memory allocation in 0001b6d8"
+  ],
+  "observations": [],
+  "overview": "Function 00069ddc handles message processing with state checks and sends messages. Function 0001b6d8 allocates memory and sends messages.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "69ddc",
+    "1b6d8"
+  ],
+  "selection_evidence": [
+    {
+      "address": "69ddc",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "1b6d8",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of state 0x0d4fb4?",
+    "What data is sent in message 0x2d?"
+  ]
+}

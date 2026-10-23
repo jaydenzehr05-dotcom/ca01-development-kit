@@ -1,0 +1,66 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DTV",
+  "examined_functions": [
+    "000ac8cc",
+    "000a0a8c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 274,
+    "prompt_tokens": 768,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1042
+  },
+  "next_focus": [
+    "Investigate FUN_000ac188 function",
+    "Analyze rq_fls_OpenDir behavior"
+  ],
+  "observations": [
+    {
+      "address": "0x000ac8cc",
+      "claim": "Loads font files by copying paths and calling FUN_000ac188",
+      "evidence_snippet": "strcpy(acStack_11c,DAT_0027e2d8)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000a0a8c",
+      "claim": "Opens directory using rq_fls_OpenDir and handles errors",
+      "evidence_snippet": "iVar1 = rq_fls_OpenDir(auStack_170",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 000ac8cc handles font loading by copying strings and calling a font loading function. Function 000a0a8c appears to open a directory using rq_fls_OpenDir.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "ac8cc",
+    "a0a8c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "ac8cc",
+      "score": 287,
+      "tags": [
+        "missing_resources",
+        "paths"
+      ]
+    },
+    {
+      "address": "a0a8c",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What are the actual font file names being loaded?",
+    "What is the purpose of the error handling in function 000a0a8c?"
+  ]
+}

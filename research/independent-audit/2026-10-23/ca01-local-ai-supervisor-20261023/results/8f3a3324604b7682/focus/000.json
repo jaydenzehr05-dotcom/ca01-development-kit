@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DVDP",
+  "examined_functions": [
+    "0001d9d8",
+    "00009b80"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 236,
+    "prompt_tokens": 1128,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1364
+  },
+  "next_focus": [
+    "0001d9d8",
+    "00009b80"
+  ],
+  "observations": [
+    {
+      "address": "0x0001d9d8",
+      "claim": "Function processes '-v' flag for verbose output",
+      "evidence_snippet": "if (iVar1 == 0x76) {",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00009b80",
+      "claim": "Function allocates memory and sends message",
+      "evidence_snippet": "memcpy(__dest,param_5,8)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0001d9d8 handles command-line arguments with 'v' flag for verbose output. Function 00009b80 manages memory allocation and message sending.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1d9d8",
+    "9b80"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1d9d8",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "9b80",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of fs_sys_CnfEntry?",
+    "What does rq_mem_Alloc(1) allocate?"
+  ]
+}

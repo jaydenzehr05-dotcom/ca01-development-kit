@@ -1,0 +1,37 @@
+{
+  "binary": "./opt/ftl/bin/FlashImageCreater",
+  "examined_functions": [
+    "000092e0",
+    "00008a70"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 246,
+    "prompt_tokens": 1599,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1845
+  },
+  "next_focus": [
+    "Function FUN_00009fc8",
+    "Function FUN_00009df8"
+  ],
+  "observations": [
+    {
+      "address": "0x000092e0",
+      "claim": "Calculates checksum using fread and FUN_00009fc8",
+      "evidence_snippet": "fread(auStack_1010,1,0x1000,__stream)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 000092e0 appears to calculate a checksum of a file, while 00008a70 handles command-line arguments and file validation.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "a30874c2d9d658ff2f49581edfd90a9d4976ff67340afd199ae81e096bc0f91e",
+  "unresolved_questions": [
+    "What is the purpose of the checksum function?",
+    "How are command-line arguments processed?"
+  ]
+}

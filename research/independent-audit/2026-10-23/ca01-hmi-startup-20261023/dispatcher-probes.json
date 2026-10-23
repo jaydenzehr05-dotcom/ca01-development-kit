@@ -1,0 +1,196 @@
+{
+  "scope": "Bounded actual ARM dispatcher only; command/error/free callees mocked; no application startup or rendering.",
+  "hmi_sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+  "runs": [
+    {
+      "name": "timeout-heartbeat",
+      "message": [
+        0,
+        0,
+        10,
+        0
+      ],
+      "return_value": 1,
+      "pending_draw_flag": 1,
+      "calls": [],
+      "trace": [
+        "0x2b170",
+        "0x2b174",
+        "0x2b178",
+        "0x2b17c",
+        "0x2b180",
+        "0x2b184",
+        "0x2b188",
+        "0x2a9f8",
+        "0x2a9fc",
+        "0x2aa00",
+        "0x2aa04",
+        "0x2aa08",
+        "0x2aa0c",
+        "0x2aa10",
+        "0x2aa14",
+        "0x2a978",
+        "0x2a97c",
+        "0x2a980",
+        "0x2a984",
+        "0x2a9c0",
+        "0x2a9c4",
+        "0x2a9c8",
+        "0x2a9cc",
+        "0x2a9d0",
+        "0x2b18c",
+        "0x2b190",
+        "0x2b194",
+        "0x2b198",
+        "0x2b19c",
+        "0x2b1a0",
+        "0x2b1a4"
+      ]
+    },
+    {
+      "name": "command",
+      "message": [
+        266242,
+        7,
+        0,
+        0
+      ],
+      "return_value": 0,
+      "pending_draw_flag": 0,
+      "calls": [
+        {
+          "address": "0x2b054",
+          "r0": "0x70000000",
+          "r1": "0x0"
+        }
+      ],
+      "trace": [
+        "0x2b170",
+        "0x2b174",
+        "0x2b178",
+        "0x2b17c",
+        "0x2b180",
+        "0x2b184",
+        "0x2b1a8",
+        "0x2b1ac",
+        "0x2b1b0",
+        "0x2b1b4",
+        "0x2b1e0",
+        "0x2b054",
+        "0x2b1e4",
+        "0x2b1e8",
+        "0x2b190",
+        "0x2b194",
+        "0x2b198",
+        "0x2b19c",
+        "0x2b1a0",
+        "0x2b1a4"
+      ]
+    },
+    {
+      "name": "owned-command",
+      "message": [
+        266242,
+        7,
+        0,
+        305419896
+      ],
+      "return_value": 0,
+      "pending_draw_flag": 0,
+      "calls": [
+        {
+          "address": "0x2b054",
+          "r0": "0x70000000",
+          "r1": "0x0"
+        },
+        {
+          "address": "0xd5a4",
+          "r0": "0x1",
+          "r1": "0x12345678"
+        }
+      ],
+      "trace": [
+        "0x2b170",
+        "0x2b174",
+        "0x2b178",
+        "0x2b17c",
+        "0x2b180",
+        "0x2b184",
+        "0x2b1a8",
+        "0x2b1ac",
+        "0x2b1b0",
+        "0x2b1b4",
+        "0x2b1e0",
+        "0x2b054",
+        "0x2b1e4",
+        "0x2b1e8",
+        "0x2b190",
+        "0x2b194",
+        "0x2b198",
+        "0x2b1ec",
+        "0x2b1f0",
+        "0xd5a4",
+        "0x2b1f4",
+        "0x2b19c",
+        "0x2b1a0",
+        "0x2b1a4"
+      ]
+    },
+    {
+      "name": "unknown-owned",
+      "message": [
+        39321,
+        0,
+        0,
+        1985229328
+      ],
+      "return_value": 0,
+      "pending_draw_flag": 0,
+      "calls": [
+        {
+          "address": "0xd610",
+          "r0": "0x0",
+          "r1": "0x41000"
+        },
+        {
+          "address": "0xd5a4",
+          "r0": "0x1",
+          "r1": "0x76543210"
+        }
+      ],
+      "trace": [
+        "0x2b170",
+        "0x2b174",
+        "0x2b178",
+        "0x2b17c",
+        "0x2b180",
+        "0x2b184",
+        "0x2b1a8",
+        "0x2b1ac",
+        "0x2b1b0",
+        "0x2b1b4",
+        "0x2b1b8",
+        "0x2b1bc",
+        "0x2b1c0",
+        "0x2b1c4",
+        "0x2b1c8",
+        "0x2b1cc",
+        "0x2b1d0",
+        "0x2b1d4",
+        "0x2b1d8",
+        "0xd610",
+        "0x2b1dc",
+        "0x2b190",
+        "0x2b194",
+        "0x2b198",
+        "0x2b1ec",
+        "0x2b1f0",
+        "0xd5a4",
+        "0x2b1f4",
+        "0x2b19c",
+        "0x2b1a0",
+        "0x2b1a4"
+      ]
+    }
+  ]
+}

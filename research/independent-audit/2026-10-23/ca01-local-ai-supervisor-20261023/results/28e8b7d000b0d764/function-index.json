@@ -1,0 +1,11 @@
+{
+  "binary": "./opt/ftl/apl/PROC_TMD",
+  "created": "2026-10-23T19:48:36+00:00",
+  "entries": 539,
+  "failed": 1,
+  "kind": "complete_discovery_index",
+  "not_attempted": 0,
+  "note": "Every Ghidra-discovered function enumerated; no source-level or semantic verification implied",
+  "skipped": false,
+  "source_bodies_indexed": 431
+}

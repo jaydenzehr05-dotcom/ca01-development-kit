@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/lib/libipas_ls1.so",
+  "examined_functions": [
+    "00012208",
+    "0001241c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 234,
+    "prompt_tokens": 1380,
+    "prompt_tokens_details": {
+      "cached_tokens": 159
+    },
+    "total_tokens": 1614
+  },
+  "next_focus": [
+    "fs_sys_BakMemRead function behavior",
+    "rq_sys_GetChkSum implementation"
+  ],
+  "observations": [
+    {
+      "address": "0x00012208",
+      "claim": "Validates system information integrity with checksum",
+      "evidence_snippet": "rq_sys_GetChkSum(__dest,0x18)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001241c",
+      "claim": "Validates history data integrity with checksum",
+      "evidence_snippet": "rq_sys_GetChkSum(__dest,0x22)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions validate system and history data integrity using checksums. Both perform backup memory reads and validation.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "7373e2d470fbac95dbf7a7a1dd68cca59187fdb43450244fc706f8bbf7affc24",
+  "unresolved_questions": [
+    "What do the error codes 0x1004, 5, 6, 8 signify?",
+    "What is the purpose of fc_dbs_Ls1InitSysInf?"
+  ]
+}

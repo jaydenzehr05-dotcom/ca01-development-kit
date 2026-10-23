@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_SPC",
+  "examined_functions": [
+    "0000934c",
+    "00009954"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 222,
+    "prompt_tokens": 836,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1058
+  },
+  "next_focus": [
+    "Message command handling logic",
+    "Function pointer initialization"
+  ],
+  "observations": [
+    {
+      "address": "0x0000934c",
+      "claim": "Calls function pointer if condition is met",
+      "evidence_snippet": "(*DAT_00009378)();",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00009954",
+      "claim": "Processes messages based on command values",
+      "evidence_snippet": "if (local_28 == 0xc200)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function _INIT_0 performs conditional execution of a stored function pointer, while FUN_00009954 handles message processing with various command cases.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+  "unresolved_questions": [
+    "What is the purpose of prctl call?",
+    "What does rq_sys_NtyTskSts do?"
+  ]
+}

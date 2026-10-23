@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DISPLAY",
+  "examined_functions": [
+    "001849f4",
+    "00275f3c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 284,
+    "prompt_tokens": 985,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1269
+  },
+  "next_focus": [
+    "Flash file system error codes",
+    "Model info structure layout"
+  ],
+  "observations": [
+    {
+      "address": "0x001849f4",
+      "claim": "Conditional logic depends on model info byte at DAT_0122edfe",
+      "evidence_snippet": "if (DAT_0122edfe != '\\x01')",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00275f3c",
+      "claim": "Flash read operation with error handling for file system access",
+      "evidence_snippet": "iVar1 = rq_fls_Read(auStack_14[0],1,0x2000,DAT_00276040,&uStack_18,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 001849f4 handles display info setting based on model and parameter values. Function 00275f3c manages flash file system operations and device initialization.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+  "unresolved_questions": [
+    "What specific model information is retrieved by rq_sys_GetModelInfo?",
+    "What is the purpose of fs_drv_SwiTswDevInit function call?"
+  ]
+}

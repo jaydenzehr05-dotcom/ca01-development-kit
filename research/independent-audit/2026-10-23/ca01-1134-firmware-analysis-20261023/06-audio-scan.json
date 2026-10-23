@@ -1,0 +1,57 @@
+{
+  "input": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/06-audio.bin",
+  "sha256": "94a8b913e56f4e65a260a756c1efb5ab45a1e06a1e670d31b1284a182526e0a7",
+  "observed_component_prefix": 12,
+  "compressed_length": 9383100,
+  "unverified_trailer_crc32_hex": "82ee0d5e",
+  "unverified_gzip_isize": 23592960,
+  "scan_range": [
+    64000,
+    130000
+  ],
+  "stats": {
+    "headers_tested": 264024,
+    "first_chunk_plausible": 4,
+    "eof_near_footer": 4
+  },
+  "candidates": [
+    {
+      "start_byte": 75675,
+      "start_bit": 0,
+      "output_bytes": 23396331,
+      "end_approx_byte": 9382836,
+      "footer_byte": 9382836,
+      "footer_error_bytes": 0,
+      "output_sha256_with_zero_dictionary": "61a81e04feb32a745380448e37a43dbd44d0f072c5f34cc570dd3b500a8ed4cb"
+    },
+    {
+      "start_byte": 71041,
+      "start_bit": 1,
+      "output_bytes": 23425633,
+      "end_approx_byte": 9382836,
+      "footer_byte": 9382836,
+      "footer_error_bytes": 0,
+      "output_sha256_with_zero_dictionary": "b59d3dfb66f279183d62142ab18157c06fc651902db53463a70ba7741019e23f"
+    },
+    {
+      "start_byte": 65702,
+      "start_bit": 5,
+      "output_bytes": 23439895,
+      "end_approx_byte": 9382836,
+      "footer_byte": 9382836,
+      "footer_error_bytes": 0,
+      "output_sha256_with_zero_dictionary": "e9563e6a0c43c7179523e36e82a1240193aa30921b9433faebd905272f68a63e"
+    },
+    {
+      "start_byte": 81674,
+      "start_bit": 5,
+      "output_bytes": 23368528,
+      "end_approx_byte": 9382836,
+      "footer_byte": 9382836,
+      "footer_error_bytes": 0,
+      "output_sha256_with_zero_dictionary": "9d03a33091237fec48e91495c62d4aa2b28d48e746dbc7975c327a996bcf78cd"
+    }
+  ],
+  "elapsed_seconds": 6.649,
+  "disclaimer": "Candidate complete DEFLATE suffix (unknown encrypted prefix and 32 KiB initial LZ history); not original complete gzip or verified TAR"
+}

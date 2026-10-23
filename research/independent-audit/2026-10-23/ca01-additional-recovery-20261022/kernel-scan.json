@@ -1,0 +1,117 @@
+{
+  "component": "03-kernel.bin",
+  "input_sha256": "d34976cf69b7f67b2d384713d2a7ea06094063db86afc966e8a197972c3059eb",
+  "payload_offset": 12,
+  "range": [
+    64000,
+    1808554
+  ],
+  "alignments": 8,
+  "attempts": 6893448,
+  "hits": [
+    {
+      "byte": 298275,
+      "bit": 0,
+      "size": 1517794,
+      "end": 1808562
+    },
+    {
+      "byte": 429508,
+      "bit": 0,
+      "size": 1386569,
+      "end": 1808562
+    },
+    {
+      "byte": 462303,
+      "bit": 0,
+      "size": 1353890,
+      "end": 1808562
+    },
+    {
+      "byte": 462305,
+      "bit": 0,
+      "size": 1353883,
+      "end": 1808562
+    },
+    {
+      "byte": 462309,
+      "bit": 0,
+      "size": 1353767,
+      "end": 1808562
+    },
+    {
+      "byte": 626420,
+      "bit": 0,
+      "size": 1189682,
+      "end": 1808562
+    },
+    {
+      "byte": 757677,
+      "bit": 0,
+      "size": 1058368,
+      "end": 1808562
+    },
+    {
+      "byte": 856098,
+      "bit": 0,
+      "size": 960002,
+      "end": 1808562
+    },
+    {
+      "byte": 954567,
+      "bit": 0,
+      "size": 861449,
+      "end": 1808562
+    },
+    {
+      "byte": 1151481,
+      "bit": 0,
+      "size": 664534,
+      "end": 1808562
+    },
+    {
+      "byte": 1217129,
+      "bit": 0,
+      "size": 598893,
+      "end": 1808562
+    },
+    {
+      "byte": 1348384,
+      "bit": 0,
+      "size": 467654,
+      "end": 1808562
+    },
+    {
+      "byte": 1381214,
+      "bit": 0,
+      "size": 434826,
+      "end": 1808562
+    },
+    {
+      "byte": 1578984,
+      "bit": 0,
+      "size": 232829,
+      "end": 1808562
+    },
+    {
+      "byte": 1677840,
+      "bit": 0,
+      "size": 133654,
+      "end": 1808562
+    },
+    {
+      "byte": 1743708,
+      "bit": 0,
+      "size": 67712,
+      "end": 1808562
+    },
+    {
+      "byte": 1776665,
+      "bit": 7,
+      "size": 34549,
+      "end": 1808561
+    }
+  ],
+  "seconds": 36.75967001914978,
+  "candidate_filter": "fixed/dynamic block; >=32768 output in first65536 input; <=32MiB total; final EOF within1 byte of hypothesized footer"
+}

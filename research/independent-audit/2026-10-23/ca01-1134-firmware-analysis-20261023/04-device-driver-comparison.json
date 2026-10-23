@@ -1,0 +1,15 @@
+{
+  "input_name": "04-device-driver",
+  "input_sha256": "f15d56c8da18a6cadda5aa6a0b9c17986e78c707b1a4270d9991d2beabcabbed",
+  "start_bit": 721103,
+  "report_end": 1891484,
+  "output_size": 339905,
+  "known_bytes": 279868,
+  "unknown_bytes": 60037,
+  "all_tar_entries_count": 0,
+  "classification_counts": {},
+  "missing_previous_names": [],
+  "files": [],
+  "new_target_names": [],
+  "note": "Only individually checksum-valid and history-independent file bytes counted; not a complete recovered firmware filesystem"
+}

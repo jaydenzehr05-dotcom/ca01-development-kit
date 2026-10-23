@@ -1,0 +1,120 @@
+{
+  "input": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/components-1134/08-voice-recognition.bin",
+  "sha256": "cbf6f6d63d842ab14e34ba4fbd3335ce7cbcdec9ab4b76c25da53e3f3a4c5729",
+  "observed_component_prefix": 12,
+  "compressed_length": 577807,
+  "unverified_trailer_crc32_hex": "75cf9202",
+  "unverified_gzip_isize": 2785280,
+  "scan_range": [
+    64000,
+    130000
+  ],
+  "stats": {
+    "headers_tested": 260699,
+    "first_chunk_plausible": 11,
+    "eof_near_footer": 11
+  },
+  "candidates": [
+    {
+      "start_byte": 73872,
+      "start_bit": 3,
+      "output_bytes": 2431328,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "8028ec17b5de3410b8b5c7c76f95533bf956d31e7051455e2ce08236f5c9ab2a"
+    },
+    {
+      "start_byte": 91293,
+      "start_bit": 4,
+      "output_bytes": 2327244,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "a9fb414ae885a4baff583d4af01a421d282086fc7f0aaa2bb99e5b1cc601e900"
+    },
+    {
+      "start_byte": 127043,
+      "start_bit": 4,
+      "output_bytes": 2074343,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "f3f785e6566010158569b9d896cade35710bafe4ea2384a0bc934d7250857e9f"
+    },
+    {
+      "start_byte": 67958,
+      "start_bit": 5,
+      "output_bytes": 2451174,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "d63b3d700856aacc8b7c40715cb99cb6a33a03b98982d18f1a7aa3a4b29b6b66"
+    },
+    {
+      "start_byte": 85772,
+      "start_bit": 5,
+      "output_bytes": 2358512,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "d9bf83848228e7c243805cd1529ec518fd253f59105abbd4c8ef8993f6751769"
+    },
+    {
+      "start_byte": 96927,
+      "start_bit": 5,
+      "output_bytes": 2300132,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "8b66783fc244bf1d3c56ac72bfdab21505291262d8a4ba7a837220a23da5cb3f"
+    },
+    {
+      "start_byte": 103162,
+      "start_bit": 5,
+      "output_bytes": 2249354,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "08585fd652833260abd5d2212cdf7d20bf086a74799c7ed3b559ee1841b70059"
+    },
+    {
+      "start_byte": 79468,
+      "start_bit": 6,
+      "output_bytes": 2412381,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "ed668f82211b45777e3fe6aa261740cc25c99257a8af4c922dcd4462be392d13"
+    },
+    {
+      "start_byte": 108628,
+      "start_bit": 6,
+      "output_bytes": 2213194,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "414fe989f0167d37bee3497627b358a8fe3eaecbc261adbf659f42cd950364f2"
+    },
+    {
+      "start_byte": 114800,
+      "start_bit": 7,
+      "output_bytes": 2158156,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "49a886087835022e97daf29e31a924d258c460d4f358b956f6cb454ed2b9cbe3"
+    },
+    {
+      "start_byte": 120884,
+      "start_bit": 7,
+      "output_bytes": 2112417,
+      "end_approx_byte": 577542,
+      "footer_byte": 577543,
+      "footer_error_bytes": -1,
+      "output_sha256_with_zero_dictionary": "9135e3bfe3b9d3d75156e95e1da7c9f59046bdba80f8844b5d9f106710e493e6"
+    }
+  ],
+  "elapsed_seconds": 2.554,
+  "disclaimer": "Candidate complete DEFLATE suffix (unknown encrypted prefix and 32 KiB initial LZ history); not original complete gzip or verified TAR"
+}

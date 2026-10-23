@@ -1,0 +1,23 @@
+{
+  "whole_suffix_entropy_bits_per_byte": 7.979366070678791,
+  "first_1MiB_entropy_bits_per_byte": 7.968196984046994,
+  "trailing_zero_bytes": 1581,
+  "markers": {
+    "uImage": [],
+    "ARM_zImage_LE": [],
+    "gzip": [],
+    "xz": [],
+    "bzip2": [],
+    "squashfs": [],
+    "ELF": [],
+    "Linux version": [],
+    "Linux": [],
+    "initramfs_newc": []
+  },
+  "printable_runs_16_count": 2,
+  "printable_runs_16_first20": [
+    "^'^/^7^?^G^O^W^_^g^o^w^",
+    "Ywtgwgwg]vwvwvwv"
+  ],
+  "classification": "High entropy suffix; no positive kernel or filesystem identity established from searched markers."
+}
