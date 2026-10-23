@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "targets": {
+    "corolla_ca02": {
+      "model_id": "15TBDANA-CA02",
+      "hardware_number": "86140-02521",
+      "faceplate": "100639",
+      "software_version": "UU.21.34",
+      "evidence": "user photographs",
+      "production_kernel_config": null,
+      "partition_map": null,
+      "accepted_custom_update": false
+    },
+    "rav4_2017": {
+      "model_id": null,
+      "hardware_number": null,
+      "faceplate": null,
+      "software_version": null,
+      "evidence": "vehicle description only; photographs pending"
+    },
+    "ca01_analysis_reference": {
+      "firmware": "15TBDANA-CA01_1127.kwi",
+      "sha256": "39431b79ed849be627c13be586019ceaab34470a534b76c385f73f1748d367ca",
+      "compatible_with_corolla_ca02": null
+    }
+  }
+}
