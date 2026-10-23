@@ -181,3 +181,16 @@ so do not run the probe on a physical radio before reviewing its handlers.
 
 Do not flash modified firmware, assume secure boot is bypassed, or treat
 a rescue-mode string as a tested hardware recovery method.
+
+## Independent firmware-updater research
+
+The isolated updater investigation recovered59 complete local files, including the original `PROC_REPRO` updater and both BIOS files. Neither `rma1_hwreg` nor `vigilancer` has been recovered. Validated binary analysis identifies a64,000-byte AES prefix, SHA256/RSA-PSS calls and pathname removal followed by tar replacement; exact security-library parameters and successful authentication remain unverified. Recovered vendor binaries are not committed.
+
+- [Update framing and reproducible evidence](docs/CA01_UPDATE_FORMAT_RESEARCH.md)
+- [Source and actual updater call graphs](docs/CA01_UPDATER_CALL_GRAPH.md)
+- [Missing targets and recovered-file inventory](docs/CA01_MISSING_EXECUTABLES.md)
+- `tools/ca01_update_research.py`: read-only structural evidence.
+- `tools/ca01_experimental_decode.py`: bounded symbolic DEFLATE suffix research, known-byte provenance and safe complete-file exports.
+- `evidence/ca01-tool-installation.json`: verified local DiE3.21 installation and limitations.
+
+The tools do not flash, execute recovered programs, bypass signatures, or claim a complete offline updater decoder. Detailed limitations and reproduction commands are in the reports.

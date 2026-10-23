@@ -1,0 +1,1594 @@
+{
+  "schema_version": 1,
+  "scope": "Read-only original vendor archive source archaeology; no shipping CA01 configuration claim",
+  "source_references": [
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/rma1_13PF.c",
+      "line_start": 769,
+      "line_end": 935,
+      "symbol": "checkSDversionup",
+      "role": "Conditional MAP SD side/version detection; not KWI parsing",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "0b4f4248bccd5f0aa9cf18f657836f2646cda6e3a84995fe0332877d3e85582e"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/rma1_13PF.c",
+      "line_start": 938,
+      "line_end": 1117,
+      "symbol": "check_wakeup_mode",
+      "role": "Boot CRC, error count and rollback mode selection",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "0b4f4248bccd5f0aa9cf18f657836f2646cda6e3a84995fe0332877d3e85582e"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/rma1_13PF.c",
+      "line_start": 1005,
+      "line_end": 1053,
+      "symbol": "check_wakeup_mode rollback branch",
+      "role": "Loads bios.bin/s-bios.bin from opposite filesystem side and writes NOR",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "0b4f4248bccd5f0aa9cf18f657836f2646cda6e3a84995fe0332877d3e85582e"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/rma1_13PF.c",
+      "line_start": 1120,
+      "line_end": 1221,
+      "symbol": "check_BIOS_rollback",
+      "role": "Conditional AFMA FAT .ROOTFS A/B recovery branch",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "0b4f4248bccd5f0aa9cf18f657836f2646cda6e3a84995fe0332877d3e85582e"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/rma1_13PF.c",
+      "line_start": 1223,
+      "line_end": 1335,
+      "symbol": "board_late_init",
+      "role": "Boot environment mode and partition selection",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "0b4f4248bccd5f0aa9cf18f657836f2646cda6e3a84995fe0332877d3e85582e"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/arch/arm/cpu/armv7/sh7740/system_subfunc.c",
+      "line_start": 181,
+      "line_end": 225,
+      "symbol": "get_rollback_stat / check_system_side / get_system_side",
+      "role": "Flash switch flag bits and side selection",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "74e7a97482667203899d1f3113681002ebcb16d21da4f459f2296536a93aa8de"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/arch/arm/cpu/armv7/sh7740/system_subfunc.c",
+      "line_start": 265,
+      "line_end": 327,
+      "symbol": "write_to_flash",
+      "role": "Protect off, erase, cp.b, protect on command sequence",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "74e7a97482667203899d1f3113681002ebcb16d21da4f459f2296536a93aa8de"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/include/configs/rma1_13PF.h",
+      "line_start": 355,
+      "line_end": 363,
+      "symbol": "READ_SD_CMD",
+      "role": "DABASE 1M non-China kernel pathname branch",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "de31975db5af18c0e866506be7a203c55a01d88d8068506198051acc2a66a857"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/include/configs/rma1_13PF.h",
+      "line_start": 416,
+      "line_end": 479,
+      "symbol": "CONFIG_EXTRA_ENV_SETTINGS",
+      "role": "Kernel filesystem loading, bootm, rescue and update boot environments",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "de31975db5af18c0e866506be7a203c55a01d88d8068506198051acc2a66a857"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/common/cmd_ext2.c",
+      "line_start": 201,
+      "line_end": 355,
+      "symbol": "do_ext2load",
+      "role": "Partition/filesystem mount, open and read",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "f4fa91921d3f94e397c34af141372f7d8fc0edc463164d30f097f79a5ca313ea"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/common/cmd_bootm.c",
+      "line_start": 210,
+      "line_end": 231,
+      "symbol": "bootm_start",
+      "role": "Calls boot_get_kernel",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "262144ec009e7e2bee482184020fb762105cbfe13469fb3ab43edc52e4d01d3f"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/common/cmd_bootm.c",
+      "line_start": 328,
+      "line_end": 443,
+      "symbol": "bootm_load_os",
+      "role": "Conditional none/gzip/bzip2/LZMA/LZO OS image loading",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "262144ec009e7e2bee482184020fb762105cbfe13469fb3ab43edc52e4d01d3f"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/common/cmd_bootm.c",
+      "line_start": 764,
+      "line_end": 800,
+      "symbol": "image_get_kernel",
+      "role": "Legacy image magic/header CRC/optional data CRC/architecture checks",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "262144ec009e7e2bee482184020fb762105cbfe13469fb3ab43edc52e4d01d3f"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/common/image.c",
+      "line_start": 164,
+      "line_end": 185,
+      "symbol": "image_check_hcrc / image_check_dcrc",
+      "role": "CRC32 calculations for legacy uImage",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "d7b7328c681824bf4352adc95f6da6579fa7016b7051caeadf7f4580c8fbe525"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/arch/arm/cpu/armv7/sh7740/boot_sh.c",
+      "line_start": 184,
+      "line_end": 242,
+      "symbol": "comp_crcinfo",
+      "role": "Conditional CRC32 or CRC32x4 integrity comparison",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "34a16daa0f19f5c1527a8745651af425a027ef66a2768153adb8b472cd8fb714"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/arch/arm/cpu/armv7/sh7740/boot_sh.c",
+      "line_start": 275,
+      "line_end": 505,
+      "symbol": "boot_sh / do_boot_sh",
+      "role": "Secondary SH boot image side selection/copy/check",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "34a16daa0f19f5c1527a8745651af425a027ef66a2768153adb8b472cd8fb714"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/arch/arm/cpu/armv7/sh7740/crc32_word4.c",
+      "line_start": 150,
+      "line_end": 208,
+      "symbol": "calc_crc32x4",
+      "role": "Four CRC32 accumulators; not proven KWI checksum",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "1b4fd4f484e208811d28fa1413ace5594842e8197b2c0b2f4a141fc338c8c599"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/ftensign.c",
+      "line_start": 1,
+      "line_end": 2,
+      "symbol": "signCode",
+      "role": "16-byte 0x55 placeholder section",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "d09f743b834a05d000f0980cc018c3889f255b59a5ec04df715730e3d66bdd04"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/13PF_config.rule",
+      "line_start": 341,
+      "line_end": 383,
+      "symbol": "secure build target rules",
+      "role": "Conditional CONFIG_SECUREBOOT/CONFIG_CRC32X4 definitions",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "0b50288dc0f8dbae8354fce0c900d1e03b9631a068557ce61aaef3cd40cc11be"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/f-bios/src/Makefile",
+      "line_start": 91,
+      "line_end": 113,
+      "symbol": "bios.elf link rules",
+      "role": "Links supplied bios.o with supporting source objects",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "e62748f3ab13fdb5d9eb3a3bcec2761b900e10756344c1e40c14fd48346256f5"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/f-bios/src/include/compress.h",
+      "line_start": 12,
+      "line_end": 22,
+      "symbol": "struct codec",
+      "role": "Compression/decompression interface",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "059ea57f1f9c99973cfef8dab606d0581fb39cd193e8ef20b545472b635b9742"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/f-bios/src/compress/lzma/lzma_if.c",
+      "line_start": 57,
+      "line_end": 85,
+      "symbol": "decompress / codec",
+      "role": "Five-byte LZMA properties followed by raw compressed stream",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "169ea19ca7daab9ebf075b45aa03381c3d2c40e43533e9a0c04fd09d849ced59"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/f-bios/src/compress/lz4/lz4_if.c",
+      "line_start": 81,
+      "line_end": 105,
+      "symbol": "lz4_decompress / codec",
+      "role": "Raw LZ4 unknown-output-size wrapper",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "364b3a9d0a984588f057e74af6f62d7793eb54996b739e721d9fbfa05d141ea1"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/common/update.c",
+      "line_start": 241,
+      "line_end": 315,
+      "symbol": "update_tftp",
+      "role": "Generic FIT TFTP auto-update, no KWI connection",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "e5e6d2d5f797252829dc1a37e0f8436e4b6b95bf44f2412416fdd32c38967ec7"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/tools/updater/update.c",
+      "line_start": 49,
+      "line_end": 63,
+      "symbol": "do_updater",
+      "role": "Generic fixed-address flash updater, no KWI connection",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "ef0a0308b03360e131a5ca37472e962db3e8f9d0c5b1cc5f99f9ffbfd92afbce"
+    },
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/src/drivers/mmc/mmc.c",
+      "line_start": 137,
+      "line_end": 170,
+      "symbol": "mmc_bwrite",
+      "role": "Generic block write helper, no KWI connection",
+      "confidence": "confirmed_by_original_source",
+      "sha256": "b0e3716e37fd87b39dd9a12e1a6d6d4b43555bc2f47b32a3aa368aedd4db1259"
+    }
+  ],
+  "binary_only_artifacts": [
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "path": "boot/f-bios/src/bios.o",
+      "bytes": 40012,
+      "sha256": "9dc02d03d38be4e524bd4c7ec7ad447a068df20968c54ae6b17a82190df0977a",
+      "format": "ELF32 little-endian ARM EABI5 relocatable, not stripped",
+      "observed_symbols": [
+        "sbios_init",
+        "codec",
+        "get_storage_bank",
+        "platform_is_valid_user_data",
+        "platform_pre_quick_boot",
+        "platform_post_quick_boot"
+      ],
+      "confidence": "confirmed_by_binary_analysis",
+      "limitation": "Snapshot BIOS core object; no evidence it is KWI updater or either missing executable"
+    }
+  ],
+  "unknown": [
+    "KWI parser entry point",
+    "Component verification/checksum algorithm",
+    "64000-byte prefix transformation",
+    "Middleware executable decoder",
+    "File replacement installation order",
+    "Production build macros and partition map",
+    "Cryptographic authentication chain"
+  ],
+  "excluded_false_positive_updaters": [
+    "boot/src/common/update.c (generic TFTP FIT updater)",
+    "boot/src/tools/updater/update.c (generic fixed-address flash updater)",
+    "Other vendors board/*/auto_update.c"
+  ],
+  "search_method": {
+    "expanded_trees": "All files in both archives extracted to scratch and rg searched; exact markers also searched recursively in archive member bytes, including nested source tarballs when final coverage is present.",
+    "exact_markers": [
+      "rma1_hwreg",
+      "vigilancer",
+      "s-bios.bin",
+      "bios.bin",
+      "uImage_T_DAB_US_1M",
+      "bounded-word kwi"
+    ],
+    "targeted_vendor_keywords": [
+      "KWIUpdate",
+      "64000",
+      "0xfa00",
+      "decrypt",
+      "scrambl",
+      "crc16",
+      "firmware update",
+      "software update",
+      "rollback",
+      "vup",
+      "verify",
+      "signature",
+      "decompress"
+    ],
+    "negative_evidence_limit": "No source hit does not prove absent runtime/proprietary implementation; string search can miss aliases or encoded names."
+  },
+  "coverage": [
+    {
+      "archive": "OSS_SOFT_PACK.tgz",
+      "members": 94187,
+      "regular_members": 88049,
+      "bytes_scanned": 1237833553,
+      "nested_archives": 95
+    },
+    {
+      "archive": "20130619_LE2355.tgz",
+      "members": 35853,
+      "regular_members": 33803,
+      "bytes_scanned": 392724662,
+      "nested_archives": 0
+    }
+  ],
+  "exact_marker_hits": [
+    {
+      "path": "OSS_SOFT_PACK.tgz!boot/src/board/fujitsuten/rma1_13PF/rma1_13PF.c",
+      "matches": [
+        {
+          "marker": "bios.bin",
+          "line": 1011,
+          "byte_offset": 23833
+        },
+        {
+          "marker": "s-bios.bin",
+          "line": 1032,
+          "byte_offset": 24473
+        },
+        {
+          "marker": "s-bios.bin",
+          "line": 1174,
+          "byte_offset": 27968
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!boot/src/include/configs/rma1_13PF.h",
+      "matches": [
+        {
+          "marker": "uImage_T_DAB_US_1M",
+          "line": 359,
+          "byte_offset": 17090
+        },
+        {
+          "marker": "uImage_T_DAB_US_1M",
+          "line": 724,
+          "byte_offset": 33649
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!boot/f-bios/src/Makefile",
+      "matches": [
+        {
+          "marker": "bios.bin",
+          "line": 91,
+          "byte_offset": 1580
+        },
+        {
+          "marker": "bios.bin",
+          "line": 153,
+          "byte_offset": 3360
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/slang-2.2.2/slang-2.2.2.tar.bz2!slang-2.2.2/utf8/tools/UnicodeData.txt",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 3838,
+          "byte_offset": 226768
+        },
+        {
+          "marker": "KWI",
+          "line": 4255,
+          "byte_offset": 246130
+        },
+        {
+          "marker": "KWI",
+          "line": 4256,
+          "byte_offset": 246186
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/slang-2.2.2/slang-2.2.2.tar.bz2!slang-2.2.2/utf8/tools/EastAsianWidth.txt",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 3864,
+          "byte_offset": 134957
+        },
+        {
+          "marker": "KWI",
+          "line": 4281,
+          "byte_offset": 148423
+        },
+        {
+          "marker": "KWI",
+          "line": 4282,
+          "byte_offset": 148465
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/bash-3.2/bash-3.2.tar.gz",
+      "matches": [
+        {
+          "marker": "kwI",
+          "line": 1787,
+          "byte_offset": 491849
+        },
+        {
+          "marker": "KwI",
+          "line": 8347,
+          "byte_offset": 2203409
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/libidn-0.6.14/libidn-0.6.14.tar.gz",
+      "matches": [
+        {
+          "marker": "kWI",
+          "line": 5134,
+          "byte_offset": 1350361
+        },
+        {
+          "marker": "kWI",
+          "line": 5134,
+          "byte_offset": 1350386
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/libidn-0.6.14/libidn-0.6.14.tar.gz!libidn-0.6.14/doc/specifications/UnicodeData-3.2.0.txt",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 3401,
+          "byte_offset": 202188
+        },
+        {
+          "marker": "KWI",
+          "line": 3785,
+          "byte_offset": 219946
+        },
+        {
+          "marker": "KWI",
+          "line": 3786,
+          "byte_offset": 220002
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/libidn-0.6.14/libidn-0.6.14.tar.gz!libidn-0.6.14/doc/specifications/LineBreak-3.2.0.txt",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 3426,
+          "byte_offset": 121112
+        },
+        {
+          "marker": "KWI",
+          "line": 3810,
+          "byte_offset": 133825
+        },
+        {
+          "marker": "KWI",
+          "line": 3811,
+          "byte_offset": 133868
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/libidn-0.6.14/libidn-0.6.14.tar.gz!libidn-0.6.14/lib/pr29.c",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 1084,
+          "byte_offset": 37077
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/sysfsutils-2.1.0/sysfsutils-2.1.0.tar.gz",
+      "matches": [
+        {
+          "marker": "kWi",
+          "line": 1663,
+          "byte_offset": 445405
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/cairo-1.8.10/cairo-1.8.10.tar.gz",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 12991,
+          "byte_offset": 3378871
+        },
+        {
+          "marker": "KWI",
+          "line": 25587,
+          "byte_offset": 6682254
+        },
+        {
+          "marker": "kwi",
+          "line": 25782,
+          "byte_offset": 6738492
+        },
+        {
+          "marker": "KWI",
+          "line": 26175,
+          "byte_offset": 6833259
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/cairo-1.8.10/cairo-1.8.10.tar.gz!cairo-1.8.10/test/dash-state-ps3-ref.png",
+      "matches": [
+        {
+          "marker": "KwI",
+          "line": 5,
+          "byte_offset": 1911
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/cairo-1.8.10/cairo-1.8.10.tar.gz!cairo-1.8.10/test/dash-state-ps2-ref.png",
+      "matches": [
+        {
+          "marker": "KwI",
+          "line": 5,
+          "byte_offset": 1911
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/rsync-2.6.9/rsync-2.6.9.tar.gz",
+      "matches": [
+        {
+          "marker": "KWi",
+          "line": 1265,
+          "byte_offset": 344802
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/busybox-1.15.1/busybox-1.15.1.tar.bz2",
+      "matches": [
+        {
+          "marker": "KwI",
+          "line": 2343,
+          "byte_offset": 532342
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc_ports-2010q1-202/glibc_ports-2010q1-202.tar.bz2",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 2655,
+          "byte_offset": 604822
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/GConf-2.28.1/GConf-2.28.1.tar.bz2!GConf-2.28.1/po/xh.po",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 258,
+          "byte_offset": 8012
+        },
+        {
+          "marker": "kwi",
+          "line": 263,
+          "byte_offset": 8175
+        },
+        {
+          "marker": "kwi",
+          "line": 268,
+          "byte_offset": 8305
+        },
+        {
+          "marker": "kwi",
+          "line": 273,
+          "byte_offset": 8437
+        },
+        {
+          "marker": "kwi",
+          "line": 410,
+          "byte_offset": 12831
+        },
+        {
+          "marker": "kwi",
+          "line": 415,
+          "byte_offset": 12975
+        },
+        {
+          "marker": "kwi",
+          "line": 425,
+          "byte_offset": 13296
+        },
+        {
+          "marker": "kwi",
+          "line": 446,
+          "byte_offset": 13864
+        },
+        {
+          "marker": "kwi",
+          "line": 494,
+          "byte_offset": 15240
+        },
+        {
+          "marker": "kwi",
+          "line": 626,
+          "byte_offset": 19384
+        },
+        {
+          "marker": "kwi",
+          "line": 742,
+          "byte_offset": 23036
+        },
+        {
+          "marker": "kwi",
+          "line": 836,
+          "byte_offset": 25751
+        },
+        {
+          "marker": "kwi",
+          "line": 1098,
+          "byte_offset": 34697
+        },
+        {
+          "marker": "kwi",
+          "line": 1290,
+          "byte_offset": 42209
+        },
+        {
+          "marker": "kwi",
+          "line": 1295,
+          "byte_offset": 42332
+        },
+        {
+          "marker": "kwi",
+          "line": 1710,
+          "byte_offset": 54653
+        },
+        {
+          "marker": "kwi",
+          "line": 1852,
+          "byte_offset": 59492
+        },
+        {
+          "marker": "kwi",
+          "line": 1860,
+          "byte_offset": 59734
+        },
+        {
+          "marker": "kwi",
+          "line": 2265,
+          "byte_offset": 71794
+        },
+        {
+          "marker": "kwi",
+          "line": 2535,
+          "byte_offset": 80209
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/util-linux-ng-2.17.2/util-linux-ng-2.17.2.tar.bz2",
+      "matches": [
+        {
+          "marker": "KWi",
+          "line": 8552,
+          "byte_offset": 2163390
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/util-linux-ng-2.17.2/util-linux-ng-2.17.2.tar.bz2!util-linux-ng-2.17.2/tests/ts/blkid/images-fs/iso-joliet.img.bz2",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 38,
+          "byte_offset": 9080
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/newt-0.52.11/newt-0.52.11.tar.gz",
+      "matches": [
+        {
+          "marker": "kWI",
+          "line": 485,
+          "byte_offset": 133095
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/cracklib-2.8.15/cracklib-words-20080507.gz",
+      "matches": [
+        {
+          "marker": "kWi",
+          "line": 1096,
+          "byte_offset": 251375
+        },
+        {
+          "marker": "kWI",
+          "line": 11099,
+          "byte_offset": 2765714
+        },
+        {
+          "marker": "kwi",
+          "line": 17746,
+          "byte_offset": 4376939
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/atk-1.30.0/atk-1.30.0.tar.bz2!atk-1.30.0/po/xh.po",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 105,
+          "byte_offset": 2517
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/atk-1.30.0/atk-1.30.0.tar.bz2!atk-1.30.0/po/xh.gmo",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 35,
+          "byte_offset": 7240
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/gtk+-2.20.1/gtk+-2.20.1.tar.bz2",
+      "matches": [
+        {
+          "marker": "kwI",
+          "line": 13930,
+          "byte_offset": 3294746
+        },
+        {
+          "marker": "KWi",
+          "line": 36609,
+          "byte_offset": 9000335
+        },
+        {
+          "marker": "kwi",
+          "line": 53993,
+          "byte_offset": 13608926
+        },
+        {
+          "marker": "KwI",
+          "line": 61089,
+          "byte_offset": 15464273
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/gtk+-2.20.1/gtk+-2.20.1.tar.bz2!gtk+-2.20.1/po/xh.gmo",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 29,
+          "byte_offset": 17791
+        },
+        {
+          "marker": "kwi",
+          "line": 29,
+          "byte_offset": 17838
+        },
+        {
+          "marker": "kwi",
+          "line": 29,
+          "byte_offset": 18598
+        },
+        {
+          "marker": "kwi",
+          "line": 29,
+          "byte_offset": 18710
+        },
+        {
+          "marker": "kwi",
+          "line": 32,
+          "byte_offset": 19996
+        },
+        {
+          "marker": "kwi",
+          "line": 32,
+          "byte_offset": 20407
+        },
+        {
+          "marker": "kwi",
+          "line": 33,
+          "byte_offset": 27191
+        },
+        {
+          "marker": "kwi",
+          "line": 34,
+          "byte_offset": 28542
+        },
+        {
+          "marker": "kwi",
+          "line": 34,
+          "byte_offset": 28587
+        },
+        {
+          "marker": "kwi",
+          "line": 34,
+          "byte_offset": 29003
+        },
+        {
+          "marker": "kwi",
+          "line": 34,
+          "byte_offset": 29589
+        },
+        {
+          "marker": "kwi",
+          "line": 34,
+          "byte_offset": 30227
+        },
+        {
+          "marker": "kwi",
+          "line": 34,
+          "byte_offset": 30657
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/gtk+-2.20.1/gtk+-2.20.1.tar.bz2!gtk+-2.20.1/po/xh.po",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 638,
+          "byte_offset": 17322
+        },
+        {
+          "marker": "kwi",
+          "line": 728,
+          "byte_offset": 20073
+        },
+        {
+          "marker": "kwi",
+          "line": 858,
+          "byte_offset": 24364
+        },
+        {
+          "marker": "kwi",
+          "line": 960,
+          "byte_offset": 27626
+        },
+        {
+          "marker": "kwi",
+          "line": 1003,
+          "byte_offset": 28938
+        },
+        {
+          "marker": "kwi",
+          "line": 1049,
+          "byte_offset": 30462
+        },
+        {
+          "marker": "kwi",
+          "line": 1175,
+          "byte_offset": 34185
+        },
+        {
+          "marker": "kwi",
+          "line": 1206,
+          "byte_offset": 35177
+        },
+        {
+          "marker": "kwi",
+          "line": 1667,
+          "byte_offset": 47433
+        },
+        {
+          "marker": "kwi",
+          "line": 1861,
+          "byte_offset": 52344
+        },
+        {
+          "marker": "kwi",
+          "line": 1866,
+          "byte_offset": 52504
+        },
+        {
+          "marker": "kwi",
+          "line": 1915,
+          "byte_offset": 53697
+        },
+        {
+          "marker": "kwi",
+          "line": 1981,
+          "byte_offset": 55081
+        },
+        {
+          "marker": "kwi",
+          "line": 1985,
+          "byte_offset": 55187
+        },
+        {
+          "marker": "kwi",
+          "line": 2254,
+          "byte_offset": 62630
+        },
+        {
+          "marker": "kwi",
+          "line": 2255,
+          "byte_offset": 62678
+        },
+        {
+          "marker": "kwi",
+          "line": 2698,
+          "byte_offset": 71546
+        },
+        {
+          "marker": "kwi",
+          "line": 3208,
+          "byte_offset": 82564
+        },
+        {
+          "marker": "kwi",
+          "line": 5667,
+          "byte_offset": 132063
+        },
+        {
+          "marker": "kwi",
+          "line": 5758,
+          "byte_offset": 134524
+        },
+        {
+          "marker": "kwi",
+          "line": 5774,
+          "byte_offset": 134870
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/gtk+-2.20.1/gtk+-2.20.1.tar.bz2!gtk+-2.20.1/po-properties/xh.gmo",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 61179
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 64303
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 64337
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 64387
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 64450
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 64486
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 75392
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 79096
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 79156
+        },
+        {
+          "marker": "Kwi",
+          "line": 82,
+          "byte_offset": 85721
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 86519
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 86564
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 90727
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 92359
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 93014
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 103686
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 103832
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 103926
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 105298
+        },
+        {
+          "marker": "kwi",
+          "line": 82,
+          "byte_offset": 107403
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/gtk+-2.20.1/gtk+-2.20.1.tar.bz2!gtk+-2.20.1/po-properties/xh.po",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 35,
+          "byte_offset": 1130
+        },
+        {
+          "marker": "kwi",
+          "line": 94,
+          "byte_offset": 2673
+        },
+        {
+          "marker": "kwi",
+          "line": 192,
+          "byte_offset": 5121
+        },
+        {
+          "marker": "kwi",
+          "line": 353,
+          "byte_offset": 9681
+        },
+        {
+          "marker": "kwi",
+          "line": 377,
+          "byte_offset": 10369
+        },
+        {
+          "marker": "kwi",
+          "line": 899,
+          "byte_offset": 25136
+        },
+        {
+          "marker": "kwi",
+          "line": 1212,
+          "byte_offset": 32671
+        },
+        {
+          "marker": "kwi",
+          "line": 1216,
+          "byte_offset": 32786
+        },
+        {
+          "marker": "kwi",
+          "line": 1220,
+          "byte_offset": 32911
+        },
+        {
+          "marker": "kwi",
+          "line": 1224,
+          "byte_offset": 33028
+        },
+        {
+          "marker": "kwi",
+          "line": 1238,
+          "byte_offset": 33388
+        },
+        {
+          "marker": "kwi",
+          "line": 1243,
+          "byte_offset": 33565
+        },
+        {
+          "marker": "kwi",
+          "line": 2586,
+          "byte_offset": 72013
+        },
+        {
+          "marker": "kwi",
+          "line": 2596,
+          "byte_offset": 72274
+        },
+        {
+          "marker": "kwi",
+          "line": 3176,
+          "byte_offset": 88319
+        },
+        {
+          "marker": "kwi",
+          "line": 3205,
+          "byte_offset": 88942
+        },
+        {
+          "marker": "kwi",
+          "line": 3209,
+          "byte_offset": 89089
+        },
+        {
+          "marker": "kwi",
+          "line": 3409,
+          "byte_offset": 94429
+        },
+        {
+          "marker": "Kwi",
+          "line": 5008,
+          "byte_offset": 134844
+        },
+        {
+          "marker": "kwi",
+          "line": 6526,
+          "byte_offset": 175089
+        },
+        {
+          "marker": "kwi",
+          "line": 6536,
+          "byte_offset": 175334
+        },
+        {
+          "marker": "kwi",
+          "line": 6661,
+          "byte_offset": 178987
+        },
+        {
+          "marker": "kwi",
+          "line": 6913,
+          "byte_offset": 186225
+        },
+        {
+          "marker": "kwi",
+          "line": 7899,
+          "byte_offset": 212570
+        },
+        {
+          "marker": "kwi",
+          "line": 7907,
+          "byte_offset": 212781
+        },
+        {
+          "marker": "kwi",
+          "line": 7916,
+          "byte_offset": 212993
+        },
+        {
+          "marker": "kwi",
+          "line": 8030,
+          "byte_offset": 216125
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/kbd-1.15/kbd-1.15.tar.gz!kbd-1.15/data/consoletrans/utflist",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 830,
+          "byte_offset": 32696
+        },
+        {
+          "marker": "kWi",
+          "line": 830,
+          "byte_offset": 32702
+        },
+        {
+          "marker": "KWi",
+          "line": 846,
+          "byte_offset": 33258
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/kbd-1.15/kbd-1.15.tar.gz!kbd-1.15/doc/utf/ethiopic",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 186,
+          "byte_offset": 7185
+        },
+        {
+          "marker": "kWi",
+          "line": 186,
+          "byte_offset": 7191
+        },
+        {
+          "marker": "KWi",
+          "line": 202,
+          "byte_offset": 7747
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/sqlite-3.6.22/sqlite-3.6.22.tar.gz",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 5072,
+          "byte_offset": 1321592
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/e2fsprogs-1.41.10/e2fsprogs-1.41.10.tar.gz",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 11308,
+          "byte_offset": 3041618
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/polkit-0.96/polkit-0.96.tar.gz",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 3432,
+          "byte_offset": 942241
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/polkit-0.96/polkit-0.96.tar.gz!polkit-0.96/docs/polkit/html/polkit-authentication-agent-example-wheel.png",
+      "matches": [
+        {
+          "marker": "KwI",
+          "line": 44,
+          "byte_offset": 10813
+        },
+        {
+          "marker": "KwI",
+          "line": 55,
+          "byte_offset": 14969
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/polkit-0.96/polkit-0.96.tar.gz!polkit-0.96/docs/polkit-authentication-agent-example-wheel.png",
+      "matches": [
+        {
+          "marker": "KwI",
+          "line": 44,
+          "byte_offset": 10813
+        },
+        {
+          "marker": "KwI",
+          "line": 55,
+          "byte_offset": 14969
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/gawk-3.1.5/gawk-3.1.5.tar.bz2",
+      "matches": [
+        {
+          "marker": "kWI",
+          "line": 595,
+          "byte_offset": 127653
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glib-2.24.1/glib-2.24.1.tar.bz2",
+      "matches": [
+        {
+          "marker": "kWI",
+          "line": 175,
+          "byte_offset": 54652
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glib-2.24.1/glib-2.24.1.tar.bz2!glib-2.24.1/po/xh.gmo",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 18,
+          "byte_offset": 8163
+        },
+        {
+          "marker": "kwi",
+          "line": 18,
+          "byte_offset": 8243
+        },
+        {
+          "marker": "kwi",
+          "line": 18,
+          "byte_offset": 8737
+        },
+        {
+          "marker": "kwi",
+          "line": 18,
+          "byte_offset": 13726
+        },
+        {
+          "marker": "kwi",
+          "line": 18,
+          "byte_offset": 13894
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glib-2.24.1/glib-2.24.1.tar.bz2!glib-2.24.1/po/xh.po",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 98,
+          "byte_offset": 3054
+        },
+        {
+          "marker": "kwi",
+          "line": 307,
+          "byte_offset": 9122
+        },
+        {
+          "marker": "kwi",
+          "line": 321,
+          "byte_offset": 9651
+        },
+        {
+          "marker": "kwi",
+          "line": 930,
+          "byte_offset": 25735
+        },
+        {
+          "marker": "kwi",
+          "line": 947,
+          "byte_offset": 26267
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/dbus-1.2.24/dbus-1.2.24.tar.gz",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 5181,
+          "byte_offset": 1334331
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/LVM2.2.02.73/LVM2.2.02.73.tgz",
+      "matches": [
+        {
+          "marker": "Kwi",
+          "line": 2193,
+          "byte_offset": 582028
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/postfix-2.7.0/postfix-2.7.0.tar.gz",
+      "matches": [
+        {
+          "marker": "kwI",
+          "line": 7944,
+          "byte_offset": 2040021
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc-2010q1-202/glibc-2010q1-202.tar.bz2",
+      "matches": [
+        {
+          "marker": "kwi",
+          "line": 4340,
+          "byte_offset": 1061039
+        },
+        {
+          "marker": "Kwi",
+          "line": 30301,
+          "byte_offset": 7398383
+        },
+        {
+          "marker": "kwi",
+          "line": 44809,
+          "byte_offset": 11739718
+        },
+        {
+          "marker": "kwI",
+          "line": 52120,
+          "byte_offset": 13966425
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc-2010q1-202/glibc-2010q1-202.tar.bz2!glibc-2010q1-202/localedata/locales/xh_ZA",
+      "matches": [
+        {
+          "marker": "Kwi",
+          "line": 102,
+          "byte_offset": 3233
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc-2010q1-202/glibc-2010q1-202.tar.bz2!glibc-2010q1-202/localedata/locales/translit_hangul",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 9279,
+          "byte_offset": 513835
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc-2010q1-202/glibc-2010q1-202.tar.bz2!glibc-2010q1-202/localedata/charmaps/EUC-KR",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 3138,
+          "byte_offset": 145634
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc-2010q1-202/glibc-2010q1-202.tar.bz2!glibc-2010q1-202/localedata/charmaps/CP949",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 11818,
+          "byte_offset": 552650
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc-2010q1-202/glibc-2010q1-202.tar.bz2!glibc-2010q1-202/localedata/charmaps/JOHAB",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 9453,
+          "byte_offset": 440498
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc-2010q1-202/glibc-2010q1-202.tar.bz2!glibc-2010q1-202/localedata/charmaps/UTF-8",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 3846,
+          "byte_offset": 196123
+        },
+        {
+          "marker": "KWI",
+          "line": 4263,
+          "byte_offset": 216261
+        },
+        {
+          "marker": "KWI",
+          "line": 4264,
+          "byte_offset": 216319
+        },
+        {
+          "marker": "KWI",
+          "line": 22835,
+          "byte_offset": 1109061
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/glibc-2010q1-202/glibc-2010q1-202.tar.bz2!glibc-2010q1-202/localedata/charmaps/GB18030",
+      "matches": [
+        {
+          "marker": "KWI",
+          "line": 3408,
+          "byte_offset": 185517
+        },
+        {
+          "marker": "KWI",
+          "line": 3792,
+          "byte_offset": 205526
+        },
+        {
+          "marker": "KWI",
+          "line": 3793,
+          "byte_offset": 205588
+        },
+        {
+          "marker": "KWI",
+          "line": 46921,
+          "byte_offset": 1983100
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/hal-0.5.13/hal-0.5.13.tar.bz2",
+      "matches": [
+        {
+          "marker": "kWI",
+          "line": 3406,
+          "byte_offset": 832658
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/tar-1.17/tar-1.17.tar.gz",
+      "matches": [
+        {
+          "marker": "kWI",
+          "line": 3757,
+          "byte_offset": 978275
+        },
+        {
+          "marker": "kWi",
+          "line": 4984,
+          "byte_offset": 1295930
+        }
+      ]
+    },
+    {
+      "path": "OSS_SOFT_PACK.tgz!pkg/readline-5.2/readline-5.2.tar.gz",
+      "matches": [
+        {
+          "marker": "kwI",
+          "line": 722,
+          "byte_offset": 209642
+        }
+      ]
+    }
+  ]
+}
