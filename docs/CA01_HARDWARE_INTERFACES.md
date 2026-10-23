@@ -83,3 +83,36 @@ under Unicorn with **mocked** devices. They are not validation on the real radio
 - Develop replacement service shims in a PC emulator with mocked hardware.
 - Never install a custom image until recovery, signing/acceptance, and original
   backups are independently demonstrated.
+
+---
+
+# Recovered userspace hardware interfaces — follow-up
+
+Fresh Ghidra analysis plus independent Capstone disassembly of the **verified complete** `libComFlmLb.so` and `libi2c_cm.so` establishes the following interfaces. Exact ELF-relative symbol addresses, hashes and instruction listings are in `evidence/ca01-hardware-interfaces.json`. Ghidra used base `0x10000` for these shared objects; these are relative addresses, not that added base. No recovered program or hardware operation ran.
+
+## Flash
+
+`fs_drv_FlmInit` (`0xfac`) opens `/dev/flash` with flag 2. On failure it removes that pathname, creates character device **major 202, minor 0**, mode `0x21b6` (character device/0666), and retries. This is why the library must not simply be run against a host filesystem.
+
+| Export | ioctl request | Static observation |
+|---|---|---|
+| `fs_drv_FlmInit` | `0x8001ff01` | Reads chip-kind state |
+| `fs_drv_FlmComp` | `0x8004ff02` | Compare wrapper |
+| `fs_drv_FlmCompF` | `0x8004ff03` | Alternate compare wrapper |
+| `fs_drv_FlmSectErase` | `0x4004ff0f` | Passes sector-table address |
+| `fs_drv_FlmRead` | `0x4004ff10` | Three-word request structure |
+| `fs_drv_FlmLongCopy` | `0x4004ff20` | Three-word request, chunks capped at 64 words |
+
+Transfer/erase/compare routines surround calls with `rq_psm_Take(6)` / `rq_psm_Give(6)`. Exported sector tables name `M29W640GT` and `S29JL064J`; the range-check helper bounds addresses to 8 MiB. This establishes supported code paths, not the chip actually fitted to a specific radio. Kernel-driver implementations and successful device operation remain unverified.
+
+## I2C
+
+`fs_drv_I2cInit` (`0x10d4`) accepts indices 0–4 and opens `/dev/i2c-0` through `/dev/i2c-4`. The table is present verbatim in `.rodata` at ELF address `0x11b0`.
+
+`fs_drv_I2cConSndRcv` (`0x7dc`) accepts at most 42 twelve-byte message records, shifts their address fields right one bit **in place**, and issues `0x707`. Individual send/receive wrappers shift the supplied address right one bit, issue `0x703`, then call `write`/`read`. Local Linux headers identify these requests as `I2C_RDWR` and `I2C_SLAVE`. `errno == 11` triggers retries with 100,000-microsecond sleeps (up to three attempts observed).
+
+This identifies concrete Linux I2C interfaces and the caller-address convention. It does **not** establish that `libsecurity.so` uses this I2C library, that a security chip is present, or which peripheral is attached to any address. `PROC_REPRO` names this dependency but crypto hardware remains behind the missing library.
+
+## Related-source integration
+
+The newer source archive defines Evo Bluetooth POSIX-queue, D-Bus, Unix-socket and BVD control/TTY interfaces. These belong to selected newer source modules and have **not** been matched to the original CA01 binaries or board. See [line-level contracts and compatibility limits](CA01_RELATED_FIRMWARE_AND_SOURCES.md).

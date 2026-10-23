@@ -1,5 +1,9 @@
 # CA01 unknown-format identification, 2026-10-22
 
+> Historical raw-component signature scan. Later validated suffix decoding recovered
+> 59 complete files and PROC_REPRO analysis confirmed AES-prefix handling.
+> See [current format research](CA01_UPDATE_FORMAT_RESEARCH.md).
+
 Tested local, byte-for-byte 1127 extracted components with:
 - Linux `file`: all 10 sections classified only as `data`.
 - REA 6.7.0 + Unblob 26.6.4 (prior): no standard nested extracted formats in original or carved sections.
@@ -24,4 +28,4 @@ Additional potential tools: Binwalk v3, Detect It Easy (diec), TrID, bulk_extrac
 
 Online scanners: `binwalk.sh` offers free identification, but full results/extraction require paid access, and the same underlying engine can be used locally. `abacktools.com/tools/deobfuscator/firmware/header-analyzer` claims to run entirely in the browser and covers common legacy formats. No upload was performed because no service offered a demonstrated technical advantage over local scans; uploading publicly distributed firmware needlessly creates a third-party copy. If uploading later, use only a nonpersonal, publicly distributable firmware section, not eMMC dumps or data from the user's vehicle.
 
-Bottom line: no proprietary middleware executables were recovered. High-entropy payloads remain unidentified; no evidence sufficient to name compression/encryption algorithm.
+At this initial raw scan no proprietary middleware executables had been recovered and the transform was unidentified. That limitation was later narrowed by validated DEFLATE suffix recovery and the original updater’s AES calls; encrypted-prefix parameters remain unresolved.

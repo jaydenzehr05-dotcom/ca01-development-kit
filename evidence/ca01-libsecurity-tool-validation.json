@@ -1,0 +1,113 @@
+{
+  "tool": {
+    "source": "https://github.com/madler/infgen",
+    "commit": "1e36c3da205ce3da7df1abd1f1c765a3cf49b267",
+    "version": "3.6",
+    "build": "cc -O2 -Wall -Wextra infgen.c -lz -o infgen",
+    "warning": "One upstream signedness warning in PNG idat function; compilation succeeded.",
+    "validation": "gzip-compressed source disassembled successfully, exit0; output matches84855 input bytes",
+    "files": {
+      "LICENSE": "8fc449009384266f8c32ae76916d6e6d8cd9494d07070c3c6e1b80517d2b6cbc",
+      "infgen.c": "3a43bd54dfd16135dd7bcf08cf532b64c605110e699921ba64ab7d6d16048d93",
+      "self-test.txt": "e5878e128021249dd52bac68c920591d244b9c241355555111003938cb4d2aaa",
+      "README.md": "ff1d46a572f87045a5d40394069802a2c119d087775e0c31111a71e9d2f57bba",
+      "infgen": "b1722e4291c50d4971898eb472124488b6dd691d93f863bea3a539954c5ea7e1"
+    }
+  },
+  "installed_executable": "/home/starlight/projects/rav4-radio/tools/infgen-3.6-1e36c3d/infgen",
+  "controlled_checks": [
+    {
+      "format": "gzip",
+      "exit_code": 0,
+      "decoded_size": 28000,
+      "total": "! stats total inout 116:2 (136) 28000"
+    },
+    {
+      "format": "zlib",
+      "exit_code": 0,
+      "decoded_size": 28000,
+      "total": "! stats total inout 116:2 (136) 28000"
+    },
+    {
+      "format": "raw",
+      "exit_code": 0,
+      "decoded_size": 28000,
+      "total": "! stats total inout 116:2 (136) 28000"
+    },
+    {
+      "format": "truncated_gzip",
+      "exit_code": 2,
+      "stderr": "infgen warning: incomplete gzip trailer\n"
+    }
+  ],
+  "firmware_stream_checks": [
+    {
+      "component": "middleware",
+      "exit_code": 0,
+      "stderr": "",
+      "expected_total": 1680262,
+      "source_sha256": "9277013ad5f3cd139c36371d56a8e259638be665800ea25ab7ae838e602bdebf",
+      "report": "/tmp/ca01-libsecurity-tools/middleware-infgen.txt",
+      "total_lines": [
+        "! stats total inout 682090:7 (553878) 1680262"
+      ],
+      "caveat": "Artificial 32768-byte zero history and alignment prelude added for disassembly; this does not reconstruct missing history or verify gzip CRC/signature."
+    },
+    {
+      "component": "kernel",
+      "exit_code": 0,
+      "stderr": "",
+      "expected_total": 1681828,
+      "source_sha256": "d34976cf69b7f67b2d384713d2a7ea06094063db86afc966e8a197972c3059eb",
+      "report": "/tmp/ca01-libsecurity-tools/kernel-infgen.txt",
+      "total_lines": [
+        "! stats total inout 1674350:4 (1671548) 1681828"
+      ],
+      "caveat": "Artificial 32768-byte zero history and alignment prelude added for disassembly; this does not reconstruct missing history or verify gzip CRC/signature."
+    },
+    {
+      "component": "audio",
+      "exit_code": 0,
+      "stderr": "",
+      "expected_total": 23472637,
+      "source_sha256": "6d78254c394b65dbfed0c7519815f30b0b18d3b8f2d9f99b29a04120cd5c2f8e",
+      "report": "/tmp/ca01-libsecurity-tools/audio-infgen.txt",
+      "total_lines": [
+        "! stats total inout 9349784:6 (6605733) 23472637"
+      ],
+      "caveat": "Artificial 32768-byte zero history and alignment prelude added for disassembly; this does not reconstruct missing history or verify gzip CRC/signature."
+    }
+  ],
+  "archive_search": {
+    "coverage": [
+      {
+        "archive": "OSS_SOFT_PACK.tgz",
+        "members": 94187,
+        "regular_members": 88049,
+        "bytes_scanned": 1237833553,
+        "nested_archives": 95
+      },
+      {
+        "archive": "20130619_LE2355.tgz",
+        "members": 35853,
+        "regular_members": 33803,
+        "bytes_scanned": 392724662,
+        "nested_archives": 0
+      }
+    ],
+    "exact_marker_hits": []
+  },
+  "archive_search_patterns": [
+    "libsecurity.so",
+    "sysAesKey",
+    "sysAesInit",
+    "sysAesExec",
+    "sysSecStartUp",
+    "sysUserRsaPrvKeyNonCrt",
+    "sysRsaPssVerify",
+    "sysSha256Init",
+    "rma1_hwreg",
+    "vigilancer"
+  ],
+  "conclusion": "No libsecurity.so recovered. Tool independently validates stream structure, not missing encrypted data or signature/CRC acceptance."
+}

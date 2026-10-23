@@ -1,12 +1,42 @@
-# CA01 development kit — first milestone
+# CA01 development kit — firmware research and local ARM emulation
 
 Working reference: **15TBDANA-CA01**, using the two source archives you supplied
 and identified as coming directly from the head unit.
 
-This kit provides a working firmware inspector and a compiled, read-only ARM
-Linux probe. It is an initial development deliverable, not a Google Maps app or
-an installable Toyota update. Launching our own executable on the physical radio
-is the next unresolved dependency.
+This repository consolidates the firmware inspector, verified partial recovery,
+updater/security research, dependency tools, and isolated ARM emulation work.
+The original source archives, original firmware, proprietary recovered bytes,
+Linux root filesystems and rendered images remain outside Git.
+
+## Current verified local capabilities
+
+- **59 complete recovered files**, including **41 ARM ELF files**: 21 executables
+  and 20 shared libraries. Every original recovered size/hash was rechecked.
+  Additional Kernel/Audio/Driver/Voice fragments retain explicit partial status.
+- Recovered original `PROC_REPRO`, BIOS files and updater call graphs establish
+  64,000-byte AES-prefix processing and SHA-256/RSA-PSS interfaces. `libsecurity.so`,
+  exact key/mode provisioning and successful authentication remain unresolved.
+- Debian ARMEL and ARMhf QEMU environments work locally. ARMEL is the relevant
+  soft-float baseline for the recovered binaries; this is not a booted CA01 OS.
+- Bubblewrap dependency tracing is offline, read-only, and restricted to approved
+  dynamic ARMEL targets. Standard-interpreter validation rejects static/custom
+  loader targets before QEMU. Constructor/main guards confirm trace-only behavior.
+- Fresh loader traces: **PROC_HMI 17**, **PROC_DISPLAY 47**, **PROC_REPRO 18**
+  unresolved library names. These runtime observations differ from the recovery-only
+  inventory (89 missing names across all 41 files).
+- A self-authored ARM EGL/GLES software test renders **800 × 480**; all
+  **384,000 pixels** match the expected pattern. The stock Toyota GUI has not run.
+- The combined automated suite passes **71 tests**. No radio access or flashing.
+
+Start with [consolidation verification](docs/CA01_LOCAL_CONSOLIDATION.md),
+[recovered dependencies](docs/CA01_DEPENDENCY_INVENTORY.md),
+[loader/graphics setup](docs/CA01_ARM_LOADER_AND_GRAPHICS.md), and
+[security interfaces](docs/CA01_SECURITY_INTERFACES.md).
+
+The small self-authored probes in `build/` are retained intentional Unicorn
+fixtures with their C sources/build scripts. `dist/CA01-development-kit.zip` is
+an unchanged **historical first-milestone package**, not this consolidated checkout.
+Older test counts below describe those historical milestones.
 
 ## Included
 
@@ -117,18 +147,15 @@ The inspector was also run against the real CA01 file on your computer. All ten
 extracted components matched their recorded sizes and SHA-256 hashes, and the
 input firmware remained unchanged.
 
-## Next development milestone
+## Next development priorities
 
-Trace the firmware's application-launch and update mechanisms, using the
-extracted middleware and GUI components alongside the supplied source. The
-required result is a verified route for launching our probe on the Linux side.
-After that, collect the real display/input output and implement a minimal
-display test before choosing the maps implementation.
-
-No physical-radio execution, update-signature acceptance, recovery procedure,
-Google Maps installation or camera-control change has been demonstrated by this
-kit. The probe's successful emulation establishes its behavior under the mocked
-Linux interface, not those capabilities.
+1. Obtain a legitimate additional firmware/rootfs source that contains missing
+   vendor libraries, especially `libsecurity.so` and core `libipas_*` services.
+2. Map the legacy OpenVG/GLES1 and Fujitsu Ten display/IPC interfaces against
+   the working self-authored software-renderer baseline.
+3. Keep original applications in loader-trace mode until dependencies, ABI and
+   hardware-service isolation are established. No complete CA01 boot, stock GUI,
+   signature acceptance or physical-radio recovery has been demonstrated.
 
 ## Original source archive downloads
 
@@ -181,3 +208,21 @@ so do not run the probe on a physical radio before reviewing its handlers.
 
 Do not flash modified firmware, assume secure boot is bypassed, or treat
 a rescue-mode string as a tested hardware recovery method.
+
+## Independent firmware-updater research
+
+The isolated updater investigation recovered59 complete local files, including the original `PROC_REPRO` updater and both BIOS files. Neither `rma1_hwreg` nor `vigilancer` has been recovered. Validated binary analysis identifies a64,000-byte AES prefix, SHA256/RSA-PSS calls and pathname removal followed by tar replacement; exact security-library parameters and successful authentication remain unverified. Recovered vendor binaries are not committed.
+
+- [Update framing and reproducible evidence](docs/CA01_UPDATE_FORMAT_RESEARCH.md)
+- [Complete recovered-file/dependency inventory](docs/CA01_DEPENDENCY_INVENTORY.md)
+- [Security ABI and signed-extent follow-up](docs/CA01_SECURITY_INTERFACES.md)
+- [Security-library acquisition search and installed tooling](docs/CA01_LIBSECURITY_SEARCH.md)
+- [Related firmware versions, newer DENSO TEN sources and verified interfaces](docs/CA01_RELATED_FIRMWARE_AND_SOURCES.md)
+- [Additional kernel suffix recovery](docs/CA01_ADDITIONAL_RECOVERY.md)
+- [Source and actual updater call graphs](docs/CA01_UPDATER_CALL_GRAPH.md)
+- [Missing targets and recovered-file inventory](docs/CA01_MISSING_EXECUTABLES.md)
+- `tools/ca01_update_research.py`: read-only structural evidence.
+- `tools/ca01_experimental_decode.py`: bounded symbolic DEFLATE suffix research, known-byte provenance and safe complete-file exports.
+- `evidence/ca01-tool-installation.json`: verified local DiE3.21 installation and limitations.
+
+The tools do not flash, execute recovered programs, bypass signatures, or claim a complete offline updater decoder. Detailed limitations and reproduction commands are in the reports.

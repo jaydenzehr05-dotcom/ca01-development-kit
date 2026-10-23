@@ -1,0 +1,1537 @@
+{
+  "schema": "ca01-partial-decode-evidence-v1",
+  "scope": "Read-only original component bytes; no hardware execution, signing bypass, modification or network upload. Copyrighted decoded bytes remain local /tmp artifacts only.",
+  "missing_targets": {
+    "rma1_hwreg": "not recovered",
+    "vigilancer": "not recovered"
+  },
+  "confirmed_binary_findings": [
+    "64000-byte opaque-prefix to clear-instruction transition observed independently in SH Base and Boot. Algorithm was not inferred from entropy.",
+    "Bit-aligned raw DEFLATE continuations decode and crosscheck against Python zlib with three different 32768-byte dictionaries.",
+    "Symbolic provenance propagates unknown history through every DEFLATE backreference; bytes marked known do not depend on missing prefix.",
+    "USTAR checksum-valid headers, complete bounds, and entirely known data validate individually recovered files."
+  ],
+  "strong_inferences": [
+    "Eight bytes immediately after each successful DEFLATE end match gzip CRC32/ISIZE framing; CRC not verified without prefix.",
+    "Seven flag-1 payload footer ISIZE values are multiples of10240, matching tar blocking; actual tar headers validated in Audio, GUI and Voice."
+  ],
+  "unknown": [
+    "64000-byte transformation algorithm/key parameters are outside this decoder. See independent PROC_REPRO Ghidra analysis.",
+    "Middleware two pathname areas do not prove those files are included in tar; removal/exclusion semantics require updater code.",
+    "No valid tar header, ELF magic or complete named target recovered in middleware suffix.",
+    "Complete gzip CRC and authenticity/signature verification remain unperformed."
+  ],
+  "middleware": {
+    "status": "partial_untrusted_deflate_suffix",
+    "start_bit": 554510,
+    "end_bit": 5749023,
+    "end_byte_ceil": 718628,
+    "output_size": 1647494,
+    "known_bytes": 1623501,
+    "unknown_bytes": 23993,
+    "unique_unknown_history_slots": 2060,
+    "known_contiguous_suffix_start": 58946,
+    "known_contiguous_suffix_size": 1588548,
+    "known_contiguous_suffix_sha256": "fd1b6c671ab50ee99465d79af24100af0bf02e0b4c6a4f1dae6e475edc58cdee",
+    "zero_filled_output_sha256": "26fa53c3942a422784f3eb4d759557f1ecaa21e235f882406712b875f42cc396",
+    "blocks": [
+      {
+        "start_bit": 554510,
+        "end_bit": 595119,
+        "final": false,
+        "kind": 2,
+        "output_end": 12800
+      },
+      {
+        "start_bit": 595119,
+        "end_bit": 679873,
+        "final": false,
+        "kind": 2,
+        "output_end": 40538
+      },
+      {
+        "start_bit": 679873,
+        "end_bit": 721263,
+        "final": false,
+        "kind": 2,
+        "output_end": 52213
+      },
+      {
+        "start_bit": 721263,
+        "end_bit": 1011443,
+        "final": false,
+        "kind": 2,
+        "output_end": 130278
+      },
+      {
+        "start_bit": 1011443,
+        "end_bit": 1182738,
+        "final": false,
+        "kind": 2,
+        "output_end": 179529
+      },
+      {
+        "start_bit": 1182738,
+        "end_bit": 1223317,
+        "final": false,
+        "kind": 2,
+        "output_end": 190626
+      },
+      {
+        "start_bit": 1223317,
+        "end_bit": 1311410,
+        "final": false,
+        "kind": 2,
+        "output_end": 221988
+      },
+      {
+        "start_bit": 1311410,
+        "end_bit": 1350692,
+        "final": false,
+        "kind": 2,
+        "output_end": 239279
+      },
+      {
+        "start_bit": 1350692,
+        "end_bit": 1394090,
+        "final": false,
+        "kind": 2,
+        "output_end": 252862
+      },
+      {
+        "start_bit": 1394090,
+        "end_bit": 1436746,
+        "final": false,
+        "kind": 2,
+        "output_end": 269648
+      },
+      {
+        "start_bit": 1436746,
+        "end_bit": 1481998,
+        "final": false,
+        "kind": 2,
+        "output_end": 288925
+      },
+      {
+        "start_bit": 1481998,
+        "end_bit": 1526080,
+        "final": false,
+        "kind": 2,
+        "output_end": 303613
+      },
+      {
+        "start_bit": 1526080,
+        "end_bit": 1569718,
+        "final": false,
+        "kind": 2,
+        "output_end": 317489
+      },
+      {
+        "start_bit": 1569718,
+        "end_bit": 1612482,
+        "final": false,
+        "kind": 2,
+        "output_end": 329836
+      },
+      {
+        "start_bit": 1612482,
+        "end_bit": 1655667,
+        "final": false,
+        "kind": 2,
+        "output_end": 342933
+      },
+      {
+        "start_bit": 1655667,
+        "end_bit": 1699458,
+        "final": false,
+        "kind": 2,
+        "output_end": 362645
+      },
+      {
+        "start_bit": 1699458,
+        "end_bit": 1744272,
+        "final": false,
+        "kind": 2,
+        "output_end": 378049
+      },
+      {
+        "start_bit": 1744272,
+        "end_bit": 1783774,
+        "final": false,
+        "kind": 2,
+        "output_end": 390174
+      },
+      {
+        "start_bit": 1783774,
+        "end_bit": 1868008,
+        "final": false,
+        "kind": 2,
+        "output_end": 417212
+      },
+      {
+        "start_bit": 1868008,
+        "end_bit": 1911572,
+        "final": false,
+        "kind": 2,
+        "output_end": 439149
+      },
+      {
+        "start_bit": 1911572,
+        "end_bit": 1956773,
+        "final": false,
+        "kind": 2,
+        "output_end": 453249
+      },
+      {
+        "start_bit": 1956773,
+        "end_bit": 2127458,
+        "final": false,
+        "kind": 2,
+        "output_end": 507710
+      },
+      {
+        "start_bit": 2127458,
+        "end_bit": 2172477,
+        "final": false,
+        "kind": 2,
+        "output_end": 523326
+      },
+      {
+        "start_bit": 2172477,
+        "end_bit": 2490032,
+        "final": false,
+        "kind": 2,
+        "output_end": 596299
+      },
+      {
+        "start_bit": 2490032,
+        "end_bit": 2808385,
+        "final": false,
+        "kind": 2,
+        "output_end": 666983
+      },
+      {
+        "start_bit": 2808385,
+        "end_bit": 3138285,
+        "final": false,
+        "kind": 2,
+        "output_end": 727233
+      },
+      {
+        "start_bit": 3138285,
+        "end_bit": 3462577,
+        "final": false,
+        "kind": 2,
+        "output_end": 785866
+      },
+      {
+        "start_bit": 3462577,
+        "end_bit": 3503404,
+        "final": false,
+        "kind": 2,
+        "output_end": 887228
+      },
+      {
+        "start_bit": 3503404,
+        "end_bit": 3536189,
+        "final": false,
+        "kind": 2,
+        "output_end": 1001226
+      },
+      {
+        "start_bit": 3536189,
+        "end_bit": 3845012,
+        "final": false,
+        "kind": 2,
+        "output_end": 1061760
+      },
+      {
+        "start_bit": 3845012,
+        "end_bit": 4166881,
+        "final": false,
+        "kind": 2,
+        "output_end": 1118351
+      },
+      {
+        "start_bit": 4166881,
+        "end_bit": 4285632,
+        "final": false,
+        "kind": 2,
+        "output_end": 1243959
+      },
+      {
+        "start_bit": 4285632,
+        "end_bit": 4590650,
+        "final": false,
+        "kind": 2,
+        "output_end": 1300419
+      },
+      {
+        "start_bit": 4590650,
+        "end_bit": 4835344,
+        "final": false,
+        "kind": 2,
+        "output_end": 1406064
+      },
+      {
+        "start_bit": 4835344,
+        "end_bit": 4928513,
+        "final": false,
+        "kind": 2,
+        "output_end": 1463882
+      },
+      {
+        "start_bit": 4928513,
+        "end_bit": 5010594,
+        "final": false,
+        "kind": 2,
+        "output_end": 1486956
+      },
+      {
+        "start_bit": 5010594,
+        "end_bit": 5328082,
+        "final": false,
+        "kind": 2,
+        "output_end": 1566835
+      },
+      {
+        "start_bit": 5328082,
+        "end_bit": 5630041,
+        "final": false,
+        "kind": 2,
+        "output_end": 1611997
+      },
+      {
+        "start_bit": 5630041,
+        "end_bit": 5749023,
+        "final": true,
+        "kind": 2,
+        "output_end": 1647494
+      }
+    ],
+    "limits": [
+      "Missing prefix and unknown history are not recovered.",
+      "No gzip CRC or package signature is verified.",
+      "No complete executable or archive is established."
+    ],
+    "input_path": "/home/starlight/projects/rav4-radio/stock-firmware/components/02-middle-ware.bin",
+    "input_sha256": "9277013ad5f3cd139c36371d56a8e259638be665800ea25ab7ae838e602bdebf",
+    "payload_offset": 524,
+    "payload_size": 718892,
+    "component_end_byte_ceil": 719152,
+    "zlib_crosschecks": [
+      {
+        "dictionary": "zeros",
+        "eof": true,
+        "output_size": 1647494,
+        "symbolic_output_matches": true
+      },
+      {
+        "dictionary": "ones_ff",
+        "eof": true,
+        "output_size": 1647494,
+        "symbolic_output_matches": true
+      },
+      {
+        "dictionary": "incrementing",
+        "eof": true,
+        "output_size": 1647494,
+        "symbolic_output_matches": true
+      }
+    ],
+    "trailing_bytes": 264,
+    "unverified_gzip_footer_hypothesis": {
+      "offset": 718628,
+      "crc32_hex": "bc4bf54f",
+      "isize": 1802240,
+      "remaining_after_footer": 256,
+      "crc_verified": false,
+      "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+    }
+  },
+  "middleware_tar_checks": {
+    "archive_total_size_hypothesis": 1802240,
+    "partial_absolute_start_hypothesis": 154746,
+    "checksum_candidates": 0,
+    "checksum_valid_headers": [],
+    "fully_known_checksum_valid_headers": [],
+    "trailing_zero_bytes": 4576,
+    "last_nonzero_absolute_hypothesis": 1797663,
+    "no_ustar_or_ELF_in_known_suffix": true,
+    "interpretation": "Tar framing is strongly inferred from seven footer ISIZEs divisible by10240 and trailing zeros; no valid tar header recovered in middleware suffix, so filenames/membership remain unconfirmed."
+  },
+  "other_component_symbolic_summaries": {
+    "06-audio.bin": {
+      "status": "partial_untrusted_deflate_suffix",
+      "start_bit": 568330,
+      "end_bit": 75061686,
+      "end_byte_ceil": 9382711,
+      "output_size": 23425620,
+      "known_bytes": 23420278,
+      "unknown_bytes": 5342,
+      "unique_unknown_history_slots": 516,
+      "known_contiguous_suffix_start": 30020,
+      "known_contiguous_suffix_size": 23395600,
+      "known_contiguous_suffix_sha256": "44d07ecf7d5806cb853e336ea5fc1e535fa4b28aadbadf73e5a197e0776f6f5e",
+      "zero_filled_output_sha256": "c590787dd63acaebdfb3b28a106a8666f67ad0e76377771206ba7253b8308556",
+      "zlib_crosschecks": [
+        {
+          "dictionary": "zeros",
+          "eof": true,
+          "output_size": 23425620,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "ones_ff",
+          "eof": true,
+          "output_size": 23425620,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "incrementing",
+          "eof": true,
+          "output_size": 23425620,
+          "symbolic_output_matches": true
+        }
+      ],
+      "input_sha256": "6d78254c394b65dbfed0c7519815f30b0b18d3b8f2d9f99b29a04120cd5c2f8e"
+    },
+    "04-device-driver.bin": {
+      "status": "partial_untrusted_deflate_suffix",
+      "start_bit": 721102,
+      "end_bit": 1891422,
+      "end_byte_ceil": 236428,
+      "output_size": 339904,
+      "known_bytes": 279867,
+      "unknown_bytes": 60037,
+      "unique_unknown_history_slots": 707,
+      "known_contiguous_suffix_start": 312576,
+      "known_contiguous_suffix_size": 27328,
+      "known_contiguous_suffix_sha256": "0734d3799d89b88892611eaa5a486b83510c1d73ec5d0e0f4673d70bd5856414",
+      "zero_filled_output_sha256": "7c1957e5565bbe291cc19cddce958bf93a0489696c497a8fd802c4d127454066",
+      "zlib_crosschecks": [
+        {
+          "dictionary": "zeros",
+          "eof": true,
+          "output_size": 339904,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "ones_ff",
+          "eof": true,
+          "output_size": 339904,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "incrementing",
+          "eof": true,
+          "output_size": 339904,
+          "symbolic_output_matches": true
+        }
+      ],
+      "input_sha256": "d04237fc1b9c844c607559f6a1e4140f294d469ca48f038c3a2271f3f762b48a"
+    },
+    "05-bluetooth.bin": {
+      "status": "partial_untrusted_deflate_suffix",
+      "start_bit": 812126,
+      "end_bit": 5063876,
+      "end_byte_ceil": 632985,
+      "output_size": 1656172,
+      "known_bytes": 1495076,
+      "unknown_bytes": 161096,
+      "unique_unknown_history_slots": 2680,
+      "known_contiguous_suffix_start": 1504156,
+      "known_contiguous_suffix_size": 152016,
+      "known_contiguous_suffix_sha256": "b471ea2b467dc623a46d4d002bae00b2281d039ef403325816886092747f034a",
+      "zero_filled_output_sha256": "4d8a12a1d1958142debf7ce23e0a296860d24bceaaeb56ce0c9794e0c2680533",
+      "zlib_crosschecks": [
+        {
+          "dictionary": "zeros",
+          "eof": true,
+          "output_size": 1656172,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "ones_ff",
+          "eof": true,
+          "output_size": 1656172,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "incrementing",
+          "eof": true,
+          "output_size": 1656172,
+          "symbolic_output_matches": true
+        }
+      ],
+      "input_sha256": "f16441f3272a9c7c414e41ea0005b30dee67e570f2e9e0740413d67539bcaae1"
+    },
+    "07-gui.bin": {
+      "status": "partial_untrusted_deflate_suffix",
+      "start_bit": 540924,
+      "end_bit": 4237587,
+      "end_byte_ceil": 529699,
+      "output_size": 2644921,
+      "known_bytes": 2588151,
+      "unknown_bytes": 56770,
+      "unique_unknown_history_slots": 360,
+      "known_contiguous_suffix_start": 811497,
+      "known_contiguous_suffix_size": 1833424,
+      "known_contiguous_suffix_sha256": "569de2f4dcec531c72333af12048513a5c367a2bfd10b9d09098452e8fed17e4",
+      "zero_filled_output_sha256": "55131fc64e838761db94cd2def823d25d71b78fb501aac79b015526134cb9542",
+      "zlib_crosschecks": [
+        {
+          "dictionary": "zeros",
+          "eof": true,
+          "output_size": 2644921,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "ones_ff",
+          "eof": true,
+          "output_size": 2644921,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "incrementing",
+          "eof": true,
+          "output_size": 2644921,
+          "symbolic_output_matches": true
+        }
+      ],
+      "input_sha256": "c982d69e1bef9bb6852e46cc33fc575ac5061739d88c39241ab9bef38bf4c87e"
+    },
+    "08-voice-recognition.bin": {
+      "status": "partial_untrusted_deflate_suffix",
+      "start_bit": 686144,
+      "end_bit": 4620233,
+      "end_byte_ceil": 577530,
+      "output_size": 2358693,
+      "known_bytes": 2159561,
+      "unknown_bytes": 199132,
+      "unique_unknown_history_slots": 3419,
+      "known_contiguous_suffix_start": 398519,
+      "known_contiguous_suffix_size": 1960174,
+      "known_contiguous_suffix_sha256": "bcb0d0e4961edbea3d86aa2bae52c78069aa38857f972018242035014354c342",
+      "zero_filled_output_sha256": "5de43262c8980f9adf1c0564fb36cbf1c56fd0b0ce363222e8d03832f90ffa25",
+      "zlib_crosschecks": [
+        {
+          "dictionary": "zeros",
+          "eof": true,
+          "output_size": 2358693,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "ones_ff",
+          "eof": true,
+          "output_size": 2358693,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "incrementing",
+          "eof": true,
+          "output_size": 2358693,
+          "symbolic_output_matches": true
+        }
+      ],
+      "input_sha256": "4314a40f59679be9bb6e117323a630b83a5b9185e357e6144f07a15a12d8f9c7"
+    }
+  },
+  "footer_observations": [
+    {
+      "component": "02-middle-ware.bin",
+      "payload_offset": 524,
+      "hypothesized_footer_payload_offset": 718628,
+      "crc32_hex": "bc4bf54f",
+      "isize": 1802240,
+      "isize_multiple_10240": true,
+      "opaque_trailer_size": 256,
+      "opaque_trailer_sha256": "e4f3c480be792066c270cca563724d473722c947c06a379eab06a733f69a56af",
+      "crc_verified": false
+    },
+    {
+      "component": "03-kernel.bin",
+      "payload_offset": 12,
+      "hypothesized_footer_payload_offset": 1808562,
+      "crc32_hex": "6570dc49",
+      "isize": 1822720,
+      "isize_multiple_10240": true,
+      "opaque_trailer_size": 256,
+      "opaque_trailer_sha256": "925699306f66198e2ddedc3cb2bf5f94fb2d43713b7f79a609078f556afab22a",
+      "crc_verified": false
+    },
+    {
+      "component": "04-device-driver.bin",
+      "payload_offset": 12,
+      "hypothesized_footer_payload_offset": 236428,
+      "crc32_hex": "4e91adb4",
+      "isize": 552960,
+      "isize_multiple_10240": true,
+      "opaque_trailer_size": 256,
+      "opaque_trailer_sha256": "a356de94de3ba52d3f887f4423d721753b5d3ec7a5d7543dc4587836ec7c269a",
+      "crc_verified": false
+    },
+    {
+      "component": "05-bluetooth.bin",
+      "payload_offset": 12,
+      "hypothesized_footer_payload_offset": 632985,
+      "crc32_hex": "84dcaf95",
+      "isize": 1863680,
+      "isize_multiple_10240": true,
+      "opaque_trailer_size": 256,
+      "opaque_trailer_sha256": "afce279dc7845168a2f4d8531d78738284512dab364d658d42781046821358aa",
+      "crc_verified": false
+    },
+    {
+      "component": "06-audio.bin",
+      "payload_offset": 12,
+      "hypothesized_footer_payload_offset": 9382711,
+      "crc32_hex": "871000dd",
+      "isize": 23592960,
+      "isize_multiple_10240": true,
+      "opaque_trailer_size": 256,
+      "opaque_trailer_sha256": "cccfbca55bb72917663c9481c4808fce20abd58a0c885eabdb73e25c8ea06e6a",
+      "crc_verified": false
+    },
+    {
+      "component": "07-gui.bin",
+      "payload_offset": 12,
+      "hypothesized_footer_payload_offset": 529699,
+      "crc32_hex": "bca3a285",
+      "isize": 2723840,
+      "isize_multiple_10240": true,
+      "opaque_trailer_size": 256,
+      "opaque_trailer_sha256": "e2e57f64e861b499b3dc095f52d4a13ba1673f8ac6d0b6af2e16a2aa55828b94",
+      "crc_verified": false
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "payload_offset": 12,
+      "hypothesized_footer_payload_offset": 577530,
+      "crc32_hex": "16126c18",
+      "isize": 2785280,
+      "isize_multiple_10240": true,
+      "opaque_trailer_size": 256,
+      "opaque_trailer_sha256": "1d60556dca13291963a1d60fd26416c39a3c81eaadd462c930e0c4e3d5f9e6f1",
+      "crc_verified": false
+    }
+  ],
+  "recovered_file_count": 59,
+  "recovered_ELF_count": 41,
+  "recovered_files": [
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libipas_grp.so",
+      "partial_header_offset": 1077844,
+      "partial_data_offset": 1078356,
+      "size": 251584,
+      "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_grp.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libVOIdata_cp.so",
+      "partial_header_offset": 1330260,
+      "partial_data_offset": 1330772,
+      "size": 20840,
+      "sha256": "911b997a5a4ecb16d98bd9a6a73a2e46af1e4abfc6ea77c27a7827c861bfdba8",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libVOIdata_cp.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libipas_sysc.so",
+      "partial_header_offset": 1351764,
+      "partial_data_offset": 1352276,
+      "size": 173652,
+      "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysc.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libi2c_cm.so",
+      "partial_header_offset": 1526356,
+      "partial_data_offset": 1526868,
+      "size": 6356,
+      "sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libi2c_cm.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libipas_sysp.so",
+      "partial_header_offset": 1533524,
+      "partial_data_offset": 1534036,
+      "size": 173560,
+      "sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysp.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libComFlmLb.so",
+      "partial_header_offset": 1707604,
+      "partial_data_offset": 1708116,
+      "size": 9384,
+      "sha256": "e5ca3288453da45f666c8855ec5d2a29243f765789a36ad3a6943e674c4355b6",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libComFlmLb.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libcoll.so",
+      "partial_header_offset": 1717844,
+      "partial_data_offset": 1718356,
+      "size": 108344,
+      "sha256": "90a7cf2c7f9eada7269b09643fcd9c7738bdb4ccab2f043e7419bdc36c852480",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libcoll.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libipas_skt.so",
+      "partial_header_offset": 1826900,
+      "partial_data_offset": 1827412,
+      "size": 10160,
+      "sha256": "f6cb7d7fb510a4d97e81df828fcbb870e1dd678c12e01980adac898519e395a8",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_skt.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libAdlRd.so",
+      "partial_header_offset": 1837652,
+      "partial_data_offset": 1838164,
+      "size": 43016,
+      "sha256": "a2e1403bc89b737d4f9cf503dd6419a676d723715626fade1e8fe5a12e64b777",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libAdlRd.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libnavi_if.so",
+      "partial_header_offset": 1881684,
+      "partial_data_offset": 1882196,
+      "size": 106416,
+      "sha256": "02d11afd4414659265ff78944f5a400de0cfaff1138ef45deb4daaa88f809981",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libnavi_if.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libAdlCd.so",
+      "partial_header_offset": 1988692,
+      "partial_data_offset": 1989204,
+      "size": 22432,
+      "sha256": "3831438fb969950ff20fd11e1c704f9235f58ec5d93c5a0d55a06471acd32ce2",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libAdlCd.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libDisdb_if.so",
+      "partial_header_offset": 2011732,
+      "partial_data_offset": 2012244,
+      "size": 54204,
+      "sha256": "8486692809990cec2d1551858aea42991884886460d952979452e5b8a7f0fe47",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libDisdb_if.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libAdlUb.so",
+      "partial_header_offset": 2066516,
+      "partial_data_offset": 2067028,
+      "size": 47080,
+      "sha256": "f8d509b18b2be933eacdf5d09794570ce6757129190076d6815d9bcc99c0d845",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libAdlUb.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libsct_ct.so",
+      "partial_header_offset": 2114132,
+      "partial_data_offset": 2114644,
+      "size": 10996,
+      "sha256": "383924353b752d9c02f953ecf773584affc5232e15b73a707b9d4f4f659d6fae",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libsct_ct.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libuie_api.so",
+      "partial_header_offset": 2125908,
+      "partial_data_offset": 2126420,
+      "size": 9104,
+      "sha256": "77e97c6cebc9e4a358ceb81c3afb91c8756785baf19691094857678ec21c78fd",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libuie_api.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libDIS_IF.so",
+      "partial_header_offset": 2135636,
+      "partial_data_offset": 2136148,
+      "size": 54396,
+      "sha256": "1c0d760d81ad684bf5570278ffeb9c801607715efea03533fdf6b42db3d87e49",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libDIS_IF.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libipas_ls1.so",
+      "partial_header_offset": 2190932,
+      "partial_data_offset": 2191444,
+      "size": 20516,
+      "sha256": "7373e2d470fbac95dbf7a7a1dd68cca59187fdb43450244fc706f8bbf7affc24",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_ls1.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libedbsong.so",
+      "partial_header_offset": 2212436,
+      "partial_data_offset": 2212948,
+      "size": 352368,
+      "sha256": "fcbd4cf0c639442e7d80877daf274ef6cd3e552bb917ea9f16bdba180d14337d",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libedbsong.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libVOIAudioStream.so",
+      "partial_header_offset": 2565716,
+      "partial_data_offset": 2566228,
+      "size": 74684,
+      "sha256": "c5b9d0c56a1f7539e91851fe4958316987b401d81769d40711b7102f4a62c7f1",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libVOIAudioStream.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/lib/libIFLB_CDDB.so",
+      "partial_header_offset": 2640980,
+      "partial_data_offset": 2641492,
+      "size": 24040,
+      "sha256": "1431c297e1716c7d3a49964aa523eb97b868673553e709d7897ee3a086ddad75",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libIFLB_CDDB.so",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 3
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/boot/bios.bin",
+      "partial_header_offset": 2666068,
+      "partial_data_offset": 2666580,
+      "size": 77544,
+      "sha256": "9337508604e644ba558f3a5808a91fce4751c5fa6453dd5d8d9dfaa82e79b87b",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-bios.bin",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/boot/RTFM_SH4A_MA100_2nd.bin_ticket",
+      "partial_header_offset": 2744404,
+      "partial_data_offset": 2744916,
+      "size": 32,
+      "sha256": "364590a730f59cf05ad9eb9d00a98341df6b645594faf095211397081ef162e7",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-RTFM_SH4A_MA100_2nd.bin_ticket",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/boot/s-bios.bin",
+      "partial_header_offset": 2745428,
+      "partial_data_offset": 2745940,
+      "size": 7796,
+      "sha256": "cb97bb7ba20143f8e731f719c6888d5443b963695efe1369e90f0d1e59d2dbef",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-s-bios.bin",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/dev/mXT540E_TM8L.bin",
+      "partial_header_offset": 2754644,
+      "partial_data_offset": 2755156,
+      "size": 478,
+      "sha256": "d46c9190136c83c3535a26968e9ed337d0144a1f1c1965b36501a2ea29d202e5",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-mXT540E_TM8L.bin",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/dev/mXT540E_TS8L.bin",
+      "partial_header_offset": 2755668,
+      "partial_data_offset": 2756180,
+      "size": 478,
+      "sha256": "7ff5dc4b7363b7fb9ad86836fe84609c0c0840bf5d6c4832c470e1bc48a57461",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-mXT540E_TS8L.bin",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/bin/FlashImageCreater",
+      "partial_header_offset": 2757204,
+      "partial_data_offset": 2757716,
+      "size": 15252,
+      "sha256": "48bb5513f542d276568bd6ab77e4790fc1480031ae92a934a34b95f7d0626b70",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-FlashImageCreater",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/bin/snap.sh",
+      "partial_header_offset": 2773076,
+      "partial_data_offset": 2773588,
+      "size": 8090,
+      "sha256": "527b70c22a2f8f3830cda231482a7b4c64c4e140cf6cafa1969d5c3b74c42f55",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-snap.sh",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/bin/FlashImageWriter",
+      "partial_header_offset": 2781780,
+      "partial_data_offset": 2782292,
+      "size": 18524,
+      "sha256": "40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-FlashImageWriter",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_DSV",
+      "partial_header_offset": 2801748,
+      "partial_data_offset": 2802260,
+      "size": 155636,
+      "sha256": "7ec50c5a61291cacf19cee1128a603162f99df1b59c2f2dc6c88533e6831b463",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DSV",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_MMP",
+      "partial_header_offset": 2957908,
+      "partial_data_offset": 2958420,
+      "size": 772556,
+      "sha256": "8c21cb0cf1fa2e145b5c8f1a2fd28473ddf994a20b9ac6579e960a81b534d8fa",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_MMP",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_EXT",
+      "partial_header_offset": 3731028,
+      "partial_data_offset": 3731540,
+      "size": 73208,
+      "sha256": "56446dd9bdccaa417d1334cd7aa3543311f25954d8b2fe56e0203e6407195976",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_EXT",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_REPRO",
+      "partial_header_offset": 3804756,
+      "partial_data_offset": 3805268,
+      "size": 168592,
+      "sha256": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_REPRO",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_CDDB",
+      "partial_header_offset": 3974228,
+      "partial_data_offset": 3974740,
+      "size": 1461952,
+      "sha256": "51c8f56bcb66fca5576e3be44c0155cb5727b85eabf4b176406a4b796d9e2115",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_CDDB",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_VRS",
+      "partial_header_offset": 5437012,
+      "partial_data_offset": 5437524,
+      "size": 1008292,
+      "sha256": "cdc2f7a613e5a9a9a2a122a97a5cf62bbf5a7a27b863b36ea6427df2bf731976",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_VRS",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_SYSTEM",
+      "partial_header_offset": 6446164,
+      "partial_data_offset": 6446676,
+      "size": 495980,
+      "sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SYSTEM",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_DTV",
+      "partial_header_offset": 6942804,
+      "partial_data_offset": 6943316,
+      "size": 2617748,
+      "sha256": "968d129dd831acb3f5b92885ff7f0e0d53840868e4e6e030ac18996a5a183c30",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DTV",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_HMI",
+      "partial_header_offset": 9561172,
+      "partial_data_offset": 9561684,
+      "size": 6152368,
+      "sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_HMI",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_AUDIO",
+      "partial_header_offset": 15714388,
+      "partial_data_offset": 15714900,
+      "size": 1150180,
+      "sha256": "fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_AUDIO",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_VI",
+      "partial_header_offset": 16865364,
+      "partial_data_offset": 16865876,
+      "size": 187556,
+      "sha256": "5afc19aec96a7acca1a0c1f27ca704f9fe3c63a25a2538775932905450df7b00",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_VI",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_DVDDECK",
+      "partial_header_offset": 17053780,
+      "partial_data_offset": 17054292,
+      "size": 712576,
+      "sha256": "588cd697066ea9d859f3e93683248374bc88952934b2e84bb9c92978687a95c4",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DVDDECK",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_NAVIIF",
+      "partial_header_offset": 17766996,
+      "partial_data_offset": 17767508,
+      "size": 135556,
+      "sha256": "13e95b7508e4e6fd2106a069b3fd226c9776b81ff8eb60ef74f30ececb997e85",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_NAVIIF",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_DISPLAY",
+      "partial_header_offset": 17903188,
+      "partial_data_offset": 17903700,
+      "size": 4480028,
+      "sha256": "4755da50d4396cb213eb905ed49d6118cd8f330d05a35aa928b1bef8b2045004",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DISPLAY",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_CDP",
+      "partial_header_offset": 22384212,
+      "partial_data_offset": 22384724,
+      "size": 89016,
+      "sha256": "5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_CDP",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_UIEIF",
+      "partial_header_offset": 22473812,
+      "partial_data_offset": 22474324,
+      "size": 566552,
+      "sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_UIEIF",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_SPC",
+      "partial_header_offset": 23041108,
+      "partial_data_offset": 23041620,
+      "size": 65092,
+      "sha256": "b83fed7b7e6070895c419e27a6b5b4e197d4b66d97fe25dbbf953a25a80d94f8",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SPC",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_TMD",
+      "partial_header_offset": 23107156,
+      "partial_data_offset": 23107668,
+      "size": 197364,
+      "sha256": "9b3189ed775ffb23148150bf763cd09f8f3c7c651f4156c8f80c3b596ab83914",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_TMD",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "06-audio.bin",
+      "archive_path": "./opt/ftl/apl/PROC_DVDP",
+      "partial_header_offset": 23305300,
+      "partial_data_offset": 23305812,
+      "size": 109540,
+      "sha256": "e2f6688f90b51dd5c4a849cc42518dbc616e5d67cf3171270ccd403a7f1b346c",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DVDP",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": true,
+      "elf_class": "ELF32",
+      "elf_endian": "little",
+      "elf_machine": 40,
+      "elf_type": 2
+    },
+    {
+      "component": "07-gui.bin",
+      "archive_path": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+      "partial_header_offset": 812985,
+      "partial_data_offset": 813497,
+      "size": 612522,
+      "sha256": "f41d7256548ae70881b8777ae76e37fdd0b6998577c8779cefd3ba25d4209d1b",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/07-13UP_FR-CA_DA-Base_FormatA.xml",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "07-gui.bin",
+      "archive_path": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+      "partial_header_offset": 1426361,
+      "partial_data_offset": 1426873,
+      "size": 610350,
+      "sha256": "7442138ae913b6bf56cb52f3be5ae94d8c23bc9736763179d0f67d313e9780fa",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/07-13UP_ES-MX_DA-Base_FormatA.xml",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "07-gui.bin",
+      "archive_path": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "partial_header_offset": 2037689,
+      "partial_data_offset": 2038201,
+      "size": 596144,
+      "sha256": "1e9eca3854506419e67e812f60f45de0f40c4a90113f038f11fd7bafdb74b166",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/07-13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "07-gui.bin",
+      "archive_path": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+      "partial_header_offset": 812985,
+      "partial_data_offset": 813497,
+      "size": 612522,
+      "sha256": "f41d7256548ae70881b8777ae76e37fdd0b6998577c8779cefd3ba25d4209d1b",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/07-000c67b9-13UP_FR-CA_DA-Base_FormatA.xml",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "07-gui.bin",
+      "archive_path": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+      "partial_header_offset": 1426361,
+      "partial_data_offset": 1426873,
+      "size": 610350,
+      "sha256": "7442138ae913b6bf56cb52f3be5ae94d8c23bc9736763179d0f67d313e9780fa",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/07-0015c3b9-13UP_ES-MX_DA-Base_FormatA.xml",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "07-gui.bin",
+      "archive_path": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "partial_header_offset": 2037689,
+      "partial_data_offset": 2038201,
+      "size": 596144,
+      "sha256": "1e9eca3854506419e67e812f60f45de0f40c4a90113f038f11fd7bafdb74b166",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/07-001f17b9-13UP_EN-US-NA_DA-Base_FormatA.xml",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "archive_path": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBAgent.db",
+      "partial_header_offset": 647077,
+      "partial_data_offset": 647589,
+      "size": 94208,
+      "sha256": "38c5945b610470623763cd0601b06f390cc9cb8876b23c8cc65a500d030a0001",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/08-0009dfa5-VBAgent.db",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "archive_path": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBSystem.db",
+      "partial_header_offset": 741797,
+      "partial_data_offset": 742309,
+      "size": 715776,
+      "sha256": "375601055ffc86b201d770ed17eacd1fb1f5484a43286f9836233d1b3d891a48",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/08-000b51a5-VBSystem.db",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "archive_path": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBAgent.db",
+      "partial_header_offset": 1459109,
+      "partial_data_offset": 1459621,
+      "size": 96256,
+      "sha256": "9c27c8ab84d2d47e61f4877c61e1ec7223d6d1ae01fb6a20a56e1236e387d575",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/08-001643a5-VBAgent.db",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "archive_path": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBSystem.db",
+      "partial_header_offset": 1555877,
+      "partial_data_offset": 1556389,
+      "size": 712704,
+      "sha256": "c2ef59298f4f23e37b42438ffc13ca13fc73be55d3bc425bf7c7ba1ee2783ab3",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/08-0017bda5-VBSystem.db",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "archive_path": "./opt/ftl/var/backup/vrs/VOI/VOI_VERSION",
+      "partial_header_offset": 2269093,
+      "partial_data_offset": 2269605,
+      "size": 19,
+      "sha256": "d4f4b59e4473967b5ff89e135f47b419e6ed681a32d30756a64bb71ae2a3a36a",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/08-00229fa5-VOI_VERSION",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "archive_path": "./opt/ftl/var/backup/vrs/VOI/Hints.db",
+      "partial_header_offset": 2270117,
+      "partial_data_offset": 2270629,
+      "size": 77824,
+      "sha256": "acd42de1c609b92d721059fa45acfc4de464a2b9a7476f173586c0329773ee99",
+      "local_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/08-0022a3a5-Hints.db",
+      "header_checksum_valid": true,
+      "header_and_entire_contents_dictionary_independent": true,
+      "ELF": false
+    }
+  ],
+  "reproduction": {
+    "middleware": "python3 tools/ca01_experimental_decode.py COMPONENTS/02-middle-ware.bin --payload-offset 524 --start-byte 69313 --start-bit 6",
+    "audio": "python3 tools/ca01_experimental_decode.py COMPONENTS/06-audio.bin --payload-offset 12 --start-byte 71041 --start-bit 2 --artifact-directory NEW_LOCAL_DIRECTORY",
+    "additional_resync_starts": {
+      "04-device-driver.bin": {
+        "payload_offset": 12,
+        "start_byte": 90137,
+        "start_bit": 6
+      },
+      "05-bluetooth.bin": {
+        "payload_offset": 12,
+        "start_byte": 101515,
+        "start_bit": 6
+      },
+      "07-gui.bin": {
+        "payload_offset": 12,
+        "start_byte": 67615,
+        "start_bit": 4
+      },
+      "08-voice-recognition.bin": {
+        "payload_offset": 12,
+        "start_byte": 85768,
+        "start_bit": 0
+      }
+    },
+    "tests": "python3 -m unittest discover -s tests -p test_experimental_decode.py -v",
+    "test_result": "13 tests passed, including stored-block alignment at bits0-7, missing history at bits1-7, independent dictionaries, limits/truncation, safe complete TAR recovery and nonoverwrite."
+  },
+  "actual_cli_export_validation": {
+    "component": "06-audio.bin",
+    "exported_complete_files": 47,
+    "all_original_paths_sizes_sha256_match_independent_symbolic_recovery": true,
+    "local_directory": "/tmp/ca01-middleware-research/cli-audio-export",
+    "exit_code": 0
+  },
+  "post_review_actual_cli_validation": {
+    "status": "passed",
+    "matching_files": 47,
+    "all_hashes_match": true,
+    "artifact_directory": "/tmp/ca01-root-research/audio-final",
+    "alignment_fix_verified": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "date_utc": "2026-10-23",
+  "result": "No firmware or libsecurity.so obtained; real official download/metadata paths identified",
+  "searches": [
+    {
+      "query": "\"sysUserRsaPrvKeyNonCrt\"",
+      "result": "empty"
+    },
+    {
+      "query": "\"sysAesKey\"",
+      "result": "unrelated Go SysAESKey constant only"
+    },
+    {
+      "query": "\"sysSecStartUp\"",
+      "result": "empty"
+    },
+    {
+      "query": "\"sysRsaDecPbcKeyInit\"",
+      "result": "empty"
+    },
+    {
+      "query": "\"libsecurity.so\" \"Renesas\"",
+      "result": "empty"
+    },
+    {
+      "query": "\"libsecurity.so\" \"Fujitsu\"",
+      "result": "unrelated FreeBSD/OSF SIA result"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10173804-9999.pdf",
+      "title": "Toyota T-SB-0024-20",
+      "downloaded_file": "/tmp/ca01-libsecurity-public/bulletin-2020.pdf",
+      "sha256": "f039ef03ba7200198010649e765721b184c2bf3076e17ab8377ffe0bdcdc8825",
+      "pdf_uri_annotations": [
+        "/t3Portal/calibration/15TDDANA-CA02_3247",
+        "/t3Portal/calibration/15TBDANA-CA01_1134",
+        "/t3Portal/calibration/15TDANNA-CA02_3247",
+        "/t3Portal/calibration/15TDANNA-CA01_2247",
+        "/t3Portal/calibration/15TDDANA-CA01_2247",
+        "/t3Portal/staticcontent/en/tis/docs/ToyMMSdwnld.pdf"
+      ],
+      "method": "zlib decompression of PDF streams, extraction of literal /URI(...) entries"
+    },
+    {
+      "url": "https://www.toyota.com/firmware-updates",
+      "title": "Toyota consumer firmware portal",
+      "downloaded_file": "/tmp/ca01-libsecurity-public/owner-portal.html"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://techinfo.toyota.com/t3Portal/calibration/15TBDANA-CA01_1134",
+      "outcome": "302 redirect to Toyota login; final response HTML; no authentication attempted"
+    },
+    {
+      "url": "https://www.toyota.com/content/sdp/us/en/toyota/softwareupdates/vehicle_garage.model.json?division=toyota&vehicle=RAV4&modelYear=2016&navigationType=without%20navigation",
+      "outcome": "502 Microsoft Azure Application Gateway HTML"
+    },
+    {
+      "url": "https://www.toyota.com/content/sdp/us/en/toyota/softwareupdates/software_update.model.json?division=toyota&vehicle=RAV4&modelYear=2016&navigationType=without%20navigation",
+      "outcome": "403 XML AccessDenied",
+      "status_lines": [
+        "HTTP/2 403 "
+      ]
+    },
+    {
+      "url": "https://www.toyota.com/content/sdp/us/en/toyota/softwareupdates/software_update.model.json?division=toyota&vehicle=RAV4&modelYear=2014&navigationType=without%20navigation",
+      "status": 403,
+      "body_file": "/tmp/ca01-libsecurity-public/rav4-updates-2014.response",
+      "body_prefix": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>N09BVE5G6W637H5Y</RequestId><HostId>MctnMVZp8skNcrqU1OHfe+WkQ/Xj4SSMrhtD2KGJn3er3Kq+kdW2hYwhGztcXUZEEF2EyNdi3NVAb+DIs4VfgpeMDnErpymO</Ho"
+    },
+    {
+      "url": "https://www.toyota.com/content/sdp/us/en/toyota/softwareupdates/software_update.model.json?division=toyota&vehicle=RAV4&modelYear=2015&navigationType=without%20navigation",
+      "status": 403,
+      "body_file": "/tmp/ca01-libsecurity-public/rav4-updates-2015.response",
+      "body_prefix": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>JS5G1FVX3STX1XYW</RequestId><HostId>MhLBzOaDl2ZOBkyrLyEeGplPR/1l63YvN7TOjVo2WBrrekTBZ5G46MeWZoyzpdKOiW6QVgko+mI=</HostId></Error>"
+    }
+  ],
+  "metadata_endpoint_provenance": {
+    "vehicle_selector_script": "https://www.toyota.com/etc.clientlibs/sdp/clientlibs/generated/clientlib-vehiclegaragev1.lc-bb48d622561f59c4cc0af698334ef1f4-lc.min.js",
+    "firmware_script": "https://www.toyota.com/etc.clientlibs/sdp/clientlibs/generated/clientlib-softwareupdatev1.lc-5d00fc204188f2365e378172484807f4-lc.min.js"
+  },
+  "local_artifact_hashes": {
+    "updates.html": "eefd2e06491c04d070f7a0a4142a56cab36868f30182cc45820a60d2794b9258",
+    "rav4-2016.json": "40c2149635ede9666f001c9d9135b0b4bf649986459e1c4c52e2c65e79f29d7d",
+    "rav4-updates.json": "05c229a0e9248d6f7906fe0ca4c3a5ae7f8e247c3c63c1cb81da58ac824d68cd",
+    "vehicle-garage.js": "600b376424b7451bcfa685b936798edc7ea5664e4807982f259a3777cdbed87c",
+    "bulletin-2020.pdf": "f039ef03ba7200198010649e765721b184c2bf3076e17ab8377ffe0bdcdc8825",
+    "owner-portal.html": "4719b8cbc5d5625ac13070717a93bcd3d97043f4d1f655d3708277ce4c119703",
+    "vehicle-dialog.json": "f048f914dccdfed9a12798d002e654b023b5c12c0e2a744f891956e3e60822cf",
+    "software-update.js": "3d7508ed5eab6f1a779293aa37578e139e4ec8afdfd93d2d0798319bda096e52"
+  },
+  "limits": [
+    "Search absence is not global source absence",
+    "HTTP denial does not establish firmware nonexistence",
+    "Different CA01 head-unit variants not established binary-compatible",
+    "No vendor or hardware attribution established for security API",
+    "No firmware executed or login/access-control bypass attempted"
+  ],
+  "original_1127_provenance": {
+    "source": "README.md:56-57",
+    "url": "https://www.toyota.com/firmware-download/15TBDANA-CA01_1127.kwi",
+    "note": "Existing recorded download source; not fetched again this run"
+  },
+  "firmware_query_schema_source_excerpt": "4\"),a&&u&&l&&c?(e=\"/content/sdp/us/en/\"+n+\"/softwareupdates/software_update.model.json\",e+=\"?vin=\".concat(a,\"&year=\").concat(c,\"&brand=\").concat(u,\"&modelCode=\").concat(l,\"&mpc=\").concat(s)):r&&o&&i&&(e=\"/content/sdp/us/en/\"+n+\"/softwareupdates/software_update.model.json\",e+=\"?division=\".concat(n,\"&vehicle=\").concat(r,\"&modelYear=\").concat(o,\"&navigationType=\").concat(i))}Gt({method:\"get\",url:e,headers:{}}).then(e=>{200===e.status?(this.setState({dataLoaded:!0,carouselItems:e.data}),h(\"download_data\",JSON.stringify(e.data))):this.setState({dataLoaded:!0,carouselItems:null})}).catch(e=>{this.setState({dataLoaded:!0,carouselItems:null})})}checkFirmwareUr"
+}

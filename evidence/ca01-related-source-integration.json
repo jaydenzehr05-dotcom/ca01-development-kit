@@ -1,0 +1,1104 @@
+{
+  "downloaded_files": [
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/DENSO_TEN_17_OSS_SOFT_PACK.zip",
+      "size": 230096727,
+      "sha256": "d6d4a2cfae85b86209c4ae61d399238e6db63282c2f50df04aeb8378f96ebe5c",
+      "source_url": "https://www.denso-ten.com/support/source/oem/17/OSS_SOFT_PACK.zip"
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/T-SB-0024-20.pdf",
+      "size": 1049660,
+      "sha256": "f039ef03ba7200198010649e765721b184c2bf3076e17ab8377ffe0bdcdc8825",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10173804-9999.pdf"
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/TSB-2017-original.pdf",
+      "size": 919089,
+      "sha256": "609af2d234b80bd58c254292cbc0fe179accd6e3fd750d2de329ff1268d1430d",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10115270-9999.pdf"
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/TSB-2018-1127.pdf",
+      "size": 621042,
+      "sha256": "1cb9501e938721fc3564152a520aa0edf73548565fea9590bd9f3ae45e986d23",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10131675-9999.pdf"
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/TSB-2019-rev2.pdf",
+      "size": 1048963,
+      "sha256": "5200904be59040bc05c0989f4b52e61edb46b656a8efeac010e80e41dbe72ec7",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169441-9999.pdf"
+    }
+  ],
+  "selected_modules": [
+    {
+      "module": "Evoproxy_1.6.18",
+      "zip_member": "SRC/Open_SRC-17CY-r1067/Evoproxy_1.6.18.tar.xz",
+      "archive_sha256": "cfc998e9a618f6c5991d38253259120045d55a26a76fce686bcf2d62139d38c2",
+      "files": [
+        {
+          "archive_path": "Evoproxy_1.6.18/ep_main.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/Evoproxy_1.6.18/Evoproxy_1.6.18/ep_main.c",
+          "size": 16348,
+          "sha256": "06062cb7b7e54f100bc72813bec06549041a566a6d4a335b25324c942e70a589"
+        }
+      ]
+    },
+    {
+      "module": "evo_bvd_rca13",
+      "zip_member": "SRC/Open_SRC-17CY-r1067/evo_bvd_rca13.tar.xz",
+      "archive_sha256": "d983e8f9c888b6b7690dc4a7625a0cb8902138e8c57b92e970f962fce259a211",
+      "files": [
+        {
+          "archive_path": "evo_bvd/COPYING",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/COPYING",
+          "size": 18693,
+          "sha256": "af8067302947c01fd9eee72befa54c7e3ef8a48fecde7fd71277f2290b2bf0f7"
+        },
+        {
+          "archive_path": "evo_bvd/src/bvd_net_dev.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/src/bvd_net_dev.c",
+          "size": 21298,
+          "sha256": "f31cbff7e4f7e7bd2729c428f76d215fed948a095cfcfc0d10ff60a1ec1eaf15"
+        },
+        {
+          "archive_path": "evo_bvd/src/bvd_if_dev.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/src/bvd_if_dev.c",
+          "size": 12055,
+          "sha256": "342a4db274d87e09ce5f68fc36bc1d4f03c306a6cb5c7bbce1aed604d3ce9291"
+        },
+        {
+          "archive_path": "evo_bvd/src/bvd_tty_dev.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/src/bvd_tty_dev.c",
+          "size": 23217,
+          "sha256": "138d5efcfedd6047b801bf85664ade76c4e6fb018ad21533d1e4513e5e1bf058"
+        },
+        {
+          "archive_path": "evo_bvd/Makefile",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/Makefile",
+          "size": 1541,
+          "sha256": "9e47257ef31e3c9184f20370b1ce1912db7c9887bfb0b671981ea8cf88b09849"
+        },
+        {
+          "archive_path": "evo_bvd/.project",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/.project",
+          "size": 759,
+          "sha256": "936f6e5d2ca08fdde7681f28600859bd8dd56d437a9ad1e993bb63f6d98e797c"
+        },
+        {
+          "archive_path": "evo_bvd/.cproject",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/.cproject",
+          "size": 11944,
+          "sha256": "62c8fde82b7c53147d1062439860a20957306315c251b951d0dc3df4dadb306c"
+        },
+        {
+          "archive_path": "evo_bvd/include/bvd_tty_dev.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/include/bvd_tty_dev.h",
+          "size": 1631,
+          "sha256": "1ae9fd239543ba0a21609af8d2612489d7959400ce27782e9e7eb8292160a86d"
+        },
+        {
+          "archive_path": "evo_bvd/include/bvd_device.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/include/bvd_device.h",
+          "size": 2463,
+          "sha256": "1a5971d8a9b6a677c7f7f557c9f315f2ae848231aed30775c455cc5e79f107ac"
+        },
+        {
+          "archive_path": "evo_bvd/include/bvd_config.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/include/bvd_config.h",
+          "size": 1634,
+          "sha256": "f02abf75486c7c74344604ce1d0a956938d62f3da77e0a07822aa8e556680376"
+        },
+        {
+          "archive_path": "evo_bvd/include/bvd_net_dev.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/include/bvd_net_dev.h",
+          "size": 2423,
+          "sha256": "a0792cd394f0249c0f961a6beb1b5316fb6725ba28267d4fe1a5e7960e29f99d"
+        },
+        {
+          "archive_path": "evo_bvd/include/bvd_if_dev.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/include/bvd_if_dev.h",
+          "size": 1443,
+          "sha256": "15804fc88227e8abd5846a720c804c99482b637420b020c38ab1815e8e93e30d"
+        },
+        {
+          "archive_path": "evo_bvd/code_check/code_check.sh",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/code_check/code_check.sh",
+          "size": 1038,
+          "sha256": "49c126a4123b89bd360eb4bb235e793e86ce24c68658c07de8d840dd7af42d7e"
+        },
+        {
+          "archive_path": "evo_bvd/code_check/checkpatch.pl",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/code_check/checkpatch.pl",
+          "size": 97523,
+          "sha256": "3e4c1b29de2de3c3ca6c15cb489bb8ea82f8275242d956daec85b62a7c6c36db"
+        },
+        {
+          "archive_path": "evo_bvd/code_check/code_check_no_tree.sh",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/code_check/code_check_no_tree.sh",
+          "size": 1023,
+          "sha256": "f3aab5ef8a537c6a1b9b699729db6296adb45367d69e44591befdccddf8662b9"
+        }
+      ]
+    },
+    {
+      "module": "evo_hli_rca13",
+      "zip_member": "SRC/Open_SRC-17CY-r1067/evo_hli_rca13.tar.xz",
+      "archive_sha256": "fae982ee964b2aa18db74400dbb88173defb32e10ec51627112a6aa2c993010b",
+      "files": [
+        {
+          "archive_path": "evo_hli/COPYING",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/COPYING",
+          "size": 18693,
+          "sha256": "af8067302947c01fd9eee72befa54c7e3ef8a48fecde7fd71277f2290b2bf0f7"
+        },
+        {
+          "archive_path": "evo_hli/src/auto-run.sh",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/auto-run.sh",
+          "size": 521,
+          "sha256": "af64bad24798b85e6816fa12bdc6c64b0409ad49a6fa5e66e599b35ad67fc8ec"
+        },
+        {
+          "archive_path": "evo_hli/src/evo_dbus.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/evo_dbus.c",
+          "size": 3772,
+          "sha256": "48e96972d717a775c31ab3b9f734978c25f37decb712c81ac9a7d07851bd5897"
+        },
+        {
+          "archive_path": "evo_hli/src/queue.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/queue.c",
+          "size": 2058,
+          "sha256": "ba38c197345deb416fbb57b8d1c3be4d995b58c35304da9a41d00c5581eb8d60"
+        },
+        {
+          "archive_path": "evo_hli/src/emit_sig.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/emit_sig.c",
+          "size": 4290,
+          "sha256": "3e358688d8e92fbdb915a1843ec174acc03b65836350a235756c473a515c4c92"
+        },
+        {
+          "archive_path": "evo_hli/src/server.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/server.c",
+          "size": 3075,
+          "sha256": "2c3b6ea2307134087cb17218e8c255f4378768acab491be814367d0b487eae4b"
+        },
+        {
+          "archive_path": "evo_hli/src/client.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/client.c",
+          "size": 2699,
+          "sha256": "5bbc4ad0f769188cfc2a2e43048b93c8c00d56f552cddbd2f2adac2e56a769d1"
+        },
+        {
+          "archive_path": "evo_hli/src/stack.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/stack.c",
+          "size": 7270,
+          "sha256": "34044a809093135fa747acbb2c0e762b1f178e69a0a6b860f99dbb7bb9fb7072"
+        },
+        {
+          "archive_path": "evo_hli/src/dbus_evo.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/dbus_evo.c",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "archive_path": "evo_hli/src/dbus_map.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/dbus_map.c",
+          "size": 3600,
+          "sha256": "6a3925255fafd9daeb967c98963b4a97f5ff1f5301f8ce629e04e17cf9d8f733"
+        },
+        {
+          "archive_path": "evo_hli/src/Server_main.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/src/Server_main.c",
+          "size": 9139,
+          "sha256": "c4cbb9152298ca2cbc72cc2f2e848799b9d9e46431568f415cd066a5da4ae0ac"
+        },
+        {
+          "archive_path": "evo_hli/.project",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/.project",
+          "size": 831,
+          "sha256": "b709d1114a7d85a880110711f6e749bedb5a9b68d28e01757a8c83028c1f9513"
+        },
+        {
+          "archive_path": "evo_hli/.cproject",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/.cproject",
+          "size": 61926,
+          "sha256": "659c1a3736d258c16aace33cbf87891d38feac57ff83c5cc785637e891dc5431"
+        },
+        {
+          "archive_path": "evo_hli/include/server.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/server.h",
+          "size": 1452,
+          "sha256": "4a97b365956b46a4b89e4ce37e2b681137ae076eb48a6acf6d143ace26665acd"
+        },
+        {
+          "archive_path": "evo_hli/include/evo-marshal.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/evo-marshal.c",
+          "size": 213762,
+          "sha256": "4fcdeb7939a54e4294ae21c3e917a31a3b537c204c86e65a541edd86c3822789"
+        },
+        {
+          "archive_path": "evo_hli/include/sig_case.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/sig_case.h",
+          "size": 76414,
+          "sha256": "ff3f0cca6801b8f88713c3aed15903a6a217e521a82112b661845d27117416ef"
+        },
+        {
+          "archive_path": "evo_hli/include/sig_def_enum.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/sig_def_enum.h",
+          "size": 19374,
+          "sha256": "33bc2d8d6797bdeb78085e698a472122d7323564d185e25df4fa00b692601c97"
+        },
+        {
+          "archive_path": "evo_hli/include/client.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/client.h",
+          "size": 1463,
+          "sha256": "a7043d8aa67652c0505db01a6685a62096f40f048217dd81da63ad2bf40b0fba"
+        },
+        {
+          "archive_path": "evo_hli/include/hif.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/hif.h",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "archive_path": "evo_hli/include/queue.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/queue.h",
+          "size": 1463,
+          "sha256": "461d680bdaa91ce840fe14a65d05f67474ec3cea0419f700bd71170a3d33903c"
+        },
+        {
+          "archive_path": "evo_hli/include/dbus_evo.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/dbus_evo.h",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "archive_path": "evo_hli/include/sms-marshal.list",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/sms-marshal.list",
+          "size": 5456,
+          "sha256": "f977ab12a92e9d93c184e00614e0bf64c809b506e824334b19624f1d13978fe2"
+        },
+        {
+          "archive_path": "evo_hli/include/emit_sig.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/emit_sig.h",
+          "size": 1098,
+          "sha256": "9f8a12c8f9d6fe9fda015594a91cb4c88b525a9e3f8ac099286152f1afa35bbc"
+        },
+        {
+          "archive_path": "evo_hli/include/dbus_map.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/dbus_map.h",
+          "size": 1040,
+          "sha256": "ebfcaf958350cec02d23f6c12198476e486ab968d23e3db9e1f9d83c0607b143"
+        },
+        {
+          "archive_path": "evo_hli/include/stack.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/stack.h",
+          "size": 1456,
+          "sha256": "bafa5b9dab4dbbb80b79b3b617fd36846147aa1d1429f0597b41ac277bc12bd1"
+        },
+        {
+          "archive_path": "evo_hli/include/readme.txt",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/readme.txt",
+          "size": 429,
+          "sha256": "e174b55a4f19b3864c4a67a002f6676c4e38570b7f0af4c4c983b51b437f63e4"
+        },
+        {
+          "archive_path": "evo_hli/include/sig_param_emit.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/sig_param_emit.h",
+          "size": 63040,
+          "sha256": "258b38c59007647477f3f88f8c438d4c2159de6da16aa619a2c0014491d1bcca"
+        },
+        {
+          "archive_path": "evo_hli/include/evo_dbus.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/evo_dbus.h",
+          "size": 1706,
+          "sha256": "1d9dc8684f2ac255f7fab9b868c3c5fc396ab895ce787f18c9aaeaead4dab79e"
+        },
+        {
+          "archive_path": "evo_hli/include/sig_def.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/sig_def.h",
+          "size": 153749,
+          "sha256": "7830555808a045a8fcba98b2613b00a16489b4e560e5c4ef6ccf5f7504044f66"
+        },
+        {
+          "archive_path": "evo_hli/include/comdef.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/comdef.h",
+          "size": 1014,
+          "sha256": "701c4479a2476cdab136a96442804cc5948e32db2447c8dc256b47f93840d03f"
+        },
+        {
+          "archive_path": "evo_hli/include/evo-marshal.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/evo-marshal.h",
+          "size": 61749,
+          "sha256": "f98357ac4cc86d0668b8099be1facc5c2f160dbb7760be75739dfb35adf94ae1"
+        },
+        {
+          "archive_path": "evo_hli/include/evolution_req.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/evolution_req.h",
+          "size": 170828,
+          "sha256": "47cce2566195b187bc911bc8c661be4708760d7395a937a69d0af735673a4284"
+        },
+        {
+          "archive_path": "evo_hli/include/sig_realize.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/sig_realize.h",
+          "size": 193213,
+          "sha256": "dd2ecc046a21f3a4e14960a91866b2cf58f72a39339c192f89ae8c46c51285d5"
+        },
+        {
+          "archive_path": "evo_hli/include/marshallers.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/marshallers.h",
+          "size": 19365,
+          "sha256": "b73970d6fb2258a8c5b122cab0a772ddc84ff0cc04cc33407e7eeffa43ea0229"
+        },
+        {
+          "archive_path": "evo_hli/include/evolution_req_extern.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/evolution_req_extern.h",
+          "size": 39320,
+          "sha256": "b816f8f3d510e3c8cdbe03ef68511070052217324bd98a6fbe5f2723b41fe8e4"
+        },
+        {
+          "archive_path": "evo_hli/include/btcmd-glue.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/btcmd-glue.h",
+          "size": 304864,
+          "sha256": "c4fbac69b7549bc7f635f41c7f6af47da6758c2337671d5b2c72ee17bacc1be1"
+        },
+        {
+          "archive_path": "evo_hli/include/BT-CMD.xml",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/BT-CMD.xml",
+          "size": 132233,
+          "sha256": "783d76f0d00eb6339858a444137997037bc0e7bfaef624368c329ce2969010d0"
+        }
+      ]
+    },
+    {
+      "module": "evo_socket_adapter_rca13",
+      "zip_member": "SRC/Open_SRC-17CY-r1067/evo_socket_adapter_rca13.tar.xz",
+      "archive_sha256": "3bd20edb2ce52b58fd70c7f9f5e1733fb67b846b67765aa497691117b3ba57b8",
+      "files": [
+        {
+          "archive_path": "evo_socket_adapter/COPYING",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/COPYING",
+          "size": 18693,
+          "sha256": "af8067302947c01fd9eee72befa54c7e3ef8a48fecde7fd71277f2290b2bf0f7"
+        },
+        {
+          "archive_path": "evo_socket_adapter/src/alps_socket_layer_client.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/src/alps_socket_layer_client.c",
+          "size": 5361,
+          "sha256": "0b3849dbd58eaa6e2f0090c31762b811b7e26d0d22df2fa386cd9229f9a8506a"
+        },
+        {
+          "archive_path": "evo_socket_adapter/src/alps_client_encode.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/src/alps_client_encode.h",
+          "size": 1346,
+          "sha256": "c6292a0c04d6ccf717b57f81308f88927e78815155d0a3c53fbce36db40f8257"
+        },
+        {
+          "archive_path": "evo_socket_adapter/src/alps_client_encode.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/src/alps_client_encode.c",
+          "size": 2490,
+          "sha256": "98128c817aa0206e2e8bb71390ff5266f1fe88efff880c367d8fc32cd4882175"
+        },
+        {
+          "archive_path": "evo_socket_adapter/src/alps_btappl_interface.c",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/src/alps_btappl_interface.c",
+          "size": 2786,
+          "sha256": "58e31cedef1886fbe4741c12cedffdf304cc84f39be9b6bdf00fb30549a9f25d"
+        },
+        {
+          "archive_path": "evo_socket_adapter/.project",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/.project",
+          "size": 770,
+          "sha256": "dc8e7fdc5d642f00b4894b2f3f558146cb27e262335aa43fc196428d02d7cd30"
+        },
+        {
+          "archive_path": "evo_socket_adapter/.cproject",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/.cproject",
+          "size": 73358,
+          "sha256": "598533269cefc68b898ee9c79047ec4d0367dcf329ae80ee05d6c15c43d66230"
+        },
+        {
+          "archive_path": "evo_socket_adapter/include/alps_socket_layer_common.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/include/alps_socket_layer_common.h",
+          "size": 1777,
+          "sha256": "639d56abee1825270a0d7adc2310b683b3b99cf289309c90cfc849087eeeefbc"
+        },
+        {
+          "archive_path": "evo_socket_adapter/include/evo_socket_adapter.h",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/include/evo_socket_adapter.h",
+          "size": 2183,
+          "sha256": "0810a454c6e723545d2a273cf6933e17ed6927cc90fec3995741be38b029bade"
+        },
+        {
+          "archive_path": "evo_socket_adapter/Socket Adapter API.doc",
+          "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/Socket Adapter API.doc",
+          "size": 77312,
+          "sha256": "3425a78777779eb6bc6a500ea1cdfe6fd0e1c02867888725b9c737760d24ef77"
+        }
+      ]
+    }
+  ],
+  "zip_entries": 95,
+  "zip_crc_error": null,
+  "zip_members": [
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/acl_2.2.52-r0.tar.xz",
+      "size": 331792,
+      "compressed_size": 331897
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/alsa-lib_1.0.27.2-r0.tar.xz",
+      "size": 722508,
+      "compressed_size": 722733
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/alsa-tools_1.0.27-r0.tar.xz",
+      "size": 642176,
+      "compressed_size": 642376
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/alsa-utils_1.0.27.2-r0.tar.xz",
+      "size": 1252512,
+      "compressed_size": 1252897
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/attr_2.4.47-r0.tar.xz",
+      "size": 299464,
+      "compressed_size": 299559
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/audit_2.4.3-r8.tar.xz",
+      "size": 666840,
+      "compressed_size": 667045
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/avahi_0.6.31-r11.1.tar.xz",
+      "size": 755948,
+      "compressed_size": 756183
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/base-files_3.0.14-r86.tar.xz",
+      "size": 64804,
+      "compressed_size": 64824
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/base-passwd_3.5.29-r0.tar.xz",
+      "size": 90768,
+      "compressed_size": 90798
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/bash_3.2.48-r11.tar.xz",
+      "size": 1784428,
+      "compressed_size": 1784973
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/bc_1.06-r2.tar.xz",
+      "size": 309872,
+      "compressed_size": 309967
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/bridge-utils_1.5-r0.tar.xz",
+      "size": 193600,
+      "compressed_size": 193660
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/busybox_1.22.1-r0.1.tar.xz",
+      "size": 3102956,
+      "compressed_size": 3103906
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/cairo_1.12.16-r0.tar.xz",
+      "size": 37137116,
+      "compressed_size": 37141911
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/checkpolicy_2.3-r0.tar.xz",
+      "size": 55036,
+      "compressed_size": 55056
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/coreutils_6.9-r5.tar.xz",
+      "size": 3975740,
+      "compressed_size": 3976928
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/davfs2_1.3.3-r0.tar.xz",
+      "size": 404620,
+      "compressed_size": 404745
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/dbus-glib_0.100.2-r0.tar.xz",
+      "size": 516864,
+      "compressed_size": 517024
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/dbus_1.6.18-r0.tar.xz",
+      "size": 1323436,
+      "compressed_size": 1323841
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/e2fsprogs_1.42.9-r0.tar.xz",
+      "size": 4842972,
+      "compressed_size": 4843586
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/eglibc_2.19-r0.tar.xz",
+      "size": 13634072,
+      "compressed_size": 13638232
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/ethtool_3.13-r0.tar.xz",
+      "size": 218420,
+      "compressed_size": 218490
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/Evoproxy_1.6.18.tar.xz",
+      "size": 3896,
+      "compressed_size": 3901
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/evo_bvd_rca13.tar.xz",
+      "size": 46592,
+      "compressed_size": 46607
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/evo_hli_rca13.tar.xz",
+      "size": 83752,
+      "compressed_size": 83782
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/evo_socket_adapter_rca13.tar.xz",
+      "size": 38176,
+      "compressed_size": 38191
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/findutils_4.2.31-r4.2.tar.xz",
+      "size": 873156,
+      "compressed_size": 873426
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/flac_1.3.0-r0.tar.xz",
+      "size": 1411264,
+      "compressed_size": 1411699
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/freetype-2.5.2-r0.tar.xz",
+      "size": 1463596,
+      "compressed_size": 1464046
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/fuse_2.9.3-r0.tar.xz",
+      "size": 460736,
+      "compressed_size": 460881
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/gconf_3.2.6-r0.tar.xz",
+      "size": 1579856,
+      "compressed_size": 1580341
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/glib-2.0_2.38.2-r0.tar.xz",
+      "size": 7158808,
+      "compressed_size": 7160937
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/gnutls_2.12.23-r8.4.tar.xz",
+      "size": 3704652,
+      "compressed_size": 3705401
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/grep_2.5.1a-r2.tar.xz",
+      "size": 605132,
+      "compressed_size": 605317
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/gstreamer1.0-omx_1.0.0-r1.tar.xz",
+      "size": 1365536,
+      "compressed_size": 1365956
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/gstreamer1.0-plugins-bad_1.2.3-r0.tar.xz",
+      "size": 4641456,
+      "compressed_size": 4642814
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/gstreamer1.0-plugins-base_1.2.3-r0.tar.xz",
+      "size": 3631352,
+      "compressed_size": 3632462
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/gstreamer1.0-plugins-good_1.2.3-r0.tar.xz",
+      "size": 4003292,
+      "compressed_size": 4004517
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/gstreamer1.0-plugins-ugly_1.2.3-r0.tar.xz",
+      "size": 1713384,
+      "compressed_size": 1713909
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/gstreamer1.0_1.2.3-r0.tar.xz",
+      "size": 3647364,
+      "compressed_size": 3648449
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/init-ifupdown_1.0-r7.tar.xz",
+      "size": 216,
+      "compressed_size": 216
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/initscripts_1.0-r155.3.tar.xz",
+      "size": 7820,
+      "compressed_size": 7825
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/iproute2_3.12.0-r0.tar.xz",
+      "size": 428780,
+      "compressed_size": 428915
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/iptables_1.4.21-r0.tar.xz",
+      "size": 474420,
+      "compressed_size": 474565
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/iputils_s20101006-r6.tar.xz",
+      "size": 96492,
+      "compressed_size": 96522
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/kbd_2.0.1-r0.tar.xz",
+      "size": 1013196,
+      "compressed_size": 1013506
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/kmod_16+git0+36c4bb928a-r0.tar.xz",
+      "size": 1470196,
+      "compressed_size": 1470551
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libcap-ng_0.7.7-r0.tar.xz",
+      "size": 326660,
+      "compressed_size": 326760
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libcgroup_0.41-r0.3.tar.xz",
+      "size": 427260,
+      "compressed_size": 427395
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libdaemon_0.14-r0.tar.xz",
+      "size": 273628,
+      "compressed_size": 273713
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libgcrypt_1.5.3-r0.tar.xz",
+      "size": 1349396,
+      "compressed_size": 1349811
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libgpg-error_1.12-r0.tar.xz",
+      "size": 429028,
+      "compressed_size": 429163
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libmemcpy_1.0-r0.tar.xz",
+      "size": 273828,
+      "compressed_size": 273913
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libmtp_1.1.5-r0.tar.xz",
+      "size": 564540,
+      "compressed_size": 564715
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libnl_3.2.23-r0.tar.xz",
+      "size": 598852,
+      "compressed_size": 599037
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libnss-mdns_0.10-r7.tar.xz",
+      "size": 258452,
+      "compressed_size": 258532
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libomxil_0.9.3-r0.tar.xz",
+      "size": 397412,
+      "compressed_size": 397537
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libproxy_0.4.11-r0.tar.xz",
+      "size": 76096,
+      "compressed_size": 76121
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libsamplerate0_0.1.8-r1.tar.xz",
+      "size": 3340864,
+      "compressed_size": 3341884
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libsemanage_2.3-r0.tar.xz",
+      "size": 151460,
+      "compressed_size": 151510
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libsepol_2.3-r0.tar.xz",
+      "size": 156020,
+      "compressed_size": 156070
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libsndfile1_1.0.25-r2.tar.xz",
+      "size": 657792,
+      "compressed_size": 657997
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libsoup-2.4_2.45.3-r0.tar.xz",
+      "size": 791036,
+      "compressed_size": 791281
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libtasn1_3.4-r0.tar.xz",
+      "size": 1256068,
+      "compressed_size": 1255844
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libtool_2.4.2-r6.0.tar.xz",
+      "size": 911428,
+      "compressed_size": 911680
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libusb1_1.0.9-r1.tar.xz",
+      "size": 424188,
+      "compressed_size": 424312
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/libwebsockets_1.23-r0.tar.xz",
+      "size": 2719764,
+      "compressed_size": 2720190
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/linux-kernel-3.10.101-ltsi_3.10+svnr836-r0.tar.xz",
+      "size": 77130352,
+      "compressed_size": 77153882
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/media-ctl_0.0.1+git0+114c1b274e-r4.tar.xz",
+      "size": 355480,
+      "compressed_size": 355590
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/neon_0.30.0-r0.tar.xz",
+      "size": 651364,
+      "compressed_size": 651564
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/net-tools_1.60-25-r0.2.tar.xz",
+      "size": 297064,
+      "compressed_size": 297159
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/netbase_5.2-r0.tar.xz",
+      "size": 31508,
+      "compressed_size": 31518
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/opkg-utils_0.1.8+git0+c33b217016-r0.tar.xz",
+      "size": 30248,
+      "compressed_size": 30258
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/policycoreutils_2.3-r0.tar.xz",
+      "size": 2197692,
+      "compressed_size": 2198367
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/ppp_2.4.6-r0.tar.xz",
+      "size": 462204,
+      "compressed_size": 462349
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/procps_3.2.8-r11.tar.xz",
+      "size": 225532,
+      "compressed_size": 225602
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/psmisc_22.21-r0.2.tar.xz",
+      "size": 311216,
+      "compressed_size": 311311
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/readline_5.2-r9.tar.xz",
+      "size": 1438952,
+      "compressed_size": 1439392
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/refpolicy-standard_2.20141203-r0.tar.xz",
+      "size": 762324,
+      "compressed_size": 762559
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/rsync_2.6.9-r4.tar.xz",
+      "size": 584824,
+      "compressed_size": 585004
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/sepolgen_1.2.1-r0.tar.xz",
+      "size": 253744,
+      "compressed_size": 253824
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/setools_3.3.8-r0.tar.xz",
+      "size": 1298888,
+      "compressed_size": 1299260
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/simple-mtpfs_0.2-r0.tar.xz",
+      "size": 230256,
+      "compressed_size": 230331
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/smem_0.9-r0.tar.xz",
+      "size": 13816,
+      "compressed_size": 13821
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/sysfsutils_2.1.0-r5.tar.xz",
+      "size": 291552,
+      "compressed_size": 291642
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/syslog-ng_3.2.5-r12.1.tar.xz",
+      "size": 880036,
+      "compressed_size": 880306
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/sysstat_10.2.1-r0.tar.xz",
+      "size": 420996,
+      "compressed_size": 421126
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/sysvinit-inittab_2.88dsf-r10.tar.xz",
+      "size": 220,
+      "compressed_size": 220
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/sysvinit_2.88dsf-r11.2.tar.xz",
+      "size": 255796,
+      "compressed_size": 255876
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/tar_1.17-r3.tar.xz",
+      "size": 1493088,
+      "compressed_size": 1493548
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/udev_182-r7.4.tar.xz",
+      "size": 706576,
+      "compressed_size": 706796
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/update-rc.d_0.7-r5.tar.xz",
+      "size": 9540,
+      "compressed_size": 9545
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/util-linux_2.24.1-r0.3.tar.xz",
+      "size": 3776140,
+      "compressed_size": 3777277
+    },
+    {
+      "path": "SRC/Open_SRC-17CY-r1067/wireless-tools_30.pre9-r0.tar.xz",
+      "size": 423640,
+      "compressed_size": 423770
+    },
+    {
+      "path": "SRC/u-boot+svnr466-r0.tar.xz",
+      "size": 7852888,
+      "compressed_size": 7855288
+    }
+  ],
+  "kernel_version_makefiles": [
+    {
+      "path": "linux-kernel-3.10.101-ltsi_3.10+svnr836-r0/Makefile",
+      "sha256": "66063d69c60b47108049048baa3f89844280ac33bed6eb5c73ad4c6925d74f37",
+      "version_fields": [
+        "VERSION = 3",
+        "PATCHLEVEL = 10",
+        "SUBLEVEL = 101",
+        "EXTRAVERSION = -ltsi"
+      ],
+      "text": "VERSION = 3\nPATCHLEVEL = 10\nSUBLEVEL = 101\nEXTRAVERSION = -ltsi\nNAME = TOSSUG Baby Fish\n\n# *DOCUMENTATION*\n# To see a list of typical targets execute \"make help\"\n# More info can be located in ./README\n# Comments in this file are targeted only to the developer, do not\n# expect to learn how to build the kernel reading this file.\n\n# Do not:\n# o  use make's built-in rules and variables\n#    (this increases performance and avoids hard-to-debug behaviour);\n# o  print \"Entering directory ...\";\nMAKEFLAGS += -rR --no-print-directory\n\n# Avoid funny character set dependencies\nunexport LC_ALL\nLC_COLLATE=C\nLC_NUMERIC=C\nexport LC_COLLATE LC_NUMERIC\n\n# We are using a recursive build, so we need to do a lit"
+    }
+  ],
+  "scope": "Independent offline validation of supplied related-firmware materials; no new firmware acquired, no selected middleware executed, no ABI compatibility inferred.",
+  "source_materials": [
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/DOWNLOAD_MANIFEST.json",
+      "size": 885,
+      "sha256": "54087508039e31f8ede7f08b952e6ecee39ca48066d7371f70621bbe3f04f05e"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/RESEARCH_REPORT.md",
+      "size": 4918,
+      "sha256": "7600983de9f629084313bebdf78284e297ac111a1dd7c86b3b24e6c9c4d3a987"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/bulletin-downloads.json",
+      "size": 903,
+      "sha256": "213eb0c76c536ed40b6d80ed9be709c0d6b1e1ab70370366e620735d0718f727"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/evo-inspection.json",
+      "size": 6175,
+      "sha256": "de8fbc85f3f68228d894f1f6ecbbec122059e8415db52e731b879fbe38f3a1d8"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/hardware-source-comparison.json",
+      "size": 8423,
+      "sha256": "492b4f131936a5ba6457a1915db20797c3fc3d8229d0e786dfcbfa96b134f73a"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/oss-comparison.json",
+      "size": 3241,
+      "sha256": "702c8c050bf66a23bd8f9fb6eee5208c6d7e989ba0f5f5ab455d33b77e5c418c"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/ca-controls.json",
+      "size": 44628,
+      "sha256": "f0ed2786666612bc2617ffb57760ddea686b83c784ea7170513b381c04e2740f"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/ca-form.html",
+      "size": 3833,
+      "sha256": "f7c7e095c38bf86113641bc951d3324c19293b62d0a480274a1543a316c7d400"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/ca-model-navigation.json",
+      "size": 18685,
+      "sha256": "4745c6b5f935c201f343a6b2e0d0373c76960f5fde9a8d69c523e275be2f1c24"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/ca-page.html",
+      "size": 828777,
+      "sha256": "a0112bba0fb066fabd49b67170c56e3ce6a8d4bae4b8e87ed2152358ee685a51"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/ca-rav4-longwait.json",
+      "size": 7512,
+      "sha256": "f17fa4c830bf61f95792352e95099b3f182c53825e9490095e68b1ba80e63557"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/ca-text.txt",
+      "size": 5705,
+      "sha256": "4a5300546012a8fad657bfcb1245860d6910b1725ae2b13537cb76f3145794e3"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/us-controls.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/us-page.html",
+      "size": 262,
+      "sha256": "b2fb49c8150eefec991d173a580c9671de47c33a3ed6987e39187e127f6dc29d"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/site-inspection/us-text.txt",
+      "size": 78,
+      "sha256": "d1b010b7406eaddf3ce65bf4a282c8031740aaf7bde1a2901762a07b1a984a95"
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/source-probe.json",
+      "size": 3692,
+      "sha256": "7da552badd39205dfd792b63001a9b540ce5fa4b06efb3d570362c8ab760b485"
+    }
+  ],
+  "source_contracts": [
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/Evoproxy_1.6.18/Evoproxy_1.6.18/ep_main.c",
+      "sha256": "06062cb7b7e54f100bc72813bec06549041a566a6d4a335b25324c942e70a589",
+      "start_line": 32,
+      "end_line": 40,
+      "observation": "POSIX queues /toevoproxy and /fromevoproxy; org.alps.evolution session bus IPC",
+      "excerpt": "#define EP_MSGQ_RX\t\t\t\"/toevoproxy\"\n#define EP_MSGQ_TX\t\t\t\"/fromevoproxy\"\n\n#define EP_DCON_BUS_TYPE\tDBUS_BUS_SESSION\n#define EP_DCON_BUS_SERVER\t\"org.alps.evolution\"\n#define EP_DCON_BUS_PATH\t\"/org/alps/evolution/hli\"\n#define EP_DCON_BUS_IF\t\t\"org.alps.evolution.hli\"\n#define EP_DCON_BUS_SEND\t\"SendMessage\"\n#define EP_DCON_BUS_RECV\t\"IncomingMessage\""
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_hli_rca13/evo_hli/include/BT-CMD.xml",
+      "sha256": "783d76f0d00eb6339858a444137997037bc0e7bfaef624368c329ce2969010d0",
+      "start_line": 1,
+      "end_line": 28,
+      "observation": "D-Bus SendMessage and IncomingMessage av schema; Bluetooth request/confirmation",
+      "excerpt": "<node name=\"/org/alps/evolution/hli\">\n  <interface name=\"org.alps.evolution.hli\">\n    <method name=\"SendMessage\">\n      <arg direction=\"in\" name=\"param\" type=\"av\"/>\n    </method>\n    <signal name=\"IncomingMessage\">\n      <arg name=\"param\" type=\"av\"/>\n    </signal>\n    <method name=\"BtApplHfVolumeControlReq\">\n      <arg direction=\"in\" name=\"instance\" type=\"y\"/>\n      <arg direction=\"in\" name=\"type\" type=\"y\"/>\n      <arg direction=\"in\" name=\"volume\" type=\"y\"/>\n    </method>\n    <signal name=\"BtApplHfVolumeControlCfm\">\n      <arg name=\"instance\" type=\"y\"/>\n      <arg name=\"status\" type=\"y\"/>\n      <arg name=\"code\" type=\"y\"/>\n    </signal>\n    <method name=\"BtApplGetStatusReq\">\n      <arg direction=\"in\" name=\"instance\" type=\"y\"/>\n      <arg direction=\"in\" name=\"status_id\" type=\"u\"/>\n    </method>\n    <signal name=\"BtApplGetStatusCfm\">\n      <arg name=\"status\" type=\"y\"/>\n      <arg name=\"instance\" type=\"y\"/>\n      <arg name=\"status_id\" type=\"u\"/>\n      <arg name=\"length\" type=\"u\"/>\n      <arg name=\"data\" type=\"ay\"/>"
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/include/alps_socket_layer_common.h",
+      "sha256": "639d56abee1825270a0d7adc2310b683b3b99cf289309c90cfc849087eeeefbc",
+      "start_line": 41,
+      "end_line": 41,
+      "observation": "/var/tmp/alps_sock_serv",
+      "excerpt": "#define ALPS_SERVER_SOCK_NAME    \"/var/tmp/alps_sock_serv\""
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_socket_adapter_rca13/evo_socket_adapter/src/alps_socket_layer_client.c",
+      "sha256": "0b3849dbd58eaa6e2f0090c31762b811b7e26d0d22df2fa386cd9229f9a8506a",
+      "start_line": 127,
+      "end_line": 177,
+      "observation": "AF_UNIX SOCK_STREAM client",
+      "excerpt": "int alps_btappl_cli_conn(const char *name)\n{\n    int                 fd, len;\n    struct sockaddr_un  un;\n\n    if ((fd = socket(AF_UNIX, SOCK_STREAM, 0)) < 0) {\n        printf(\"create socket fail.\\n\");\n        return -1;\n    }\n\n    /* fill socet address structure with server's address */\n    memset(&un, 0, sizeof(un));\n    un.sun_family = AF_UNIX;\n    strcpy(un.sun_path, name);\n    len = offsetof(struct sockaddr_un, sun_path) + strlen(un.sun_path);\n\n    while (connect(fd, (struct sockaddr *)&un, len) < 0) {\n        usleep(10000);\n    }\n\n    return fd;\n}\n\nvoid alps_btappl_client_destroy(alps_btappl_client_t *client)\n{\n    if (alps_btappl_client_bvalid(client) == 0) {\n        return;\n    }\n\n    close(client->clientfd);\n\n    client->clientfd = -1;\n    btappl_client.recvlen = 0;\n    memset(btappl_client.inbuf, 0, ALPS_MSG_BUF_SIZE);\n    memset(btappl_client.outbuf, 0, ALPS_MSG_BUF_SIZE);\n    pthread_mutex_destroy(&(btappl_client.snd_mtx));\n\n    return;\n}\n\nalps_btappl_client_t * alps_btappl_client_init(void)\n{\n    int fd;\n\n    btappl_client.clientfd = -1;\n    btappl_client.recvlen = 0;\n    memset(btappl_client.inbuf, 0, ALPS_MSG_BUF_SIZE);\n    memset(btappl_client.outbuf, 0, ALPS_MSG_BUF_SIZE);\n    pthread_mutex_init(&(btappl_client.snd_mtx), NULL);\n\n    fd = alps_btappl_cli_conn(ALPS_SERVER_SOCK_NAME);"
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/include/bvd_if_dev.h",
+      "sha256": "15804fc88227e8abd5846a720c804c99482b637420b020c38ab1815e8e93e30d",
+      "start_line": 29,
+      "end_line": 33,
+      "observation": "BVD ioctl magic B commands70-72",
+      "excerpt": "#define BVD_IOCTL_MAGIC_NUM    ('B')\n\n#define BVD_IOCTL_CREATE_DEVICE\t\t_IOW(BVD_IOCTL_MAGIC_NUM, 70, int)\n#define BVD_IOCTL_RELEASE_DEVICE\t_IO(BVD_IOCTL_MAGIC_NUM, 71)\n#define BVD_IOCTL_GET_DEVICE_STATUS\t_IOR(BVD_IOCTL_MAGIC_NUM, 72, int)"
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/src/bvd_if_dev.c",
+      "sha256": "342a4db274d87e09ce5f68fc36bc1d4f03c306a6cb5c7bbce1aed604d3ce9291",
+      "start_line": 480,
+      "end_line": 481,
+      "observation": "bvd_if_cdev control node",
+      "excerpt": "\tdevice_create(bvd_if_dev_driver_class, NULL,\n\t\t\t\t  dev, NULL, \"%s\", \"bvd_if_cdev\");"
+    },
+    {
+      "local_path": "/home/starlight/projects/rav4-radio/related-firmware/selected-source/evo_bvd_rca13/evo_bvd/include/bvd_tty_dev.h",
+      "sha256": "1ae9fd239543ba0a21609af8d2612489d7959400ce27782e9e7eb8292160a86d",
+      "start_line": 27,
+      "end_line": 28,
+      "observation": "GET_TIOCM73 SET_MODEM_STATUS74",
+      "excerpt": "#define BVD_IOCTL_TTY_GET_TIOCM\t\t\t\t_IOR('B', 73, long)\n#define BVD_IOCTL_TTY_SET_MODEM_STATUS\t\t_IOW('B', 74, int)"
+    }
+  ],
+  "accuracy_corrections": [
+    {
+      "field": "hardware-source-comparison.json.new_kernel_makefile",
+      "finding": "Contains net/Makefile, not the version-defining root Makefile. Actual root Makefile independently confirms3.10.101-ltsi."
+    },
+    {
+      "field": "RESEARCH_REPORT.md libmmap_hw.so",
+      "finding": "Not in current89 missing library names or file dependency records; not an established CA01 requirement."
+    },
+    {
+      "field": "evo-inspection.json CAN matches",
+      "finding": "Substring hits do not establish CAN protocol support; verified contracts in selected modules are Bluetooth IPC/virtual-device interfaces."
+    },
+    {
+      "field": "hardware-source-comparison.json missing_generic_candidates",
+      "finding": "Name-based candidate grouping is not evidence the archive provides those SONAMEs or an ABI-compatible implementation."
+    }
+  ],
+  "integration_effect": {
+    "new_complete_firmware_files": 0,
+    "new_verified_missing_library_providers": 0,
+    "recovered_files": 59,
+    "arm_elfs": 41,
+    "runtime_missing": {
+      "PROC_HMI": 17,
+      "PROC_DISPLAY": 47,
+      "PROC_REPRO": 18
+    }
+  }
+}

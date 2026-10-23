@@ -4,6 +4,16 @@ This project targets the Fujitsu Ten `15TBDANA-CA01` platform. The source
 archives are **board-support references**, not a proven build of the production
 RAV4 firmware. Do not equate archive file presence with installed driver support.
 
+## Current recovered/runtime inventory
+
+The integrated collection has 59 complete recovered files (21 ARM executables,
+20 ARM shared libraries and 18 other files). See the hash-verified
+[dependency inventory](docs/CA01_DEPENDENCY_INVENTORY.md) and
+[local consolidation](docs/CA01_LOCAL_CONSOLIDATION.md). The recovery-only set
+is missing 89 requested library names; the installed ARMEL environment supplies
+some system dependencies. Fresh isolated traces leave HMI 17, Display 47 and
+Repro 18 unresolved names. No complete radio or stock GUI boot is established.
+
 ## What is available
 
 - Fujitsu Ten / Renesas ARM Linux kernel and bootloader sources in the Denso Ten
@@ -57,3 +67,7 @@ A decompiler cannot recover source from encrypted/unknown update payloads
 without first identifying their internal representation. The existing source
 is useful for building a **development Linux image**, but a working physical
 radio has *not* been demonstrated. Do not flash unverified images.
+
+## Related-source integration
+
+The verified DENSO TEN17 archive and63 selected source files are inventoried outside Git with hashes and original URLs. Linux3.10.101-ltsi and Evo Bluetooth interfaces are useful comparison sources, not a replacement CA01 rootfs or established ABI match. See [source recovery and related-firmware inventory](docs/CA01_RELATED_FIRMWARE_AND_SOURCES.md).

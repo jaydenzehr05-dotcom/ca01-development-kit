@@ -1,0 +1,183 @@
+{
+  "scope": "Verified local consolidation of firmware research, ARM emulation and related-source investigation. No push, deployment or hardware interaction.",
+  "main_base": "e30031dd527c2dd05667316904d48223509d221b",
+  "research_commit": "a562b3b3ca8ba91f697b2b8624cb0aeea9f8e479",
+  "research_uncommitted_files_preserved": 20,
+  "main_original_untracked_files_preserved": 11,
+  "research_worktree_unchanged": true,
+  "preservation": {
+    "complete_recovered_files": 59,
+    "arm_elf_files": 41,
+    "partial_artifacts_verified": 82,
+    "search_artifacts_verified": 39,
+    "research_worktree_unchanged": true,
+    "originals": {
+      "stock-firmware/15TBDANA-CA01_1127.kwi": "39431b79ed849be627c13be586019ceaab34470a534b76c385f73f1748d367ca",
+      "vendor-source/OSS_SOFT_PACK.tgz": "32d36d304284f03bab05f3c1457124e4c162c0163ac683ac5e6091403f6e3bf9",
+      "vendor-source/20130619_LE2355.tgz": "534800cc7991dfd29d72ce68ab750833cad3eea5d4f8fac0bffa6fc1e6dfb29e"
+    }
+  },
+  "tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v",
+    "passed": 71,
+    "failed": 0,
+    "new_interpreter_regressions": 4
+  },
+  "static_inventory": {
+    "files": 59,
+    "elfs": 41,
+    "arm_executables": 21,
+    "arm_shared_libraries": 20,
+    "missing_library_names": 89
+  },
+  "armel_direct_inventory": {
+    "unique_unresolved": 78
+  },
+  "loader_results": [
+    {
+      "program": "PROC_HMI",
+      "inspection_succeeded": true,
+      "resolved": 15,
+      "unresolved": 17,
+      "missing_libraries": [
+        "libGLES_CM.so",
+        "libLMMDB_IF.so",
+        "libOpenVG.so",
+        "libVRS_IF.so",
+        "libadi_ct.so",
+        "libcva_db.so",
+        "libdismng_if.so",
+        "libdisplay_if.so",
+        "libgpo_ct.so",
+        "libipas_fls.so",
+        "libipas_pcd.so",
+        "libipas_std.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libmir_if.so",
+        "libspc_if.so",
+        "libuie_db.so"
+      ],
+      "application_started": false
+    },
+    {
+      "program": "PROC_DISPLAY",
+      "inspection_succeeded": true,
+      "resolved": 22,
+      "unresolved": 47,
+      "missing_libraries": [
+        "libAdlBt.so",
+        "libIFLB_NAVIIF.so",
+        "libIFLB_REPRO.so",
+        "libLMMDB_IF.so",
+        "libNTWSET_IF.so",
+        "libVRS_IF.so",
+        "libadi_ct.so",
+        "libasoundex.so",
+        "libdismng_if.so",
+        "libdsv_api.so",
+        "libdsv_db.so",
+        "libecli.so",
+        "libgpo_ct.so",
+        "libgps_ct.so",
+        "libgsp.so",
+        "libhmi_if.so",
+        "libiflb_btm.so",
+        "libinit.so",
+        "libipas_apc.so",
+        "libipas_can.so",
+        "libipas_fls.so",
+        "libipas_lcn.so",
+        "libipas_mda.so",
+        "libipas_pcd.so",
+        "libipas_pcmc.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libipas_util.so",
+        "libir_ct.so",
+        "libmem_ct.so",
+        "libmir_if.so",
+        "libmmp_prc.so",
+        "libmod.so",
+        "libomx_service.so",
+        "libopt.so",
+        "libscac_implement.so.1",
+        "libscac_lib_srb.so.1",
+        "libscac_provide.so.1",
+        "libscp_ct.so",
+        "libsecurity.so",
+        "libspc_if.so",
+        "libswi_ct.so",
+        "libsysras_if.so",
+        "libsyssrcc_if.so",
+        "libuie_db.so",
+        "libvcl_in.so"
+      ],
+      "application_started": false
+    },
+    {
+      "program": "PROC_REPRO",
+      "inspection_succeeded": true,
+      "resolved": 13,
+      "unresolved": 18,
+      "missing_libraries": [
+        "libIFLB_NAVIIF.so",
+        "libLMMDBSYS_IF.so",
+        "libadi_ct.so",
+        "libdismng_if.so",
+        "libgpo_ct.so",
+        "libipas_can.so",
+        "libipas_fls.so",
+        "libipas_mda.so",
+        "libipas_std.so",
+        "libipas_tab.so",
+        "libipas_trc.so",
+        "libmem_ct.so",
+        "libnavi_ex.so",
+        "libscac_implement.so.1",
+        "libscac_lib_srb.so.1",
+        "libscac_provide.so.1",
+        "libsecurity.so",
+        "libswi_ct.so"
+      ],
+      "application_started": false
+    }
+  ],
+  "graphics": {
+    "runtime": "EGL_VERSION=1.4\nEGL_VENDOR=Mesa Project\nGL_RENDERER=softpipe\nGL_VERSION=OpenGL ES-CM 1.1 Mesa 22.3.6\nARM_SOFTWARE_RENDER_800x480_OK\n",
+    "width": 800,
+    "height": 480,
+    "pixels_checked": 384000,
+    "all_pixels_match": true,
+    "sha256": "31d1e86be3ee064feda143cdaebf0755d4bacb0971f345d607d942698fdc3312",
+    "stock_toyota_gui": false
+  },
+  "guard": {
+    "ordinary_stdout": "GUARD_CTOR_EXECUTED\nGUARD_MAIN_EXECUTED\n",
+    "trace_stdout": "\tlinux-vdso.so.1 (0x40830000)\n\tlibc.so.6 => /lib/arm-linux-gnueabi/libc.so.6 (0x40831000)\n\t/lib/ld-linux.so.3 (0x40801000)\n",
+    "constructor_and_main_skipped": true
+  },
+  "related_source": {
+    "evidence": "ca01-related-source-integration.json",
+    "verified_downloads": 5,
+    "archive_entries": 95,
+    "selected_files": 63,
+    "kernel_version": "3.10.101-ltsi",
+    "new_verified_missing_library_providers": 0
+  },
+  "local_artifact_directory": "/home/starlight/projects/rav4-radio/system-audit/ca01-consolidation-20261022",
+  "integration_fixes": [
+    "Reject static/custom interpreters and malformed program headers before trace staging",
+    "Reconcile historical test/dependency/graphics statuses",
+    "Verify actual kernel root Makefile instead of imported net/Makefile excerpt",
+    "Remove unsupported libmmap_hw.so dependency assumption from current conclusions"
+  ],
+  "limits": [
+    "Original Toyota GUI not started",
+    "libsecurity.so and core vendor graphics/IPC services still missing",
+    "No new official1134 or Plus/Premium firmware obtained",
+    "Newer Evo source APIs not proven ABI-compatible",
+    "Historical self-authored probe fixtures and dist archive deliberately preserved"
+  ]
+}

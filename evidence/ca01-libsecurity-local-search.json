@@ -1,0 +1,738 @@
+{
+  "status": "local_search_complete_no_libsecurity_recovery",
+  "complete_files_recovered": 0,
+  "stored_block_earlier_boundary_scan": [
+    {
+      "component": "02-middle-ware.bin",
+      "source_sha256": "9277013ad5f3cd139c36371d56a8e259638be665800ea25ab7ae838e602bdebf",
+      "payload_offset": 524,
+      "scan_length_offset_range": [
+        64000,
+        69315
+      ],
+      "complementary_length_pair_offsets": [],
+      "eof_aligned_hits": []
+    },
+    {
+      "component": "06-audio.bin",
+      "source_sha256": "6d78254c394b65dbfed0c7519815f30b0b18d3b8f2d9f99b29a04120cd5c2f8e",
+      "payload_offset": 12,
+      "scan_length_offset_range": [
+        64000,
+        65705
+      ],
+      "complementary_length_pair_offsets": [],
+      "eof_aligned_hits": []
+    },
+    {
+      "component": "04-device-driver.bin",
+      "source_sha256": "d04237fc1b9c844c607559f6a1e4140f294d469ca48f038c3a2271f3f762b48a",
+      "payload_offset": 12,
+      "scan_length_offset_range": [
+        64000,
+        90139
+      ],
+      "complementary_length_pair_offsets": [],
+      "eof_aligned_hits": []
+    },
+    {
+      "component": "05-bluetooth.bin",
+      "source_sha256": "f16441f3272a9c7c414e41ea0005b30dee67e570f2e9e0740413d67539bcaae1",
+      "payload_offset": 12,
+      "scan_length_offset_range": [
+        64000,
+        101517
+      ],
+      "complementary_length_pair_offsets": [
+        97401
+      ],
+      "eof_aligned_hits": []
+    },
+    {
+      "component": "07-gui.bin",
+      "source_sha256": "c982d69e1bef9bb6852e46cc33fc575ac5061739d88c39241ab9bef38bf4c87e",
+      "payload_offset": 12,
+      "scan_length_offset_range": [
+        64000,
+        67617
+      ],
+      "complementary_length_pair_offsets": [],
+      "eof_aligned_hits": []
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "source_sha256": "4314a40f59679be9bb6e117323a630b83a5b9185e357e6144f07a15a12d8f9c7",
+      "payload_offset": 12,
+      "scan_length_offset_range": [
+        64000,
+        67956
+      ],
+      "complementary_length_pair_offsets": [],
+      "eof_aligned_hits": []
+    }
+  ],
+  "leading_audio_elf_tail": {
+    "partial_file_start_relative_output": -105988,
+    "section_table_output_offset": 1090812,
+    "section_table_fully_known": true,
+    "section_count_inferred": 26,
+    "section_names_output_offset": 1090593,
+    "sections": [
+      {
+        "index": 0,
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "file_offset": 0,
+        "size": 0,
+        "link": 0,
+        "info": 0,
+        "alignment": 0,
+        "entry_size": 0,
+        "partial_output_offset": -105988,
+        "fully_available": false
+      },
+      {
+        "index": 1,
+        "name": ".hash",
+        "type": 5,
+        "flags": 2,
+        "address": 212,
+        "file_offset": 212,
+        "size": 1288,
+        "link": 2,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 4,
+        "partial_output_offset": -105776,
+        "fully_available": false
+      },
+      {
+        "index": 2,
+        "name": ".dynsym",
+        "type": 11,
+        "flags": 2,
+        "address": 1500,
+        "file_offset": 1500,
+        "size": 3024,
+        "link": 3,
+        "info": 3,
+        "alignment": 4,
+        "entry_size": 16,
+        "partial_output_offset": -104488,
+        "fully_available": false
+      },
+      {
+        "index": 3,
+        "name": ".dynstr",
+        "type": 3,
+        "flags": 2,
+        "address": 4524,
+        "file_offset": 4524,
+        "size": 3108,
+        "link": 0,
+        "info": 0,
+        "alignment": 1,
+        "entry_size": 0,
+        "partial_output_offset": -101464,
+        "fully_available": false
+      },
+      {
+        "index": 4,
+        "name": ".gnu.version",
+        "type": 1879048191,
+        "flags": 2,
+        "address": 7632,
+        "file_offset": 7632,
+        "size": 378,
+        "link": 2,
+        "info": 0,
+        "alignment": 2,
+        "entry_size": 2,
+        "partial_output_offset": -98356,
+        "fully_available": false
+      },
+      {
+        "index": 5,
+        "name": ".gnu.version_r",
+        "type": 1879048190,
+        "flags": 2,
+        "address": 8012,
+        "file_offset": 8012,
+        "size": 64,
+        "link": 3,
+        "info": 2,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": -97976,
+        "fully_available": false
+      },
+      {
+        "index": 6,
+        "name": ".rel.dyn",
+        "type": 9,
+        "flags": 2,
+        "address": 8076,
+        "file_offset": 8076,
+        "size": 392,
+        "link": 2,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 8,
+        "partial_output_offset": -97912,
+        "fully_available": false
+      },
+      {
+        "index": 7,
+        "name": ".rel.plt",
+        "type": 9,
+        "flags": 2,
+        "address": 8468,
+        "file_offset": 8468,
+        "size": 264,
+        "link": 2,
+        "info": 9,
+        "alignment": 4,
+        "entry_size": 8,
+        "partial_output_offset": -97520,
+        "fully_available": false
+      },
+      {
+        "index": 8,
+        "name": ".init",
+        "type": 1,
+        "flags": 6,
+        "address": 8732,
+        "file_offset": 8732,
+        "size": 12,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": -97256,
+        "fully_available": false
+      },
+      {
+        "index": 9,
+        "name": ".plt",
+        "type": 1,
+        "flags": 6,
+        "address": 8744,
+        "file_offset": 8744,
+        "size": 416,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 4,
+        "partial_output_offset": -97244,
+        "fully_available": false
+      },
+      {
+        "index": 10,
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 9160,
+        "file_offset": 9160,
+        "size": 26084,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": -96828,
+        "fully_available": false
+      },
+      {
+        "index": 11,
+        "name": ".fini",
+        "type": 1,
+        "flags": 6,
+        "address": 35244,
+        "file_offset": 35244,
+        "size": 8,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": -70744,
+        "fully_available": false
+      },
+      {
+        "index": 12,
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 35252,
+        "file_offset": 35252,
+        "size": 1158504,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": -70736,
+        "fully_available": false
+      },
+      {
+        "index": 13,
+        "name": ".ARM.extab",
+        "type": 1,
+        "flags": 2,
+        "address": 1193756,
+        "file_offset": 1193756,
+        "size": 24,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": 1087768,
+        "fully_available": true
+      },
+      {
+        "index": 14,
+        "name": ".ARM.exidx",
+        "type": 1879048193,
+        "flags": 130,
+        "address": 1193780,
+        "file_offset": 1193780,
+        "size": 536,
+        "link": 10,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": 1087792,
+        "fully_available": true
+      },
+      {
+        "index": 15,
+        "name": ".init_array",
+        "type": 14,
+        "flags": 3,
+        "address": 1227084,
+        "file_offset": 1194316,
+        "size": 4,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": 1088328,
+        "fully_available": true
+      },
+      {
+        "index": 16,
+        "name": ".fini_array",
+        "type": 15,
+        "flags": 3,
+        "address": 1227088,
+        "file_offset": 1194320,
+        "size": 4,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": 1088332,
+        "fully_available": true
+      },
+      {
+        "index": 17,
+        "name": ".jcr",
+        "type": 1,
+        "flags": 3,
+        "address": 1227092,
+        "file_offset": 1194324,
+        "size": 4,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": 1088336,
+        "fully_available": true
+      },
+      {
+        "index": 18,
+        "name": ".data.rel.ro",
+        "type": 1,
+        "flags": 3,
+        "address": 1227096,
+        "file_offset": 1194328,
+        "size": 480,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": 1088340,
+        "fully_available": true
+      },
+      {
+        "index": 19,
+        "name": ".dynamic",
+        "type": 6,
+        "flags": 3,
+        "address": 1227576,
+        "file_offset": 1194808,
+        "size": 232,
+        "link": 3,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 8,
+        "partial_output_offset": 1088820,
+        "fully_available": true
+      },
+      {
+        "index": 20,
+        "name": ".got",
+        "type": 1,
+        "flags": 3,
+        "address": 1227808,
+        "file_offset": 1195040,
+        "size": 280,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 4,
+        "partial_output_offset": 1089052,
+        "fully_available": true
+      },
+      {
+        "index": 21,
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 1228088,
+        "file_offset": 1195320,
+        "size": 4,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": 1089332,
+        "fully_available": true
+      },
+      {
+        "index": 22,
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 1228092,
+        "file_offset": 1195324,
+        "size": 148,
+        "link": 0,
+        "info": 0,
+        "alignment": 4,
+        "entry_size": 0,
+        "partial_output_offset": 1089336,
+        "fully_available": false,
+        "note": "SHT_NOBITS has no bytes stored in file; availability is not applicable."
+      },
+      {
+        "index": 23,
+        "name": ".ARM.attributes",
+        "type": 1879048195,
+        "flags": 0,
+        "address": 0,
+        "file_offset": 1195324,
+        "size": 53,
+        "link": 0,
+        "info": 0,
+        "alignment": 1,
+        "entry_size": 0,
+        "partial_output_offset": 1089336,
+        "fully_available": true
+      },
+      {
+        "index": 24,
+        "name": ".comment",
+        "type": 1,
+        "flags": 0,
+        "address": 0,
+        "file_offset": 1195377,
+        "size": 1204,
+        "link": 0,
+        "info": 0,
+        "alignment": 1,
+        "entry_size": 0,
+        "partial_output_offset": 1089389,
+        "fully_available": true
+      },
+      {
+        "index": 25,
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "file_offset": 1196581,
+        "size": 219,
+        "link": 0,
+        "info": 0,
+        "alignment": 1,
+        "entry_size": 0,
+        "partial_output_offset": 1090593,
+        "fully_available": true
+      }
+    ],
+    "dynamic_entries": [
+      [
+        1,
+        2995
+      ],
+      [
+        1,
+        3009
+      ],
+      [
+        12,
+        8732
+      ],
+      [
+        13,
+        35244
+      ],
+      [
+        25,
+        1227084
+      ],
+      [
+        27,
+        4
+      ],
+      [
+        26,
+        1227088
+      ],
+      [
+        28,
+        4
+      ],
+      [
+        4,
+        212
+      ],
+      [
+        5,
+        4524
+      ],
+      [
+        6,
+        1500
+      ],
+      [
+        10,
+        3108
+      ],
+      [
+        11,
+        16
+      ],
+      [
+        3,
+        1227808
+      ],
+      [
+        2,
+        264
+      ],
+      [
+        20,
+        17
+      ],
+      [
+        23,
+        8468
+      ],
+      [
+        17,
+        8076
+      ],
+      [
+        18,
+        392
+      ],
+      [
+        19,
+        8
+      ],
+      [
+        1879048190,
+        8012
+      ],
+      [
+        1879048191,
+        2
+      ],
+      [
+        1879048176,
+        7632
+      ],
+      [
+        1879048186,
+        3
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "identity": "Unidentified incomplete ELF tail; no ELF header, archive header, dynstr or dynsym is present.",
+    "limitation": "Start coordinate is inferred by internally consistent shstrtab offset, not validated by a recovered file header.",
+    "inferred_elf_end_relative_output": 1091852,
+    "inferred_minimum_file_size": 1197840
+  },
+  "known_region_scans": [
+    {
+      "region": "audio-leading",
+      "source_artifact": "/tmp/ca01-more-recovery/audio/UNTRUSTED.partial.bin",
+      "region_sha256": "43e0b7fe0d27263eec3cd77a56c53183d323d1e642e1a777a88c8b00fa01501d",
+      "size": 1092092,
+      "known_bytes": 1076030,
+      "entropy_including_zero_filled_unknowns": 2.5667322101398304,
+      "known_signature_hits": {
+        "shstrtab": [
+          1090593
+        ]
+      },
+      "all_patterns_searched": [
+        "ELF",
+        "gzip",
+        "xz",
+        "bzip2",
+        "zip",
+        "squashfs-le",
+        "squashfs-be",
+        "cpio-newc",
+        "cpio-crc",
+        "romfs",
+        "cramfs-le",
+        "jffs2-le",
+        "UBI",
+        "uImage",
+        "zImage",
+        "sqlite",
+        "shstrtab",
+        "libsecurity",
+        "sysAes",
+        "sysRsa",
+        "sysSha256",
+        "sysSec",
+        "AES-Sbox-first16",
+        "SHA256-K-first4-le"
+      ],
+      "magic_independent_tar_headers": [],
+      "tar_checksum_filter": "six octal digits plus two space/NUL terminators; every matching offset tested, not restricted to grid"
+    },
+    {
+      "region": "middleware-known-suffix",
+      "source_artifact": "/tmp/ca01-middleware-research/known-suffix.bin",
+      "region_sha256": "fd1b6c671ab50ee99465d79af24100af0bf02e0b4c6a4f1dae6e475edc58cdee",
+      "size": 1588548,
+      "known_bytes": 1588548,
+      "entropy_including_zero_filled_unknowns": 5.423433328355931,
+      "known_signature_hits": {
+        "jffs2-le": [
+          464,
+          1514681,
+          1531785,
+          1550388,
+          1561872
+        ]
+      },
+      "all_patterns_searched": [
+        "ELF",
+        "gzip",
+        "xz",
+        "bzip2",
+        "zip",
+        "squashfs-le",
+        "squashfs-be",
+        "cpio-newc",
+        "cpio-crc",
+        "romfs",
+        "cramfs-le",
+        "jffs2-le",
+        "UBI",
+        "uImage",
+        "zImage",
+        "sqlite",
+        "shstrtab",
+        "libsecurity",
+        "sysAes",
+        "sysRsa",
+        "sysSha256",
+        "sysSec",
+        "AES-Sbox-first16",
+        "SHA256-K-first4-le"
+      ],
+      "magic_independent_tar_headers": [],
+      "tar_checksum_filter": "six octal digits plus two space/NUL terminators; every matching offset tested, not restricted to grid",
+      "jffs2_header_checks": [
+        {
+          "offset": 464,
+          "node_type": "0x7629",
+          "total_length": 1919424902,
+          "in_bounds": false,
+          "stored_header_crc": "0x19881987",
+          "zlib_crc32_match": false,
+          "raw_crc32_match": false
+        },
+        {
+          "offset": 1514681,
+          "node_type": "0x8738",
+          "total_length": 3510115463,
+          "in_bounds": false,
+          "stored_header_crc": "0xd7381f73",
+          "zlib_crc32_match": false,
+          "raw_crc32_match": false
+        },
+        {
+          "offset": 1531785,
+          "node_type": "0x3e38",
+          "total_length": 1429739118,
+          "in_bounds": false,
+          "stored_header_crc": "0x55381342",
+          "zlib_crc32_match": false,
+          "raw_crc32_match": false
+        },
+        {
+          "offset": 1550388,
+          "node_type": "0xb932",
+          "total_length": 965748212,
+          "in_bounds": false,
+          "stored_header_crc": "0xb9da356e",
+          "zlib_crc32_match": false,
+          "raw_crc32_match": false
+        },
+        {
+          "offset": 1561872,
+          "node_type": "0xb932",
+          "total_length": 952516550,
+          "in_bounds": false,
+          "stored_header_crc": "0xb837ac6b",
+          "zlib_crc32_match": false,
+          "raw_crc32_match": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Library filename cannot be established from missing header and string tables.",
+    "No fabricated ELF header or zero-filled file is promoted as a recovered library.",
+    "Absent signatures and API strings in available regions do not prove absence from encrypted/missing prefixes.",
+    "No source modification, firmware execution, hardware access, Git commit or push."
+  ],
+  "scratch_directory": "/tmp/ca01-libsecurity-local"
+}

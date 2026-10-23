@@ -3,3 +3,18 @@ __pycache__/
 .venv/
 .DS_Store
 components/
+
+# Keep vendor firmware, recovered libraries, runtimes and generated images local.
+*.kwi
+*.tgz
+*.tar.gz
+*.tar.xz
+*.so
+*.so.*
+*.ppm
+*.png
+*rootfs/
+recovered/
+system-audit/
+*.zip
+related-firmware/

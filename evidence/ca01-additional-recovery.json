@@ -1,0 +1,1510 @@
+{
+  "status": "additional_kernel_suffix_and_earlier_audio_voice_no_new_complete_files",
+  "new_complete_files": [],
+  "earlier_start_scan": [
+    {
+      "component": "02-middle-ware.bin",
+      "prefix": 524,
+      "previous_start": [
+        69313,
+        6
+      ],
+      "scan_range": [
+        64000,
+        69313
+      ],
+      "hits": [],
+      "seconds": 0.2186126708984375
+    },
+    {
+      "component": "04-device-driver.bin",
+      "prefix": 12,
+      "previous_start": [
+        90137,
+        6
+      ],
+      "scan_range": [
+        64000,
+        90137
+      ],
+      "hits": [],
+      "seconds": 0.7272422313690186
+    },
+    {
+      "component": "05-bluetooth.bin",
+      "prefix": 12,
+      "previous_start": [
+        101515,
+        6
+      ],
+      "scan_range": [
+        64000,
+        101515
+      ],
+      "hits": [],
+      "seconds": 1.0834934711456299
+    },
+    {
+      "component": "06-audio.bin",
+      "prefix": 12,
+      "previous_start": [
+        71041,
+        2
+      ],
+      "scan_range": [
+        64000,
+        71041
+      ],
+      "hits": [
+        {
+          "start_byte": 65703,
+          "bit": 7,
+          "size": 23439868,
+          "end": 9382710
+        }
+      ],
+      "seconds": 1.920461654663086
+    },
+    {
+      "component": "07-gui.bin",
+      "prefix": 12,
+      "previous_start": [
+        67615,
+        4
+      ],
+      "scan_range": [
+        64000,
+        67615
+      ],
+      "hits": [],
+      "seconds": 0.17669129371643066
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "prefix": 12,
+      "previous_start": [
+        85768,
+        0
+      ],
+      "scan_range": [
+        64000,
+        85768
+      ],
+      "hits": [
+        {
+          "start_byte": 67954,
+          "bit": 6,
+          "size": 2451203,
+          "end": 577529
+        },
+        {
+          "start_byte": 73871,
+          "bit": 3,
+          "size": 2431342,
+          "end": 577529
+        },
+        {
+          "start_byte": 79467,
+          "bit": 7,
+          "size": 2412391,
+          "end": 577529
+        }
+      ],
+      "seconds": 0.9196896553039551
+    }
+  ],
+  "raw_component_magic_scan": [
+    {
+      "component": "03-kernel.bin",
+      "hits": []
+    },
+    {
+      "component": "10-bootsig.bin",
+      "hits": []
+    },
+    {
+      "component": "05-bluetooth.bin",
+      "hits": []
+    },
+    {
+      "component": "01-sh-base.bin",
+      "hits": []
+    },
+    {
+      "component": "02-middle-ware.bin",
+      "hits": []
+    },
+    {
+      "component": "07-gui.bin",
+      "hits": []
+    },
+    {
+      "component": "04-device-driver.bin",
+      "hits": []
+    },
+    {
+      "component": "06-audio.bin",
+      "hits": []
+    },
+    {
+      "component": "08-voice-recognition.bin",
+      "hits": []
+    },
+    {
+      "component": "09-boot.bin",
+      "hits": []
+    }
+  ],
+  "verified_decodes": [
+    {
+      "input_path": "/home/starlight/projects/rav4-radio/stock-firmware/components/06-audio.bin",
+      "input_sha256": "6d78254c394b65dbfed0c7519815f30b0b18d3b8f2d9f99b29a04120cd5c2f8e",
+      "payload_offset": 12,
+      "start_bit": 525631,
+      "end_bit": 75061686,
+      "output_size": 23439868,
+      "known_bytes": 23423806,
+      "unknown_bytes": 16062,
+      "known_contiguous_suffix_start": 44268,
+      "known_contiguous_suffix_size": 23395600,
+      "known_contiguous_suffix_sha256": "44d07ecf7d5806cb853e336ea5fc1e535fa4b28aadbadf73e5a197e0776f6f5e",
+      "zlib_crosschecks": [
+        {
+          "dictionary": "zeros_last_90",
+          "eof": true,
+          "output_size": 23439868,
+          "alignment_prelude_output_bytes": 1,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "ones_ff_last_91",
+          "eof": true,
+          "output_size": 23439868,
+          "alignment_prelude_output_bytes": 1,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "incrementing_last_92",
+          "eof": true,
+          "output_size": 23439868,
+          "alignment_prelude_output_bytes": 1,
+          "symbolic_output_matches": true
+        }
+      ],
+      "unverified_gzip_footer_hypothesis": {
+        "offset": 9382711,
+        "crc32_hex": "871000dd",
+        "isize": 23592960,
+        "remaining_after_footer": 256,
+        "crc_verified": false,
+        "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+      },
+      "component": "audio",
+      "complete_file_count": 47,
+      "new_complete_file_count": 0,
+      "all_complete_entries_match_previous_path_size_sha256": true,
+      "scratch_artifacts": "/tmp/ca01-more-recovery/audio",
+      "incomplete_entries": []
+    },
+    {
+      "input_path": "/home/starlight/projects/rav4-radio/stock-firmware/components/08-voice-recognition.bin",
+      "input_sha256": "4314a40f59679be9bb6e117323a630b83a5b9185e357e6144f07a15a12d8f9c7",
+      "payload_offset": 12,
+      "start_bit": 543638,
+      "end_bit": 4620233,
+      "output_size": 2451203,
+      "known_bytes": 2295559,
+      "unknown_bytes": 155644,
+      "known_contiguous_suffix_start": 491029,
+      "known_contiguous_suffix_size": 1960174,
+      "known_contiguous_suffix_sha256": "bcb0d0e4961edbea3d86aa2bae52c78069aa38857f972018242035014354c342",
+      "zlib_crosschecks": [
+        {
+          "dictionary": "zeros",
+          "eof": true,
+          "output_size": 2451203,
+          "alignment_prelude_output_bytes": 0,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "ones_ff",
+          "eof": true,
+          "output_size": 2451203,
+          "alignment_prelude_output_bytes": 0,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "incrementing",
+          "eof": true,
+          "output_size": 2451203,
+          "alignment_prelude_output_bytes": 0,
+          "symbolic_output_matches": true
+        }
+      ],
+      "unverified_gzip_footer_hypothesis": {
+        "offset": 577530,
+        "crc32_hex": "16126c18",
+        "isize": 2785280,
+        "remaining_after_footer": 256,
+        "crc_verified": false,
+        "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+      },
+      "component": "voice",
+      "complete_file_count": 6,
+      "new_complete_file_count": 0,
+      "all_complete_entries_match_previous_path_size_sha256": true,
+      "scratch_artifacts": "/tmp/ca01-more-recovery/voice",
+      "incomplete_entries": []
+    },
+    {
+      "input_path": "/home/starlight/projects/rav4-radio/stock-firmware/components/04-device-driver.bin",
+      "input_sha256": "d04237fc1b9c844c607559f6a1e4140f294d469ca48f038c3a2271f3f762b48a",
+      "payload_offset": 12,
+      "start_bit": 721102,
+      "end_bit": 1891422,
+      "output_size": 339904,
+      "known_bytes": 279867,
+      "unknown_bytes": 60037,
+      "known_contiguous_suffix_start": 312576,
+      "known_contiguous_suffix_size": 27328,
+      "known_contiguous_suffix_sha256": "0734d3799d89b88892611eaa5a486b83510c1d73ec5d0e0f4673d70bd5856414",
+      "zlib_crosschecks": [
+        {
+          "dictionary": "zeros",
+          "eof": true,
+          "output_size": 339904,
+          "alignment_prelude_output_bytes": 0,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "ones_ff",
+          "eof": true,
+          "output_size": 339904,
+          "alignment_prelude_output_bytes": 0,
+          "symbolic_output_matches": true
+        },
+        {
+          "dictionary": "incrementing",
+          "eof": true,
+          "output_size": 339904,
+          "alignment_prelude_output_bytes": 0,
+          "symbolic_output_matches": true
+        }
+      ],
+      "unverified_gzip_footer_hypothesis": {
+        "offset": 236428,
+        "crc32_hex": "4e91adb4",
+        "isize": 552960,
+        "remaining_after_footer": 256,
+        "crc_verified": false,
+        "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+      },
+      "component": "driver",
+      "complete_file_count": 0,
+      "new_complete_file_count": 0,
+      "all_complete_entries_match_previous_path_size_sha256": true,
+      "scratch_artifacts": "/tmp/ca01-more-recovery/driver",
+      "incomplete_entries": [
+        {
+          "offset": 158144,
+          "name": "./lib/modules/2.6.35.7/kernel/opt/cachedmem.ko",
+          "size": 85949,
+          "type": "0",
+          "header_unknown_bytes": 0,
+          "content_unknown_bytes": 9426,
+          "content_size_in_bounds": true,
+          "zero_filled_sha256": "a31000d33223f7438087f04639d33bd0d5047fa3e24c4786d649cd56535acca8",
+          "complete": false
+        },
+        {
+          "offset": 244672,
+          "name": "./lib/modules/2.6.35.7/kernel/opt/dmamem.ko",
+          "size": 88975,
+          "type": "0",
+          "header_unknown_bytes": 0,
+          "content_unknown_bytes": 1258,
+          "content_size_in_bounds": true,
+          "zero_filled_sha256": "a30cf44c2ff2468ca6996c1e9a24f237e723cc2a2435bf2de250b373e8d1915e",
+          "complete": false
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "No original components modified. No firmware executed or hardware accessed.",
+    "No package-wide CRC or authenticity verification.",
+    "Negative scans do not establish absence of an encrypted or otherwise inaccessible library.",
+    "Earlier-start scan checks dynamic/fixed candidates producing at least 32768 bytes in the first 65536 compressed bytes; not an exhaustive proof against every possible stream."
+  ],
+  "kernel_scan": {
+    "component": "03-kernel.bin",
+    "input_sha256": "d34976cf69b7f67b2d384713d2a7ea06094063db86afc966e8a197972c3059eb",
+    "payload_offset": 12,
+    "range": [
+      64000,
+      1808554
+    ],
+    "alignments": 8,
+    "attempts": 6893448,
+    "hits": [
+      {
+        "byte": 298275,
+        "bit": 0,
+        "size": 1517794,
+        "end": 1808562
+      },
+      {
+        "byte": 429508,
+        "bit": 0,
+        "size": 1386569,
+        "end": 1808562
+      },
+      {
+        "byte": 462303,
+        "bit": 0,
+        "size": 1353890,
+        "end": 1808562
+      },
+      {
+        "byte": 462305,
+        "bit": 0,
+        "size": 1353883,
+        "end": 1808562
+      },
+      {
+        "byte": 462309,
+        "bit": 0,
+        "size": 1353767,
+        "end": 1808562
+      },
+      {
+        "byte": 626420,
+        "bit": 0,
+        "size": 1189682,
+        "end": 1808562
+      },
+      {
+        "byte": 757677,
+        "bit": 0,
+        "size": 1058368,
+        "end": 1808562
+      },
+      {
+        "byte": 856098,
+        "bit": 0,
+        "size": 960002,
+        "end": 1808562
+      },
+      {
+        "byte": 954567,
+        "bit": 0,
+        "size": 861449,
+        "end": 1808562
+      },
+      {
+        "byte": 1151481,
+        "bit": 0,
+        "size": 664534,
+        "end": 1808562
+      },
+      {
+        "byte": 1217129,
+        "bit": 0,
+        "size": 598893,
+        "end": 1808562
+      },
+      {
+        "byte": 1348384,
+        "bit": 0,
+        "size": 467654,
+        "end": 1808562
+      },
+      {
+        "byte": 1381214,
+        "bit": 0,
+        "size": 434826,
+        "end": 1808562
+      },
+      {
+        "byte": 1578984,
+        "bit": 0,
+        "size": 232829,
+        "end": 1808562
+      },
+      {
+        "byte": 1677840,
+        "bit": 0,
+        "size": 133654,
+        "end": 1808562
+      },
+      {
+        "byte": 1743708,
+        "bit": 0,
+        "size": 67712,
+        "end": 1808562
+      },
+      {
+        "byte": 1776665,
+        "bit": 7,
+        "size": 34549,
+        "end": 1808561
+      }
+    ],
+    "seconds": 36.75967001914978,
+    "candidate_filter": "fixed/dynamic block; >=32768 output in first65536 input; <=32MiB total; final EOF within1 byte of hypothesized footer"
+  },
+  "kernel_stored_candidates": [
+    {
+      "byte": 166990,
+      "bit": 1,
+      "size": 1649059,
+      "end": 1808562,
+      "stored_length": 32818
+    },
+    {
+      "byte": 166990,
+      "bit": 2,
+      "size": 1649059,
+      "end": 1808562,
+      "stored_length": 32818
+    },
+    {
+      "byte": 166990,
+      "bit": 3,
+      "size": 1649059,
+      "end": 1808562,
+      "stored_length": 32818
+    },
+    {
+      "byte": 166990,
+      "bit": 4,
+      "size": 1649059,
+      "end": 1808562,
+      "stored_length": 32818
+    },
+    {
+      "byte": 166990,
+      "bit": 5,
+      "size": 1649059,
+      "end": 1808562,
+      "stored_length": 32818
+    },
+    {
+      "byte": 199813,
+      "bit": 0,
+      "size": 1616241,
+      "end": 1808562,
+      "stored_length": 32822
+    },
+    {
+      "byte": 199813,
+      "bit": 1,
+      "size": 1616241,
+      "end": 1808562,
+      "stored_length": 32822
+    },
+    {
+      "byte": 199813,
+      "bit": 2,
+      "size": 1616241,
+      "end": 1808562,
+      "stored_length": 32822
+    },
+    {
+      "byte": 199813,
+      "bit": 3,
+      "size": 1616241,
+      "end": 1808562,
+      "stored_length": 32822
+    },
+    {
+      "byte": 199813,
+      "bit": 4,
+      "size": 1616241,
+      "end": 1808562,
+      "stored_length": 32822
+    },
+    {
+      "byte": 199813,
+      "bit": 5,
+      "size": 1616241,
+      "end": 1808562,
+      "stored_length": 32822
+    },
+    {
+      "byte": 232640,
+      "bit": 0,
+      "size": 1583419,
+      "end": 1808562,
+      "stored_length": 32815
+    },
+    {
+      "byte": 232640,
+      "bit": 1,
+      "size": 1583419,
+      "end": 1808562,
+      "stored_length": 32815
+    },
+    {
+      "byte": 232640,
+      "bit": 2,
+      "size": 1583419,
+      "end": 1808562,
+      "stored_length": 32815
+    },
+    {
+      "byte": 232640,
+      "bit": 3,
+      "size": 1583419,
+      "end": 1808562,
+      "stored_length": 32815
+    },
+    {
+      "byte": 232640,
+      "bit": 4,
+      "size": 1583419,
+      "end": 1808562,
+      "stored_length": 32815
+    },
+    {
+      "byte": 232640,
+      "bit": 5,
+      "size": 1583419,
+      "end": 1808562,
+      "stored_length": 32815
+    },
+    {
+      "byte": 265460,
+      "bit": 0,
+      "size": 1550604,
+      "end": 1808562,
+      "stored_length": 32810
+    },
+    {
+      "byte": 265460,
+      "bit": 1,
+      "size": 1550604,
+      "end": 1808562,
+      "stored_length": 32810
+    },
+    {
+      "byte": 265460,
+      "bit": 2,
+      "size": 1550604,
+      "end": 1808562,
+      "stored_length": 32810
+    },
+    {
+      "byte": 265460,
+      "bit": 3,
+      "size": 1550604,
+      "end": 1808562,
+      "stored_length": 32810
+    },
+    {
+      "byte": 265460,
+      "bit": 4,
+      "size": 1550604,
+      "end": 1808562,
+      "stored_length": 32810
+    },
+    {
+      "byte": 265460,
+      "bit": 5,
+      "size": 1550604,
+      "end": 1808562,
+      "stored_length": 32810
+    }
+  ],
+  "kernel_verified_suffix": {
+    "status": "partial_untrusted_deflate_suffix",
+    "start_bit": 1335921,
+    "end_bit": 14468492,
+    "end_byte_ceil": 1808562,
+    "output_size": 1649059,
+    "known_bytes": 1649059,
+    "unknown_bytes": 0,
+    "unique_unknown_history_slots": 0,
+    "known_contiguous_suffix_start": 0,
+    "known_contiguous_suffix_size": 1649059,
+    "known_contiguous_suffix_sha256": "1dc1e69bdf3f43cd6a482f84465eb90bb031253e00eac617d07ccab3caef6038",
+    "zero_filled_output_sha256": "1dc1e69bdf3f43cd6a482f84465eb90bb031253e00eac617d07ccab3caef6038",
+    "limits": [
+      "Missing prefix and unknown history are not recovered.",
+      "No gzip CRC or package signature is verified.",
+      "Complete individual entries require independent header, bounds and mask checks."
+    ],
+    "input_path": "/home/starlight/projects/rav4-radio/stock-firmware/components/03-kernel.bin",
+    "input_sha256": "d34976cf69b7f67b2d384713d2a7ea06094063db86afc966e8a197972c3059eb",
+    "payload_offset": 12,
+    "payload_size": 1808826,
+    "component_end_byte_ceil": 1808574,
+    "zlib_crosschecks": [
+      {
+        "dictionary": "zeros_last_90",
+        "eof": true,
+        "output_size": 1649059,
+        "alignment_prelude_output_bytes": 1,
+        "symbolic_output_matches": true
+      },
+      {
+        "dictionary": "ones_ff_last_91",
+        "eof": true,
+        "output_size": 1649059,
+        "alignment_prelude_output_bytes": 1,
+        "symbolic_output_matches": true
+      },
+      {
+        "dictionary": "incrementing_last_92",
+        "eof": true,
+        "output_size": 1649059,
+        "alignment_prelude_output_bytes": 1,
+        "symbolic_output_matches": true
+      }
+    ],
+    "fully_known_tar_entries": [],
+    "trailing_bytes": 264,
+    "unverified_gzip_footer_hypothesis": {
+      "offset": 1808562,
+      "crc32_hex": "6570dc49",
+      "isize": 1822720,
+      "remaining_after_footer": 256,
+      "crc_verified": false,
+      "note": "Footer interpretation is a hypothesis; no gzip header/prefix decoded."
+    },
+    "scratch_artifacts": "/tmp/ca01-more-recovery/kernel-earlier",
+    "original_start_boundary_verified": false,
+    "equivalent_stored_alignment_starts_bits": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "all_type_tar_headers": [
+    {
+      "component": "audio",
+      "verified_headers_all_types": [
+        {
+          "offset": 1092092,
+          "name": "./opt/ftl/lib/libipas_grp.so",
+          "type": "0",
+          "link_target": "",
+          "size": 251584,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1344508,
+          "name": "./opt/ftl/lib/libVOIdata_cp.so",
+          "type": "0",
+          "link_target": "",
+          "size": 20840,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1366012,
+          "name": "./opt/ftl/lib/libipas_sysc.so",
+          "type": "0",
+          "link_target": "",
+          "size": 173652,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1540604,
+          "name": "./opt/ftl/lib/libi2c_cm.so",
+          "type": "0",
+          "link_target": "",
+          "size": 6356,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1547772,
+          "name": "./opt/ftl/lib/libipas_sysp.so",
+          "type": "0",
+          "link_target": "",
+          "size": 173560,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1721852,
+          "name": "./opt/ftl/lib/libComFlmLb.so",
+          "type": "0",
+          "link_target": "",
+          "size": 9384,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1732092,
+          "name": "./opt/ftl/lib/libcoll.so",
+          "type": "0",
+          "link_target": "",
+          "size": 108344,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1841148,
+          "name": "./opt/ftl/lib/libipas_skt.so",
+          "type": "0",
+          "link_target": "",
+          "size": 10160,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1851900,
+          "name": "./opt/ftl/lib/libAdlRd.so",
+          "type": "0",
+          "link_target": "",
+          "size": 43016,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1895932,
+          "name": "./opt/ftl/lib/libnavi_if.so",
+          "type": "0",
+          "link_target": "",
+          "size": 106416,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2002940,
+          "name": "./opt/ftl/lib/libAdlCd.so",
+          "type": "0",
+          "link_target": "",
+          "size": 22432,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2025980,
+          "name": "./opt/ftl/lib/libDisdb_if.so",
+          "type": "0",
+          "link_target": "",
+          "size": 54204,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2080764,
+          "name": "./opt/ftl/lib/libAdlUb.so",
+          "type": "0",
+          "link_target": "",
+          "size": 47080,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2128380,
+          "name": "./opt/ftl/lib/libsct_ct.so",
+          "type": "0",
+          "link_target": "",
+          "size": 10996,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2140156,
+          "name": "./opt/ftl/lib/libuie_api.so",
+          "type": "0",
+          "link_target": "",
+          "size": 9104,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2149884,
+          "name": "./opt/ftl/lib/libDIS_IF.so",
+          "type": "0",
+          "link_target": "",
+          "size": 54396,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2205180,
+          "name": "./opt/ftl/lib/libipas_ls1.so",
+          "type": "0",
+          "link_target": "",
+          "size": 20516,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2226684,
+          "name": "./opt/ftl/lib/libedbsong.so",
+          "type": "0",
+          "link_target": "",
+          "size": 352368,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2579964,
+          "name": "./opt/ftl/lib/libVOIAudioStream.so",
+          "type": "0",
+          "link_target": "",
+          "size": 74684,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2655228,
+          "name": "./opt/ftl/lib/libIFLB_CDDB.so",
+          "type": "0",
+          "link_target": "",
+          "size": 24040,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2679804,
+          "name": "./opt/ftl/boot/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2680316,
+          "name": "./opt/ftl/boot/bios.bin",
+          "type": "0",
+          "link_target": "",
+          "size": 77544,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2758652,
+          "name": "./opt/ftl/boot/RTFM_SH4A_MA100_2nd.bin_ticket",
+          "type": "0",
+          "link_target": "",
+          "size": 32,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2759676,
+          "name": "./opt/ftl/boot/s-bios.bin",
+          "type": "0",
+          "link_target": "",
+          "size": 7796,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2768380,
+          "name": "./opt/ftl/dev/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2768892,
+          "name": "./opt/ftl/dev/mXT540E_TM8L.bin",
+          "type": "0",
+          "link_target": "",
+          "size": 478,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2769916,
+          "name": "./opt/ftl/dev/mXT540E_TS8L.bin",
+          "type": "0",
+          "link_target": "",
+          "size": 478,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2770940,
+          "name": "./opt/ftl/bin/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2771452,
+          "name": "./opt/ftl/bin/FlashImageCreater",
+          "type": "0",
+          "link_target": "",
+          "size": 15252,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2787324,
+          "name": "./opt/ftl/bin/snap.sh",
+          "type": "0",
+          "link_target": "",
+          "size": 8090,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2796028,
+          "name": "./opt/ftl/bin/FlashImageWriter",
+          "type": "0",
+          "link_target": "",
+          "size": 18524,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2815484,
+          "name": "./opt/ftl/apl/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2815996,
+          "name": "./opt/ftl/apl/PROC_DSV",
+          "type": "0",
+          "link_target": "",
+          "size": 155636,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2972156,
+          "name": "./opt/ftl/apl/PROC_MMP",
+          "type": "0",
+          "link_target": "",
+          "size": 772556,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 3745276,
+          "name": "./opt/ftl/apl/PROC_EXT",
+          "type": "0",
+          "link_target": "",
+          "size": 73208,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 3819004,
+          "name": "./opt/ftl/apl/PROC_REPRO",
+          "type": "0",
+          "link_target": "",
+          "size": 168592,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 3988476,
+          "name": "./opt/ftl/apl/PROC_CDDB",
+          "type": "0",
+          "link_target": "",
+          "size": 1461952,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 5451260,
+          "name": "./opt/ftl/apl/PROC_VRS",
+          "type": "0",
+          "link_target": "",
+          "size": 1008292,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 6460412,
+          "name": "./opt/ftl/apl/PROC_SYSTEM",
+          "type": "0",
+          "link_target": "",
+          "size": 495980,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 6957052,
+          "name": "./opt/ftl/apl/PROC_DTV",
+          "type": "0",
+          "link_target": "",
+          "size": 2617748,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 9575420,
+          "name": "./opt/ftl/apl/PROC_HMI",
+          "type": "0",
+          "link_target": "",
+          "size": 6152368,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 15728636,
+          "name": "./opt/ftl/apl/PROC_AUDIO",
+          "type": "0",
+          "link_target": "",
+          "size": 1150180,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 16879612,
+          "name": "./opt/ftl/apl/PROC_VI",
+          "type": "0",
+          "link_target": "",
+          "size": 187556,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 17068028,
+          "name": "./opt/ftl/apl/PROC_DVDDECK",
+          "type": "0",
+          "link_target": "",
+          "size": 712576,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 17781244,
+          "name": "./opt/ftl/apl/PROC_NAVIIF",
+          "type": "0",
+          "link_target": "",
+          "size": 135556,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 17917436,
+          "name": "./opt/ftl/apl/PROC_DISPLAY",
+          "type": "0",
+          "link_target": "",
+          "size": 4480028,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 22398460,
+          "name": "./opt/ftl/apl/PROC_CDP",
+          "type": "0",
+          "link_target": "",
+          "size": 89016,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 22488060,
+          "name": "./opt/ftl/apl/PROC_UIEIF",
+          "type": "0",
+          "link_target": "",
+          "size": 566552,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 23055356,
+          "name": "./opt/ftl/apl/PROC_SPC",
+          "type": "0",
+          "link_target": "",
+          "size": 65092,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 23121404,
+          "name": "./opt/ftl/apl/PROC_TMD",
+          "type": "0",
+          "link_target": "",
+          "size": 197364,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 23319548,
+          "name": "./opt/ftl/apl/PROC_DVDP",
+          "type": "0",
+          "link_target": "",
+          "size": 109540,
+          "contents_unknown": 0
+        }
+      ],
+      "elf_magic_offsets": [
+        1092604,
+        1345020,
+        1366524,
+        1541116,
+        1548284,
+        1722364,
+        1732604,
+        1841660,
+        1852412,
+        1896444,
+        2003452,
+        2026492,
+        2081276,
+        2128892,
+        2140668,
+        2150396,
+        2205692,
+        2227196,
+        2580476,
+        2655740,
+        2771964,
+        2796540,
+        2816508,
+        2972668,
+        3745788,
+        3819516,
+        3988988,
+        5451772,
+        6460924,
+        6957564,
+        9575932,
+        15729148,
+        16880124,
+        17068540,
+        17781756,
+        17917948,
+        22398972,
+        22488572,
+        23055868,
+        23121916,
+        23320060
+      ],
+      "libsecurity_string_offsets": [
+        3825173,
+        6478692,
+        17790019,
+        17947053
+      ],
+      "leading_output_context": {
+        "first_header": {
+          "offset": 1092092,
+          "name": "./opt/ftl/lib/libipas_grp.so",
+          "type": "0",
+          "link_target": "",
+          "size": 251584,
+          "contents_unknown": 0
+        },
+        "prefix_nonzero_strings": [
+          "!0!0!0!0!0!0!0!0!0!0!0!0!0!0",
+          "121 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1D4D",
+          " !0!0!0!0!0!0!0!0!0",
+          "!0!0!0!0!0!0!0!0!0!0!0!0!0!0",
+          "4111111111111111111",
+          "! ! ! !0101010101010",
+          "1 1 1 1 1 1 1 1 1 ",
+          "1 1 1 1 1 1 1 1 1 ",
+          "1 1 1 1 1 1 1 1 1 1 1 1 1 1 ",
+          " !0!0!0!0!0!0!0!0!B10",
+          " !0!0!0!0!0!0!0!0!0",
+          "!01 A!01 A!01 A!01 A!01 A!01 A!01 A!01 A",
+          "1 1 1 1 1 1 1 !B"
+        ]
+      }
+    },
+    {
+      "component": "voice",
+      "verified_headers_all_types": [
+        {
+          "offset": 487171,
+          "name": "./opt/ftl/var/backup/vrs/VOI/EN/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 487683,
+          "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 488195,
+          "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/tts_pron.bdc_s",
+          "type": "0",
+          "link_target": "",
+          "size": 250614,
+          "contents_unknown": 20
+        },
+        {
+          "offset": 739587,
+          "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBAgent.db",
+          "type": "0",
+          "link_target": "",
+          "size": 94208,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 834307,
+          "name": "./opt/ftl/var/backup/vrs/VOI/EN/en-US/VBSystem.db",
+          "type": "0",
+          "link_target": "",
+          "size": 715776,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1550595,
+          "name": "./opt/ftl/var/backup/vrs/VOI/ES/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1551107,
+          "name": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1551619,
+          "name": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBAgent.db",
+          "type": "0",
+          "link_target": "",
+          "size": 96256,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1648387,
+          "name": "./opt/ftl/var/backup/vrs/VOI/ES/es-MX/VBSystem.db",
+          "type": "0",
+          "link_target": "",
+          "size": 712704,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2361603,
+          "name": "./opt/ftl/var/backup/vrs/VOI/VOI_VERSION",
+          "type": "0",
+          "link_target": "",
+          "size": 19,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2362627,
+          "name": "./opt/ftl/var/backup/vrs/VOI/Hints.db",
+          "type": "0",
+          "link_target": "",
+          "size": 77824,
+          "contents_unknown": 0
+        }
+      ],
+      "elf_magic_offsets": [],
+      "libsecurity_string_offsets": [],
+      "leading_output_context": {
+        "first_header": {
+          "offset": 487171,
+          "name": "./opt/ftl/var/backup/vrs/VOI/EN/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        "prefix_nonzero_strings": []
+      }
+    },
+    {
+      "component": "driver",
+      "verified_headers_all_types": [
+        {
+          "offset": 157632,
+          "name": "./lib/modules/2.6.35.7/kernel/opt/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 158144,
+          "name": "./lib/modules/2.6.35.7/kernel/opt/cachedmem.ko",
+          "type": "0",
+          "link_target": "",
+          "size": 85949,
+          "contents_unknown": 9426
+        },
+        {
+          "offset": 244672,
+          "name": "./lib/modules/2.6.35.7/kernel/opt/dmamem.ko",
+          "type": "0",
+          "link_target": "",
+          "size": 88975,
+          "contents_unknown": 1258
+        }
+      ],
+      "elf_magic_offsets": [
+        158656,
+        245184
+      ],
+      "libsecurity_string_offsets": [],
+      "leading_output_context": {
+        "first_header": {
+          "offset": 157632,
+          "name": "./lib/modules/2.6.35.7/kernel/opt/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        "prefix_nonzero_strings": [
+          "/home/ften/svn/develop/rma1/arm/linux/kernel/src/arch/arm/include/asm",
+          "include/asm-generic/bitops",
+          "include/asm-generic",
+          "include/linux/hdlc",
+          "include/net/netns",
+          "spinlock_types_up.h",
+          "spinlock_types.h",
+          "pageblock-flags.h",
+          "rwsem-spinlock.h",
+          "task_io_accounting.h",
+          "mod_devicetable.h",
+          "platform_device.h",
+          "m.0///////11,4F/1R",
+          "include/asm-generic",
+          "/home/ften/svn/develop/rma1/arm/linux/kernel/src/arch/arm/include/asm",
+          "spinlock_types_up.h",
+          "spinlock_types.h",
+          "__LINK_STATE_PRESENT",
+          "NETREG_UNINITIALIZED",
+          "NETDEV_TX_LOCKED"
+        ]
+      }
+    },
+    {
+      "component": "gui",
+      "verified_headers_all_types": [
+        {
+          "offset": 27577,
+          "name": "./opt/ftl/gui/MC/2/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 134073,
+          "name": "./opt/ftl/gui/MC/mui/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 134585,
+          "name": "./opt/ftl/gui/MC/mui/FUC702-00_01.mui",
+          "type": "0",
+          "link_target": "",
+          "size": 56467,
+          "contents_unknown": 4948
+        },
+        {
+          "offset": 191929,
+          "name": "./opt/ftl/gui/MC/mui/FUC703-00.mui",
+          "type": "0",
+          "link_target": "",
+          "size": 132150,
+          "contents_unknown": 10364
+        },
+        {
+          "offset": 401337,
+          "name": "./opt/ftl/gui/MC/mui/FUC704-00.mui",
+          "type": "0",
+          "link_target": "",
+          "size": 54258,
+          "contents_unknown": 4552
+        },
+        {
+          "offset": 456121,
+          "name": "./opt/ftl/gui/MC/mui/FUC704-00_02.mui",
+          "type": "0",
+          "link_target": "",
+          "size": 53321,
+          "contents_unknown": 4550
+        },
+        {
+          "offset": 510393,
+          "name": "./opt/ftl/gui/MC/mui/FUC701-00.mui",
+          "type": "0",
+          "link_target": "",
+          "size": 89537,
+          "contents_unknown": 7135
+        },
+        {
+          "offset": 600505,
+          "name": "./opt/ftl/gui/MC/3/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 601017,
+          "name": "./opt/ftl/gui/MC/3/CmC.mra",
+          "type": "0",
+          "link_target": "",
+          "size": 104692,
+          "contents_unknown": 2089
+        },
+        {
+          "offset": 706489,
+          "name": "./opt/ftl/gui/MC/4/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 707001,
+          "name": "./opt/ftl/gui/MC/4/CmC.mra",
+          "type": "0",
+          "link_target": "",
+          "size": 104487,
+          "contents_unknown": 2089
+        },
+        {
+          "offset": 812473,
+          "name": "./opt/ftl/gui/allwords/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 812985,
+          "name": "./opt/ftl/gui/allwords/13UP_FR-CA_DA-Base_FormatA.xml",
+          "type": "0",
+          "link_target": "",
+          "size": 612522,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 1426361,
+          "name": "./opt/ftl/gui/allwords/13UP_ES-MX_DA-Base_FormatA.xml",
+          "type": "0",
+          "link_target": "",
+          "size": 610350,
+          "contents_unknown": 0
+        },
+        {
+          "offset": 2037689,
+          "name": "./opt/ftl/gui/allwords/13UP_EN-US-NA_DA-Base_FormatA.xml",
+          "type": "0",
+          "link_target": "",
+          "size": 596144,
+          "contents_unknown": 0
+        }
+      ],
+      "elf_magic_offsets": [],
+      "libsecurity_string_offsets": [],
+      "leading_output_context": {
+        "first_header": {
+          "offset": 27577,
+          "name": "./opt/ftl/gui/MC/2/",
+          "type": "5",
+          "link_target": "",
+          "size": 0,
+          "contents_unknown": 0
+        },
+        "prefix_nonzero_strings": []
+      }
+    }
+  ],
+  "kernel_suffix_classification": {
+    "whole_suffix_entropy_bits_per_byte": 7.979366070678791,
+    "first_1MiB_entropy_bits_per_byte": 7.968196984046994,
+    "trailing_zero_bytes": 1581,
+    "markers": {
+      "uImage": [],
+      "ARM_zImage_LE": [],
+      "gzip": [],
+      "xz": [],
+      "bzip2": [],
+      "squashfs": [],
+      "ELF": [],
+      "Linux version": [],
+      "Linux": [],
+      "initramfs_newc": []
+    },
+    "printable_runs_16_count": 2,
+    "printable_runs_16_first20": [
+      "^'^/^7^?^G^O^W^_^g^o^w^",
+      "Ywtgwgwg]vwvwvwv"
+    ],
+    "classification": "High entropy suffix; no positive kernel or filesystem identity established from searched markers."
+  },
+  "durable_artifact_root": "/home/starlight/projects/rav4-radio/system-audit/ca01-additional-recovery-20261022",
+  "durable_artifact_manifest_sha256": "638e0cbf13a52918890db81b772dae41548f2bbb8eb1f9478f68ed579026aa42",
+  "durable_artifact_file_count": 82
+}

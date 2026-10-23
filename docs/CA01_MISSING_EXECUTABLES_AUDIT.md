@@ -1,5 +1,9 @@
 # CA01 exact missing-source targets — 2026-10-22
 
+> Initial source-manifest audit, retained for provenance. Later recovery found
+> both BIOS files and the original updater; see [current recovery status](CA01_MISSING_EXECUTABLES.md).
+> The middleware pathname records are now confirmed removal entries, not recovered executables.
+
 ## Scope and confidence
 Analyzed local official 1127 KWI extraction and file-name manifests of the two downloaded Denso Ten source archives. This is a **partial named target list**, not an exhaustive inventory of files installed on the head unit. Most update payloads remain opaque.
 
@@ -7,8 +11,8 @@ Analyzed local official 1127 KWI extraction and file-name manifests of the two d
 
 | File path | Evidence | What we know |
 |---|---|---|
-| /opt/ftl/bin/rma1_hwreg | 02-middle-ware.bin, raw offset 0x0d | Full path embedded in unencoded middleware component header; likely deployment target, executable type NOT independently checked |
-| /opt/ftl/bin/vigilancer | 02-middle-ware.bin, raw offset 0x10d | Full path embedded in unencoded middleware component header; likely deployment target, executable type NOT independently checked |
+| /opt/ftl/bin/rma1_hwreg | 02-middle-ware.bin, raw offset 0x0d | Full path embedded in unencoded middleware component header; removal entry processed by PROC_REPRO before archive replacement; executable itself not recovered |
+| /opt/ftl/bin/vigilancer | 02-middle-ware.bin, raw offset 0x10d | Full path embedded in unencoded middleware component header; removal entry processed by PROC_REPRO before archive replacement; executable itself not recovered |
 | /opt/ftl/boot/bios.bin | 09-boot.bin, U-Boot strings | Bootloader explicitly references loading this file |
 | /opt/ftl/boot/s-bios.bin | 09-boot.bin, U-Boot strings | Bootloader explicitly references loading this file |
 | /boot/uImage_T_DAB_US_1M | 09-boot.bin, U-Boot environment | Bootloader references this Linux image; kernel source is available, exact built image is not |

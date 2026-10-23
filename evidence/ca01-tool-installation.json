@@ -1,0 +1,45 @@
+{
+  "tool": "Detect It Easy",
+  "version": "3.21",
+  "status": "working_static_scans",
+  "installed_root": "/home/starlight/projects/rav4-radio/tools/die-3.21",
+  "launcher": "/home/starlight/projects/rav4-radio/tools/die-3.21/diec.sh",
+  "executable_sha256": "7a142132cd15f8628b98cbef58ae4352d7e1625fb7d33d5b1db5354da7b817da",
+  "private_dependency": {
+    "package": "libqt5script5",
+    "version": "5.15.13+dfsg-1",
+    "download_method": "apt-get download (Ubuntu noble configured repository)",
+    "package_sha256": "e0be9535a8c6868f94b9e7faddcb6dad1a1c3549a5329ef08549272b0289454a"
+  },
+  "health_checks": {
+    "--version": {
+      "exit_code": 0,
+      "stdout": "die 3.21\n",
+      "stderr": ""
+    },
+    "--help": {
+      "exit_code": 0,
+      "stdout": "Usage: /home/starlight/projects/rav4-radio/tools/die-3.21/usr/bin/diec [options] target\nDetect It Easy v3.21\nCopyright(C) 2006-2008 Hellsp@wn 2012-2026 hors<horsicq@gmail.com> Web: http://ntinfo.biz\n\n\nOptions:\n  -h, --help                   Displays help on commandline options.\n  --help-all                   Displays help including Qt specific options.\n  -v, --version                Displays version information.\n  -r, --recursivescan          Scan directories recursively\n  -d, --deepscan               Enable deep scanning for thorough analysis\n  -u, --heuristicscan          Enable heuristic scanning methods\n  -b, --verbose                Show verbose output with detailed information\n  -g, --aggressivecscan        Enable aggressive scanning mode\n  -a, --alltypes               Scan all file types\n  -f, --format                 Format the output result\n  -l, --profiling              Profile signatures during scan\n  -M, --messages               Display scan messages and warnings\n  -U, --hideunknown            Hide unknown file types from results\n  -e, --entropy                Display file entropy information\n  -i, --info                   Display file information\n  -S, --struct <struct>        Show special file information using specified\n                               structure (e.g., 'Hash' or 'Hash#MD5')\n  -x, --xml                    Output results in XML format\n  -j, --json                   Output results in JSON format\n  -c, --csv                    Output results in CSV format\n  -t, --tsv                    Output results in TSV format\n  -p, --plaintext              Output results as plain text\n  -D, --database <path>        Set database path\n  -E, --extradatabase <path>   Set extra database path\n  -C, --customdatabase <path>  Set custom database path\n  -s, --showdatabase           Show database information\n  -w, --showstructs            Display all available special structures for the\n                               file\n  --test <directory>           Test signatures in specified directory\n  --addtest <filename>         Add test case with filename, detect string, and\n                               directory\n\nArguments:\n  target                       The file or directory to open.\n",
+      "stderr": ""
+    },
+    "--showdatabase": {
+      "exit_code": 0,
+      "stdout": "Main database: /home/starlight/projects/rav4-radio/tools/die-3.21/usr/lib/die/db\nExtra database: $data/db_extra\nCustom database: $data/db_custom\n\tBinary: 287\n\tCOM: 245\n\tMSDOS: 349\n\tNE: 11\n\tLE: 3\n\tLX: 3\n\tPE: 771\n\tELF: 42\n\tMach-O: 12\n\tPDF: 7\n\tCFBF: 3\n\tImage: 1\n\tJPEG: 5\n\tPNG: 1\n\tRAR: 1\n\tISO 9660: 23\n\tArchive: 1\n\tZIP: 2\n\tJAR: 2\n\tAPK: 51\n\tDEX: 28\n\tNPM: 4\n\tMach-O FAT: 2\n\tAmiga Hunk: 98\n\tAtari ST: 1\n\tDOS/16M: 2\n\tDOS/4G: 2\n",
+      "stderr": ""
+    }
+  },
+  "release": {
+    "tag": "3.21",
+    "asset_name": "die_3.21_Ubuntu_24.04_amd64.deb",
+    "asset_url": "https://github.com/horsicq/DIE-engine/releases/download/3.21/die_3.21_Ubuntu_24.04_amd64.deb",
+    "asset_size": 11785982,
+    "verified_sha256": "96e8e82e822e3ca8a829536312b92e8b241147fe38c8ab29c9dbfc1ab21aa25d"
+  },
+  "limitations": [
+    "Static classification, not decoding or authentication.",
+    "Two component scans retain upstream audio signature script warnings.",
+    "Suggested raw-DEFLATE match failed decompression and was rejected.",
+    "Existing Binwalk2.3.3 retained;v3.1.0 has no official prebuilt assets and was not installed.",
+    "Uncorroborated compiler heuristics (Rust alongside GCC) are not promoted to findings."
+  ]
+}

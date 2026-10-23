@@ -1,0 +1,176 @@
+{
+  "research_date": "2026-10-22",
+  "uploads_performed": false,
+  "firmware_downloaded": false,
+  "packages_installed": false,
+  "decoder_found": false,
+  "missing_executables_recovered": [],
+  "sources": [
+    {
+      "id": "denso13t",
+      "url": "https://www.denso-ten.com/jp/support/source/oem/13t/index.html",
+      "title": "Denso Ten OEM 13t GPL source releases",
+      "supports": "manufacturer page; archive link targets inspected, no archive downloaded",
+      "evidence_class": "public_primary_source",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "denso13t_le2355",
+      "url": "https://www.denso-ten.com/jp/support/source/oem/13t/20130619_LE2355.tgz",
+      "title": "Original source archive",
+      "supports": "linked from denso13t; browser rejects archive rendering",
+      "evidence_class": "primary_link_target_only",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "denso13t_oss",
+      "url": "https://www.denso-ten.com/jp/support/source/oem/13t/OSS_SOFT_PACK.tgz",
+      "title": "Original source archive 2",
+      "supports": "linked from denso13t; browser rejects archive rendering",
+      "evidence_class": "primary_link_target_only",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "toyota1127",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10129998-9999.pdf",
+      "title": "Toyota T-SB-0234-17 Rev1",
+      "supports": "page 6 exact original update and sibling names",
+      "evidence_class": "manufacturer_bulletin_government_host",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "toyota1134",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10173804-9999.pdf",
+      "title": "Toyota T-SB-0024-20",
+      "supports": "page 8 comparison firmware; pages 14-17 versions and user-visible staged update flow",
+      "evidence_class": "manufacturer_bulletin_government_host",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "toyota_obsolete",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10173806-9999.pdf",
+      "title": "Toyota T-SB-0003-19 Rev2 obsolete notice",
+      "supports": "one-page notice pointing to T-SB-0024-20",
+      "evidence_class": "manufacturer_bulletin_government_host",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "toyota_portal",
+      "url": "https://www.toyota.com/firmware-updates",
+      "title": "Toyota customer software portal",
+      "supports": "vehicle lookup and eligible USB update acquisition",
+      "evidence_class": "public_primary_source",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "kwi_panasonic",
+      "url": "https://github.com/KarpelesLab/kwi",
+      "title": "Panasonic/Aisin AW LOADING.KWI reader/writer",
+      "supports": "README explicitly scopes vendor/product; not CA01 support",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "kwi_panasonic_readme",
+      "url": "https://raw.githubusercontent.com/KarpelesLab/kwi/master/README.md",
+      "title": "KWI reader authored README",
+      "supports": "BE manifest, PCRD/ext2, named target hardware",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "kiwiread_maps",
+      "url": "https://github.com/jharg/kiwiread",
+      "title": "DVD map reader",
+      "supports": "map scope only",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "binwalk",
+      "url": "https://github.com/ReFirmLabs/binwalk",
+      "title": "Binwalk v3",
+      "supports": "Rust identifier/extractor",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "binwalk_signatures",
+      "url": "https://github.com/ReFirmLabs/binwalk/wiki/Supported-Signatures",
+      "title": "Supported signatures",
+      "supports": "--list and vendor/standard formats; no listed CA01/KWI handler",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "unblob_handlers",
+      "url": "https://unblob.org/handlers/",
+      "title": "Unblob handlers",
+      "supports": "published support list; no listed CA01/KWI handler",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "unblob_guide",
+      "url": "https://unblob.org/guide/",
+      "title": "Unblob user guide",
+      "supports": "recursive extraction, reports, plugins, unknown chunks, external dependencies",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "die",
+      "url": "https://github.com/horsicq/Detect-It-Easy",
+      "title": "Detect It Easy",
+      "supports": "static parsers/signatures, ELF/Binary; official release links",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "trid",
+      "url": "https://mark0.net/soft-trid-e.html",
+      "title": "TrID author page",
+      "supports": "local database classification, current Python implementation, licensing and rename flags",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "trid_definitions",
+      "url": "https://www.mark0.net/soft-trid-deflist.html",
+      "title": "TrID definitions list",
+      "supports": "coverage inventory; no CA01 decoder established",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "rea",
+      "url": "https://github.com/morluto/rea/blob/main/docs/firmware-analysis.md",
+      "title": "REA firmware guide",
+      "supports": "accepted engine lines and scope limits; corroborated by local checkout",
+      "evidence_class": "author_project_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "renesas_flash",
+      "url": "https://www.renesas.com/en/software-tool/renesas-flash-programmer-programming-gui",
+      "title": "Renesas Flash Programmer",
+      "supports": "supported MCU programmer; no CA01 KWI offline decoder documented",
+      "evidence_class": "manufacturer_documentation",
+      "accessed_date": "2026-10-22"
+    },
+    {
+      "id": "renesas_update",
+      "url": "https://www.renesas.com/en/software-tool/firmware-update-module",
+      "title": "Renesas firmware update module",
+      "supports": "MCU library/sample scope; no CA01 mapping established",
+      "evidence_class": "manufacturer_documentation",
+      "accessed_date": "2026-10-22"
+    }
+  ],
+  "limitations": [
+    "Public search absence does not prove no decoder exists",
+    "Published generic KWI readers do not establish Fujitsu Ten CA01 support",
+    "No later firmware bytes acquired or compared",
+    "No claims of runtime or hardware verification"
+  ]
+}
