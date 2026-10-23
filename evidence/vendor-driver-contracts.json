@@ -1,0 +1,2267 @@
+{
+  "archive": "OSS_SOFT_PACK.tgz",
+  "source_files_analyzed": 17,
+  "sources": [
+    {
+      "group": "audio",
+      "path": "kernel/src/sound/soc/ftenbb/fsi-ak7756_lvds.c",
+      "bytes": 4861,
+      "sha256": "c4bebc66120539a216e4bb9f8777a52c20268b378ea2dfeb838b4790bbc3b968",
+      "observations": [
+        {
+          "line": 8,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 17,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 108,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device *fsi_snd_device[MAX_PORTN];"
+        }
+      ]
+    },
+    {
+      "group": "audio",
+      "path": "kernel/src/sound/soc/ftenbb/ftenbb_asic_fsi.c",
+      "bytes": 53357,
+      "sha256": "ded913c9772d1ea8fd84814cec7d175fcdcbeee0b626bb0b8ce9350fa7f59c56",
+      "observations": [
+        {
+          "line": 17,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 40,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 206,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "struct platform_device *pdev;"
+        },
+        {
+          "line": 324,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static void ftenbb_fsi_set_pwr(struct platform_device *pdev, int state)"
+        },
+        {
+          "line": 1043,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* So, this driver can not send periods data at a time"
+        },
+        {
+          "line": 1184,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* So, this driver can not send periods data at a time"
+        },
+        {
+          "line": 1824,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": ".ioctl = snd_pcm_lib_ioctl,"
+        },
+        {
+          "line": 1841,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "@param pcm\t   [in] Pointer to \"snd_pcm\" structure."
+        },
+        {
+          "line": 1844,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "static void ftenbb_fsi_pcm_free(struct snd_pcm *pcm)"
+        },
+        {
+          "line": 1855,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "@param pcm\t[in] Pointer to \"snd_pcm\" structure."
+        },
+        {
+          "line": 1862,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "struct snd_soc_dai *dai, struct snd_pcm *pcm)"
+        },
+        {
+          "line": 1886,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "struct snd_soc_dai *dai, struct snd_pcm *pcm)"
+        },
+        {
+          "line": 1996,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "@param pdev\t[in] Pointer to \"platform_device\" structure."
+        },
+        {
+          "line": 2004,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_fsi_probe(struct platform_device *pdev)"
+        },
+        {
+          "line": 2102,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "dev_err(&pdev->dev, \"can't register dais.\\n\");"
+        },
+        {
+          "line": 2122,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "@param pdev\t[in] Pointer to \"platform_device\" structure."
+        },
+        {
+          "line": 2126,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_fsi_remove(struct platform_device *pdev)"
+        },
+        {
+          "line": 2180,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_driver ftenbb_fsi_driver = {"
+        }
+      ]
+    },
+    {
+      "group": "board",
+      "path": "kernel/src/arch/arm/mach-shmobile/board-ftenbb.c",
+      "bytes": 27811,
+      "sha256": "84cdf37a50eca1ad1d77074805588868a307d85f43f4552b52475991227727cf",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 26,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 76,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device smc91x_device = {"
+        },
+        {
+          "line": 88,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static void sdhi_set_pwr(struct platform_device *pdev, int state)"
+        },
+        {
+          "line": 164,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(117),"
+        },
+        {
+          "line": 168,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(118),"
+        },
+        {
+          "line": 172,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(119),"
+        },
+        {
+          "line": 177,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device sdhi0_device = {"
+        },
+        {
+          "line": 233,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(121),"
+        },
+        {
+          "line": 237,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(122),"
+        },
+        {
+          "line": 241,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(123),"
+        },
+        {
+          "line": 246,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device sdhi1_device = {"
+        },
+        {
+          "line": 265,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(56),"
+        },
+        {
+          "line": 270,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(57),"
+        },
+        {
+          "line": 292,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device sh_mmcif_device = {"
+        },
+        {
+          "line": 311,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start  = gic_spi(52),"
+        },
+        {
+          "line": 315,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start  = gic_spi(53),"
+        },
+        {
+          "line": 319,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start  = gic_spi(54),"
+        },
+        {
+          "line": 324,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device rspi_device = {"
+        },
+        {
+          "line": 369,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start  = gic_spi(9),"
+        },
+        {
+          "line": 374,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fsi_device = {"
+        },
+        {
+          "line": 393,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start  = gic_spi(6),"
+        },
+        {
+          "line": 398,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start  = gic_spi(7),"
+        },
+        {
+          "line": 403,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fmsi_device = {"
+        },
+        {
+          "line": 410,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fsi_rma1stub_device = {"
+        },
+        {
+          "line": 419,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fmsi_rma1stub_device = {"
+        },
+        {
+          "line": 430,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device lvds_device = {"
+        },
+        {
+          "line": 438,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device ak7756_device = {"
+        },
+        {
+          "line": 446,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fsia0_asicstub_device = {"
+        },
+        {
+          "line": 454,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fsia1_asicstub_device = {"
+        },
+        {
+          "line": 462,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fsib0_asicstub_device = {"
+        },
+        {
+          "line": 470,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fsib1_asicstub_device = {"
+        },
+        {
+          "line": 477,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device fsi_asicstub_device = {"
+        },
+        {
+          "line": 511,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device asic_device = {"
+        },
+        {
+          "line": 614,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(234),"
+        },
+        {
+          "line": 619,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device ohci_device = {"
+        },
+        {
+          "line": 638,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(234),"
+        },
+        {
+          "line": 642,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device ehci_device = {"
+        },
+        {
+          "line": 699,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(177),"
+        },
+        {
+          "line": 704,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device lcdc_device = {"
+        },
+        {
+          "line": 731,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device outcamera_device = {"
+        },
+        {
+          "line": 754,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": ".start\t= gic_spi(160),"
+        },
+        {
+          "line": 762,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device ceu0_device = {"
+        },
+        {
+          "line": 786,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device ramdisk_device = {"
+        },
+        {
+          "line": 809,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device mtdram_swap_device = {"
+        },
+        {
+          "line": 833,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device mtdram_navi_device = {"
+        },
+        {
+          "line": 857,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device mtdram_vrs_device = {"
+        },
+        {
+          "line": 881,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device rootfs_device = {"
+        },
+        {
+          "line": 915,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device memchk_device = {"
+        },
+        {
+          "line": 923,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_device *ftenbb_devices[] __initdata = {"
+        }
+      ]
+    },
+    {
+      "group": "board",
+      "path": "kernel/src/include/linux/ftenbb_config.h",
+      "bytes": 11230,
+      "sha256": "0427681a78e90f4ea574086f83296de99f6b9ae35a7374277dd2fa88d84fc77e",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 297,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "/* IO-ASIC SCIFA */"
+        }
+      ]
+    },
+    {
+      "group": "boot",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/Makefile",
+      "bytes": 1379,
+      "sha256": "23be2a7af88d27c401adfe0d7b4234f3a14a4fad449a7f4741b36be788cc4268",
+      "observations": [
+        {
+          "line": 4,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "# This program is free software; you can redistribute it and/or"
+        }
+      ]
+    },
+    {
+      "group": "boot",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/ftensign.c",
+      "bytes": 104,
+      "sha256": "d09f743b834a05d000f0980cc018c3889f255b59a5ec04df715730e3d66bdd04",
+      "observations": []
+    },
+    {
+      "group": "boot",
+      "path": "boot/src/board/fujitsuten/rma1_13PF/rma1_13PF.c",
+      "bytes": 36988,
+      "sha256": "0b4f4248bccd5f0aa9cf18f657836f2646cda6e3a84995fe0332877d3e85582e",
+      "observations": [
+        {
+          "line": 4,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or"
+        },
+        {
+          "line": 731,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "p = getenv(\"bootcmd\");"
+        },
+        {
+          "line": 738,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", CONFIG_BOOTCOMMAND );"
+        },
+        {
+          "line": 794,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "sprintf( cmd, \"fatload mmc 1 %p .ROOTFS/Side %d\", &sideChar, sizeof(sideChar) );"
+        },
+        {
+          "line": 832,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "sprintf( cmd, \"fatload mmc 1 %p .ROOTFS/%c/flashverup/NFIMG.VER %d\", &sdVer[0], sideChar, sizeof(sdVer) );"
+        },
+        {
+          "line": 1158,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "sprintf(cmd, \"fatload mmc 1 %lx .ROOTFS/%s/f-bios.bin\", (ulong)BIOS_TEMP_ADDR, side_dir);"
+        },
+        {
+          "line": 1174,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "sprintf(cmd, \"fatload mmc 1 %lx .ROOTFS/%s/s-bios.bin\", (ulong)BIOS_TEMP_ADDR, side_dir);"
+        },
+        {
+          "line": 1240,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", \"run rescue_boot\" );"
+        },
+        {
+          "line": 1245,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", \"run tp_boot\" );"
+        },
+        {
+          "line": 1255,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", \"run rescue_boot\" );"
+        },
+        {
+          "line": 1258,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", CONFIG_BOOTCOMMAND);"
+        },
+        {
+          "line": 1262,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", \"run first_load\" );"
+        },
+        {
+          "line": 1270,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", \"run vup_boot\");"
+        },
+        {
+          "line": 1274,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", \"run first_load\" );"
+        },
+        {
+          "line": 1285,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", CONFIG_BOOTCOMMAND);"
+        },
+        {
+          "line": 1289,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", \"run first_load\" );"
+        },
+        {
+          "line": 1293,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", CONFIG_BOOTCOMMAND);"
+        },
+        {
+          "line": 1298,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"bootcmd\", CONFIG_BOOTCOMMAND);"
+        },
+        {
+          "line": 1317,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"root_dev\", \"/dev/mmcblk0p1\");"
+        },
+        {
+          "line": 1321,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "printf(\"SWFLAG: rootfs->/dev/mmcblk0p1, uimg->mmc 1:1\\n\");"
+        },
+        {
+          "line": 1322,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"root_dev\", \"/dev/mmcblk0p1\");"
+        },
+        {
+          "line": 1328,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"root_dev\", \"/dev/mmcblk0p1\");"
+        },
+        {
+          "line": 1332,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "printf(\"SWFLAG: rootfs->/dev/mmcblk0p2, uimg->mmc 1:2\\n\");"
+        },
+        {
+          "line": 1333,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "setenv(\"root_dev\", \"/dev/mmcblk0p2\");"
+        }
+      ]
+    },
+    {
+      "group": "camera",
+      "path": "kernel/src/drivers/media/video/ftenbb_ceu.c",
+      "bytes": 12644,
+      "sha256": "5aad89c83a6aaf0c317703aee55a526aa558e97fa07becfb5e902e8f8afb3773",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 25,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        }
+      ]
+    },
+    {
+      "group": "hardware_diagnostics",
+      "path": "kernel/src/drivers/mfd/ftenbb_asic-core.c",
+      "bytes": 8134,
+      "sha256": "6a4523a005552708addfae91e8dcafd4ce0ac1ed6f4e662ecc51d15d4b211eb1",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 23,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 101,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 0, 0, 2),"
+        },
+        {
+          "line": 104,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 1, 1, 2),"
+        },
+        {
+          "line": 107,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 2, 2, 2),"
+        },
+        {
+          "line": 110,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 3, 3, 2),"
+        },
+        {
+          "line": 113,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 4, 4, 2),"
+        },
+        {
+          "line": 116,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 5, 5, 2),"
+        },
+        {
+          "line": 119,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 6, 6, 2),"
+        },
+        {
+          "line": 122,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 7, 7, 2),"
+        },
+        {
+          "line": 125,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 8, 8, 2),"
+        },
+        {
+          "line": 128,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 9, 9, 2),"
+        },
+        {
+          "line": 131,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "ASIC_DEVS(scifa, asic_, 10, 10, 2),"
+        },
+        {
+          "line": 208,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "{\"SCIFA\",\tscifa_devs,\tARRAY_SIZE(scifa_devs)},"
+        },
+        {
+          "line": 220,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __init ftenbb_asic_probe(struct platform_device *pdev)"
+        },
+        {
+          "line": 269,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __exit ftenbb_asic_remove(struct platform_device *pdev)"
+        },
+        {
+          "line": 276,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_driver ftenbb_asic_driver = {"
+        }
+      ]
+    },
+    {
+      "group": "hardware_diagnostics",
+      "path": "kernel/src/drivers/mfd/ftenbb_asic-proc.c",
+      "bytes": 12882,
+      "sha256": "a29780174a6eee843fcc69c964977b5595e6facf8b49bf7f42ae1b1c323b559b",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 301,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "struct proc_dir_entry *scifa;"
+        },
+        {
+          "line": 340,
+          "kinds": [
+            "userspace_devices"
+          ],
+          "text": "parent = proc_mkdir(\"asic\", NULL);"
+        },
+        {
+          "line": 343,
+          "kinds": [
+            "userspace_devices",
+            "interfaces"
+          ],
+          "text": "scifa = proc_mkdir(\"scifa\", parent);"
+        },
+        {
+          "line": 344,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "if (!scifa)"
+        },
+        {
+          "line": 350,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "sprintf(name, \"scifa%d\", i);"
+        },
+        {
+          "line": 351,
+          "kinds": [
+            "userspace_devices",
+            "interfaces"
+          ],
+          "text": "entry = create_proc_read_entry(name, S_IRUGO, scifa,"
+        },
+        {
+          "line": 356,
+          "kinds": [
+            "userspace_devices"
+          ],
+          "text": "entry = create_proc_read_entry(\"gpio\", S_IRUGO, parent,"
+        },
+        {
+          "line": 358,
+          "kinds": [
+            "userspace_devices"
+          ],
+          "text": "entry = create_proc_read_entry(\"adc\", S_IRUGO, parent,"
+        },
+        {
+          "line": 360,
+          "kinds": [
+            "userspace_devices"
+          ],
+          "text": "entry = create_proc_read_entry(\"intc_m\", S_IRUGO, parent,"
+        },
+        {
+          "line": 362,
+          "kinds": [
+            "userspace_devices"
+          ],
+          "text": "entry = create_proc_read_entry(\"intc_l\", S_IRUGO, parent,"
+        },
+        {
+          "line": 364,
+          "kinds": [
+            "userspace_devices"
+          ],
+          "text": "entry = create_proc_read_entry(\"psel\", S_IRUGO, parent,"
+        }
+      ]
+    },
+    {
+      "group": "hardware_diagnostics",
+      "path": "kernel/src/drivers/misc/ftenbb_asic_adc.c",
+      "bytes": 7444,
+      "sha256": "a7b313efe8f6d87dc92ac981240b595cf94ff59597a1d35b7fd2adcb9aa79600",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 39,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 128,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __init ftenbb_asic_adc_probe(struct platform_device *pdev)"
+        },
+        {
+          "line": 135,
+          "kinds": [
+            "userspace_devices"
+          ],
+          "text": "ret = register_chrdev(FTENBB_ASIC_ADC_MAJOR, DRV_NAME, &ftenbb_adc_fops);"
+        },
+        {
+          "line": 163,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __exit ftenbb_asic_adc_remove(struct platform_device *pdev)"
+        },
+        {
+          "line": 183,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_asic_adc_suspend(struct platform_device *pdev,"
+        },
+        {
+          "line": 198,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_asic_adc_resume(struct platform_device *pdev)"
+        },
+        {
+          "line": 216,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_driver ftenbb_asic_adc_driver = {"
+        }
+      ]
+    },
+    {
+      "group": "hardware_diagnostics",
+      "path": "kernel/src/include/linux/mfd/ftenbb_asic.h",
+      "bytes": 8986,
+      "sha256": "5d98be829bd458a13d4778b39b384c1dbf13d25f88a5a8a633e3a14a72a1a22f",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        }
+      ]
+    },
+    {
+      "group": "input",
+      "path": "kernel/src/drivers/input/misc/ftenbb_asic_remocon.c",
+      "bytes": 10545,
+      "sha256": "699cab7d46aa8f0d799c70e8ff9574d61d345cadbcb57a06205f3acd330da87d",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 28,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 41,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x00] = KEY_NUMERIC_1,"
+        },
+        {
+          "line": 42,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x01] = KEY_NUMERIC_2,"
+        },
+        {
+          "line": 43,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x02] = KEY_NUMERIC_3,"
+        },
+        {
+          "line": 44,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x03] = KEY_NUMERIC_4,"
+        },
+        {
+          "line": 45,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x04] = KEY_NUMERIC_5,"
+        },
+        {
+          "line": 46,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x05] = KEY_NUMERIC_6,"
+        },
+        {
+          "line": 47,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x06] = KEY_NUMERIC_7,"
+        },
+        {
+          "line": 48,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x07] = KEY_NUMERIC_8,"
+        },
+        {
+          "line": 49,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x08] = KEY_NUMERIC_9,"
+        },
+        {
+          "line": 50,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x09] = KEY_NUMERIC_0,"
+        },
+        {
+          "line": 51,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x0a] = KEY_NUMERIC_STAR,"
+        },
+        {
+          "line": 52,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x0b] = KEY_NUMERIC_POUND,"
+        },
+        {
+          "line": 53,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x0c] = KEY_CLEAR,"
+        },
+        {
+          "line": 54,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x0d] = KEY_OPTION,"
+        },
+        {
+          "line": 55,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x0e] = KEY_DESTINATION,"
+        },
+        {
+          "line": 56,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x0f] = KEY_INFO,"
+        },
+        {
+          "line": 57,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x42] = KEY_ZOOMOUT,"
+        },
+        {
+          "line": 58,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x43] = KEY_ZOOMIN,"
+        },
+        {
+          "line": 59,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x44] = KEY_UP,"
+        },
+        {
+          "line": 60,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x45] = KEY_DOWN,"
+        },
+        {
+          "line": 61,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x46] = KEY_RIGHT,"
+        },
+        {
+          "line": 62,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x47] = KEY_LEFT,"
+        },
+        {
+          "line": 63,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x48] = KEY_UPPERRIGHT,"
+        },
+        {
+          "line": 64,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x49] = KEY_LOWERRIGHT,"
+        },
+        {
+          "line": 65,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x4a] = KEY_UPPERLEFT,"
+        },
+        {
+          "line": 66,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x4b] = KEY_LOWERLEFT,"
+        },
+        {
+          "line": 67,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x4c] = KEY_ENTER,"
+        },
+        {
+          "line": 68,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x54] = KEY_LOCATION,"
+        },
+        {
+          "line": 69,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x55] = KEY_BACK,"
+        },
+        {
+          "line": 70,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x80] = KEY_VOLUMEUP,"
+        },
+        {
+          "line": 71,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x81] = KEY_VOLUMEDOWN,"
+        },
+        {
+          "line": 72,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x82] = KEY_PAGEUP,"
+        },
+        {
+          "line": 73,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x83] = KEY_PAGEDOWN,"
+        },
+        {
+          "line": 74,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x84] = KEY_POWER,"
+        },
+        {
+          "line": 75,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x89] = KEY_AUDIO,"
+        },
+        {
+          "line": 76,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x8a] = KEY_SELECT,"
+        },
+        {
+          "line": 77,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x8b] = KEY_OFFHOOK,"
+        },
+        {
+          "line": 78,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x8c] = KEY_ONHOOK,"
+        },
+        {
+          "line": 79,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x98] = KEY_CHANNELUP,"
+        },
+        {
+          "line": 80,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x99] = KEY_CHANNELDOWN,"
+        },
+        {
+          "line": 86,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x06] = KEY_VOLUMEUP,"
+        },
+        {
+          "line": 87,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x07] = KEY_VOLUMEDOWN,"
+        },
+        {
+          "line": 88,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x0a] = KEY_CHANNELUP,"
+        },
+        {
+          "line": 89,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x0b] = KEY_CHANNELDOWN,"
+        },
+        {
+          "line": 90,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x11] = KEY_OPTION,"
+        },
+        {
+          "line": 91,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x12] = KEY_BACK,"
+        },
+        {
+          "line": 92,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x18] = KEY_SOUND,"
+        },
+        {
+          "line": 93,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x19] = KEY_MENU,"
+        },
+        {
+          "line": 94,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x1a] = KEY_CONTEXT_MENU,"
+        },
+        {
+          "line": 95,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x1c] = KEY_REWIND,"
+        },
+        {
+          "line": 96,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x1d] = KEY_STOP,"
+        },
+        {
+          "line": 97,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x1e] = KEY_PLAYPAUSE,"
+        },
+        {
+          "line": 98,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x1f] = KEY_FASTFORWARD,"
+        },
+        {
+          "line": 99,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x20] = KEY_UP,"
+        },
+        {
+          "line": 100,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x21] = KEY_DOWN,"
+        },
+        {
+          "line": 101,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x22] = KEY_LEFT,"
+        },
+        {
+          "line": 102,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x23] = KEY_RIGHT,"
+        },
+        {
+          "line": 103,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x28] = KEY_ENTER,"
+        },
+        {
+          "line": 104,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x2d] = KEY_MODE,"
+        },
+        {
+          "line": 105,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x31] = KEY_POWER,"
+        },
+        {
+          "line": 106,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x4e] = KEY_PAGEUP,"
+        },
+        {
+          "line": 107,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x4f] = KEY_PAGEDOWN,"
+        },
+        {
+          "line": 108,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "[0x76] = KEY_MUTE,"
+        },
+        {
+          "line": 175,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "input_report_key(remocon->input, keycode[data_high],"
+        },
+        {
+          "line": 177,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "input_sync(remocon->input);"
+        },
+        {
+          "line": 206,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "input_report_key(remocon->input,"
+        },
+        {
+          "line": 209,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "input_sync(remocon->input);"
+        },
+        {
+          "line": 262,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __devinit ftenbb_asic_remocon_probe(struct platform_device *pdev)"
+        },
+        {
+          "line": 269,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "input_dev = input_allocate_device();"
+        },
+        {
+          "line": 271,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "dev_err(&pdev->dev, \"error: input_allocate_device() failed\\n\");"
+        },
+        {
+          "line": 284,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "__set_bit(EV_KEY, input_dev->evbit);"
+        },
+        {
+          "line": 305,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "ret = input_register_device(input_dev);"
+        },
+        {
+          "line": 308,
+          "kinds": [
+            "input_events"
+          ],
+          "text": "\"error: input_register_device() failed(ret=%d)\\n\", ret);"
+        },
+        {
+          "line": 328,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __devexit ftenbb_asic_remocon_remove(struct platform_device *pdev)"
+        },
+        {
+          "line": 345,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_asic_remocon_suspend(struct platform_device *pdev,"
+        },
+        {
+          "line": 369,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_asic_remocon_resume(struct platform_device *pdev)"
+        },
+        {
+          "line": 397,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_driver ftenbb_asic_remocon_driver = {"
+        }
+      ]
+    },
+    {
+      "group": "input",
+      "path": "kernel/src/drivers/input/misc/ftenbb_asic_remocon.h",
+      "bytes": 1694,
+      "sha256": "a8067c0c71cc0a1e0139e86afc14cdae7516af838b0629cee2839aa48db01f61",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        }
+      ]
+    },
+    {
+      "group": "serial_i2c",
+      "path": "kernel/src/drivers/i2c/busses/i2c-ftenbb_asic.c",
+      "bytes": 17635,
+      "sha256": "73f51d6bb0954f762c9185b9730d16a31ed8cba8aa471c659b1eb2cd23076b5f",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 25,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 308,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "struct platform_device *dev = dev_id;"
+        },
+        {
+          "line": 515,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_i2c_probe(struct platform_device *dev)"
+        },
+        {
+          "line": 620,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_i2c_remove(struct platform_device *dev)"
+        },
+        {
+          "line": 646,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_i2c_suspend(struct platform_device *dev, pm_message_t mesg)"
+        },
+        {
+          "line": 663,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_i2c_resume(struct platform_device *dev)"
+        },
+        {
+          "line": 681,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_driver ftenbb_i2c_driver = {"
+        }
+      ]
+    },
+    {
+      "group": "serial_i2c",
+      "path": "kernel/src/drivers/serial/ftenbb_asic_scifa.c",
+      "bytes": 74635,
+      "sha256": "c5708ec9dbeec723baa1d86595aaa70778e570b9044efd096c9b6f8fc91cec30",
+      "observations": [
+        {
+          "line": 2,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA"
+        },
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 54,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 73,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA data structure<br>"
+        },
+        {
+          "line": 128,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA port init data structure<br>"
+        },
+        {
+          "line": 354,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* get number of can be put into TX_FIFO<br>"
+        },
+        {
+          "line": 378,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* get number of can be put into RX_FIFO<br>"
+        },
+        {
+          "line": 485,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "/* If for any reason we can't copy more data, we're done! */"
+        },
+        {
+          "line": 541,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] uart  Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 547,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* The scifa generates interrupts during the break,"
+        },
+        {
+          "line": 793,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* SCIFA interrupt <br>"
+        },
+        {
+          "line": 932,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] arg  Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 980,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] s      Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1022,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] arg  Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1057,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] s           Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1089,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] s           Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1121,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] s  Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1205,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] s  Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1264,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] s  Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1460,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] scifa_port        Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1480,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] scifa_port        Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 1676,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* SCIFA start up<br>"
+        },
+        {
+          "line": 1701,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "dev_err(s->port.dev, \"Can't allocate IRQ\\n\");"
+        },
+        {
+          "line": 2178,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* get scifa type<br>"
+        },
+        {
+          "line": 2182,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @retval \"scifa\"<br>"
+        },
+        {
+          "line": 2186,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "return \"scifa\";"
+        },
+        {
+          "line": 2228,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* driver to verify the settings<br>"
+        },
+        {
+          "line": 2252,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* get SCIFA hardware parameters<br>"
+        },
+        {
+          "line": 2255,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[out] hwparams\tSCIFA hardware parameters<br>"
+        },
+        {
+          "line": 2294,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] params\tuser specified SCIFA parameters<br>"
+        },
+        {
+          "line": 2320,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] params\tuser specified SCIFA parameters<br>"
+        },
+        {
+          "line": 2346,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] params\tuser specified SCIFA parameters<br>"
+        },
+        {
+          "line": 2377,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] params\tuser specified SCIFA parameters<br>"
+        },
+        {
+          "line": 2471,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "\"can't get DMAC channel for Tx\\n\");"
+        },
+        {
+          "line": 2483,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "\"can't get DMAC channel for Rx\\n\");"
+        },
+        {
+          "line": 2648,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* set SCIFA hardware parameters<br>"
+        },
+        {
+          "line": 2651,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] hwparams\tuser specified SCIFA hardware parameters<br>"
+        },
+        {
+          "line": 2689,
+          "kinds": [
+            "entrypoints",
+            "interfaces"
+          ],
+          "text": "* SCIFA ioctl<br>"
+        },
+        {
+          "line": 2692,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "* @param[in] cmd\tioctl command<br>"
+        },
+        {
+          "line": 2693,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "* @param[in,out] arg\targument of ioctl command<br>"
+        },
+        {
+          "line": 2725,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA file operation structure<br>"
+        },
+        {
+          "line": 2744,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": ".ioctl\t\t= scifa_ioctl,"
+        },
+        {
+          "line": 2750,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* SCIFA driver single settings<br>"
+        },
+        {
+          "line": 2752,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] dev             Pointer to SCIFA device structure<br>"
+        },
+        {
+          "line": 2753,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] scifa_port      Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 2761,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __devinit scifa_init_single(struct platform_device *dev,"
+        },
+        {
+          "line": 2779,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "dev_err(&dev->dev, \"can't get iclk\\n\");"
+        },
+        {
+          "line": 2830,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "KERN_INFO \"FTENBB IO-ASIC scifa driver initialized\\n\";"
+        },
+        {
+          "line": 2833,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA operation structure<br>"
+        },
+        {
+          "line": 2851,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int scifa_remove(struct platform_device *dev)"
+        },
+        {
+          "line": 2869,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* SCIFA driver single remobe<br>"
+        },
+        {
+          "line": 2871,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] dev             Pointer to SCIFA device structure<br>"
+        },
+        {
+          "line": 2874,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] scifa_port      Pointer to FTENBB SCIFA data structure<br>"
+        },
+        {
+          "line": 2878,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __devinit scifa_probe_single(struct platform_device *dev,"
+        },
+        {
+          "line": 2901,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA probe<br>"
+        },
+        {
+          "line": 2903,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] dev  Pointer to SCIFA device structure<br>"
+        },
+        {
+          "line": 2908,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __devinit scifa_probe(struct platform_device *dev)"
+        },
+        {
+          "line": 2927,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA suspend<br>"
+        },
+        {
+          "line": 2929,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] dev  Pointer to SCIFA device structure<br>"
+        },
+        {
+          "line": 2960,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA resume<br>"
+        },
+        {
+          "line": 2962,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* @param[in] dev  Pointer to SCIFA device structure<br>"
+        },
+        {
+          "line": 3002,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA device PM callbacks<br>"
+        },
+        {
+          "line": 3010,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA table<br>"
+        },
+        {
+          "line": 3012,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_driver scifa_driver = {"
+        },
+        {
+          "line": 3023,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA module_init<br>"
+        },
+        {
+          "line": 3042,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* FTENBB IO-ASIC SCIFA module_exit<br>"
+        },
+        {
+          "line": 3053,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "MODULE_DESCRIPTION(\"FTENBB IO-ASIC SCIFA\");"
+        }
+      ]
+    },
+    {
+      "group": "storage",
+      "path": "kernel/src/drivers/mmc/host/ftenbb_asic_sdhi.c",
+      "bytes": 11949,
+      "sha256": "0dde4d24bd93b561633ac16546a4d29b2dfc06aea9d0a8d0409947c642e7a2b3",
+      "observations": [
+        {
+          "line": 7,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 25,
+          "kinds": [
+            "interfaces"
+          ],
+          "text": "* This program is free software; you can redistribute it and/or modify"
+        },
+        {
+          "line": 58,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "#include <linux/platform_device.h>"
+        },
+        {
+          "line": 92,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static void sdhi2_set_pwr(struct platform_device *pdev, int state)"
+        },
+        {
+          "line": 148,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static void ftenbb_asic_sdhi_set_pwr(struct platform_device *pdev, int state)"
+        },
+        {
+          "line": 167,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_asic_sdhi_get_cd(struct platform_device *pdev)"
+        },
+        {
+          "line": 177,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static void ftenbb_asic_sdhi_hw_reset(struct platform_device *pdev, int state)"
+        },
+        {
+          "line": 278,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int __devinit ftenbb_asic_sdhi_probe(struct platform_device *pdev)"
+        },
+        {
+          "line": 401,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static int ftenbb_asic_sdhi_remove(struct platform_device *pdev)"
+        },
+        {
+          "line": 439,
+          "kinds": [
+            "entrypoints"
+          ],
+          "text": "static struct platform_driver ftenbb_asic_sdhi_driver = {"
+        }
+      ]
+    }
+  ],
+  "not_found": [],
+  "caveat": "Definitions in the manufacturer source tree do not verify active CA01 production drivers, peripheral wiring, or userspace protocols."
+}

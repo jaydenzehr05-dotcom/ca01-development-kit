@@ -1,0 +1,72 @@
+[
+  {
+    "input": "01-sh-base.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "02-middle-ware.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "03-kernel.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "04-device-driver.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "05-bluetooth.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "06-audio.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "07-gui.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "08-voice-recognition.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "09-boot.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  },
+  {
+    "input": "10-bootsig.payload.bin",
+    "success": true,
+    "recognized_nested_subtasks": 0,
+    "provider": "unblob",
+    "error": null
+  }
+]

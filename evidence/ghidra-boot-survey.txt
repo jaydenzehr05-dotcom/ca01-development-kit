@@ -1,0 +1,42 @@
+CA01 RAW BOOT SURVEY (not proof of execution or valid entry point)
+Program: 09-boot.bin
+Language: ARM:LE:32:v7
+Image base: 00000000
+Functions recognized by analysis: 263
+Disassembled instructions recognized: 13331
+Memory block: ram 00000000 size=381272 initialized=true
+STRING marker=U-Boot 2010.09 first_offset=0x1b154 address=0001b154
+STRING marker=bootcmd=run sd_boot first_offset=0x214a0 address=000214a0
+STRING marker=root_emmc=root= first_offset=0x21665 address=00021665
+STRING marker=sd_lboot=run sl_set first_offset=0x21920 address=00021920
+STRING marker=rollback stat = first_offset=0x1c4d6 address=0001c4d6
+STRING marker=uImage_T_DAB_US_1M first_offset=0x214fc address=000214fc
+STRING marker=system failed first_offset=0x1c4eb address=0001c4eb
+STRING marker=boot_sh: SH IMAGE first_offset=0x1c2c7 address=0001c2c7
+Inspected bytes=381272
+FUNCTION 00000000 Reset length=4
+FUNCTION 00000004 UndefinedInstruction length=4
+FUNCTION 00000008 SupervisorCall length=4
+FUNCTION 0000000c PrefetchAbort length=4
+FUNCTION 00000010 DataAbort length=4
+FUNCTION 00000014 NotUsed length=4
+FUNCTION 00000018 IRQ length=4
+FUNCTION 0000001c FIQ length=20
+FUNCTION 00000fc4 FUN_00000fc4 length=12
+FUNCTION 00000fec FUN_00000fec length=8
+FUNCTION 00001068 FUN_00001068 length=32
+FUNCTION 00001440 FUN_00001440 length=12
+FUNCTION 00001500 FUN_00001500 length=8
+FUNCTION 00001ae8 FUN_00001ae8 length=1
+FUNCTION 000020e8 FUN_000020e8 length=1
+FUNCTION 00005aac FUN_00005aac length=1
+FUNCTION 0000bdbc FUN_0000bdbc length=32
+FUNCTION 0000be10 FUN_0000be10 length=4
+FUNCTION 0000c034 FUN_0000c034 length=16
+FUNCTION 0000c258 FUN_0000c258 length=24
+FUNCTION 0000fe98 FUN_0000fe98 length=76
+FUNCTION 0000ff20 FUN_0000ff20 length=44
+FUNCTION 0000ffa4 FUN_0000ffa4 length=44
+FUNCTION 00011060 FUN_00011060 length=208
+FUNCTION 00011130 FUN_00011130 length=224
+Reminder: the selected ARM language and raw base are hypotheses, not a known CA01 load mapping.

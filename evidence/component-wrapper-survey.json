@@ -1,0 +1,310 @@
+[
+  {
+    "file": "01-sh-base.bin",
+    "len": 892788,
+    "prefix_fields_hex": [
+      "0x662d0001",
+      "0x0",
+      "0xd9f5c"
+    ],
+    "declared_remainder": 24,
+    "first_4k_entropy": 7.956,
+    "low_entropy_regions": [
+      {
+        "offset": "0x5e000",
+        "entropy": 5.137
+      },
+      {
+        "offset": "0x5f000",
+        "entropy": 3.305
+      },
+      {
+        "offset": "0x60000",
+        "entropy": 4.227
+      },
+      {
+        "offset": "0x61000",
+        "entropy": 1.514
+      },
+      {
+        "offset": "0x62000",
+        "entropy": 0.71
+      },
+      {
+        "offset": "0x63000",
+        "entropy": 4.014
+      },
+      {
+        "offset": "0x64000",
+        "entropy": 3.501
+      },
+      {
+        "offset": "0x65000",
+        "entropy": 3.657
+      },
+      {
+        "offset": "0x66000",
+        "entropy": 4.423
+      },
+      {
+        "offset": "0x68000",
+        "entropy": 4.702
+      },
+      {
+        "offset": "0x73000",
+        "entropy": 5.198
+      },
+      {
+        "offset": "0x74000",
+        "entropy": 2.734
+      },
+      {
+        "offset": "0x7e000",
+        "entropy": 4.833
+      },
+      {
+        "offset": "0x8e000",
+        "entropy": 5.135
+      },
+      {
+        "offset": "0x8f000",
+        "entropy": 0.377
+      },
+      {
+        "offset": "0x9b000",
+        "entropy": 5.414
+      },
+      {
+        "offset": "0x9c000",
+        "entropy": 4.842
+      },
+      {
+        "offset": "0xd7000",
+        "entropy": 4.244
+      },
+      {
+        "offset": "0xd8000",
+        "entropy": 1.072
+      },
+      {
+        "offset": "0xd9000",
+        "entropy": 5.298
+      }
+    ],
+    "total_4k_blocks": 218
+  },
+  {
+    "file": "02-middle-ware.bin",
+    "len": 719416,
+    "prefix_fields_hex": [
+      "0x70910002",
+      "0x1",
+      "0xaf82c"
+    ],
+    "declared_remainder": 524,
+    "first_4k_entropy": 7.523,
+    "low_entropy_regions": [],
+    "total_4k_blocks": 176
+  },
+  {
+    "file": "03-kernel.bin",
+    "len": 1808838,
+    "prefix_fields_hex": [
+      "0x21fa0000",
+      "0x1",
+      "0x1b99ba"
+    ],
+    "declared_remainder": 12,
+    "first_4k_entropy": 7.958,
+    "low_entropy_regions": [],
+    "total_4k_blocks": 442
+  },
+  {
+    "file": "04-device-driver.bin",
+    "len": 236704,
+    "prefix_fields_hex": [
+      "0x1cee0000",
+      "0x1",
+      "0x39c94"
+    ],
+    "declared_remainder": 12,
+    "first_4k_entropy": 7.955,
+    "low_entropy_regions": [],
+    "total_4k_blocks": 58
+  },
+  {
+    "file": "05-bluetooth.bin",
+    "len": 633261,
+    "prefix_fields_hex": [
+      "0x79f10000",
+      "0x1",
+      "0x9a9a1"
+    ],
+    "declared_remainder": 12,
+    "first_4k_entropy": 7.953,
+    "low_entropy_regions": [],
+    "total_4k_blocks": 155
+  },
+  {
+    "file": "06-audio.bin",
+    "len": 9382987,
+    "prefix_fields_hex": [
+      "0xab190000",
+      "0x1",
+      "0x8f2c3f"
+    ],
+    "declared_remainder": 12,
+    "first_4k_entropy": 7.953,
+    "low_entropy_regions": [],
+    "total_4k_blocks": 2291
+  },
+  {
+    "file": "07-gui.bin",
+    "len": 529975,
+    "prefix_fields_hex": [
+      "0x482d0000",
+      "0x1",
+      "0x8162b"
+    ],
+    "declared_remainder": 12,
+    "first_4k_entropy": 7.959,
+    "low_entropy_regions": [],
+    "total_4k_blocks": 130
+  },
+  {
+    "file": "08-voice-recognition.bin",
+    "len": 577806,
+    "prefix_fields_hex": [
+      "0x34050000",
+      "0x1",
+      "0x8d102"
+    ],
+    "declared_remainder": 12,
+    "first_4k_entropy": 7.958,
+    "low_entropy_regions": [],
+    "total_4k_blocks": 142
+  },
+  {
+    "file": "09-boot.bin",
+    "len": 381272,
+    "prefix_fields_hex": [
+      "0x8c540003",
+      "0x0",
+      "0x5d128"
+    ],
+    "declared_remainder": 48,
+    "first_4k_entropy": 7.947,
+    "low_entropy_regions": [
+      {
+        "offset": "0x1d000",
+        "entropy": 4.929
+      },
+      {
+        "offset": "0x1e000",
+        "entropy": 5.057
+      },
+      {
+        "offset": "0x1f000",
+        "entropy": 5.243
+      },
+      {
+        "offset": "0x20000",
+        "entropy": 5.107
+      },
+      {
+        "offset": "0x22000",
+        "entropy": 2.263
+      },
+      {
+        "offset": "0x23000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x24000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x25000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x26000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x27000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x28000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x29000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x2a000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x2b000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x2c000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x2d000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x2e000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x2f000",
+        "entropy": 3.704
+      },
+      {
+        "offset": "0x3f000",
+        "entropy": 4.27
+      },
+      {
+        "offset": "0x40000",
+        "entropy": 5.3
+      },
+      {
+        "offset": "0x42000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x43000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x44000",
+        "entropy": -0.0
+      },
+      {
+        "offset": "0x45000",
+        "entropy": -0.0
+      }
+    ],
+    "total_4k_blocks": 94
+  },
+  {
+    "file": "10-bootsig.bin",
+    "len": 356,
+    "prefix_fields_hex": [
+      "0x16ef0002",
+      "0x0",
+      "0x140"
+    ],
+    "declared_remainder": 36,
+    "first_4k_entropy": 7.243,
+    "low_entropy_regions": [],
+    "total_4k_blocks": 1
+  }
+]

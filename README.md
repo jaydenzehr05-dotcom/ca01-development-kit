@@ -138,3 +138,46 @@ Both original uploads are available unchanged as [GitHub release assets](https:/
 - [OSS_SOFT_PACK.tgz](https://github.com/jaydenzehr05-dotcom/ca01-development-kit/releases/download/original-source-archives/OSS_SOFT_PACK.tgz) — 231,704,880 bytes.
 
 SHA-256 fingerprints are recorded in the release notes and `evidence/source-audit.json`.
+
+## Additional system-layer research and read-only diagnostics
+
+This checkout also includes a **read-only CA01 system-analysis toolkit**.
+It does **not** claim a bootable Toyota replacement OS or a working vehicle
+installer.
+
+- [Driver and hardware interface map](docs/CA01_HARDWARE_INTERFACES.md)
+- [Boot / rollback / recovery source audit](docs/CA01_BOOT_RECOVERY_AUDIT.md)
+- [REA + Ghidra configuration and commands](docs/CA01_REA_GHIDRA_SETUP.md)
+- [Update-component wrapper experiments](docs/CA01_PAYLOAD_FORMAT.md)
+- [System availability and missing dependencies](SYSTEM_INVENTORY.md)
+
+New diagnostics and utilities:
+
+- `src/ca01_hw_probe.c` and `build_hw_probe.sh` build a static, 32-bit ARM
+  system probe. It reads Linux information, framebuffer characteristics and
+  button events (mocked in tests). It is **not** an update file.
+- `tools/ca01_source_contracts.py` generates line-numbered evidence from
+  the manufacturer source archive without copying the whole archive.
+- `tools/ca01_payload_carve.py` tests a length-field hypothesis using
+  separate byte-exact trailing sequences. `tools/ca01_rea_batch.py`
+  runs the read-only REA/Unblob extractor against those derived files.
+- `tools/rea_ca01.sh` runs the locally installed REA 6.7.0 with Ghidra
+  12.1.4 and Java 21. `tools/ghidra/run_boot_ghidra.sh` surveys the
+  raw boot component with **explicitly unverified** ARM import assumptions.
+- Evidence files in `evidence/` record findings and limitations.
+
+To build the new diagnostic:
+
+```sh
+ZIG=/absolute/path/to/zig sh build_hw_probe.sh
+.venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+Nineteen automated checks passed locally after these additions. The hardware
+probe was evaluated only with **mocked ARM syscalls**; it has not been
+executed on a car radio. Reading certain special hardware-register
+diagnostic files could have side effects even with read-only system calls,
+so do not run the probe on a physical radio before reviewing its handlers.
+
+Do not flash modified firmware, assume secure boot is bypassed, or treat
+a rescue-mode string as a tested hardware recovery method.
