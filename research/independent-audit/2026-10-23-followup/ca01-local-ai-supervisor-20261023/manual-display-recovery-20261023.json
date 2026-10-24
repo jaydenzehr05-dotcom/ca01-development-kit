@@ -1,0 +1,40 @@
+{
+  "started": "2026-10-23T23:03:30.037993+00:00",
+  "local_model_used": false,
+  "codex_used": false,
+  "original_firmware_modified": false,
+  "events": [
+    {
+      "when": "2026-10-23T23:03:30.069780+00:00",
+      "event": "begin",
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4755da50d4396cb2/ghidra/decomp"
+    },
+    {
+      "when": "2026-10-23T23:06:44.432197+00:00",
+      "event": "checkpoint",
+      "stage": "attempt6",
+      "dir": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4755da50d4396cb2/ghidra/merged-resume-6",
+      "catalogued": 5575,
+      "decompiled": 5567,
+      "failed": 8,
+      "unattempted": 0,
+      "index": {
+        "skipped": false,
+        "entries": 5575,
+        "source_bodies_indexed": 5061,
+        "not_attempted": 0,
+        "failed": 8,
+        "binary": "./opt/ftl/apl/PROC_DISPLAY"
+      }
+    },
+    {
+      "when": "2026-10-23T23:06:44.463061+00:00",
+      "event": "completed_display_phase",
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4755da50d4396cb2/ghidra/merged-resume-6",
+      "total": 5575,
+      "decompiled": 5567,
+      "failed": 8,
+      "not_attempted": 0
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "task_wait": {
+    "original_message": [
+      0,
+      5,
+      40,
+      39
+    ],
+    "private_queue": 95,
+    "private_queue_deleted": true,
+    "wait_count": 0,
+    "waiting_task_state": 2,
+    "target_state": 3,
+    "original_calls": [
+      {
+        "function": "fs_sys_CnfEntry",
+        "instructions": 82
+      },
+      {
+        "function": "fs_msg_Init",
+        "instructions": 30
+      },
+      {
+        "function": "rq_msg_Create",
+        "instructions": 83
+      },
+      {
+        "function": "rq_tsk_WaitInit",
+        "instructions": 717
+      },
+      {
+        "function": "rq_msg_ReceiveT",
+        "instructions": 92
+      },
+      {
+        "function": "fc_sys_RcvInitWait",
+        "instructions": 38
+      },
+      {
+        "function": "fc_sys_RcvTskCond",
+        "instructions": 1510
+      },
+      {
+        "function": "rq_tsk_WaitInit",
+        "instructions": 129
+      }
+    ]
+  },
+  "parent_handshake": {
+    "scope": "Explicit synthetic configuration with real local eventfds",
+    "fixture_process_id": 3,
+    "fixture_expected_token": 42,
+    "wrong_token_rejected": true,
+    "parent_notification": 3,
+    "read_values": [
+      41,
+      42
+    ],
+    "protocol_returned": true,
+    "authentic_config_recovered": false,
+    "global_readiness_modified": false,
+    "io": [
+      {
+        "operation": "write",
+        "value": 3
+      },
+      {
+        "operation": "read",
+        "value": 41
+      },
+      {
+        "operation": "read",
+        "value": 42
+      }
+    ]
+  },
+  "display": {
+    "entry": "0x16094",
+    "argument": 0,
+    "halt_reason": "unimplemented_import",
+    "returned": false,
+    "instructions": 18,
+    "emulator_steps": 19,
+    "instruction_limit": 20000,
+    "timeout_us": 2000000,
+    "stop_pc": "0xcf14",
+    "boundary": {
+      "symbol": "sysDisMngInit",
+      "address": "0xcf14",
+      "arguments": [
+        27413432,
+        27413436,
+        27413476,
+        0
+      ],
+      "caller_return": "0x7000fff0"
+    },
+    "function_entries": [],
+    "service_calls": [],
+    "last_instruction_addresses": [
+      "0x16094",
+      "0x16098",
+      "0x1609c",
+      "0x160a0",
+      "0x160a4",
+      "0x160a8",
+      "0x160ac",
+      "0x160b0",
+      "0x160b4",
+      "0x160b8",
+      "0x160bc",
+      "0x160c0",
+      "0x160c4",
+      "0x160c8",
+      "0x160cc",
+      "0x160d0",
+      "0x160d4",
+      "0x160d8"
+    ],
+    "error": null,
+    "display_ready": false,
+    "scope": "Isolated original display wrapper, not full task39",
+    "original_wrapper": "0x16094",
+    "provider_replaced": false
+  },
+  "full_startup": false,
+  "watchdog_start": {
+    "canonical_address": "0x20278",
+    "original_bytes": "1eff2fe1",
+    "instruction": "bx lr",
+    "instructions_executed": 1,
+    "service_calls": [],
+    "returned": true
+  },
+  "input_hashes": {
+    "HMI": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+    "SYSC": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4"
+  },
+  "implementation_hashes": {
+    "tools/ca01_task_barriers.py": "a28a5c4b1e94d4fd306898cf0a6d5144eba4f861d39c8007d582f05e3f224b0d",
+    "tests/test_ca01_task_barriers.py": "01c04ffb738e6dde42ad6e62a86a80cd863a61e8dad20b9c71c0d965f20d8b0e",
+    "tools/ca01_original_queue.py": "e155e5bd76ffe7d4549b180d37751120390f8b26d4409c35725bbd37b6f0a36e"
+  },
+  "verification": {
+    "dedicated_tests": 13,
+    "full_suite_tests": 204,
+    "failures": 0,
+    "skips": 0,
+    "full_suite_seconds": 32.154
+  }
+}

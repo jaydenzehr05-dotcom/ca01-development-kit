@@ -1,0 +1,439 @@
+{
+  "input_hashes": {
+    "HMI": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+    "SYSC": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4"
+  },
+  "first_boundary": {
+    "entry": "0x1001d11c",
+    "argument": 4294967295,
+    "halt_reason": "unimplemented_import",
+    "returned": false,
+    "instructions": 14,
+    "emulator_steps": 15,
+    "instruction_limit": 20000,
+    "timeout_us": 2000000,
+    "stop_pc": "0x60043000",
+    "boundary": {
+      "symbol": "pthread_mutex_lock",
+      "address": "0x60043000",
+      "arguments": [
+        269723032,
+        0,
+        0,
+        0
+      ],
+      "caller_return": "0x1001d148"
+    },
+    "function_entries": [
+      {
+        "symbol": "rq_msg_Create",
+        "address": "0x1001d11c"
+      }
+    ],
+    "service_calls": [],
+    "last_instruction_addresses": [
+      "0x1001d11c",
+      "0x1001d120",
+      "0x1001d124",
+      "0x1001d128",
+      "0x1001d12c",
+      "0x1001d130",
+      "0x1001d134",
+      "0x1001d138",
+      "0x1001d13c",
+      "0x1001d140",
+      "0x1001d144",
+      "0x10009d84",
+      "0x10009d88",
+      "0x10009d8c"
+    ],
+    "error": null
+  },
+  "startup": {
+    "scope": "Original ARM queue operations with modeled libc/pthreads and synthetic task-status events",
+    "accepted_tasks": [
+      3,
+      10,
+      39,
+      40,
+      41
+    ],
+    "queue1_capacity": 64,
+    "draw_queue_capacity": 64,
+    "heartbeat_words": [
+      0,
+      0,
+      10,
+      0
+    ],
+    "draw_queue_count": 1,
+    "draw_before_ready": false,
+    "flag1": false,
+    "flag2": false,
+    "barriers": [
+      "Parent sync/post-init service unresolved",
+      "Task0x27 remains at startup flag1 barrier"
+    ],
+    "full_startup": false,
+    "original_queue_functions_executed": true,
+    "original_tasks_started": false,
+    "native_pthreads_executed": false,
+    "original_queue_calls": [
+      {
+        "function": "fs_sys_CnfEntry",
+        "r0": 5894020,
+        "instructions": 82
+      },
+      {
+        "function": "fs_msg_Init",
+        "r0": 1342177280,
+        "instructions": 30
+      },
+      {
+        "function": "rq_msg_Create",
+        "r0": 1,
+        "instructions": 83
+      },
+      {
+        "function": "rq_msg_Create",
+        "r0": 40,
+        "instructions": 83
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 108
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 99
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 99
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 99
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 99
+      },
+      {
+        "function": "rq_msg_ReceiveT",
+        "r0": 0,
+        "instructions": 92
+      },
+      {
+        "function": "rq_msg_ReceiveT",
+        "r0": 0,
+        "instructions": 92
+      },
+      {
+        "function": "rq_msg_ReceiveT",
+        "r0": 0,
+        "instructions": 92
+      },
+      {
+        "function": "rq_msg_ReceiveT",
+        "r0": 0,
+        "instructions": 92
+      },
+      {
+        "function": "rq_msg_ReceiveT",
+        "r0": 0,
+        "instructions": 92
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 108
+      }
+    ]
+  },
+  "threaded_startup": {
+    "scope": "Native host identity fixtures + original ARM queue1 and queue40; emulated libc/pthreads",
+    "task_ids": [
+      3,
+      10,
+      39,
+      40,
+      41
+    ],
+    "native_threads_registered": 5,
+    "per_task": [
+      {
+        "task": 3,
+        "original_arm_address": "0x20bf4",
+        "native_pthread_seen": true,
+        "guest_alias": 20480,
+        "cold_task": 3,
+        "warm_task": 3,
+        "cold_tls_after": 3,
+        "warm_tls_after": 3,
+        "original_arm_identity_verified": true,
+        "local_status_enqueued": true
+      },
+      {
+        "task": 10,
+        "original_arm_address": "0x20bf4",
+        "native_pthread_seen": true,
+        "guest_alias": 20736,
+        "cold_task": 10,
+        "warm_task": 10,
+        "cold_tls_after": 10,
+        "warm_tls_after": 10,
+        "original_arm_identity_verified": true,
+        "local_status_enqueued": true
+      },
+      {
+        "task": 39,
+        "original_arm_address": "0x20bf4",
+        "native_pthread_seen": true,
+        "guest_alias": 20992,
+        "cold_task": 39,
+        "warm_task": 39,
+        "cold_tls_after": 39,
+        "warm_tls_after": 39,
+        "original_arm_identity_verified": true,
+        "local_status_enqueued": true
+      },
+      {
+        "task": 40,
+        "original_arm_address": "0x20bf4",
+        "native_pthread_seen": true,
+        "guest_alias": 21248,
+        "cold_task": 40,
+        "warm_task": 40,
+        "cold_tls_after": 40,
+        "warm_tls_after": 40,
+        "original_arm_identity_verified": true,
+        "local_status_enqueued": true
+      },
+      {
+        "task": 41,
+        "original_arm_address": "0x20bf4",
+        "native_pthread_seen": true,
+        "guest_alias": 21504,
+        "cold_task": 41,
+        "warm_task": 41,
+        "cold_tls_after": 41,
+        "warm_tls_after": 41,
+        "original_arm_identity_verified": true,
+        "local_status_enqueued": true
+      }
+    ],
+    "status_envelopes": [
+      [
+        0,
+        3,
+        41,
+        0
+      ],
+      [
+        0,
+        3,
+        10,
+        0
+      ],
+      [
+        0,
+        3,
+        39,
+        0
+      ],
+      [
+        0,
+        3,
+        40,
+        0
+      ],
+      [
+        0,
+        3,
+        3,
+        0
+      ]
+    ],
+    "status_tasks_accepted": [
+      41,
+      10,
+      39,
+      40,
+      3
+    ],
+    "task_states": {
+      "3": 3,
+      "10": 3,
+      "39": 3,
+      "40": 3,
+      "41": 3
+    },
+    "errors": [],
+    "parent_sync_verified": false,
+    "display_initialized": false,
+    "draw_ready": false,
+    "original_pthread_create_executed": false,
+    "original_queue1_implemented": false,
+    "original_toyota_app_started": false,
+    "synthetic_status_queue_only": false,
+    "full_startup": false,
+    "original_queue1_functions_executed": true,
+    "original_queue1_capacity": 64,
+    "guest_pthread_services_modeled": true,
+    "original_queue_calls": [
+      {
+        "function": "fs_sys_CnfEntry",
+        "r0": 5894020,
+        "instructions": 82
+      },
+      {
+        "function": "fs_msg_Init",
+        "r0": 1342177280,
+        "instructions": 30
+      },
+      {
+        "function": "rq_msg_Create",
+        "r0": 1,
+        "instructions": 83
+      },
+      {
+        "function": "rq_msg_Create",
+        "r0": 40,
+        "instructions": 83
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 108
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 99
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 99
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 99
+      },
+      {
+        "function": "rq_msg_SendT",
+        "r0": 0,
+        "instructions": 99
+      },
+      {
+        "function": "rq_msg_ReceiveP",
+        "r0": -1,
+        "instructions": 67
+      },
+      {
+        "function": "rq_msg_ReceiveP",
+        "r0": -1,
+        "instructions": 67
+      },
+      {
+        "function": "rq_msg_ReceiveP",
+        "r0": -1,
+        "instructions": 67
+      },
+      {
+        "function": "rq_msg_ReceiveP",
+        "r0": -1,
+        "instructions": 67
+      },
+      {
+        "function": "rq_msg_ReceiveP",
+        "r0": -1,
+        "instructions": 67
+      },
+      {
+        "function": "rq_msg_ReceiveP",
+        "r0": -2,
+        "instructions": 41
+      }
+    ],
+    "original_hmi_queue_entries": 0
+  },
+  "payload_pool_proof": {
+    "pool1_original_profile": [
+      1,
+      1,
+      272,
+      512
+    ],
+    "payload_allocation_bytes": 272,
+    "payload_pointer": "0x500037a0",
+    "freed_by_original_clear": true,
+    "remaining_queue_count": 0,
+    "original_calls": [
+      {
+        "function": "fs_sys_CnfEntry",
+        "instructions": 82,
+        "r0": 5894020
+      },
+      {
+        "function": "fs_msg_Init",
+        "instructions": 30,
+        "r0": 1342177280
+      },
+      {
+        "function": "fs_mem_Init",
+        "instructions": 30,
+        "r0": 1342190336
+      },
+      {
+        "function": "rq_mem_Create",
+        "instructions": 38,
+        "r0": 1
+      },
+      {
+        "function": "rq_mem_Create",
+        "instructions": 37,
+        "r0": 2
+      },
+      {
+        "function": "rq_msg_Create",
+        "instructions": 83,
+        "r0": 40
+      },
+      {
+        "function": "rq_mem_Alloc",
+        "instructions": 33,
+        "r0": 1342191520
+      },
+      {
+        "function": "rq_msg_SendT",
+        "instructions": 108,
+        "r0": 0
+      },
+      {
+        "function": "fc_msg_Clear",
+        "instructions": 63,
+        "r0": 0
+      }
+    ]
+  },
+  "verification": {
+    "dedicated_tests": 27,
+    "full_suite_tests": 191,
+    "failures": 0,
+    "skips": 0,
+    "full_suite_seconds": 44.0
+  },
+  "implementation_hashes": {
+    "tools/ca01_original_queue.py": "e155e5bd76ffe7d4549b180d37751120390f8b26d4409c35725bbd37b6f0a36e",
+    "tools/ca01_hmi_startup.py": "3b0bac3677a28abc0a2e968f49fddff546add9d81442348515659ab940471ef9",
+    "tests/test_ca01_original_queue.py": "0dd82fe5104ade1d64166ab4f91ea27872b74def2555cd3cef993e083d88c6ae"
+  }
+}

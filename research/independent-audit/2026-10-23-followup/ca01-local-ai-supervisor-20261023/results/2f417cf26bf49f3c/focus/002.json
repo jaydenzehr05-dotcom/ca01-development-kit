@@ -1,0 +1,67 @@
+{
+  "binary": "./opt/ftl/apl/PROC_SYSTEM",
+  "examined_functions": [
+    "0001b0c0",
+    "00029a38"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 233,
+    "prompt_tokens": 1783,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2016
+  },
+  "next_focus": [
+    "File system access patterns",
+    "Version file content structure"
+  ],
+  "observations": [
+    {
+      "address": "0x0001b0c0",
+      "claim": "Reads NFIMG.VER and SDIMG.VER files for version data",
+      "evidence_snippet": "rq_fls_Open(\"/opt/ftl/NFIMG.VER\"",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00029a38",
+      "claim": "Reads SDIMG.VER into destination buffer",
+      "evidence_snippet": "rq_fls_Open(\"/opt/ftl/SDIMG.VER\"",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions read version files NFIMG.VER and SDIMG.VER, likely for system information logging and retrieval.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1b0c0",
+    "29a38"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1b0c0",
+      "score": 278,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    },
+    {
+      "address": "29a38",
+      "score": 260,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of DAT_0006f124?",
+    "What is the significance of the syslog output?"
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "timestamp": "2026-10-23T22:25:02+00:00",
+  "archive_policy": "NO DELETE; no Ghidra output, ELF, original file, or prior review is altered",
+  "release_primary": "UU.11.34",
+  "comparisons": [
+    {
+      "archive_path": "./opt/ftl/apl/PROC_AUDIO",
+      "old_sha": "fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05",
+      "new_sha": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+      "old_text_sha": "97610aea42c5ab3f467c0ccf22e80b54a6f6dfd2e7f77cf82dbe7a84b6771870",
+      "new_text_sha": "97610aea42c5ab3f467c0ccf22e80b54a6f6dfd2e7f77cf82dbe7a84b6771870",
+      "old_text_bytes": 823312,
+      "new_text_bytes": 823312,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_CDDB",
+      "old_sha": "51c8f56bcb66fca5576e3be44c0155cb5727b85eabf4b176406a4b796d9e2115",
+      "new_sha": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+      "old_text_sha": "17f2488118d284662052d555efe3da9223dbf44dd746677a8ed21321c58be3d5",
+      "new_text_sha": "17f2488118d284662052d555efe3da9223dbf44dd746677a8ed21321c58be3d5",
+      "old_text_bytes": 824692,
+      "new_text_bytes": 824692,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_CDP",
+      "old_sha": "5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a",
+      "new_sha": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+      "old_text_sha": "f50c6bbf12566d9aa22c4fffb1765e63bc0f5bdea67611245903797727a6b105",
+      "new_text_sha": "f50c6bbf12566d9aa22c4fffb1765e63bc0f5bdea67611245903797727a6b105",
+      "old_text_bytes": 62468,
+      "new_text_bytes": 62468,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DISPLAY",
+      "old_sha": "4755da50d4396cb213eb905ed49d6118cd8f330d05a35aa928b1bef8b2045004",
+      "new_sha": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "old_text_sha": "b671bd831ff56c95093df392776a4a9d10d3f5e159cac15c54f5cc3e62b7f010",
+      "new_text_sha": "42639017adf8a392dcf7a22b085857569efa050a0dc7f99e7c74af9c87c70662",
+      "old_text_bytes": 3996420,
+      "new_text_bytes": 3996140,
+      "identical_text": false,
+      "reason": "Executable code differs; retain both versions for analysis."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DSV",
+      "old_sha": "7ec50c5a61291cacf19cee1128a603162f99df1b59c2f2dc6c88533e6831b463",
+      "new_sha": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+      "old_text_sha": "4ebae0aec7b5b9d12fa9808065c901a49305224e97e1ee67efdeb47624aa64af",
+      "new_text_sha": "4ebae0aec7b5b9d12fa9808065c901a49305224e97e1ee67efdeb47624aa64af",
+      "old_text_bytes": 122752,
+      "new_text_bytes": 122752,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DTV",
+      "old_sha": "968d129dd831acb3f5b92885ff7f0e0d53840868e4e6e030ac18996a5a183c30",
+      "new_sha": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+      "old_text_sha": "414bd6ec1cb38a93e37c50eca7ca440400df870b1a682e0ad789301afd66bb63",
+      "new_text_sha": "414bd6ec1cb38a93e37c50eca7ca440400df870b1a682e0ad789301afd66bb63",
+      "old_text_bytes": 1589404,
+      "new_text_bytes": 1589404,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DVDDECK",
+      "old_sha": "588cd697066ea9d859f3e93683248374bc88952934b2e84bb9c92978687a95c4",
+      "new_sha": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+      "old_text_sha": "fd868afd33cf8b4f8c5f3eb4ccf551ca266363c314403474f78f6a3ce1b2145d",
+      "new_text_sha": "fd868afd33cf8b4f8c5f3eb4ccf551ca266363c314403474f78f6a3ce1b2145d",
+      "old_text_bytes": 500188,
+      "new_text_bytes": 500188,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_DVDP",
+      "old_sha": "e2f6688f90b51dd5c4a849cc42518dbc616e5d67cf3171270ccd403a7f1b346c",
+      "new_sha": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+      "old_text_sha": "419dd0160f9799e9e1a98a7b69161849daf44c6e57429c48d8a5b45dcdfd740f",
+      "new_text_sha": "419dd0160f9799e9e1a98a7b69161849daf44c6e57429c48d8a5b45dcdfd740f",
+      "old_text_bytes": 83196,
+      "new_text_bytes": 83196,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_EXT",
+      "old_sha": "56446dd9bdccaa417d1334cd7aa3543311f25954d8b2fe56e0203e6407195976",
+      "new_sha": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+      "old_text_sha": "1353c0cc0eb0aa3cc08780f0d9f6479f08677a5641ed7e21dcf425e52114efab",
+      "new_text_sha": "1353c0cc0eb0aa3cc08780f0d9f6479f08677a5641ed7e21dcf425e52114efab",
+      "old_text_bytes": 44772,
+      "new_text_bytes": 44772,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_HMI",
+      "old_sha": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+      "new_sha": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+      "old_text_sha": "a113c97cf0e0fefda59d20e8836fe02dfa8740166252d41090906a6eb0aa3e58",
+      "new_text_sha": "a113c97cf0e0fefda59d20e8836fe02dfa8740166252d41090906a6eb0aa3e58",
+      "old_text_bytes": 2648064,
+      "new_text_bytes": 2648064,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_MMP",
+      "old_sha": "8c21cb0cf1fa2e145b5c8f1a2fd28473ddf994a20b9ac6579e960a81b534d8fa",
+      "new_sha": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+      "old_text_sha": "97bc32934cbf37328f7c6f60b60aa245aecc6c7ee5219f174cde09c227de6b9c",
+      "new_text_sha": "97bc32934cbf37328f7c6f60b60aa245aecc6c7ee5219f174cde09c227de6b9c",
+      "old_text_bytes": 670392,
+      "new_text_bytes": 670392,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_NAVIIF",
+      "old_sha": "13e95b7508e4e6fd2106a069b3fd226c9776b81ff8eb60ef74f30ececb997e85",
+      "new_sha": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+      "old_text_sha": "a1ac3a7047f1b057dc37ff05921f70cb8f81feb4b9892b0b99a33a76ab6ab372",
+      "new_text_sha": "a1ac3a7047f1b057dc37ff05921f70cb8f81feb4b9892b0b99a33a76ab6ab372",
+      "old_text_bytes": 99520,
+      "new_text_bytes": 99520,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_REPRO",
+      "old_sha": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+      "new_sha": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+      "old_text_sha": "14a13b130d9b9c26a5be6dc01243888dc9ac2ff684f023186635fadcdc53322a",
+      "new_text_sha": "14a13b130d9b9c26a5be6dc01243888dc9ac2ff684f023186635fadcdc53322a",
+      "old_text_bytes": 104264,
+      "new_text_bytes": 104264,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_SPC",
+      "old_sha": "b83fed7b7e6070895c419e27a6b5b4e197d4b66d97fe25dbbf953a25a80d94f8",
+      "new_sha": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+      "old_text_sha": "5f1c900ce9700aab9252afe42de3acc4393b3426ab64010eb3313c4f41ae9ff9",
+      "new_text_sha": "5f1c900ce9700aab9252afe42de3acc4393b3426ab64010eb3313c4f41ae9ff9",
+      "old_text_bytes": 42464,
+      "new_text_bytes": 42464,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_SYSTEM",
+      "old_sha": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+      "new_sha": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+      "old_text_sha": "74223ebb2a9c501f004cb97e7942b307f6745eab9c9b8375086c2cac687e01c9",
+      "new_text_sha": "74223ebb2a9c501f004cb97e7942b307f6745eab9c9b8375086c2cac687e01c9",
+      "old_text_bytes": 350912,
+      "new_text_bytes": 350912,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_TMD",
+      "old_sha": "9b3189ed775ffb23148150bf763cd09f8f3c7c651f4156c8f80c3b596ab83914",
+      "new_sha": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+      "old_text_sha": "40bc8e4f039d3afbf17460374b06cc4a218ecac83cd582131d98ecf81bf16122",
+      "new_text_sha": "40bc8e4f039d3afbf17460374b06cc4a218ecac83cd582131d98ecf81bf16122",
+      "old_text_bytes": 155284,
+      "new_text_bytes": 155284,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_UIEIF",
+      "old_sha": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4",
+      "new_sha": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+      "old_text_sha": "760c1963c61a44561d5067c01a4ea829b4a798bfc2f9c2aab083c5977c05e533",
+      "new_text_sha": "760c1963c61a44561d5067c01a4ea829b4a798bfc2f9c2aab083c5977c05e533",
+      "old_text_bytes": 434244,
+      "new_text_bytes": 434244,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_VI",
+      "old_sha": "5afc19aec96a7acca1a0c1f27ca704f9fe3c63a25a2538775932905450df7b00",
+      "new_sha": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+      "old_text_sha": "2afe4a1fbe4b5b4ec7810cfa1ad4e4355ab30ae93a7a3e63a3bbee628fa734b7",
+      "new_text_sha": "2afe4a1fbe4b5b4ec7810cfa1ad4e4355ab30ae93a7a3e63a3bbee628fa734b7",
+      "old_text_bytes": 161420,
+      "new_text_bytes": 161420,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/apl/PROC_VRS",
+      "old_sha": "cdc2f7a613e5a9a9a2a122a97a5cf62bbf5a7a27b863b36ea6427df2bf731976",
+      "new_sha": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+      "old_text_sha": "f9ccebc4e982af3564c58ae52650db2f497ce2f1f13e9957e197bb7c46808dca",
+      "new_text_sha": "2d335f1b6b27463cbfd5ceefa54a8b3515286bd227ecdb2194bff508dee4888f",
+      "old_text_bytes": 619976,
+      "new_text_bytes": 620124,
+      "identical_text": false,
+      "reason": "Executable code differs; retain both versions for analysis."
+    },
+    {
+      "archive_path": "./opt/ftl/bin/FlashImageCreater",
+      "old_sha": "48bb5513f542d276568bd6ab77e4790fc1480031ae92a934a34b95f7d0626b70",
+      "new_sha": "a30874c2d9d658ff2f49581edfd90a9d4976ff67340afd199ae81e096bc0f91e",
+      "old_text_sha": "f64a75a2bd4bf4b0ab6b2542505d1e5c5c58cfd3f9ed7788f918c2b09ae0371f",
+      "new_text_sha": "f64a75a2bd4bf4b0ab6b2542505d1e5c5c58cfd3f9ed7788f918c2b09ae0371f",
+      "old_text_bytes": 6856,
+      "new_text_bytes": 6856,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    },
+    {
+      "archive_path": "./opt/ftl/bin/FlashImageWriter",
+      "old_sha": "40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa",
+      "new_sha": "db3b38c1a9fd31b7a4e01ff33a65636849da45d829afc3d5aba2aec827fee18f",
+      "old_text_sha": "657d1893f85fd7759c52bf87932afbfa9aee0e47679c2b2bd2cdcd4a9e1296aa",
+      "new_text_sha": "657d1893f85fd7759c52bf87932afbfa9aee0e47679c2b2bd2cdcd4a9e1296aa",
+      "old_text_bytes": 8804,
+      "new_text_bytes": 8804,
+      "identical_text": true,
+      "reason": "Old ELF executable code exactly matches newer UU.11.34 .text; preserve prior source/exports, prefer newer."
+    }
+  ],
+  "identical_code_pairs": 19,
+  "different_code_pairs": [
+    "./opt/ftl/apl/PROC_DISPLAY",
+    "./opt/ftl/apl/PROC_VRS"
+  ],
+  "queued_work_skipped": [
+    {
+      "key": "focus:fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05:000",
+      "sha": "fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05",
+      "new_sha": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+      "kind": "focus",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:51c8f56bcb66fca5576e3be44c0155cb5727b85eabf4b176406a4b796d9e2115",
+      "sha": "51c8f56bcb66fca5576e3be44c0155cb5727b85eabf4b176406a4b796d9e2115",
+      "new_sha": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "focus:5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a:000",
+      "sha": "5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a",
+      "new_sha": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+      "kind": "focus",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:7ec50c5a61291cacf19cee1128a603162f99df1b59c2f2dc6c88533e6831b463",
+      "sha": "7ec50c5a61291cacf19cee1128a603162f99df1b59c2f2dc6c88533e6831b463",
+      "new_sha": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:968d129dd831acb3f5b92885ff7f0e0d53840868e4e6e030ac18996a5a183c30",
+      "sha": "968d129dd831acb3f5b92885ff7f0e0d53840868e4e6e030ac18996a5a183c30",
+      "new_sha": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:588cd697066ea9d859f3e93683248374bc88952934b2e84bb9c92978687a95c4",
+      "sha": "588cd697066ea9d859f3e93683248374bc88952934b2e84bb9c92978687a95c4",
+      "new_sha": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:e2f6688f90b51dd5c4a849cc42518dbc616e5d67cf3171270ccd403a7f1b346c",
+      "sha": "e2f6688f90b51dd5c4a849cc42518dbc616e5d67cf3171270ccd403a7f1b346c",
+      "new_sha": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:56446dd9bdccaa417d1334cd7aa3543311f25954d8b2fe56e0203e6407195976",
+      "sha": "56446dd9bdccaa417d1334cd7aa3543311f25954d8b2fe56e0203e6407195976",
+      "new_sha": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "focus:cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503:000",
+      "sha": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+      "new_sha": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+      "kind": "focus",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:8c21cb0cf1fa2e145b5c8f1a2fd28473ddf994a20b9ac6579e960a81b534d8fa",
+      "sha": "8c21cb0cf1fa2e145b5c8f1a2fd28473ddf994a20b9ac6579e960a81b534d8fa",
+      "new_sha": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:13e95b7508e4e6fd2106a069b3fd226c9776b81ff8eb60ef74f30ececb997e85",
+      "sha": "13e95b7508e4e6fd2106a069b3fd226c9776b81ff8eb60ef74f30ececb997e85",
+      "new_sha": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "focus:47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771:000",
+      "sha": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+      "new_sha": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+      "kind": "focus",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:b83fed7b7e6070895c419e27a6b5b4e197d4b66d97fe25dbbf953a25a80d94f8",
+      "sha": "b83fed7b7e6070895c419e27a6b5b4e197d4b66d97fe25dbbf953a25a80d94f8",
+      "new_sha": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "focus:57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26:000",
+      "sha": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+      "new_sha": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+      "kind": "focus",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:9b3189ed775ffb23148150bf763cd09f8f3c7c651f4156c8f80c3b596ab83914",
+      "sha": "9b3189ed775ffb23148150bf763cd09f8f3c7c651f4156c8f80c3b596ab83914",
+      "new_sha": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "focus:e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4:000",
+      "sha": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4",
+      "new_sha": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+      "kind": "focus",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:5afc19aec96a7acca1a0c1f27ca704f9fe3c63a25a2538775932905450df7b00",
+      "sha": "5afc19aec96a7acca1a0c1f27ca704f9fe3c63a25a2538775932905450df7b00",
+      "new_sha": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:48bb5513f542d276568bd6ab77e4790fc1480031ae92a934a34b95f7d0626b70",
+      "sha": "48bb5513f542d276568bd6ab77e4790fc1480031ae92a934a34b95f7d0626b70",
+      "new_sha": "a30874c2d9d658ff2f49581edfd90a9d4976ff67340afd199ae81e096bc0f91e",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    },
+    {
+      "key": "decompile:40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa",
+      "sha": "40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa",
+      "new_sha": "db3b38c1a9fd31b7a4e01ff33a65636849da45d829afc3d5aba2aec827fee18f",
+      "kind": "decompile",
+      "prior_status": "queued",
+      "status": "skipped_identical_text"
+    }
+  ],
+  "would_skip": 19,
+  "dry_run": false
+}

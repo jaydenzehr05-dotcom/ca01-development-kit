@@ -1,0 +1,52 @@
+{
+  "binary": "./opt/ftl/apl/PROC_TMD",
+  "examined_functions": [
+    "00028a7c",
+    "0002a778"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 264,
+    "prompt_tokens": 2260,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2524
+  },
+  "next_focus": [
+    "Message type handling in function 00028a7c",
+    "Conditional logic in function 0002a778"
+  ],
+  "observations": [],
+  "overview": "Functions handle firmware message processing with error tracing and memory allocation. Switch cases process different message types.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "28a7c",
+    "2a778"
+  ],
+  "selection_evidence": [
+    {
+      "address": "28a7c",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "2a778",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the unrecovered jumptable?",
+    "How are the memory allocation parameters determined?"
+  ]
+}

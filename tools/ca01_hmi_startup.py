@@ -153,14 +153,24 @@ class HmiHarness:
     startup, a real message function, or proof of a displayed Toyota screen.
     Payload values are opaque32-bit tokens; they are never dereferenced.
     """
-    def __init__(self,*,runtime_library,heartbeat,command,diagnostic,release_payload):
+    def __init__(self,*,runtime_library=None,heartbeat,command,diagnostic,release_payload,
+                 queue_transport=None):
         if not all(callable(x) for x in (heartbeat,command,diagnostic,release_payload)):
             raise TypeError('All service callbacks are required')
         self.heartbeat=heartbeat
         self.command=command
         self.diagnostic=diagnostic
         self.release_payload=release_payload
-        self.queue=LocalQueue(64,runtime_library=runtime_library)
+        if queue_transport is None:
+            if runtime_library is None:raise ValueError('Native runtime or explicit queue transport required')
+            self.queue=LocalQueue(64,runtime_library=runtime_library)
+        else:
+            if (getattr(queue_transport,'message_bytes',None)!=16 or
+                    getattr(queue_transport,'capacity',None)!=64 or
+                    not all(callable(getattr(queue_transport,name,None)) for name in
+                            ('send','receive_t','receive_p','__len__'))):
+                raise ValueError('Injected draw transport must satisfy the 64x16 contract')
+            self.queue=queue_transport
         self.startup=StartupSequence()
         self.draw_pending=False
 

@@ -1,0 +1,1478 @@
+{
+  "input_hashes": {
+    "HMI": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+    "SYSC": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+    "GROUP": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef"
+  },
+  "parent_barrier_held_cases": {
+    "39": {
+      "scope": "Cooperative guest pthread model executing original ARM tasks; not native pthreads",
+      "native_pthreads": false,
+      "full_startup": false,
+      "display_ready": false,
+      "fixture_startup_mode": 1,
+      "startup_mode_address": "0x1013a6c8",
+      "authentic_parent_sync": false,
+      "group_binding": {
+        "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "bias": "0x20000000",
+        "copy_symbols": [
+          "bf_grp_VramImage",
+          "st_rect"
+        ],
+        "rq_grp_Init": "0x20035d7c",
+        "loader": "GOT/REL/COPY relocation; no text patch"
+      },
+      "threads": [
+        {
+          "task": 39,
+          "alias": "0x1001",
+          "entry": "0x2b5b8",
+          "policy": 1,
+          "priority": 12,
+          "stack": "0x71000000",
+          "tls": "0x50006900",
+          "name": "tsk_drw_MainIni",
+          "status": "waiting",
+          "last": {
+            "task": 39,
+            "entry": "0x2b5b8",
+            "status": "waiting",
+            "halt_reason": "queue_service_wait",
+            "instructions": 25653,
+            "total_instructions": 25653,
+            "boundary": {
+              "kind": "condition",
+              "mutex": "0x5000518c",
+              "condition": "0x500051a8",
+              "deadline_ns": null
+            },
+            "service_calls": [
+              {
+                "symbol": "prctl",
+                "arguments": [
+                  15,
+                  2712312,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_setcanceltype",
+                "arguments": [
+                  1,
+                  1895886804,
+                  1,
+                  5816224
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_self",
+                "arguments": [
+                  0,
+                  1895886804,
+                  1,
+                  5816224
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  1895886804,
+                  1,
+                  5816224
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  0,
+                  1342193376,
+                  68928
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "syscall",
+                "arguments": [
+                  224,
+                  1342190336,
+                  269723344,
+                  68928
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342177460,
+                  1895886784,
+                  96,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "memcpy",
+                "arguments": [
+                  1342201856,
+                  1895886784,
+                  16,
+                  1342201856
+                ],
+                "result": 1342201856
+              },
+              {
+                "symbol": "pthread_cond_signal",
+                "arguments": [
+                  1342177488,
+                  64,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342177460,
+                  64,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1895886800,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198232,
+                  0,
+                  0,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198156,
+                  1342198136,
+                  0,
+                  1342198016
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_cond_wait",
+                "arguments": [
+                  1342198184,
+                  1342198156,
+                  0,
+                  1342198016
+                ],
+                "result": 0
+              }
+            ],
+            "function_entries": [
+              {
+                "symbol": "rq_sys_NtyTskSts",
+                "address": "0x1001e02c"
+              },
+              {
+                "symbol": "rq_tsk_GetTid",
+                "address": "0x10020bf4"
+              },
+              {
+                "symbol": "rq_msg_Send",
+                "address": "0x1001cd0c"
+              },
+              {
+                "symbol": "rq_flg_Wait",
+                "address": "0x1001b004"
+              }
+            ],
+            "error": null,
+            "display_ready": false,
+            "stop_pc": "0x1001b0d0"
+          }
+        }
+      ]
+    },
+    "40": {
+      "scope": "Cooperative guest pthread model executing original ARM tasks; not native pthreads",
+      "native_pthreads": false,
+      "full_startup": false,
+      "display_ready": false,
+      "fixture_startup_mode": 1,
+      "startup_mode_address": "0x1013a6c8",
+      "authentic_parent_sync": false,
+      "group_binding": {
+        "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "bias": "0x20000000",
+        "copy_symbols": [
+          "bf_grp_VramImage",
+          "st_rect"
+        ],
+        "rq_grp_Init": "0x20035d7c",
+        "loader": "GOT/REL/COPY relocation; no text patch"
+      },
+      "threads": [
+        {
+          "task": 40,
+          "alias": "0x1001",
+          "entry": "0x2b22c",
+          "policy": 0,
+          "priority": 0,
+          "stack": "0x71000000",
+          "tls": "0x50006900",
+          "name": "tsk_drw_Main",
+          "status": "waiting",
+          "last": {
+            "task": 40,
+            "entry": "0x2b22c",
+            "status": "waiting",
+            "halt_reason": "queue_service_wait",
+            "instructions": 522,
+            "total_instructions": 522,
+            "boundary": {
+              "kind": "condition",
+              "mutex": "0x5000518c",
+              "condition": "0x500051a8",
+              "deadline_ns": null
+            },
+            "service_calls": [
+              {
+                "symbol": "memset",
+                "arguments": [
+                  1895886772,
+                  0,
+                  16,
+                  0
+                ],
+                "result": 1895886772
+              },
+              {
+                "symbol": "prctl",
+                "arguments": [
+                  15,
+                  2712296,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_setcanceltype",
+                "arguments": [
+                  1,
+                  1895886732,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_self",
+                "arguments": [
+                  0,
+                  1895886732,
+                  0,
+                  0
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  1895886732,
+                  0,
+                  0
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  4097,
+                  1342193536,
+                  68928
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "syscall",
+                "arguments": [
+                  224,
+                  1342190336,
+                  269723344,
+                  68928
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342177460,
+                  1895886712,
+                  96,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "memcpy",
+                "arguments": [
+                  1342201856,
+                  1895886712,
+                  16,
+                  1342201856
+                ],
+                "result": 1342201856
+              },
+              {
+                "symbol": "pthread_cond_signal",
+                "arguments": [
+                  1342177488,
+                  64,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342177460,
+                  64,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1895886728,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198232,
+                  0,
+                  0,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198156,
+                  1342198136,
+                  0,
+                  1342198016
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_cond_wait",
+                "arguments": [
+                  1342198184,
+                  1342198156,
+                  0,
+                  1342198016
+                ],
+                "result": 0
+              }
+            ],
+            "function_entries": [
+              {
+                "symbol": "rq_sys_NtyTskSts",
+                "address": "0x1001e02c"
+              },
+              {
+                "symbol": "rq_tsk_GetTid",
+                "address": "0x10020bf4"
+              },
+              {
+                "symbol": "rq_msg_Send",
+                "address": "0x1001cd0c"
+              },
+              {
+                "symbol": "rq_flg_Wait",
+                "address": "0x1001b004"
+              }
+            ],
+            "error": null,
+            "display_ready": false,
+            "stop_pc": "0x1001b0d0"
+          }
+        }
+      ]
+    },
+    "41": {
+      "scope": "Cooperative guest pthread model executing original ARM tasks; not native pthreads",
+      "native_pthreads": false,
+      "full_startup": false,
+      "display_ready": false,
+      "fixture_startup_mode": 1,
+      "startup_mode_address": "0x1013a6c8",
+      "authentic_parent_sync": false,
+      "group_binding": {
+        "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "bias": "0x20000000",
+        "copy_symbols": [
+          "bf_grp_VramImage",
+          "st_rect"
+        ],
+        "rq_grp_Init": "0x20035d7c",
+        "loader": "GOT/REL/COPY relocation; no text patch"
+      },
+      "threads": [
+        {
+          "task": 41,
+          "alias": "0x1001",
+          "entry": "0xf694",
+          "policy": 1,
+          "priority": 1,
+          "stack": "0x71000000",
+          "tls": "0x50006900",
+          "name": "tsk_drw_Recv",
+          "status": "waiting",
+          "last": {
+            "task": 41,
+            "entry": "0xf694",
+            "status": "waiting",
+            "halt_reason": "queue_service_wait",
+            "instructions": 519,
+            "total_instructions": 519,
+            "boundary": {
+              "kind": "condition",
+              "mutex": "0x5000518c",
+              "condition": "0x500051a8",
+              "deadline_ns": null
+            },
+            "service_calls": [
+              {
+                "symbol": "prctl",
+                "arguments": [
+                  15,
+                  2703656,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_setcanceltype",
+                "arguments": [
+                  1,
+                  1895886772,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_self",
+                "arguments": [
+                  0,
+                  1895886772,
+                  0,
+                  0
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  1895886772,
+                  0,
+                  0
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  0,
+                  1342193536,
+                  68928
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "syscall",
+                "arguments": [
+                  224,
+                  1342190336,
+                  269723344,
+                  68928
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342177460,
+                  1895886752,
+                  96,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "memcpy",
+                "arguments": [
+                  1342201856,
+                  1895886752,
+                  16,
+                  1342201856
+                ],
+                "result": 1342201856
+              },
+              {
+                "symbol": "pthread_cond_signal",
+                "arguments": [
+                  1342177488,
+                  64,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342177460,
+                  64,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1895886768,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198232,
+                  0,
+                  0,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198156,
+                  1342198136,
+                  0,
+                  1342198016
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_cond_wait",
+                "arguments": [
+                  1342198184,
+                  1342198156,
+                  0,
+                  1342198016
+                ],
+                "result": 0
+              }
+            ],
+            "function_entries": [
+              {
+                "symbol": "rq_sys_NtyTskSts",
+                "address": "0x1001e02c"
+              },
+              {
+                "symbol": "rq_tsk_GetTid",
+                "address": "0x10020bf4"
+              },
+              {
+                "symbol": "rq_msg_Send",
+                "address": "0x1001cd0c"
+              },
+              {
+                "symbol": "rq_flg_Wait",
+                "address": "0x1001b004"
+              }
+            ],
+            "error": null,
+            "display_ready": false,
+            "stop_pc": "0x1001b0d0"
+          }
+        }
+      ]
+    }
+  },
+  "explicit_parent_ready_fixture_cases": {
+    "39": {
+      "scope": "Cooperative guest pthread model executing original ARM tasks; not native pthreads",
+      "native_pthreads": false,
+      "full_startup": false,
+      "display_ready": false,
+      "fixture_startup_mode": 1,
+      "startup_mode_address": "0x1013a6c8",
+      "authentic_parent_sync": false,
+      "group_binding": {
+        "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "bias": "0x20000000",
+        "copy_symbols": [
+          "bf_grp_VramImage",
+          "st_rect"
+        ],
+        "rq_grp_Init": "0x20035d7c",
+        "loader": "GOT/REL/COPY relocation; no text patch"
+      },
+      "threads": [
+        {
+          "task": 39,
+          "alias": "0x1001",
+          "entry": "0x2b5b8",
+          "policy": 1,
+          "priority": 12,
+          "stack": "0x71000000",
+          "tls": "0x50006900",
+          "name": "tsk_drw_MainIni",
+          "status": "waiting",
+          "last": {
+            "task": 39,
+            "entry": "0x2b5b8",
+            "status": "waiting",
+            "halt_reason": "queue_service_wait",
+            "instructions": 514,
+            "total_instructions": 26167,
+            "boundary": {
+              "kind": "condition",
+              "mutex": "0x500032a4",
+              "condition": "0x500032c0",
+              "deadline_ns": 1060000000000
+            },
+            "service_calls": [
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198156,
+                  1342198156,
+                  1342198016,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1342198016,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1342198016,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_self",
+                "arguments": [
+                  0,
+                  1952,
+                  1,
+                  269723344
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  1952,
+                  1,
+                  269723344
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "pthread_self",
+                "arguments": [
+                  39,
+                  4097,
+                  269723344,
+                  1952
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  4097,
+                  269723344,
+                  1952
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  269723032,
+                  1,
+                  16,
+                  1952
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_init",
+                "arguments": [
+                  1342190244,
+                  0,
+                  1342177280,
+                  1342190200
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_cond_init",
+                "arguments": [
+                  1342190272,
+                  0,
+                  1342177280,
+                  1342190200
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "malloc",
+                "arguments": [
+                  16,
+                  1,
+                  1342177280,
+                  0
+                ],
+                "result": 1342204416
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  269723032,
+                  1342177280,
+                  0,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_self",
+                "arguments": [
+                  1,
+                  1895886800,
+                  16,
+                  1342190336
+                ],
+                "result": 4097
+              },
+              {
+                "symbol": "__tls_get_addr",
+                "arguments": [
+                  268638692,
+                  1895886800,
+                  16,
+                  1342190336
+                ],
+                "result": 1342204160
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342177460,
+                  1895886800,
+                  96,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "memcpy",
+                "arguments": [
+                  1342201872,
+                  1895886800,
+                  16,
+                  1342201856
+                ],
+                "result": 1342201872
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342177460,
+                  64,
+                  1,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342190244,
+                  95,
+                  1,
+                  1342190200
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "clock_gettime",
+                "arguments": [
+                  0,
+                  1895886688,
+                  1152921505,
+                  1342190200
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_cond_timedwait",
+                "arguments": [
+                  1342190272,
+                  1342190244,
+                  1895886688,
+                  1888
+                ],
+                "result": 0
+              }
+            ],
+            "function_entries": [
+              {
+                "symbol": "rq_grp_Init",
+                "address": "0x20035d7c"
+              },
+              {
+                "symbol": "rq_tsk_WaitInit",
+                "address": "0x10020f04"
+              },
+              {
+                "symbol": "rq_tsk_GetTid",
+                "address": "0x10020bf4"
+              },
+              {
+                "symbol": "rq_tsk_GetBlockObj",
+                "address": "0x10020e70"
+              },
+              {
+                "symbol": "rq_tsk_GetTid",
+                "address": "0x10020bf4"
+              },
+              {
+                "symbol": "rq_msg_Create",
+                "address": "0x1001d11c"
+              },
+              {
+                "symbol": "fc_msg_GetFree",
+                "address": "0x1001bc00"
+              },
+              {
+                "symbol": "rq_tsk_BlockBegin",
+                "address": "0x10020d04"
+              },
+              {
+                "symbol": "rq_tsk_GetTid",
+                "address": "0x10020bf4"
+              },
+              {
+                "symbol": "rq_msg_Send",
+                "address": "0x1001cd0c"
+              },
+              {
+                "symbol": "rq_msg_ReceiveT",
+                "address": "0x1001c0f0"
+              }
+            ],
+            "error": null,
+            "display_ready": false,
+            "stop_pc": "0x1001c228"
+          }
+        }
+      ]
+    },
+    "40": {
+      "scope": "Cooperative guest pthread model executing original ARM tasks; not native pthreads",
+      "native_pthreads": false,
+      "full_startup": false,
+      "display_ready": false,
+      "fixture_startup_mode": 1,
+      "startup_mode_address": "0x1013a6c8",
+      "authentic_parent_sync": false,
+      "group_binding": {
+        "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "bias": "0x20000000",
+        "copy_symbols": [
+          "bf_grp_VramImage",
+          "st_rect"
+        ],
+        "rq_grp_Init": "0x20035d7c",
+        "loader": "GOT/REL/COPY relocation; no text patch"
+      },
+      "threads": [
+        {
+          "task": 40,
+          "alias": "0x1001",
+          "entry": "0x2b22c",
+          "policy": 1,
+          "priority": 1,
+          "stack": "0x71000000",
+          "tls": "0x50006900",
+          "name": "tsk_drw_Main",
+          "status": "waiting",
+          "last": {
+            "task": 40,
+            "entry": "0x2b22c",
+            "status": "waiting",
+            "halt_reason": "queue_service_wait",
+            "instructions": 169,
+            "total_instructions": 691,
+            "boundary": {
+              "kind": "condition",
+              "mutex": "0x50005204",
+              "condition": "0x50005220",
+              "deadline_ns": null
+            },
+            "service_calls": [
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198156,
+                  1342198156,
+                  1342198016,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1342198016,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1342198016,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "nice",
+                "arguments": [
+                  4294967295,
+                  1342198016,
+                  1342198016,
+                  1
+                ],
+                "result": -1
+              },
+              {
+                "symbol": "pthread_getschedparam",
+                "arguments": [
+                  4097,
+                  1895886712,
+                  1895886716,
+                  1342193536
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_setschedparam",
+                "arguments": [
+                  4097,
+                  1,
+                  1895886716,
+                  1342193536
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198352,
+                  1342198016,
+                  1895886804,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198352,
+                  0,
+                  0,
+                  1342198256
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198276,
+                  1342198256,
+                  0,
+                  1342198016
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_cond_wait",
+                "arguments": [
+                  1342198304,
+                  1342198276,
+                  0,
+                  1342198016
+                ],
+                "result": 0
+              }
+            ],
+            "function_entries": [
+              {
+                "symbol": "rq_tsk_ChgPol",
+                "address": "0x100206b4"
+              },
+              {
+                "symbol": "rq_flg_Wait",
+                "address": "0x1001b004"
+              }
+            ],
+            "error": null,
+            "display_ready": false,
+            "stop_pc": "0x1001b0d0"
+          }
+        }
+      ]
+    },
+    "41": {
+      "scope": "Cooperative guest pthread model executing original ARM tasks; not native pthreads",
+      "native_pthreads": false,
+      "full_startup": false,
+      "display_ready": false,
+      "fixture_startup_mode": 1,
+      "startup_mode_address": "0x1013a6c8",
+      "authentic_parent_sync": false,
+      "group_binding": {
+        "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "bias": "0x20000000",
+        "copy_symbols": [
+          "bf_grp_VramImage",
+          "st_rect"
+        ],
+        "rq_grp_Init": "0x20035d7c",
+        "loader": "GOT/REL/COPY relocation; no text patch"
+      },
+      "threads": [
+        {
+          "task": 41,
+          "alias": "0x1001",
+          "entry": "0xf694",
+          "policy": 1,
+          "priority": 1,
+          "stack": "0x71000000",
+          "tls": "0x50006900",
+          "name": "tsk_drw_Recv",
+          "status": "blocked",
+          "last": {
+            "task": 41,
+            "entry": "0xf694",
+            "status": "blocked",
+            "halt_reason": "service_error",
+            "instructions": 79,
+            "total_instructions": 598,
+            "boundary": {
+              "symbol": "model_queue_watermark_log",
+              "error": "Non-watermark diagnostic blocked: 0x14000200",
+              "arguments": [
+                0,
+                0,
+                335544832,
+                1
+              ],
+              "caller_return": "0x1001d8dc"
+            },
+            "service_calls": [
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198156,
+                  1342198156,
+                  1342198016,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1342198016,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1342198016,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "memset",
+                "arguments": [
+                  9521360,
+                  0,
+                  57396,
+                  1
+                ],
+                "result": 9521360
+              }
+            ],
+            "function_entries": [
+              {
+                "symbol": "rq_sem_Take",
+                "address": "0x1001d7d8"
+              }
+            ],
+            "error": null,
+            "display_ready": false,
+            "stop_pc": "0x1001a624"
+          }
+        }
+      ]
+    }
+  },
+  "group_dependency_release": {
+    "scope": "Explicit parent-ready fixture plus original group dependency messages",
+    "messages": [
+      [
+        0,
+        3,
+        39,
+        0
+      ],
+      [
+        0,
+        3,
+        10,
+        0
+      ],
+      [
+        0,
+        5,
+        39,
+        10
+      ]
+    ],
+    "result": {
+      "scope": "Cooperative guest pthread model executing original ARM tasks; not native pthreads",
+      "native_pthreads": false,
+      "full_startup": false,
+      "display_ready": false,
+      "fixture_startup_mode": 1,
+      "startup_mode_address": "0x1013a6c8",
+      "authentic_parent_sync": false,
+      "group_binding": {
+        "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+        "bias": "0x20000000",
+        "copy_symbols": [
+          "bf_grp_VramImage",
+          "st_rect"
+        ],
+        "rq_grp_Init": "0x20035d7c",
+        "loader": "GOT/REL/COPY relocation; no text patch"
+      },
+      "threads": [
+        {
+          "task": 39,
+          "alias": "0x1001",
+          "entry": "0x2b5b8",
+          "policy": 1,
+          "priority": 12,
+          "stack": "0x71000000",
+          "tls": "0x50006900",
+          "name": "tsk_drw_MainIni",
+          "status": "blocked",
+          "last": {
+            "task": 39,
+            "entry": "0x2b5b8",
+            "status": "blocked",
+            "halt_reason": "service_error",
+            "instructions": 177,
+            "total_instructions": 26344,
+            "boundary": {
+              "symbol": "memcpy",
+              "error": "Uninitialized NULL guest memcpy source",
+              "arguments": [
+                1895886552,
+                0,
+                256,
+                269722944
+              ],
+              "caller_return": "0x2a52c"
+            },
+            "service_calls": [
+              {
+                "symbol": "memcpy",
+                "arguments": [
+                  1895886752,
+                  1342204672,
+                  16,
+                  0
+                ],
+                "result": 1895886752
+              },
+              {
+                "symbol": "pthread_cond_signal",
+                "arguments": [
+                  1342190272,
+                  0,
+                  1,
+                  1
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342190244,
+                  269723284,
+                  1342177280,
+                  0
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "free",
+                "arguments": [
+                  1342204672,
+                  269723284,
+                  1,
+                  1342190200
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_destroy",
+                "arguments": [
+                  1342190244,
+                  269723284,
+                  1342177280,
+                  1342190200
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_cond_destroy",
+                "arguments": [
+                  1342190272,
+                  1342190200,
+                  1342177280,
+                  1342190200
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "memset",
+                "arguments": [
+                  1342190200,
+                  0,
+                  136,
+                  1342190200
+                ],
+                "result": 1342190200
+              }
+            ],
+            "function_entries": [
+              {
+                "symbol": "rq_msg_Delete",
+                "address": "0x1001c744"
+              },
+              {
+                "symbol": "rq_sys_GetVclPara",
+                "address": "0x10016888"
+              }
+            ],
+            "error": null,
+            "display_ready": false,
+            "stop_pc": "0x6004b000"
+          }
+        },
+        {
+          "task": 10,
+          "alias": "0x1002",
+          "entry": "0xcd88",
+          "policy": 0,
+          "priority": 0,
+          "stack": "0x71010000",
+          "tls": "0x50006a00",
+          "name": "tsk_grp_DspCtl",
+          "status": "blocked",
+          "last": {
+            "task": 10,
+            "entry": "0xcd88",
+            "status": "blocked",
+            "halt_reason": "unimplemented_import",
+            "instructions": 50,
+            "total_instructions": 380,
+            "boundary": {
+              "symbol": "getpid",
+              "address": "0x6007b000",
+              "arguments": [
+                4294967295,
+                1342198016,
+                1342198016,
+                268638960
+              ],
+              "caller_return": "0x10025070"
+            },
+            "service_calls": [
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198156,
+                  1342198156,
+                  1342198016,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_lock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1342198016,
+                  1342198136
+                ],
+                "result": 0
+              },
+              {
+                "symbol": "pthread_mutex_unlock",
+                "arguments": [
+                  1342198232,
+                  1342198016,
+                  1342198016,
+                  0
+                ],
+                "result": 0
+              }
+            ],
+            "function_entries": [
+              {
+                "symbol": "rq_prc_GetPrcid",
+                "address": "0x10025040"
+              }
+            ],
+            "error": null,
+            "display_ready": false,
+            "stop_pc": "0x6007b000"
+          }
+        }
+      ]
+    }
+  },
+  "authentic_parent_sync": false,
+  "full_startup": false,
+  "startup_mode_correction": {
+    "actual_reads": [
+      {
+        "pc": "0x1001e080",
+        "address": "0x1003194c",
+        "u32": 269723300
+      },
+      {
+        "pc": "0x1001e084",
+        "address": "0x1013a6c8",
+        "u32": 1
+      }
+    ],
+    "held_at_parent_flag": {
+      "kind": "condition",
+      "mutex": "0x5000518c",
+      "condition": "0x500051a8",
+      "deadline_ns": null
+    },
+    "correct_emulated_word": "0x1013a6c8",
+    "old_wrong_word": "0x1013a724"
+  },
+  "verification": {
+    "new_guest_tests": 18,
+    "task_barrier_tests": 14,
+    "full_suite_tests": 223,
+    "failures": 0,
+    "skips": 0,
+    "full_suite_seconds": 35.985
+  },
+  "implementation_hashes": {
+    "tools/ca01_guest_threads.py": "b58c4b3ad12ead28c8429156dc0da10893efe8e42af6b7076d44e2828c7ea8ac",
+    "tests/test_ca01_guest_threads.py": "2005e2db40363dcea13f0d616ece4a7821356dbf62b8f12b3012a2861bbd96f0",
+    "tools/ca01_startup_trace.py": "027c78596e116448088eb3a03a59e05e90ada8dca0c795b08711a5169dd75600",
+    "tools/ca01_task_barriers.py": "ee927a01ac66ef54d67fee2294d48bae4497235e12de96d52c37ff18e6736ff0",
+    "tests/test_ca01_task_barriers.py": "3cea64f5ef22043bda77614e13592a4710f783db2f6efc563f1178e355a0d08f",
+    "tools/ca01_original_queue.py": "e155e5bd76ffe7d4549b180d37751120390f8b26d4409c35725bbd37b6f0a36e"
+  }
+}

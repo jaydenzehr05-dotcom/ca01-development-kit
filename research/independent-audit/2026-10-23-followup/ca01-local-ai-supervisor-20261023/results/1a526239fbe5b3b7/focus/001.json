@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DTV",
+  "examined_functions": [
+    "000a0d44",
+    "000744d8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 280,
+    "prompt_tokens": 1391,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1671
+  },
+  "next_focus": [
+    "Function 00085ae4",
+    "DAT_003da5a2 value"
+  ],
+  "observations": [
+    {
+      "address": "0x000a0d44",
+      "claim": "Calls rq_fls_Open with stack data and param_2",
+      "evidence_snippet": "iVar1 = rq_fls_Open(auStack_17c,&local_14",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000744d8",
+      "claim": "Parses nvram:// URLs and sets param_3 based on prefix",
+      "evidence_snippet": "iVar1 = strncmp(param_1,\"nvram://common/\",",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 000a0d44 opens a file using rq_fls_Open with parameters from stack and returns a handle. Function 000744d8 parses nvram:// URLs and sets parameters based on path prefixes.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "a0d44",
+    "744d8"
+  ],
+  "selection_evidence": [
+    {
+      "address": "a0d44",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "744d8",
+      "score": 178,
+      "tags": [
+        "graphics"
+      ]
+    }
+  ],
+  "source_sha256": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of DAT_003da5a2?",
+    "What does FUN_00085ae4() return?"
+  ]
+}

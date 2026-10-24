@@ -1,0 +1,103 @@
+CA01 DISPLAY/UI completed-corpus review (read-only), 2026-10-23
+
+INPUTS independently SHA256-checked:
+DISPLAY1127 /home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DISPLAY
+4755da50d4396cb213eb905ed49d6118cd8f330d05a35aa928b1bef8b2045004
+DISPLAY1134 /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY
+ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f
+HMI1127 /home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_HMI
+cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503
+libDIS_IF1134 /home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0020d017-libDIS_IF.so
+1c0d760d81ad684bf5570278ffeb9c801607715efea03533fdf6b42db3d87e49
+
+CURRENT corpus inputs selected from MANUAL_EXECUTABLE_COVERAGE.json:
+DISPLAY1134 results/ed6c8180598afb2f/ghidra/manual-parallel-merged-20261023-00023968
+DISPLAY1127 results/4755da50d4396cb2/ghidra/manual-predication-long-merged-01
+HMI1127 results/cf7c621b96d0865d/ghidra/verified-identical-executable-01
+
+NEW ACTIONABLE FINDING: authentic DISPLAY producer -> HMI property-state parser contract.
+1. DISPLAY1134 0x27d3a4 constructs scalar records; 0x27ddb0 constructs blob records.
+   Exact packed record (confirmed independent original ARM Capstone):
+   +0 LE u16 total record length = payload length + 7 (16-bit truncation as code does)
+   +2 u8 category (first function argument)
+   +3 u8 domain/page (second function argument; semantic name tentative)
+   +4 LE u16 property identifier (third function argument)
+   +6 u8 type: 0 scalar; 1 blob
+   +7 raw payload bytes (fourth pointer argument; fifth length argument)
+   Buffer starts 0x012f66c0, used-length u16 0x013046ee, count u16 0x013046f0.
+   Original compares current/new offsets <=0xe02d, not decompiler strings "DiagReq"/"iagReq".
+   Both record kinds increment used-length by total_len and count by one. Category/domain validator
+   0x27d310 allows category0 with domain<2, category1 with domain<0x7e, category2 with domain<3.
+   Normal scalar wrappers pass length4, so normal scalar records are 11 bytes.
+   0x27d494 creates (category2,domain0,property0,value0/1/2) from input low bits.
+   Example factory-generated property records: 0x2df490 writes scalar category1/domain1/property arg0/value arg1;
+   0x2c3ab0 writes scalar category1/domain3/property arg0/value arg1.
+   Do not claim these IDs name a screen without matching its MUI/schema.
+2. DISPLAY1134 0x28fd04 submits hmiDrwInfSetLib(id,0x12f66c0,used_length) if count !=0.
+   id byte 0x0133ba40 starts8 (0x28fb64), toggles8/9 only when low return byte==0;
+   notification hmiDrwInfSetNty(id) occurs only then. Batch is memset to zero for 0xe032 bytes
+   after the attempt; this clears data and used-length/count fields. Ghidra "eq" is numeric0xe032,
+   not a string or size0x7165. Original 1127 corresponding submit is0x28fe1c with same BSS ABI.
+3. HMI1127 0xf338 initializes receive storage and maps shared-memory IDs8/9 via rq_shm_Map(id,0x4afa).
+   0xf644 (small wrapper tail-branching to0xf48c) handles message subtype2, payload pointer to integer8/9, PSM Take(id), copies batch,
+   PSM Give(id), iterates record count, and rq_sem_Give(1). HMI queue0x29 receives0x41002
+   and invokes this path in0xf694. Receiving buffer0x009148d0 size0xe034:
+   +0 u16 record count; +2 LE u32 copy length; records start+6 (literal at0xf640 =0x009148d6).
+   Exact construction of six-byte shared batch envelope belongs to missing hmiDrwInfSetLib provider;
+   do not assume raw producer buffer already has that envelope.
+4. HMI0xf3b0 independently Capstone-verified parser:
+   type0 reads LE u32 atrecord+7 and calls0xe6c4(category,domain,property,value).
+   type1 calls0xe214(category,domain,property,record+7,total_length-7).
+   returns record+total_length. Unknown type logs trace0x41001/0x41.
+   These update original HMI property stores (0xe6c4 scalar,0xe214 blob), not GL directly.
+   The property store initializer0xf03c explicitly creates original sentinels/counters; a future
+   isolated replay should execute it instead of manufacturing BSS list sentinels.
+
+Practical NEXT milestone (not implemented or executed here): serialize a bounded real update in
+original DISPLAY, feed its raw records directly into original HMI0xf3b0, check exact original property-store changes.
+Only subsequently study the missing provider which must construct the independently observed6-byte
+receiver envelope; envelope creation/transport is unproven and must not be fabricated as authentic. It improves
+original GUI state integration beyond fixture-only rectangle drawing. It does NOT recover missing
+scene MUI/MRA/fonts or prove any home/menu screen can render.
+
+LAST TWO FUNCTIONS ARE NOT HIDDEN GRAPHICS/ASSET LOADERS:
+0x23968 DISPLAY1134: independent disassembly reads message+0xc payload pointer, requires payload+4 length>1,
+calls fs_cnv_NtoWord(payload+8), subtracts0x10, bounds0x22a, jumps through table0x239a0.
+Table has555 commands0x10..0x23a,155 distinct targets;401 table entries default0x24c18.
+Parent0x24c40 routes message[+4]==0xf013 here (0xf012->0x1f4f0,0xf002->0x1d40c),
+and frees payload through rq_mem_Free(2) when message[+8]==1. Decompiled strings "tem"/"em" are
+mis-typed small integer addresses0xf012/0xf013. This is a large command-dispatch path, not resource recovery.
+Catalogue size140 is not a contiguous real routine boundary: the switch table/data/branch destinations
+expand the reconstructed C and include a huge set of tail targets. Do not equate C lines to function size.
+0x2059cc DISPLAY1134 actual contiguous gate0x2059cc..0x205a3c (116 bytes) checks global byte0x12d2d15==1
+(return), switches message+8:0 tail-branches0x205900;2 tail-branches0x204a74;other logs0x4c000/0x200401.
+The long22344-byte Ghidra output folds its tail callees. Those handle media/USB/iPod/LS1 payloads,
+use fd_auu_*, mmpInfReq/ActDir, rq_apc_GetiPodNam. Parent0x205d34 dispatches subtype0xb here unless vehicle
+selector+payload[4]=='D' selects0x21be5c. No MUI/GLES/init implementation appears in this gate.
+
+ADDITIONAL DISPLAY SERVICE PROTOCOL (static decompile plus independent Capstone):
+libDIS_IF Ghidra rebases shared object by+0x10000. Below are original ELF offsets:
+disDspChgNty0xa158 (Ghidra0x1a158), disOpeCtlNty0x9fc4, disDspInfNty0x9f00.
+First two allocate pool2 payload_len+0xf via lmmDbAllocMsgMem, write three native32 words
+[operation_id,second_arg,payload_len] then payload at+12. Operation id limits<0xe0000 /<0x90000.
+Mark ready by lmmDbRdyMsgMem(id), send rq_ipc_Send(3,&ten_word_header).
+Header words: [0,0x40004,0x10 or0x11,allocated_mem_id,0,0x1a,0,0,0,0].
+disDspInfNty allocates1 byte frompool2, storeslowbyte(arg), subtype0x12 in same envelope.
+These functions ignore rq_ipc_Send return and report0 after memory allocation; observing return0 alone
+would not prove IPC delivery. Shared-interface messages are distinct from HMI four-word queue messages.
+
+NO ASSET/SYS-DIS PROVIDER BREAKTHROUGH:
+Independent pyelftools checked both DISPLAY versions: same69 DT_NEEDED names including libdismng_if.so
+and libhmi_if.so. Neither defines/imports sysDisMng* or EGL/GLES/MUI/font symbols. (A DT_NEEDED library can
+still have effects; absence of direct symbol references does not prove it may be dropped.)
+Both contain external allwords region filename lists and PNG filenames, but zero exactPNG/JPEG/GIF/ZIP/
+OpenType/TTC signatures in these binaries in simple signature check. No complete image/font extracted;
+this limited signature check cannot rule out compressed/custom data. Existing HMI embedded-magic negative
+finding remains. No recovered MUI/MRA/fonts, no matching sysDisMngInit implementation, no real menu.
+Missing libhmi_if implementation remains important for genuine packet envelope/startup semantics.
+
+EVIDENCE saved locally only:
+/tmp/ca01-display-original-proofs.json : SHA, exact instruction bytes and Capstone for producer,
+submit, parser/receiver, last two gates, cross-version1127submit, and original libDIS_IF protocol.
+/tmp/ca01-display-decompiled-excerpts.txt : narrow source excerpts with corpus absolute paths.
+Read-only work: no repository/research changes, no devices/internet/AI service changes, no bridge implementation.

@@ -1,0 +1,30 @@
+{
+  "binary": "./opt/ftl/apl/PROC_VRS",
+  "examined_functions": [
+    "000461e0",
+    "0001cf88"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 265,
+    "prompt_tokens": 2242,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2507
+  },
+  "next_focus": [
+    "Error handling in 000461e0",
+    "File I/O in 0001cf88"
+  ],
+  "observations": [],
+  "overview": "Function 000461e0 handles system initialization and error tracing, while 0001cf88 manages file operations and error reporting.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "cdc2f7a613e5a9a9a2a122a97a5cf62bbf5a7a27b863b36ea6427df2bf731976",
+  "unresolved_questions": [
+    "What is the purpose of the error trace calls?",
+    "How are the global variables initialized?"
+  ]
+}

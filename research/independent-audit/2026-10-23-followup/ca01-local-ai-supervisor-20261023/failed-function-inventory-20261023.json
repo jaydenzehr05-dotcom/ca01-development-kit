@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-23T22:24:34+00:00",
+  "failures": [
+    {
+      "sha": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+      "binary": "./opt/ftl/apl/PROC_DTV",
+      "catalogued": 4477,
+      "completed": 4475,
+      "failed": 2,
+      "manifest_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/ghidra/merged-resume-1/manifest.json",
+      "entries": [
+        {
+          "address": "00015790",
+          "name": "FUN_00015790",
+          "bytes": 216,
+          "error": "\nLow-level Error: Conditional execution: Illegal op in iblock",
+          "block": ".text"
+        },
+        {
+          "address": "00024c24",
+          "name": "FUN_00024c24",
+          "bytes": 33060,
+          "error": "Exception while decompiling 00024c24: process: timeout\n",
+          "block": ".text"
+        }
+      ]
+    },
+    {
+      "sha": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+      "binary": "./opt/ftl/apl/PROC_HMI",
+      "catalogued": 8355,
+      "completed": 8354,
+      "failed": 1,
+      "manifest_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/ghidra/merged-resume-1-reconciled/manifest.json",
+      "entries": [
+        {
+          "address": "00186210",
+          "name": "FUN_00186210",
+          "bytes": 16840,
+          "error": "Exception while decompiling 00186210: process: timeout\n",
+          "block": ".text"
+        }
+      ]
+    },
+    {
+      "sha": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+      "binary": "./opt/ftl/apl/PROC_HMI",
+      "catalogued": 8355,
+      "completed": 8354,
+      "failed": 1,
+      "manifest_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/cf7c621b96d0865d/ghidra/merged-resume-1/manifest.json",
+      "entries": [
+        {
+          "address": "00186210",
+          "name": "FUN_00186210",
+          "bytes": 16840,
+          "error": "Exception while decompiling 00186210: process: timeout\n",
+          "block": ".text"
+        }
+      ]
+    },
+    {
+      "sha": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+      "binary": "./opt/ftl/apl/PROC_MMP",
+      "catalogued": 2385,
+      "completed": 2384,
+      "failed": 1,
+      "manifest_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c826857156b51869/ghidra/decomp/manifest.json",
+      "entries": [
+        {
+          "address": "0008f07c",
+          "name": "FUN_0008f07c",
+          "bytes": 23872,
+          "error": "Exception while decompiling 0008f07c: process: timeout\n",
+          "block": ".text"
+        }
+      ]
+    },
+    {
+      "sha": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+      "binary": "./opt/ftl/apl/PROC_TMD",
+      "catalogued": 539,
+      "completed": 538,
+      "failed": 1,
+      "manifest_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/ghidra/decomp/manifest.json",
+      "entries": [
+        {
+          "address": "00019520",
+          "name": "FUN_00019520",
+          "bytes": 428,
+          "error": "\nLow-level Error: Conditional execution: Illegal op in iblock",
+          "block": ".text"
+        }
+      ]
+    },
+    {
+      "sha": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+      "binary": "./opt/ftl/apl/PROC_VRS",
+      "catalogued": 1621,
+      "completed": 1620,
+      "failed": 1,
+      "manifest_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/ghidra/decomp/manifest.json",
+      "entries": [
+        {
+          "address": "00025290",
+          "name": "FUN_00025290",
+          "bytes": 10560,
+          "error": "Exception while decompiling 00025290: process: timeout\n",
+          "block": ".text"
+        }
+      ]
+    },
+    {
+      "sha": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "binary": "PROC_DISPLAY",
+      "catalogued": 6706,
+      "completed": 6698,
+      "failed": 8,
+      "manifest_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/display1134/manifest.json",
+      "entries": [
+        {
+          "address": "00023968",
+          "name": "FUN_00023968",
+          "bytes": 140,
+          "error": "Exception while decompiling 00023968: process: timeout\n",
+          "block": ".text"
+        },
+        {
+          "address": "000fdf50",
+          "name": "FUN_000fdf50",
+          "bytes": 12128,
+          "error": "Exception while decompiling 000fdf50: process: timeout\n",
+          "block": ".text"
+        },
+        {
+          "address": "00119ee0",
+          "name": "FUN_00119ee0",
+          "bytes": 26388,
+          "error": "Exception while decompiling 00119ee0: process: timeout\n",
+          "block": ".text"
+        },
+        {
+          "address": "00181b30",
+          "name": "FUN_00181b30",
+          "bytes": 10804,
+          "error": "Exception while decompiling 00181b30: process: timeout\n",
+          "block": ".text"
+        },
+        {
+          "address": "002059cc",
+          "name": "FUN_002059cc",
+          "bytes": 22344,
+          "error": "Exception while decompiling 002059cc: process: timeout\n",
+          "block": ".text"
+        },
+        {
+          "address": "00218134",
+          "name": "FUN_00218134",
+          "bytes": 520,
+          "error": "Exception while decompiling 00218134: process: timeout\n",
+          "block": ".text"
+        },
+        {
+          "address": "003b1028",
+          "name": "FUN_003b1028",
+          "bytes": 12520,
+          "error": "Exception while decompiling 003b1028: process: timeout\n",
+          "block": ".text"
+        },
+        {
+          "address": "003b922c",
+          "name": "FUN_003b922c",
+          "bytes": 28620,
+          "error": "Exception while decompiling 003b922c: process: timeout\n",
+          "block": ".text"
+        }
+      ]
+    }
+  ],
+  "failed_function_total": 15
+}

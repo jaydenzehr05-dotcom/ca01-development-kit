@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_REPRO",
+  "examined_functions": [
+    "00019f58",
+    "0001a58c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 273,
+    "prompt_tokens": 1875,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2148
+  },
+  "next_focus": [
+    "Function FUN_00019dc8",
+    "Function FUN_0001ea68"
+  ],
+  "observations": [
+    {
+      "address": "0x00019f58",
+      "claim": "Reads 4-byte header then allocates memory for file data",
+      "evidence_snippet": "rq_fls_Read(local_2c[0],1,4,auStack_34,&local_30,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001a58c",
+      "claim": "Validates file header size before returning",
+      "evidence_snippet": "rq_fls_Read(local_1c[0],1,4,auStack_24,&local_20,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Functions process file operations with error handling and memory allocation. First reads header, then data blocks. Second function reads file header and validates size.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "19f58",
+    "1a58c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "19f58",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "1a58c",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of FUN_00019dc8?",
+    "What does FUN_0001ea68() do?"
+  ]
+}

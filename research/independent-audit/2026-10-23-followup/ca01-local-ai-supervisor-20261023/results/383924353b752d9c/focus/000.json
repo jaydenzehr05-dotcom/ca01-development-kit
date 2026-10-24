@@ -1,0 +1,61 @@
+{
+  "binary": "./opt/ftl/lib/libsct_ct.so",
+  "examined_functions": [
+    "00010e30",
+    "00010b2c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 264,
+    "prompt_tokens": 1385,
+    "prompt_tokens_details": {
+      "cached_tokens": 159
+    },
+    "total_tokens": 1649
+  },
+  "next_focus": [
+    "Message type 0x01 error handling",
+    "Point data extraction function"
+  ],
+  "observations": [
+    {
+      "address": "0x00010e30",
+      "claim": "Message type 0x01 triggers error tracing if specific bits are set",
+      "evidence_snippet": "if ((param_1[1] & 0x2cU) != 0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00010e30",
+      "claim": "Message type 0x20 handles point data extraction",
+      "evidence_snippet": "fc_drv_SwiScTswGetPoint(param_1 + 2)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00010e30 parses SWI TSW messages with error handling and data extraction. Function 00010b2c appears to be an entry point with conditional initialization.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "10e30",
+    "10b2c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "10e30",
+      "score": 4,
+      "tags": []
+    },
+    {
+      "address": "10b2c",
+      "score": 0,
+      "tags": []
+    }
+  ],
+  "source_sha256": "383924353b752d9c02f953ecf773584affc5232e15b73a707b9d4f4f659d6fae",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the 0x20 message type?",
+    "What does the 0x01 error condition represent?"
+  ]
+}

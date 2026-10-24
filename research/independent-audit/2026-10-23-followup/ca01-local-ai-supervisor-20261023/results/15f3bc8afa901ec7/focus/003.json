@@ -1,0 +1,52 @@
+{
+  "binary": "./opt/ftl/apl/PROC_AUDIO",
+  "examined_functions": [
+    "0004e028",
+    "0004e090"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 264,
+    "prompt_tokens": 707,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 971
+  },
+  "next_focus": [
+    "Global variable DAT_00149738",
+    "rq_mem_Alloc function behavior"
+  ],
+  "observations": [],
+  "overview": "Two functions handle memory allocation and message sending. First initializes a buffer with specific values, second sends messages based on a global flag.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "4e028",
+    "4e090"
+  ],
+  "selection_evidence": [
+    {
+      "address": "4e028",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "4e090",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do message IDs 0xd, 0xe, 0xf represent?",
+    "Purpose of buffer initialization values"
+  ]
+}

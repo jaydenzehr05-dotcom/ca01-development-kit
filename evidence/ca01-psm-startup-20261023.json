@@ -1,0 +1,6840 @@
+{
+  "slots_25": {
+    "role": "producer",
+    "sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+    "flash_provider_sha256": "e5ca3288453da45f666c8855ec5d2a29243f765789a36ad3a6943e674c4355b6",
+    "history": [
+      {
+        "function": "fs_cnf_Load",
+        "trace": {
+          "entry": "0x1000b920",
+          "argument": 0,
+          "halt_reason": "returned",
+          "returned": true,
+          "instructions": 3821,
+          "emulator_steps": 4012,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x7000fff0",
+          "boundary": {},
+          "function_entries": [
+            {
+              "symbol": "fs_cnf_Load",
+              "address": "0x1000b920"
+            },
+            {
+              "symbol": "fc_cnf_Init",
+              "address": "0x1000b86c"
+            },
+            {
+              "symbol": "fc_cnf_Main",
+              "address": "0x1000b728"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_GetInfCnt",
+              "address": "0x1000b120"
+            },
+            {
+              "symbol": "fc_cnf_ReadyTypPsm",
+              "address": "0x1000b5ec"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_Exit",
+              "address": "0x1000b84c"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "fopen",
+              "arguments": [
+                268593832,
+                268593844,
+                269722212,
+                0
+              ],
+              "result": 1342177296
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                1656
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                255
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109476,
+                1656,
+                110,
+                110
+              ],
+              "result": 26
+            },
+            {
+              "symbol": "malloc",
+              "arguments": [
+                2048,
+                268638684,
+                2,
+                268482028
+              ],
+              "result": 1342177328
+            },
+            {
+              "symbol": "memset",
+              "arguments": [
+                1342177328,
+                0,
+                2048,
+                268482028
+              ],
+              "result": 1342177328
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268482028
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177336,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177336
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177368,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177368
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177400,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177400
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177432,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177432
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177464,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177464
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177496,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177496
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177528,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177528
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177560,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177560
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177592,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177592
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177624,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177624
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177656,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177656
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177688,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177688
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177720,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177720
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177752,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177752
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177784,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177784
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177816,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177816
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177848,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177848
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177880,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177880
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177912,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177912
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177944,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177944
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177976,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177976
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178008,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342178008
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178040,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342178040
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178072,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342178072
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178104,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342178104
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                117
+              ],
+              "result": 1879109481
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109487,
+                268593788,
+                116,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                112
+              ],
+              "result": 1879109490
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178136,
+                1879109495,
+                116,
+                110
+              ],
+              "result": 1342178136
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fclose",
+              "arguments": [
+                1342177296,
+                1832,
+                1656,
+                269722200
+              ],
+              "result": 0
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x1000b148",
+            "0x1000b14c",
+            "0x1000b150",
+            "0x1000b154",
+            "0x1000b158",
+            "0x1000b15c",
+            "0x1000b160",
+            "0x1000b164",
+            "0x1000b168",
+            "0x1000b16c",
+            "0x1000b170",
+            "0x1000b174",
+            "0x1000b178",
+            "0x1000a160",
+            "0x1000a164",
+            "0x1000a168",
+            "0x1000b17c",
+            "0x1000b180",
+            "0x1000b184",
+            "0x1000b188",
+            "0x1000b18c",
+            "0x1000b190",
+            "0x1000b194",
+            "0x1000b234",
+            "0x1000b238",
+            "0x1000b23c",
+            "0x1000b240",
+            "0x1000b244",
+            "0x1000b248",
+            "0x1000b1b4",
+            "0x1000b1b8",
+            "0x1000b1bc",
+            "0x1000a160",
+            "0x1000a164",
+            "0x1000a168",
+            "0x1000b1c0",
+            "0x1000b1c4",
+            "0x1000b1c8",
+            "0x1000b1cc",
+            "0x1000b1d0",
+            "0x1000b1d4",
+            "0x1000b1d8",
+            "0x1000b264",
+            "0x1000b268",
+            "0x10009ec0",
+            "0x10009ec4",
+            "0x10009ec8",
+            "0x1000b26c",
+            "0x1000b270",
+            "0x1000b1f8",
+            "0x1000b1fc",
+            "0x1000b200",
+            "0x1000b204",
+            "0x1000b208",
+            "0x1000b174",
+            "0x1000b178",
+            "0x1000a160",
+            "0x1000a164",
+            "0x1000a168",
+            "0x1000b17c",
+            "0x1000b180",
+            "0x1000b184",
+            "0x1000b188",
+            "0x1000b18c",
+            "0x1000b190",
+            "0x1000b194",
+            "0x1000b198",
+            "0x1000b19c",
+            "0x1000b224",
+            "0x1000b228",
+            "0x1000b22c",
+            "0x10009db8",
+            "0x10009dbc",
+            "0x10009dc0",
+            "0x1000b230",
+            "0x1000b1b4",
+            "0x1000b1b8",
+            "0x1000b1bc",
+            "0x1000a160",
+            "0x1000a164",
+            "0x1000a168",
+            "0x1000b1c0",
+            "0x1000b1c4",
+            "0x1000b1c8",
+            "0x1000b1cc",
+            "0x1000b20c",
+            "0x1000b210",
+            "0x1000b214",
+            "0x1000b218",
+            "0x1000b21c",
+            "0x1000b220",
+            "0x1000b7f0",
+            "0x1000b7f4",
+            "0x1000b74c",
+            "0x1000b750",
+            "0x1000b754",
+            "0x1000b758",
+            "0x1000974c",
+            "0x10009750",
+            "0x10009754",
+            "0x1000b75c",
+            "0x1000b760",
+            "0x1000b7b8",
+            "0x1000b7bc",
+            "0x1000b7c0",
+            "0x1000b948",
+            "0x1000b94c",
+            "0x1000b954",
+            "0x1000b958",
+            "0x1000b95c",
+            "0x1000b960",
+            "0x1000b964",
+            "0x1000b968",
+            "0x1000b96c",
+            "0x1000b970",
+            "0x1000b974",
+            "0x100096d4",
+            "0x100096d8",
+            "0x100096dc",
+            "0x1000b84c",
+            "0x1000b850",
+            "0x1000b854",
+            "0x1000b858",
+            "0x1000b85c",
+            "0x1000b860",
+            "0x10009740",
+            "0x10009744",
+            "0x10009748"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "fs_psm_Init",
+        "trace": {
+          "entry": "0x10025a80",
+          "argument": 0,
+          "halt_reason": "returned",
+          "returned": true,
+          "instructions": 10,
+          "emulator_steps": 12,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x7000fff0",
+          "boundary": {},
+          "function_entries": [
+            {
+              "symbol": "fs_psm_Init",
+              "address": "0x10025a80"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "memset",
+              "arguments": [
+                269723840,
+                0,
+                256,
+                268636672
+              ],
+              "result": 269723840
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x10025a80",
+            "0x10025a84",
+            "0x10025a88",
+            "0x10025a8c",
+            "0x10025a90",
+            "0x10025a94",
+            "0x10025a98",
+            "0x10009890",
+            "0x10009894",
+            "0x10009898"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "original_parent_psm_slice",
+        "trace": {
+          "entry": "0x2f410",
+          "argument": 0,
+          "halt_reason": "psm_loop_boundary",
+          "returned": false,
+          "instructions": 494,
+          "emulator_steps": 496,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x2f4f4",
+          "boundary": {
+            "address": "0x2f4f4"
+          },
+          "function_entries": [
+            {
+              "symbol": "PROC_SYSTEM_PSM_creation_loop_slice",
+              "address": "0x2f410"
+            },
+            {
+              "symbol": "rq_psm_Create",
+              "address": "0x10025ea4"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "sem_unlink",
+              "arguments": [
+                1342178136,
+                1342178136,
+                1342177328,
+                268636672
+              ],
+              "result": -1
+            },
+            {
+              "symbol": "sem_open",
+              "arguments": [
+                1342178136,
+                194,
+                438,
+                1
+              ],
+              "result": 1342179376
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f4f4"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "fc_sys_InitComAdr",
+        "trace": {
+          "entry": "0x10016548",
+          "argument": 0,
+          "halt_reason": "returned",
+          "returned": true,
+          "instructions": 808,
+          "emulator_steps": 814,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x7000fff0",
+          "boundary": {},
+          "function_entries": [
+            {
+              "symbol": "fc_sys_InitComAdr",
+              "address": "0x10016548"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "memset",
+              "arguments": [
+                269722432,
+                0,
+                480,
+                0
+              ],
+              "result": 269722432
+            },
+            {
+              "symbol": "shm_unlink",
+              "arguments": [
+                268596480,
+                0,
+                480,
+                0
+              ],
+              "result": -1
+            },
+            {
+              "symbol": "shm_open",
+              "arguments": [
+                268596480,
+                194,
+                438,
+                0
+              ],
+              "result": 71
+            },
+            {
+              "symbol": "ftruncate",
+              "arguments": [
+                71,
+                2129920,
+                438,
+                0
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "mmap",
+              "arguments": [
+                0,
+                2129920,
+                3,
+                1
+              ],
+              "result": 1073741824
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x100166ec",
+            "0x100166f0"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "fs_sys_ExPreInit",
+        "trace": {
+          "entry": "0x1001648c",
+          "argument": 0,
+          "halt_reason": "returned",
+          "returned": true,
+          "instructions": 186,
+          "emulator_steps": 187,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x7000fff0",
+          "boundary": {},
+          "function_entries": [
+            {
+              "symbol": "fs_sys_ExPreInit",
+              "address": "0x1001648c"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            }
+          ],
+          "service_calls": [],
+          "last_instruction_addresses": [
+            "0x100164cc",
+            "0x100164d0",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438",
+            "0x100164d4",
+            "0x100164d8",
+            "0x100164dc",
+            "0x100164e0",
+            "0x100164e4",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438",
+            "0x100164e8",
+            "0x100164ec",
+            "0x100164f0",
+            "0x100164f4",
+            "0x100164f8",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438",
+            "0x100164fc",
+            "0x10016500",
+            "0x10016504",
+            "0x10016508",
+            "0x1001650c",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438",
+            "0x10016510",
+            "0x10016514",
+            "0x10016518",
+            "0x1001651c",
+            "0x10016520",
+            "0x10016524",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "rq_sys_LoadVclPara",
+        "trace": {
+          "entry": "0x10018010",
+          "argument": 0,
+          "halt_reason": "unimplemented_import",
+          "returned": false,
+          "instructions": 136,
+          "emulator_steps": 139,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x1001a1c8",
+          "boundary": {
+            "symbol": "rq_drc_ErrorTraceP",
+            "address": "0x1001a1c8",
+            "arguments": [
+              4294967295,
+              0,
+              3053453318,
+              6
+            ],
+            "caller_return": "0x10025da4"
+          },
+          "function_entries": [
+            {
+              "symbol": "rq_sys_LoadVclPara",
+              "address": "0x10018010"
+            },
+            {
+              "symbol": "fs_flm_Read",
+              "address": "0x200012e0"
+            },
+            {
+              "symbol": "fc_flm_CheckRange",
+              "address": "0x200011c0"
+            },
+            {
+              "symbol": "rq_psm_Take",
+              "address": "0x10025cc8"
+            },
+            {
+              "symbol": "fs_drv_FlmRead",
+              "address": "0x20000e34"
+            },
+            {
+              "symbol": "rq_psm_Take",
+              "address": "0x10025cc8"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "clock_gettime",
+              "arguments": [
+                0,
+                1879109504,
+                255,
+                269723840
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "sem_timedwait",
+              "arguments": [
+                1342179376,
+                1879109504,
+                1030,
+                0
+              ],
+              "result": 0
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x10018030",
+            "0x10018034",
+            "0x1000a574",
+            "0x1000a578",
+            "0x1000a57c",
+            "0x200012e0",
+            "0x200012e4",
+            "0x200012e8",
+            "0x200012ec",
+            "0x200012f0",
+            "0x200012f4",
+            "0x200012f8",
+            "0x200012fc",
+            "0x20000ac4",
+            "0x20000ac8",
+            "0x20000acc",
+            "0x200011c0",
+            "0x200011c4",
+            "0x200011c8",
+            "0x200011cc",
+            "0x200011d0",
+            "0x200011d4",
+            "0x200011d8",
+            "0x200011dc",
+            "0x200011e0",
+            "0x200011e4",
+            "0x200011e8",
+            "0x200011ec",
+            "0x200011f0",
+            "0x200011f4",
+            "0x200011f8",
+            "0x200011fc",
+            "0x20001300",
+            "0x20001304",
+            "0x20001308",
+            "0x2000130c",
+            "0x20000a88",
+            "0x20000a8c",
+            "0x20000a90",
+            "0x10025cc8",
+            "0x10025ccc",
+            "0x10025cd0",
+            "0x10025cd4",
+            "0x10025cd8",
+            "0x10025cdc",
+            "0x10025ce0",
+            "0x10025ce4",
+            "0x10025ce8",
+            "0x10025cec",
+            "0x10025cf0",
+            "0x10025cf4",
+            "0x10025cf8",
+            "0x10025cfc",
+            "0x10025d00",
+            "0x10025d04",
+            "0x10009590",
+            "0x10009594",
+            "0x10009598",
+            "0x10025d08",
+            "0x10025d0c",
+            "0x10025d10",
+            "0x10025d14",
+            "0x10025d18",
+            "0x10025d1c",
+            "0x10025d20",
+            "0x10025d24",
+            "0x10025d28",
+            "0x10025d2c",
+            "0x10025d30",
+            "0x10025d34",
+            "0x1000a094",
+            "0x1000a098",
+            "0x1000a09c",
+            "0x10025d38",
+            "0x10025d3c",
+            "0x10025d40",
+            "0x10025d44",
+            "0x10025d48",
+            "0x20001310",
+            "0x20001314",
+            "0x20001318",
+            "0x2000131c",
+            "0x200009ec",
+            "0x200009f0",
+            "0x200009f4",
+            "0x20000e34",
+            "0x20000e38",
+            "0x20000e3c",
+            "0x20000e40",
+            "0x20000e44",
+            "0x20000e48",
+            "0x20000e4c",
+            "0x20000e50",
+            "0x20000e54",
+            "0x20000e58",
+            "0x20000e68",
+            "0x20000e6c",
+            "0x20000e70",
+            "0x20000e74",
+            "0x20000e78",
+            "0x20000a88",
+            "0x20000a8c",
+            "0x20000a90",
+            "0x10025cc8",
+            "0x10025ccc",
+            "0x10025cd0",
+            "0x10025cd4",
+            "0x10025cd8",
+            "0x10025cdc",
+            "0x10025ce0",
+            "0x10025ce4",
+            "0x10025ce8",
+            "0x10025cec",
+            "0x10025cf0",
+            "0x10025cf4",
+            "0x10025db0",
+            "0x10025db4",
+            "0x10025db8",
+            "0x10025dbc",
+            "0x10025dc0",
+            "0x10025dc4",
+            "0x10025dc8",
+            "0x10025d98",
+            "0x10025d9c",
+            "0x10025da0",
+            "0x1000a184",
+            "0x1000a188",
+            "0x1000a18c"
+          ],
+          "error": null
+        }
+      }
+    ],
+    "backend_events": [
+      {
+        "operation": "unlink",
+        "name": "/SHM_SYS_COM",
+        "result": -1
+      },
+      {
+        "operation": "open",
+        "name": "/SHM_SYS_COM",
+        "flags": 194,
+        "mode": 438,
+        "fd": 71
+      },
+      {
+        "operation": "truncate",
+        "size": 2129920
+      },
+      {
+        "operation": "map",
+        "base": "0x40000000",
+        "size": 2129920
+      }
+    ],
+    "regions": [
+      {
+        "index": 2,
+        "address": 1073741824,
+        "offset": 0,
+        "size": 8
+      },
+      {
+        "index": 3,
+        "address": 1073741832,
+        "offset": 8,
+        "size": 4112
+      },
+      {
+        "index": 4,
+        "address": 1073745944,
+        "offset": 4120,
+        "size": 64
+      },
+      {
+        "index": 5,
+        "address": 1073746008,
+        "offset": 4184,
+        "size": 24
+      },
+      {
+        "index": 6,
+        "address": 1073746032,
+        "offset": 4208,
+        "size": 32
+      },
+      {
+        "index": 8,
+        "address": 1073746064,
+        "offset": 4240,
+        "size": 24
+      },
+      {
+        "index": 9,
+        "address": 1073746088,
+        "offset": 4264,
+        "size": 131072
+      },
+      {
+        "index": 10,
+        "address": 1073877160,
+        "offset": 135336,
+        "size": 8
+      },
+      {
+        "index": 11,
+        "address": 1073877168,
+        "offset": 135344,
+        "size": 136
+      },
+      {
+        "index": 12,
+        "address": 1073877304,
+        "offset": 135480,
+        "size": 480
+      },
+      {
+        "index": 13,
+        "address": 1073877784,
+        "offset": 135960,
+        "size": 51488
+      },
+      {
+        "index": 14,
+        "address": 1073929272,
+        "offset": 187448,
+        "size": 344
+      },
+      {
+        "index": 15,
+        "address": 1073929616,
+        "offset": 187792,
+        "size": 40
+      },
+      {
+        "index": 16,
+        "address": 1073929656,
+        "offset": 187832,
+        "size": 256
+      },
+      {
+        "index": 17,
+        "address": 1073929912,
+        "offset": 188088,
+        "size": 131072
+      },
+      {
+        "index": 18,
+        "address": 1074060984,
+        "offset": 319160,
+        "size": 64
+      },
+      {
+        "index": 19,
+        "address": 1074061048,
+        "offset": 319224,
+        "size": 8
+      },
+      {
+        "index": 20,
+        "address": 1074061056,
+        "offset": 319232,
+        "size": 393216
+      },
+      {
+        "index": 21,
+        "address": 1074454272,
+        "offset": 712448,
+        "size": 232
+      },
+      {
+        "index": 22,
+        "address": 1074454504,
+        "offset": 712680,
+        "size": 232
+      },
+      {
+        "index": 23,
+        "address": 1074454736,
+        "offset": 712912,
+        "size": 64
+      },
+      {
+        "index": 24,
+        "address": 1074454800,
+        "offset": 712976,
+        "size": 2048
+      },
+      {
+        "index": 25,
+        "address": 1074456848,
+        "offset": 715024,
+        "size": 64
+      },
+      {
+        "index": 26,
+        "address": 1074456912,
+        "offset": 715088,
+        "size": 1048576
+      },
+      {
+        "index": 27,
+        "address": 1075505488,
+        "offset": 1763664,
+        "size": 232
+      },
+      {
+        "index": 28,
+        "address": 1075505720,
+        "offset": 1763896,
+        "size": 8
+      },
+      {
+        "index": 29,
+        "address": 1075505728,
+        "offset": 1763904,
+        "size": 131336
+      },
+      {
+        "index": 30,
+        "address": 1075637064,
+        "offset": 1895240,
+        "size": 8
+      },
+      {
+        "index": 36,
+        "address": 1075637072,
+        "offset": 1895248,
+        "size": 48032
+      },
+      {
+        "index": 38,
+        "address": 1075685104,
+        "offset": 1943280,
+        "size": 64032
+      }
+    ],
+    "pointer_writes": [
+      {
+        "pc": "0x10016430",
+        "address": "0x1013a534",
+        "value": "0x4002ddb8",
+        "size": 4
+      }
+    ],
+    "fixture_regions": {},
+    "full_startup": false,
+    "authentic_vehicle_data": false,
+    "host_ipc": false,
+    "hardware_access": false,
+    "configuration_fixture": "synthetic parser and PSM-loop fixture; not radio config",
+    "configuration_sha256": "107fcf617730cb4a3811829ece6906404d1b99a4de7e040b28644435d018bb5e",
+    "authentic_configuration": false,
+    "parent_full_boot": false,
+    "parent_slice_sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+    "created_slots": [
+      {
+        "slot": 25,
+        "enabled": 1,
+        "numeric_id": 51,
+        "name": "/ca01_fixture_25"
+      }
+    ],
+    "named_semaphore_events": [
+      {
+        "operation": "unlink",
+        "name": "/ca01_fixture_25",
+        "result": -1
+      },
+      {
+        "operation": "open",
+        "name": "/ca01_fixture_25",
+        "flags": 194,
+        "mode": 438,
+        "initial": 1,
+        "handle": "0x50000830"
+      },
+      {
+        "operation": "take",
+        "name": "/ca01_fixture_25",
+        "result": 0,
+        "count": 0,
+        "deadline": [
+          1030,
+          0
+        ]
+      }
+    ]
+  },
+  "slots_6_25": {
+    "role": "producer",
+    "sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+    "flash_provider_sha256": "e5ca3288453da45f666c8855ec5d2a29243f765789a36ad3a6943e674c4355b6",
+    "history": [
+      {
+        "function": "fs_cnf_Load",
+        "trace": {
+          "entry": "0x1000b920",
+          "argument": 0,
+          "halt_reason": "returned",
+          "returned": true,
+          "instructions": 3821,
+          "emulator_steps": 4012,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x7000fff0",
+          "boundary": {},
+          "function_entries": [
+            {
+              "symbol": "fs_cnf_Load",
+              "address": "0x1000b920"
+            },
+            {
+              "symbol": "fc_cnf_Init",
+              "address": "0x1000b86c"
+            },
+            {
+              "symbol": "fc_cnf_Main",
+              "address": "0x1000b728"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_GetInfCnt",
+              "address": "0x1000b120"
+            },
+            {
+              "symbol": "fc_cnf_ReadyTypPsm",
+              "address": "0x1000b5ec"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_ChkModeChange",
+              "address": "0x1000aee0"
+            },
+            {
+              "symbol": "fc_cnf_LoadTypPsm",
+              "address": "0x1000b144"
+            },
+            {
+              "symbol": "fc_cnf_Exit",
+              "address": "0x1000b84c"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "fopen",
+              "arguments": [
+                268593832,
+                268593844,
+                269722212,
+                0
+              ],
+              "result": 1342177296
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                1656
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                255
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109476,
+                1656,
+                110,
+                110
+              ],
+              "result": 26
+            },
+            {
+              "symbol": "malloc",
+              "arguments": [
+                2048,
+                268638684,
+                2,
+                268482028
+              ],
+              "result": 1342177328
+            },
+            {
+              "symbol": "memset",
+              "arguments": [
+                1342177328,
+                0,
+                2048,
+                268482028
+              ],
+              "result": 1342177328
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268482028
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177336,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177336
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177368,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177368
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177400,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177400
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177432,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177432
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177464,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177464
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177496,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177496
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                117
+              ],
+              "result": 1879109481
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109487,
+                268593788,
+                116,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                112
+              ],
+              "result": 1879109490
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177528,
+                1879109495,
+                116,
+                110
+              ],
+              "result": 1342177528
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177560,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177560
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177592,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177592
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177624,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177624
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177656,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177656
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177688,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177688
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177720,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177720
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177752,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177752
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177784,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177784
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177816,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177816
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177848,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177848
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177880,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177880
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177912,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177912
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177944,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177944
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342177976,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342177976
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178008,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342178008
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178040,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342178040
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178072,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342178072
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                117
+              ],
+              "result": 1879109482
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109488,
+                268593788,
+                102,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                112
+              ],
+              "result": 1879109491
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178104,
+                1879109496,
+                102,
+                110
+              ],
+              "result": 1342178104
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                102,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                1879109472,
+                268593788,
+                117,
+                1342177328
+              ],
+              "result": 1879109472
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                117
+              ],
+              "result": 1879109481
+            },
+            {
+              "symbol": "atoi",
+              "arguments": [
+                1879109487,
+                268593788,
+                116,
+                112
+              ],
+              "result": 51
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                112
+              ],
+              "result": 1879109490
+            },
+            {
+              "symbol": "strcpy",
+              "arguments": [
+                1342178136,
+                1879109495,
+                116,
+                110
+              ],
+              "result": 1342178136
+            },
+            {
+              "symbol": "strtok",
+              "arguments": [
+                0,
+                268593788,
+                116,
+                110
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fgets",
+              "arguments": [
+                1879109472,
+                128,
+                1342177296,
+                268480836
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "fclose",
+              "arguments": [
+                1342177296,
+                1832,
+                1656,
+                269722200
+              ],
+              "result": 0
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x1000b148",
+            "0x1000b14c",
+            "0x1000b150",
+            "0x1000b154",
+            "0x1000b158",
+            "0x1000b15c",
+            "0x1000b160",
+            "0x1000b164",
+            "0x1000b168",
+            "0x1000b16c",
+            "0x1000b170",
+            "0x1000b174",
+            "0x1000b178",
+            "0x1000a160",
+            "0x1000a164",
+            "0x1000a168",
+            "0x1000b17c",
+            "0x1000b180",
+            "0x1000b184",
+            "0x1000b188",
+            "0x1000b18c",
+            "0x1000b190",
+            "0x1000b194",
+            "0x1000b234",
+            "0x1000b238",
+            "0x1000b23c",
+            "0x1000b240",
+            "0x1000b244",
+            "0x1000b248",
+            "0x1000b1b4",
+            "0x1000b1b8",
+            "0x1000b1bc",
+            "0x1000a160",
+            "0x1000a164",
+            "0x1000a168",
+            "0x1000b1c0",
+            "0x1000b1c4",
+            "0x1000b1c8",
+            "0x1000b1cc",
+            "0x1000b1d0",
+            "0x1000b1d4",
+            "0x1000b1d8",
+            "0x1000b264",
+            "0x1000b268",
+            "0x10009ec0",
+            "0x10009ec4",
+            "0x10009ec8",
+            "0x1000b26c",
+            "0x1000b270",
+            "0x1000b1f8",
+            "0x1000b1fc",
+            "0x1000b200",
+            "0x1000b204",
+            "0x1000b208",
+            "0x1000b174",
+            "0x1000b178",
+            "0x1000a160",
+            "0x1000a164",
+            "0x1000a168",
+            "0x1000b17c",
+            "0x1000b180",
+            "0x1000b184",
+            "0x1000b188",
+            "0x1000b18c",
+            "0x1000b190",
+            "0x1000b194",
+            "0x1000b198",
+            "0x1000b19c",
+            "0x1000b224",
+            "0x1000b228",
+            "0x1000b22c",
+            "0x10009db8",
+            "0x10009dbc",
+            "0x10009dc0",
+            "0x1000b230",
+            "0x1000b1b4",
+            "0x1000b1b8",
+            "0x1000b1bc",
+            "0x1000a160",
+            "0x1000a164",
+            "0x1000a168",
+            "0x1000b1c0",
+            "0x1000b1c4",
+            "0x1000b1c8",
+            "0x1000b1cc",
+            "0x1000b20c",
+            "0x1000b210",
+            "0x1000b214",
+            "0x1000b218",
+            "0x1000b21c",
+            "0x1000b220",
+            "0x1000b7f0",
+            "0x1000b7f4",
+            "0x1000b74c",
+            "0x1000b750",
+            "0x1000b754",
+            "0x1000b758",
+            "0x1000974c",
+            "0x10009750",
+            "0x10009754",
+            "0x1000b75c",
+            "0x1000b760",
+            "0x1000b7b8",
+            "0x1000b7bc",
+            "0x1000b7c0",
+            "0x1000b948",
+            "0x1000b94c",
+            "0x1000b954",
+            "0x1000b958",
+            "0x1000b95c",
+            "0x1000b960",
+            "0x1000b964",
+            "0x1000b968",
+            "0x1000b96c",
+            "0x1000b970",
+            "0x1000b974",
+            "0x100096d4",
+            "0x100096d8",
+            "0x100096dc",
+            "0x1000b84c",
+            "0x1000b850",
+            "0x1000b854",
+            "0x1000b858",
+            "0x1000b85c",
+            "0x1000b860",
+            "0x10009740",
+            "0x10009744",
+            "0x10009748"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "fs_psm_Init",
+        "trace": {
+          "entry": "0x10025a80",
+          "argument": 0,
+          "halt_reason": "returned",
+          "returned": true,
+          "instructions": 10,
+          "emulator_steps": 12,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x7000fff0",
+          "boundary": {},
+          "function_entries": [
+            {
+              "symbol": "fs_psm_Init",
+              "address": "0x10025a80"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "memset",
+              "arguments": [
+                269723840,
+                0,
+                256,
+                268636672
+              ],
+              "result": 269723840
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x10025a80",
+            "0x10025a84",
+            "0x10025a88",
+            "0x10025a8c",
+            "0x10025a90",
+            "0x10025a94",
+            "0x10025a98",
+            "0x10009890",
+            "0x10009894",
+            "0x10009898"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "original_parent_psm_slice",
+        "trace": {
+          "entry": "0x2f410",
+          "argument": 0,
+          "halt_reason": "psm_loop_boundary",
+          "returned": false,
+          "instructions": 534,
+          "emulator_steps": 538,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x2f4f4",
+          "boundary": {
+            "address": "0x2f4f4"
+          },
+          "function_entries": [
+            {
+              "symbol": "PROC_SYSTEM_PSM_creation_loop_slice",
+              "address": "0x2f410"
+            },
+            {
+              "symbol": "rq_psm_Create",
+              "address": "0x10025ea4"
+            },
+            {
+              "symbol": "rq_psm_Create",
+              "address": "0x10025ea4"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "sem_unlink",
+              "arguments": [
+                1342177528,
+                1342177528,
+                1342177328,
+                268636672
+              ],
+              "result": -1
+            },
+            {
+              "symbol": "sem_open",
+              "arguments": [
+                1342177528,
+                194,
+                438,
+                1
+              ],
+              "result": 1342179376
+            },
+            {
+              "symbol": "sem_unlink",
+              "arguments": [
+                1342178136,
+                1342178136,
+                1342177328,
+                269723840
+              ],
+              "result": -1
+            },
+            {
+              "symbol": "sem_open",
+              "arguments": [
+                1342178136,
+                194,
+                438,
+                1
+              ],
+              "result": 1342179408
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f444",
+            "0x2f448",
+            "0x2f44c",
+            "0x2f450",
+            "0x2f454",
+            "0x2f458",
+            "0x2f424",
+            "0x2f428",
+            "0x2f42c",
+            "0x2f430",
+            "0x2f434",
+            "0x2f438",
+            "0x2f43c",
+            "0x2f440",
+            "0x2f4f4"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "fc_sys_InitComAdr",
+        "trace": {
+          "entry": "0x10016548",
+          "argument": 0,
+          "halt_reason": "returned",
+          "returned": true,
+          "instructions": 808,
+          "emulator_steps": 814,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x7000fff0",
+          "boundary": {},
+          "function_entries": [
+            {
+              "symbol": "fc_sys_InitComAdr",
+              "address": "0x10016548"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "memset",
+              "arguments": [
+                269722432,
+                0,
+                480,
+                0
+              ],
+              "result": 269722432
+            },
+            {
+              "symbol": "shm_unlink",
+              "arguments": [
+                268596480,
+                0,
+                480,
+                0
+              ],
+              "result": -1
+            },
+            {
+              "symbol": "shm_open",
+              "arguments": [
+                268596480,
+                194,
+                438,
+                0
+              ],
+              "result": 71
+            },
+            {
+              "symbol": "ftruncate",
+              "arguments": [
+                71,
+                2129920,
+                438,
+                0
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "mmap",
+              "arguments": [
+                0,
+                2129920,
+                3,
+                1
+              ],
+              "result": 1073741824
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x1001660c",
+            "0x10016610",
+            "0x10016614",
+            "0x10016618",
+            "0x1001661c",
+            "0x10016620",
+            "0x100165ec",
+            "0x100165f0",
+            "0x100165f4",
+            "0x100165f8",
+            "0x100165fc",
+            "0x10016600",
+            "0x10016604",
+            "0x10016608",
+            "0x100166ec",
+            "0x100166f0"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "fs_sys_ExPreInit",
+        "trace": {
+          "entry": "0x1001648c",
+          "argument": 0,
+          "halt_reason": "returned",
+          "returned": true,
+          "instructions": 186,
+          "emulator_steps": 187,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x7000fff0",
+          "boundary": {},
+          "function_entries": [
+            {
+              "symbol": "fs_sys_ExPreInit",
+              "address": "0x1001648c"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            },
+            {
+              "symbol": "fs_sys_GetComAdr",
+              "address": "0x100163f4"
+            }
+          ],
+          "service_calls": [],
+          "last_instruction_addresses": [
+            "0x100164cc",
+            "0x100164d0",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438",
+            "0x100164d4",
+            "0x100164d8",
+            "0x100164dc",
+            "0x100164e0",
+            "0x100164e4",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438",
+            "0x100164e8",
+            "0x100164ec",
+            "0x100164f0",
+            "0x100164f4",
+            "0x100164f8",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438",
+            "0x100164fc",
+            "0x10016500",
+            "0x10016504",
+            "0x10016508",
+            "0x1001650c",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438",
+            "0x10016510",
+            "0x10016514",
+            "0x10016518",
+            "0x1001651c",
+            "0x10016520",
+            "0x10016524",
+            "0x1000a3f4",
+            "0x1000a3f8",
+            "0x1000a3fc",
+            "0x100163f4",
+            "0x100163f8",
+            "0x100163fc",
+            "0x10016400",
+            "0x10016404",
+            "0x10016408",
+            "0x1001640c",
+            "0x10016410",
+            "0x10016414",
+            "0x10016418",
+            "0x1001641c",
+            "0x10016420",
+            "0x10016424",
+            "0x10016428",
+            "0x1001642c",
+            "0x10016430",
+            "0x10016434",
+            "0x10016438"
+          ],
+          "error": null
+        }
+      },
+      {
+        "function": "rq_sys_LoadVclPara",
+        "trace": {
+          "entry": "0x10018010",
+          "argument": 0,
+          "halt_reason": "unimplemented_import",
+          "returned": false,
+          "instructions": 158,
+          "emulator_steps": 163,
+          "instruction_limit": 20000,
+          "timeout_us": 2000000,
+          "stop_pc": "0x6003f000",
+          "boundary": {
+            "symbol": "ioctl",
+            "address": "0x6003f000",
+            "arguments": [
+              0,
+              1074069264,
+              1879109508,
+              0
+            ],
+            "caller_return": "0x20000e90"
+          },
+          "function_entries": [
+            {
+              "symbol": "rq_sys_LoadVclPara",
+              "address": "0x10018010"
+            },
+            {
+              "symbol": "fs_flm_Read",
+              "address": "0x200012e0"
+            },
+            {
+              "symbol": "fc_flm_CheckRange",
+              "address": "0x200011c0"
+            },
+            {
+              "symbol": "rq_psm_Take",
+              "address": "0x10025cc8"
+            },
+            {
+              "symbol": "fs_drv_FlmRead",
+              "address": "0x20000e34"
+            },
+            {
+              "symbol": "rq_psm_Take",
+              "address": "0x10025cc8"
+            }
+          ],
+          "service_calls": [
+            {
+              "symbol": "clock_gettime",
+              "arguments": [
+                0,
+                1879109504,
+                255,
+                269723840
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "sem_timedwait",
+              "arguments": [
+                1342179408,
+                1879109504,
+                1030,
+                0
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "clock_gettime",
+              "arguments": [
+                0,
+                1879109472,
+                256,
+                269723840
+              ],
+              "result": 0
+            },
+            {
+              "symbol": "sem_timedwait",
+              "arguments": [
+                1342179376,
+                1879109472,
+                1030,
+                0
+              ],
+              "result": 0
+            }
+          ],
+          "last_instruction_addresses": [
+            "0x200011d8",
+            "0x200011dc",
+            "0x200011e0",
+            "0x200011e4",
+            "0x200011e8",
+            "0x200011ec",
+            "0x200011f0",
+            "0x200011f4",
+            "0x200011f8",
+            "0x200011fc",
+            "0x20001300",
+            "0x20001304",
+            "0x20001308",
+            "0x2000130c",
+            "0x20000a88",
+            "0x20000a8c",
+            "0x20000a90",
+            "0x10025cc8",
+            "0x10025ccc",
+            "0x10025cd0",
+            "0x10025cd4",
+            "0x10025cd8",
+            "0x10025cdc",
+            "0x10025ce0",
+            "0x10025ce4",
+            "0x10025ce8",
+            "0x10025cec",
+            "0x10025cf0",
+            "0x10025cf4",
+            "0x10025cf8",
+            "0x10025cfc",
+            "0x10025d00",
+            "0x10025d04",
+            "0x10009590",
+            "0x10009594",
+            "0x10009598",
+            "0x10025d08",
+            "0x10025d0c",
+            "0x10025d10",
+            "0x10025d14",
+            "0x10025d18",
+            "0x10025d1c",
+            "0x10025d20",
+            "0x10025d24",
+            "0x10025d28",
+            "0x10025d2c",
+            "0x10025d30",
+            "0x10025d34",
+            "0x1000a094",
+            "0x1000a098",
+            "0x1000a09c",
+            "0x10025d38",
+            "0x10025d3c",
+            "0x10025d40",
+            "0x10025d44",
+            "0x10025d48",
+            "0x20001310",
+            "0x20001314",
+            "0x20001318",
+            "0x2000131c",
+            "0x200009ec",
+            "0x200009f0",
+            "0x200009f4",
+            "0x20000e34",
+            "0x20000e38",
+            "0x20000e3c",
+            "0x20000e40",
+            "0x20000e44",
+            "0x20000e48",
+            "0x20000e4c",
+            "0x20000e50",
+            "0x20000e54",
+            "0x20000e58",
+            "0x20000e68",
+            "0x20000e6c",
+            "0x20000e70",
+            "0x20000e74",
+            "0x20000e78",
+            "0x20000a88",
+            "0x20000a8c",
+            "0x20000a90",
+            "0x10025cc8",
+            "0x10025ccc",
+            "0x10025cd0",
+            "0x10025cd4",
+            "0x10025cd8",
+            "0x10025cdc",
+            "0x10025ce0",
+            "0x10025ce4",
+            "0x10025ce8",
+            "0x10025cec",
+            "0x10025cf0",
+            "0x10025cf4",
+            "0x10025cf8",
+            "0x10025cfc",
+            "0x10025d00",
+            "0x10025d04",
+            "0x10009590",
+            "0x10009594",
+            "0x10009598",
+            "0x10025d08",
+            "0x10025d0c",
+            "0x10025d10",
+            "0x10025d14",
+            "0x10025d18",
+            "0x10025d1c",
+            "0x10025d20",
+            "0x10025d24",
+            "0x10025d28",
+            "0x10025d2c",
+            "0x10025d30",
+            "0x10025d34",
+            "0x1000a094",
+            "0x1000a098",
+            "0x1000a09c",
+            "0x10025d38",
+            "0x10025d3c",
+            "0x10025d40",
+            "0x10025d44",
+            "0x10025d48",
+            "0x20000e7c",
+            "0x20000e80",
+            "0x20000e84",
+            "0x20000e88",
+            "0x20000e8c",
+            "0x20000a58",
+            "0x20000a5c",
+            "0x20000a60"
+          ],
+          "error": null
+        }
+      }
+    ],
+    "backend_events": [
+      {
+        "operation": "unlink",
+        "name": "/SHM_SYS_COM",
+        "result": -1
+      },
+      {
+        "operation": "open",
+        "name": "/SHM_SYS_COM",
+        "flags": 194,
+        "mode": 438,
+        "fd": 71
+      },
+      {
+        "operation": "truncate",
+        "size": 2129920
+      },
+      {
+        "operation": "map",
+        "base": "0x40000000",
+        "size": 2129920
+      }
+    ],
+    "regions": [
+      {
+        "index": 2,
+        "address": 1073741824,
+        "offset": 0,
+        "size": 8
+      },
+      {
+        "index": 3,
+        "address": 1073741832,
+        "offset": 8,
+        "size": 4112
+      },
+      {
+        "index": 4,
+        "address": 1073745944,
+        "offset": 4120,
+        "size": 64
+      },
+      {
+        "index": 5,
+        "address": 1073746008,
+        "offset": 4184,
+        "size": 24
+      },
+      {
+        "index": 6,
+        "address": 1073746032,
+        "offset": 4208,
+        "size": 32
+      },
+      {
+        "index": 8,
+        "address": 1073746064,
+        "offset": 4240,
+        "size": 24
+      },
+      {
+        "index": 9,
+        "address": 1073746088,
+        "offset": 4264,
+        "size": 131072
+      },
+      {
+        "index": 10,
+        "address": 1073877160,
+        "offset": 135336,
+        "size": 8
+      },
+      {
+        "index": 11,
+        "address": 1073877168,
+        "offset": 135344,
+        "size": 136
+      },
+      {
+        "index": 12,
+        "address": 1073877304,
+        "offset": 135480,
+        "size": 480
+      },
+      {
+        "index": 13,
+        "address": 1073877784,
+        "offset": 135960,
+        "size": 51488
+      },
+      {
+        "index": 14,
+        "address": 1073929272,
+        "offset": 187448,
+        "size": 344
+      },
+      {
+        "index": 15,
+        "address": 1073929616,
+        "offset": 187792,
+        "size": 40
+      },
+      {
+        "index": 16,
+        "address": 1073929656,
+        "offset": 187832,
+        "size": 256
+      },
+      {
+        "index": 17,
+        "address": 1073929912,
+        "offset": 188088,
+        "size": 131072
+      },
+      {
+        "index": 18,
+        "address": 1074060984,
+        "offset": 319160,
+        "size": 64
+      },
+      {
+        "index": 19,
+        "address": 1074061048,
+        "offset": 319224,
+        "size": 8
+      },
+      {
+        "index": 20,
+        "address": 1074061056,
+        "offset": 319232,
+        "size": 393216
+      },
+      {
+        "index": 21,
+        "address": 1074454272,
+        "offset": 712448,
+        "size": 232
+      },
+      {
+        "index": 22,
+        "address": 1074454504,
+        "offset": 712680,
+        "size": 232
+      },
+      {
+        "index": 23,
+        "address": 1074454736,
+        "offset": 712912,
+        "size": 64
+      },
+      {
+        "index": 24,
+        "address": 1074454800,
+        "offset": 712976,
+        "size": 2048
+      },
+      {
+        "index": 25,
+        "address": 1074456848,
+        "offset": 715024,
+        "size": 64
+      },
+      {
+        "index": 26,
+        "address": 1074456912,
+        "offset": 715088,
+        "size": 1048576
+      },
+      {
+        "index": 27,
+        "address": 1075505488,
+        "offset": 1763664,
+        "size": 232
+      },
+      {
+        "index": 28,
+        "address": 1075505720,
+        "offset": 1763896,
+        "size": 8
+      },
+      {
+        "index": 29,
+        "address": 1075505728,
+        "offset": 1763904,
+        "size": 131336
+      },
+      {
+        "index": 30,
+        "address": 1075637064,
+        "offset": 1895240,
+        "size": 8
+      },
+      {
+        "index": 36,
+        "address": 1075637072,
+        "offset": 1895248,
+        "size": 48032
+      },
+      {
+        "index": 38,
+        "address": 1075685104,
+        "offset": 1943280,
+        "size": 64032
+      }
+    ],
+    "pointer_writes": [
+      {
+        "pc": "0x10016430",
+        "address": "0x1013a534",
+        "value": "0x4002ddb8",
+        "size": 4
+      }
+    ],
+    "fixture_regions": {},
+    "full_startup": false,
+    "authentic_vehicle_data": false,
+    "host_ipc": false,
+    "hardware_access": false,
+    "configuration_fixture": "synthetic parser and PSM-loop fixture; not radio config",
+    "configuration_sha256": "02fbf2f9b4ac538eeb4c5b5080e3862f20f0324e15829303f30741ae579bc21f",
+    "authentic_configuration": false,
+    "parent_full_boot": false,
+    "parent_slice_sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+    "created_slots": [
+      {
+        "slot": 6,
+        "enabled": 1,
+        "numeric_id": 51,
+        "name": "/ca01_fixture_06"
+      },
+      {
+        "slot": 25,
+        "enabled": 1,
+        "numeric_id": 51,
+        "name": "/ca01_fixture_25"
+      }
+    ],
+    "named_semaphore_events": [
+      {
+        "operation": "unlink",
+        "name": "/ca01_fixture_06",
+        "result": -1
+      },
+      {
+        "operation": "open",
+        "name": "/ca01_fixture_06",
+        "flags": 194,
+        "mode": 438,
+        "initial": 1,
+        "handle": "0x50000830"
+      },
+      {
+        "operation": "unlink",
+        "name": "/ca01_fixture_25",
+        "result": -1
+      },
+      {
+        "operation": "open",
+        "name": "/ca01_fixture_25",
+        "flags": 194,
+        "mode": 438,
+        "initial": 1,
+        "handle": "0x50000850"
+      },
+      {
+        "operation": "take",
+        "name": "/ca01_fixture_25",
+        "result": 0,
+        "count": 0,
+        "deadline": [
+          1030,
+          0
+        ]
+      },
+      {
+        "operation": "take",
+        "name": "/ca01_fixture_06",
+        "result": 0,
+        "count": 0,
+        "deadline": [
+          1030,
+          0
+        ]
+      }
+    ],
+    "uninitialized_flash_ioctl_boundary": {
+      "descriptor": 0,
+      "request": 1074069264,
+      "words": [
+        1073929656,
+        720896,
+        256
+      ],
+      "initialized_device": false
+    }
+  },
+  "validation": {
+    "focused_psm_tests": 11,
+    "focused_source_audit_tests": 6,
+    "full_regression_tests": 257,
+    "failures": 0,
+    "skips": 0,
+    "seconds": 37.727,
+    "log": "/tmp/ca01-psm-source-reviewed-regression-20261023.log",
+    "independent_review": "P2 conflicting duplicate identity assertions reproduced, fixed, regression tested and re-reviewed; no remaining substantive findings"
+  },
+  "implementation_sha256": {
+    "tools/ca01_psm_startup.py": "ecbcd250033b6b91bcd49e631e1cee0ae0ebea81cacf46db4a67985663369351",
+    "tools/ca01_flash_parameter_audit.py": "2f5d0ddf68cbc704dd90f5e88825ba58691c3854780725f436e1048918e7d76a",
+    "tools/ca01_common_memory.py": "b5dd47947632bd7c03e5b8c76c4350a98417d58099ef8801825157a4104ea9b1",
+    "tools/ca01_startup_trace.py": "027c78596e116448088eb3a03a59e05e90ada8dca0c795b08711a5169dd75600",
+    "tools/ca01_hmi_startup.py": "3b0bac3677a28abc0a2e968f49fddff546add9d81442348515659ab940471ef9",
+    "tests/test_ca01_psm_startup.py": "af62035acf8b9f8702d4093639689fbf83ecc19fccdf7c10f97a51c8d96081bd",
+    "tests/test_ca01_flash_parameter_audit.py": "ba60c0c21b91c94b2a568d599217e60d586a146b754c28a932705cfdd560b4d4"
+  }
+}

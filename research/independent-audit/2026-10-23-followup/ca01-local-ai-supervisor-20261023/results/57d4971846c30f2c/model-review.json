@@ -1,0 +1,43 @@
+{
+  "binary": "./opt/ftl/apl/PROC_SYSTEM",
+  "examined_functions": [
+    "0002eb74",
+    "0005f6b8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 234,
+    "prompt_tokens": 1766,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2000
+  },
+  "next_focus": [
+    "Flash device ioctl handling",
+    "Backup file extraction process"
+  ],
+  "observations": [
+    {
+      "address": "0x0002eb74",
+      "claim": "Extracts backup file using tar command from USB device.",
+      "evidence_snippet": "tar zxvfm /mnt/usb1/13PFBACKUPDB.KWI",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0005f6b8",
+      "claim": "Unmounts uSD card with error handling.",
+      "evidence_snippet": "UnMount Start",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0002eb74 handles flash device operations and backup extraction. Function 0005f6b8 manages uSD card unmounting.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "source_sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+  "unresolved_questions": [
+    "What is the purpose of the flash device ioctl operation?",
+    "What is the significance of the specific magic number 0xa5b4c3d2?"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "binary": "./opt/ftl/lib/libipas_sysc.so",
+  "examined_functions": [
+    "0001aeac",
+    "0001ad50"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 245,
+    "prompt_tokens": 1926,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2171
+  },
+  "next_focus": [
+    "Error handling in SysPowerOn function",
+    "Task creation flow in fc_sys_AccStart"
+  ],
+  "observations": [],
+  "overview": "Two functions: SysPowerOn initializes system components and handles IPC/PSM creation with error tracing, fc_sys_AccStart manages power state and task creation.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1aeac",
+    "1ad50"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1aeac",
+      "score": 193,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "1ad50",
+      "score": 192,
+      "tags": [
+        "startup_ipc",
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific error codes are used in rq_drc_ErrorTraceP calls?",
+    "How are the global variables DAT_0001b24c and DAT_0001ae98 initialized?"
+  ]
+}

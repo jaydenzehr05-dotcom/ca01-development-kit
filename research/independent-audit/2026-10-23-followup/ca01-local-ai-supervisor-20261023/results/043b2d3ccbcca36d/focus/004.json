@@ -1,0 +1,55 @@
+{
+  "binary": "./opt/ftl/apl/PROC_CDP",
+  "examined_functions": [
+    "0000a500",
+    "0000d0c0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 266,
+    "prompt_tokens": 1420,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1686
+  },
+  "next_focus": [
+    "Data at 00037fc4",
+    "Value of DAT_00036f10"
+  ],
+  "observations": [
+    {
+      "address": "0x0000d0c0",
+      "claim": "Updates global variables based on DAT_00036f10 value",
+      "evidence_snippet": "switch(DAT_00036f10)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function at 0000a500 handles parameter selection with multiple cases, returning values based on inputs. Function at 0000d0c0 updates global variables based on a switch condition.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "a500",
+    "d0c0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "a500",
+      "score": 4,
+      "tags": []
+    },
+    {
+      "address": "d0c0",
+      "score": 4,
+      "tags": []
+    }
+  ],
+  "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of FUN_00017308 call?",
+    "What do the data pointers represent?"
+  ]
+}

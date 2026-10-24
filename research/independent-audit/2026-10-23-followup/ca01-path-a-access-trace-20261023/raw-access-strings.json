@@ -1,0 +1,316 @@
+[
+  {
+    "file": "libipas_sysc.so",
+    "matches": [
+      {
+        "offset": "0x26ba0",
+        "text": "/dev/ttySC0"
+      },
+      {
+        "offset": "0x26bac",
+        "text": "/dev/ttySC1"
+      },
+      {
+        "offset": "0x26bb8",
+        "text": "/dev/ttySC2"
+      },
+      {
+        "offset": "0x26bc4",
+        "text": "/dev/ttySC3"
+      },
+      {
+        "offset": "0x26bd0",
+        "text": "/dev/ttySC4"
+      },
+      {
+        "offset": "0x26bdc",
+        "text": "/dev/ttySC5"
+      },
+      {
+        "offset": "0x26be8",
+        "text": "/dev/ttySC6"
+      },
+      {
+        "offset": "0x26c04",
+        "text": "/dev/ttySCIFA0"
+      },
+      {
+        "offset": "0x26c14",
+        "text": "/dev/ttySCIFA1"
+      },
+      {
+        "offset": "0x26c24",
+        "text": "/dev/ttySCIFA2"
+      },
+      {
+        "offset": "0x26c34",
+        "text": "/dev/ttySCIFA3"
+      },
+      {
+        "offset": "0x26c44",
+        "text": "/dev/ttySCIFA4"
+      },
+      {
+        "offset": "0x26c54",
+        "text": "/dev/ttySCIFA5"
+      },
+      {
+        "offset": "0x26c64",
+        "text": "/dev/ttySCIFA6"
+      },
+      {
+        "offset": "0x26c74",
+        "text": "/dev/ttySCIFA7"
+      },
+      {
+        "offset": "0x26c84",
+        "text": "/dev/ttySCIFA8"
+      },
+      {
+        "offset": "0x26c94",
+        "text": "/dev/ttySCIFA9"
+      },
+      {
+        "offset": "0x26ca4",
+        "text": "/dev/ttySCIFA10"
+      },
+      {
+        "offset": "0x26cb4",
+        "text": "/dev/ttyMSIFSPP3"
+      },
+      {
+        "offset": "0x26cc8",
+        "text": "/dev/ttyBT0"
+      }
+    ]
+  },
+  {
+    "file": "libipas_sysp.so",
+    "matches": [
+      {
+        "offset": "0x26da0",
+        "text": "/dev/ttySC0"
+      },
+      {
+        "offset": "0x26dac",
+        "text": "/dev/ttySC1"
+      },
+      {
+        "offset": "0x26db8",
+        "text": "/dev/ttySC2"
+      },
+      {
+        "offset": "0x26dc4",
+        "text": "/dev/ttySC3"
+      },
+      {
+        "offset": "0x26dd0",
+        "text": "/dev/ttySC4"
+      },
+      {
+        "offset": "0x26ddc",
+        "text": "/dev/ttySC5"
+      },
+      {
+        "offset": "0x26de8",
+        "text": "/dev/ttySC6"
+      },
+      {
+        "offset": "0x26e04",
+        "text": "/dev/ttySCIFA0"
+      },
+      {
+        "offset": "0x26e14",
+        "text": "/dev/ttySCIFA1"
+      },
+      {
+        "offset": "0x26e24",
+        "text": "/dev/ttySCIFA2"
+      },
+      {
+        "offset": "0x26e34",
+        "text": "/dev/ttySCIFA3"
+      },
+      {
+        "offset": "0x26e44",
+        "text": "/dev/ttySCIFA4"
+      },
+      {
+        "offset": "0x26e54",
+        "text": "/dev/ttySCIFA5"
+      },
+      {
+        "offset": "0x26e64",
+        "text": "/dev/ttySCIFA6"
+      },
+      {
+        "offset": "0x26e74",
+        "text": "/dev/ttySCIFA7"
+      },
+      {
+        "offset": "0x26e84",
+        "text": "/dev/ttySCIFA8"
+      },
+      {
+        "offset": "0x26e94",
+        "text": "/dev/ttySCIFA9"
+      },
+      {
+        "offset": "0x26ea4",
+        "text": "/dev/ttySCIFA10"
+      },
+      {
+        "offset": "0x26eb4",
+        "text": "/dev/ttyMSIFSPP3"
+      },
+      {
+        "offset": "0x26ec8",
+        "text": "/dev/ttyBT0"
+      }
+    ]
+  },
+  {
+    "file": "snap.sh",
+    "matches": [
+      {
+        "offset": "0x0",
+        "text": "#!/bin/sh"
+      },
+      {
+        "offset": "0x709",
+        "text": "CONSOLE=/dev/console"
+      },
+      {
+        "offset": "0x744",
+        "text": "LINUX_FUSE_CONSOLE=/dev/null"
+      },
+      {
+        "offset": "0x8e2",
+        "text": "echo ${CMDLINE} | grep -q 'syslog_typ' > /dev/null 2>&1"
+      },
+      {
+        "offset": "0x92f",
+        "text": "_LOGTYP=`echo ${CMDLINE} | sed 's/.*syslog_typ=\\([^[:space:]]\\{1,\\}\\).*/\\1/'`"
+      }
+    ]
+  },
+  {
+    "file": "PROC_MMP",
+    "matches": [
+      {
+        "offset": "0x3881",
+        "text": "vrsDbVrsShrInit"
+      }
+    ]
+  },
+  {
+    "file": "PROC_REPRO",
+    "matches": [
+      {
+        "offset": "0x164a",
+        "text": "sysSha256Update"
+      },
+      {
+        "offset": "0x1665",
+        "text": "sysSha256Init"
+      },
+      {
+        "offset": "0x16fa",
+        "text": "sysSha256Final"
+      }
+    ]
+  },
+  {
+    "file": "PROC_SYSTEM",
+    "matches": [
+      {
+        "offset": "0x6e75c",
+        "text": "tar zxvfm /mnt/usb1/13PFBACKUPDB.KWI -C /var/backup --no-same-owner"
+      },
+      {
+        "offset": "0x6e8a0",
+        "text": "/mnt/usb1/13PFBACKUPDB.KWI"
+      },
+      {
+        "offset": "0x6e8c8",
+        "text": "/mnt/usb1/13PFBACKUPDL.KWI"
+      },
+      {
+        "offset": "0x724b8",
+        "text": "com.toyota.httpserver.enform.v1"
+      },
+      {
+        "offset": "0x7250d",
+        "text": "com.toyota.httpserver.v1"
+      },
+      {
+        "offset": "0x725c4",
+        "text": "/dev/ttyBT2"
+      }
+    ]
+  },
+  {
+    "file": "PROC_AUDIO",
+    "matches": [
+      {
+        "offset": "0xcc720",
+        "text": "/dev/ttySCIFA6"
+      },
+      {
+        "offset": "0xcc730",
+        "text": "/dev/ttySCIFA3"
+      }
+    ]
+  },
+  {
+    "file": "PROC_NAVIIF",
+    "matches": [
+      {
+        "offset": "0x1ec0",
+        "text": "vrsDbVrsShrInit"
+      }
+    ]
+  },
+  {
+    "file": "PROC_DISPLAY",
+    "matches": [
+      {
+        "offset": "0x6cda",
+        "text": "vrsDbVrsShrInit"
+      },
+      {
+        "offset": "0x3db4d0",
+        "text": "/dev/ttySCIFA8"
+      }
+    ]
+  },
+  {
+    "file": "PROC_UIEIF",
+    "matches": [
+      {
+        "offset": "0x3208",
+        "text": "vrsDbVrsShrInit"
+      },
+      {
+        "offset": "0x6eb1f",
+        "text": "Nslattach -p slip -s 115200 /dev/ttyBT3 &"
+      },
+      {
+        "offset": "0x6eb8c",
+        "text": "slattach -p slip -s 115200 /dev/ttyBT2 &"
+      },
+      {
+        "offset": "0x6ec08",
+        "text": "killall slattach"
+      },
+      {
+        "offset": "0x6ec60",
+        "text": "Peer Communication Framework"
+      },
+      {
+        "offset": "0x6ec80",
+        "text": "HTTPServer"
+      }
+    ]
+  }
+]

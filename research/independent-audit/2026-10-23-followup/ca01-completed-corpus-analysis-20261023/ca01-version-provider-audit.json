@@ -1,0 +1,876 @@
+{
+  "inputs": [
+    {
+      "name": "./opt/ftl/lib/libipas_grp.so",
+      "version": "1134",
+      "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0010ac17-libipas_grp.so",
+      "bytes": 251584
+    },
+    {
+      "name": "./opt/ftl/lib/libVOIdata_cp.so",
+      "version": "1134",
+      "sha256": "911b997a5a4ecb16d98bd9a6a73a2e46af1e4abfc6ea77c27a7827c861bfdba8",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00148617-libVOIdata_cp.so",
+      "bytes": 20840
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_sysc.so",
+      "version": "1134",
+      "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0014da17-libipas_sysc.so",
+      "bytes": 173652
+    },
+    {
+      "name": "./opt/ftl/lib/libi2c_cm.so",
+      "version": "1134",
+      "sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00178417-libi2c_cm.so",
+      "bytes": 6356
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_sysp.so",
+      "version": "1134",
+      "sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0017a017-libipas_sysp.so",
+      "bytes": 173560
+    },
+    {
+      "name": "./opt/ftl/lib/libComFlmLb.so",
+      "version": "1134",
+      "sha256": "e5ca3288453da45f666c8855ec5d2a29243f765789a36ad3a6943e674c4355b6",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/001a4817-libComFlmLb.so",
+      "bytes": 9384
+    },
+    {
+      "name": "./opt/ftl/lib/libcoll.so",
+      "version": "1134",
+      "sha256": "90a7cf2c7f9eada7269b09643fcd9c7738bdb4ccab2f043e7419bdc36c852480",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/001a7017-libcoll.so",
+      "bytes": 108344
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_skt.so",
+      "version": "1134",
+      "sha256": "f6cb7d7fb510a4d97e81df828fcbb870e1dd678c12e01980adac898519e395a8",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/001c1a17-libipas_skt.so",
+      "bytes": 10160
+    },
+    {
+      "name": "./opt/ftl/lib/libAdlRd.so",
+      "version": "1134",
+      "sha256": "a2e1403bc89b737d4f9cf503dd6419a676d723715626fade1e8fe5a12e64b777",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/001c4417-libAdlRd.so",
+      "bytes": 43016
+    },
+    {
+      "name": "./opt/ftl/lib/libnavi_if.so",
+      "version": "1134",
+      "sha256": "02d11afd4414659265ff78944f5a400de0cfaff1138ef45deb4daaa88f809981",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/001cf017-libnavi_if.so",
+      "bytes": 106416
+    },
+    {
+      "name": "./opt/ftl/lib/libAdlCd.so",
+      "version": "1134",
+      "sha256": "3831438fb969950ff20fd11e1c704f9235f58ec5d93c5a0d55a06471acd32ce2",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/001e9217-libAdlCd.so",
+      "bytes": 22432
+    },
+    {
+      "name": "./opt/ftl/lib/libDisdb_if.so",
+      "version": "1134",
+      "sha256": "8486692809990cec2d1551858aea42991884886460d952979452e5b8a7f0fe47",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/001eec17-libDisdb_if.so",
+      "bytes": 54204
+    },
+    {
+      "name": "./opt/ftl/lib/libAdlUb.so",
+      "version": "1134",
+      "sha256": "f8d509b18b2be933eacdf5d09794570ce6757129190076d6815d9bcc99c0d845",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/001fc217-libAdlUb.so",
+      "bytes": 47080
+    },
+    {
+      "name": "./opt/ftl/lib/libsct_ct.so",
+      "version": "1134",
+      "sha256": "383924353b752d9c02f953ecf773584affc5232e15b73a707b9d4f4f659d6fae",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00207c17-libsct_ct.so",
+      "bytes": 10996
+    },
+    {
+      "name": "./opt/ftl/lib/libuie_api.so",
+      "version": "1134",
+      "sha256": "77e97c6cebc9e4a358ceb81c3afb91c8756785baf19691094857678ec21c78fd",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0020aa17-libuie_api.so",
+      "bytes": 9104
+    },
+    {
+      "name": "./opt/ftl/lib/libDIS_IF.so",
+      "version": "1134",
+      "sha256": "1c0d760d81ad684bf5570278ffeb9c801607715efea03533fdf6b42db3d87e49",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0020d017-libDIS_IF.so",
+      "bytes": 54396
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_ls1.so",
+      "version": "1134",
+      "sha256": "7373e2d470fbac95dbf7a7a1dd68cca59187fdb43450244fc706f8bbf7affc24",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0021a817-libipas_ls1.so",
+      "bytes": 20516
+    },
+    {
+      "name": "./opt/ftl/lib/libedbsong.so",
+      "version": "1134",
+      "sha256": "fcbd4cf0c639442e7d80877daf274ef6cd3e552bb917ea9f16bdba180d14337d",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0021fc17-libedbsong.so",
+      "bytes": 352368
+    },
+    {
+      "name": "./opt/ftl/lib/libVOIAudioStream.so",
+      "version": "1134",
+      "sha256": "c5b9d0c56a1f7539e91851fe4958316987b401d81769d40711b7102f4a62c7f1",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00276017-libVOIAudioStream.so",
+      "bytes": 74684
+    },
+    {
+      "name": "./opt/ftl/lib/libIFLB_CDDB.so",
+      "version": "1134",
+      "sha256": "1431c297e1716c7d3a49964aa523eb97b868673553e709d7897ee3a086ddad75",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00288617-libIFLB_CDDB.so",
+      "bytes": 24040
+    },
+    {
+      "name": "./opt/ftl/bin/FlashImageCreater",
+      "version": "1134",
+      "sha256": "a30874c2d9d658ff2f49581edfd90a9d4976ff67340afd199ae81e096bc0f91e",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/002a4c17-FlashImageCreater",
+      "bytes": 15252
+    },
+    {
+      "name": "./opt/ftl/bin/FlashImageWriter",
+      "version": "1134",
+      "sha256": "db3b38c1a9fd31b7a4e01ff33a65636849da45d829afc3d5aba2aec827fee18f",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/002aac17-FlashImageWriter",
+      "bytes": 18524
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DSV",
+      "version": "1134",
+      "sha256": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/002afa17-PROC_DSV",
+      "bytes": 155636
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_MMP",
+      "version": "1134",
+      "sha256": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/002d5c17-PROC_MMP",
+      "bytes": 772556
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_EXT",
+      "version": "1134",
+      "sha256": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00392817-PROC_EXT",
+      "bytes": 73208
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_REPRO",
+      "version": "1134",
+      "sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/003a4817-PROC_REPRO",
+      "bytes": 168592
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDDB",
+      "version": "1134",
+      "sha256": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/003cde17-PROC_CDDB",
+      "bytes": 1461952
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VRS",
+      "version": "1134",
+      "sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00533017-PROC_VRS",
+      "bytes": 1008440
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SYSTEM",
+      "version": "1134",
+      "sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00629617-PROC_SYSTEM",
+      "bytes": 495980
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DTV",
+      "version": "1134",
+      "sha256": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/006a2a17-PROC_DTV",
+      "bytes": 2617748
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_HMI",
+      "version": "1134",
+      "sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00921e17-PROC_HMI",
+      "bytes": 6152368
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_AUDIO",
+      "version": "1134",
+      "sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/00f00217-PROC_AUDIO",
+      "bytes": 1150180
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VI",
+      "version": "1134",
+      "sha256": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01019217-PROC_VI",
+      "bytes": 187556
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DVDDECK",
+      "version": "1134",
+      "sha256": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01047217-PROC_DVDDECK",
+      "bytes": 712576
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_NAVIIF",
+      "version": "1134",
+      "sha256": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/010f5417-PROC_NAVIIF",
+      "bytes": 135556
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DISPLAY",
+      "version": "1134",
+      "sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY",
+      "bytes": 4480028
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDP",
+      "version": "1134",
+      "sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0155c817-PROC_CDP",
+      "bytes": 89016
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_UIEIF",
+      "version": "1134",
+      "sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01572617-PROC_UIEIF",
+      "bytes": 566552
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SPC",
+      "version": "1134",
+      "sha256": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/015fce17-PROC_SPC",
+      "bytes": 65092
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_TMD",
+      "version": "1134",
+      "sha256": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0160d017-PROC_TMD",
+      "bytes": 197364
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DVDP",
+      "version": "1134",
+      "sha256": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/0163d617-PROC_DVDP",
+      "bytes": 109540
+    },
+    {
+      "name": "./opt/ftl/bin/FlashImageCreater",
+      "version": "1127",
+      "sha256": "48bb5513f542d276568bd6ab77e4790fc1480031ae92a934a34b95f7d0626b70",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-FlashImageCreater",
+      "bytes": 15252
+    },
+    {
+      "name": "./opt/ftl/bin/FlashImageWriter",
+      "version": "1127",
+      "sha256": "40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-FlashImageWriter",
+      "bytes": 18524
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DSV",
+      "version": "1127",
+      "sha256": "7ec50c5a61291cacf19cee1128a603162f99df1b59c2f2dc6c88533e6831b463",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DSV",
+      "bytes": 155636
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_MMP",
+      "version": "1127",
+      "sha256": "8c21cb0cf1fa2e145b5c8f1a2fd28473ddf994a20b9ac6579e960a81b534d8fa",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_MMP",
+      "bytes": 772556
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_EXT",
+      "version": "1127",
+      "sha256": "56446dd9bdccaa417d1334cd7aa3543311f25954d8b2fe56e0203e6407195976",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_EXT",
+      "bytes": 73208
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_REPRO",
+      "version": "1127",
+      "sha256": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_REPRO",
+      "bytes": 168592
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDDB",
+      "version": "1127",
+      "sha256": "51c8f56bcb66fca5576e3be44c0155cb5727b85eabf4b176406a4b796d9e2115",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_CDDB",
+      "bytes": 1461952
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VRS",
+      "version": "1127",
+      "sha256": "cdc2f7a613e5a9a9a2a122a97a5cf62bbf5a7a27b863b36ea6427df2bf731976",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_VRS",
+      "bytes": 1008292
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SYSTEM",
+      "version": "1127",
+      "sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SYSTEM",
+      "bytes": 495980
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DTV",
+      "version": "1127",
+      "sha256": "968d129dd831acb3f5b92885ff7f0e0d53840868e4e6e030ac18996a5a183c30",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DTV",
+      "bytes": 2617748
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_HMI",
+      "version": "1127",
+      "sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_HMI",
+      "bytes": 6152368
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_AUDIO",
+      "version": "1127",
+      "sha256": "fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_AUDIO",
+      "bytes": 1150180
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VI",
+      "version": "1127",
+      "sha256": "5afc19aec96a7acca1a0c1f27ca704f9fe3c63a25a2538775932905450df7b00",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_VI",
+      "bytes": 187556
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DVDDECK",
+      "version": "1127",
+      "sha256": "588cd697066ea9d859f3e93683248374bc88952934b2e84bb9c92978687a95c4",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DVDDECK",
+      "bytes": 712576
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_NAVIIF",
+      "version": "1127",
+      "sha256": "13e95b7508e4e6fd2106a069b3fd226c9776b81ff8eb60ef74f30ececb997e85",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_NAVIIF",
+      "bytes": 135556
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DISPLAY",
+      "version": "1127",
+      "sha256": "4755da50d4396cb213eb905ed49d6118cd8f330d05a35aa928b1bef8b2045004",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DISPLAY",
+      "bytes": 4480028
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDP",
+      "version": "1127",
+      "sha256": "5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_CDP",
+      "bytes": 89016
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_UIEIF",
+      "version": "1127",
+      "sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_UIEIF",
+      "bytes": 566552
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SPC",
+      "version": "1127",
+      "sha256": "b83fed7b7e6070895c419e27a6b5b4e197d4b66d97fe25dbbf953a25a80d94f8",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SPC",
+      "bytes": 65092
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_TMD",
+      "version": "1127",
+      "sha256": "9b3189ed775ffb23148150bf763cd09f8f3c7c651f4156c8f80c3b596ab83914",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_TMD",
+      "bytes": 197364
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DVDP",
+      "version": "1127",
+      "sha256": "e2f6688f90b51dd5c4a849cc42518dbc616e5d67cf3171270ccd403a7f1b346c",
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DVDP",
+      "bytes": 109540
+    }
+  ],
+  "pairs": [
+    {
+      "name": "./opt/ftl/bin/FlashImageCreater",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x404",
+          "last_offset": "0x417"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/bin/FlashImageWriter",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x3c4",
+          "last_offset": "0x3d7"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DSV",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x33c4",
+          "last_offset": "0x33d7"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_MMP",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0xc764",
+          "last_offset": "0xc777"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_EXT",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x23d4",
+          "last_offset": "0x23e7"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_REPRO",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0xa890",
+          "last_offset": "0xa8a3"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDDB",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x238c",
+          "last_offset": "0x239f"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VRS",
+      "section_equal": {
+        ".text": false,
+        ".rodata": false,
+        ".data": false,
+        ".dynsym": false
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 6970,
+          "first_offset": "0x4cc",
+          "last_offset": "0x50ce1"
+        },
+        ".data": {
+          "bytes_changed": 807,
+          "first_offset": "0x8",
+          "last_offset": "0x675d"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SYSTEM",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 11,
+          "first_offset": "0x148d8",
+          "last_offset": "0x148eb"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DTV",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0xda1c8",
+          "last_offset": "0xda1db"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_HMI",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x30a690",
+          "last_offset": "0x30a6a3"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_AUDIO",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 11,
+          "first_offset": "0x1377c",
+          "last_offset": "0x1378f"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VI",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x2838",
+          "last_offset": "0x284b"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DVDDECK",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x2a4b0",
+          "last_offset": "0x2a4c3"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_NAVIIF",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x2db0",
+          "last_offset": "0x2dc3"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DISPLAY",
+      "section_equal": {
+        ".text": false,
+        ".rodata": false,
+        ".data": false,
+        ".dynsym": false
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 17345,
+          "first_offset": "0x15fc",
+          "last_offset": "0x49135"
+        },
+        ".data": {
+          "bytes_changed": 920,
+          "first_offset": "0x8",
+          "last_offset": "0x3579"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDP",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x24b0",
+          "last_offset": "0x24c3"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_UIEIF",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x413c",
+          "last_offset": "0x414f"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SPC",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x2378",
+          "last_offset": "0x238b"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_TMD",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x53f0",
+          "last_offset": "0x5403"
+        }
+      }
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DVDP",
+      "section_equal": {
+        ".text": true,
+        ".rodata": false,
+        ".data": true,
+        ".dynsym": true
+      },
+      "nontext_diffs": {
+        ".rodata": {
+          "bytes_changed": 10,
+          "first_offset": "0x25e4",
+          "last_offset": "0x25f7"
+        }
+      }
+    }
+  ],
+  "selected_providers": {
+    "rq_grp_Init": [
+      {
+        "name": "./opt/ftl/lib/libipas_grp.so",
+        "version": "1134",
+        "address": "0x35d7c"
+      }
+    ],
+    "rq_psm_Create": [
+      {
+        "name": "./opt/ftl/lib/libipas_sysc.so",
+        "version": "1134",
+        "address": "0x25cd0"
+      },
+      {
+        "name": "./opt/ftl/lib/libipas_sysp.so",
+        "version": "1134",
+        "address": "0x25ea4"
+      }
+    ],
+    "fs_cnf_Load": [
+      {
+        "name": "./opt/ftl/lib/libipas_sysc.so",
+        "version": "1134",
+        "address": "0xc950"
+      },
+      {
+        "name": "./opt/ftl/lib/libipas_sysp.so",
+        "version": "1134",
+        "address": "0xb920"
+      }
+    ],
+    "fs_flm_Erase": [
+      {
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "version": "1134",
+        "address": "0x1494"
+      }
+    ],
+    "fs_flm_InitLib": [
+      {
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "version": "1134",
+        "address": "0x175c"
+      }
+    ],
+    "fs_flm_EraseSect": [
+      {
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "version": "1134",
+        "address": "0x1568"
+      }
+    ],
+    "fs_flm_CompF": [
+      {
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "version": "1134",
+        "address": "0x1360"
+      }
+    ],
+    "fs_flm_GetSect": [
+      {
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "version": "1134",
+        "address": "0x12dc"
+      }
+    ],
+    "fs_flm_Comp": [
+      {
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "version": "1134",
+        "address": "0x1418"
+      }
+    ],
+    "fs_flm_Write": [
+      {
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "version": "1134",
+        "address": "0x161c"
+      }
+    ],
+    "fs_flm_Read": [
+      {
+        "name": "./opt/ftl/lib/libComFlmLb.so",
+        "version": "1134",
+        "address": "0x12e0"
+      }
+    ]
+  },
+  "verified_inputs": 62
+}

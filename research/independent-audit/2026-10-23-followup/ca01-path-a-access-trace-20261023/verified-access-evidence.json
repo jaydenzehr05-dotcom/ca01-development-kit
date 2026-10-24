@@ -1,0 +1,102 @@
+{
+  "original_records_checked": 59,
+  "original_distinct_paths": 56,
+  "inputs": {
+    "PROC_SYSTEM": {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SYSTEM",
+      "sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26"
+    },
+    "PROC_UIEIF": {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_UIEIF",
+      "sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4"
+    },
+    "libipas_sysc.so": {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysc.so",
+      "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4"
+    },
+    "snap.sh": {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-snap.sh",
+      "sha256": "527b70c22a2f8f3830cda231482a7b4c64c4e140cf6cafa1969d5c3b74c42f55"
+    }
+  },
+  "boot": {
+    "path": "/home/starlight/projects/rav4-radio/stock-firmware/components/09-boot.bin",
+    "sha256": "3a1b20952818fb09fd6727eec15086a1c8c38b169586c64ced77a9da1c5af8ae"
+  },
+  "uieif_export": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e5eb7a2861f8747d/ghidra/decomp/decompiled.c",
+    "sha256": "a956205129fa9dd351a7c1c8d04d204f4f6be0bf79caf1fde29ed53036bde4d5"
+  },
+  "bluetooth_service_labels": {
+    "0x76bb8": "Wireless iAP",
+    "0x76c60": "Peer Communication Framework",
+    "0x76c80": "HTTPServer"
+  },
+  "uieif_network_related_imports": [
+    "system"
+  ],
+  "missing_connection_provider": "libipas_apc.so",
+  "direct_system_calls_in_network_handler": [
+    "0xd29c",
+    "0xd2a8",
+    "0xd740",
+    "0xd74c",
+    "0xd8e4",
+    "0xd8f4"
+  ],
+  "boot_environment_strings": [
+    {
+      "offset": "0x214a0",
+      "text": "bootcmd=run sd_boot"
+    },
+    {
+      "offset": "0x215b0",
+      "text": "con=console=ttyUSB0,115200 console=ttySC2,115200"
+    },
+    {
+      "offset": "0x216d5",
+      "text": "l_init=init=/sbin/init "
+    },
+    {
+      "offset": "0x21700",
+      "text": "na_set=${setargs} ${con} ${a_init} ${root_nt} ip=${ipaddr}"
+    },
+    {
+      "offset": "0x2173b",
+      "text": "nl_set=${setargs} ${con} ${l_init} ${root_nt} ip=${ipaddr}"
+    },
+    {
+      "offset": "0x21776",
+      "text": "sa_set=${setargs} ${con} ${a_init} ${root_sd}"
+    },
+    {
+      "offset": "0x217a4",
+      "text": "sl_set=${setargs} ${con} ${l_init} root=${root_dev} rootfstype=ext3 ro rootwait"
+    },
+    {
+      "offset": "0x217f4",
+      "text": "ea_set=${setargs} ${con} ${a_init} ${root_emmc}"
+    },
+    {
+      "offset": "0x21824",
+      "text": "el_set=${setargs} ${con} ${l_init} ${root_emmc}"
+    },
+    {
+      "offset": "0x21854",
+      "text": "nl_set=${setargs} ${con} ${l_init} ${root_cramfs}"
+    }
+  ],
+  "findings": [
+    "Original SLIP setup over BT serial and phone-app service labels verified; no maintenance endpoint or shell established",
+    "USB backup import writes internal backup/flash state; excluded from read-only execution plan",
+    "Network logging gated by boot parameters and QuickBoot path; no login server launched by recovered script",
+    "Serial APIs and log-ring reader are not interactive shell implementations",
+    "Configured fork/exec exists but needs unavailable launch configuration and original parent context"
+  ],
+  "limits": [
+    "Absence from recovered files does not prove absence on radio",
+    "Static code does not prove runtime activation, exposed hardware or authentication",
+    "No vehicle, Bluetooth, Ethernet, serial or USB access attempted",
+    "No exporter or emulator integration changes"
+  ]
+}

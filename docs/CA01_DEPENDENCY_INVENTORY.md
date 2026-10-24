@@ -26,7 +26,7 @@ Roles below are supported by exported names/imports unless fresh decompilation i
 | `libVOIdata_cp.so` | Voice-data copy, checks and cleanup. Exports VOIdata_cp, VOIdata_grammar_check, VOIdata_recovery_fs. |
 | `libipas_sysc.so` | System/task/IPC runtime interface. Exports rq_psm_Take/Give and hundreds of task, memory and system routines. |
 | `libi2c_cm.so` | I2C device access. Fresh Ghidra: opens /dev/i2c-0 through -4, ioctl 0x703/0x707. |
-| `libipas_sysp.so` | Alternative system/task runtime interface. Many exports overlap libipas_sysc; substitutability not verified. |
+| `libipas_sysp.so` | Producer-side system/task runtime. Original ARM probes verify creation of common memory and loading vehicle parameters via recovered libComFlmLb; unlike the consumer library, its loader is not a no-op. Full startup and substitutability remain unverified. See CA01_COMMON_MEMORY_AND_VEHICLE_PARAMETERS.md. |
 | `libComFlmLb.so` | Flash device access. Fresh Ghidra: /dev/flash, flash ioctl interface, sector operations. |
 | `libcoll.so` | Text collation interface. Exports df_edb_Coll_* and df_edb_CollEx_*. |
 | `libipas_skt.so` | Socket/network interface. Exports rq_skt_Connect, Accept, Bind, DNS and interface operations. |

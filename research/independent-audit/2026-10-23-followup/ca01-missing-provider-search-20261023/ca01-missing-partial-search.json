@@ -1,0 +1,393 @@
+{
+  "partials": [
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-02-middle-ware/UNTRUSTED.partial.bin",
+      "sha256": "26fa53c3942a422784f3eb4d759557f1ecaa21e235f882406712b875f42cc396",
+      "bytes": 1647494,
+      "known": 1623501,
+      "matches": []
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-04-device-driver/UNTRUSTED.partial.bin",
+      "sha256": "e377aa6ef8aafe004f1eadc903deda6c5b818b4b1f5c27e3e5efe0a1a1183bf9",
+      "bytes": 339905,
+      "known": 279868,
+      "matches": []
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-05-bluetooth/UNTRUSTED.partial.bin",
+      "sha256": "924e35e6ec0f47481a4f9f2f4902a3daf9a4a3c15b53f7710ac78cec4b0e9790",
+      "bytes": 1656001,
+      "known": 1487773,
+      "matches": []
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/UNTRUSTED.partial.bin",
+      "sha256": "e9563e6a0c43c7179523e36e82a1240193aa30921b9433faebd905272f68a63e",
+      "bytes": 23439895,
+      "known": 23423809,
+      "matches": [
+        {
+          "offset": 1524415,
+          "text": "ipasz.conf",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/lib/libipas_sysc.so"
+          ]
+        },
+        {
+          "offset": 1524437,
+          "text": "ipasz.conf",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/lib/libipas_sysc.so"
+          ]
+        },
+        {
+          "offset": 1706687,
+          "text": "ipasz.conf",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/lib/libipas_sysp.so"
+          ]
+        },
+        {
+          "offset": 1706709,
+          "text": "ipasz.conf",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/lib/libipas_sysp.so"
+          ]
+        },
+        {
+          "offset": 2142373,
+          "text": "fd_uif_SetUieInf",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/lib/libuie_api.so"
+          ]
+        },
+        {
+          "offset": 2983010,
+          "text": "libipas_apc.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_MMP"
+          ]
+        },
+        {
+          "offset": 3749914,
+          "text": "libipas_apc.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_EXT"
+          ]
+        },
+        {
+          "offset": 3825200,
+          "text": "libsecurity.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_REPRO"
+          ]
+        },
+        {
+          "offset": 6478719,
+          "text": "libsecurity.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_SYSTEM"
+          ]
+        },
+        {
+          "offset": 17790046,
+          "text": "libsecurity.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_NAVIIF"
+          ]
+        },
+        {
+          "offset": 17941706,
+          "text": "libipas_apc.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_DISPLAY"
+          ]
+        },
+        {
+          "offset": 17947080,
+          "text": "libsecurity.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_DISPLAY"
+          ]
+        },
+        {
+          "offset": 22497540,
+          "text": "libipas_apc.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_UIEIF"
+          ]
+        },
+        {
+          "offset": 22497601,
+          "text": "rq_apc_AppInfNsw",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_UIEIF"
+          ]
+        },
+        {
+          "offset": 22497633,
+          "text": "rq_apc_Cnct",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_UIEIF"
+          ]
+        },
+        {
+          "offset": 22498364,
+          "text": "fd_uif_SetUieInf",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_UIEIF"
+          ]
+        },
+        {
+          "offset": 23058840,
+          "text": "libipas_apc.so",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_SPC"
+          ]
+        },
+        {
+          "offset": 23058915,
+          "text": "rq_apc_Cnct",
+          "fully_known": true,
+          "containing_complete_entries": [
+            "./opt/ftl/apl/PROC_SPC"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-07-gui/UNTRUSTED.partial.bin",
+      "sha256": "c245605a1d787f1ccce26052329532ce38d3780a49d5b97b2c478cf93372ddf5",
+      "bytes": 2644922,
+      "known": 2588152,
+      "matches": []
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-08-voice-recognition/UNTRUSTED.partial.bin",
+      "sha256": "d63b3d700856aacc8b7c40715cb99cb6a33a03b98982d18f1a7aa3a4b29b6b66",
+      "bytes": 2451174,
+      "known": 2295553,
+      "matches": []
+    }
+  ],
+  "elfs": [
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_DISPLAY",
+      "sha256": "4755da50d4396cb213eb905ed49d6118cd8f330d05a35aa928b1bef8b2045004",
+      "symbols": [],
+      "needed": [
+        "libipas_apc.so",
+        "libsecurity.so"
+      ],
+      "strings": [
+        {
+          "offset": 23731,
+          "text": "libipas_apc.so"
+        },
+        {
+          "offset": 29105,
+          "text": "libsecurity.so"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_EXT",
+      "sha256": "56446dd9bdccaa417d1334cd7aa3543311f25954d8b2fe56e0203e6407195976",
+      "symbols": [],
+      "needed": [
+        "libipas_apc.so"
+      ],
+      "strings": [
+        {
+          "offset": 4099,
+          "text": "libipas_apc.so"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_MMP",
+      "sha256": "8c21cb0cf1fa2e145b5c8f1a2fd28473ddf994a20b9ac6579e960a81b534d8fa",
+      "symbols": [],
+      "needed": [
+        "libipas_apc.so"
+      ],
+      "strings": [
+        {
+          "offset": 10315,
+          "text": "libipas_apc.so"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_NAVIIF",
+      "sha256": "13e95b7508e4e6fd2106a069b3fd226c9776b81ff8eb60ef74f30ececb997e85",
+      "symbols": [],
+      "needed": [
+        "libsecurity.so"
+      ],
+      "strings": [
+        {
+          "offset": 8263,
+          "text": "libsecurity.so"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_REPRO",
+      "sha256": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+      "symbols": [],
+      "needed": [
+        "libsecurity.so"
+      ],
+      "strings": [
+        {
+          "offset": 5657,
+          "text": "libsecurity.so"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SPC",
+      "sha256": "b83fed7b7e6070895c419e27a6b5b4e197d4b66d97fe25dbbf953a25a80d94f8",
+      "symbols": [
+        {
+          "symbol": "rq_apc_Cnct",
+          "defined": false
+        }
+      ],
+      "needed": [
+        "libipas_apc.so"
+      ],
+      "strings": [
+        {
+          "offset": 2945,
+          "text": "libipas_apc.so"
+        },
+        {
+          "offset": 3020,
+          "text": "rq_apc_Cnct"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_SYSTEM",
+      "sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+      "symbols": [],
+      "needed": [
+        "libsecurity.so"
+      ],
+      "strings": [
+        {
+          "offset": 17768,
+          "text": "libsecurity.so"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_UIEIF",
+      "sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4",
+      "symbols": [
+        {
+          "symbol": "fd_uif_SetUieInf",
+          "defined": false
+        },
+        {
+          "symbol": "rq_apc_AppInfNsw",
+          "defined": false
+        },
+        {
+          "symbol": "rq_apc_Cnct",
+          "defined": false
+        }
+      ],
+      "needed": [
+        "libipas_apc.so"
+      ],
+      "strings": [
+        {
+          "offset": 8941,
+          "text": "libipas_apc.so"
+        },
+        {
+          "offset": 9002,
+          "text": "rq_apc_AppInfNsw"
+        },
+        {
+          "offset": 9034,
+          "text": "rq_apc_Cnct"
+        },
+        {
+          "offset": 9765,
+          "text": "fd_uif_SetUieInf"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysc.so",
+      "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+      "symbols": [],
+      "needed": [],
+      "strings": [
+        {
+          "offset": 157864,
+          "text": "ipasz.conf"
+        },
+        {
+          "offset": 157886,
+          "text": "ipasz.conf"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libipas_sysp.so",
+      "sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+      "symbols": [],
+      "needed": [],
+      "strings": [
+        {
+          "offset": 158376,
+          "text": "ipasz.conf"
+        },
+        {
+          "offset": 158398,
+          "text": "ipasz.conf"
+        }
+      ]
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-libuie_api.so",
+      "sha256": "77e97c6cebc9e4a358ceb81c3afb91c8756785baf19691094857678ec21c78fd",
+      "symbols": [
+        {
+          "symbol": "fd_uif_SetUieInf",
+          "defined": false
+        }
+      ],
+      "needed": [],
+      "strings": [
+        {
+          "offset": 1678,
+          "text": "fd_uif_SetUieInf"
+        }
+      ]
+    }
+  ]
+}

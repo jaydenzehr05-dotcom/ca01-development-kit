@@ -1,0 +1,52 @@
+{
+  "binary": "./opt/ftl/apl/PROC_AUDIO",
+  "examined_functions": [
+    "0004fe4c",
+    "0005215c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 261,
+    "prompt_tokens": 1674,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1935
+  },
+  "next_focus": [
+    "DAT_00149730 and related variables",
+    "rq_mem_Alloc and rq_msg_Send implementations"
+  ],
+  "observations": [],
+  "overview": "Function 0004fe4c handles audio processing logic with conditional message sending and buffer management. Function 0005215c allocates memory and sends messages.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "4fe4c",
+    "5215c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "4fe4c",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "5215c",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "Purpose of specific magic numbers like 0x4b0 and 0xd8",
+    "Behavior of rq_msg_Send function calls"
+  ]
+}

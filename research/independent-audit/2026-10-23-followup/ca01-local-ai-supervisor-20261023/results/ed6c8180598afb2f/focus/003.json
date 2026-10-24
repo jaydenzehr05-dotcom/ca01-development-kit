@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DISPLAY",
+  "examined_functions": [
+    "001d4364",
+    "00239cc4"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 270,
+    "prompt_tokens": 1268,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1538
+  },
+  "next_focus": [
+    "Flash storage access patterns",
+    "Directory traversal logic"
+  ],
+  "observations": [
+    {
+      "address": "0x001d4364",
+      "claim": "Reads 13-byte data from flash storage with fallback",
+      "evidence_snippet": "rq_fls_Read(iStack_14,1,0xd,&uStack_28,&iStack_18,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00239cc4",
+      "claim": "Recursively removes files based on directory traversal",
+      "evidence_snippet": "strncmp(uVar1,&DAT_003e9c80,uVar3)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 001d4364 reads a 13-byte string from flash storage, with fallback to default data. Function 00239cc4 recursively processes directories, removing files based on flags.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1d4364",
+    "239cc4"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1d4364",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "239cc4",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the 0x10 flag check?",
+    "What data is stored at DAT_00419d5c?"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "targets": "libipas_apc(?:\\.so)?|ipasz\\.conf|libsecurity\\.so|rq_apc_Cnct|rq_apc_AppInfNsw|fd_uif_SetUieInf",
+  "archives": [
+    {
+      "path": "/home/starlight/projects/rav4-radio/vendor-source/20130619_LE2355.tgz",
+      "sha256": "534800cc7991dfd29d72ce68ab750833cad3eea5d4f8fac0bffa6fc1e6dfb29e",
+      "files": 33803,
+      "bytes": 392724662
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/vendor-source/OSS_SOFT_PACK.tgz",
+      "sha256": "32d36d304284f03bab05f3c1457124e4c162c0163ac683ac5e6091403f6e3bf9",
+      "files": 88082,
+      "bytes": 1238150582
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware/DENSO_TEN_17_OSS_SOFT_PACK.zip",
+      "sha256": "d6d4a2cfae85b86209c4ae61d399238e6db63282c2f50df04aeb8378f96ebe5c",
+      "files": 133048,
+      "bytes": 1870011575
+    }
+  ],
+  "matches": [],
+  "errors": [],
+  "skipped": []
+}

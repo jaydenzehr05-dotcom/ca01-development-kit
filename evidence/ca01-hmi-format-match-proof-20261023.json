@@ -1,0 +1,189 @@
+{
+  "scope": "Original two-byte MT/MB matchers only; not successful full resource decoding",
+  "cases": [
+    {
+      "entry": "0x18a594",
+      "signature": "MB",
+      "return_value": 1,
+      "trace": {
+        "entry": "0x18a594",
+        "argument": 1342177280,
+        "halt_reason": "returned",
+        "returned": true,
+        "instructions": 13,
+        "emulator_steps": 15,
+        "instruction_limit": 20000,
+        "timeout_us": 2000000,
+        "stop_pc": "0x7000fff0",
+        "boundary": {},
+        "function_entries": [],
+        "service_calls": [
+          {
+            "symbol": "memcmp",
+            "arguments": [
+              1342177280,
+              5898032,
+              2,
+              0
+            ],
+            "result": 0
+          }
+        ],
+        "last_instruction_addresses": [
+          "0x18a594",
+          "0x18a598",
+          "0x18a59c",
+          "0x18a5a0",
+          "0x18a5a4",
+          "0x18a5a8",
+          "0x18a5ac",
+          "0xd7c0",
+          "0xd7c4",
+          "0xd7c8",
+          "0x18a5b0",
+          "0x18a5b4",
+          "0x18a5b8"
+        ],
+        "error": null
+      }
+    },
+    {
+      "entry": "0x18a594",
+      "signature": "MT",
+      "return_value": 0,
+      "trace": {
+        "entry": "0x18a594",
+        "argument": 1342177280,
+        "halt_reason": "returned",
+        "returned": true,
+        "instructions": 13,
+        "emulator_steps": 15,
+        "instruction_limit": 20000,
+        "timeout_us": 2000000,
+        "stop_pc": "0x7000fff0",
+        "boundary": {},
+        "function_entries": [],
+        "service_calls": [
+          {
+            "symbol": "memcmp",
+            "arguments": [
+              1342177280,
+              5898032,
+              2,
+              0
+            ],
+            "result": 18
+          }
+        ],
+        "last_instruction_addresses": [
+          "0x18a594",
+          "0x18a598",
+          "0x18a59c",
+          "0x18a5a0",
+          "0x18a5a4",
+          "0x18a5a8",
+          "0x18a5ac",
+          "0xd7c0",
+          "0xd7c4",
+          "0xd7c8",
+          "0x18a5b0",
+          "0x18a5b4",
+          "0x18a5b8"
+        ],
+        "error": null
+      }
+    },
+    {
+      "entry": "0x18a568",
+      "signature": "MT",
+      "return_value": 1,
+      "trace": {
+        "entry": "0x18a568",
+        "argument": 1342177280,
+        "halt_reason": "returned",
+        "returned": true,
+        "instructions": 13,
+        "emulator_steps": 15,
+        "instruction_limit": 20000,
+        "timeout_us": 2000000,
+        "stop_pc": "0x7000fff0",
+        "boundary": {},
+        "function_entries": [],
+        "service_calls": [
+          {
+            "symbol": "memcmp",
+            "arguments": [
+              1342177280,
+              5898028,
+              2,
+              0
+            ],
+            "result": 0
+          }
+        ],
+        "last_instruction_addresses": [
+          "0x18a568",
+          "0x18a56c",
+          "0x18a570",
+          "0x18a574",
+          "0x18a578",
+          "0x18a57c",
+          "0x18a580",
+          "0xd7c0",
+          "0xd7c4",
+          "0xd7c8",
+          "0x18a584",
+          "0x18a588",
+          "0x18a58c"
+        ],
+        "error": null
+      }
+    },
+    {
+      "entry": "0x18a568",
+      "signature": "MB",
+      "return_value": 0,
+      "trace": {
+        "entry": "0x18a568",
+        "argument": 1342177280,
+        "halt_reason": "returned",
+        "returned": true,
+        "instructions": 13,
+        "emulator_steps": 15,
+        "instruction_limit": 20000,
+        "timeout_us": 2000000,
+        "stop_pc": "0x7000fff0",
+        "boundary": {},
+        "function_entries": [],
+        "service_calls": [
+          {
+            "symbol": "memcmp",
+            "arguments": [
+              1342177280,
+              5898028,
+              2,
+              0
+            ],
+            "result": -18
+          }
+        ],
+        "last_instruction_addresses": [
+          "0x18a568",
+          "0x18a56c",
+          "0x18a570",
+          "0x18a574",
+          "0x18a578",
+          "0x18a57c",
+          "0x18a580",
+          "0xd7c0",
+          "0xd7c4",
+          "0xd7c8",
+          "0x18a584",
+          "0x18a588",
+          "0x18a58c"
+        ],
+        "error": null
+      }
+    }
+  ]
+}

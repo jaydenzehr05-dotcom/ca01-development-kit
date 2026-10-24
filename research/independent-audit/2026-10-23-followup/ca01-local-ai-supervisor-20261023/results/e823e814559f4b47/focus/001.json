@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_VI",
+  "examined_functions": [
+    "00009f1c",
+    "0000f1e0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 247,
+    "prompt_tokens": 1581,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1828
+  },
+  "next_focus": [
+    "Global variable DAT_0003d29c usage",
+    "Flash storage function rq_fls_Write"
+  ],
+  "observations": [
+    {
+      "address": "0x00009f1c",
+      "claim": "Function processes data with conditional global state checks",
+      "evidence_snippet": "if (DAT_0003d29c != 2)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0000f1e0",
+      "claim": "Function copies input data and performs similar flash operations",
+      "evidence_snippet": "memcpy(&DAT_0004879c,param_2,param_1)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions handle firmware data processing and flash storage operations with conditional logic based on global state variables.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "9f1c",
+    "f1e0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "9f1c",
+      "score": 216,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "f1e0",
+      "score": 216,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do global variables DAT_0003d29c and iRam000482b0 represent?",
+    "What is the purpose of the flash storage operations?"
+  ]
+}

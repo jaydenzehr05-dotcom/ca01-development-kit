@@ -1,0 +1,97 @@
+{
+  "started": "2026-10-23T23:30:16.794909+00:00",
+  "source_modified": false,
+  "local_ai_used": false,
+  "codex_used": false,
+  "events": [
+    {
+      "time": "2026-10-23T23:30:16.949865+00:00",
+      "event": "inventory",
+      "count": 5,
+      "targets": [
+        {
+          "binary": "./opt/ftl/apl/PROC_DISPLAY",
+          "sha": "4755da50d4396cb2",
+          "addresses": [
+            "00023968"
+          ]
+        },
+        {
+          "binary": "./opt/ftl/apl/PROC_DISPLAY",
+          "sha": "ed6c8180598afb2f",
+          "addresses": [
+            "00023968",
+            "002059cc"
+          ]
+        },
+        {
+          "binary": "./opt/ftl/apl/PROC_VRS",
+          "sha": "0ef37be31e5002eb",
+          "addresses": [
+            "00025290"
+          ]
+        },
+        {
+          "binary": "./opt/ftl/apl/PROC_VRS",
+          "sha": "cdc2f7a613e5a9a9",
+          "addresses": [
+            "00025288"
+          ]
+        },
+        {
+          "binary": "./opt/ftl/apl/PROC_MMP",
+          "sha": "c826857156b51869",
+          "addresses": [
+            "0008f07c"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "2026-10-23T23:30:16.971526+00:00",
+      "event": "started",
+      "sha": "4755da50d4396cb2",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "targets": [
+        "00023968"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:37:48.558457+00:00",
+      "event": "finished_case",
+      "sha": "4755da50d4396cb2",
+      "exit": 0,
+      "success": [
+        "00023968"
+      ],
+      "failed": [],
+      "pending": 0
+    },
+    {
+      "time": "2026-10-23T23:37:48.584139+00:00",
+      "event": "started",
+      "sha": "ed6c8180598afb2f",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "targets": [
+        "00023968",
+        "002059cc"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:45:54.277371+00:00",
+      "event": "finished_case",
+      "sha": "ed6c8180598afb2f",
+      "exit": 0,
+      "success": [
+        "00023968",
+        "002059cc"
+      ],
+      "failed": [],
+      "pending": 0
+    },
+    {
+      "time": "2026-10-23T23:45:54.297565+00:00",
+      "event": "all_attempts_done"
+    }
+  ]
+}

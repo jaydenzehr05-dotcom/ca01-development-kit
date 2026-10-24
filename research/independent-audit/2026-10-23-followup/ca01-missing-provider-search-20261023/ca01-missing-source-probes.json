@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-10-23T21:56:39.695691+00:00",
+  "results": [
+    {
+      "url": "https://techinfo.toyota.com/t3Portal/calibration/15TBDANA-CA01_1117",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "content_length": null,
+      "redirected": true,
+      "final_location_without_query": "https://techinfo.toyota.com/techInfoPortal/appmanager/t3/ti"
+    },
+    {
+      "url": "https://www.denso-ten.com/jp/support/source/oem/13t/index.html",
+      "status": 200,
+      "content_type": "text/html",
+      "content_length": "1429",
+      "redirected": false,
+      "final_location_without_query": "https://www.denso-ten.com/jp/support/source/oem/13t/index.html"
+    },
+    {
+      "url": "https://www.denso-ten.com/support/source/oem/17/index.html",
+      "status": 200,
+      "content_type": "text/html",
+      "content_length": "862",
+      "redirected": false,
+      "final_location_without_query": "https://www.denso-ten.com/support/source/oem/17/index.html"
+    }
+  ]
+}

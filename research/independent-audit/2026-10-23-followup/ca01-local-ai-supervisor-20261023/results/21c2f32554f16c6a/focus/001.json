@@ -1,0 +1,59 @@
+{
+  "binary": "./opt/ftl/apl/PROC_NAVIIF",
+  "examined_functions": [
+    "0001c598",
+    "00022064"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 265,
+    "prompt_tokens": 2063,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2328
+  },
+  "next_focus": [
+    "Message sending mechanism",
+    "Data processing flow for message type 0x37"
+  ],
+  "observations": [
+    {
+      "address": "0x0001c598",
+      "claim": "Endianness conversion performed on message data before sending",
+      "evidence_snippet": "AWN_Oth_CnvEndian(&stack0xffffffe4,puVar6,4)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 0001c598 processes navigation messages with endian conversion and message sending. Function 00022064 handles various message types including initialization and data processing.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1c598",
+    "22064"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1c598",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "22064",
+      "score": 152,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the endian conversion function?",
+    "How are the message types 0x30 and 0x32 handled?"
+  ]
+}

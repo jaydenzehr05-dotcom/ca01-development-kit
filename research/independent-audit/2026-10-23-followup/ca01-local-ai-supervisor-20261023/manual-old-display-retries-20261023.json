@@ -1,0 +1,141 @@
+{
+  "started": "2026-10-23T23:06:01.920628+00:00",
+  "runner": "direct Ghidra old DISPLAY targeted retries",
+  "local_ai_used": false,
+  "codex_used": false,
+  "source_firmware_modified": false,
+  "events": [
+    {
+      "time": "2026-10-23T23:06:51.922340+00:00",
+      "event": "starting_old_display_failed_entry_retries"
+    },
+    {
+      "time": "2026-10-23T23:06:51.945988+00:00",
+      "event": "candidates",
+      "files": [
+        {
+          "name": "./opt/ftl/apl/PROC_DISPLAY",
+          "sha": "4755da50d4396cb2",
+          "failures_eligible": 8
+        }
+      ]
+    },
+    {
+      "time": "2026-10-23T23:06:51.977518+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "4755da50d4396cb2",
+      "round": 50,
+      "targets": [
+        "003b9344",
+        "00119ee0",
+        "003b1140",
+        "00218250",
+        "003a61f8",
+        "000fdf50",
+        "00181b10",
+        "00023968"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:15:34.900675+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "4755da50d4396cb2",
+      "improved": [
+        "003b1140",
+        "00218250",
+        "003a61f8",
+        "000fdf50",
+        "00181b10"
+      ],
+      "errors": {
+        "00023968": "Exception while decompiling 00023968: process: timeout\n",
+        "00119ee0": "Exception while decompiling 00119ee0: process: timeout\n",
+        "003b9344": "Exception while decompiling 003b9344: process: timeout\n"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4755da50d4396cb2/ghidra/failed-retry-50/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:15:38.894061+00:00",
+      "event": "reindexed",
+      "sha": "4755da50d4396cb2",
+      "result": {
+        "skipped": false,
+        "entries": 5575,
+        "source_bodies_indexed": 5066,
+        "not_attempted": 0,
+        "failed": 3,
+        "binary": "./opt/ftl/apl/PROC_DISPLAY"
+      }
+    },
+    {
+      "time": "2026-10-23T23:15:38.913826+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "4755da50d4396cb2",
+      "round": 51,
+      "targets": [
+        "003b9344",
+        "00119ee0",
+        "00023968"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:22:31.586277+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "4755da50d4396cb2",
+      "improved": [
+        "003b9344",
+        "00119ee0"
+      ],
+      "errors": {
+        "00023968": "Exception while decompiling 00023968: process: timeout\n"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4755da50d4396cb2/ghidra/failed-retry-51/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:22:35.610794+00:00",
+      "event": "reindexed",
+      "sha": "4755da50d4396cb2",
+      "result": {
+        "skipped": false,
+        "entries": 5575,
+        "source_bodies_indexed": 5068,
+        "not_attempted": 0,
+        "failed": 1,
+        "binary": "./opt/ftl/apl/PROC_DISPLAY"
+      }
+    },
+    {
+      "time": "2026-10-23T23:22:35.631270+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "4755da50d4396cb2",
+      "round": 52,
+      "targets": [
+        "00023968"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:28:50.397772+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "4755da50d4396cb2",
+      "improved": [],
+      "errors": {
+        "00023968": "Exception while decompiling 00023968: process: timeout\n"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4755da50d4396cb2/ghidra/failed-retry-52/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:28:50.398271+00:00",
+      "event": "finished",
+      "note": "Remaining failed functions are individually recorded, never relabeled successful"
+    }
+  ]
+}

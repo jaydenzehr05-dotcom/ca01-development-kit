@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_HMI",
+  "examined_functions": [
+    "00046834",
+    "00057cc0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 228,
+    "prompt_tokens": 732,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 960
+  },
+  "next_focus": [
+    "Memory pool creation function",
+    "Data references at DAT_02840b5c"
+  ],
+  "observations": [
+    {
+      "address": "0x00046834",
+      "claim": "Configures two memory pools with different sizes",
+      "evidence_snippet": "fs_mpl_Create(2,&local_28)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00057cc0",
+      "claim": "Creates one memory pool with specific parameters",
+      "evidence_snippet": "fs_mpl_Create(1,&local_20)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Two functions configure memory pools via fs_mpl_Create with different parameters. First handles 2 pools, second handles 1 pool with distinct settings.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "46834",
+    "57cc0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "46834",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "57cc0",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the numeric parameters represent?",
+    "What are the data sources at DAT_000468c4?"
+  ]
+}

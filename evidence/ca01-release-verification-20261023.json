@@ -1,0 +1,50 @@
+{
+  "verified_at": "2026-10-24T00:07:01.504746+00:00",
+  "base_commit": "0ede6b5af0f9e727ff467d490704f0bb2bfb52b9",
+  "full_suite": {
+    "passed": 258,
+    "failures": 0,
+    "skipped": 0,
+    "seconds": 36.717,
+    "command": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v",
+    "local_log": "/tmp/ca01-publish-regression-20261023.log"
+  },
+  "additional_checks": {
+    "archived_retry_policy_tests": 6,
+    "fresh_original_arm_record_checks": 4,
+    "followup_copied_hashes": 115,
+    "exact_content_references": 109,
+    "superseded_trace_references": 3
+  },
+  "exporter_review_fix": {
+    "regression": "test_walk_rejects_destination_alias_before_creating_output",
+    "before": "Depth bound exceeded after recursive self-copying",
+    "after": "Refuses opened source directory overlapping destination before output creation",
+    "scope": "Offline direct-walker inode fixture, not a physical mount test"
+  },
+  "limits": [
+    "No full original GUI startup",
+    "No radio or physical filesystem verification",
+    "Model reviews remain unverified hypotheses",
+    "No new firmware/source-archive blobs or live databases published"
+  ],
+  "implementation_sha256": {
+    "tools/ca01_common_memory.py": "b5dd47947632bd7c03e5b8c76c4350a98417d58099ef8801825157a4104ea9b1",
+    "tools/ca01_flash_parameter_audit.py": "2f5d0ddf68cbc704dd90f5e88825ba58691c3854780725f436e1048918e7d76a",
+    "tools/ca01_guest_threads.py": "b58c4b3ad12ead28c8429156dc0da10893efe8e42af6b7076d44e2828c7ea8ac",
+    "tools/ca01_hmi_startup.py": "3b0bac3677a28abc0a2e968f49fddff546add9d81442348515659ab940471ef9",
+    "tools/ca01_original_queue.py": "e155e5bd76ffe7d4549b180d37751120390f8b26d4409c35725bbd37b6f0a36e",
+    "tools/ca01_original_task_boundaries.py": "6c7864be6b9d3a9233312ccc0173dd1b47a1ea38ed014a0e10ac3d59ead6f01d",
+    "tools/ca01_psm_startup.py": "ecbcd250033b6b91bcd49e631e1cee0ae0ebea81cacf46db4a67985663369351",
+    "tools/ca01_startup_trace.py": "027c78596e116448088eb3a03a59e05e90ada8dca0c795b08711a5169dd75600",
+    "tools/ca01_task_barriers.py": "ee927a01ac66ef54d67fee2294d48bae4497235e12de96d52c37ff18e6736ff0",
+    "tools/ca01_threaded_startup.py": "bdb65f0571cc70e9c10afb5d8e7dd9c410b0d8486f25153e36a9fc2be3113cac",
+    "tools/ca01_usb_exporter.c": "c038d1c13a77bcb0328e4ad1dd8872415838da2c29f0bd6df187d4e5739bb4b7",
+    "tools/build_ca01_usb_exporter.sh": "19fde8ff79472f56ca0ff30b91428ccdb8647f9722363130f9a4d04aa1376986",
+    "tests/test_ca01_usb_exporter.py": "fe84dd2c4626a397497595babff23ca250c131ea37dfceb58761612e8cce64bb"
+  },
+  "independent_review": {
+    "runtime": "No substantive issues; 87 focused tests passed",
+    "exporter": "Nested alias issue reproduced and fixed; independent re-review confirmed resolution and 17 tests passed"
+  }
+}

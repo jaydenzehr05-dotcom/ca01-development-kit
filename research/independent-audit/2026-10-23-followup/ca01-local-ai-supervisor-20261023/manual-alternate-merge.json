@@ -1,0 +1,28 @@
+{
+  "local_ai_used": false,
+  "codex_used": false,
+  "events": [
+    {
+      "time": "2026-10-23T23:10:58.302427+00:00",
+      "event": "waiting_for_independent_ghidra_pipelines"
+    },
+    {
+      "time": "2026-10-23T23:34:08.356658+00:00",
+      "event": "no_alternate_success",
+      "sha": "1a526239fbe5b3b7",
+      "attempts": 1
+    },
+    {
+      "time": "2026-10-23T23:34:08.357264+00:00",
+      "event": "no_alternate_success",
+      "sha": "28e8b7d000b0d764",
+      "attempts": 1
+    },
+    {
+      "time": "2026-10-23T23:34:08.573843+00:00",
+      "event": "finished",
+      "verification": "{\"total\": {\"catalogued\": 66205, \"decompiled\": 66202, \"failed\": 3, \"not_attempted\": 0}, \"inputs\": 62, \"full\": 47, \"pending\": 2, \"output\": \"/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.json\"}",
+      "verification_error": ""
+    }
+  ]
+}

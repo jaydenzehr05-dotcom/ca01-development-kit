@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/lib/libipas_grp.so",
+  "examined_functions": [
+    "0001ba1c",
+    "0001bc60"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 222,
+    "prompt_tokens": 2135,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2357
+  },
+  "next_focus": [
+    "Parameter validation logic",
+    "VRAM data processing loop"
+  ],
+  "observations": [
+    {
+      "address": "0x0001ba1c",
+      "claim": "Function validates parameter 1 < 4 before processing",
+      "evidence_snippet": "if (param_1 < 4)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001bc60",
+      "claim": "Function calculates draw range using local variables",
+      "evidence_snippet": "fc_gdr_BEUCalcDrawRange(&local_34,iVar9,param_2)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two functions handle VRAM operations: fs_gdr_BEUSetVRAM configures VRAM settings, fc_gdr_BEU32Vram processes VRAM data.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1ba1c",
+    "1bc60"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1ba1c",
+      "score": 178,
+      "tags": [
+        "graphics"
+      ]
+    },
+    {
+      "address": "1bc60",
+      "score": 178,
+      "tags": [
+        "graphics"
+      ]
+    }
+  ],
+  "source_sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the magic numbers represent?",
+    "How are the VRAM parameters used?"
+  ]
+}

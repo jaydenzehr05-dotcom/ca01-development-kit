@@ -1,0 +1,42 @@
+CA01 independent coverage quality audit (read-only, 2026-10-23)
+Root: /home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023
+No supervisor, verifier, indexer, Ghidra, firmware, network, device, local-AI or source-changing operations executed. SQL opened mode=ro&immutable=1; neither DB had WAL/SHM sidecars.
+
+1. What 66,205/66,205 actually verifies
+Independently read all 49 report-selected manifest.json and decompiled.c files. The report has 62 ELF input rows: 49 done, 13 older identical-.text skipped. All 62 original ELF files currently match their full SHA-256 input identity. All 49 chosen manifests match expected binary SHA. Function list totals and statuses match aggregate counters. All 66,205 catalogued entries have one and only one FUNCTION marker/C-like body region; zero missing body markers, zero duplicate manifest addresses or duplicate C FUNCTION addresses in the selected exports. Total class counts: 58,162 text_body + 7,945 import_thunk (.plt) + 98 other_executable (_init/_fini). Therefore 66,205 is a valid inventory-output completion count, not the count of substantive source implementations, unique implementations, semantically verified functions, or every function in factory firmware.
+Version split: 43,862 UU.11.34 entries, 22,343 UU.11.27 entries. Six already-exported identical-.text old versions account for 15,147 old entries (AUDIO3385+CDP269+HMI8355+REPRO410+SYSTEM1605+UIEIF1123). 19 of21 old/new .text crosswalks independently rehashed equal, and DISPLAY/VRS unequal as documented. All19 equal-.text pairs differ in .rodata, only10 or11 bytes; inspected HMI difference is build date/time Nov10 2017 17:05:22 -> Apr23 2018 18:25:48, other allocated sections identical. Original exports preserved and identical-version suppression is reasonable, but do not call66,205 unique routines.
+
+2. Current index demonstrably stale for one recovered HMI function
+function_coverage.sqlite3:49sources,66,205catalogued,66,204decompiled,1failed;58,161text bodies in FTS,7,945imports,98other. All49 indexed source-file hashes and every indexed body offset/hash verified against the actual indexed source. Only source selection mismatch is new HMI sha64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b address186210 FUN_00186210.
+DB still points results/64f5d905a42aa844/ghidra/merged-resume-1-reconciled/decompiled.c and manifest with that address failed/no body.
+Report AND current progress DB decompile job point results/64f5d905a42aa844/ghidra/failed-retry-01/merged-decomp, where address00186210 has a genuine full C-like output (16,840 original function bytes; successful45s retry evidence22:33:26). This is stale search/index state, not a missing recovery. Recommended narrowly rebuild this index against the current verified result, after obtaining write authorization as needed. No index changes made here.
+FTS also stores only first21,000 characters/body by coverage_index.py:30,115.188 indexed bodies exceed this cap;4,051,644 characters outside prefixes are not searchable through FTS. Full files remain available. Do not equate FTS no-hit with absence.
+
+3. Completion does not verify function discovery or semantic correctness
+Across selected49 exports, .text section sizes total23,393,856 bytes, whereas manifest function-body byte sums total17,088,108. Old DISPLAY .text3,996,420 vs sum1,707,424 (42.7%); new DISPLAY3,996,140 vs sum2,069,552 (51.8%). These ARE NOT executable-code coverage percentages: .text includes inline literals/tables, bodies may be discontiguous or overlap, and newer retry boundaries differ. They do prove that100% catalogued status does not establish100% .text discovery; there is no byte-range coverage proof in the report. Discovery variability is visible even with identical instructions: old/new AUDIO3385/3383 and SYSTEM1605/1607.
+Among58,162 text body regions,4,200 contain a Ghidra WARNING;1,023 contain 'Could not recover' (principally unrecovered jump tables),1,027 contain 'Treating indirect jump as call',738 contain removing-unreachable-block warnings,651 contain extraout_,400 unaff_. These are uncertainty indicators, not proven counts of wrong functions. Example new DISPLAY0x218134 includes UNRECOVERED_JUMPTABLE at0x21821c despite statusdecompiled. User-facing100% correctness claim cannot follow.
+
+4. Merge metadata has stale boundaries/style and per-kind summaries
+retry_failed.py:100-160 merge_success checks same ELF SHA and original selected failed address plus body marker, then copies status/calls and labels isolated_failed_only_45s_retry at129; it does not copy bytes/body-address-ranges or actual options/style from supplemental analysis. Final selected manifests have8 byte-count mismatches against their own C headers:
+old DISPLAY0018b8a0 manifest3708 vs C2636;
+old DISPLAY00343e1c4320 vs5072;
+old DISPLAY003444048332 vs9036;
+old DISPLAY0036f2ec2576 vs2772;
+old DISPLAY00119ee026632 vs24;
+new DISPLAY00218134520 vs22524;
+new DISPLAY003b102812520 vs25360;
+new DISPLAY00119ee026388 vs26632.
+These indicate differing Ghidra function analysis across passes, not by themselves wrong output or absent logic. Preserve original and supplemental boundaries separately, record current output's actual header/body counts, and audit the changed control-flow regions before asserting semantic equivalence.
+Old DISPLAY00119ee0's24-byte header is NOT vacuous output:117,750 C-like characters. Independent Capstone original ARM confirms:
+119ee0 ldr r1,[r0,#4];119ee4 sub r3,r1,#0xb;119ee8 cmp r3,#0xf;119eec ldrls pc,[pc,r3,lsl#2];119ef0 b119f34.
+16-word jump table119ef4..119f30: case0xb ->119f3c ->119eb8;0x15 ->119f38 ->119d08;0x19 ->119f40 ->119e6c;0x1a ->119f44 ->119d14; other cases ->119f34 bx lr. The decompiler follows code outside the tiny registered body; cannot infer truncation from24 alone.
+Eight present counts_by_kind maps remain stale after successful merges (oldDISPLAY,DTV,oldHMI,newHMI,MMP,TMD,oldVRS,newVRS); three older exports omit maps. Top-level and per-function counts independently consistent. Update derived per-kind summaries if regenerating reports.
+
+5. Alternate decompiler/manual source distinctions
+CA01PredicationOff.java:37 and Long:37 set DecompileOptions.setPredicate(false), a decompiler optimization option; this does not modify original ARM bytes. DTV00015790 and TMD00019520 recovered using this option are marked manual_Ghidra_unknown because manual_merge_predication.py:80 asks supplement for absent decompile_style. Two new DISPLAY entries are explicitly independent_parallel_Ghidra_predication_off_360s; oldDISPLAY00023968 from a360s predication-off pass is misleadingly labelled isolated_failed_only_45s_retry by generic merge. Record actual script/options/timeouts and retain confidence separately from decompileCompleted.
+manual-arm-reconstructions/manual_tmd_00019520.c is a separate hand reconstruction. tmd_unicorn_validation.json reports7/7 limited function-level original-ARM-vs-host cases with external calls stubbed. It is NOT the body counted in final TMD manifest; counted body is predication-off Ghidra C. Do not describe7/7 as validating all coverage or even validating the counted Ghidra output.
+
+Recommended exact wording:
+'All66,205 catalogued file-backed executable entries across49 retained versioned ELF exports have C-like output:58,162 .text function candidates,7,945 PLT/import thunks and98 other executable entries. This completes the discovered-entry export queue.13 redundant old-version inputs were skipped after matching.text hashes. Search index currently lags one recovered HMI function. Discovery completeness and semantic correctness remain unproven; this is not original source or a verified runnable firmware reconstruction.'
+
+Why useful: hash-bound per-function bodies/calls and retained old/new outputs support targeted static research, cross-referencing missing APIs/assets, startup and protocol analysis. Known exact output locations/addresses and recovered large dispatcher bodies improve research; they do not supply missing driver libraries/rootfs/assets or establish real radio startup.

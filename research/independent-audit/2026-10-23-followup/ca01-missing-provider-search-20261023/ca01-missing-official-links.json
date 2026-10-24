@@ -1,0 +1,19 @@
+[
+  {
+    "url": "https://www.denso-ten.com/jp/support/source/oem/13t/index.html",
+    "sha256": "286dc1305eb22975e7d9ac0e62fa77848ac789b094654d39661d1088082cae0c",
+    "links": [
+      "https://www.denso-ten.com/jp/support/source/oem/13t/license.txt",
+      "https://www.denso-ten.com/jp/support/source/oem/13t/20130619_LE2355.tgz",
+      "https://www.denso-ten.com/jp/support/source/oem/13t/OSS_SOFT_PACK.tgz"
+    ]
+  },
+  {
+    "url": "https://www.denso-ten.com/support/source/oem/17/index.html",
+    "sha256": "91b1ae6dd81e663bd32e0554aaaaeee0ac2ddf8979446c26206d7485a5e2b96e",
+    "links": [
+      "https://www.denso-ten.com/support/source/oem/17/License-ALL-17CY-r1067.txt",
+      "https://www.denso-ten.com/support/source/oem/17/OSS_SOFT_PACK.zip"
+    ]
+  }
+]

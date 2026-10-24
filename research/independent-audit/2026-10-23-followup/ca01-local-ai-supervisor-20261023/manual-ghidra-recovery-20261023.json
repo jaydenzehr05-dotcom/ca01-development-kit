@@ -1,0 +1,352 @@
+{
+  "started": "2026-10-23T23:01:22.597976+00:00",
+  "runner": "direct-Ghidra-no-local-AI-no-Codex",
+  "source_firmware_modified": false,
+  "events": [
+    {
+      "time": "2026-10-23T23:01:22.763691+00:00",
+      "event": "candidates",
+      "files": [
+        {
+          "name": "./opt/ftl/apl/PROC_DISPLAY",
+          "sha": "ed6c8180598afb2f",
+          "failures_eligible": 8
+        },
+        {
+          "name": "./opt/ftl/apl/PROC_DTV",
+          "sha": "1a526239fbe5b3b7",
+          "failures_eligible": 2
+        },
+        {
+          "name": "./opt/ftl/apl/PROC_MMP",
+          "sha": "c826857156b51869",
+          "failures_eligible": 1
+        },
+        {
+          "name": "./opt/ftl/apl/PROC_TMD",
+          "sha": "28e8b7d000b0d764",
+          "failures_eligible": 1
+        },
+        {
+          "name": "./opt/ftl/apl/PROC_VRS",
+          "sha": "0ef37be31e5002eb",
+          "failures_eligible": 1
+        },
+        {
+          "name": "./opt/ftl/apl/PROC_VRS",
+          "sha": "cdc2f7a613e5a9a9",
+          "failures_eligible": 1
+        }
+      ]
+    },
+    {
+      "time": "2026-10-23T23:01:22.801754+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "ed6c8180598afb2f",
+      "round": 50,
+      "targets": [
+        "003b922c",
+        "00119ee0",
+        "002059cc",
+        "003b1028",
+        "000fdf50",
+        "00181b30",
+        "00218134",
+        "00023968"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:08:17.659296+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "ed6c8180598afb2f",
+      "improved": [
+        "003b1028",
+        "000fdf50",
+        "00181b30",
+        "00218134"
+      ],
+      "errors": {
+        "00023968": "Exception while decompiling 00023968: process: timeout\n",
+        "00119ee0": "Exception while decompiling 00119ee0: process: timeout\n",
+        "003b922c": "Exception while decompiling 003b922c: process: timeout\n"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/failed-retry-50/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:08:23.360686+00:00",
+      "event": "reindexed",
+      "sha": "ed6c8180598afb2f",
+      "result": {
+        "skipped": false,
+        "entries": 6706,
+        "source_bodies_indexed": 6164,
+        "not_attempted": 0,
+        "failed": 4,
+        "binary": "./opt/ftl/apl/PROC_DISPLAY"
+      }
+    },
+    {
+      "time": "2026-10-23T23:08:23.384682+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "ed6c8180598afb2f",
+      "round": 51,
+      "targets": [
+        "003b922c",
+        "00119ee0",
+        "002059cc",
+        "00023968"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:15:09.306059+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "ed6c8180598afb2f",
+      "improved": [],
+      "errors": {
+        "00023968": "Exception while decompiling 00023968: process: timeout\n",
+        "00119ee0": "Exception while decompiling 00119ee0: process: timeout\n",
+        "003b922c": "Exception while decompiling 003b922c: process: timeout\n"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/failed-retry-51/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:15:09.326827+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "ed6c8180598afb2f",
+      "round": 52,
+      "targets": [
+        "003b922c",
+        "00119ee0",
+        "002059cc",
+        "00023968"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:23:52.829585+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DISPLAY",
+      "sha": "ed6c8180598afb2f",
+      "improved": [
+        "003b922c",
+        "00119ee0"
+      ],
+      "errors": {
+        "00023968": "Exception while decompiling 00023968: process: timeout\n"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/failed-retry-52/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:23:57.704005+00:00",
+      "event": "reindexed",
+      "sha": "ed6c8180598afb2f",
+      "result": {
+        "skipped": false,
+        "entries": 6706,
+        "source_bodies_indexed": 6166,
+        "not_attempted": 0,
+        "failed": 2,
+        "binary": "./opt/ftl/apl/PROC_DISPLAY"
+      }
+    },
+    {
+      "time": "2026-10-23T23:23:57.729308+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DTV",
+      "sha": "1a526239fbe5b3b7",
+      "round": 50,
+      "targets": [
+        "00024c24",
+        "00015790"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:26:02.045640+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DTV",
+      "sha": "1a526239fbe5b3b7",
+      "improved": [
+        "00024c24"
+      ],
+      "errors": {
+        "00015790": "\nLow-level Error: Conditional execution: Illegal op in iblock"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/ghidra/failed-retry-50/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:26:05.650914+00:00",
+      "event": "reindexed",
+      "sha": "1a526239fbe5b3b7",
+      "result": {
+        "skipped": false,
+        "entries": 4477,
+        "source_bodies_indexed": 4276,
+        "not_attempted": 0,
+        "failed": 1,
+        "binary": "./opt/ftl/apl/PROC_DTV"
+      }
+    },
+    {
+      "time": "2026-10-23T23:26:05.668478+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DTV",
+      "sha": "1a526239fbe5b3b7",
+      "round": 51,
+      "targets": [
+        "00015790"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:27:47.768217+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DTV",
+      "sha": "1a526239fbe5b3b7",
+      "improved": [],
+      "errors": {
+        "00015790": "\nLow-level Error: Conditional execution: Illegal op in iblock"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/ghidra/failed-retry-51/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:27:47.786347+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_DTV",
+      "sha": "1a526239fbe5b3b7",
+      "round": 52,
+      "targets": [
+        "00015790"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:29:32.581319+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_DTV",
+      "sha": "1a526239fbe5b3b7",
+      "improved": [],
+      "errors": {
+        "00015790": "\nLow-level Error: Conditional execution: Illegal op in iblock"
+      },
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/ghidra/failed-retry-52/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:29:32.599923+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_MMP",
+      "sha": "c826857156b51869",
+      "round": 50,
+      "targets": [
+        "0008f07c"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:31:12.737018+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_MMP",
+      "sha": "c826857156b51869",
+      "improved": [
+        "0008f07c"
+      ],
+      "errors": {},
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c826857156b51869/ghidra/failed-retry-50/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:31:14.237214+00:00",
+      "event": "reindexed",
+      "sha": "c826857156b51869",
+      "result": {
+        "skipped": false,
+        "entries": 2385,
+        "source_bodies_indexed": 2062,
+        "not_attempted": 0,
+        "failed": 0,
+        "binary": "./opt/ftl/apl/PROC_MMP"
+      }
+    },
+    {
+      "time": "2026-10-23T23:31:14.260943+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_VRS",
+      "sha": "0ef37be31e5002eb",
+      "round": 50,
+      "targets": [
+        "00025290"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:32:39.553246+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_VRS",
+      "sha": "0ef37be31e5002eb",
+      "improved": [
+        "00025290"
+      ],
+      "errors": {},
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/ghidra/failed-retry-50/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:32:40.538075+00:00",
+      "event": "reindexed",
+      "sha": "0ef37be31e5002eb",
+      "result": {
+        "skipped": false,
+        "entries": 1621,
+        "source_bodies_indexed": 1446,
+        "not_attempted": 0,
+        "failed": 0,
+        "binary": "./opt/ftl/apl/PROC_VRS"
+      }
+    },
+    {
+      "time": "2026-10-23T23:32:40.558503+00:00",
+      "event": "repair_start",
+      "binary": "./opt/ftl/apl/PROC_VRS",
+      "sha": "cdc2f7a613e5a9a9",
+      "round": 50,
+      "targets": [
+        "00025288"
+      ]
+    },
+    {
+      "time": "2026-10-23T23:34:04.893821+00:00",
+      "event": "repair_result",
+      "binary": "./opt/ftl/apl/PROC_VRS",
+      "sha": "cdc2f7a613e5a9a9",
+      "improved": [
+        "00025288"
+      ],
+      "errors": {},
+      "process_error": null,
+      "output": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/cdc2f7a613e5a9a9/ghidra/failed-retry-50/retry-outcome.json"
+    },
+    {
+      "time": "2026-10-23T23:34:05.879327+00:00",
+      "event": "reindexed",
+      "sha": "cdc2f7a613e5a9a9",
+      "result": {
+        "skipped": false,
+        "entries": 1621,
+        "source_bodies_indexed": 1446,
+        "not_attempted": 0,
+        "failed": 0,
+        "binary": "./opt/ftl/apl/PROC_VRS"
+      }
+    },
+    {
+      "time": "2026-10-23T23:34:05.884512+00:00",
+      "event": "finished",
+      "note": "Remaining failed functions are individually recorded, never relabeled successful"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_HMI",
+  "examined_functions": [
+    "0003ec98",
+    "000460a8"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 290,
+    "prompt_tokens": 2240,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2530
+  },
+  "next_focus": [
+    "File reading logic in 000460a8",
+    "Character buffer handling in 0003ec98"
+  ],
+  "observations": [
+    {
+      "address": "0x0003ec98",
+      "claim": "Reads first character from type.txt file",
+      "evidence_snippet": "rq_fls_Open(\"type.txt\",\"r\",&local_30,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000460a8",
+      "claim": "Processes files with error tracing and read loops",
+      "evidence_snippet": "rq_fls_Read(local_2c[0],1,0x200,auStack_35c,&local_30,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0003ec98 reads a single character from 'type.txt' and populates a buffer. Function 000460a8 reads files with error handling and processing.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "3ec98",
+    "460a8"
+  ],
+  "selection_evidence": [
+    {
+      "address": "3ec98",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "460a8",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the file processing in function 000460a8?",
+    "How does the buffer population work in function 0003ec98?"
+  ]
+}

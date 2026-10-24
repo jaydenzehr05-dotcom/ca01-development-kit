@@ -1,0 +1,48 @@
+{
+  "binary": "./opt/ftl/lib/libIFLB_CDDB.so",
+  "examined_functions": [
+    "00014af4",
+    "00014c44"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 243,
+    "prompt_tokens": 1427,
+    "prompt_tokens_details": {
+      "cached_tokens": 160
+    },
+    "total_tokens": 1670
+  },
+  "next_focus": [
+    "fc_dbs_CdiGetTocInf",
+    "fc_dbs_CdiSetTocInf"
+  ],
+  "observations": [],
+  "overview": "Functions handle CDDB information retrieval and setting with parameter validation and mutex operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "14af4",
+    "14c44"
+  ],
+  "selection_evidence": [
+    {
+      "address": "14af4",
+      "score": 4,
+      "tags": []
+    },
+    {
+      "address": "14c44",
+      "score": 4,
+      "tags": []
+    }
+  ],
+  "source_sha256": "1431c297e1716c7d3a49964aa523eb97b868673553e709d7897ee3a086ddad75",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the fc_dbs_* functions actually do?",
+    "What is the purpose of the mutex operations?"
+  ]
+}

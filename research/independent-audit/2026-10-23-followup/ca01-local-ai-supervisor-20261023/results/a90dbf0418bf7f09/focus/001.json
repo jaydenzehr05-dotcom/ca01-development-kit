@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DVDDECK",
+  "examined_functions": [
+    "00082b18",
+    "00082570"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 249,
+    "prompt_tokens": 946,
+    "prompt_tokens_details": {
+      "cached_tokens": 163
+    },
+    "total_tokens": 1195
+  },
+  "next_focus": [
+    "Investigate fs_sys_CnfEntry function",
+    "Analyze SysPowerOn implementation"
+  ],
+  "observations": [
+    {
+      "address": "0x00082b18",
+      "claim": "Handles '-v' flag for verbose output",
+      "evidence_snippet": "if (iVar1 == 0x76) {",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00082570",
+      "claim": "Opens /dev/dmamem device file",
+      "evidence_snippet": "open(\"/dev/dmamem\",2",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 00082b18 handles command-line arguments with 'v' flag for verbose output, exits on flag match. Function 00082570 opens /dev/dmamem for DMA memory access.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "82b18",
+    "82570"
+  ],
+  "selection_evidence": [
+    {
+      "address": "82b18",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "82570",
+      "score": 50,
+      "tags": [
+        "paths"
+      ]
+    }
+  ],
+  "source_sha256": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of fs_sys_CnfEntry call?",
+    "What is the significance of SysPowerOn(6)?"
+  ]
+}

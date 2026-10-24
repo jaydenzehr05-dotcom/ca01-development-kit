@@ -1,0 +1,98 @@
+{
+  "started": "2026-10-23T23:36:20.001113+00:00",
+  "strategy": "2 independent Ghidra processes each Xmx 3G plus existing 1127 worker",
+  "no_local_ai": true,
+  "no_codex": true,
+  "firmware_unchanged": true,
+  "events": [
+    {
+      "at": "2026-10-23T23:36:20.030335+00:00",
+      "event": "verified",
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-1134-firmware-analysis-20261023/recovered-1134-06-audio/recovered/01116817-PROC_DISPLAY",
+      "addresses": [
+        "00023968",
+        "002059cc"
+      ],
+      "existing_failed": [
+        "00023968",
+        "002059cc"
+      ]
+    },
+    {
+      "at": "2026-10-23T23:36:20.032364+00:00",
+      "event": "ghidra_started",
+      "addr": "00023968",
+      "project": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/manual-parallel-20261023-00023968",
+      "java_heap_limit": "3G"
+    },
+    {
+      "at": "2026-10-23T23:36:20.032828+00:00",
+      "event": "ghidra_started",
+      "addr": "002059cc",
+      "project": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/manual-parallel-20261023-002059cc",
+      "java_heap_limit": "3G"
+    },
+    {
+      "at": "2026-10-23T23:43:54.735706+00:00",
+      "event": "ghidra_completed",
+      "addr": "002059cc",
+      "status_code": 0,
+      "folder": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/manual-parallel-20261023-002059cc",
+      "manifest_sha": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "count": 1,
+      "decompiled": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    {
+      "at": "2026-10-23T23:43:59.696668+00:00",
+      "event": "verification_and_merge",
+      "address": "002059cc",
+      "state": "merged",
+      "remaining": 1,
+      "location": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/manual-parallel-merged-20261023-002059cc",
+      "index": {
+        "skipped": false,
+        "entries": 6706,
+        "source_bodies_indexed": 6167,
+        "not_attempted": 0,
+        "failed": 1,
+        "binary": "./opt/ftl/apl/PROC_DISPLAY"
+      }
+    },
+    {
+      "at": "2026-10-23T23:44:52.111957+00:00",
+      "event": "ghidra_completed",
+      "addr": "00023968",
+      "status_code": 0,
+      "folder": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/manual-parallel-20261023-00023968",
+      "manifest_sha": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "count": 1,
+      "decompiled": 1,
+      "failed": 0,
+      "pending": 0
+    },
+    {
+      "at": "2026-10-23T23:44:57.185854+00:00",
+      "event": "verification_and_merge",
+      "address": "00023968",
+      "state": "merged",
+      "remaining": 0,
+      "location": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/manual-parallel-merged-20261023-00023968",
+      "index": {
+        "skipped": false,
+        "entries": 6706,
+        "source_bodies_indexed": 6168,
+        "not_attempted": 0,
+        "failed": 0,
+        "binary": "./opt/ftl/apl/PROC_DISPLAY"
+      }
+    },
+    {
+      "at": "2026-10-23T23:44:57.409705+00:00",
+      "event": "finished",
+      "coverage": "{\"total\": {\"catalogued\": 66205, \"decompiled\": 66205, \"failed\": 0, \"not_attempted\": 0}, \"inputs\": 62, \"full\": 49, \"pending\": 0, \"output\": \"/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.json\"}",
+      "coverage_error": ""
+    }
+  ]
+}

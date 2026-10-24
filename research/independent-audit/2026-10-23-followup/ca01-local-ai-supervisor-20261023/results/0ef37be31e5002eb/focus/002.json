@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_VRS",
+  "examined_functions": [
+    "00061c04",
+    "00061dd0"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 251,
+    "prompt_tokens": 1130,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1381
+  },
+  "next_focus": [
+    "File system operations in 00061c04",
+    "Directory creation logic in 00061dd0"
+  ],
+  "observations": [
+    {
+      "address": "0x00061c04",
+      "claim": "Writes 'Z' byte to mclr_req.dat when param_1 is 1",
+      "evidence_snippet": "local_11 = 0x5a;",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00061dd0",
+      "claim": "Creates directories if they don't exist",
+      "evidence_snippet": "rq_fls_MakeDir(\"/var/backup/vtg/\",0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00061c04 handles MCLR request file operations, while 00061dd0 manages directory creation for VRS backup paths.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "61c04",
+    "61dd0"
+  ],
+  "selection_evidence": [
+    {
+      "address": "61c04",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "61dd0",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the 'Z' byte write?",
+    "Are these directories used for data logging?"
+  ]
+}

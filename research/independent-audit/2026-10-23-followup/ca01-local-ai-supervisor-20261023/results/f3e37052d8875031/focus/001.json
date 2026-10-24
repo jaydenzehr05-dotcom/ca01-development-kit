@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_DSV",
+  "examined_functions": [
+    "00023458",
+    "000106fc"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 260,
+    "prompt_tokens": 2410,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2670
+  },
+  "next_focus": [
+    "File management operations in 00023458",
+    "Directory cleanup in 000106fc"
+  ],
+  "observations": [
+    {
+      "address": "0x00023458",
+      "claim": "Handles DSV operations with file management and logging",
+      "evidence_snippet": "FUN_00028004(0x103,0x200,0,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x000106fc",
+      "claim": "Removes files from directory and backup locations",
+      "evidence_snippet": "rq_fls_Remove(acStack_4ec,0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00023458 handles DSV (Device State Validation) operations including file management and system logging. Function 000106fc manages directory cleanup and file removal operations.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "23458",
+    "106fc"
+  ],
+  "selection_evidence": [
+    {
+      "address": "23458",
+      "score": 232,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "106fc",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific DSV operations are performed?",
+    "What is the purpose of the file removal operations?"
+  ]
+}

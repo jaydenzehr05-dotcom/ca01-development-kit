@@ -1,0 +1,67 @@
+{
+  "binary": "./opt/ftl/lib/libnavi_if.so",
+  "examined_functions": [
+    "00022e80",
+    "0001fd4c"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 205,
+    "prompt_tokens": 1084,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 1289
+  },
+  "next_focus": [
+    "D",
+    "a",
+    "t"
+  ],
+  "observations": [
+    {
+      "address": "0x00022e80",
+      "claim": "Initializes graphics data structure with zero values",
+      "evidence_snippet": "memset(__s,0,0x4c);",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001fd4c",
+      "claim": "Initializes pthread mutex and condition variables",
+      "evidence_snippet": "pthread_mutex_init(__mutex,(pthread_mutexattr_t *)0x0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Two functions initialize graphics and library components. First sets up graphics data structure and calls initialization routines. Second initializes mutex, condition variables, and file system components.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "22e80",
+    "1fd4c"
+  ],
+  "selection_evidence": [
+    {
+      "address": "22e80",
+      "score": 406,
+      "tags": [
+        "missing_libs",
+        "graphics"
+      ]
+    },
+    {
+      "address": "1fd4c",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "02d11afd4414659265ff78944f5a400de0cfaff1138ef45deb4daaa88f809981",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the magic numbers represent?",
+    "What is the purpose of the file system operations?"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "binary": "./opt/ftl/lib/libipas_ls1.so",
+  "examined_functions": [
+    "00011d98",
+    "00011dc4"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 240,
+    "prompt_tokens": 521,
+    "prompt_tokens_details": {
+      "cached_tokens": 159
+    },
+    "total_tokens": 761
+  },
+  "next_focus": [
+    "Global variable analysis",
+    "Function call dependencies"
+  ],
+  "observations": [
+    {
+      "address": "0x00011d98",
+      "claim": "Calls __gmon_start__ if condition is met",
+      "evidence_snippet": "if (*(int *)(DAT_00011dbc + 0x11da8 + DAT_00011dc0) == 0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00011dc4",
+      "claim": "Performs cleanup with __cxa_finalize if condition is met",
+      "evidence_snippet": "if (*(int *)(iVar2 + DAT_00011e10) != 0)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Analysis of two ARM firmware functions showing basic initialization and cleanup logic with conditional execution based on global variables.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "11d98",
+    "11dc4"
+  ],
+  "selection_evidence": [
+    {
+      "address": "11d98",
+      "score": 0,
+      "tags": []
+    },
+    {
+      "address": "11dc4",
+      "score": 0,
+      "tags": []
+    }
+  ],
+  "source_sha256": "7373e2d470fbac95dbf7a7a1dd68cca59187fdb43450244fc706f8bbf7affc24",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What do the global variables represent?",
+    "What is the purpose of the conditional checks?"
+  ]
+}

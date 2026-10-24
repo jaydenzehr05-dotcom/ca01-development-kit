@@ -1,0 +1,66 @@
+{
+  "binary": "./opt/ftl/lib/libipas_sysp.so",
+  "examined_functions": [
+    "000254f8",
+    "00030998"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 208,
+    "prompt_tokens": 1497,
+    "prompt_tokens_details": {
+      "cached_tokens": 163
+    },
+    "total_tokens": 1705
+  },
+  "next_focus": [
+    "Parameter validation logic",
+    "Message handling flow"
+  ],
+  "observations": [
+    {
+      "address": "0x000254f8",
+      "claim": "Function validates parameter 1 against 0x15 limit",
+      "evidence_snippet": "if (0x15 < param_1)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00030998",
+      "claim": "Function retrieves task ID and sends message",
+      "evidence_snippet": "iVar2 = rq_tsk_GetTid()",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function rq_sio_Open handles serial I/O device opening with error tracing. rq_tsk_BlockBegin manages task blocking and message passing.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "254f8",
+    "30998"
+  ],
+  "selection_evidence": [
+    {
+      "address": "254f8",
+      "score": 192,
+      "tags": [
+        "startup_ipc",
+        "paths"
+      ]
+    },
+    {
+      "address": "30998",
+      "score": 166,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What specific device paths are referenced?",
+    "How are error codes mapped to messages?"
+  ]
+}

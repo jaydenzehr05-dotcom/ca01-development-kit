@@ -1,0 +1,666 @@
+{
+  "program": "06-FlashImageWriter",
+  "sha256": "40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa",
+  "language": "ARM:LE:32:v8",
+  "image_base": "00008000",
+  "selection": "all discovered executable entries",
+  "functions_catalogued": 52,
+  "decompiled": 52,
+  "failed": 0,
+  "not_attempted": 0,
+  "limits": "C-like static reconstruction; file-backed executable entries only, including real PLT thunks; automatic function discovery may be incomplete; decompiled does not mean semantically verified or original source.",
+  "counts_by_kind": {
+    "import_thunk": {
+      "decompiled": 29
+    },
+    "other_executable": {
+      "decompiled": 2
+    },
+    "text_body": {
+      "decompiled": 21
+    }
+  },
+  "functions": [
+    {
+      "address": "0000897c",
+      "name": "entry",
+      "bytes": 48,
+      "memory_block": ".text",
+      "calls": [
+        "00008838:abort -\u003e abort",
+        "00008844:__libc_start_main -\u003e __libc_start_main"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008800",
+      "name": "_DT_INIT",
+      "bytes": 12,
+      "memory_block": ".init",
+      "calls": [
+        "000089b8:FUN_000089b8"
+      ],
+      "classification": "other_executable",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008820",
+      "name": "open",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016000:open -\u003e open"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000882c",
+      "name": "strerror",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016004:strerror -\u003e strerror"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008838",
+      "name": "abort",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016008:abort -\u003e abort"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008844",
+      "name": "__libc_start_main",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "0001600c:__libc_start_main -\u003e __libc_start_main"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008850",
+      "name": "__gmon_start__",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016014:__gmon_start__ -\u003e __gmon_start__"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000885c",
+      "name": "fclose",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "0001601c:fclose -\u003e fclose"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008868",
+      "name": "putchar",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016020:putchar -\u003e putchar"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008874",
+      "name": "fopen",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016024:fopen -\u003e fopen"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008880",
+      "name": "memset",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016028:memset -\u003e memset"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000888c",
+      "name": "getuid",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "0001602c:getuid -\u003e getuid"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008898",
+      "name": "free",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016030:free -\u003e free"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000088a4",
+      "name": "fflush",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016034:fflush -\u003e fflush"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000088b0",
+      "name": "ioctl",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016038:ioctl -\u003e ioctl"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000088bc",
+      "name": "getopt",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "0001603c:getopt -\u003e getopt"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000088c8",
+      "name": "strtoul",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016040:strtoul -\u003e strtoul"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000088d4",
+      "name": "memcpy",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016044:memcpy -\u003e memcpy"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000088e0",
+      "name": "feof",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016048:feof -\u003e feof"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000088ec",
+      "name": "strtol",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "0001604c:strtol -\u003e strtol"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000088f8",
+      "name": "printf",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016050:printf -\u003e printf"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008904",
+      "name": "raise",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016054:raise -\u003e raise"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008910",
+      "name": "close",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016058:close -\u003e close"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000891c",
+      "name": "fwrite",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "0001605c:fwrite -\u003e fwrite"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008928",
+      "name": "fprintf",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016060:fprintf -\u003e fprintf"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008934",
+      "name": "malloc",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016064:malloc -\u003e malloc"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008940",
+      "name": "fread",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016068:fread -\u003e fread"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000894c",
+      "name": "nanosleep",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "0001606c:nanosleep -\u003e nanosleep"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008958",
+      "name": "strcmp",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016074:strcmp -\u003e strcmp"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008964",
+      "name": "exit",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "00016078:exit -\u003e exit"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008970",
+      "name": "__errno_location",
+      "bytes": 12,
+      "memory_block": ".plt",
+      "calls": [
+        "0001607c:__errno_location -\u003e __errno_location"
+      ],
+      "classification": "import_thunk",
+      "status": "decompiled"
+    },
+    {
+      "address": "000089b8",
+      "name": "FUN_000089b8",
+      "bytes": 36,
+      "memory_block": ".text",
+      "calls": [
+        "00008850:__gmon_start__ -\u003e __gmon_start__"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "000089e4",
+      "name": "_FINI_0",
+      "bytes": 24,
+      "memory_block": ".text",
+      "calls": [],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008a00",
+      "name": "_INIT_0",
+      "bytes": 40,
+      "memory_block": ".text",
+      "calls": [],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "00008a30",
+      "name": "FUN_00008a30",
+      "bytes": 2024,
+      "memory_block": ".text",
+      "calls": [
+        "0000882c:strerror -\u003e strerror",
+        "0000885c:fclose -\u003e fclose",
+        "00008874:fopen -\u003e fopen",
+        "00008880:memset -\u003e memset",
+        "0000888c:getuid -\u003e getuid",
+        "000088bc:getopt -\u003e getopt",
+        "000088c8:strtoul -\u003e strtoul",
+        "000088ec:strtol -\u003e strtol",
+        "0000891c:fwrite -\u003e fwrite",
+        "00008928:fprintf -\u003e fprintf",
+        "00008964:exit -\u003e exit",
+        "00008970:__errno_location -\u003e __errno_location",
+        "00009374:FUN_00009374",
+        "000098ec:FUN_000098ec",
+        "00009c68:FUN_00009c68",
+        "00009e78:FUN_00009e78",
+        "0000a564:FUN_0000a564",
+        "0000a570:FUN_0000a570",
+        "0000a590:FUN_0000a590",
+        "0000a61c:FUN_0000a61c",
+        "0000ab44:FUN_0000ab44"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "00009374",
+      "name": "FUN_00009374",
+      "bytes": 1332,
+      "memory_block": ".text",
+      "calls": [
+        "00008820:open -\u003e open",
+        "0000882c:strerror -\u003e strerror",
+        "00008898:free -\u003e free",
+        "000088e0:feof -\u003e feof",
+        "00008910:close -\u003e close",
+        "0000891c:fwrite -\u003e fwrite",
+        "00008928:fprintf -\u003e fprintf",
+        "00008934:malloc -\u003e malloc",
+        "00008940:fread -\u003e fread",
+        "00008964:exit -\u003e exit",
+        "00008970:__errno_location -\u003e __errno_location",
+        "00009f2c:FUN_00009f2c",
+        "00009fb8:FUN_00009fb8",
+        "0000a564:FUN_0000a564",
+        "0000a958:FUN_0000a958",
+        "0000ab44:FUN_0000ab44"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "000098ec",
+      "name": "FUN_000098ec",
+      "bytes": 860,
+      "memory_block": ".text",
+      "calls": [
+        "00008820:open -\u003e open",
+        "0000882c:strerror -\u003e strerror",
+        "00008910:close -\u003e close",
+        "00008928:fprintf -\u003e fprintf",
+        "00008964:exit -\u003e exit",
+        "00008970:__errno_location -\u003e __errno_location",
+        "00009f2c:FUN_00009f2c",
+        "0000a564:FUN_0000a564",
+        "0000a724:FUN_0000a724"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "00009c68",
+      "name": "FUN_00009c68",
+      "bytes": 504,
+      "memory_block": ".text",
+      "calls": [
+        "00008820:open -\u003e open",
+        "0000882c:strerror -\u003e strerror",
+        "00008868:putchar -\u003e putchar",
+        "00008898:free -\u003e free",
+        "000088f8:printf -\u003e printf",
+        "00008910:close -\u003e close",
+        "00008928:fprintf -\u003e fprintf",
+        "00008934:malloc -\u003e malloc",
+        "00008964:exit -\u003e exit",
+        "00008970:__errno_location -\u003e __errno_location",
+        "00009f2c:FUN_00009f2c",
+        "0000a564:FUN_0000a564"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "00009e78",
+      "name": "FUN_00009e78",
+      "bytes": 164,
+      "memory_block": ".text",
+      "calls": [
+        "00008820:open -\u003e open",
+        "0000882c:strerror -\u003e strerror",
+        "00008910:close -\u003e close",
+        "00008928:fprintf -\u003e fprintf",
+        "00008970:__errno_location -\u003e __errno_location",
+        "0000a454:FUN_0000a454",
+        "0000a564:FUN_0000a564"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "00009f2c",
+      "name": "FUN_00009f2c",
+      "bytes": 120,
+      "memory_block": ".text",
+      "calls": [
+        "000088b0:ioctl -\u003e ioctl",
+        "00008928:fprintf -\u003e fprintf"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "00009fb8",
+      "name": "FUN_00009fb8",
+      "bytes": 1128,
+      "memory_block": ".text",
+      "calls": [
+        "00008868:putchar -\u003e putchar",
+        "000088a4:fflush -\u003e fflush",
+        "000088b0:ioctl -\u003e ioctl",
+        "00008928:fprintf -\u003e fprintf",
+        "0000894c:nanosleep -\u003e nanosleep",
+        "00008970:__errno_location -\u003e __errno_location",
+        "0000ab44:FUN_0000ab44"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000a454",
+      "name": "FUN_0000a454",
+      "bytes": 236,
+      "memory_block": ".text",
+      "calls": [
+        "000088b0:ioctl -\u003e ioctl",
+        "00008928:fprintf -\u003e fprintf",
+        "0000894c:nanosleep -\u003e nanosleep"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000a564",
+      "name": "FUN_0000a564",
+      "bytes": 8,
+      "memory_block": ".text",
+      "calls": [],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000a570",
+      "name": "FUN_0000a570",
+      "bytes": 28,
+      "memory_block": ".text",
+      "calls": [
+        "000088d4:memcpy -\u003e memcpy"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000a590",
+      "name": "FUN_0000a590",
+      "bytes": 116,
+      "memory_block": ".text",
+      "calls": [
+        "0000891c:fwrite -\u003e fwrite",
+        "00008928:fprintf -\u003e fprintf",
+        "00008940:fread -\u003e fread",
+        "00008958:strcmp -\u003e strcmp"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000a61c",
+      "name": "FUN_0000a61c",
+      "bytes": 212,
+      "memory_block": ".text",
+      "calls": [
+        "000088f8:printf -\u003e printf",
+        "0000891c:fwrite -\u003e fwrite",
+        "00008928:fprintf -\u003e fprintf",
+        "00008940:fread -\u003e fread",
+        "00008958:strcmp -\u003e strcmp"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000a724",
+      "name": "FUN_0000a724",
+      "bytes": 272,
+      "memory_block": ".text",
+      "calls": [],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000a958",
+      "name": "FUN_0000a958",
+      "bytes": 492,
+      "memory_block": ".text",
+      "calls": [
+        "0000ab64:FUN_0000ab64"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000ab44",
+      "name": "FUN_0000ab44",
+      "bytes": 32,
+      "memory_block": ".text",
+      "calls": [
+        "0000a958:FUN_0000a958"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000ab64",
+      "name": "FUN_0000ab64",
+      "bytes": 16,
+      "memory_block": ".text",
+      "calls": [
+        "00008904:raise -\u003e raise"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000ab78",
+      "name": "FUN_0000ab78",
+      "bytes": 92,
+      "memory_block": ".text",
+      "calls": [
+        "00008800:_DT_INIT",
+        "000089e4:_FINI_0",
+        "00008a00:_INIT_0"
+      ],
+      "classification": "text_body",
+      "status": "decompiled"
+    },
+    {
+      "address": "0000abe0",
+      "name": "_DT_FINI",
+      "bytes": 8,
+      "memory_block": ".fini",
+      "calls": [],
+      "classification": "other_executable",
+      "status": "decompiled"
+    }
+  ]
+}

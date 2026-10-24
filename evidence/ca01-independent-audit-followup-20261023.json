@@ -1,0 +1,1639 @@
+{
+  "snapshot_at": "2026-10-24T00:04:15.228251+00:00",
+  "base_commit": "0ede6b5af0f9e727ff467d490704f0bb2bfb52b9",
+  "source_roots": [
+    "ca01-completed-corpus-analysis-20261023",
+    "ca01-local-ai-supervisor-20261023",
+    "ca01-missing-provider-search-20261023",
+    "ca01-path-a-access-trace-20261023",
+    "ca01-psm-and-flash-source-20261023"
+  ],
+  "scope": "Relevant source, bounded reconstructions, reports and compact evidence added since the original 2026-10-23 snapshot. Original live research remains unchanged.",
+  "review_warning": "Local-model reviews are unverified hypotheses, preserved for provenance; they are not independent reverse-engineering proof.",
+  "new_review_files": 38,
+  "copied": [
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/CA01DecompileRetry.java",
+      "relative": "ca01-local-ai-supervisor-20261023/CA01DecompileRetry.java",
+      "size": 6739,
+      "sha256": "11a8e3aa677e9c8568423ebe213c7a43ff08b47f5372d363ea8e6eb24b136847",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/CA01DecompileRetry.java"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/CA01ManualAlternate.java",
+      "relative": "ca01-local-ai-supervisor-20261023/CA01ManualAlternate.java",
+      "size": 6468,
+      "sha256": "e130ff02801540597deca96752d5b0875f981caac631eb8e1e06fae7cd3fbcbe",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/CA01ManualAlternate.java"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/CA01PredicationOff.java",
+      "relative": "ca01-local-ai-supervisor-20261023/CA01PredicationOff.java",
+      "size": 6830,
+      "sha256": "c73507ac0c10b92196aa36cce53ab7eedc4cadb88291edab0f505ca60eed7f74",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/CA01PredicationOff.java"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/CA01PredicationOffLong.java",
+      "relative": "ca01-local-ai-supervisor-20261023/CA01PredicationOffLong.java",
+      "size": 6834,
+      "sha256": "ce475321d547bd628edfda838b93f7e996c67e28a8683a9c3022b20dca53f004",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/CA01PredicationOffLong.java"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/CURRENT_STATUS.md",
+      "relative": "ca01-local-ai-supervisor-20261023/CURRENT_STATUS.md",
+      "size": 6248,
+      "sha256": "41b3b47a3f54670b98633b050cae054f8cf6301f6d9c0cf0c7f36a3c6f0a640f",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/CURRENT_STATUS.md"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/LATEST_DECOMPILATION_POLICY.md",
+      "relative": "ca01-local-ai-supervisor-20261023/LATEST_DECOMPILATION_POLICY.md",
+      "size": 5258,
+      "sha256": "dd547a623094bab08537bd6a4f9e768f71a0bd5be7fd6ff9adaf83e0dc17d08a",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/LATEST_DECOMPILATION_POLICY.md"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.json",
+      "relative": "ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.json",
+      "size": 25360,
+      "sha256": "b4bc70eb9480569f2d9e5bc21a431fe41c0553eb7af9d5f5ffc0912085d847e9",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.md",
+      "relative": "ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.md",
+      "size": 4704,
+      "sha256": "7798662acd601b9dbec4a671ccac7421e652b5a157902f8b300cda5b04cad0de",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.md"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/audit_pending_inputs.py",
+      "relative": "ca01-local-ai-supervisor-20261023/audit_pending_inputs.py",
+      "size": 2811,
+      "sha256": "53272eec7dd2525a3dcda22423eb810869b4b6675f070b0d9fbef33a0f85bdec",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/audit_pending_inputs.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/failed-function-inventory-20261023.json",
+      "relative": "ca01-local-ai-supervisor-20261023/failed-function-inventory-20261023.json",
+      "size": 6157,
+      "sha256": "f7264dd5d11db0370edc709a1f918416ec6eddec9aad23f621e2591d2c1f7b42",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/failed-function-inventory-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/failed_inventory.py",
+      "relative": "ca01-local-ai-supervisor-20261023/failed_inventory.py",
+      "size": 1611,
+      "sha256": "190f40c7d507c030490e56bfeea9c41c1967a10e5de819da578bf98fa212a8d2",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/failed_inventory.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/illegal-arm-function-triage-20261023.json",
+      "relative": "ca01-local-ai-supervisor-20261023/illegal-arm-function-triage-20261023.json",
+      "size": 16551,
+      "sha256": "b1102ef1cc15e869751a33e76d4e400d6f26fad566fecc242964db51a43a7e62",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/illegal-arm-function-triage-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/make_targeted_java.py",
+      "relative": "ca01-local-ai-supervisor-20261023/make_targeted_java.py",
+      "size": 1254,
+      "sha256": "2c24e1d92913989fdac000e669ea74d957216d676ae8e680327ff7004cead111",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/make_targeted_java.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-alternate-merge.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-alternate-merge.json",
+      "size": 922,
+      "sha256": "4f7bd7a9ba57871e4211ca5f2b781a5caa29cf1298b1acc853a43ae55cbf2ddf",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-alternate-merge.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-alternate-outcomes.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-alternate-outcomes.json",
+      "size": 1436,
+      "sha256": "0e8626c737ecd02c5aa6b86b65f8ba5d303335d7100f4a4d0ee48d59718bf74d",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-alternate-outcomes.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/manual_tmd_00019520.c",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/manual_tmd_00019520.c",
+      "size": 4818,
+      "sha256": "216abe1f61cb09f08c00a6d898a10f6c3f19c62e08432b1f2620d231e4203206",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/manual_tmd_00019520.c"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/tmd_unicorn_validation.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/tmd_unicorn_validation.json",
+      "size": 4381,
+      "sha256": "c86d13027843dd51d43dd19d6278a56f12f1c4402d1cfa9ccc6c70cb6bb131cf",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/tmd_unicorn_validation.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/validate_tmd_unicorn.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/validate_tmd_unicorn.py",
+      "size": 7356,
+      "sha256": "18f6536bfa5be746bf12d51d3d6492a859c9abbf73179944613ad6b90f5cc830",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-arm-reconstructions/validate_tmd_unicorn.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-display-recovery-20261023.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-display-recovery-20261023.json",
+      "size": 1306,
+      "sha256": "a40765d7ccebb52678d677506705e6ed5951e29af0ec3a6d3d0de49c25f27836",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-display-recovery-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-ghidra-recovery-20261023.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-ghidra-recovery-20261023.json",
+      "size": 10455,
+      "sha256": "9f83d3f172ee656446fdf7e0774ef511cf87a3eb2eb69b72249ccae64de8044f",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-ghidra-recovery-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-old-display-retries-20261023.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-old-display-retries-20261023.json",
+      "size": 4153,
+      "sha256": "524f7b52221ff4940dc83d35925415663da3ed354f3b2ab41f2a45727a36b752",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-old-display-retries-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-parallel-display-20261023.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-parallel-display-20261023.json",
+      "size": 3768,
+      "sha256": "4a151a960ed6b93f603e4dfbaedcb43c480d08fdf14e450e0bb636837c4607df",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-parallel-display-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-predication-long-results.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-predication-long-results.json",
+      "size": 2162,
+      "sha256": "de6793f65458d12ea2c43007ba99710b067f27fa1615bc296949e2c7793bbebe",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-predication-long-results.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-predication-merge.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-predication-merge.json",
+      "size": 994,
+      "sha256": "94e5bf00e085c26aa9a4d5023af60df655d3bd683b7230d6e18ec10fd420f8f2",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-predication-merge.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual-predication-off-outcomes.json",
+      "relative": "ca01-local-ai-supervisor-20261023/manual-predication-off-outcomes.json",
+      "size": 1464,
+      "sha256": "9dc81c936ea3052386c4b4645e943c565457bc6565196ad6ae4187c8a49ac0e5",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual-predication-off-outcomes.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_alt_merge.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_alt_merge.py",
+      "size": 6489,
+      "sha256": "8f7303a987a359103db210add6271d93625a667135947d02f4c36573d01f4006",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_alt_merge.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_alternate_runner.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_alternate_runner.py",
+      "size": 4185,
+      "sha256": "a355c770d3530547fe0b3523032f7d52366924d5b71f41d84c795207e635e09f",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_alternate_runner.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_display_finalize.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_display_finalize.py",
+      "size": 6115,
+      "sha256": "4424aeaa377a8d338559d4f7bf1d2f43e92341b5686a1f03c98f47ac48fa35cb",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_display_finalize.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_merge_predication.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_merge_predication.py",
+      "size": 6494,
+      "sha256": "e73eda4ff52d52fc7496277710ea56e4ec6b9a5db02c5068f4c4578121729f4c",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_merge_predication.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_old_display_retries.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_old_display_retries.py",
+      "size": 1602,
+      "sha256": "ea823379acd8b62f2e646448afeeb4e7e7c95e1d12e5f068aec7457c6d9dfeb7",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_old_display_retries.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_predication_long_runner.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_predication_long_runner.py",
+      "size": 5046,
+      "sha256": "e5792f7a8c6bc5a6df8a4ef25304a5d1b6ad47ed76e1c1e208497b6d69da6435",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_predication_long_runner.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_predication_off_runner.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_predication_off_runner.py",
+      "size": 4212,
+      "sha256": "b894226d7b70e51bff2dadb92ee40147badbfbe809c52b01c5ace0837aa54ead",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_predication_off_runner.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_retries.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_retries.py",
+      "size": 6043,
+      "sha256": "3c49b258358448e7914dd7911927379454ea57db8bc4ea956da8414084eae1bc",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_retries.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/manual_verify.py",
+      "relative": "ca01-local-ai-supervisor-20261023/manual_verify.py",
+      "size": 4716,
+      "sha256": "04981e1189b86401c34b875f4c4996bc1d652fdee637f1bf600a2dabac533aad",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/manual_verify.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/merge_old_long_success.py",
+      "relative": "ca01-local-ai-supervisor-20261023/merge_old_long_success.py",
+      "size": 2540,
+      "sha256": "c79ca0dd9007140055373ed1028583869ea9c32d5d15b816e9ed13469fe3f013",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/merge_old_long_success.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/parallel_display_retries.py",
+      "relative": "ca01-local-ai-supervisor-20261023/parallel_display_retries.py",
+      "size": 9159,
+      "sha256": "ebcf8dd2319bb9323581e333985909425e865e5e99ec27fb773f528e44eae61e",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/parallel_display_retries.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/02d11afd44146592/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/02d11afd44146592/focus/000.json",
+      "size": 1926,
+      "sha256": "bd28ca268bb806a64e4e43bc328a0d405a83dc62ae25c174b760a79e1ed431ad",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/02d11afd44146592/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/003.json",
+      "size": 1869,
+      "sha256": "5cf316542995d4c7ce950699ffd85e10fe5fdd4b81b9fe4453b42ab8382b60aa",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/004.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/004.json",
+      "size": 1595,
+      "sha256": "c68af2f074b542cbcde3738f4ece0b23a2141ceaa0e68e6207d9e18f07bdb475",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/004.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/002.json",
+      "size": 1842,
+      "sha256": "e4da03c0dbc6215368d8c97d4a0d13e73b25b691ec05bd644ec97c600a6bf3b4",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1431c297e1716c7d/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/1431c297e1716c7d/focus/000.json",
+      "size": 1340,
+      "sha256": "df7139a02c94ab1e472bb279b82421311fd25043e6a95621f2193eaf966be983",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/1431c297e1716c7d/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/003.json",
+      "size": 1462,
+      "sha256": "b9fda869d33307670f3cba1a2cd9edd9cae3317501f5a56bd8c0dbba6e528c29",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/004.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/004.json",
+      "size": 1497,
+      "sha256": "83843fa6b20ec853de70425d8f289973784d54d661af846758d7e55bbf9d90a6",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/004.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/focus/001.json",
+      "size": 1887,
+      "sha256": "4a0509b09f8f73799361a10d1032b09a5e92cd3b78b372447264100e9840580d",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1c0d760d81ad684b/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/1c0d760d81ad684b/focus/000.json",
+      "size": 1962,
+      "sha256": "5893ac51e6aef1afc0c94193c4572057aa385d91bd832eb97bd8d0dd72e3db57",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/1c0d760d81ad684b/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/focus/001.json",
+      "size": 1758,
+      "sha256": "e4902af910cf109dfa98ffe4485433deb76d7a171b2c769e2989495827e1ba08",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/focus/001.json",
+      "size": 1812,
+      "sha256": "de0d791c0f5ad767c8525a22553102aea5235948e72be48b9bda4413776d4f5d",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/focus/001.json",
+      "size": 1480,
+      "sha256": "1be9aa608b2ec0299c573e69704d2654afada2249ecc39efbaf83e1dcaadfa2e",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/002.json",
+      "size": 1864,
+      "sha256": "1ec977e6b95f997bdbd70c2c94c02c697b1ce035cfd686968e249f350be38949",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/003.json",
+      "size": 2004,
+      "sha256": "4099222607ba56bcee271e13f5e14051d73adb9544bb33af15e4ad0b7901577f",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/focus/001.json",
+      "size": 1524,
+      "sha256": "cefd6be6065ce0598d2ed0e44585efd8657a0a6d923c466c1d1fa835ead0313a",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/3831438fb969950f/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/3831438fb969950f/focus/000.json",
+      "size": 1827,
+      "sha256": "320e844b7cf4cfb482a8db9ecaafd921a723554133f0d5990cebe239224211d0",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/3831438fb969950f/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/383924353b752d9c/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/383924353b752d9c/focus/000.json",
+      "size": 1857,
+      "sha256": "a11d6e979130a46012e43f6febe59dbf96d583a3266182ff0dfd1040e91c987e",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/383924353b752d9c/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/004.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/004.json",
+      "size": 1901,
+      "sha256": "61dd081dd61bfbc78416b968ab368b9d1d19628a0a97110fe799d65b3ee21104",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/004.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/57d4971846c30f2c/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/57d4971846c30f2c/model-review.json",
+      "size": 1439,
+      "sha256": "cb7db9b47e4b152aa2148f392a33c30ee0986ea8af0126514960d27c7c7f864d",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/57d4971846c30f2c/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/002.json",
+      "size": 1872,
+      "sha256": "ff9379f7c90d16e78b1a4071bb53b5bef6e1ac7e00340575b677b85e52d66b90",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/003.json",
+      "size": 1845,
+      "sha256": "9c5f165b715671f75e82b0414c9a544acc18d9b1410757c8cccd40fbdaf76d2b",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/003.json",
+      "size": 1949,
+      "sha256": "c06dc200e704925d446dee7a7b6301a31b438ae83e91e1dbd37248110a96a904",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/004.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/004.json",
+      "size": 1862,
+      "sha256": "090b1ba77432c5c1bad7227655606d634d5f93234ca52114d3f99377a7edb592",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/004.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7373e2d470fbac95/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/7373e2d470fbac95/focus/000.json",
+      "size": 1832,
+      "sha256": "f3fb15c5fc8986406008d5aa0d9e48f1211d1715bd148dafbe8e42afce332e84",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/7373e2d470fbac95/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/003.json",
+      "size": 1949,
+      "sha256": "c997136a64746de4a1d2abc16f463c02517209dd14333287ef0821f15e6d2ab9",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/004.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/004.json",
+      "size": 1914,
+      "sha256": "cb617032230c1add88bfcc730e69fd8bd11c90f7b1cb5f9430a5c0e4e21f6312",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/004.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/focus/001.json",
+      "size": 1407,
+      "sha256": "7ecccf2fbb9d13b0d1f31e8ac02fe0c0fbc247e3b1e50eb0028a0e49df3cd0d6",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/002.json",
+      "size": 1883,
+      "sha256": "9cc1e2da4801d0836d5755300ee487386a478f709bc490d76766a2a530b2ca59",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/003.json",
+      "size": 1558,
+      "sha256": "2d8316b40322ee22c791655105096ae5699ee049cf6bbbd6351b3455a05098f5",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/focus/001.json",
+      "size": 1841,
+      "sha256": "9e52b0ea9063fa0da5180f2bbe1998ca0177393c190dc63569615da02fce2203",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/focus/001.json",
+      "size": 1968,
+      "sha256": "6137adfcc9c94a0f7e63488824915e1e9f0b7b720b8bba50471d1b83e1219917",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c826857156b51869/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c826857156b51869/focus/001.json",
+      "size": 1923,
+      "sha256": "8153e34f84aa6867eef2532a1107298b5b2e48c1e6866669fe262d7fb0045fa0",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/c826857156b51869/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/004.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/004.json",
+      "size": 1830,
+      "sha256": "23e6a7b1a9df408d639bcf17de2fe208a7262ccd4f4ed667aab9faafe8f69dad",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/004.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/cdc2f7a613e5a9a9/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/cdc2f7a613e5a9a9/model-review.json",
+      "size": 999,
+      "sha256": "a415eb7fc6dd0c8459b917666d33f89f54397c035a62a5d389beb87fba4bfd71",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/cdc2f7a613e5a9a9/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/focus/001.json",
+      "size": 1913,
+      "sha256": "09f56433fc47a549e754f4ec56d6911a322be3b8127c05cddb4b0a3698ba5388",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/002.json",
+      "size": 1946,
+      "sha256": "ab29042d0c4a47cd04ce33863fe390cddb7a5218ee01a0fbb540a99814305385",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/003.json",
+      "size": 1932,
+      "sha256": "8119554825753c5386d9008d8d35a1fe528c1a179138881a6d90de1795cb53a0",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/focus/001.json",
+      "size": 1932,
+      "sha256": "a44c5318b52484a96c56cd07e78dca041710bec4378f449a5820e3f49156f230",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/resume_decompile.py",
+      "relative": "ca01-local-ai-supervisor-20261023/resume_decompile.py",
+      "size": 7903,
+      "sha256": "8b35102b51648a4babfaf82c2162cd251e539e6140dcae901dd20663625d3e14",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/resume_decompile.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/retry_failed.py",
+      "relative": "ca01-local-ai-supervisor-20261023/retry_failed.py",
+      "size": 10796,
+      "sha256": "2663dae5a7b8b1b3d659f7d6beed2fc7248a8fb820e7a29386b4e0405bb9dc9b",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/retry_failed.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/reuse_identical_hmi.py",
+      "relative": "ca01-local-ai-supervisor-20261023/reuse_identical_hmi.py",
+      "size": 7511,
+      "sha256": "6888ca4544f193ee3f20914fafc6b3f125e1a5719d33d07b526e3b8b40d415b3",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/reuse_identical_hmi.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/salvage_existing_display.py",
+      "relative": "ca01-local-ai-supervisor-20261023/salvage_existing_display.py",
+      "size": 2554,
+      "sha256": "01e290951b3d6dbb24bb80589110b6de3e60fcbfa1b27c7630eedaec47f7c3d6",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/salvage_existing_display.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/supervisor.py",
+      "relative": "ca01-local-ai-supervisor-20261023/supervisor.py",
+      "size": 24993,
+      "sha256": "57e826053071a935d4f2f6ee22e1777d3f4df1876c4ec4b85779fee6c1af9084",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/supervisor.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/test_retry_policy.py",
+      "relative": "ca01-local-ai-supervisor-20261023/test_retry_policy.py",
+      "size": 4929,
+      "sha256": "08f8194e40bde05f8021470bedd49c84017b7c6a20d160d7125a7b3d6baa2383",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/test_retry_policy.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/triage_illegal_arm.py",
+      "relative": "ca01-local-ai-supervisor-20261023/triage_illegal_arm.py",
+      "size": 3372,
+      "sha256": "5518a64f0b7f58a429cbdde3669f7c90133d38da0c749aca1e3e93403a80ba45",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/triage_illegal_arm.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/version-preference-20261023.json",
+      "relative": "ca01-local-ai-supervisor-20261023/version-preference-20261023.json",
+      "size": 20569,
+      "sha256": "ec4d3a1309d87c31e1710c69f0c042ac666b82f6ac913973f5502bb39711589f",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/version-preference-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/version_policy.py",
+      "relative": "ca01-local-ai-supervisor-20261023/version_policy.py",
+      "size": 5435,
+      "sha256": "30e5421e320ac3a50c5acf1d34847b97e4ecc837a78dd29c70662bb925d22169",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-local-ai-supervisor-20261023/version_policy.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/FINDINGS.md",
+      "relative": "ca01-path-a-access-trace-20261023/FINDINGS.md",
+      "size": 9427,
+      "sha256": "ff6f1a2302ff91408bf4f954b0116f0472b417d306a0fc9d9c6da6c5aebc0eae",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/FINDINGS.md"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/SHA256SUMS.json",
+      "relative": "ca01-path-a-access-trace-20261023/SHA256SUMS.json",
+      "size": 859,
+      "sha256": "aa517c42d1763dd7ed767a1ec01594a13b331f0ef5bc54e289b4846992062e64",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/SHA256SUMS.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/arm-network-witness.json",
+      "relative": "ca01-path-a-access-trace-20261023/arm-network-witness.json",
+      "size": 4220,
+      "sha256": "460f72e175d92f1518327e362c3b3d105e3567c68d1a9f8f7f924b7efc7c8faa",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/arm-network-witness.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/raw-access-strings.json",
+      "relative": "ca01-path-a-access-trace-20261023/raw-access-strings.json",
+      "size": 6030,
+      "sha256": "91e243234a2d8a5480c8450e56e79a070fc27658d93c3d99657331f4ed2a01f3",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/raw-access-strings.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/sysc-selected.c.txt",
+      "relative": "ca01-path-a-access-trace-20261023/sysc-selected.c.txt",
+      "size": 9680,
+      "sha256": "fd04c2fdb1696823b89084063e143f6c6a1c7b28a6795e1a8d4632608cd7d358",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/sysc-selected.c.txt"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/system-selected.c.txt",
+      "relative": "ca01-path-a-access-trace-20261023/system-selected.c.txt",
+      "size": 10257,
+      "sha256": "ad95bc0a21db1b03e978ab4a192cef397331f9b2d7abdd9ac70cdd980b6f229d",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/system-selected.c.txt"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/uieif-selected.c.txt",
+      "relative": "ca01-path-a-access-trace-20261023/uieif-selected.c.txt",
+      "size": 15433,
+      "sha256": "7b74d0db3d53f0793c203ecbbe7175868e87b40ab190fc30dfbac8c921209037",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/uieif-selected.c.txt"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/verified-access-evidence.json",
+      "relative": "ca01-path-a-access-trace-20261023/verified-access-evidence.json",
+      "size": 3738,
+      "sha256": "09eaa3841de224cbf3bc71bc832714120442d6b3e29cf143894e0528549fb48a",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/verified-access-evidence.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-path-a-access-trace-20261023/verify_access_paths.py",
+      "relative": "ca01-path-a-access-trace-20261023/verify_access_paths.py",
+      "size": 8093,
+      "sha256": "fb7a3f23db0eb84da3c3ec32ca38a88c4e75d87522cf80a48664a82efa6c3ce9",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-path-a-access-trace-20261023/verify_access_paths.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-missing-provider-search-20261023/FINDINGS.md",
+      "relative": "ca01-missing-provider-search-20261023/FINDINGS.md",
+      "size": 4320,
+      "sha256": "94d6ea3a580fbe637d6e8956c7a95993c86fd49529c8281ab7d85266588177a1",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-missing-provider-search-20261023/FINDINGS.md"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-missing-provider-search-20261023/SHA256SUMS.json",
+      "relative": "ca01-missing-provider-search-20261023/SHA256SUMS.json",
+      "size": 710,
+      "sha256": "70a7c641d542eea6aff6db039dda9890d7deb14b800438b411a47703811cc6f4",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-missing-provider-search-20261023/SHA256SUMS.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-missing-provider-search-20261023/ca01-missing-archive-search.json",
+      "relative": "ca01-missing-provider-search-20261023/ca01-missing-archive-search.json",
+      "size": 894,
+      "sha256": "80171e3a2896740bbff343c0ce9e0e255e551473c5fe22b5b8dff3cd5322a53c",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-missing-provider-search-20261023/ca01-missing-archive-search.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-missing-provider-search-20261023/ca01-missing-official-links.json",
+      "relative": "ca01-missing-provider-search-20261023/ca01-missing-official-links.json",
+      "size": 766,
+      "sha256": "eaa8dca78295c0c3e30ec8f206096d6e9648e7fcb8584e2621d415f9463c60f8",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-missing-provider-search-20261023/ca01-missing-official-links.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-missing-provider-search-20261023/ca01-missing-partial-search.json",
+      "relative": "ca01-missing-provider-search-20261023/ca01-missing-partial-search.json",
+      "size": 11039,
+      "sha256": "1d5e95e9200829dc65e944dbbb1ca482c87a496106af8fb94700ce33fec81989",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-missing-provider-search-20261023/ca01-missing-partial-search.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-missing-provider-search-20261023/ca01-missing-source-probes.json",
+      "relative": "ca01-missing-provider-search-20261023/ca01-missing-source-probes.json",
+      "size": 1009,
+      "sha256": "4b807c5b2acf5087164e26c60c5c48431c3bda2c2de800a19f1380cb62988b56",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-missing-provider-search-20261023/ca01-missing-source-probes.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-missing-provider-search-20261023/ca01_archive_search.py",
+      "relative": "ca01-missing-provider-search-20261023/ca01_archive_search.py",
+      "size": 2447,
+      "sha256": "a93ce5649329f20edf3fe6b905e9405aca23a574f7565290e6427ffae20bc6ed",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-missing-provider-search-20261023/ca01_archive_search.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-missing-provider-search-20261023/ca01_partial_target_search.py",
+      "relative": "ca01-missing-provider-search-20261023/ca01_partial_target_search.py",
+      "size": 2345,
+      "sha256": "5c0d5356be6337a0b144f7201e1e818d6085526ec026f80e187e830eec10cdd9",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-missing-provider-search-20261023/ca01_partial_target_search.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/analysis-artifact-manifest.json",
+      "relative": "ca01-completed-corpus-analysis-20261023/analysis-artifact-manifest.json",
+      "size": 2035,
+      "sha256": "32465248c51473f76221811a9046387ed5e0c8ad9efdb09089aadafee9c59c5e",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/analysis-artifact-manifest.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-coverage-quality-review.txt",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-coverage-quality-review.txt",
+      "size": 8092,
+      "sha256": "188f63ec58e9a65b5669ef7bb97bc98697a5dcd85167a9a679daff0e5e9af3b8",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01-coverage-quality-review.txt"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-current-provider-check.json",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-current-provider-check.json",
+      "size": 273,
+      "sha256": "15efdf427d158fa989b931ac3d1c98cfcb16625502e4f29eefded75b3b7d3e95",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01-current-provider-check.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-display-corpus-review.txt",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-display-corpus-review.txt",
+      "size": 8363,
+      "sha256": "f56ff2d5666410ec9b3c36e703d1e1a7623eb83210d8599695290b1c64b6ee36",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01-display-corpus-review.txt"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-display-decompiled-excerpts.txt",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-display-decompiled-excerpts.txt",
+      "size": 21436,
+      "sha256": "b6a60973d46797e12020398e4a7e4fac88933718d7628eefc50e2a3292a2e7b3",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01-display-decompiled-excerpts.txt"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-display-original-proofs.json",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-display-original-proofs.json",
+      "size": 48562,
+      "sha256": "8fd8a1b5deffd6f6b4a0ecfe06501d2a91d676b97ca78daa0d3831f04519059c",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01-display-original-proofs.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-version-provider-audit.json",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-version-provider-audit.json",
+      "size": 30066,
+      "sha256": "290349a457838bc43e9d195c5ae0b2036b26d0417617f8aa85d34738ef9af871",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01-version-provider-audit.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01_corpus_lookup.py",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01_corpus_lookup.py",
+      "size": 881,
+      "sha256": "472363522b947ed8a82cbe1e063949fc49ccb49c75cecd1a2fb918f1db755c96",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01_corpus_lookup.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01_property_record_original_probe.py",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01_property_record_original_probe.py",
+      "size": 5504,
+      "sha256": "09c8647b7071cd57b8f11b466fd98cc166689008358e93665b4a734543f490bf",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01_property_record_original_probe.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01_verified_corpus_snapshot.py",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01_verified_corpus_snapshot.py",
+      "size": 2713,
+      "sha256": "7fd9cfc7f72d30e0f2b22971a0dee0b9a02a6c08b4ea6bf990981eab3f03bdd5",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01_verified_corpus_snapshot.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01_version_and_provider_audit.py",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01_version_and_provider_audit.py",
+      "size": 2214,
+      "sha256": "4343362ee3f47bbb0652f72c5d0bf29b1bebe9780d7f11b47de9d292c8266c94",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-completed-corpus-analysis-20261023/ca01_version_and_provider_audit.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/creator-decomp/functions.tsv",
+      "relative": "ca01-psm-and-flash-source-20261023/creator-decomp/functions.tsv",
+      "size": 1655,
+      "sha256": "03932618c521862ee1c816ca1c83240e07a2bf93ff1e773edc2ed7e7d64f4133",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-psm-and-flash-source-20261023/creator-decomp/functions.tsv"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/creator-decomp/manifest.json",
+      "relative": "ca01-psm-and-flash-source-20261023/creator-decomp/manifest.json",
+      "size": 15171,
+      "sha256": "29af75da5532cf63ba06f89dfd6ea3154576ed68f05f1cbc454e6b758c9dad21",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-psm-and-flash-source-20261023/creator-decomp/manifest.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/writer-decomp/functions.tsv",
+      "relative": "ca01-psm-and-flash-source-20261023/writer-decomp/functions.tsv",
+      "size": 1735,
+      "sha256": "bd21c82e5821d4674d1e4c08676a5c4518508547587450ca76a2dbb61238f566",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-psm-and-flash-source-20261023/writer-decomp/functions.tsv"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/writer-decomp/manifest.json",
+      "relative": "ca01-psm-and-flash-source-20261023/writer-decomp/manifest.json",
+      "size": 16915,
+      "sha256": "947a320df2f735f4e2085b6f9071ac162ece51f3bea0797999d246d4f76cf72c",
+      "in_git": "research/independent-audit/2026-10-23-followup/ca01-psm-and-flash-source-20261023/writer-decomp/manifest.json"
+    }
+  ],
+  "existing_content_references": [
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/CA01DecompileBatch.java",
+      "relative": "ca01-local-ai-supervisor-20261023/CA01DecompileBatch.java",
+      "size": 6590,
+      "sha256": "feba47dde2fc53ccce9ee9089b2f157a830dc9af92798116d81a652a30b61372",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/CA01DecompileBatch.java"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/README.md",
+      "relative": "ca01-local-ai-supervisor-20261023/README.md",
+      "size": 5057,
+      "sha256": "90297be4969581502bb60bd0d0db52faeec2d3a5990241ecbb1317ef31706466",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/README.md"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/correct_pattern_escapes.py",
+      "relative": "ca01-local-ai-supervisor-20261023/correct_pattern_escapes.py",
+      "size": 318,
+      "sha256": "2a2c74bf37726a8f4b395b6ff5009888d37fda5b507064fac3a1f5f61514e8d3",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/correct_pattern_escapes.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/coverage_index.py",
+      "relative": "ca01-local-ai-supervisor-20261023/coverage_index.py",
+      "size": 11583,
+      "sha256": "11132ad4bf56a23a83b289cae7c05d09a2ad960f6484b2f027b14820dcc98bd3",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/coverage_index.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/inspect_process_tree.py",
+      "relative": "ca01-local-ai-supervisor-20261023/inspect_process_tree.py",
+      "size": 326,
+      "sha256": "698fbc49442474eca206d4fd2d59691152ed10e063f840186b216e7308334cfa",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/inspect_process_tree.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/maintenance_restart.py",
+      "relative": "ca01-local-ai-supervisor-20261023/maintenance_restart.py",
+      "size": 2043,
+      "sha256": "aa2932f8f344345f770f9f1bbc1c8b2a2a05c3c74337792dbef54ae0bfc16e5c",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/maintenance_restart.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/model_review.py",
+      "relative": "ca01-local-ai-supervisor-20261023/model_review.py",
+      "size": 7598,
+      "sha256": "4888ee0a183f27983f8f66c77ebf8c7f7a74e381077db5a31c55bf54bd32361e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/model_review.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/reconcile_resume_manifest.py",
+      "relative": "ca01-local-ai-supervisor-20261023/reconcile_resume_manifest.py",
+      "size": 1431,
+      "sha256": "2ce1ce49006218026f08ab01647a609f4fce62d37439487c6d9b0dc7cd0bda78",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/reconcile_resume_manifest.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/repair_legacy_reviews.py",
+      "relative": "ca01-local-ai-supervisor-20261023/repair_legacy_reviews.py",
+      "size": 1478,
+      "sha256": "947a47038da98a25568963596584ca19c383e7c8c2fce5cc723896719ae5b359",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/repair_legacy_reviews.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/repair_review_queue.py",
+      "relative": "ca01-local-ai-supervisor-20261023/repair_review_queue.py",
+      "size": 1061,
+      "sha256": "0febbec3b8bcc72f8acae4fa307b6ceedb15a883a3fcb4c6129db5028f55d2d5",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/repair_review_queue.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/research_report.py",
+      "relative": "ca01-local-ai-supervisor-20261023/research_report.py",
+      "size": 5364,
+      "sha256": "7e803ffffac47c2b187071c34882c589266641a2edda790519ea8acf88f1cc8a",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/research_report.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/02d11afd44146592/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/02d11afd44146592/model-review.json",
+      "size": 1414,
+      "sha256": "788e15577bdba8a0f5b81c1126c6d4eed907891b331ad4ca571e5c507428ebd7",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/02d11afd44146592/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/000.json",
+      "size": 1901,
+      "sha256": "7aee04477d47ed6779c0ddd7f8f0e1b1101eb34bc8c1d0f54afaa839566f52ba",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/001.json",
+      "size": 1647,
+      "sha256": "8d7c2e4e5997f3cb25c851ae558d7eece9339f2e6e097dae0211f56f912f1b46",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/002.json",
+      "size": 1425,
+      "sha256": "b517bf0878a911ac191a28dfc0ccf6f31a7e0963b859e5b8eb886503417bf4dc",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/model-review.json",
+      "size": 1484,
+      "sha256": "56fad09217d43a2d4c3c0976c8203ab83cfa07d09d40da1bf2e1b9028fb50daa",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/000.json",
+      "size": 1784,
+      "sha256": "8435fdb70152c25e9329ddc4ddc8045e30641c8e54cece88901dadb59c3cee6c",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/001.json",
+      "size": 1879,
+      "sha256": "f25c934b732b228835b80b3e09c46e6daad4d8b458bc7951e87493c3c855b60b",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/model-review.json",
+      "size": 1568,
+      "sha256": "7fa82093770ed27278d6ad478df51cef2325fa7a8860e0b96d4ed12ba146a677",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1431c297e1716c7d/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/1431c297e1716c7d/model-review.json",
+      "size": 1384,
+      "sha256": "6499cb2d11a093957f9e48afae79a711a955d4ecbf5d16be43afea42ed861b4d",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/1431c297e1716c7d/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/000.json",
+      "size": 1914,
+      "sha256": "4d6129aceaa0ca31b13a526f3bb666138947f91db5fb06929603b8fd0c2ca93e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/001.json",
+      "size": 1504,
+      "sha256": "1b4109f7db0eb9bb7e099483a4fff88061fb6e5774e90594199c2338d594a4f4",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/002.json",
+      "size": 1882,
+      "sha256": "1fa6da8edcef39fa2056892a6d53b2e5e7d7ddc271c3688a81d3391e5d790594",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/model-review.json",
+      "size": 1482,
+      "sha256": "ad1627b40b23692fabe363ab668e75d588b5ae6360beb2bf6c067fbfbe9f95aa",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/focus/000.json",
+      "size": 1963,
+      "sha256": "77f0377944ecc89e20a3de09de18b5555973110493c6228214d53342acaca62c",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/model-review.json",
+      "size": 1356,
+      "sha256": "20490a30e39f643564f6d2c0cb6605ec1352fb6669b16ae059e8ce39e17be556",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1c0d760d81ad684b/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/1c0d760d81ad684b/model-review.json",
+      "size": 1421,
+      "sha256": "4f4f07fc2aece9b384e6d0ff7162d8026fc02d3ea68414f6618f98def49a0bb4",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/1c0d760d81ad684b/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/focus/000.json",
+      "size": 1667,
+      "sha256": "72e8812a9130fafd769e002ff46d66906339600fa21afc4d78c0706775f954e0",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/model-review.json",
+      "size": 1496,
+      "sha256": "f468421671eb75f1594679cea60c94fe3f67a6d5b7260b5e8238e6e05fa84e4d",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/focus/000.json",
+      "size": 1846,
+      "sha256": "5da709ac21ec6ca3240e91ab55d6077c00d3adb7ab37341218ccdc53218d3c20",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/model-review.json",
+      "size": 1411,
+      "sha256": "3366739dbe21d828a583aa3598425bdbe9d43f1bfb67e47dc4f748078e703a58",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/focus/000.json",
+      "size": 1730,
+      "sha256": "859d18767bc6f6e6cf4be1b80037363e9531b3157af09af00074ce9fa9fd1019",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/model-review.json",
+      "size": 1465,
+      "sha256": "abaed341ecd12574c7ca07fc1827306c17c72fa6c93ac7f86bece66d97362ef9",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/000.json",
+      "size": 1858,
+      "sha256": "f2c0387b70158265d4c5ede1de3757ec233fa2347683ef7e6290bca9580a194b",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/001.json",
+      "size": 1955,
+      "sha256": "1d5841b79829ff27d172f3efcd0a9639e552e2a79f248f6f70305dc234088cc8",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/model-review.json",
+      "size": 1431,
+      "sha256": "29fa95c133ccf40c7e6c19ea130874eb2fb6e09cfca2eae9170e56d6dbb3e93f",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/focus/000.json",
+      "size": 1870,
+      "sha256": "f75593e5d1d356d02922128f8f9af9a87088b56bf036bc073182e12206ea9b90",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/model-review.json",
+      "size": 1397,
+      "sha256": "7c44263c20431114be16388b382ed5d9669856fda95bff14c9f564173a53bc0f",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/3831438fb969950f/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/3831438fb969950f/model-review.json",
+      "size": 1254,
+      "sha256": "5068986af3f14b9297cdd87d28d9d51dd1dc2097bbb99ca6267f3c685520d4b1",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/3831438fb969950f/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/383924353b752d9c/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/383924353b752d9c/model-review.json",
+      "size": 1523,
+      "sha256": "27d9a61449e7bd8969a9f8e1147fbeae49b20488421f94fc03c9f4edc5c4e53c",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/383924353b752d9c/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/47a48311b513bffa/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/47a48311b513bffa/model-review.json",
+      "size": 1406,
+      "sha256": "55f4454fb8dd78033df3aa1832dc6e64847ebb84be9cd9a8e22f75e51eb18777",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/47a48311b513bffa/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/000.json",
+      "size": 1949,
+      "sha256": "8145421fec972318e3b96f9c95c18bd8261dc97b98e54bdbada7627ec862839a",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/001.json",
+      "size": 2051,
+      "sha256": "c2e5aa61be50d01902b45e70a9f40403e60688efb6349a5f69a7d475fd889a18",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/002.json",
+      "size": 1956,
+      "sha256": "03389f45574ec7ed4e3dccd928266633794f58e066dcf76bdbd3407fc76b5360",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/003.json",
+      "size": 1956,
+      "sha256": "827da2544f776b61dbbe6ec863d24e313b4ff98dde959a10e11886e99f2e0f0e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/model-review.json",
+      "size": 1408,
+      "sha256": "f13a708a86a8e32b17efaf277014bb622a45fab6533fdd93dc48315d64a145ac",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/5a2afe5ea4fb2cb4/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/5a2afe5ea4fb2cb4/model-review.json",
+      "size": 1501,
+      "sha256": "eb3eb53853616342bb2bd483c84f1e43ae3adbd56ed1ffd4b8bbd67379de1066",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/5a2afe5ea4fb2cb4/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/000.json",
+      "size": 1690,
+      "sha256": "1bf38fc236e0b221ade2a22254d20066a1c2422a4ca6790759a99b676e9afd34",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/001.json",
+      "size": 1737,
+      "sha256": "1cd4038c1da0b401dde9441e1540f7f2e68d46b54705775f541d6c849320567a",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/model-review.json",
+      "size": 1527,
+      "sha256": "bf28da8c65e2106889321f0025a5f43edf0b2f7ac0c2b8dfcd705d7c7b843abc",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/000.json",
+      "size": 1908,
+      "sha256": "af4f1703ce8f3ec767b77800f124b08ab069bfd6eb2e08053f2cdd775ded829e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/001.json",
+      "size": 1940,
+      "sha256": "2d8267efb2679e471604ec522f9f1ca0a953c8e7ea1b47ef282a6de71bac701e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/002.json",
+      "size": 1608,
+      "sha256": "2861cda274fed21a2b0dd7766a941a10d6100bae755a6d16546dc023f5655d00",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/model-review.json",
+      "size": 1410,
+      "sha256": "685e26316f3b96ebbb4d65ee4682e9bd0717b7bc6313e1955460060f46ed7763",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/focus/000.json",
+      "size": 1775,
+      "sha256": "3fd5aca3722e5be550bf885930a871928375a386473c665316d2ccb6c7783b04",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/focus/001.json",
+      "size": 1759,
+      "sha256": "ca7713ae879c1b260cf36fd12e622d085ac1e70ad876a1763cc8023e0e05538c",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/model-review.json",
+      "size": 1292,
+      "sha256": "f7aaf96521e91fb585abe0ef0266e82ade655d5b1a430289ecda842ae486e117",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7373e2d470fbac95/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/7373e2d470fbac95/model-review.json",
+      "size": 1433,
+      "sha256": "50059606da2ef0cb65e0e58a27a0cfdf6866a23254309b7ee771fa92ece29b91",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/7373e2d470fbac95/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/77e97c6cebc9e4a3/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/77e97c6cebc9e4a3/model-review.json",
+      "size": 1329,
+      "sha256": "56e837aa863b61a47e513f776e8b96f1a83934e843c1834d6e692cb8eca9e8e9",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/77e97c6cebc9e4a3/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/000.json",
+      "size": 1885,
+      "sha256": "1878ec23a73e59ec8ea08db8dcfc28dc8df32f7700cc9c0866fd547b5a1395c1",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/001.json",
+      "size": 1918,
+      "sha256": "64c53072727db72c84f299b5b60a7062329b67a032d426b5a9494c36530bb096",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/002.json",
+      "size": 2003,
+      "sha256": "0f2d2879b22fd9c9e7f8a8f761ae741f0953a773617bd37e115779b278148dc3",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/model-review.json",
+      "size": 1187,
+      "sha256": "f85de26f95e99b3d23837d23e741132ebd72816fc7a312b7b1e17244a70f7e7a",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/8486692809990cec/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/8486692809990cec/model-review.json",
+      "size": 1047,
+      "sha256": "09de32b764cad86898399623d2fb4feff8bc8200c2baf6bfa22e680d7e99de53",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/8486692809990cec/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/focus/000.json",
+      "size": 1793,
+      "sha256": "167dd7491564be9452ba09031d2c37d792a5ff3af4b9281fc6543c604431d47a",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/model-review.json",
+      "size": 1176,
+      "sha256": "1545d2d79bba686b7a31b405e5803a90ac7d45a93b30f30f3c73d0ca30f4f6e3",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/90a7cf2c7f9eada7/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/90a7cf2c7f9eada7/model-review.json",
+      "size": 1382,
+      "sha256": "80042593c0039e02a058ac1c559632d364b1100841d0c45800b4da990326e401",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/90a7cf2c7f9eada7/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/911b997a5a4ecb16/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/911b997a5a4ecb16/model-review.json",
+      "size": 1499,
+      "sha256": "e0ced54f8e53706fd62e7002c44b6e4d011d051b28aefab2eba4f0b87a367973",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/911b997a5a4ecb16/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/000.json",
+      "size": 1655,
+      "sha256": "ea68f879588a170067cf37b5ec90db4c3f0b61fce5280979c737293eea142720",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/001.json",
+      "size": 1908,
+      "sha256": "c8d129cfa6e4c3ee1e6007f47703a5a0e53669703b74a2f3ef99f4bfdbf73c7e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/model-review.json",
+      "size": 1248,
+      "sha256": "aed22a3485c2f2f0723f4516eabfdaa31c1ba9541f36871700d6e684ff33b43b",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/a1f2812d0b1776fa/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a2e1403bc89b737d/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a2e1403bc89b737d/model-review.json",
+      "size": 1518,
+      "sha256": "8304984c11946ac3dcb10619da45c4f6b086434cf000e2ba0ad4d3ecd734657c",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/a2e1403bc89b737d/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a30874c2d9d658ff/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a30874c2d9d658ff/model-review.json",
+      "size": 1218,
+      "sha256": "dc3ec5008868460cd781177c92147be65cb11ede007afa6ef6b26b37e16d320e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/a30874c2d9d658ff/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/focus/000.json",
+      "size": 1875,
+      "sha256": "ee1ecda1ffa21231c4da0d3827409e45fe0012e140cdb6ab132a3d9ef8a006cf",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/model-review.json",
+      "size": 1355,
+      "sha256": "0d1b8e83cad1de85fd2582b8dbacccf1f446db9d59d6cefb7f4355e57328acf3",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/focus/000.json",
+      "size": 1881,
+      "sha256": "459ba834b5c8259def1e800d51d008cb7cd54cbebd263cce19efde359b977d6d",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/model-review.json",
+      "size": 1656,
+      "sha256": "18fd33789468e75c6ad59052d27439b694d0328e020489c3c84a0588c05fc9c4",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c5b9d0c56a1f7539/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c5b9d0c56a1f7539/model-review.json",
+      "size": 1464,
+      "sha256": "1afebd189c1ed29eb3a8f8484cbd59304d721abe1f407205e15cf3be3f5ae4b8",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/c5b9d0c56a1f7539/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c826857156b51869/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c826857156b51869/focus/000.json",
+      "size": 1439,
+      "sha256": "9676191a8faefd4477b1f4742b273bf7418ef0671cb11c53fb3218ae5f5b3642",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/c826857156b51869/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c826857156b51869/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c826857156b51869/model-review.json",
+      "size": 1506,
+      "sha256": "f474baaa8608c60d51261d79fbce802bc73e0f0e9dcf084f9ddf9098160d4dbe",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/c826857156b51869/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/000.json",
+      "size": 1766,
+      "sha256": "13bbd3302e34d05e1ac2068b0f8f5090010a6b302a728d6c7d30184aead5792e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/001.json",
+      "size": 1642,
+      "sha256": "6b8984ad9775241612bfcb6e038e89e5e679290ee75a4aa1a063bc51cc3c97fc",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/002.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/002.json",
+      "size": 1892,
+      "sha256": "2c2ce27b1b633c18176c980e7267f31688d683a84fc1fecbc6a7107b5b1d8f61",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/002.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/003.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/003.json",
+      "size": 1813,
+      "sha256": "0329628cc2ceb50e28137672da433b3f9472732c03d963cd5d59718170a477dd",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/focus/003.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/model-review.json",
+      "size": 1578,
+      "sha256": "e1ae8d9096f3e07849bfa0930424a746db423702691d033dc084f38867eea411",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/cf7c621b96d0865d/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/cf7c621b96d0865d/model-review.json",
+      "size": 1403,
+      "sha256": "8e656d7bfbc1b5242c91129f59fa20cacaf5aabbec7894f69fcc67cb5dea7e0e",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/cf7c621b96d0865d/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/db3b38c1a9fd31b7/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/db3b38c1a9fd31b7/model-review.json",
+      "size": 1451,
+      "sha256": "eb46fad0c26b0a96fcff29d8db6a8b049da8487a736822866850c9e57fd58c48",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/db3b38c1a9fd31b7/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e5ca3288453da45f/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/e5ca3288453da45f/model-review.json",
+      "size": 1464,
+      "sha256": "e7f55221a9e7a63b851cfbb9b9f6aa1286e91bb9de3ce6dbd771ba95ba49d754",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/e5ca3288453da45f/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e5eb7a2861f8747d/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/e5eb7a2861f8747d/model-review.json",
+      "size": 1228,
+      "sha256": "fc9b7689704d5276b3220fb5400b06c874d87d2fdc31c86284432044e7357267",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/e5eb7a2861f8747d/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/focus/000.json",
+      "size": 2026,
+      "sha256": "5c6aaae2f786a46c847d8bfce3477e6521c8efa5fe8aca96f12882e6131152f5",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/model-review.json",
+      "size": 1419,
+      "sha256": "6f1b428bb5a96927b75809fdd05f2e89ba3e06d315a5d5c870f686bde324dfb1",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/000.json",
+      "size": 1930,
+      "sha256": "b6f185b709695f449baddd2a627b116760f8a673137e233020a5588ba477e73f",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/001.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/001.json",
+      "size": 1942,
+      "sha256": "af6accab14435d4e5e658c3db884cc162b2360fca8b2b4d81e53de7e8c8c5a70",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/focus/001.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/model-review.json",
+      "size": 1567,
+      "sha256": "fedb491f8757e9e15b8701974a03ad2983145287e02da90f74657b615a29d876",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/focus/000.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/focus/000.json",
+      "size": 2008,
+      "sha256": "ab36ec6ad52a47f76fb17cbcb160c1d83870f8173c06a44070e5dbab9b9941a0",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/focus/000.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/model-review.json",
+      "size": 1475,
+      "sha256": "810012f1bf4b39a25f159ef7e57d83e881e7e7c218e37c9d67f586f2c9cf5b59",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/f6cb7d7fb510a4d9/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/f6cb7d7fb510a4d9/model-review.json",
+      "size": 1246,
+      "sha256": "15ea8a877d2789e291220d62c6c5e51f4d3fd39953f1bf5fb8c592ee6fa1b774",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/f6cb7d7fb510a4d9/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/f8d509b18b2be933/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/f8d509b18b2be933/model-review.json",
+      "size": 1203,
+      "sha256": "ff3c223287e7a084d8590a9ba50ff9f6a60b4f04c29abb9fbaaf53c062d60e89",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/f8d509b18b2be933/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/fc38e66676a9fe45/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/fc38e66676a9fe45/model-review.json",
+      "size": 1379,
+      "sha256": "788bb68aaeb264d7fde476d0faca7a9749a574cb762dd84dc3398464b54c920a",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/fc38e66676a9fe45/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/fcbd4cf0c639442e/model-review.json",
+      "relative": "ca01-local-ai-supervisor-20261023/results/fcbd4cf0c639442e/model-review.json",
+      "size": 1527,
+      "sha256": "0cd4bc73163e1d93a7dfebccd3891dbc5a70b28108745218de89a47e757abc82",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/results/fcbd4cf0c639442e/model-review.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/start.sh",
+      "relative": "ca01-local-ai-supervisor-20261023/start.sh",
+      "size": 996,
+      "sha256": "65aaecbf5194e57b299ca5bf490bb5f2100f4ca02f5562e7187cb479fbdd6b09",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/start.sh"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/status.sh",
+      "relative": "ca01-local-ai-supervisor-20261023/status.sh",
+      "size": 99,
+      "sha256": "6379411c4019705ebb0678f88e075d9112c75d82c2fe4979a5e9f387d874e579",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/status.sh"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/stop.sh",
+      "relative": "ca01-local-ai-supervisor-20261023/stop.sh",
+      "size": 181,
+      "sha256": "1439850c781caec7e7d27d7561ef401b951b6a2ba47149850e5d53afc9713176",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/stop.sh"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/test_model_extract.py",
+      "relative": "ca01-local-ai-supervisor-20261023/test_model_extract.py",
+      "size": 627,
+      "sha256": "aaa87a775c1fbbff2efd7ab70cb5c08d2c11fb849dc9008cab727a9311960c79",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/test_model_extract.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/verify_upgrade.py",
+      "relative": "ca01-local-ai-supervisor-20261023/verify_upgrade.py",
+      "size": 1377,
+      "sha256": "6c544beaee388ffb8e0af2899e00872d71d9760b6f2d7a251d46b7572db00587",
+      "represented_by": "research/independent-audit/2026-10-23/ca01-local-ai-supervisor-20261023/verify_upgrade.py"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/FINDINGS.md",
+      "relative": "ca01-completed-corpus-analysis-20261023/FINDINGS.md",
+      "size": 14681,
+      "sha256": "ef72752a14ba123e072a817ad632c5b392d1ea463bce872e17053369d6d5efea",
+      "represented_by": "docs/CA01_COMPLETED_CORPUS_REVIEW_20261023.md"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-hmi-format-match-proof.json",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-hmi-format-match-proof.json",
+      "size": 4293,
+      "sha256": "e318860c7e367820e68554aa1e547ea7a9a4569f5332c523aa1e88575c7c9aec",
+      "represented_by": "evidence/ca01-hmi-format-match-proof-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-original-property-record-verified-proof.json",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-original-property-record-verified-proof.json",
+      "size": 10385,
+      "sha256": "93ce27111749e86f2f42c63b084ed33f872db7aa163823921f98bab6d24f8d23",
+      "represented_by": "evidence/ca01-original-property-record-proof-20261023.json"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-completed-corpus-analysis-20261023/ca01-verified-corpus-snapshot.json",
+      "relative": "ca01-completed-corpus-analysis-20261023/ca01-verified-corpus-snapshot.json",
+      "size": 26871,
+      "sha256": "29062feee6832307981d6737bb3a211e0737f71c8bd31218a33ea105d6a912b1",
+      "represented_by": "evidence/ca01-completed-corpus-audit-20261023.json"
+    }
+  ],
+  "superseded_evidence": [
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/ca01-flash-parameter-source-audit-20261023.json",
+      "relative": "ca01-psm-and-flash-source-20261023/ca01-flash-parameter-source-audit-20261023.json",
+      "size": 133212,
+      "sha256": "ffd66527a10582112aebad64621807a99debf045c5ba775946cd2508e2337f48",
+      "superseded_by": "evidence/ca01-flash-parameter-source-audit-20261023.json",
+      "reason": "Same trace data; reviewed repository evidence adds validation and current implementation hashes"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/ca01-psm-startup-20261023.json",
+      "relative": "ca01-psm-and-flash-source-20261023/ca01-psm-startup-20261023.json",
+      "size": 164892,
+      "sha256": "f61483c774731a5856397be149076559eb82b81a3acc20883a636e085ac23ca5",
+      "superseded_by": "evidence/ca01-psm-startup-20261023.json",
+      "reason": "Same trace data; reviewed repository evidence adds validation and current implementation hashes"
+    },
+    {
+      "source": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/ca01-flash-parameter-source-audit-reviewed-20261023.json",
+      "relative": "ca01-psm-and-flash-source-20261023/ca01-flash-parameter-source-audit-reviewed-20261023.json",
+      "size": 133212,
+      "sha256": "ffd66527a10582112aebad64621807a99debf045c5ba775946cd2508e2337f48",
+      "superseded_by": "evidence/ca01-flash-parameter-source-audit-20261023.json",
+      "reason": "Identical baseline trace, superseded by final evidence with validation annotations"
+    }
+  ],
+  "excluded_artifacts": [
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results",
+      "reason": "Full C exports, Ghidra databases, compiled outputs and original binaries remain local; selected sources and hashes are recorded in the coverage report and corpus audit."
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/progress.sqlite3",
+      "reason": "Live research job database; not a portable source artifact."
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/function_coverage.sqlite3",
+      "reason": "Derived live search index; stale HMI selection documented in corpus review. Do not publish or mutate as part of consolidation."
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/stock-firmware",
+      "reason": "Original firmware; unchanged, no new blob copies."
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/vendor-source",
+      "reason": "Large original source archives; existing provenance remains in the earlier snapshot."
+    },
+    {
+      "path": "/home/starlight/projects/rav4-radio/related-firmware",
+      "reason": "Large downloaded archives; prior selected research already consolidated."
+    }
+  ],
+  "omitted_by_size": []
+}

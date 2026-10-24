@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_EXT",
+  "examined_functions": [
+    "00012e18",
+    "00013004"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 342,
+    "prompt_tokens": 1131,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1473
+  },
+  "next_focus": [
+    "Data structure definitions for DAT_0002364c and DAT_00023650",
+    "Error code definitions in rq_drc_ErrorTraceP"
+  ],
+  "observations": [
+    {
+      "address": "0x00012e18",
+      "claim": "Function reads data from flash using rq_fls_Read",
+      "evidence_snippet": "rq_fls_Read(local_14[0],1,DAT_0002364c,DAT_00023650,&local_18,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00013004",
+      "claim": "Function writes data to flash using rq_fls_Write",
+      "evidence_snippet": "rq_fls_Write(local_14[0],1,DAT_0002364c,DAT_00023650,&local_18,0)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Functions handle flash file system operations for reading and writing data with error handling.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "12e18",
+    "13004"
+  ],
+  "selection_evidence": [
+    {
+      "address": "12e18",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "13004",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of DAT_0002364c and DAT_00023650?",
+    "What do the error codes 0x10e, 0x10f, 0x110, 0x111, 0x112 represent?"
+  ]
+}

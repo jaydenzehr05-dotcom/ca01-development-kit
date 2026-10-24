@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_MMP",
+  "examined_functions": [
+    "0001c4c0",
+    "0001c738"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 252,
+    "prompt_tokens": 764,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1016
+  },
+  "next_focus": [
+    "Memory allocation function rq_mem_Alloc",
+    "Message sending function rq_msg_Send"
+  ],
+  "observations": [
+    {
+      "address": "0x0001c4c0",
+      "claim": "Allocates memory based on parameter and copies data",
+      "evidence_snippet": "local_1c = (void *)rq_mem_Alloc(1);",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x0001c738",
+      "claim": "Checks message data and sends different messages based on conditions",
+      "evidence_snippet": "if (*pcVar1 == -0x3f)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0001c4c0 handles memory allocation and message sending with error tracing. Function 0001c738 processes message data based on specific conditions.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "1c4c0",
+    "1c738"
+  ],
+  "selection_evidence": [
+    {
+      "address": "1c4c0",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    },
+    {
+      "address": "1c738",
+      "score": 148,
+      "tags": [
+        "startup_ipc"
+      ]
+    }
+  ],
+  "source_sha256": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the magic number 0x901?",
+    "What are the meanings of message IDs 0x1e and 0x21?"
+  ]
+}

@@ -11,9 +11,13 @@ Git. The UU.11.34 KWI itself was previously checked into `firmware/`.
 
 ## Current verified local capabilities
 
-Latest: [October 23 full consolidation of Codex work, verified independent research, USB diagnostics and hardware findings](docs/CA01_RESEARCH_CONSOLIDATION_20261023.md). See also [three-binary decompilation and verified task identity](docs/CA01_CRITICAL_BINARY_DECOMPILATION.md) and [original ARM rendering status](docs/CA01_GUI_STATUS.md).
+Latest: [October 23 startup, hardened exporter and completed-corpus integration](docs/CA01_STARTUP_AND_CORPUS_RELEASE_20261023.md). Earlier: [full research consolidation](docs/CA01_RESEARCH_CONSOLIDATION_20261023.md). See also [three-binary decompilation and verified task identity](docs/CA01_CRITICAL_BINARY_DECOMPILATION.md) and [original ARM rendering status](docs/CA01_GUI_STATUS.md).
 
-- **59 complete recovered output entries** (56 unique installed paths),
+- The current two-version research catalogue contains **62 hash-verified ELF inputs**
+  and **66,205 exported entries across 49 selected exports**. These are C-like
+  reconstructions, not recovered factory source or a complete filesystem. See
+  [coverage quality and original-code findings](docs/CA01_COMPLETED_CORPUS_REVIEW_20261023.md).
+- The initial UU.11.27 recovery contains **59 complete recovered output entries** (56 unique installed paths),
   including **41 ARM ELF files**: 21 executables and 20 shared libraries.
   Every original recovered size/hash was rechecked.
   Additional Kernel/Audio/Driver/Voice fragments retain explicit partial status.
@@ -31,7 +35,11 @@ Latest: [October 23 full consolidation of Codex work, verified independent resea
 - Original HMI ARM clear, rectangle geometry, GLES drawing and frame submission
   now produce independently checked pixels at **800 × 480 and 480 × 480** through
   three modeled display buffers. Inputs remain fixtures; factory menus have not run.
-- The combined automated suite passes **140 tests**, including the five isolated USB-exporter regressions. No radio access or flashing.
+- Original queue, task, parent semaphore and shared-memory probes preserve
+  explicit initialization barriers and stop at missing services. Factory GUI
+  startup, authentic configuration and NOR profile contents remain unresolved.
+- The combined automated suite passes **258 tests**, including 17 hardened
+  USB-exporter regressions. No radio access or flashing.
 
 Start with [consolidation verification](docs/CA01_LOCAL_CONSOLIDATION.md),
 [recovered dependencies](docs/CA01_DEPENDENCY_INVENTORY.md),

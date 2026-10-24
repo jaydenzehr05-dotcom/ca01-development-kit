@@ -1,0 +1,61 @@
+{
+  "binary": "./opt/ftl/apl/PROC_CDP",
+  "examined_functions": [
+    "00009f7c",
+    "00009fdc"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 257,
+    "prompt_tokens": 1851,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 2108
+  },
+  "next_focus": [
+    "CDP protocol state transitions",
+    "VCL parameter validation"
+  ],
+  "observations": [
+    {
+      "address": "0x00009f7c",
+      "claim": "Handles CDP protocol state transitions and error tracing",
+      "evidence_snippet": "rq_drc_ErrorTraceP(0,0x43001,0x10)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00009fdc",
+      "claim": "Processes VCL parameters and dispatches to subroutines",
+      "evidence_snippet": "rq_sys_GetVclPara(auStack_108)",
+      "model_confidence": "high"
+    }
+  ],
+  "overview": "Function 00009f7c handles CDP protocol state transitions and error tracing. Function 00009fdc processes VCL parameters and dispatches to subroutines based on parameter values.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "9f7c",
+    "9fdc"
+  ],
+  "selection_evidence": [
+    {
+      "address": "9f7c",
+      "score": 4,
+      "tags": []
+    },
+    {
+      "address": "9fdc",
+      "score": 4,
+      "tags": []
+    }
+  ],
+  "source_sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the CDP protocol state machine?",
+    "What are the specific subroutines called by FUN_00009fdc?"
+  ]
+}

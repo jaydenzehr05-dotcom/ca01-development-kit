@@ -1,0 +1,68 @@
+{
+  "scope": "Static original flash utility analysis; no vendor executable, device or flash operation run",
+  "binaries": [
+    {
+      "name": "06-FlashImageCreater",
+      "sha256": "48bb5513f542d276568bd6ab77e4790fc1480031ae92a934a34b95f7d0626b70",
+      "counts_by_kind": {
+        "import_thunk": {
+          "decompiled": 30
+        },
+        "other_executable": {
+          "decompiled": 2
+        },
+        "text_body": {
+          "decompiled": 18
+        }
+      },
+      "decompiled": 50,
+      "failed": 0,
+      "artifacts": {
+        "manifest.json": "29af75da5532cf63ba06f89dfd6ea3154576ed68f05f1cbc454e6b758c9dad21",
+        "decompiled.c": "e65ed4a9cb3aa7b692130f817ec9d532e7ccfa6c6e7c65a413cf9076614b0e46",
+        "functions.tsv": "03932618c521862ee1c816ca1c83240e07a2bf93ff1e773edc2ed7e7d64f4133"
+      },
+      "local_output": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/creator-decomp"
+    },
+    {
+      "name": "06-FlashImageWriter",
+      "sha256": "40ec8efe0e22c5acb5a1add4da44cd2ff2f8b2cd55ccfcd8900b25d3a5d146fa",
+      "counts_by_kind": {
+        "import_thunk": {
+          "decompiled": 29
+        },
+        "other_executable": {
+          "decompiled": 2
+        },
+        "text_body": {
+          "decompiled": 21
+        }
+      },
+      "decompiled": 52,
+      "failed": 0,
+      "artifacts": {
+        "manifest.json": "947a320df2f735f4e2085b6f9071ac162ece51f3bea0797999d246d4f76cf72c",
+        "decompiled.c": "abf25240886b37ff9b82d2f5ca08766f17da60a55eee142775bca43d62fcda5d",
+        "functions.tsv": "bd21c82e5821d4674d1e4c08676a5c4518508547587450ca76a2dbb61238f566"
+      },
+      "local_output": "/home/starlight/projects/rav4-radio/system-audit/ca01-psm-and-flash-source-20261023/writer-decomp"
+    }
+  ],
+  "limits": "Automatic function discovery and C-like reconstructions are not original source or verified complete semantics",
+  "verified_header_contract": {
+    "signature": "13Cy-NOR-FLASH-IMAGE",
+    "header_bytes": 128,
+    "start_offset": 32,
+    "end_exclusive_offset": 36,
+    "model_offset": 40,
+    "destination_offset": 44,
+    "crc32_offset": 48,
+    "version_offset": 52,
+    "writer_reader_entry": "0xa590",
+    "writer_print_header_entry": "0xa61c",
+    "creator_write_header_entry": "0x93bc",
+    "creator_read_ioctl_entry": "0x97d0",
+    "read_ioctl": "0x4004ff10",
+    "crc_or_model_compatibility_verified": false
+  }
+}

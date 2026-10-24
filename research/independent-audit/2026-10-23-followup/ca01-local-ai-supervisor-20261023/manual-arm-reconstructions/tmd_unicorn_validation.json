@@ -1,0 +1,246 @@
+{
+  "date": "2026-10-23",
+  "original_elf_sha": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+  "original_function_start": "0x19520",
+  "original_function_length": 428,
+  "emulation_note": "Function-level ARM CPU emulation; external firmware calls are stubbed.",
+  "tests": [
+    {
+      "case": "initial-alloc-landscape",
+      "passed": true,
+      "arm_calls": [
+        [
+          "allocate",
+          2,
+          1152000
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          1152000
+        ],
+        [
+          "apply",
+          "800268016677015522223333444488aa99"
+        ]
+      ],
+      "host_calls": [
+        [
+          "allocate",
+          2,
+          1152000
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          1152000
+        ],
+        [
+          "apply",
+          "800268016677015522223333444488aa99"
+        ]
+      ],
+      "global_bytes_match": true
+    },
+    {
+      "case": "same-size",
+      "passed": true,
+      "arm_calls": [
+        [
+          "apply",
+          "800268016677015522223333444488aa99"
+        ]
+      ],
+      "host_calls": [
+        [
+          "apply",
+          "800268016677015522223333444488aa99"
+        ]
+      ],
+      "global_bytes_match": true
+    },
+    {
+      "case": "landscape-override",
+      "passed": true,
+      "arm_calls": [
+        [
+          "allocate",
+          2,
+          1152000
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          1152000
+        ],
+        [
+          "apply",
+          "800268016677015522223333444488aa99"
+        ]
+      ],
+      "host_calls": [
+        [
+          "allocate",
+          2,
+          1152000
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          1152000
+        ],
+        [
+          "apply",
+          "800268016677015522223333444488aa99"
+        ]
+      ],
+      "global_bytes_match": true
+    },
+    {
+      "case": "portrait-alloc",
+      "passed": true,
+      "arm_calls": [
+        [
+          "release",
+          2
+        ],
+        [
+          "allocate",
+          2,
+          1152000
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          1152000
+        ],
+        [
+          "apply",
+          "680180026677015522223333444488aa99"
+        ]
+      ],
+      "host_calls": [
+        [
+          "release",
+          2
+        ],
+        [
+          "allocate",
+          2,
+          1152000
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          1152000
+        ],
+        [
+          "apply",
+          "680180026677015522223333444488aa99"
+        ]
+      ],
+      "global_bytes_match": true
+    },
+    {
+      "case": "zero-width-fallback",
+      "passed": true,
+      "arm_calls": [
+        [
+          "allocate",
+          2,
+          921600
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          921600
+        ],
+        [
+          "apply",
+          "680180026677015522223333444488aa99"
+        ]
+      ],
+      "host_calls": [
+        [
+          "allocate",
+          2,
+          921600
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          921600
+        ],
+        [
+          "apply",
+          "680180026677015522223333444488aa99"
+        ]
+      ],
+      "global_bytes_match": true
+    },
+    {
+      "case": "zero-height-fallback",
+      "passed": true,
+      "arm_calls": [
+        [
+          "release",
+          2
+        ],
+        [
+          "allocate",
+          2,
+          921600
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          921600
+        ],
+        [
+          "apply",
+          "800268016677015522223333444488aa99"
+        ]
+      ],
+      "host_calls": [
+        [
+          "release",
+          2
+        ],
+        [
+          "allocate",
+          2,
+          921600
+        ],
+        [
+          "configure",
+          487424,
+          0,
+          921600
+        ],
+        [
+          "apply",
+          "800268016677015522223333444488aa99"
+        ]
+      ],
+      "global_bytes_match": true
+    },
+    {
+      "case": "negative-early-return",
+      "passed": true,
+      "arm_calls": [],
+      "host_calls": [],
+      "global_bytes_match": true
+    }
+  ],
+  "passed": 7,
+  "total": 7
+}

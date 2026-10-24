@@ -1,0 +1,65 @@
+{
+  "binary": "./opt/ftl/apl/PROC_UIEIF",
+  "examined_functions": [
+    "0002e324",
+    "00013154"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 254,
+    "prompt_tokens": 1875,
+    "prompt_tokens_details": {
+      "cached_tokens": 158
+    },
+    "total_tokens": 2129
+  },
+  "next_focus": [
+    "Voice agent file naming convention",
+    "Directory creation in file write operations"
+  ],
+  "observations": [
+    {
+      "address": "0x0002e324",
+      "claim": "Creates voice agent file paths with numeric suffixes",
+      "evidence_snippet": "strcat(local_70,\"/var/backup/uie/download/Voice/AGENT\");",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00013154",
+      "claim": "Writes data to files with directory creation",
+      "evidence_snippet": "rq_fls_MakeDir(acStack_124,0);",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 0002e324 handles UIE file operations, likely managing voice agent data. Function 00013154 appears to write files with directory creation.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "2e324",
+    "13154"
+  ],
+  "selection_evidence": [
+    {
+      "address": "2e324",
+      "score": 232,
+      "tags": [
+        "missing_libs"
+      ]
+    },
+    {
+      "address": "13154",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the numeric suffix in voice agent files?",
+    "Are the file operations in function 00013154 atomic?"
+  ]
+}

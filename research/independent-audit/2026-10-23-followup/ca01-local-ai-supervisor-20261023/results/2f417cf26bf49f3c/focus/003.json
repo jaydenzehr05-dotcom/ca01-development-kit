@@ -1,0 +1,66 @@
+{
+  "binary": "./opt/ftl/apl/PROC_SYSTEM",
+  "examined_functions": [
+    "00029a4c",
+    "00017620"
+  ],
+  "forbidden_inference": "May not infer filesystem files exist unless manifest contains them",
+  "kind": "model_hypothesis_review",
+  "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_usage": {
+    "completion_tokens": 305,
+    "prompt_tokens": 1658,
+    "prompt_tokens_details": {
+      "cached_tokens": 162
+    },
+    "total_tokens": 1963
+  },
+  "next_focus": [
+    "Directory traversal logic in function 00017620",
+    "File reading behavior in function 00029a4c"
+  ],
+  "observations": [
+    {
+      "address": "0x00029a4c",
+      "claim": "Reads version string from file into buffer",
+      "evidence_snippet": "rq_fls_Read(auStack_1c[0],1,0x20,acStack_44,&sStack_20,0)",
+      "model_confidence": "high"
+    },
+    {
+      "address": "0x00017620",
+      "claim": "Scans directory for files matching pattern",
+      "evidence_snippet": "memcmp(&local_28,&DAT_000668c4,4)",
+      "model_confidence": "medium"
+    }
+  ],
+  "overview": "Function 00029a4c reads version info from /opt/ftl/NFIMG.VER into a destination buffer. Function 00017620 scans directories for specific files matching a pattern.",
+  "provenance": "LLM-generated hypotheses; NOT independently verified",
+  "review_stage": "focused_candidate_review",
+  "selected_addresses": [
+    "29a4c",
+    "17620"
+  ],
+  "selection_evidence": [
+    {
+      "address": "29a4c",
+      "score": 260,
+      "tags": [
+        "missing_libs",
+        "paths"
+      ]
+    },
+    {
+      "address": "17620",
+      "score": 228,
+      "tags": [
+        "missing_libs"
+      ]
+    }
+  ],
+  "source_sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+  "still_unreviewed": "Other function entries remain in function_coverage.sqlite3",
+  "unresolved_questions": [
+    "What is the purpose of the pattern matching in function 00017620?",
+    "What is the significance of the hardcoded string in function 00029a4c?"
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "report_path": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/MANUAL_EXECUTABLE_COVERAGE.json",
+  "selected_exports": 49,
+  "input_rows": 62,
+  "statuses": {
+    "decompiled": 66205
+  },
+  "classes": {
+    "import_thunk": 7945,
+    "text_body": 58162,
+    "other_executable": 98
+  },
+  "warning_body_counts": {
+    "/* WARNING:": 4200,
+    "extraout_": 651,
+    "unaff_": 400,
+    "Could not recover": 1023,
+    "Treating indirect jump as call": 1027
+  },
+  "index_statuses": {
+    "decompiled": 66204,
+    "failed": 1
+  },
+  "selected_sources": [
+    {
+      "name": "./opt/ftl/apl/PROC_AUDIO",
+      "version": "1127",
+      "sha256": "fc38e66676a9fe45c211ec36e920f15fe8a1e683bfdc22ef1fcdddf916b04a05",
+      "entries": 3385,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/fc38e66676a9fe45/ghidra/decomp/decompiled.c",
+      "source_sha256": "7b25b06cad0df27ea61980e950c695032e59ac68a0dde4060d464777004188b9",
+      "manifest_sha256": "8a8376e694337728a81ced60770deb140663d0e72fd752b8ea7f8b29f7b700e8"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_AUDIO",
+      "version": "1134",
+      "sha256": "15f3bc8afa901ec766b6288540971f171f346abc67aa9fb525f5f13ba78b99f4",
+      "entries": 3383,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/15f3bc8afa901ec7/ghidra/decomp/decompiled.c",
+      "source_sha256": "766b4d8758b6842dcf4e08a5889c474b9455e92acf28b5aeb07474667243b654",
+      "manifest_sha256": "f3acd9c452dd73d8be3be13b66bbce24e8cf9f2d7d175fd8ac86e2d41d1d91ce"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDDB",
+      "version": "1134",
+      "sha256": "23daecdd67cbf4c95b133d35e702f427034f15450309fbf82ab57478bda2d426",
+      "entries": 2802,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/23daecdd67cbf4c9/ghidra/decomp/decompiled.c",
+      "source_sha256": "096e34c8cea7b8ea5c21e71452b535b7673ee2acd74dbec932e96f519cd1f0f9",
+      "manifest_sha256": "4e3512691f84abc966d3c1e6f9b440df94a51eb4ec7a7853b85425b6c4443499"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDP",
+      "version": "1127",
+      "sha256": "5a2afe5ea4fb2cb401fd7a70c4f143068d7f80a85b04dae185a7afc469ef5b5a",
+      "entries": 269,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/5a2afe5ea4fb2cb4/ghidra/decomp/decompiled.c",
+      "source_sha256": "f82bf84cee4edd1c60fd21be44a3f4b54a85a158eb0f3d6875badfdb564cc43a",
+      "manifest_sha256": "03a27f874da84f6af4eff9f1b9c5bd898721f77dfb04e2b3d0d6f1a53d0e7069"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_CDP",
+      "version": "1134",
+      "sha256": "043b2d3ccbcca36df4bc5e9f48ff565366edff0782d6980c4e27b5e864b78d6e",
+      "entries": 269,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/043b2d3ccbcca36d/ghidra/decomp/decompiled.c",
+      "source_sha256": "f82138be7dafe2bc7adcf8a41c3bc573d2e4d80b17c52a8843e33c76e96a186a",
+      "manifest_sha256": "93024f704311782ea7b3f8d2193b187d4b83960961ab62bc966c0372c18369e2"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DISPLAY",
+      "version": "1127",
+      "sha256": "4755da50d4396cb213eb905ed49d6118cd8f330d05a35aa928b1bef8b2045004",
+      "entries": 5575,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4755da50d4396cb2/ghidra/manual-predication-long-merged-01/decompiled.c",
+      "source_sha256": "7677c92e0561127b82e001ccfd23d3bd80576777297647586db7f9b347ee9b3d",
+      "manifest_sha256": "0d8174d5113359cb5e8e32cf08cfd92fb9e6ec040dd7ec5b995ae5cd8973259e"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DISPLAY",
+      "version": "1134",
+      "sha256": "ed6c8180598afb2f3d0ddd74793add46bfa012bc387516229726ee5f776e303f",
+      "entries": 6706,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/ed6c8180598afb2f/ghidra/manual-parallel-merged-20261023-00023968/decompiled.c",
+      "source_sha256": "f1d7383e568182dc65d47019e14ec753a9b9a79f14d57572383e5128c86b5c29",
+      "manifest_sha256": "16f571beae1019328405388eb5e14df9855a794f4f29957c064843d3bbd43d53"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DSV",
+      "version": "1134",
+      "sha256": "f3e37052d8875031a7f66d8bd622808fe1d8d4ec0d15314c7d306a492155d2a0",
+      "entries": 423,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/f3e37052d8875031/ghidra/decomp/decompiled.c",
+      "source_sha256": "be36d0f47bcd24193b6dd3f40bea357b57d7f7bf36e0f9817d8c9a1d85cfd2a2",
+      "manifest_sha256": "70043d887698fe8319ec07caac9bee91d7b67b6512c5c7fef1aece162737538d"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DTV",
+      "version": "1134",
+      "sha256": "1a526239fbe5b3b72d9fb871fed9db3523c76125522a9addf0a99f6281b5e115",
+      "entries": 4477,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1a526239fbe5b3b7/ghidra/manual-predication-merged-01/decompiled.c",
+      "source_sha256": "9098e64644626b5c0fbbdb44402e5d157edef745e379927955712b8aea68dff5",
+      "manifest_sha256": "aac4316ac097f9e34e373d798a838223fc3923cbe8b9351efc0935a16d41a1b6"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DVDDECK",
+      "version": "1134",
+      "sha256": "a90dbf0418bf7f0952c2b1eee5c5e17404d35b76e6df4e00430933e06f0d9c97",
+      "entries": 1816,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a90dbf0418bf7f09/ghidra/decomp/decompiled.c",
+      "source_sha256": "bde23fa931f9caa54f6d1e75997f13aaa24248d37a318f5665d264b261c91f8e",
+      "manifest_sha256": "419156e1a09e01b25c48f8daac28fbe141cd87050437f8d8ddd8c29085ad178c"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_DVDP",
+      "version": "1134",
+      "sha256": "8f3a3324604b7682e1ffc2f949600045b28207a571afc63ce3480a1ea58bfbac",
+      "entries": 418,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/8f3a3324604b7682/ghidra/decomp/decompiled.c",
+      "source_sha256": "ca2b414b01e3d54540eb368c8c330b67fb5a804c621081c2457ab341f3016673",
+      "manifest_sha256": "410270a40fe97d2ab371a15d45aa5acafcd7c0b717b8b84c33776bc9c535dde7"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_EXT",
+      "version": "1134",
+      "sha256": "b95f96ba4f8e8e2180723ddc17766d879a7030c1fc8a3ad203cddd92967e9d8e",
+      "entries": 245,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/b95f96ba4f8e8e21/ghidra/decomp/decompiled.c",
+      "source_sha256": "ec1f46dc00f0aa8443df97bacfa4eec10b79bd305c4f5ba48ab9d9a39404f639",
+      "manifest_sha256": "a7115000f3e9f33d1b2e4d91a411cbb6d97fce2b7b89b9a83c6ab11dc013c5e5"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_HMI",
+      "version": "1127",
+      "sha256": "cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503",
+      "entries": 8355,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/cf7c621b96d0865d/ghidra/verified-identical-executable-01/decompiled.c",
+      "source_sha256": "109edf421ff7bbce00c0f985aa5f47db832cde00a85e32194724d443d576f044",
+      "manifest_sha256": "8a2782d7aa6dd09ede15ea62c4266226113653e7de906f923ea2d2d63b76ff63"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_HMI",
+      "version": "1134",
+      "sha256": "64f5d905a42aa844d60fcf2a3aed752ce5fd9df04e54a1a565d81b64307af62b",
+      "entries": 8355,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/64f5d905a42aa844/ghidra/failed-retry-01/merged-decomp/decompiled.c",
+      "source_sha256": "34e08d1bb88b87d6d909ac35819a175db9ab805832c89d91ae5b53ccc5f90e2b",
+      "manifest_sha256": "b7de4e46ebc8466d30dbc46a381ed4e31f18ac5e652adf09d3bf99befb578a53"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_MMP",
+      "version": "1134",
+      "sha256": "c826857156b51869837154e157f9eeb4a0fff3d624b1fa7beb236b6dd969f33f",
+      "entries": 2385,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c826857156b51869/ghidra/failed-retry-50/merged-decomp/decompiled.c",
+      "source_sha256": "5059a9de95b8ef8774b4d6beccf3e18e3ba0a05505595cea6fd6ac3b4c98444d",
+      "manifest_sha256": "dc6e6c278588c47b02c5f65df4c72a88bd2b45cf671c143064d935faf2758c22"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_NAVIIF",
+      "version": "1134",
+      "sha256": "21c2f32554f16c6abbd1c948012802f2f69004039cbdfae3fdbe8f4cade2646b",
+      "entries": 465,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/21c2f32554f16c6a/ghidra/decomp/decompiled.c",
+      "source_sha256": "e56cf8a40ffd05b1f139b2a62c8e6aa0c9b736d48207e6dba268d93cfaadbf9a",
+      "manifest_sha256": "7428f7c187ea062c4a36e007333228ad88f461063a34a02e7c83e0d75eda70a2"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_REPRO",
+      "version": "1127",
+      "sha256": "47a48311b513bffaa3c8f41e9c3ebcc05ae3525e8efe069c714f5e8341fbb771",
+      "entries": 410,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/47a48311b513bffa/ghidra/decomp/decompiled.c",
+      "source_sha256": "75e6cda1681363b1bdbc626521d658d62d47b3d150b30f0387ebd74a6163f3bf",
+      "manifest_sha256": "34077f33b2da5d930e778edf35ee7c80ee65c45b3d3af1adacf432df756ba274"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_REPRO",
+      "version": "1134",
+      "sha256": "4ec99dbe7ba649cc6948e2fca574cb729fb8376cfc97d7c143d19f741e94c50e",
+      "entries": 410,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/4ec99dbe7ba649cc/ghidra/decomp/decompiled.c",
+      "source_sha256": "29384aa6c0fd1f8df0893ec0e3fe090e78b97eeae0094c58a7e3179d021f213f",
+      "manifest_sha256": "2d79de38c343dd8c2f29018c0bd1b78c4626fcbf916f6081bd5215ca5ec76b9d"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SPC",
+      "version": "1134",
+      "sha256": "37707bc33d7fa157a703dec38724e83b80da717645ed2dba20c1e31fb476160a",
+      "entries": 203,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/37707bc33d7fa157/ghidra/decomp/decompiled.c",
+      "source_sha256": "2d95f55ad25668269d33b93017d7deac40edfd641486909e0bd70d6c2e0a8e4e",
+      "manifest_sha256": "10424f382324869988c0ed50b1dad6c696995374d0107483f1d4ea29eb2a8058"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SYSTEM",
+      "version": "1127",
+      "sha256": "57d4971846c30f2cf1bd964d6c00c05b1bcc64121df48d1b5da9c427aec5ac26",
+      "entries": 1605,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/system1127-verified/decompiled.c",
+      "source_sha256": "95bf249a69802aab6b35d5c8206f3cb5dcce7dc7640430ac8c2815ec90f19560",
+      "manifest_sha256": "ba0e2dce50305c98c341f4835fdecbd67dc0738a914e506284f6352d54d363a7"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_SYSTEM",
+      "version": "1134",
+      "sha256": "2f417cf26bf49f3c401ba6c808683f4a3840b60d2f0735ce7b295bdfaebc2e50",
+      "entries": 1607,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/2f417cf26bf49f3c/ghidra/decomp/decompiled.c",
+      "source_sha256": "74687e679bbd6fd57bf9db9e03b35d12e5e5372434b61e4bd183844bfe214501",
+      "manifest_sha256": "7ea0728be8a03f0af892168ac949ee9034556eed54178ae9ca128afa7c8dc7b1"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_TMD",
+      "version": "1134",
+      "sha256": "28e8b7d000b0d764c3bdadb1f2ff0e28d16dbd6d64946967e527597d3ddd51c8",
+      "entries": 539,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/28e8b7d000b0d764/ghidra/manual-predication-merged-01/decompiled.c",
+      "source_sha256": "b580871b23ebc7fe50240a7ee57a956bc64229ba60790c32ea1765ab6233c411",
+      "manifest_sha256": "68be06cdf3fe023770f6fccfd8c0ea67cfce539ed08b4f0ef4ac1334e9abe7c4"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_UIEIF",
+      "version": "1127",
+      "sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4",
+      "entries": 1123,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e5eb7a2861f8747d/ghidra/decomp/decompiled.c",
+      "source_sha256": "a956205129fa9dd351a7c1c8d04d204f4f6be0bf79caf1fde29ed53036bde4d5",
+      "manifest_sha256": "b5cedb9444b9fac99ebc54e226df4f12c18765ed71450d43ce8e6305c803abc3"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_UIEIF",
+      "version": "1134",
+      "sha256": "7d867b15822a183e8ab189c65e20095d4bb3f0055dede09d135e4b2bc4c77061",
+      "entries": 1123,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7d867b15822a183e/ghidra/decomp/decompiled.c",
+      "source_sha256": "4fd2946b9702cde308749561f9932ae8e6efc22f482292fd52c02573f0fe6f1e",
+      "manifest_sha256": "add4513631b9917a78d4384ff919407004ef9f329796ca24aff2cf25c6bf77a6"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VI",
+      "version": "1134",
+      "sha256": "e823e814559f4b47de50b816ffd86931addbd7f94a9c2d9d536707cd453af0d1",
+      "entries": 413,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e823e814559f4b47/ghidra/decomp/decompiled.c",
+      "source_sha256": "f14ff4d781ba95286af230a089a70a1cd340f92dbd9f4dfe04daeaadc784b5cd",
+      "manifest_sha256": "288285e4f181e1c7681553192003c5d4ccd992b2ce586fbbd5f166d79be162ba"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VRS",
+      "version": "1127",
+      "sha256": "cdc2f7a613e5a9a9a2a122a97a5cf62bbf5a7a27b863b36ea6427df2bf731976",
+      "entries": 1621,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/cdc2f7a613e5a9a9/ghidra/failed-retry-50/merged-decomp/decompiled.c",
+      "source_sha256": "271ca4c1a079b6af236f28ae020669bd2b5f19afb6804534e6873fccf0739595",
+      "manifest_sha256": "85edc6fe16bf63ea207037a0b6b99b76920168320ac070838e2008119c13e217"
+    },
+    {
+      "name": "./opt/ftl/apl/PROC_VRS",
+      "version": "1134",
+      "sha256": "0ef37be31e5002eb756e5286e2ff06f6faaefebbfcf5a7b38a77d78c63afc4ee",
+      "entries": 1621,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/0ef37be31e5002eb/ghidra/failed-retry-50/merged-decomp/decompiled.c",
+      "source_sha256": "7c4d40b999a2533b23f9bd64e667258d6bb39275e44194988d3f1af971e835d1",
+      "manifest_sha256": "2ff01b453fde28ef2b83f0291c7d442cd17a86ccf152e2c65a91bc13c015461a"
+    },
+    {
+      "name": "./opt/ftl/bin/FlashImageCreater",
+      "version": "1134",
+      "sha256": "a30874c2d9d658ff2f49581edfd90a9d4976ff67340afd199ae81e096bc0f91e",
+      "entries": 50,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a30874c2d9d658ff/ghidra/decomp/decompiled.c",
+      "source_sha256": "562b2059634252865913b35076eb64a9d2fc48f00a2406531b8269bf5ee3f0dd",
+      "manifest_sha256": "f84f4579f570af72af259d2db77d277efb7274612c69e628ae9d5dfa8a4acbe4"
+    },
+    {
+      "name": "./opt/ftl/bin/FlashImageWriter",
+      "version": "1134",
+      "sha256": "db3b38c1a9fd31b7a4e01ff33a65636849da45d829afc3d5aba2aec827fee18f",
+      "entries": 52,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/db3b38c1a9fd31b7/ghidra/decomp/decompiled.c",
+      "source_sha256": "ba74ae599a3f48924192678c2ea4b3a662ecd0350c8cb2b50afe04a99e93153f",
+      "manifest_sha256": "979682e14882ef396efd0722a691592adf15d09c05fd87b7017adda3f8101f25"
+    },
+    {
+      "name": "./opt/ftl/lib/libAdlCd.so",
+      "version": "1134",
+      "sha256": "3831438fb969950ff20fd11e1c704f9235f58ec5d93c5a0d55a06471acd32ce2",
+      "entries": 105,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/3831438fb969950f/ghidra/decomp/decompiled.c",
+      "source_sha256": "0dc9bc0f396ca45784630fd5415c4a1cb6d932c4ff21cd708121809a9f3b2850",
+      "manifest_sha256": "c6c30ec5f13b3279274311fc545592034dcc3941d9d39901fb4f5c7249ab935c"
+    },
+    {
+      "name": "./opt/ftl/lib/libAdlRd.so",
+      "version": "1134",
+      "sha256": "a2e1403bc89b737d4f9cf503dd6419a676d723715626fade1e8fe5a12e64b777",
+      "entries": 159,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/a2e1403bc89b737d/ghidra/decomp/decompiled.c",
+      "source_sha256": "708ae847b7ee226bfdebd5075833de32d48ea676fb1f00638052e7215f169b29",
+      "manifest_sha256": "f5d3bebacd4af5b554f1c15027e4cff5fca9cc1cd06ea32f89b408afe6d6dbb8"
+    },
+    {
+      "name": "./opt/ftl/lib/libAdlUb.so",
+      "version": "1134",
+      "sha256": "f8d509b18b2be933eacdf5d09794570ce6757129190076d6815d9bcc99c0d845",
+      "entries": 142,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/f8d509b18b2be933/ghidra/decomp/decompiled.c",
+      "source_sha256": "56c4f9a38bd82abef12b2eb5043a86cf7dfbc88023132f6261c568c5c0652981",
+      "manifest_sha256": "ce9af5b1c94ec4e464742de53f125e9c91a0889b140fc175a2b7bcc7cfd480c7"
+    },
+    {
+      "name": "./opt/ftl/lib/libComFlmLb.so",
+      "version": "1134",
+      "sha256": "e5ca3288453da45f666c8855ec5d2a29243f765789a36ad3a6943e674c4355b6",
+      "entries": 46,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/e5ca3288453da45f/ghidra/decomp/decompiled.c",
+      "source_sha256": "0ad8d012adac1384be65af8237b2c09cb271894e5fc641b24de267f469bc15ba",
+      "manifest_sha256": "c0fb3f34412ef147ce939d17d5303bb0b0ccb33ea49a59d4c3c3d68257fb2f9d"
+    },
+    {
+      "name": "./opt/ftl/lib/libDIS_IF.so",
+      "version": "1134",
+      "sha256": "1c0d760d81ad684bf5570278ffeb9c801607715efea03533fdf6b42db3d87e49",
+      "entries": 204,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1c0d760d81ad684b/ghidra/decomp/decompiled.c",
+      "source_sha256": "aebc7c9c946485f2d82895955ae8cd80132e2fdae63c3f58e8601912b7fd0a0a",
+      "manifest_sha256": "ab8d04237a6301c9b12d7b8fe1e53de067850fcd7fd8863b86fb822ef2f61ae4"
+    },
+    {
+      "name": "./opt/ftl/lib/libDisdb_if.so",
+      "version": "1134",
+      "sha256": "8486692809990cec2d1551858aea42991884886460d952979452e5b8a7f0fe47",
+      "entries": 155,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/8486692809990cec/ghidra/decomp/decompiled.c",
+      "source_sha256": "050f17f6375b7abf1139b1ea4b38503a98d3a716f503259f5753bf2b7a07033d",
+      "manifest_sha256": "6b25fedde67f89898f7708ad648e28ceab24c6ab81af3a038777fd61c88af1c3"
+    },
+    {
+      "name": "./opt/ftl/lib/libIFLB_CDDB.so",
+      "version": "1134",
+      "sha256": "1431c297e1716c7d3a49964aa523eb97b868673553e709d7897ee3a086ddad75",
+      "entries": 91,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/1431c297e1716c7d/ghidra/decomp/decompiled.c",
+      "source_sha256": "7aa15f008137b8961cdd5a78b26de87f70fe8fda37887936e40ef39635c4cc29",
+      "manifest_sha256": "ab5cfbf89a49540ba1237aa9e0b887631f75727631a6ad954523d42e9d86e457"
+    },
+    {
+      "name": "./opt/ftl/lib/libVOIAudioStream.so",
+      "version": "1134",
+      "sha256": "c5b9d0c56a1f7539e91851fe4958316987b401d81769d40711b7102f4a62c7f1",
+      "entries": 232,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c5b9d0c56a1f7539/ghidra/decomp/decompiled.c",
+      "source_sha256": "e618fc741f7600fb4636cb492460801772add5dc16921a260b93b21a65d842e9",
+      "manifest_sha256": "f322dd6411b25287dbce510b7921e27a228371d2986e7ed5dd9c3408a2b7a1c0"
+    },
+    {
+      "name": "./opt/ftl/lib/libVOIdata_cp.so",
+      "version": "1134",
+      "sha256": "911b997a5a4ecb16d98bd9a6a73a2e46af1e4abfc6ea77c27a7827c861bfdba8",
+      "entries": 61,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/911b997a5a4ecb16/ghidra/decomp/decompiled.c",
+      "source_sha256": "288f53aa6b41be75be09663975cf606be888daa16ca46b478efffe2fb164baa6",
+      "manifest_sha256": "cf3cd7f502398cb8543d5cc58bde1b946d56319f7aad8577351efe2e9af96781"
+    },
+    {
+      "name": "./opt/ftl/lib/libcoll.so",
+      "version": "1134",
+      "sha256": "90a7cf2c7f9eada7269b09643fcd9c7738bdb4ccab2f043e7419bdc36c852480",
+      "entries": 359,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/90a7cf2c7f9eada7/ghidra/decomp/decompiled.c",
+      "source_sha256": "66b3ff9c98e35e56df4d113fe1711f1b3db72ce67a3eeb0184493c8a8c83020c",
+      "manifest_sha256": "2246f9e4d6b7a1146bd3034abbd8b73c356ddd13e821ba86e35db4d5791c3a88"
+    },
+    {
+      "name": "./opt/ftl/lib/libedbsong.so",
+      "version": "1134",
+      "sha256": "fcbd4cf0c639442e7d80877daf274ef6cd3e552bb917ea9f16bdba180d14337d",
+      "entries": 826,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/fcbd4cf0c639442e/ghidra/decomp/decompiled.c",
+      "source_sha256": "af92ee0c92c3ff1218c8c03ca063a213f3b294d59755c18f3a642780f41a4ecd",
+      "manifest_sha256": "3c5732655adeaa7d6ca20bbe2bbb142f15f75426ebcbcea554d7a415ebd1cf99"
+    },
+    {
+      "name": "./opt/ftl/lib/libi2c_cm.so",
+      "version": "1134",
+      "sha256": "672245e48f1f6d8e9cec0087546bd725788e3028256a50eb53884340718311ed",
+      "entries": 20,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/672245e48f1f6d8e/ghidra/decomp/decompiled.c",
+      "source_sha256": "032db5ea862d4ad5627452bf28502ab43dd79f227b7be4d12c1c820dae61d19b",
+      "manifest_sha256": "a9c0c735ec8c38cc24b24ace288d58e7b877536539d746fdc8ca9a2fa095eade"
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_grp.so",
+      "version": "1134",
+      "sha256": "c87538f1de097ef01c8f169971d922068a9f7c2c87faaa1fb9a036cd14dc87ef",
+      "entries": 1116,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/c87538f1de097ef0/ghidra/decomp/decompiled.c",
+      "source_sha256": "8c19204f564b343e955689ff255d88b2cee2f913db73d1425eee2ab438939ec1",
+      "manifest_sha256": "6a53b24da7ace0ae158f98031744c7ed129f0d07689c890b09a42212f70cb974"
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_ls1.so",
+      "version": "1134",
+      "sha256": "7373e2d470fbac95dbf7a7a1dd68cca59187fdb43450244fc706f8bbf7affc24",
+      "entries": 145,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/7373e2d470fbac95/ghidra/decomp/decompiled.c",
+      "source_sha256": "4312a63e293c7e620b0fb18cdf4a9b4d7b5f6ff98966c26d514e458ad87bb163",
+      "manifest_sha256": "916837b385d9a6ed24f22e6a8d53585d1b53a3c51edca1b45f2bb31890f9272b"
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_skt.so",
+      "version": "1134",
+      "sha256": "f6cb7d7fb510a4d97e81df828fcbb870e1dd678c12e01980adac898519e395a8",
+      "entries": 80,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/f6cb7d7fb510a4d9/ghidra/decomp/decompiled.c",
+      "source_sha256": "802516bd168e3437b6c48eecf631fb3d1610d373608a84c87fcb432f32aecc64",
+      "manifest_sha256": "89f1a98254576c64a88801a1e4c6b6bdcd1884becd4c8085de58b3309f8a4e13"
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_sysc.so",
+      "version": "1134",
+      "sha256": "a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4",
+      "entries": 962,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-critical-decompilation-20261023/sysc1127-verified/decompiled.c",
+      "source_sha256": "243566533f14249a621991c16ab49b7e461c1882c7c16998be5350ca2fd80b0a",
+      "manifest_sha256": "23f52c1c1f4ab9a19bb9de9d2cec1a798862769d4d8ea25e12c3dcaa31a4f4ed"
+    },
+    {
+      "name": "./opt/ftl/lib/libipas_sysp.so",
+      "version": "1134",
+      "sha256": "5fa0b9571f51693bb7b2f3fddfec1228d46ef66b359f126cba1719d08eba58e5",
+      "entries": 925,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/5fa0b9571f51693b/ghidra/decomp/decompiled.c",
+      "source_sha256": "94e7d4a952bf938e154abd40f196a6f45372e9af054c605256738982e49865d9",
+      "manifest_sha256": "24d99a4c9a8a013577ea347675d0d309e411940afa9ddc263852c54d9cf9bb07"
+    },
+    {
+      "name": "./opt/ftl/lib/libnavi_if.so",
+      "version": "1134",
+      "sha256": "02d11afd4414659265ff78944f5a400de0cfaff1138ef45deb4daaa88f809981",
+      "entries": 399,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/02d11afd44146592/ghidra/decomp/decompiled.c",
+      "source_sha256": "bbaae3497e58613669cacbe73911cca81f7a5b4f19042bb3c664966ec0fbeebe",
+      "manifest_sha256": "077fe8cef5f7964b65765f0eabd0a5b77a7577ea5ecb128f26d28aa6b2c121cd"
+    },
+    {
+      "name": "./opt/ftl/lib/libsct_ct.so",
+      "version": "1134",
+      "sha256": "383924353b752d9c02f953ecf773584affc5232e15b73a707b9d4f4f659d6fae",
+      "entries": 41,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/383924353b752d9c/ghidra/decomp/decompiled.c",
+      "source_sha256": "e849d964ea0d672d8d9a488ac866ee8655322ee6b69850160e48df909105848e",
+      "manifest_sha256": "8b2421f7bb8c2bf6168ff63129c39e73f97368eadebcf0f7da762e025f03df51"
+    },
+    {
+      "name": "./opt/ftl/lib/libuie_api.so",
+      "version": "1134",
+      "sha256": "77e97c6cebc9e4a358ceb81c3afb91c8756785baf19691094857678ec21c78fd",
+      "entries": 32,
+      "source_file": "/home/starlight/projects/rav4-radio/system-audit/ca01-local-ai-supervisor-20261023/results/77e97c6cebc9e4a3/ghidra/decomp/decompiled.c",
+      "source_sha256": "f251abe9cd24fa7f7ba86c9f68130680a1e1fd5515f2c11a8ea9c410a09e9756",
+      "manifest_sha256": "d555eb97596ec5407acc49913a9491e9c6635b78995087cb0047de9611e3a67c"
+    }
+  ],
+  "limits": "Structural body/identity checks; not proof of full function discovery, source equivalence, correct C semantics or runnable firmware"
+}

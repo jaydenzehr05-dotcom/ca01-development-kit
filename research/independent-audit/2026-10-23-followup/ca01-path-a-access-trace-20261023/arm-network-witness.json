@@ -1,0 +1,168 @@
+{
+  "source": {
+    "path": "/home/starlight/projects/rav4-radio/system-audit/ca01-updater-independent-20261022/06-PROC_UIEIF",
+    "sha256": "e5eb7a2861f8747d82616f34a84023e4865d13944fe0cd3cd513a2e516e229f4"
+  },
+  "function": "0xdb54",
+  "system_call_addresses": [
+    "0xd29c",
+    "0xd2a8",
+    "0xd740",
+    "0xd74c",
+    "0xd8e4",
+    "0xd8f4"
+  ],
+  "command_witnesses": [
+    {
+      "call": "0xd29c",
+      "string_address": "0x76b20",
+      "command": "slattach -p slip -s 115200 /dev/ttyBT3 &",
+      "instructions": [
+        {
+          "address": "0xd294",
+          "bytes": "200b06e3",
+          "mnemonic": "movw",
+          "operands": "r0, #0x6b20"
+        },
+        {
+          "address": "0xd298",
+          "bytes": "070040e3",
+          "mnemonic": "movt",
+          "operands": "r0, #7"
+        },
+        {
+          "address": "0xd29c",
+          "bytes": "0ffcffeb",
+          "mnemonic": "bl",
+          "operands": "#0xc2e0"
+        }
+      ]
+    },
+    {
+      "call": "0xd2a8",
+      "string_address": "0x76b4c",
+      "command": "ifconfig sl0 mtu 4096 192.168.1.2 pointopoint 192.168.1.1 up",
+      "instructions": [
+        {
+          "address": "0xd2a0",
+          "bytes": "4c0b06e3",
+          "mnemonic": "movw",
+          "operands": "r0, #0x6b4c"
+        },
+        {
+          "address": "0xd2a4",
+          "bytes": "070040e3",
+          "mnemonic": "movt",
+          "operands": "r0, #7"
+        },
+        {
+          "address": "0xd2a8",
+          "bytes": "0cfcffeb",
+          "mnemonic": "bl",
+          "operands": "#0xc2e0"
+        }
+      ]
+    },
+    {
+      "call": "0xd740",
+      "string_address": "0x76bc8",
+      "command": "ifconfig sl0 mtu 4096 192.168.1.2 pointopoint 192.168.1.1 down",
+      "instructions": [
+        {
+          "address": "0xd738",
+          "bytes": "c80b06e3",
+          "mnemonic": "movw",
+          "operands": "r0, #0x6bc8"
+        },
+        {
+          "address": "0xd73c",
+          "bytes": "070040e3",
+          "mnemonic": "movt",
+          "operands": "r0, #7"
+        },
+        {
+          "address": "0xd740",
+          "bytes": "e6faffeb",
+          "mnemonic": "bl",
+          "operands": "#0xc2e0"
+        }
+      ]
+    },
+    {
+      "call": "0xd74c",
+      "string_address": "0x76c08",
+      "command": "killall slattach",
+      "instructions": [
+        {
+          "address": "0xd744",
+          "bytes": "080c06e3",
+          "mnemonic": "movw",
+          "operands": "r0, #0x6c08"
+        },
+        {
+          "address": "0xd748",
+          "bytes": "070040e3",
+          "mnemonic": "movt",
+          "operands": "r0, #7"
+        },
+        {
+          "address": "0xd74c",
+          "bytes": "e3faffeb",
+          "mnemonic": "bl",
+          "operands": "#0xc2e0"
+        }
+      ]
+    },
+    {
+      "call": "0xd8e4",
+      "string_address": "0x76b8c",
+      "command": "slattach -p slip -s 115200 /dev/ttyBT2 &",
+      "instructions": [
+        {
+          "address": "0xd8dc",
+          "bytes": "8c0b06e3",
+          "mnemonic": "movw",
+          "operands": "r0, #0x6b8c"
+        },
+        {
+          "address": "0xd8e0",
+          "bytes": "070040e3",
+          "mnemonic": "movt",
+          "operands": "r0, #7"
+        },
+        {
+          "address": "0xd8e4",
+          "bytes": "7dfaffeb",
+          "mnemonic": "bl",
+          "operands": "#0xc2e0"
+        }
+      ]
+    },
+    {
+      "call": "0xd8f4",
+      "string_address": "0x76b4c",
+      "command": "ifconfig sl0 mtu 4096 192.168.1.2 pointopoint 192.168.1.1 up",
+      "instructions": [
+        {
+          "address": "0xd8ec",
+          "bytes": "4c0b06e3",
+          "mnemonic": "movw",
+          "operands": "r0, #0x6b4c"
+        },
+        {
+          "address": "0xd8f0",
+          "bytes": "070040e3",
+          "mnemonic": "movt",
+          "operands": "r0, #7"
+        },
+        {
+          "address": "0xd8f4",
+          "bytes": "79faffeb",
+          "mnemonic": "bl",
+          "operands": "#0xc2e0"
+        }
+      ]
+    }
+  ],
+  "scope": "Static MOVW/MOVT r0 + BL system proof; no command, Bluetooth, syscall or vendor code executed. Ghidra function bodies may include noncontiguous blocks; no contiguous-size assumption."
+}

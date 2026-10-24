@@ -18,6 +18,8 @@ HMI_SHA256 = 'cf7c621b96d0865d7ba5d79a6aa8806e3d2544a827966a27a7c95de56ffa6503'
 SYSC_SHA256 = 'a1f2812d0b1776fa79dcb9ebddd5dca2d16443f77db19c35f4aac2cbabc302b4'
 BIAS = 0x10000000
 REGISTRY = 0x59f948
+# Original rq_sys_NtyTskSts reads GOT0x3194c -> private state0x13a6a4 +0x24.
+STARTUP_MODE_ADDRESS = BIAS + 0x13a6c8
 
 
 def verify_inputs(hmi_data, sysc_data):
